@@ -44,6 +44,7 @@ script_dir=$(realpath "$(dirname "$0")")
 echo -e "\033[0;32mThe script is located in $script_dir\033[0m"
 export script_dir
 
+
 # Function to clone a repo and run the Maven command
 apply_recipe() {
   url=$1
@@ -67,9 +68,9 @@ apply_recipe() {
   # Copy the rewrite.xml file from the script repository to the target repository
   cp "$script_dir/rewrite.yml" .
   if mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.activeRecipes=org.gounthar.jdk21-prerequisites -Dmaven.test.skip=true; then
-    echo "$repo,https://github.com/$repo" >> "$csv_file_compiles"
+    echo "$repo,https://github.com/$repo" >> "$script_dir/$csv_file_compiles"
   else
-    echo "$repo,https://github.com/$repo" >> "$csv_file_does_not_compile"
+    echo "$repo,https://github.com/$repo" >> "$script_dir/$csv_file_does_not_compile"
   fi
   cd ../..
   # Print a message in green
@@ -77,6 +78,10 @@ apply_recipe() {
 }
 
 export -f apply_recipe
+
+# Create a CSV file and write the header
+echo "Plugin,URL" > "$script_dir/$csv_file_compiles"
+echo "Plugin,URL" > "$script_dir/$csv_file_does_not_compile"
 
 # Read the CSV file and pass each URL to the run_maven_command function
 tail -n +2 "$csv_file" | cut -d ',' -f 2 | parallel apply_recipe
