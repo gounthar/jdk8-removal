@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# set -x -o errexit -o nounset -o pipefail
+
 # Ensure jq is installed. jq is a command-line JSON processor.
 # We use it to parse the JSON response from the GitHub API.
 if ! [ -x "$(command -v jq)" ]; then
@@ -21,23 +23,39 @@ if [ -z "${GITHUB_TOKEN-}" ]; then
   exit 1
 fi
 
+# Define a variable for the CSV file
+csv_file="plugins_without_java_versions.csv"
+export csv_file
+
+# Function to write to the CSV file
+write_to_csv() {
+  repo=$1
+  # Format the repository name
+  formatted_repo=$(echo "$repo" | awk -F'/' '{print $2}' | tr '-' ' ' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}}1')
+  echo "Writing $formatted_repo to CSV file"
+  # Write to CSV file
+  echo "$formatted_repo,https://github.com/$repo" >> "$csv_file"
+  # Flush changes to disk
+  sync
+}
+
 # Function to check for Java versions in Jenkinsfile
 # This function takes a Jenkinsfile as a string and a repository name as arguments.
 # It checks if the Jenkinsfile contains the numbers 11, 17, or 21 (which represent Java versions).
 # If these numbers do not exist, it writes the repository name and URL to a CSV file.
+# Function to check for Java versions in Jenkinsfile
+# Function to check for Java versions in Jenkinsfile
 check_java_version_in_jenkinsfile() {
   jenkinsfile=$1
   repo=$2
   # Check if the jenkinsfile variable contains a valid Jenkinsfile
   if [[ "$jenkinsfile" != "404: Not Found"* ]] && [[ "$jenkinsfile" == *"buildPlugin("* ]]; then
-    if echo "$jenkinsfile" | grep -q -E '11|17|21'; then
+    if grep -q -E '11|17|21' <<< "$jenkinsfile"; then
       echo "The numbers 11, 17, or 21 were found in the Jenkinsfile"
     else
       echo "The numbers 11, 17, or 21 were not found in the Jenkinsfile"
       # Write to CSV file
-      echo "$repo,https://github.com/$repo" >> plugins_without_java_versions.csv
-      # Flush changes to disk
-      sync
+      write_to_csv "$repo"
     fi
   fi
 }
@@ -60,16 +78,17 @@ check_for_jenkinsfile() {
   if [[ "$jenkinsfile" != "404: Not Found"* ]]; then
     echo "Jenkinsfile found in $repo"
     # Check if the Java version numbers exist in the Jenkinsfile
-    check_java_version_in_jenkinsfile "$jenkinsfile" $repo
+    check_java_version_in_jenkinsfile "$jenkinsfile" "$repo"
   fi
 }
 
 # Export the functions so they can be used by parallel
+export -f write_to_csv
 export -f check_java_version_in_jenkinsfile
 export -f check_for_jenkinsfile
 
 # Create a CSV file and write the header
-echo "Plugin,URL" > plugins_without_java_versions.csv
+echo "Plugin,URL" > "$csv_file"
 
 # Fetch all repositories under the jenkinsci organization
 # We use a while loop to handle pagination in the GitHub API.
