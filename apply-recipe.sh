@@ -149,7 +149,7 @@ apply_recipe() {
       git checkout -b "jdk8-removal"
       mv ../modifications.patch .
       # Apply the patch file
-      git apply ../modifications.patch . && rm modifications.patch
+      git apply modifications.patch . && rm modifications.patch
       # Print the commit message in green
       info "Commit message: $commit_message"
       info "Committing changes"
