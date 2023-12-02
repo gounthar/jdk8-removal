@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# TODO: [ERROR] Recipe validation error in org.gounthar.jdk21-prerequisites.recipeList[0] (in file:/tmp/plugins/wsclean-plugin/wsclean-plugin/rewrite.yml): recipe 'org.openrewrite.jenkins.ModernizePluginForJava8' does not exist.
+
 # Ensure parallel is installed
 if ! [ -x "$(command -v parallel)" ]; then
   echo 'Error: parallel is not installed.' >&2
@@ -67,6 +69,10 @@ apply_recipe() {
   fi
   # Copy the rewrite.xml file from the script repository to the target repository
   cp "$script_dir/rewrite.yml" .
+  # Does not work
+  # Should try first: mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
+                        #  -Drewrite.recipeArtifactCoordinates=org.openrewrite.recipe:rewrite-jenkins:RELEASE \
+                        #  -Drewrite.activeRecipes=org.openrewrite.jenkins.ModernizePluginForJava8
   if mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.activeRecipes=org.gounthar.jdk21-prerequisites -Dmaven.test.skip=true; then
     echo "$repo,https://github.com/$repo" >> "$script_dir/$csv_file_compiles"
   else
