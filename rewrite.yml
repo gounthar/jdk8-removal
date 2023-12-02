@@ -1,0 +1,6 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: org.gounthar.jdk21-prerequisites
+displayName: jdk8-removal
+description: jdk8-removal
+recipeList:
+  - org.openrewrite.jenkins.ModernizePluginForJava8

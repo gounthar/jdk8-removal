@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# TODO: Adds another CSV file for all the repositories that don't have a Jenkinsfile at all...
+
 # set -x -o errexit -o nounset -o pipefail
 
 # Ensure jq is installed. jq is a command-line JSON processor.
@@ -23,9 +25,6 @@ if [ -z "${GITHUB_TOKEN-}" ]; then
   exit 1
 fi
 
-# Define a variable for the CSV file
-csv_file="plugins_without_java_versions.csv"
-export csv_file
 
 # Function to write to the CSV file
 write_to_csv() {
@@ -39,26 +38,10 @@ write_to_csv() {
   sync
 }
 
-# Function to check for Java versions in Jenkinsfile
-# This function takes a Jenkinsfile as a string and a repository name as arguments.
-# It checks if the Jenkinsfile contains the numbers 11, 17, or 21 (which represent Java versions).
-# If these numbers do not exist, it writes the repository name and URL to a CSV file.
-# Function to check for Java versions in Jenkinsfile
-# Function to check for Java versions in Jenkinsfile
-check_java_version_in_jenkinsfile() {
-  jenkinsfile=$1
-  repo=$2
-  # Check if the jenkinsfile variable contains a valid Jenkinsfile
-  if [[ "$jenkinsfile" != "404: Not Found"* ]] && [[ "$jenkinsfile" == *"buildPlugin("* ]]; then
-    if grep -q -E '11|17|21' <<< "$jenkinsfile"; then
-      echo "The numbers 11, 17, or 21 were found in the Jenkinsfile"
-    else
-      echo "The numbers 11, 17, or 21 were not found in the Jenkinsfile"
-      # Write to CSV file
-      write_to_csv "$repo"
-    fi
-  fi
-}
+# Source the config.sh file to import the csv_file variable
+source config.sh
+# Source the jenkinsfile_check.sh file
+source jenkinsfile_check.sh
 
 # Function to check for Jenkinsfile
 # This function takes a repository name as an argument.
@@ -79,11 +62,14 @@ check_for_jenkinsfile() {
     echo "Jenkinsfile found in $repo"
     # Check if the Java version numbers exist in the Jenkinsfile
     check_java_version_in_jenkinsfile "$jenkinsfile" "$repo"
+  else
+    echo "$repo,https://github.com/$repo" >> "$csv_file_no_jenkinsfile"
   fi
 }
 
 # Export the functions so they can be used by parallel
 export -f write_to_csv
+# Export the check_java_version_in_jenkinsfile function
 export -f check_java_version_in_jenkinsfile
 export -f check_for_jenkinsfile
 
