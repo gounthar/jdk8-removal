@@ -147,12 +147,11 @@ apply_recipe() {
       gh repo fork "$url" --clone=true --remote=true --remote-name fork --default-branch-only
       cd "$repo" || exit
       git checkout -b "jdk8-removal"
-      mv ../modifications.patch .
       # Apply the patch file
-      git apply modifications.patch . && rm modifications.patch
+      git apply ../modifications.patch . || exit
       # Print the commit message in green
       info "Commit message: $commit_message"
-      info "Committing changes"
+      info "Committing changes for $repo"
       # Commit the changes
       git add .
       git commit -m "$commit_message"
