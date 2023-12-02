@@ -136,19 +136,22 @@ apply_recipe() {
     if eval $maven_command; then
       # Print a message in green
       info "Maven command succeeded"
+      info "Will now create the diff"
+      # Create a patch file with all the modifications
+      git diff > ../modifications.patch
+      cd ..
+      info "Will delete the original repo locally"
+      rm -rf "$repo"
+      info "Will now fork and clone the fork"
       # Fork the repository and get the URL of the fork
-      gh repo fork "$url" --clone=false --remote=true --remote-name fork --default-branch-only
-      # Get the URL of your fork
-      fork_url=$(gh repo view --json cloneUrl --jq '.cloneUrl' ":owner/$repo")
-      # Print a message in green
-      info "Fork URL: $fork_url"
-      # Add the fork as a remote named 'fork'
-      git remote add fork "$fork_url"
+      gh repo fork "$url" --clone=true --remote=true --remote-name fork --default-branch-only
+      cd "$repo" || exit
       git checkout -b "jdk8-removal"
+      mv ../modifications.patch .
+      # Apply the patch file
+      git apply ../modifications.patch . && rm modifications.patch
       # Print the commit message in green
       info "Commit message: $commit_message"
-      rm rewrite.yml
-      # Print a message in green
       info "Committing changes"
       # Commit the changes
       git add .
@@ -156,7 +159,7 @@ apply_recipe() {
       # Print a message in green
       info "Pushing changes"
       # Push the changes
-      git push --set-upstream fork "jdk8-removal"
+      git push --set-upstream origin "jdk8-removal"
       # ...
       # git push
       # Print a message in green
