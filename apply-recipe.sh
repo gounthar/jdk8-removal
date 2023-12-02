@@ -137,7 +137,9 @@ apply_recipe() {
       # Print a message in green
       info "Maven command succeeded"
       # Fork the repository and get the URL of the fork
-      fork_url=$(gh repo fork "$url" --clone=false --remote=true --remote-name fork --default-branch-only )
+      gh repo fork "$url" --clone=false --remote=true --remote-name fork --default-branch-only
+      # Get the URL of your fork
+      fork_url=$(gh repo view --json cloneUrl --jq '.cloneUrl' ":owner/$repo")
       # Print a message in green
       info "Fork URL: $fork_url"
       # Add the fork as a remote named 'fork'
