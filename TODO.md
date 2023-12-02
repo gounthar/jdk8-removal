@@ -20,3 +20,4 @@
     * Whenever the script makes changes to a repository but fails (maven-wise), it would :
       * enter the information into the CSV file for the recipe.
     * When the script will be done with all the repositories and all the recipes, it will create a PR for each forked repository starting from the 'jdk8-removal' branch if and only if the maven command  `mvn -U -ntp verify -Dmaven.test.skip=true` is successful.
+* Delete rewrite.yml from the repositories where the script was successful before committing the changes. 

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -x
+#set -x
+
 # TODO: [ERROR] Recipe validation error in org.gounthar.jdk21-prerequisites.recipeList[0] (in file:/tmp/plugins/wsclean-plugin/wsclean-plugin/rewrite.yml): recipe 'org.openrewrite.jenkins.ModernizePluginForJava8' does not exist.
 
 source log-utils.sh
@@ -31,6 +32,12 @@ if [ -z "${JAVA_HOME-}" ]; then
     error "Error: java command not found. Cannot set JAVA_HOME." >&2
     exit 1
   fi
+fi
+
+# Check if the GITHUB_TOKEN environment variable is set
+if [ -z "${GITHUB_TOKEN-}" ]; then
+  error "Error: GITHUB_TOKEN environment variable is not set." >&2
+  exit 1
 fi
 
 # Source the config.sh file to import the csv_file variable
@@ -85,9 +92,15 @@ apply_recipe() {
     # If it doesn't, navigate into the /tmp/plugins subdirectory, clone the repository and navigate into the repository directory
     cd "$tmp_dir" || exit
     debug "Cloning $url"
-    debug "New Cloning would be https://$GITHUB_TOKEN:x-oauth-basic@github.com/$repo"
+    debug "New Cloning would be git clone https://${GITHUB_TOKEN}@${url#https://}"
     # git clone "$url"
-    git clone "https://$GITHUB_TOKEN:x-oauth-basic@github.com/$repo"
+    # Clone the repository from the URL stored in the `url` variable.
+    # The URL is constructed by inserting the GitHub token stored in the `GITHUB_TOKEN` environment variable into the original URL.
+    # The `${url#https://}` parameter expansion removes `https://` from the start of `$url`, ensuring that `https://` does not appear twice in the final URL.
+    git clone "https://${GITHUB_TOKEN}@${url#https://}"
+
+    # Navigate into the directory of the cloned repository.
+    # The `|| exit` part ensures that the script will stop if the `cd` command fails, for example, if the directory does not exist.
     cd "$repo" || exit
   fi
   # Copy the rewrite.xml file from the script repository to the target repository
@@ -123,9 +136,18 @@ apply_recipe() {
     if eval $maven_command; then
       # Print a message in green
       info "Maven command succeeded"
+      # Fork the repository, create a new branch, and push the changes
+      gh repo fork "$url" --clone=false --default-branch-only --remote=true
+      # Get the URL of your fork
+      fork_url=$(gh api repos/:owner/:repo --jq '.forks_url' | sed "s/{\/owner}//g")
+      # Print a message in green
+      info "Fork URL: $fork_url"
+      # Add the fork as a remote named 'fork'
+      git remote add fork "$fork_url"
+      git checkout -b "jdk8-removal"
       # Print the commit message in green
       info "Commit message: $commit_message"
-
+      rm rewrite.yml
       # Print a message in green
       info "Committing changes"
       # Commit the changes
@@ -134,7 +156,9 @@ apply_recipe() {
       # Print a message in green
       info "Pushing changes"
       # Push the changes
-      git push
+      git push --set-upstream fork "jdk8-removal"
+      # ...
+      # git push
       # Print a message in green
       info "Changes pushed"
       # Print a message in green
