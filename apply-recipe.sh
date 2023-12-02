@@ -148,7 +148,7 @@ apply_recipe() {
       cd "$repo" || exit
       git checkout -b "jdk8-removal"
       # Apply the patch file
-      git apply ../modifications.patch . || exit
+      git apply ../modifications.patch || exit
       # Print the commit message in green
       info "Commit message: $commit_message"
       info "Committing changes for $repo"
