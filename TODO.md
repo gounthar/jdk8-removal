@@ -20,4 +20,21 @@
     * Whenever the script makes changes to a repository but fails (maven-wise), it would :
       * enter the information into the CSV file for the recipe.
     * When the script will be done with all the repositories and all the recipes, it will create a PR for each forked repository starting from the 'jdk8-removal' branch if and only if the maven command  `mvn -U -ntp verify -Dmaven.test.skip=true` is successful.
-* Delete rewrite.yml from the repositories where the script was successful before committing the changes. 
+* Delete rewrite.yml from the repositories where the script was successful before committing the changes.
+* Removes the problem of git status:
+  * [INFO] Processing ivytrigger-plugin in /tmp/plugins/ivytrigger-plugin
+  * [DEBUG] ivytrigger-plugin in /tmp/plugins/ivytrigger-plugin already exists, pulling latest changes
+  * [ERROR] Cannot pull with rebase because there are unstaged changes. Please commit or stash them.
+  * Saved working directory and index state WIP on jdk8-removal: 20aefd7 Merge pull request #36 from
+  * jenkinsci/dependabot/maven/org.jenkins-ci.plugins-plugin-4.50
+  * [ERROR] Failed to pull the latest changes even after stashing. Exiting the script.
+  * error: cannot pull with rebase: You have unstaged changes.
+  * error: please commit or stash them.
+  * There is no tracking information for the current branch.
+  * Please specify which branch you want to rebase against.
+  * See git-pull(1) for details.
+  * git pull <remote> <branch>
+  * If you wish to set tracking information for this branch you can do so with:
+  * git branch --set-upstream-to=<remote>/<branch> jdk8-removal 
+* Once we've made the first fork creation/push, we'll have to detect for the next loop we're already in the fork, so no need to fork, no need to branch, just a git pull and a git push. 
+* Add a date to the file that lists plugins without a reference to JDK 17 11 or 21.

@@ -154,7 +154,7 @@ apply_recipe() {
       info "Committing changes for $repo"
       # Commit the changes
       git add .
-      git commit -m "$commit_message"
+      git commit -m $commit_message
       # Print a message in green
       info "Pushing changes"
       # Push the changes

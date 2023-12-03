@@ -1,12 +1,20 @@
 # config.sh
 
-# Define variables for the CSV files
-csv_file="plugins_without_java_versions.csv"
-csv_file_no_jenkinsfile="repos_without_jenkinsfile.csv"
-csv_file_compiles="repos_that_compile.csv"
-csv_file_does_not_compile="repos_that_dont_compile.csv"
-csv_file_recipe_list="recipes-to-apply.csv"
+# Get the current date in YYYY-MM-DD format
+# The `date` command is used with the `+"%Y-%m-%d"` option to format the date.
+current_date=$(date +"%Y-%m-%d")
 
+# Define variables for the CSV files
+# Each variable is assigned a string that includes the current date and the .csv extension.
+# The current date is included in the filename by appending `_$current_date` to the base filename.
+csv_file="plugins_without_java_versions_$current_date.csv"
+csv_file_no_jenkinsfile="repos_without_jenkinsfile_$current_date.csv"
+csv_file_compiles="repos_that_compile_$current_date.csv"
+csv_file_does_not_compile="repos_that_dont_compile_$current_date.csv"
+csv_file_recipe_list="recipes-to-apply_$current_date.csv"
+
+# Export the variables so they can be used by other scripts
+# The `export` command is used to make the variables available to child processes of this script.
 export csv_file
 export csv_file_no_jenkinsfile
 export csv_file_compiles
