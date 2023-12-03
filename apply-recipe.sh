@@ -174,6 +174,7 @@ apply_recipe() {
   cd ../..
   # Print a message in green
   info "Finished processing $repo"
+  rm -fr "$repo"
 }
 
 export -f apply_recipe
