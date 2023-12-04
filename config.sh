@@ -11,7 +11,7 @@ csv_file="plugins_without_java_versions_$current_date.csv"
 csv_file_no_jenkinsfile="repos_without_jenkinsfile_$current_date.csv"
 csv_file_compiles="repos_that_compile_$current_date.csv"
 csv_file_does_not_compile="repos_that_dont_compile_$current_date.csv"
-csv_file_recipe_list="recipes-to-apply_$current_date.csv"
+csv_file_recipe_list="recipes-to-apply.csv"
 
 # Export the variables so they can be used by other scripts
 # The `export` command is used to make the variables available to child processes of this script.

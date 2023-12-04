@@ -23,5 +23,15 @@ read_csv_file() {
   printf '%s\n' "${lines[@]}"
 }
 
+# Function to format the repository name
+# Arguments:
+#   repo: The name of the repository
+format_repo_name() {
+  repo=$1
+  # Format the repository name
+  formatted_repo=$(echo "$repo" | awk -F'/' '{print $2}' | tr '-' ' ' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}}1')
+  echo "$formatted_repo"
+}
+
 # Export the read_csv_file function, making it available to subshells and other scripts that source this script
-export -f read_csv_file
+export -f read_csv_file format_repo_name

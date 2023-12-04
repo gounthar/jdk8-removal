@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-#set -x
+set -x
 
 # TODO: [ERROR] Recipe validation error in org.gounthar.jdk21-prerequisites.recipeList[0] (in file:/tmp/plugins/wsclean-plugin/wsclean-plugin/rewrite.yml): recipe 'org.openrewrite.jenkins.ModernizePluginForJava8' does not exist.
 
 source log-utils.sh
+
+# Source the csv-utils.sh script
+source csv-utils.sh
 
 # Ensure parallel is installed
 if ! [ -x "$(command -v parallel)" ]; then
@@ -46,6 +49,8 @@ source config.sh
 # Source the csv-utils.sh script. This script contains utility functions for working with CSV files.
 source csv-utils.sh
 
+source git-utils.sh
+
 # Check if the CSV file exists
 if ! [ -f "$csv_file" ]; then
   error "Error: The file $csv_file does not exist." >&2
@@ -60,51 +65,23 @@ export script_dir
 
 # Function to clone a repo and run the Maven command
 apply_recipe() {
+  debug "First argument of the apply_recipe function: $1"
   url=$1
+  debug "url: $url"
+  # This line is using the basename command to extract the repository name from the URL.
+  # The basename command in Unix is often used to return the last component in a file path.
+  # In this case, it's being used to remove the .git extension from the URL of the Git repository.
+  # The result is stored in the repo variable.
   repo=$(basename "$url" .git)
+  debug "repo: $repo"
   # Create a subdirectory in /tmp/plugins for the repository
   tmp_dir="/tmp/plugins/$repo"
+  debug "tmp_dir: $tmp_dir"
   mkdir -p "$tmp_dir"
-  # Print a message in green
   info "Processing $repo in $tmp_dir"
-  # Check if the repository directory already exists in /tmp/plugins
-  if [ -d "$tmp_dir/$repo" ]; then
-    # If it does, navigate into the directory and pull the latest changes
-    debug "$repo in $tmp_dir already exists, pulling latest changes"
-    cd "$tmp_dir/$repo" || exit
-    # Try to pull the latest changes
-    if git pull; then
-      # If the pull is successful, continue with the script
-      info "Successfully pulled the latest changes"
-    else
-      # If the pull fails, print an error message and handle the error
-      error "Cannot pull with rebase because there are unstaged changes. Please commit or stash them."
-      # You can choose to exit the script, or you can stash the changes and try pulling again
-      git stash
-      if git pull; then
-        info "Successfully pulled the latest changes after stashing"
-      else
-        error "Failed to pull the latest changes even after stashing. Exiting the script."
-        exit 1
-      fi
-    fi
-  else
-    # If it doesn't, navigate into the /tmp/plugins subdirectory, clone the repository and navigate into the repository directory
-    cd "$tmp_dir" || exit
-    debug "Cloning $url"
-    debug "New Cloning would be git clone https://${GITHUB_TOKEN}@${url#https://}"
-    # git clone "$url"
-    # Clone the repository from the URL stored in the `url` variable.
-    # The URL is constructed by inserting the GitHub token stored in the `GITHUB_TOKEN` environment variable into the original URL.
-    # The `${url#https://}` parameter expansion removes `https://` from the start of `$url`, ensuring that `https://` does not appear twice in the final URL.
-    git clone "https://${GITHUB_TOKEN}@${url#https://}"
+  # Clone the repository
+  pull_and_set_upstream "$url" "$repo" "$tmp_dir"
 
-    # Navigate into the directory of the cloned repository.
-    # The `|| exit` part ensures that the script will stop if the `cd` command fails, for example, if the directory does not exist.
-    cd "$repo" || exit
-  fi
-  # Copy the rewrite.xml file from the script repository to the target repository
-  cp "$script_dir/rewrite.yml" .
   # Does not work
   # Should try first: mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
   #  -Drewrite.recipeArtifactCoordinates=org.openrewrite.recipe:rewrite-jenkins:RELEASE \
@@ -137,38 +114,16 @@ apply_recipe() {
       # Print a message in green
       info "Maven command succeeded"
       info "Will now create the diff"
-      # Create a patch file with all the modifications
-      git diff > ../modifications.patch
-      cd ..
-      info "Will delete the original repo locally"
-      rm -rf "$repo"
-      info "Will now fork and clone the fork"
-      # Fork the repository and get the URL of the fork
-      gh repo fork "$url" --clone=true --remote=true --remote-name fork --default-branch-only
-      cd "$repo" || exit
-      git checkout -b "jdk8-removal"
-      # Apply the patch file
-      git apply ../modifications.patch || exit
-      # Print the commit message in green
-      info "Commit message: $commit_message"
-      info "Committing changes for $repo"
-      # Commit the changes
-      git add .
-      git commit -m $commit_message
-      # Print a message in green
-      info "Pushing changes"
-      # Push the changes
-      git push --set-upstream origin "jdk8-removal"
-      # ...
-      # git push
-      # Print a message in green
-      info "Changes pushed"
+      apply_patch_and_push "$url" "$repo" "$commit_message"
+
       # Print a message in green
       info "Writing $repo to CSV file"
       # Write to CSV file
-      echo "$repo,https://github.com/$repo" >>"$script_dir/$csv_file_compiles"
+      # Format the repository name
+      formatted_repo=$(format_repo_name "$repo")
+      echo "$formatted_repo,https://github.com/$repo" >>"$script_dir/$csv_file_compiles"
     else
-      echo "$repo,https://github.com/$repo" >>"$script_dir/$csv_file_does_not_compile"
+      echo "$formatted_repo,https://github.com/$repo" >>"$script_dir/$csv_file_does_not_compile"
     fi
   done
   cd ../..
@@ -186,4 +141,15 @@ echo "Plugin,URL" >"$script_dir/$csv_file_does_not_compile"
 echo "Recipe Name,URL,Commit Message,Maven Command" >recipes.csv
 
 # Read the CSV file and pass each URL to the run_maven_command function
-tail -n +2 "$csv_file" | cut -d ',' -f 2 | parallel apply_recipe
+# The tail -n +2 "$csv_file" command reads the CSV file specified by the csv_file variable, skipping the first line.
+# This is typically used to skip the header line in a CSV file.
+# The grep -v '^$' command filters out empty lines.
+# The '^$' is a regular expression that matches lines that start (^) and end ($) with nothing in between, i.e., empty lines.
+# The -v option inverts the match, so grep -v '^$' will output only the lines that are not empty.
+# The cut -d ',' -f 2 command extracts the second field from each line.
+# The -d ',' option specifies the field delimiter, which is a comma in a CSV file.
+# The -f 2 option specifies the field number to extract.
+# The parallel apply_recipe command runs the apply_recipe function for each line of input.
+# The apply_recipe function is defined elsewhere in the script and performs the actual operations on the Git repository.
+# In summary, this line of code reads a CSV file, skips the header line, filters out empty lines, extracts the second field from each line, and applies a function to each extracted field in parallel.
+tail -n +2 "$csv_file" | grep -v '^$' | cut -d ',' -f 2 | parallel apply_recipe

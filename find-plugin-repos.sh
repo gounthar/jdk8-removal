@@ -2,6 +2,9 @@
 
 # TODO: Adds another CSV file for all the repositories that don't have a Jenkinsfile at all...
 
+# Source the csv-utils.sh script
+source csv-utils.sh
+
 # set -x -o errexit -o nounset -o pipefail
 
 # Ensure jq is installed. jq is a command-line JSON processor.
@@ -25,15 +28,14 @@ if [ -z "${GITHUB_TOKEN-}" ]; then
   exit 1
 fi
 
-
 # Function to write to the CSV file
 write_to_csv() {
   repo=$1
   # Format the repository name
-  formatted_repo=$(echo "$repo" | awk -F'/' '{print $2}' | tr '-' ' ' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}}1')
+  formatted_repo=$(format_repo_name "$repo")
   echo "Writing $formatted_repo to CSV file"
   # Write to CSV file
-  echo "$formatted_repo,https://github.com/$repo" >> "$csv_file"
+  echo "$formatted_repo,https://github.com/$repo" >>"$csv_file"
   # Flush changes to disk
   sync
 }
@@ -63,7 +65,9 @@ check_for_jenkinsfile() {
     # Check if the Java version numbers exist in the Jenkinsfile
     check_java_version_in_jenkinsfile "$jenkinsfile" "$repo"
   else
-    echo "$repo,https://github.com/$repo" >> "$csv_file_no_jenkinsfile"
+    # Format the repository name
+    formatted_repo=$(format_repo_name "$repo")
+    echo "$formatted_repo,https://github.com/$repo" >>"$csv_file_no_jenkinsfile"
   fi
 }
 
@@ -74,13 +78,14 @@ export -f check_java_version_in_jenkinsfile
 export -f check_for_jenkinsfile
 
 # Create a CSV file and write the header
-echo "Plugin,URL" > "$csv_file"
+echo "Plugin,URL" >"$csv_file"
+echo "Plugin,URL" >"$csv_file_no_jenkinsfile"
 
 # Fetch all repositories under the jenkinsci organization
 # We use a while loop to handle pagination in the GitHub API.
 # The GitHub API returns a maximum of 100 items per page, so if there are more than 100 repositories, we need to fetch multiple pages.
 page=1
-while : ; do
+while :; do
   # Fetch a page of repositories from the GitHub API
   response=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/orgs/jenkinsci/repos?per_page=100&page=$page")
   # Parse the JSON response to get the full names of the repositories
