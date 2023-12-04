@@ -89,7 +89,7 @@ apply_recipe() {
   #if mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.activeRecipes=org.gounthar.jdk21-prerequisites -Dmaven.test.skip=true; then
   # Call the function and capture the output in an array
   mapfile -t lines < <(read_csv_file)
-  # Loop over the array
+  # Loop over the recipes array
   for line in "${lines[@]}"; do
     # Split the line on the comma
     IFS=',' read -r -a array <<<"$line"
@@ -120,14 +120,14 @@ apply_recipe() {
       # Write to CSV file
       # Format the repository name
       # It does not work for the time being, as if the function could not be found
-      formatted_repo=$(format_repo_name "$repo")
+      formatted_repo=$(format_repo_name "$url")
       # Get the GitHub username of the current user
       username=$(gh api user | jq -r '.login')
-      # echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
-      echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
+      echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
+      # echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
     else
-      # echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
-      echo "$repo,https://github.com/jenkinsci/$repo" >>"$script_dir/$csv_file_does_not_compile"
+      echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
+      # echo "$repo,https://github.com/jenkinsci/$repo" >>"$script_dir/$csv_file_does_not_compile"
     fi
   done
   cd ../..
