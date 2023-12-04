@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
+# set -x
 
 # TODO: [ERROR] Recipe validation error in org.gounthar.jdk21-prerequisites.recipeList[0] (in file:/tmp/plugins/wsclean-plugin/wsclean-plugin/rewrite.yml): recipe 'org.openrewrite.jenkins.ModernizePluginForJava8' does not exist.
 
@@ -119,12 +119,15 @@ apply_recipe() {
       info "Writing $repo to CSV file"
       # Write to CSV file
       # Format the repository name
+      # It does not work for the time being, as if the function could not be found
       formatted_repo=$(format_repo_name "$repo")
       # Get the GitHub username of the current user
       username=$(gh api user | jq -r '.login')
-      echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
+      # echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
+      echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
     else
-      echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
+      # echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
+      echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
     fi
   done
   cd ../..
