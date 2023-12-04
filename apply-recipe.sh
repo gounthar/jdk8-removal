@@ -116,14 +116,15 @@ apply_recipe() {
       info "Will now create the diff"
       apply_patch_and_push "$url" "$repo" "$commit_message"
 
-      # Print a message in green
       info "Writing $repo to CSV file"
       # Write to CSV file
       # Format the repository name
       formatted_repo=$(format_repo_name "$repo")
-      echo "$formatted_repo,https://github.com/$repo" >>"$script_dir/$csv_file_compiles"
+      # Get the GitHub username of the current user
+      username=$(gh api user | jq -r '.login')
+      echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
     else
-      echo "$formatted_repo,https://github.com/$repo" >>"$script_dir/$csv_file_does_not_compile"
+      echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
     fi
   done
   cd ../..
