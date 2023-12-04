@@ -127,7 +127,7 @@ apply_recipe() {
       echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
     else
       # echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
-      echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
+      echo "$repo,https://github.com/jenkinsci/$repo" >>"$script_dir/$csv_file_does_not_compile"
     fi
   done
   cd ../..
