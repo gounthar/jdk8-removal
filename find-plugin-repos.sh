@@ -21,6 +21,7 @@ fi
 # We use it to parse the JSON response from the GitHub API.
 if ! [ -x "$(command -v jq)" ]; then
   error 'jq is not installed.'
+  info 'You can install it by running: sudo apt-get install jq (for Ubuntu/Debian) or brew install jq (for MacOS)'
   exit 1
 fi
 
