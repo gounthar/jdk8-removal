@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # TODO: Adds another CSV file for all the repositories that don't have a Jenkinsfile at all...
+mkdir -p reports
 
 # Source the csv-utils.sh script
 source csv-utils.sh
