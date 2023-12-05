@@ -9,6 +9,15 @@ source log-utils.sh
 # Source the csv-utils.sh script
 source csv-utils.sh
 
+# Check if the DEBUG_MODE environment variable is set
+if [ "$DEBUG_MODE" = "true" ]; then
+  # If DEBUG_MODE is set to true, print a debug message
+  debug "Debug mode is on."
+else
+  # If DEBUG_MODE is not set to true, print an info message
+  info "Debug mode is off. To turn it on, set the DEBUG_MODE environment variable to true."
+fi
+
 # Ensure parallel is installed
 if ! [ -x "$(command -v parallel)" ]; then
   error 'Error: parallel is not installed.' >&2
@@ -63,86 +72,167 @@ script_dir=$(realpath "$(dirname "$0")")
 info "The script is located in $script_dir"
 export script_dir
 
-# Function to clone a repo and run the Maven command
-apply_recipe() {
-  debug "First argument of the apply_recipe function: $1"
+write_to_csv_file() {
   url=$1
   debug "url: $url"
-  # This line is using the basename command to extract the repository name from the URL.
-  # The basename command in Unix is often used to return the last component in a file path.
-  # In this case, it's being used to remove the .git extension from the URL of the Git repository.
-  # The result is stored in the repo variable.
-  repo=$(basename "$url" .git)
-  debug "repo: $repo"
-  # Create a subdirectory in /tmp/plugins for the repository
-  tmp_dir="/tmp/plugins/$repo"
-  debug "tmp_dir: $tmp_dir"
-  mkdir -p "$tmp_dir"
-  info "Processing $repo in $tmp_dir"
-  # Clone the repository
-  pull_and_set_upstream "$url" "$repo" "$tmp_dir"
-
-  # Does not work
-  # Should try first: mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
-  #  -Drewrite.recipeArtifactCoordinates=org.openrewrite.recipe:rewrite-jenkins:RELEASE \
-  #  -Drewrite.activeRecipes=org.openrewrite.jenkins.ModernizePluginForJava8
-  #if mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.activeRecipes=org.gounthar.jdk21-prerequisites -Dmaven.test.skip=true; then
-  # Call the function and capture the output in an array
-  mapfile -t lines < <(read_csv_file)
-  # Loop over the array
-  for line in "${lines[@]}"; do
-    # Split the line on the comma
-    IFS=',' read -r -a array <<<"$line"
-    # Get the recipe name
-    recipe_name=${array[0]}
-    # Get the recipe URL
-    recipe_url=${array[1]}
-    # Get the commit message
-    commit_message=${array[2]}
-    # Get the Maven command and remove the double quotes
-    # ${array[3]//\"/} is a parameter expansion that replaces all occurrences of " in ${array[3]} with nothing, effectively removing the double quotes.
-    maven_command=${array[3]//\"/}
-    # Print the recipe name in green
-    info "Applying $recipe_name"
-    info "Its URL is $recipe_url"
-    # Print the Maven command in green
-    info "Maven command: $maven_command"
-    # Print a message in green
-    info "Running Maven command in $repo"
-    # Run the Maven command
-    if eval $maven_command; then
-      # Print a message in green
-      info "Maven command succeeded"
-      info "Will now create the diff"
-      apply_patch_and_push "$url" "$repo" "$commit_message"
-
-      info "Writing $repo to CSV file"
-      # Write to CSV file
-      # Format the repository name
-      # It does not work for the time being, as if the function could not be found
-      formatted_repo=$(format_repo_name "$repo")
-      # Get the GitHub username of the current user
-      username=$(gh api user | jq -r '.login')
-      # echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
-      echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_compiles"
-    else
-      # echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
-      echo "$repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file_does_not_compile"
-    fi
-  done
-  cd ../..
-  # Print a message in green
-  info "Finished processing $repo"
-  rm -fr "$repo"
+  repo=$2
+  csv_file=$3
+  formatted_repo=$(format_repo_name "$url")
+  debug "repo: $repo, repo dir: $tmp_dir/$repo"
+  debug "formatted_repo: $formatted_repo"
+  username=$(gh api user | jq -r '.login')
+  debug "username: $username"
+  echo "$formatted_repo,https://github.com/$username/$repo" >>"$script_dir/$csv_file"
 }
 
-export -f apply_recipe
+# Function to clone a repository and set up the upstream
+# This function takes three arguments: the URL of the repository, the name of the repository, and the path to a temporary directory.
+#
+# Args:
+#   url: The URL of the repository to clone.
+#   repo: The name of the repository to clone.
+#   tmp_dir: The path to the temporary directory where the repository will be cloned.
+#
+# The function first creates the temporary directory if it does not already exist.
+# It then prints an informational message about the repository it is processing.
+# Finally, it calls the `pull_and_set_upstream` function to clone the repository and set up the upstream.
+clone_and_setup_repo() {
+  url=$1
+  repo=$2
+  tmp_dir=$3
+  mkdir -p "$tmp_dir"
+  info "Processing $repo in $tmp_dir"
+  pull_and_set_upstream "$url" "$repo" "$tmp_dir"
+}
+
+# Function to run a Maven command on a repository
+# This function takes five arguments: the name of the recipe, the URL of the recipe, the Maven command to run, the URL of the repository, and the name of the repository.
+#
+# Args:
+#   recipe_name: The name of the recipe to apply.
+#   recipe_url: The URL of the recipe to apply.
+#   maven_command: The Maven command to run.
+#   url: The URL of the repository to process.
+#   repo: The name of the repository to process.
+#
+# The function first prints some information about the operation it is about to perform.
+# It then runs the Maven command. If the command succeeds, it applies a patch and pushes the changes to the repository, and writes the repository information to a CSV file.
+# If the command fails, it writes the repository information to a different CSV file.
+run_maven_command() {
+  # Store the arguments in variables
+  recipe_name=$1
+  recipe_url=$2
+  maven_command=$3
+  url=$4
+  repo=$5
+
+  # Print some information about the operation
+  info "Applying $recipe_name"
+  info "Its URL is $recipe_url"
+  info "Maven command: $maven_command"
+  info "Running Maven command in $repo"
+
+  # Run the Maven command
+  if eval $maven_command; then
+    # If the command succeeds, print a success message, apply a patch, push the changes, and write to a CSV file
+    info "Maven command succeeded"
+    info "Will now create the diff"
+    apply_patch_and_push "$url" "$repo" "$commit_message"
+    write_to_csv_file "$url" "$repo" "$csv_file_compiles"
+  else
+    # If the command fails, write to a different CSV file
+    write_to_csv_file "$url" "$repo" "$csv_file_does_not_compile"
+  fi
+}
+
+# Function to process a CSV file
+# This function reads a CSV file line by line, splits each line into an array of fields, and then runs a Maven command on a repository.
+#
+# The function first calls the `read_csv_file` function to read the CSV file and store the lines in an array.
+# It then loops over each line in the array. For each line, it splits the line into an array of fields using the comma as the delimiter.
+# It stores the first four fields in the `recipe_name`, `recipe_url`, `commit_message`, and `maven_command` variables, respectively.
+# It then calls the `run_maven_command` function, passing the `recipe_name`, `recipe_url`, `maven_command`, `url`, and `repo` variables as arguments.
+process_csv_file() {
+  # Read the CSV file and store the lines in an array
+  mapfile -t lines < <(read_csv_file)
+  num_lines=${#lines[@]}
+  debug "Found $num_lines recipes"
+  # Loop over each line in the array
+  for line in "${lines[@]}"; do
+    # Split the line into an array of fields using the comma as the delimiter
+    IFS=',' read -r -a array <<<"$line"
+
+    # Store the first four fields in the `recipe_name`, `recipe_url`, `commit_message`, and `maven_command` variables, respectively
+    recipe_name=${array[0]}
+    recipe_url=${array[1]}
+    commit_message=${array[2]}
+    maven_command=${array[3]//\"/}
+
+    # Call the `run_maven_command` function, passing the `recipe_name`, `recipe_url`, `maven_command`, `url`, and `repo` variables as arguments
+    info "Processing $recipe_name"
+    run_maven_command "$recipe_name recipe" "$recipe_url" "$maven_command" "$url" "$repo"
+    info "Finished processing $recipe_name recipe"
+  done
+}
+
+# Function to clone a repo and run the Maven command
+# This function takes a URL as an argument, clones the repository at that URL,
+# and then applies a recipe to it.
+#
+# Args:
+#   url: The URL of the repository to clone and process.
+#
+# The function first extracts the repository name from the URL and creates a temporary directory for it.
+# It then calls the `clone_and_setup_repo` function to clone the repository and set up the upstream.
+# After that, it calls the `process_csv_file` function to read and process the CSV file.
+# Once the processing is done, it changes the directory back to the parent directory and removes the temporary directory.
+apply_recipe() {
+  # Print a debug message with the first argument of the function
+  debug "First argument of the apply_recipe function: $1"
+
+  # Store the first argument in the `url` variable
+  url=$1
+
+  # Print a debug message with the URL
+  debug "url: $url"
+
+  # Extract the repository name from the URL and store it in the `repo` variable
+  repo=$(basename "$url" .git)
+
+  # Print a debug message with the repository name
+  debug "repo: $repo"
+
+  # Create a temporary directory for the repository and store its path in the `tmp_dir` variable
+  tmp_dir="/tmp/plugins/$repo"
+
+  # Print a debug message with the path of the temporary directory
+  debug "tmp_dir: $tmp_dir"
+
+  # Call the `clone_and_setup_repo` function to clone the repository and set up the upstream
+  clone_and_setup_repo "$url" "$repo" "$tmp_dir"
+
+  # Call the `process_csv_file` function to read and process the CSV file
+  process_csv_file
+
+  # Change the directory back to the parent directory
+  cd ../..
+
+  # Print an info message indicating that the processing of the repository is finished
+  info "Finished processing $repo"
+
+  # Remove the temporary directory
+  # rm -fr "$repo"
+}
+
+export -f apply_recipe clone_and_setup_repo process_csv_file run_maven_command write_to_csv_file
 
 # Create a CSV file and write the header
 echo "Plugin,URL" >"$script_dir/$csv_file_compiles"
 echo "Plugin,URL" >"$script_dir/$csv_file_does_not_compile"
 # Create a CSV file and write the header
 echo "Recipe Name,URL,Commit Message,Maven Command" >recipes.csv
+
+mkdir -p "/tmp/plugins"
 
 # Read the CSV file and pass each URL to the run_maven_command function
 # The tail -n +2 "$csv_file" command reads the CSV file specified by the csv_file variable, skipping the first line.

@@ -39,25 +39,33 @@ pull_and_set_upstream() {
   # If the pull fails
   if [ $? -ne 0 ]; then
     # Stash any changes
+    debug "Pull failed, stashing any changes"
     git stash
     # Try to pull again and capture the output
     pull_output=$(git pull 2>&1)
     # If the pull fails again
     if [ $? -ne 0 ]; then
+      debug "Pull failed again, checking if the 'jdk8-removal' branch exists on the remote repository"
       # If the 'jdk8-removal' branch exists on the remote repository
       if git ls-remote --heads origin jdk8-removal; then
+        debug "'jdk8-removal' branch exists on the remote repository"
         # Set the upstream branch to 'jdk8-removal'
         git branch --set-upstream-to=origin/jdk8-removal
       else
+        debug "'jdk8-removal' branch does not exist on the remote repository"
         # If the 'jdk8-removal' branch does not exist on the remote repository
         # Create the 'jdk8-removal' branch locally
+        debug "Creating the 'jdk8-removal' branch locally"
         git checkout -b jdk8-removal
         # Push the 'jdk8-removal' branch to the remote repository
+        debug "Pushing the 'jdk8-removal' branch to the remote repository"
         git push origin jdk8-removal
         # Set the upstream branch to 'jdk8-removal'
+        debug "Setting the upstream branch to 'jdk8-removal'"
         git branch --set-upstream-to=origin/jdk8-removal
       fi
       # Try to pull again and capture the output
+      debug "Pulling again"
       pull_output=$(git pull 2>&1)
     fi
   fi
@@ -118,7 +126,16 @@ apply_patch_and_push() {
     debug "Pulled the latest changes from the 'jdk8-removal' branch"
   fi
   # Apply the patch file to the repository
-  git apply --allow-empty ../modifications.patch || exit
+  if git apply --check --allow-empty ../modifications.patch; then
+    # If the patch file is not empty, try to apply it
+    if ! git apply --allow-empty ../modifications.patch; then
+      # If the patch cannot be applied, print an error message
+      error "Failed to apply patch. The patch may not be applicable to the current state of the repository."
+    fi
+  else
+    # If the patch file is empty, print a warning message
+    warning "Patch file is empty. No changes to apply."
+  fi
   # Print the commit message
   info "Commit message: $commit_message"
   # Print a message indicating that changes are being committed
@@ -139,6 +156,7 @@ apply_patch_and_push() {
   # Print a message indicating that the changes have been pushed
   info "Changes pushed"
 }
+
 export -f apply_patch_and_push
 # Export the function for use in other scripts
 export -f pull_and_set_upstream
