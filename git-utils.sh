@@ -143,8 +143,21 @@ apply_patch_and_push() {
   # Stage all changes for commit
   git add .
   # Commit the changes with the provided commit message
-  git commit -m "$commit_message"
+  # Check if the commit message is not empty
+  if [ -n "$commit_message" ]; then
+    # Remove the enclosing quotes from the commit message
+    # This is done in two steps:
+    # 1. commit_message=${commit_message%\"} removes the trailing quote from the commit message
+    # 2. commit_message=${commit_message#\"} removes the leading quote from the commit message
+    commit_message=${commit_message%\"}
+    commit_message=${commit_message#\"}
 
+    # Commit the changes with the provided commit message
+    git commit -m "$commit_message"
+  else
+    # If the commit message is empty, print a warning message
+    warning "Commit message is empty. Skipping commit."
+  fi
   # Get the list of remote repositories and print a debug message
   remote_output=$(git remote -v 2>&1)
   debug "remote_output: $remote_output"
