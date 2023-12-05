@@ -125,12 +125,17 @@ run_maven_command() {
   maven_command=$3
   url=$4
   repo=$5
+  csv_file=$6
 
   # Print some information about the operation
   info "Applying $recipe_name"
   info "Its URL is $recipe_url"
   info "Maven command: $maven_command"
   info "Running Maven command in $repo"
+
+  # Get the current date in YYYY-MM-DD format
+  # The `date` command is used with the `+"%Y-%m-%d"` option to format the date.
+  current_date=$(date +"%Y-%m-%d")
 
   # Run the Maven command
   if eval $maven_command; then
@@ -139,6 +144,13 @@ run_maven_command() {
     info "Will now create the diff"
     apply_patch_and_push "$url" "$repo" "$commit_message"
     write_to_csv_file "$url" "$repo" "$csv_file_compiles"
+    patch_exists="false"
+    # Check if the modifications.patch file exists and is not empty
+    if [ -s "../modifications.patch" ]; then
+      # If the file exists and is not empty, set the variable to "true"
+      patch_exists="true"
+    fi
+    echo "$recipe_name,$current_date,$patch_exists" >>"$repo_log_file"
   else
     # If the command fails, write to a different CSV file
     write_to_csv_file "$url" "$repo" "$csv_file_does_not_compile"
@@ -157,6 +169,17 @@ process_csv_file() {
   mapfile -t lines < <(read_csv_file)
   num_lines=${#lines[@]}
   debug "Found $num_lines recipes"
+
+  # Now let's tackle the log creation for the current recipe
+  # Create a CSV file and write the header
+  repo_log_dir="$script_dir/reports/recipes"
+  mkdir -p "$repo_log_dir"
+  repo_log_file="$repo_log_dir/$repo.csv"
+  # Check if the file exists
+  if [ ! -f "$repo_log_file" ]; then
+    # If the file does not exist, create it and write the header
+    echo "Recipe,Date,Change" >"$repo_log_file"
+  fi
   # Loop over each line in the array
   for line in "${lines[@]}"; do
     # Split the line into an array of fields using the comma as the delimiter
@@ -170,7 +193,7 @@ process_csv_file() {
 
     # Call the `run_maven_command` function, passing the `recipe_name`, `recipe_url`, `maven_command`, `url`, and `repo` variables as arguments
     info "Processing $recipe_name"
-    run_maven_command "$recipe_name recipe" "$recipe_url" "$maven_command" "$url" "$repo"
+    run_maven_command "$recipe_name recipe" "$recipe_url" "$maven_command" "$url" "$repo" "$repo_log_file"
     info "Finished processing $recipe_name recipe"
   done
 }
@@ -221,7 +244,7 @@ apply_recipe() {
   info "Finished processing $repo"
 
   # Remove the temporary directory
-  # rm -fr "$repo"
+  rm -fr "$repo"
 }
 
 export -f apply_recipe clone_and_setup_repo process_csv_file run_maven_command write_to_csv_file
