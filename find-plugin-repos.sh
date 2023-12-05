@@ -29,6 +29,7 @@ fi
 # We use it to process multiple repositories concurrently.
 if ! [ -x "$(command -v parallel)" ]; then
   error 'parallel is not installed.'
+  info 'You can install it by running: sudo apt-get install parallel (for Ubuntu/Debian) or brew install parallel (for MacOS)'
   exit 1
 fi
 
