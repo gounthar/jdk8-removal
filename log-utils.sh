@@ -20,14 +20,17 @@ success() {
 
 # Function to print error messages in red
 error() {
-  echo -e "\033[0;31m[ERROR] $1\033[0m"
+  echo -e "\033[0;31m[ERROR] $1\033[0m" >&2
   sync
 }
 
 # Function to print debug messages in purple
+# Only prints messages if the DEBUG_MODE environment variable is set to true
 debug() {
-  echo -e "\033[0;35m[DEBUG] $1\033[0m"
-  sync
+  if [ "$DEBUG_MODE" = "true" ]; then
+    echo -e "\033[0;35m[DEBUG] $1\033[0m"
+    sync
+  fi
 }
 
 export -f info warning success error debug

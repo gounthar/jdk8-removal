@@ -5,26 +5,36 @@
 # Source the csv-utils.sh script
 source csv-utils.sh
 
+source log-utils.sh
+
+# Check if the DEBUG_MODE environment variable is set
+if [ "$DEBUG_MODE" = "true" ]; then
+  # If DEBUG_MODE is set to true, print a debug message
+  debug "Debug mode is on."
+else
+  # If DEBUG_MODE is not set to true, print an info message
+  info "Debug mode is off. To turn it on, set the DEBUG_MODE environment variable to true."
+fi
 # set -x -o errexit -o nounset -o pipefail
 
 # Ensure jq is installed. jq is a command-line JSON processor.
 # We use it to parse the JSON response from the GitHub API.
 if ! [ -x "$(command -v jq)" ]; then
-  echo 'Error: jq is not installed.' >&2
+  error 'jq is not installed.'
   exit 1
 fi
 
 # Ensure parallel is installed. parallel is a shell tool for executing jobs in parallel.
 # We use it to process multiple repositories concurrently.
 if ! [ -x "$(command -v parallel)" ]; then
-  echo 'Error: parallel is not installed.' >&2
+  error 'parallel is not installed.'
   exit 1
 fi
 
 # Ensure GITHUB_TOKEN is set. GITHUB_TOKEN is a GitHub Personal Access Token that we use to authenticate with the GitHub API.
 # You need to generate this token in your GitHub account settings and set it as an environment variable before running this script.
 if [ -z "${GITHUB_TOKEN-}" ]; then
-  echo 'Error: the GITHUB_TOKEN env var is not set.' >&2
+  error 'The GITHUB_TOKEN env var is not set.'
   exit 1
 fi
 
@@ -33,7 +43,7 @@ write_to_csv() {
   repo=$1
   # Format the repository name
   formatted_repo=$(format_repo_name "$repo")
-  echo "Writing $formatted_repo to CSV file"
+  info "Writing $formatted_repo to CSV file"
   # Write to CSV file
   echo "$formatted_repo,https://github.com/$repo" >>"$csv_file"
   # Flush changes to disk
@@ -61,7 +71,7 @@ check_for_jenkinsfile() {
 
   # Check if the curl command was successful
   if [[ "$jenkinsfile" != "404: Not Found"* ]]; then
-    echo "Jenkinsfile found in $repo"
+    info "Jenkinsfile found in $repo"
     # Check if the Java version numbers exist in the Jenkinsfile
     check_java_version_in_jenkinsfile "$jenkinsfile" "$repo"
   else

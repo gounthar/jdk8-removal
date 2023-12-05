@@ -26,10 +26,24 @@ read_csv_file() {
 # Function to format the repository name
 # Arguments:
 #   repo: The name of the repository
-format_repo_name() {
+format_repo_name_old() {
   repo=$1
+  debug "format_repo_name function called with repo: $repo"
   # Format the repository name
   formatted_repo=$(echo "$repo" | awk -F'/' '{print $2}' | tr '-' ' ' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}}1')
+    debug "format_repo_name function will then return: $formatted_repo"
+  echo "$formatted_repo"
+}
+
+format_repo_name() {
+  url=$1
+  # debug "format_repo_name function called with url: $url"
+  # Extract the repository name from the URL
+  repo=$(basename "$url" .git)
+  # debug "Extracted repo: $repo"
+  # Format the repository name
+  formatted_repo=$(echo "$repo" | tr '-' ' ' | awk '{for(i=1;i<=NF;i++){$i=toupper(substr($i,1,1)) substr($i,2)}}1')
+  # debug "format_repo_name function will then return: $formatted_repo"
   echo "$formatted_repo"
 }
 

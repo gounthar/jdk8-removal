@@ -7,10 +7,10 @@ current_date=$(date +"%Y-%m-%d")
 # Define variables for the CSV files
 # Each variable is assigned a string that includes the current date and the .csv extension.
 # The current date is included in the filename by appending `_$current_date` to the base filename.
-csv_file="plugins_without_java_versions_$current_date.csv"
-csv_file_no_jenkinsfile="repos_without_jenkinsfile_$current_date.csv"
-csv_file_compiles="repos_that_compile_$current_date.csv"
-csv_file_does_not_compile="repos_that_dont_compile_$current_date.csv"
+csv_file="reports/plugins_without_java_versions_$current_date.csv"
+csv_file_no_jenkinsfile="reports/repos_without_jenkinsfile_$current_date.csv"
+csv_file_compiles="reports/repos_where_recipes_work_$current_date.csv"
+csv_file_does_not_compile="reports/repos_where_recipes_dont_work_$current_date.csv"
 csv_file_recipe_list="recipes-to-apply.csv"
 
 # Export the variables so they can be used by other scripts
