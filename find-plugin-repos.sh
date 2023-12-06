@@ -8,38 +8,8 @@ source csv-utils.sh
 
 source log-utils.sh
 
-# Check if the DEBUG_MODE environment variable is set
-if [ "$DEBUG_MODE" = "true" ]; then
-  # If DEBUG_MODE is set to true, print a debug message
-  debug "Debug mode is on."
-else
-  # If DEBUG_MODE is not set to true, print an info message
-  info "Debug mode is off. To turn it on, set the DEBUG_MODE environment variable to true."
-fi
-# set -x -o errexit -o nounset -o pipefail
-
-# Ensure jq is installed. jq is a command-line JSON processor.
-# We use it to parse the JSON response from the GitHub API.
-if ! [ -x "$(command -v jq)" ]; then
-  error 'jq is not installed.'
-  info 'You can install it by running: sudo apt-get install jq (for Ubuntu/Debian) or brew install jq (for MacOS)'
-  exit 1
-fi
-
-# Ensure parallel is installed. parallel is a shell tool for executing jobs in parallel.
-# We use it to process multiple repositories concurrently.
-if ! [ -x "$(command -v parallel)" ]; then
-  error 'parallel is not installed.'
-  info 'You can install it by running: sudo apt-get install parallel (for Ubuntu/Debian) or brew install parallel (for MacOS)'
-  exit 1
-fi
-
-# Ensure GITHUB_TOKEN is set. GITHUB_TOKEN is a GitHub Personal Access Token that we use to authenticate with the GitHub API.
-# You need to generate this token in your GitHub account settings and set it as an environment variable before running this script.
-if [ -z "${GITHUB_TOKEN-}" ]; then
-  error 'The GITHUB_TOKEN env var is not set.'
-  exit 1
-fi
+# Source the check-env.sh script
+source check-env.sh
 
 # Function to write to the CSV file
 write_to_csv() {

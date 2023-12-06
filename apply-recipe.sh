@@ -9,49 +9,6 @@ source log-utils.sh
 # Source the csv-utils.sh script
 source csv-utils.sh
 
-# Check if the DEBUG_MODE environment variable is set
-if [ "$DEBUG_MODE" = "true" ]; then
-  # If DEBUG_MODE is set to true, print a debug message
-  debug "Debug mode is on."
-else
-  # If DEBUG_MODE is not set to true, print an info message
-  info "Debug mode is off. To turn it on, set the DEBUG_MODE environment variable to true."
-fi
-
-# Ensure parallel is installed
-if ! [ -x "$(command -v parallel)" ]; then
-  error 'Error: parallel is not installed.' >&2
-  exit 1
-fi
-
-# Ensure mvn is installed
-if ! [ -x "$(command -v mvn)" ]; then
-  error 'Error: mvn is not installed.' >&2
-  exit 1
-fi
-
-# Ensure JAVA_HOME is set
-if [ -z "${JAVA_HOME-}" ]; then
-  # Print a warning message in yellow
-  warning "Warning: JAVA_HOME environment variable is not set." >&2
-  # Try to infer JAVA_HOME from java command path
-  if command -v java >/dev/null; then
-    export JAVA_HOME=$(dirname "$(dirname "$(readlink -f "$(command -v java)")")")
-    # Print a success message in green
-    success "JAVA_HOME set to $JAVA_HOME"
-  else
-    # Print an error message in red
-    error "Error: java command not found. Cannot set JAVA_HOME." >&2
-    exit 1
-  fi
-fi
-
-# Check if the GITHUB_TOKEN environment variable is set
-if [ -z "${GITHUB_TOKEN-}" ]; then
-  error "Error: GITHUB_TOKEN environment variable is not set." >&2
-  exit 1
-fi
-
 # Source the config.sh file to import the csv_file variable
 source config.sh
 
@@ -59,6 +16,9 @@ source config.sh
 source csv-utils.sh
 
 source git-utils.sh
+
+# Source the check-env.sh script
+source check-env.sh
 
 # Check if the CSV file exists
 if ! [ -f "$csv_file" ]; then
