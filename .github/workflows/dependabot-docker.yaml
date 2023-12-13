@@ -1,0 +1,27 @@
+name: Dependabot Docker
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at 00:00
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Dependabot
+        uses: dependabot/dependabot-core/main@main
+        with:
+          package-manager: "docker"
+          directory: "/"
+          versioning-strategy: "lockfile-only"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update Docker dependencies
+          title: Update Docker dependencies
+          labels: dependencies,github-actions
+          branch: dependabot/docker
