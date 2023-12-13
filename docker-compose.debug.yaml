@@ -1,0 +1,15 @@
+services:
+  apply-recipe-alone:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./reports:/scripts/reports
+    env_file:
+      - .env
+    command: ["tail", "-f", "/dev/null"]  # Keeps the container running
+    healthcheck:
+      test: ["CMD", "/scripts/apply-recipes-only-healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 300

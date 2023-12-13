@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# set -x
+set -x
 
 # TODO: [ERROR] Recipe validation error in org.gounthar.jdk21-prerequisites.recipeList[0] (in file:/tmp/plugins/wsclean-plugin/wsclean-plugin/rewrite.yml): recipe 'org.openrewrite.jenkins.ModernizePluginForJava8' does not exist.
 
@@ -213,7 +213,7 @@ export -f apply_recipe clone_and_setup_repo process_csv_file run_maven_command w
 echo "Plugin,URL" >"$script_dir/$csv_file_compiles"
 echo "Plugin,URL" >"$script_dir/$csv_file_does_not_compile"
 # Create a CSV file and write the header
-echo "Recipe Name,URL,Commit Message,Maven Command" >recipes.csv
+echo "Recipe Name,URL,Commit Message,Maven Command" >"$script_dir/recipes.csv"
 
 mkdir -p "/tmp/plugins"
 
@@ -229,4 +229,5 @@ mkdir -p "/tmp/plugins"
 # The parallel apply_recipe command runs the apply_recipe function for each line of input.
 # The apply_recipe function is defined elsewhere in the script and performs the actual operations on the Git repository.
 # In summary, this line of code reads a CSV file, skips the header line, filters out empty lines, extracts the second field from each line, and applies a function to each extracted field in parallel.
-tail -n +2 "$csv_file" | grep -v '^$' | cut -d ',' -f 2 | parallel apply_recipe
+# tail -n +2 "$csv_file" | grep -v '^$' | cut -d ',' -f 2 | parallel apply_recipe
+tail -n +2 "$csv_file" | grep -v '^$' | cut -d ',' -f 2 | while read -r url; do apply_recipe "$url"; done

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # TODO: Adds another CSV file for all the repositories that don't have a Jenkinsfile at all...
-mkdir -p reports
+mkdir -p ./reports
 
 # Source the csv-utils.sh script
 source csv-utils.sh
@@ -10,6 +10,17 @@ source log-utils.sh
 
 # Source the check-env.sh script
 source check-env.sh
+
+# Source the config.sh file to import the csv_file variable
+source config.sh
+# Check if the file already exists
+if [ -f "/reports/$csv_file" ]; then
+    echo "$csv_file already exists. Exiting script."
+    exit 0
+fi
+
+# This file is used as a healthcheck for the docker container.
+rm -f "$repos_retrieved_file"
 
 # Function to write to the CSV file
 write_to_csv() {
@@ -23,8 +34,6 @@ write_to_csv() {
   sync
 }
 
-# Source the config.sh file to import the csv_file variable
-source config.sh
 # Source the jenkinsfile_check.sh file
 source jenkinsfile_check.sh
 
@@ -82,3 +91,7 @@ while :; do
   # Increment the page number for the next iteration
   ((page++))
 done
+
+# Flush changes to disk
+sync
+echo "Done!" >$repos_retrieved_file

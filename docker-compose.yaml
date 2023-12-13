@@ -1,0 +1,50 @@
+services:
+  find-plugin-repos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./reports:/scripts/reports
+    env_file:
+      - .env
+    command: ["./find-plugin-repos.sh"]
+    healthcheck:
+      test: [ "CMD", "/scripts/find-plugin-repos-healthcheck.sh" ]
+      interval: 5s
+      timeout: 10s
+      retries: 300
+
+  apply-recipe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./reports:/scripts/reports
+    env_file:
+      - .env
+    depends_on:
+      find-plugin-repos:
+        condition: service_completed_successfully  # Depends on the successful completion of the find-plugin-repos service above
+    command: ["./apply-recipe.sh"]
+    healthcheck:
+      test: ["CMD", "/scripts/apply-recipes-healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 300
+
+  apply-recipe-alone:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    profiles:
+      - recipes
+    volumes:
+      - ./reports:/scripts/reports
+    env_file:
+      - .env
+    command: ["./apply-recipe.sh"]
+    healthcheck:
+      test: ["CMD", "/scripts/apply-recipes-only-healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 300
