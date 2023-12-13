@@ -1,42 +1,26 @@
 #!/usr/bin/env bash
 
 # TODO: Adds another CSV file for all the repositories that don't have a Jenkinsfile at all...
+mkdir -p ./reports
 
 # Source the csv-utils.sh script
 source csv-utils.sh
 
 source log-utils.sh
 
-# Check if the DEBUG_MODE environment variable is set
-if [ "$DEBUG_MODE" = "true" ]; then
-  # If DEBUG_MODE is set to true, print a debug message
-  debug "Debug mode is on."
-else
-  # If DEBUG_MODE is not set to true, print an info message
-  info "Debug mode is off. To turn it on, set the DEBUG_MODE environment variable to true."
-fi
-# set -x -o errexit -o nounset -o pipefail
+# Source the check-env.sh script
+source check-env.sh
 
-# Ensure jq is installed. jq is a command-line JSON processor.
-# We use it to parse the JSON response from the GitHub API.
-if ! [ -x "$(command -v jq)" ]; then
-  error 'jq is not installed.'
-  exit 1
+# Source the config.sh file to import the csv_file variable
+source config.sh
+# Check if the file already exists
+if [ -f "/reports/$csv_file" ]; then
+    echo "$csv_file already exists. Exiting script."
+    exit 0
 fi
 
-# Ensure parallel is installed. parallel is a shell tool for executing jobs in parallel.
-# We use it to process multiple repositories concurrently.
-if ! [ -x "$(command -v parallel)" ]; then
-  error 'parallel is not installed.'
-  exit 1
-fi
-
-# Ensure GITHUB_TOKEN is set. GITHUB_TOKEN is a GitHub Personal Access Token that we use to authenticate with the GitHub API.
-# You need to generate this token in your GitHub account settings and set it as an environment variable before running this script.
-if [ -z "${GITHUB_TOKEN-}" ]; then
-  error 'The GITHUB_TOKEN env var is not set.'
-  exit 1
-fi
+# This file is used as a healthcheck for the docker container.
+rm -f "$repos_retrieved_file"
 
 # Function to write to the CSV file
 write_to_csv() {
@@ -50,8 +34,6 @@ write_to_csv() {
   sync
 }
 
-# Source the config.sh file to import the csv_file variable
-source config.sh
 # Source the jenkinsfile_check.sh file
 source jenkinsfile_check.sh
 
@@ -109,3 +91,7 @@ while :; do
   # Increment the page number for the next iteration
   ((page++))
 done
+
+# Flush changes to disk
+sync
+echo "Done!" >$repos_retrieved_file

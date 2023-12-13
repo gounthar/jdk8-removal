@@ -11,7 +11,10 @@ csv_file="reports/plugins_without_java_versions_$current_date.csv"
 csv_file_no_jenkinsfile="reports/repos_without_jenkinsfile_$current_date.csv"
 csv_file_compiles="reports/repos_where_recipes_work_$current_date.csv"
 csv_file_does_not_compile="reports/repos_where_recipes_dont_work_$current_date.csv"
-csv_file_recipe_list="recipes-to-apply.csv"
+csv_file_recipe_list="/datas/recipes-to-apply.csv"
+# The presence of this file will be used to determine whether the repositories have already been retrieved.
+# Useful in the docker compose heakthcheck.
+repos_retrieved_file="reports/repos-retrieved.txt"
 
 # Export the variables so they can be used by other scripts
 # The `export` command is used to make the variables available to child processes of this script.
@@ -20,3 +23,4 @@ export csv_file_no_jenkinsfile
 export csv_file_compiles
 export csv_file_does_not_compile
 export csv_file_recipe_list
+export repos_retrieved_file

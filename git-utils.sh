@@ -143,13 +143,33 @@ apply_patch_and_push() {
   # Stage all changes for commit
   git add .
   # Commit the changes with the provided commit message
-  git commit -m "$commit_message"
+  # Check if the commit message is not empty
+  if [ -n "$commit_message" ]; then
+    # Remove the enclosing quotes from the commit message
+    # This is done in two steps:
+    # 1. commit_message=${commit_message%\"} removes the trailing quote from the commit message
+    # 2. commit_message=${commit_message#\"} removes the leading quote from the commit message
+    commit_message=${commit_message%\"}
+    commit_message=${commit_message#\"}
 
+    # Commit the changes with the provided commit message
+    git commit -m "$commit_message"
+  else
+    # If the commit message is empty, print a warning message
+    warning "Commit message is empty. Skipping commit."
+  fi
   # Get the list of remote repositories and print a debug message
   remote_output=$(git remote -v 2>&1)
   debug "remote_output: $remote_output"
   # Print a message indicating that changes are being pushed
   info "Pushing changes"
+
+  # Get the GitHub username of the current user
+  username=$(gh api user | jq -r '.login')
+
+  # Configure Git to use the GH_TOKEN for authentication
+  git config --global credential.helper '!f() { echo "username=$username"; echo "password=$GITHUB_TOKEN"; }; f'
+
   # Push the changes to the 'jdk8-removal' branch of the origin remote
   git push origin jdk8-removal
 

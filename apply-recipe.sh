@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# set -x
+set -x
 
 # TODO: [ERROR] Recipe validation error in org.gounthar.jdk21-prerequisites.recipeList[0] (in file:/tmp/plugins/wsclean-plugin/wsclean-plugin/rewrite.yml): recipe 'org.openrewrite.jenkins.ModernizePluginForJava8' does not exist.
 
@@ -9,49 +9,6 @@ source log-utils.sh
 # Source the csv-utils.sh script
 source csv-utils.sh
 
-# Check if the DEBUG_MODE environment variable is set
-if [ "$DEBUG_MODE" = "true" ]; then
-  # If DEBUG_MODE is set to true, print a debug message
-  debug "Debug mode is on."
-else
-  # If DEBUG_MODE is not set to true, print an info message
-  info "Debug mode is off. To turn it on, set the DEBUG_MODE environment variable to true."
-fi
-
-# Ensure parallel is installed
-if ! [ -x "$(command -v parallel)" ]; then
-  error 'Error: parallel is not installed.' >&2
-  exit 1
-fi
-
-# Ensure mvn is installed
-if ! [ -x "$(command -v mvn)" ]; then
-  error 'Error: mvn is not installed.' >&2
-  exit 1
-fi
-
-# Ensure JAVA_HOME is set
-if [ -z "${JAVA_HOME-}" ]; then
-  # Print a warning message in yellow
-  warning "Warning: JAVA_HOME environment variable is not set." >&2
-  # Try to infer JAVA_HOME from java command path
-  if command -v java >/dev/null; then
-    export JAVA_HOME=$(dirname "$(dirname "$(readlink -f "$(command -v java)")")")
-    # Print a success message in green
-    success "JAVA_HOME set to $JAVA_HOME"
-  else
-    # Print an error message in red
-    error "Error: java command not found. Cannot set JAVA_HOME." >&2
-    exit 1
-  fi
-fi
-
-# Check if the GITHUB_TOKEN environment variable is set
-if [ -z "${GITHUB_TOKEN-}" ]; then
-  error "Error: GITHUB_TOKEN environment variable is not set." >&2
-  exit 1
-fi
-
 # Source the config.sh file to import the csv_file variable
 source config.sh
 
@@ -59,6 +16,9 @@ source config.sh
 source csv-utils.sh
 
 source git-utils.sh
+
+# Source the check-env.sh script
+source check-env.sh
 
 # Check if the CSV file exists
 if ! [ -f "$csv_file" ]; then
@@ -125,12 +85,17 @@ run_maven_command() {
   maven_command=$3
   url=$4
   repo=$5
+  csv_file=$6
 
   # Print some information about the operation
   info "Applying $recipe_name"
   info "Its URL is $recipe_url"
   info "Maven command: $maven_command"
   info "Running Maven command in $repo"
+
+  # Get the current date in YYYY-MM-DD format
+  # The `date` command is used with the `+"%Y-%m-%d"` option to format the date.
+  current_date=$(date +"%Y-%m-%d")
 
   # Run the Maven command
   if eval $maven_command; then
@@ -139,6 +104,13 @@ run_maven_command() {
     info "Will now create the diff"
     apply_patch_and_push "$url" "$repo" "$commit_message"
     write_to_csv_file "$url" "$repo" "$csv_file_compiles"
+    patch_exists="false"
+    # Check if the modifications.patch file exists and is not empty
+    if [ -s "../modifications.patch" ]; then
+      # If the file exists and is not empty, set the variable to "true"
+      patch_exists="true"
+    fi
+    echo "$recipe_name,$current_date,$patch_exists" >>"$repo_log_file"
   else
     # If the command fails, write to a different CSV file
     write_to_csv_file "$url" "$repo" "$csv_file_does_not_compile"
@@ -157,6 +129,17 @@ process_csv_file() {
   mapfile -t lines < <(read_csv_file)
   num_lines=${#lines[@]}
   debug "Found $num_lines recipes"
+
+  # Now let's tackle the log creation for the current recipe
+  # Create a CSV file and write the header
+  repo_log_dir="$script_dir/reports/recipes"
+  mkdir -p "$repo_log_dir"
+  repo_log_file="$repo_log_dir/$repo.csv"
+  # Check if the file exists
+  if [ ! -f "$repo_log_file" ]; then
+    # If the file does not exist, create it and write the header
+    echo "Recipe,Date,Change" >"$repo_log_file"
+  fi
   # Loop over each line in the array
   for line in "${lines[@]}"; do
     # Split the line into an array of fields using the comma as the delimiter
@@ -170,7 +153,7 @@ process_csv_file() {
 
     # Call the `run_maven_command` function, passing the `recipe_name`, `recipe_url`, `maven_command`, `url`, and `repo` variables as arguments
     info "Processing $recipe_name"
-    run_maven_command "$recipe_name recipe" "$recipe_url" "$maven_command" "$url" "$repo"
+    run_maven_command "$recipe_name recipe" "$recipe_url" "$maven_command" "$url" "$repo" "$repo_log_file"
     info "Finished processing $recipe_name recipe"
   done
 }
@@ -221,7 +204,7 @@ apply_recipe() {
   info "Finished processing $repo"
 
   # Remove the temporary directory
-  # rm -fr "$repo"
+  rm -fr "$repo"
 }
 
 export -f apply_recipe clone_and_setup_repo process_csv_file run_maven_command write_to_csv_file
@@ -230,7 +213,7 @@ export -f apply_recipe clone_and_setup_repo process_csv_file run_maven_command w
 echo "Plugin,URL" >"$script_dir/$csv_file_compiles"
 echo "Plugin,URL" >"$script_dir/$csv_file_does_not_compile"
 # Create a CSV file and write the header
-echo "Recipe Name,URL,Commit Message,Maven Command" >recipes.csv
+echo "Recipe Name,URL,Commit Message,Maven Command" >"$script_dir/recipes.csv"
 
 mkdir -p "/tmp/plugins"
 
@@ -246,4 +229,5 @@ mkdir -p "/tmp/plugins"
 # The parallel apply_recipe command runs the apply_recipe function for each line of input.
 # The apply_recipe function is defined elsewhere in the script and performs the actual operations on the Git repository.
 # In summary, this line of code reads a CSV file, skips the header line, filters out empty lines, extracts the second field from each line, and applies a function to each extracted field in parallel.
-tail -n +2 "$csv_file" | grep -v '^$' | cut -d ',' -f 2 | parallel apply_recipe
+# tail -n +2 "$csv_file" | grep -v '^$' | cut -d ',' -f 2 | parallel apply_recipe
+tail -n +2 "$csv_file" | grep -v '^$' | cut -d ',' -f 2 | while read -r url; do apply_recipe "$url"; done
