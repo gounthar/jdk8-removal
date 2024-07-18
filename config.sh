@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # config.sh
 
 # Get the current date in YYYY-MM-DD format
