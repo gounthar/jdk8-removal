@@ -68,7 +68,7 @@ jobs:
         if: env.changed == 'true'
         run: |
           git checkout -b update-plugins-$(date +%Y-%m-%d)
-          git add plugins.txt
+          git add .
           git commit -m "Update plugins list"
           git push origin update-plugins-$(date +%Y-%m-%d)
 
