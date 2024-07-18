@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # jenkinsfile_check.sh
 
 # Function to check for Java versions in Jenkinsfile
