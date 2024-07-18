@@ -20,13 +20,20 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y jq curl parallel
 
+      - name: Download plugins.json
+        run: curl https://updates.jenkins.io/current/update-center.actual.json > plugins.json
+
       - name: Run find-plugin-repos.sh
         run: ./find-plugin-repos.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Determine plugins.csv filename
+        id: csv_filename
+        run: echo "::set-output name=file::$(date +reports/repos_without_jenkinsfile_%Y-%m-%d.csv)"
+
       - name: Run create-plugins-list-file.sh
-        run: ./create-plugins-list-file.sh plugins.csv plugins.json
+        run: chmod +x ./create-plugins-list-file.sh && ./create-plugins-list-file.sh ${{ steps.csv_filename.outputs.file }} plugins.json
 
       - name: Check for changes
         id: git-check
