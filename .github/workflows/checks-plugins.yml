@@ -28,12 +28,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Determine plugins.csv filename
-        id: csv_filename
-        run: echo "::set-output name=file::$(date +reports/repos_without_jenkinsfile_%Y-%m-%d.csv)"
+      - name: Source config.sh and export variables
+        id: config_vars
+        run: |
+            source config.sh
+            echo "csv_file_no_jenkinsfile=$csv_file_no_jenkinsfile" >> $GITHUB_ENV
 
       - name: Run create-plugins-list-file.sh
-        run: chmod +x ./create-plugins-list-file.sh && ./create-plugins-list-file.sh ${{ steps.csv_filename.outputs.file }} plugins.json
+        run: chmod +x ./create-plugins-list-file.sh && ./create-plugins-list-file.sh ${{ env.csv_file_no_jenkinsfile }} plugins.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check for changes
         id: git-check
