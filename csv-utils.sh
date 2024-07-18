@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Source the config.sh script. This script contains the configuration variables for the CSV files.
 source ./config.sh
 
