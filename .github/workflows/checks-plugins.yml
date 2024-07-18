@@ -37,6 +37,7 @@ jobs:
 
       - name: Run create-plugins-list-file.sh
         run: |
+          source config.sh
           chmod +x ./create-plugins-list-file.sh
           ./create-plugins-list-file.sh ${{ env.csv_file_no_jenkinsfile }} plugins.json
           mv plugins.txt plugins-without-jenkinsfile.txt
@@ -47,7 +48,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cleanup reports
-        run: rm -f reports
+        run: |
+          chmod +x ./cleanup-reports.sh
+          ./cleanup-reports.sh
 
       - name: Check for changes
         run: |

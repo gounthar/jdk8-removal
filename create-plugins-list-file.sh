@@ -21,10 +21,9 @@ source config.sh     # Configuration variables, including csv_file.
 # Assign command line arguments to variables for easier reference.
 csv_file=$1  # The first argument: path to the CSV file.
 json_file=$2  # The second argument: path to the JSON file.
-main_output_file="plugins.txt"  # Define the output file name.
 
 # Remove the output file if it already exists to start fresh.
-rm -f "$main_output_file"
+rm -f "$plugins_list_output_file"
 
 # Function to extract the plugin name from its URL.
 # Takes a single argument: the full URL of the plugin's repository.
@@ -46,7 +45,7 @@ while IFS=, read -r name url; do
         if [ -n "$gav" ]; then
             # If GAV is found, process and save the artifactId:version to the output file.
             echo "Found gav $gav for plugin $plugin_name"
-            echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$main_output_file"
+            echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$plugins_list_output_file"
         else
             # If GAV is not found, log the missing GAV for the plugin.
             echo "gav not found for plugin: $plugin_name with name: $name"
@@ -60,6 +59,6 @@ while IFS=, read -r name url; do
 done < "$csv_file"
 
 # Sort the output file alphabetically
-sort "$main_output_file" -o "$main_output_file"
+sort "$plugins_list_output_file" -o "$plugins_list_output_file"
 # Final log statement indicating the script has completed processing.
-echo "Processing complete. Results saved in $main_output_file"
+echo "Processing complete. Results saved in $plugins_list_output_file"
