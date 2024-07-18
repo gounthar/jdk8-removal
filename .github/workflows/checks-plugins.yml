@@ -22,6 +22,8 @@ jobs:
 
       - name: Run find-plugin-repos.sh
         run: ./find-plugin-repos.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run create-plugins-list-file.sh
         run: ./create-plugins-list-file.sh plugins.csv plugins.json
