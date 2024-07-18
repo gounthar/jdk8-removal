@@ -33,11 +33,21 @@ jobs:
         run: |
             source config.sh
             echo "csv_file_no_jenkinsfile=$csv_file_no_jenkinsfile" >> $GITHUB_ENV
+            echo "csv_file_without_java_version=$csv_file" >> $GITHUB_ENV
 
       - name: Run create-plugins-list-file.sh
-        run: chmod +x ./create-plugins-list-file.sh && ./create-plugins-list-file.sh ${{ env.csv_file_no_jenkinsfile }} plugins.json
+        run: |
+          chmod +x ./create-plugins-list-file.sh
+          ./create-plugins-list-file.sh ${{ env.csv_file_no_jenkinsfile }} plugins.json
+          mv plugins.txt plugins-without-jenkinsfile.txt
+          ./create-plugins-list-file.sh ${{ env.csv_file_without_java_version }} plugins.json
+          mv plugins.txt plugins-without-java-version.txt
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup reports
+        run: rm -f reports
 
       - name: Check for changes
         run: |
