@@ -59,5 +59,7 @@ while IFS=, read -r name url; do
     fi
 done < "$csv_file"
 
+# Sort the output file alphabetically
+sort "$output_file" -o "$output_file"
 # Final log statement indicating the script has completed processing.
 echo "Processing complete. Results saved in $output_file"
