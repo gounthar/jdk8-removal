@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # utils.sh
 
 # Function to print information messages in blue
