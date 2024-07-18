@@ -50,6 +50,7 @@ jobs:
       - name: Cleanup reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEBUG_MODE: true
         run: |
           chmod +x ./cleanup-reports.sh
           ./cleanup-reports.sh
