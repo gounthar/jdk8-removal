@@ -14,8 +14,8 @@ csv_file_no_jenkinsfile="reports/repos_without_jenkinsfile_$current_date.csv"
 csv_file_compiles="reports/repos_where_recipes_work_$current_date.csv"
 csv_file_does_not_compile="reports/repos_where_recipes_dont_work_$current_date.csv"
 csv_file_recipe_list="/datas/recipes-to-apply.csv"
-plugins_list_no_jenkinsfile_output_file="plugins_no_jenkinsfile_$current_date.txt"  # Define the output file name.
-plugins_list_old_java_output_file="plugins_old_java_$current_date.txt"  # Define the output file name.
+plugins_list_no_jenkinsfile_output_file="reports/plugins_no_jenkinsfile_$current_date.txt"  # Define the output file name.
+plugins_list_old_java_output_file="reports/plugins_old_java_$current_date.txt"  # Define the output file name.
 plugins_list_output_file="plugins.txt"  # Define the output file name.
 # The presence of this file will be used to determine whether the repositories have already been retrieved.
 # Useful in the docker compose heakthcheck.
