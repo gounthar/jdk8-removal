@@ -92,6 +92,36 @@ while :; do
   ((page++))
 done
 
+# Step 1: Extract the header and store it
+header=$(head -n 1 "$csv_file")
+
+# Step 2 and 3: Skip the first line, sort the rest, and store in a temporary file
+tail -n +2 "$csv_file" | sort > temp_file.csv
+
+# Step 4: Write the header to the original file
+echo "$header" > "$csv_file"
+
+# Step 5: Append the sorted content to the original file
+cat temp_file.csv >> "$csv_file"
+
+# Cleanup: Remove the temporary file
+rm temp_file.csv
+
+
+# Step 1: Extract the header and store it
+header=$(head -n 1 "$csv_file_no_jenkinsfile")
+
+# Step 2 and 3: Skip the first line, sort the rest, and store in a temporary file
+tail -n +2 "$csv_file_no_jenkinsfile" | sort > temp_file.csv
+
+# Step 4: Write the header to the original file
+echo "$header" > "$csv_file_no_jenkinsfile"
+
+# Step 5: Append the sorted content to the original file
+cat temp_file.csv >> "$csv_file_no_jenkinsfile"
+
+# Cleanup: Remove the temporary file
+rm temp_file.csv
 # Flush changes to disk
 sync
 echo "Done!" >$repos_retrieved_file
