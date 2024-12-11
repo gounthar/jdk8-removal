@@ -40,10 +40,10 @@ jobs:
           source config.sh
           chmod +x ./create-plugins-list-file.sh
           ./create-plugins-list-file.sh ${{ env.csv_file_no_jenkinsfile }} plugins.json
-          mv plugins.txt $plugins_list_no_jenkinsfile_output_file
+          touch plugins.txt && mv plugins.txt $plugins_list_no_jenkinsfile_output_file
           cp $plugins_list_no_jenkinsfile_output_file $plugins_list_no_jenkinsfile_main_output_file
           ./create-plugins-list-file.sh ${{ env.csv_file_without_java_version }} plugins.json
-          mv plugins.txt $plugins_list_old_java_output_file
+          touch plugins.txt && mv plugins.txt $plugins_list_old_java_output_file
           cp $plugins_list_old_java_output_file $plugins_list_old_java_main_output_file
 
         env:
