@@ -21,7 +21,7 @@ jobs:
           sudo apt-get install -y jq curl parallel
 
       - name: Download plugins.json
-        run: curl https://updates.jenkins.io/current/update-center.actual.json > plugins.json
+        run: curl -L https://updates.jenkins.io/current/update-center.actual.json > plugins.json
 
       - name: Run find-plugin-repos.sh
         run: ./find-plugin-repos.sh
