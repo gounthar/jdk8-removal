@@ -19,8 +19,14 @@ if [[ ! -f "$json_file" ]]; then
 fi
 
 # Validate JSON file
-if ! jq empty "$json_file" > /dev/null 2>&1; then
-  echo "Invalid JSON file: $json_file"
+if ! error=$(jq empty "$json_file" 2>&1); then
+  echo "Invalid JSON file: $json_file - $error" >&2
+  exit 1
+fi
+
+# Validate JSON structure
+if ! jq -e '.versions | type == "array"' "$json_file" > /dev/null 2>&1; then
+  echo "Invalid JSON structure: Missing or invalid 'versions' array" >&2
   exit 1
 fi
 
