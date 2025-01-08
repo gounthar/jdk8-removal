@@ -49,6 +49,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Run from-csv-to-plugins-file.sh
+        run: |
+          chmod +x ./from-csv-to-plugins-file.sh
+          ./from-csv-to-plugins-file.sh ${{ env.csv_file_no_jenkinsfile }} plugins.json plugins-output.txt plugins-rejected.txt
+
       - name: Cleanup reports
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
