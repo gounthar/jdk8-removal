@@ -32,6 +32,11 @@ echo "I will use $json_file as second input file"
 output_file="${3:-plugins-output.txt}"
 echo "I will use $output_file as output file"
 
+# Error file
+error_file="${3:-plugins-rejected.txt}"
+echo "I will use $error_file as error file"
+echo -n "" > $error_file
+
 # Cleanup function
 cleanup() {
   if [[ $? -ne 0 && -f "$output_file" ]]; then
@@ -107,6 +112,7 @@ if [[ -n "${plugin_name_map[$repo_url]}" && -n "${plugin_version_map[$repo_url]}
   echo "${plugin_name_map[$repo_url]}:${plugin_version_map[$repo_url]}" >> $output_file
 else
   echo "$repo_url was not found in $json_file"
+  echo "$repo_url" >> $error_file
 fi
 
 done < "$csv_file"
