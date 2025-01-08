@@ -26,7 +26,17 @@ This script fetches all repositories under the `jenkinsci` organization, checks 
 
 This script reads a CSV file that contains a list of recipes to apply to the repositories. For each recipe, it applies the recipe to each repository, commits the changes, and pushes the changes to a new branch in a fork of the repository.  
 
+3. Run the `from-csv-to-plugins-file.sh` script:
+
+```bash
+./from-csv-to-plugins-file.sh <csv_file> <json_file> <output_file>
+```
+
+This script processes a CSV file and a JSON file to generate a list of plugins and their latest versions. The CSV file should contain plugin names and URLs, separated by commas. The JSON file should contain plugin data, including names and version information. The output is saved in a file named "plugins.txt", listing each plugin's name and its latest version.
+
 ## Output
 The output of the find-plugin-repos.sh script is a CSV file named plugins_without_java_versions.csv that contains the names and URLs of the repositories where the script did not find any of the specified Java version numbers in the Jenkinsfile.
 
 The output of the apply-recipe.sh script is a series of CSV files that contain the names and URLs of the repositories where the script made changes, failed to make changes, or did not find a Jenkinsfile.
+
+The output of the from-csv-to-plugins-file.sh script is a file named "plugins.txt" that lists each plugin's name and its latest version.
