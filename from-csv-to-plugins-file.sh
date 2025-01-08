@@ -33,9 +33,9 @@ output_file="${3:-plugins-output.txt}"
 echo "I will use $output_file as output file"
 
 # Error file
-error_file="${3:-plugins-rejected.txt}"
+error_file="${4:-plugins-rejected.txt}"
 echo "I will use $error_file as error file"
-echo -n "" > $error_file
+echo -n "" > "$error_file"
 
 # Cleanup function
 cleanup() {
