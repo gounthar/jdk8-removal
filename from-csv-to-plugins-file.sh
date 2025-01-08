@@ -51,6 +51,17 @@ fi
 # Initialize output file with opening brace
 echo "" > $output_file
 
+# Create an associative array to store plugin data
+declare -A plugin_map
+
+# Parse JSON file and populate the associative array
+while IFS= read -r line; do
+  scm=$(echo "$line" | jq -r '.scm')
+  name=$(echo "$line" | jq -r '.name')
+  version=$(echo "$line" | jq -r '.lastVersion')
+  plugin_map["$scm"]="$name:$version"
+done < <(jq -c '.plugins[] | {scm: .scm, name: .name, lastVersion: .versions[0].lastVersion}' "$json_file")
+
 # Read and process CSV file
 line_num=0
 while IFS=, read -r plugin_name repo_url remainder || [[ -n "$plugin_name" ]]; do
@@ -70,22 +81,12 @@ while IFS=, read -r plugin_name repo_url remainder || [[ -n "$plugin_name" ]]; d
   # Trim whitespace
   plugin_name="${plugin_name#"${plugin_name%%[! ]*}"}"
   plugin_name="${plugin_name%"${plugin_name##*[! ]}"}"
-  # Removes leading whitespace from the repo_url variable:
   repo_url="${repo_url#"${repo_url%%[! ]*}"}"
-  # Removes trailing whitespace from the repo_url variable
   repo_url="${repo_url%"${repo_url##*[! ]}"}"
 
-  # Extract the plugin name and version from the JSON data using jq
-  if [[ -n "$repo_url" ]]; then
-      # Find plugin by repository URL and get its name and version
-      plugin_info=$(jq -r --arg url "$repo_url" '.plugins | to_entries[] | select(.value.scm == $url) | {name: .value.name, version: .value.version}' "$json_file")
-      if [[ -n "$plugin_info" ]]; then
-          name=$(echo "$plugin_info" | jq -r '.name')
-          version=$(echo "$plugin_info" | jq -r '.version')
-          if [[ -n "$name" && -n "$version" ]]; then
-              echo "$name:$version" >> $output_file
-          fi
-      fi
+  # Lookup plugin name and version in the associative array
+  if [[ -n "${plugin_map[$repo_url]}" ]]; then
+    echo "${plugin_map[$repo_url]}" >> $output_file
   fi
 
 done < "$csv_file"
