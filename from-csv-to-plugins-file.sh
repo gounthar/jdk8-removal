@@ -20,14 +20,17 @@ if [[ ! -f "$csv_file" ]]; then
     echo "Error: CSV file not found: $csv_file" >&2
     exit 1
 fi
+echo "I will use $csv_file as input file"
 
 if [[ ! -f "$json_file" ]]; then
     echo "Error: JSON file not found: $json_file" >&2
     exit 1
 fi
+echo "I will use $json_file as second input file"
 
 # Default output file
-output_file="${3:-output.txt}"
+output_file="${3:-plugins-output.txt}"
+echo "I will use $output_file as output file"
 
 # Cleanup function
 cleanup() {
@@ -46,7 +49,7 @@ if ! error=$(jq empty "$json_file" 2>&1); then
 fi
 
 # Initialize output file with opening brace
-echo "" > output.txt
+echo "" > $output_file
 
 # Read and process CSV file
 line_num=0
@@ -67,36 +70,42 @@ while IFS=, read -r plugin_name repo_url remainder || [[ -n "$plugin_name" ]]; d
   # Trim whitespace
   plugin_name="${plugin_name#"${plugin_name%%[! ]*}"}"
   plugin_name="${plugin_name%"${plugin_name##*[! ]}"}"
+  # Removes leading whitespace from the repo_url variable:
   repo_url="${repo_url#"${repo_url%%[! ]*}"}"
+  # Removes trailing whitespace from the repo_url variable
   repo_url="${repo_url%"${repo_url##*[! ]}"}"
 
   # Extract the plugin name and version from the JSON data using jq
-  version=$(jq -r --arg repo_url "$repo_url" '
-    .versions[] | select(.scm == $repo_url) | .lastVersion' "$json_file")
-
-  # Print the plugin name and version in the desired format
-  if [[ -n "$version" ]]; then
-    echo "\"$plugin_name\":\"$version\"," >> output.txt
+  if [[ -n "$repo_url" ]]; then
+      # Find plugin by repository URL and get its name and version
+      plugin_info=$(jq -r --arg url "$repo_url" '.plugins | to_entries[] | select(.value.scm == $url) | {name: .value.name, version: .value.version}' "$json_file")
+      if [[ -n "$plugin_info" ]]; then
+          name=$(echo "$plugin_info" | jq -r '.name')
+          version=$(echo "$plugin_info" | jq -r '.version')
+          if [[ -n "$name" && -n "$version" ]]; then
+              echo "$name:$version" >> $output_file
+          fi
+      fi
   fi
 
 done < "$csv_file"
 
 # After the loop, remove the last comma and add closing brace
-if [[ ! -s output.txt ]]; then
+if [[ ! -s $output_file ]]; then
   echo "Error: No plugins were processed" >&2
-  echo "{}" > output.txt
+  echo "{}" > $output_file
   exit 1
 fi
 
-if ! sed -i '$ s/,$/\n}/' output.txt 2>/dev/null; then
+if ! sed -i '$ s/,$/\n}/' $output_file 2>/dev/null; then
   echo "Error: Failed to finalize output file" >&2
   exit 1
 fi
 
 # Validate final JSON
-if ! jq empty output.txt > /dev/null 2>&1; then
+if ! jq empty $output_file > /dev/null 2>&1; then
   echo "Error: Generated invalid JSON" >&2
   exit 1
 fi
 
-echo "Successfully generated plugins file: output.txt" >&2
+echo "Successfully generated plugins file: $output_file" >&2
