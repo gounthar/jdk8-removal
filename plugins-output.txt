@@ -340,7 +340,7 @@ network-monitor:1.1
 nis-notification-lamp:1.131
 nouvola-divecloud:1.08
 nsiqcollector:1.3.3
-octopusdeploy:4.0.0
+octopusdeploy:4.0.1
 one-shot-executor:1.2
 onesky:1.1
 openJDK-native-plugin:1.8
@@ -368,7 +368,6 @@ percentage-du-node-column:0.1.0
 perfpublisher:8.09
 periodicbackup:2.0
 persistent-build-queue-plugin:0.1.1
-persistent-parameter:1.3
 phabricator-plugin:2.1.5
 phing:0.13.3
 php-builtin-web-server:0.1
@@ -458,7 +457,6 @@ slave-proxy:1.1
 slave-squatter:1.2
 smart-jenkins:1.0
 sms:1.2
-snsnotify:2.0
 sonargraph-integration:5.0.2
 sonarqube-generic-coverage:1.0
 sonar:2.17.3
