@@ -32,7 +32,7 @@ backup:1.6.1
 bazaar:1.22
 behave-testresults-publisher:0.0.11
 bitbucket-approve:1.0.3
-bitbucket-oauth:0.13
+bitbucket-oauth:0.14
 bitkeeper:1.8
 blackduck-coverity-on-polaris:2.0.0
 blackduck-detect:10.0.0
@@ -104,7 +104,7 @@ compuware-common-configuration:1.0.16
 compuware-ispw-operations:2.3.1
 compuware-scm-downloader:2.1.0
 compuware-strobe-measurement:1.0.4
-compuware-topaz-for-total-test:2.4.14
+compuware-topaz-for-total-test:2.4.16
 compuware-topaz-utilities:1.0.9
 compuware-xpediter-code-coverage:1.0.8
 compuware-zadviser-api:1.0.4
