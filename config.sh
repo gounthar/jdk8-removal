@@ -19,6 +19,8 @@ plugins_list_no_jenkinsfile_main_output_file="plugins_no_jenkinsfile.txt"  # Def
 plugins_list_old_java_output_file="reports/plugins_old_java_$current_date.txt"  # Define the output file name.
 plugins_list_old_java_main_output_file="plugins_old_java.txt"
 plugins_list_output_file="plugins.txt"  # Define the output file name.
+plugins_no_jenkinsfile=
+export plugins_no_jenkinsfile
 # The presence of this file will be used to determine whether the repositories have already been retrieved.
 # Useful in the docker compose heakthcheck.
 repos_retrieved_file="reports/repos-retrieved.txt"

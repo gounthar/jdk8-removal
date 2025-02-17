@@ -1,0 +1,44 @@
+name: Update Plugins Evolution Plot
+
+on:
+  push:
+    paths:
+      - 'reports/**'  # Trigger when reports directory changes
+    branches:
+      - main  # Allow manual trigger on the main branch
+  schedule:
+    - cron: '59 6 * * *'  # Run daily at 06:59 UTC
+
+jobs:
+  update-plot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Make shell script executable
+        run: chmod +x process_reports.sh
+
+      - name: Generate CSV
+        run: ./process_reports.sh
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas==2.2.0 matplotlib==3.8.2
+
+      - name: Generate plot
+        run: python plot_plugins.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add plugin_evolution.csv plugins_evolution.svg
+          git commit -m "Update plugins evolution data and plot" -a || exit 0
+          git push

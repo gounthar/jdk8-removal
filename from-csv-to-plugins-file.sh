@@ -11,6 +11,12 @@
 # 1: Input file not found or invalid JSON
 # Usage: ./from-csv-to-plugins-file.sh [csv_file] [json_file] [output_file]
 
+# Source additional scripts required for this script to function.
+source csv-utils.sh  # Utility functions for processing CSV files.
+source log-utils.sh  # Logging utility functions.
+source check-env.sh  # Environment check functions.
+source config.sh     # Configuration variables, including csv_file.
+
 # Path to the CSV file
 csv_file="${1:-reports/repos_without_jenkinsfile_2025-01-07.csv}"
 # Path to the JSON file
