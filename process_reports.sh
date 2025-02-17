@@ -10,7 +10,7 @@ OUTPUT_FILE="plugin_evolution.csv"
 echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions" > $OUTPUT_FILE
 
 # Extract unique dates from filenames
-dates=$(ls $REPORTS_DIR | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort | uniq)
+dates=$(find "$REPORTS_DIR" -type f -name "*.txt" -o -name "*.csv" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort | uniq)
 
 # Initialize last known values
 last_plugins_without_jenkinsfile=0
