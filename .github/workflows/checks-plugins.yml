@@ -37,11 +37,18 @@ jobs:
 
       - name: Run create-plugins-list-file.sh
         run: |
-          source config.sh
-          chmod +x ./create-plugins-list-file.sh
+          # Source the configuration file to load environment variables
+          source config.sh          
+          # Make the script create-plugins-list-file.sh executable
+          chmod +x ./create-plugins-list-file.sh          
+          # Run the script to create a plugins list file for repositories without a Jenkinsfile
+          # The output is saved to the specified CSV file and then moved to the appropriate output file
           ./create-plugins-list-file.sh ${{ env.csv_file_no_jenkinsfile }} plugins.json
           touch plugins.txt && mv plugins.txt $plugins_list_no_jenkinsfile_output_file
           cp $plugins_list_no_jenkinsfile_output_file $plugins_list_no_jenkinsfile_main_output_file
+          
+          # Run the script again to create a plugins list file for repositories without a specified Java version
+          # The output is saved to the specified CSV file and then moved to the appropriate output file
           ./create-plugins-list-file.sh ${{ env.csv_file_without_java_version }} plugins.json
           touch plugins.txt && mv plugins.txt $plugins_list_old_java_output_file
           cp $plugins_list_old_java_output_file $plugins_list_old_java_main_output_file
