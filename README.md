@@ -40,3 +40,7 @@ The output of the find-plugin-repos.sh script is a CSV file named plugins_withou
 The output of the apply-recipe.sh script is a series of CSV files that contain the names and URLs of the repositories where the script made changes, failed to make changes, or did not find a Jenkinsfile.
 
 The output of the from-csv-to-plugins-file.sh script is a file named "plugins.txt" that lists each plugin's name and its latest version.
+
+## Jenkins Plugins Evolution
+
+![Jenkins Plugins Evolution](./plugins_evolution.svg)
