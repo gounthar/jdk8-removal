@@ -43,13 +43,9 @@ source jenkinsfile_check.sh
 # If a Jenkinsfile exists, it passes it as a string to the check_java_version_in_jenkinsfile function.
 check_for_jenkinsfile() {
   repo=$1
+  default_branch=$(gh repo view "$repo" --json defaultBranchRef --jq '.defaultBranchRef.name')
   # Try to fetch Jenkinsfile from the main branch
-  jenkinsfile=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/main/Jenkinsfile")
-
-  # If Jenkinsfile does not exist in the main branch, try the master branch
-  if [[ "$jenkinsfile" == "404: Not Found"* ]]; then
-    jenkinsfile=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/master/Jenkinsfile")
-  fi
+  jenkinsfile=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/$default_branch/Jenkinsfile")
 
   # Check if the curl command was successful
   if [[ "$jenkinsfile" != "404: Not Found"* ]]; then
