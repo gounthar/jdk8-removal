@@ -299,7 +299,6 @@ logaction-plugin:1.2
 logentries:0.0.2
 logging:1.0.0
 lotus-connections-plugin:1.25
-lucene-search:408.v0fb_8d1093c83
 mailcommander:1.0.0
 mailmap-resolver:0.2
 maintenance-jobs-scheduler:0.1.0
@@ -450,7 +449,6 @@ slave-proxy:1.1
 slave-squatter:1.2
 smart-jenkins:1.0
 sms:1.2
-sonargraph-integration:5.0.2
 sonarqube-generic-coverage:1.0
 sonar:2.18
 sourcemonitor:0.2
