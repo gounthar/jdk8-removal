@@ -89,7 +89,8 @@
     if [ "$remaining" -eq 0 ]; then
       current_time=$(date +%s)
       wait_time=$((reset - current_time))
-      echo "API rate limit exceeded for GraphQL. Please wait $wait_time seconds before retrying."
+      end_time=$(date -d "@$reset" +"%H:%M")
+      echo "API rate limit exceeded for GraphQL. Please wait $wait_time seconds before retrying. Come back at $end_time."
 
       # Initialize progress bar
       start_time=$(date +%s)
