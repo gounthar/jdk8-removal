@@ -106,6 +106,7 @@
 
   # Export the functions so they can be used by parallel
   export -f write_to_csv
+  export -f write_to_csv_jdk11
   # Export the check_java_version_in_jenkinsfile function
   export -f check_java_version_in_jenkinsfile
   export -f check_for_jenkinsfile
