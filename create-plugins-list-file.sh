@@ -62,3 +62,25 @@ done < "$csv_file"
 sort "$plugins_list_output_file" -o "$plugins_list_output_file"
 # Final log statement indicating the script has completed processing.
 echo "Processing complete. Results saved in $plugins_list_output_file"
+
+# Process the new CSV file for plugins using JDK 11
+if [ "$csv_file" == "$csv_file_jdk11" ]; then
+    rm -f "$plugins_list_jdk11_output_file"
+    while IFS=, read -r name url; do
+        plugin_name=$(get_plugin_name "$url")
+        if [ -n "$plugin_name" ]; then
+            gav=$(jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url) | .gav' "$json_file")
+            if [ -n "$gav" ]; then
+                echo "Found gav $gav for plugin $plugin_name"
+                echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$plugins_list_jdk11_output_file"
+            else
+                echo "gav not found for plugin: $plugin_name with name: $name"
+                jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url)' "$json_file"
+            fi
+        else
+            echo "Plugin name not found for URL: $url"
+        fi
+    done < "$csv_file"
+    sort "$plugins_list_jdk11_output_file" -o "$plugins_list_jdk11_output_file"
+    echo "Processing complete. Results saved in $plugins_list_jdk11_output_file"
+fi

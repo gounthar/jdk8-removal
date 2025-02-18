@@ -34,6 +34,7 @@ jobs:
             source config.sh
             echo "csv_file_no_jenkinsfile=$csv_file_no_jenkinsfile" >> $GITHUB_ENV
             echo "csv_file_without_java_version=$csv_file" >> $GITHUB_ENV
+            echo "csv_file_jdk11=$csv_file_jdk11" >> $GITHUB_ENV
 
       - name: Run create-plugins-list-file.sh
         run: |
@@ -51,6 +52,10 @@ jobs:
           ./create-plugins-list-file.sh ${{ env.csv_file_without_java_version }} plugins.json
           touch plugins.txt && mv plugins.txt $plugins_list_old_java_output_file
           cp $plugins_list_old_java_output_file $plugins_list_old_java_main_output_file
+          # Run the script again to create a plugins list file for repositories using JDK 11
+          ./create-plugins-list-file.sh ${{ env.csv_file_jdk11 }} plugins.json
+          touch plugins.txt && mv plugins.txt $plugins_list_jdk11_output_file
+          cp $plugins_list_jdk11_output_file $plugins_list_jdk11_main_output_file
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

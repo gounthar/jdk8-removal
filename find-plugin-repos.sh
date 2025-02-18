@@ -114,6 +114,7 @@
   # Create a CSV file and write the header
   echo "Plugin,URL" >"$csv_file"
   echo "Plugin,URL" >"$csv_file_no_jenkinsfile"
+  echo "Plugin,URL" >"$csv_file_jdk11"
 
   # Fetch all repositories under the jenkinsci organization
   # We use a while loop to handle pagination in the GitHub API.
@@ -167,6 +168,22 @@
 
   # Cleanup: Remove the temporary file
   rm temp_file.csv
+
+  # Step 1: Extract the header and store it
+  header=$(head -n 1 "$csv_file_jdk11")
+
+  # Step 2 and 3: Skip the first line, sort the rest, and store in a temporary file
+  tail -n +2 "$csv_file_jdk11" | sort > temp_file.csv
+
+  # Step 4: Write the header to the original file
+  echo "$header" > "$csv_file_jdk11"
+
+  # Step 5: Append the sorted content to the original file
+  cat temp_file.csv >> "$csv_file_jdk11"
+
+  # Cleanup: Remove the temporary file
+  rm temp_file.csv
+
   # Flush changes to disk
   sync
   echo "Done!"  > "$repos_retrieved_file"
