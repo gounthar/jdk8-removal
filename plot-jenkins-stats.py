@@ -19,6 +19,8 @@ def create_plugins_evolution_plot(input_csv, output_svg):
              marker='s', label='With Java 8', color='#2ecc71')
     plt.plot(df['Date'], df['Plugins_Without_Java_Versions'], 
              marker='^', label='Without Java Versions', color='#3498db')
+    plt.plot(df['Date'], df['Plugins_Using_JDK11'], 
+             marker='d', label='Using JDK 11', color='#ff5733')
     
     # Customize the plot
     plt.title('Jenkins Plugins Evolution', pad=20, fontsize=14)
