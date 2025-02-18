@@ -33,13 +33,16 @@
     jenkinsfile=$1
     repo=$2
     if [[ "$jenkinsfile" != "404: Not Found"* ]] && [[ "$jenkinsfile" == *"buildPlugin("* ]]; then
-      if grep -q '11' <<< "$jenkinsfile"; then
-        echo "JDK 11 was found in the Jenkinsfile"
-        # Write to JDK11 CSV file
+      # Log Jenkinsfile content for debugging
+      echo "Checking Jenkinsfile for $repo:"
+      echo "$jenkinsfile" | grep -A 2 -B 2 "jdk"
+
+      # More specific pattern for JDK11
+      if grep -iE 'jdk.*11|java.*11|version.*11' <<< "$jenkinsfile"; then
+        echo "JDK 11 was found in the Jenkinsfile for $repo"
         write_to_csv_jdk11 "$repo"
-      elif ! grep -q -E '11|17|21' <<< "$jenkinsfile"; then
-        echo "No recent Java version found in the Jenkinsfile"
-        # Write to CSV file for no Java version
+      elif ! grep -iE 'jdk.*1[1789]|java.*1[1789]|version.*1[1789]' <<< "$jenkinsfile"; then
+        echo "No Java version found in the Jenkinsfile for $repo"
         write_to_csv "$repo"
       fi
     fi
