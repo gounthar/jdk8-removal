@@ -49,4 +49,35 @@ for date in $dates; do
     echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions" >> $OUTPUT_FILE
 done
 
+# Read the CSV file into an array
+mapfile -t csv_lines < "$OUTPUT_FILE"
+
+# Replace zeroes with the next non-zero value
+for ((i=1; i<${#csv_lines[@]}; i++)); do
+    IFS=',' read -r date plugins_without_jenkinsfile plugins_with_java8 plugins_without_java_versions <<< "${csv_lines[i]}"
+    
+    if [[ $plugins_without_jenkinsfile -eq 0 ]]; then
+        plugins_without_jenkinsfile=$last_plugins_without_jenkinsfile
+    else
+        last_plugins_without_jenkinsfile=$plugins_without_jenkinsfile
+    fi
+    
+    if [[ $plugins_with_java8 -eq 0 ]]; then
+        plugins_with_java8=$last_plugins_with_java8
+    else
+        last_plugins_with_java8=$plugins_with_java8
+    fi
+    
+    if [[ $plugins_without_java_versions -eq 0 ]]; then
+        plugins_without_java_versions=$last_plugins_without_java_versions
+    else
+        last_plugins_without_java_versions=$plugins_without_java_versions
+    fi
+    
+    csv_lines[i]="$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions"
+done
+
+# Write the updated lines back to the CSV file
+printf "%s\n" "${csv_lines[@]}" > "$OUTPUT_FILE"
+
 echo "Processing complete. Results saved to $OUTPUT_FILE"
