@@ -58,10 +58,12 @@ check_for_jenkinsfile() {
     info "Jenkinsfile found in $repo"
     # Check if the Java version numbers exist in the Jenkinsfile
     check_java_version_in_jenkinsfile "$jenkinsfile" "$repo"
-  else
+  elif [ "$http_code" -eq 404 ]; then
     # Format the repository name
     formatted_repo=$(format_repo_name "$repo")
     echo "$formatted_repo,https://github.com/$repo" >>"$csv_file_no_jenkinsfile"
+  else
+    error "Failed to fetch Jenkinsfile for $repo. HTTP status code: $http_code"
   fi
 }
 
