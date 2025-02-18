@@ -39,27 +39,31 @@ source jenkinsfile_check.sh
 
 # Function to check for Jenkinsfile
 # This function takes a repository name as an argument.
-# It tries to fetch a Jenkinsfile from the main or master branch of the repository using the GitHub API.
+# It tries to fetch a Jenkinsfile from the default branch of the repository using the GitHub API.
 # If a Jenkinsfile exists, it passes it as a string to the check_java_version_in_jenkinsfile function.
 check_for_jenkinsfile() {
   repo=$1
-  # Try to fetch Jenkinsfile from the main branch
-  jenkinsfile=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/main/Jenkinsfile")
-
-  # If Jenkinsfile does not exist in the main branch, try the master branch
-  if [[ "$jenkinsfile" == "404: Not Found"* ]]; then
-    jenkinsfile=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/master/Jenkinsfile")
+  default_branch=$(gh repo view "$repo" --json defaultBranchRef --jq '.defaultBranchRef.name')
+  if [ -z "$default_branch" ]; then
+    error "Failed to retrieve default branch for $repo. Skipping repository."
+    return 1
   fi
+  # Try to fetch Jenkinsfile from the default branch using the resolved variable
+  response=$(curl -s -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/$default_branch/Jenkinsfile")
+  http_code=$(echo "$response" | tail -n1)
+  jenkinsfile=$(echo "$response" | sed '$d')
 
-  # Check if the curl command was successful
-  if [[ "$jenkinsfile" != "404: Not Found"* ]]; then
+  # Check the HTTP status code
+  if [ "$http_code" -eq 200 ]; then
     info "Jenkinsfile found in $repo"
     # Check if the Java version numbers exist in the Jenkinsfile
     check_java_version_in_jenkinsfile "$jenkinsfile" "$repo"
-  else
+  elif [ "$http_code" -eq 404 ]; then
     # Format the repository name
     formatted_repo=$(format_repo_name "$repo")
     echo "$formatted_repo,https://github.com/$repo" >>"$csv_file_no_jenkinsfile"
+  else
+    error "Failed to fetch Jenkinsfile for $repo. HTTP status code: $http_code"
   fi
 }
 
@@ -124,4 +128,4 @@ cat temp_file.csv >> "$csv_file_no_jenkinsfile"
 rm temp_file.csv
 # Flush changes to disk
 sync
-echo "Done!" >$repos_retrieved_file
+echo "Done!"  > "$repos_retrieved_file"
