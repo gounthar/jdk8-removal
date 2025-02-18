@@ -33,7 +33,7 @@ jobs:
           pip install pandas==2.2.0 matplotlib==3.8.2
 
       - name: Generate plot
-        run: python plot_plugins.py
+        run: python plot-jenkins-stats.py
 
       - name: Commit and push if changed
         run: |
