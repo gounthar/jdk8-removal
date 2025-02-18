@@ -48,7 +48,7 @@ check_for_jenkinsfile() {
     error "Failed to retrieve default branch for $repo. Skipping repository."
     return 1
   fi
-  # Try to fetch Jenkinsfile from the main branch
+  # Try to fetch Jenkinsfile from the default branch using the resolved variable
   response=$(curl -s -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/$default_branch/Jenkinsfile")
   http_code=$(echo "$response" | tail -n1)
   jenkinsfile=$(echo "$response" | sed '$d')
