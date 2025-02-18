@@ -25,6 +25,8 @@ export plugins_no_jenkinsfile
 # Useful in the docker compose heakthcheck.
 repos_retrieved_file="reports/repos-retrieved.txt"
 csv_file_jdk11="reports/plugins_using_jdk11_$current_date.csv"
+# Define the rate limit delay in seconds
+RATE_LIMIT_DELAY=${RATE_LIMIT_DELAY:-2}
 
 # Export the variables so they can be used by other scripts
 # The `export` command is used to make the variables available to child processes of this script.
@@ -40,3 +42,4 @@ export plugins_list_output_file
 export plugins_list_no_jenkinsfile_main_output_file
 export plugins_list_old_java_main_output_file
 export csv_file_jdk11
+export RATE_LIMIT_DELAY
