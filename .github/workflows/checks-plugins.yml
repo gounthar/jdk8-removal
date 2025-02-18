@@ -24,7 +24,7 @@ jobs:
         run: curl -L https://updates.jenkins.io/current/update-center.actual.json > plugins.json
 
       - name: Run find-plugin-repos.sh
-        run: ./find-plugin-repos.sh
+        run: chmod +x "*sh" && ./find-plugin-repos.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
