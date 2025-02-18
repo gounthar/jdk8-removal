@@ -1,21 +1,61 @@
 #!/usr/bin/env bash
-# jenkinsfile_check.sh
 
-# Function to check for Java versions in Jenkinsfile
-# This function takes a Jenkinsfile as a string and a repository name as arguments.
-# It checks if the Jenkinsfile contains the numbers 11, 17, or 21 (which represent Java versions).
-# If these numbers do not exist, it writes the repository name and URL to a CSV file.
-check_java_version_in_jenkinsfile() {
-  jenkinsfile=$1
-  repo=$2
-  # Check if the jenkinsfile variable contains a valid Jenkinsfile
-  if [[ "$jenkinsfile" != "404: Not Found"* ]] && [[ "$jenkinsfile" == *"buildPlugin("* ]]; then
-    if grep -q -E '11|17|21' <<< "$jenkinsfile"; then
-      echo "The numbers 11, 17, or 21 were found in the Jenkinsfile"
-    else
-      echo "The numbers 11, 17, or 21 were not found in the Jenkinsfile"
-      # Write to CSV file
-      write_to_csv "$repo"
-    fi
-  fi
-}
+ # Check if the csv_file_jdk11 variable is set
+ if [ -z "$csv_file_jdk11" ]; then
+   echo "Error: csv_file_jdk11 is not set"
+   exit 1
+ fi
+
+ # Check if the csv_file variable is set
+ if [ -z "$csv_file" ]; then
+   echo "Error: csv_file is not set"
+   exit 1
+ fi
+
+ # Function to write to JDK11 CSV file
+ # Arguments:
+ #   $1 - The repository name
+ write_to_csv_jdk11() {
+   repo=$1
+   formatted_repo=$(format_repo_name "$repo")
+   info "Writing $formatted_repo to JDK11 CSV file"
+   echo "$formatted_repo,https://github.com/$repo" >>"$csv_file_jdk11"
+   sync
+ }
+
+ # Function to write to CSV file for no Java or Java 8 version
+ # Arguments:
+ #   $1 - The repository name
+ write_to_csv() {
+   repo=$1
+   formatted_repo=$(format_repo_name "$repo")
+   info "Writing $formatted_repo to CSV file"
+   echo "$formatted_repo,https://github.com/$repo" >>"$csv_file"
+   sync
+ }
+
+ # Function to check for Java versions in Jenkinsfile
+ # Arguments:
+ #   $1 - The Jenkinsfile content
+ #   $2 - The repository name
+ # Behavior:
+ #   - If the Jenkinsfile contains '11' and not '17' or '21', it writes to the JDK11 CSV file.
+ #   - If the Jenkinsfile does not contain '11', '17', or '21', it writes to the CSV file for no Java version.
+ check_java_version_in_jenkinsfile() {
+   jenkinsfile=$1
+   repo=$2
+   if [[ "$jenkinsfile" != "404: Not Found"* ]] && [[ "$jenkinsfile" == *"buildPlugin("* ]]; then
+     # Log Jenkinsfile content for debugging
+     echo "Checking Jenkinsfile for $repo:"
+     echo "$jenkinsfile" | grep -A 2 -B 2 "jdk"
+
+     # More specific pattern for JDK11
+     if grep -iE 'jdk.*11|java.*11|version.*11' <<< "$jenkinsfile"; then
+       echo "JDK 11 was found in the Jenkinsfile for $repo"
+       write_to_csv_jdk11 "$repo"
+     elif ! grep -iE 'jdk.*1[1789]|java.*1[1789]|version.*1[1789]' <<< "$jenkinsfile"; then
+       echo "No Java version found in the Jenkinsfile for $repo"
+       write_to_csv "$repo"
+     fi
+   fi
+ }

@@ -7,7 +7,7 @@
         OUTPUT_FILE="plugin_evolution.csv"
 
         # Initialize the output file with headers
-        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions" > $OUTPUT_FILE
+        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions,Plugins_Using_JDK11" > $OUTPUT_FILE
 
         # Extract unique dates from filenames
         dates=$(find "$REPORTS_DIR" -type f -name "*.txt" -o -name "*.csv" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort | uniq)
@@ -16,6 +16,7 @@
         last_plugins_without_jenkinsfile=0
         last_plugins_with_java8=0
         last_plugins_without_java_versions=0
+        last_plugins_using_jdk11=0
 
         # Loop through each unique date
         for date in $dates; do
@@ -23,6 +24,7 @@
             plugins_without_jenkinsfile=$last_plugins_without_jenkinsfile
             plugins_with_java8=$last_plugins_with_java8
             plugins_without_java_versions=$last_plugins_without_java_versions
+            plugins_using_jdk11=$last_plugins_using_jdk11
 
             # Find and count "plugins_no_jenkinsfile" files
             no_jenkinsfile_file=$(find $REPORTS_DIR -type f -name "plugins_no_jenkinsfile_$date.txt" | head -n 1)
@@ -45,8 +47,15 @@
                 last_plugins_without_java_versions=$plugins_without_java_versions
             fi
 
+            # Find and count "plugins_using_jdk11" files
+            jdk11_file=$(find $REPORTS_DIR -type f -name "plugins_using_jdk11_$date.csv" | head -n 1)
+            if [[ -n "$jdk11_file" && -f "$jdk11_file" ]]; then
+                plugins_using_jdk11=$(wc -l < "$jdk11_file")
+                last_plugins_using_jdk11=$plugins_using_jdk11
+            fi
+
             # Append the results to the output file
-            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions" >> $OUTPUT_FILE
+            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11" >> $OUTPUT_FILE
         done
 
         # Check if the output CSV file exists and is non-empty
@@ -60,11 +69,11 @@
 
         # Replace zeroes with the next non-zero value
         for ((i=1; i<${#csv_lines[@]}; i++)); do
-            IFS=',' read -r date plugins_without_jenkinsfile plugins_with_java8 plugins_without_java_versions <<< "${csv_lines[i]}"
+            IFS=',' read -r date plugins_without_jenkinsfile plugins_with_java8 plugins_without_java_versions plugins_using_jdk11 <<< "${csv_lines[i]}"
 
             if [[ $plugins_without_jenkinsfile -eq 0 ]]; then
                 for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-                    IFS=',' read -r _ next_plugins_without_jenkinsfile _ _ <<< "${csv_lines[j]}"
+                    IFS=',' read -r _ next_plugins_without_jenkinsfile _ _ _ <<< "${csv_lines[j]}"
                     if [[ $next_plugins_without_jenkinsfile -ne 0 ]]; then
                         plugins_without_jenkinsfile=$next_plugins_without_jenkinsfile
                         break
@@ -74,7 +83,7 @@
 
             if [[ $plugins_with_java8 -eq 0 ]]; then
                 for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-                    IFS=',' read -r _ _ next_plugins_with_java8 _ <<< "${csv_lines[j]}"
+                    IFS=',' read -r _ _ next_plugins_with_java8 _ _ <<< "${csv_lines[j]}"
                     if [[ $next_plugins_with_java8 -ne 0 ]]; then
                         plugins_with_java8=$next_plugins_with_java8
                         break
@@ -84,7 +93,7 @@
 
             if [[ $plugins_without_java_versions -eq 0 ]]; then
                 for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-                    IFS=',' read -r _ _ _ next_plugins_without_java_versions <<< "${csv_lines[j]}"
+                    IFS=',' read -r _ _ _ next_plugins_without_java_versions _ <<< "${csv_lines[j]}"
                     if [[ $next_plugins_without_java_versions -ne 0 ]]; then
                         plugins_without_java_versions=$next_plugins_without_java_versions
                         break
@@ -92,7 +101,17 @@
                 done
             fi
 
-            csv_lines[i]="$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions"
+            if [[ $plugins_using_jdk11 -eq 0 ]]; then
+                for ((j=i+1; j<${#csv_lines[@]}; j++)); do
+                    IFS=',' read -r _ _ _ _ next_plugins_using_jdk11 <<< "${csv_lines[j]}"
+                    if [[ $next_plugins_using_jdk11 -ne 0 ]]; then
+                        plugins_using_jdk11=$next_plugins_using_jdk11
+                        break
+                    fi
+                done
+            fi
+
+            csv_lines[i]="$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11"
         done
 
         # Create a backup of the original CSV file
