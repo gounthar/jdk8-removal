@@ -49,7 +49,7 @@ check_for_jenkinsfile() {
     return 1
   fi
   # Try to fetch Jenkinsfile from the default branch using the resolved variable
-  response=$(curl -s -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/$default_branch/Jenkinsfile")
+  response=$(curl -s -L -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/$default_branch/Jenkinsfile")
   http_code=$(echo "$response" | tail -n1)
   jenkinsfile=$(echo "$response" | sed '$d')
 
@@ -65,6 +65,9 @@ check_for_jenkinsfile() {
   else
     error "Failed to fetch Jenkinsfile for $repo. HTTP status code: $http_code"
   fi
+
+  # Add a delay to avoid hitting the rate limit
+  sleep 2
 }
 
 # Export the functions so they can be used by parallel
