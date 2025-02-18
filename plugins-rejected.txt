@@ -77,7 +77,6 @@ https://github.com/jenkinsci/caroline-plugin
 https://github.com/jenkinsci/cas1-plugin
 https://github.com/jenkinsci/cavirin-image-secure-plugin
 https://github.com/jenkinsci/ccm-plugin
-https://github.com/jenkinsci/central-repository-pom
 https://github.com/jenkinsci/certificate-authentication-plugin
 https://github.com/jenkinsci/ceylon-plugin
 https://github.com/jenkinsci/chef-handler-jenkins
@@ -213,7 +212,6 @@ https://github.com/jenkinsci/google-chat-plugin
 https://github.com/jenkinsci/google-deployment-manager-plugin
 https://github.com/jenkinsci/google-desktop-gadget-plugin
 https://github.com/jenkinsci/googlecode-plugin
-https://github.com/jenkinsci/gradle-jte-plugin
 https://github.com/jenkinsci/grails-plugin
 https://github.com/jenkinsci/graven-plugin
 https://github.com/jenkinsci/grinder-plugin
@@ -227,7 +225,6 @@ https://github.com/jenkinsci/hall-plugin
 https://github.com/jenkinsci/hangouts-chat-plugin
 https://github.com/jenkinsci/hello-world-groovy-plugin
 https://github.com/jenkinsci/hello-world-groovy-view-plugin
-https://github.com/jenkinsci/hello-world-maven-builder
 https://github.com/jenkinsci/hello-world-plugin
 https://github.com/jenkinsci/hello-world-scala-plugin
 https://github.com/jenkinsci/helm-charts
@@ -269,11 +266,9 @@ https://github.com/jenkinsci/jbpm-plugin
 https://github.com/jenkinsci/jcasc-vscode-extension
 https://github.com/jenkinsci/jdependency
 https://github.com/jenkinsci/jenkins-ace-editor
-https://github.com/jenkinsci/jenkins-automation-operator
 https://github.com/jenkinsci/jenkins-charm
 https://github.com/jenkinsci/jenkins-js-diag
 https://github.com/jenkinsci/jenkins-plugin-runtime.rb
-https://github.com/jenkinsci/jenkins-prototype
 https://github.com/jenkinsci/jenkins-scripts
 https://github.com/jenkinsci/jenkins-test-harness-tools
 https://github.com/jenkinsci/jenkins-user-event
@@ -285,8 +280,6 @@ https://github.com/jenkinsci/jenkinsfile-runner-image-packs
 https://github.com/jenkinsci/jenkow-plugin
 https://github.com/jenkinsci/jep
 https://github.com/jenkinsci/jexl
-https://github.com/jenkinsci/jfr-action-demo
-https://github.com/jenkinsci/jfr-action-doc
 https://github.com/jenkinsci/jgit
 https://github.com/jenkinsci/jira-finder-plugin
 https://github.com/jenkinsci/jira-issues-versioning-plugin
@@ -329,13 +322,11 @@ https://github.com/jenkinsci/kubernetes-ci-plugin
 https://github.com/jenkinsci/kubernetes-operator
 https://github.com/jenkinsci/kundo-plugin
 https://github.com/jenkinsci/kwjlib
-https://github.com/jenkinsci/label-test
 https://github.com/jenkinsci/lastsuccessdescriptioncolumn-plugin
 https://github.com/jenkinsci/lavalamp-plugin
 https://github.com/jenkinsci/lechat-plugin
 https://github.com/jenkinsci/leo-auth-plugin
 https://github.com/jenkinsci/lib-async-http-client
-https://github.com/jenkinsci/lib-bom-jep309
 https://github.com/jenkinsci/lib-commons-httpclient
 https://github.com/jenkinsci/lib-confluence-api
 https://github.com/jenkinsci/lib-embedded-rhino-debugger
@@ -355,7 +346,6 @@ https://github.com/jenkinsci/liverebel-deploy-plugin
 https://github.com/jenkinsci/livingdoc-reports-plugin
 https://github.com/jenkinsci/load-simulator
 https://github.com/jenkinsci/loaderio-plugin
-https://github.com/jenkinsci/loadfocus-jmeter-load-testing-integration-plugin
 https://github.com/jenkinsci/local-groovy-cli-plugin
 https://github.com/jenkinsci/localization-plugin
 https://github.com/jenkinsci/locks-and-latches-plugin
@@ -381,7 +371,6 @@ https://github.com/jenkinsci/mber-plugin
 https://github.com/jenkinsci/measurement-plots-plugin
 https://github.com/jenkinsci/meister-plugin
 https://github.com/jenkinsci/memegen-plugin
-https://github.com/jenkinsci/memkins
 https://github.com/jenkinsci/merge-queue-plugin
 https://github.com/jenkinsci/metrics-librato-plugin
 https://github.com/jenkinsci/mibsr-m2-plugin
@@ -511,8 +500,6 @@ https://github.com/jenkinsci/serenitec-plugin
 https://github.com/jenkinsci/setenv-plugin
 https://github.com/jenkinsci/sfee-plugin
 https://github.com/jenkinsci/sge-cloud-plugin
-https://github.com/jenkinsci/sig-cloud-native
-https://github.com/jenkinsci/sig-ux
 https://github.com/jenkinsci/silktestsuite-plugin
 https://github.com/jenkinsci/simple-travis-runner-plugin
 https://github.com/jenkinsci/sinatra-chef-builder-plugin
