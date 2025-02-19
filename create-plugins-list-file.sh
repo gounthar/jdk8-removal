@@ -87,4 +87,5 @@ if [ "$csv_file" == "$csv_file_jdk11" ]; then
     done < "$csv_file"
     sort "$plugins_list_jdk11_output_file" -o "$plugins_list_jdk11_output_file"
     echo "Processing complete. Results saved in $plugins_list_jdk11_output_file"
+    cp "$plugins_list_jdk11_output_file" "$plugins_list_jdk11_main_output_file"
 fi
