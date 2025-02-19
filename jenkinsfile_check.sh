@@ -53,7 +53,7 @@
      if grep -iE 'jdk.*11|java.*11|version.*11' <<< "$jenkinsfile"; then
        echo "JDK 11 was found in the Jenkinsfile for $repo"
        write_to_csv_jdk11 "$repo"
-     elif ! grep -iE 'jdk.*1[1789]|java.*1[1789]|version.*1[1789]' <<< "$jenkinsfile"; then
+     elif ! grep -iE 'jdk.*1[1789]|java.*1[1789]|version.*1[1789]|jdk.*21|java.*21|version.*21' <<< "$jenkinsfile"; then
        echo "No Java version found in the Jenkinsfile for $repo"
        write_to_csv "$repo"
      fi
