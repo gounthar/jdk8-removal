@@ -53,12 +53,10 @@ get_java_version_from_pom() {
 }
 
 # Function to extract Jenkins core version from pom.xml
+# Function to extract Jenkins core version from pom.xml
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
-    local jenkins_core_version=$(xmllint --xpath "string(//properties/jenkins.version)" "$pom_file")
-    if [ -z "$jenkins_core_version" ]; then
-        jenkins_core_version=$(xmllint --xpath "string(//dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version)" "$pom_file")
-    fi
+    local jenkins_core_version=$(xmllint --xpath "string($pom_xml_jenkins_core_version_xpath)" "$pom_file")
     echo "$jenkins_core_version"
 }
 
