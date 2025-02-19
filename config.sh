@@ -27,6 +27,11 @@ export plugins_list_jdk11_output_file
 # Useful in the docker compose heakthcheck.
 repos_retrieved_file="reports/repos-retrieved.txt"
 csv_file_jdk11="reports/plugins_using_jdk11_$current_date.csv"
+
+plugins_list_jdk11_main_output_file="plugins_jdk11_main_$current_date.txt"
+
+# Export the variables so they can be used by other scripts
+export plugins_list_jdk11_main_output_file
 # Define the rate limit delay in seconds
 RATE_LIMIT_DELAY=${RATE_LIMIT_DELAY:-2}
 
