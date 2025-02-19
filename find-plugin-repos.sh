@@ -162,6 +162,9 @@
       # Parse the pom.xml for Jenkins core version
       jenkins_core_version=$(echo "$pom_xml" | xmllint --xpath "string(//properties/jenkins.version)" -)
       if [ -z "$jenkins_core_version" ]; then
+        jenkins_core_version=$(echo "$pom_xml" | xmllint --xpath "string(//properties/jenkins.baseline | //properties/jenkins.version | //dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version)" -)
+      fi
+      if [ -z "$jenkins_core_version" ]; then
         jenkins_core_version=$(echo "$pom_xml" | xmllint --xpath "string(//dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version)" -)
       fi
       if [ -n "$jenkins_core_version" ]; then
