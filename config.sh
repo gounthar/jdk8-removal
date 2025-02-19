@@ -50,3 +50,10 @@ export plugins_list_no_jenkinsfile_main_output_file
 export plugins_list_old_java_main_output_file
 export csv_file_jdk11
 export RATE_LIMIT_DELAY
+
+# New configuration variables for pom.xml analysis
+pom_xml_java_version_xpath="//properties/maven.compiler.source | //properties/maven.compiler.target | //plugin[artifactId='maven-compiler-plugin']/configuration/source | //plugin[artifactId='maven-compiler-plugin']/configuration/target"
+pom_xml_jenkins_core_version_xpath="//properties/jenkins.version | //dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version"
+
+export pom_xml_java_version_xpath
+export pom_xml_jenkins_core_version_xpath

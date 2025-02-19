@@ -36,6 +36,32 @@ get_plugin_name() {
     echo "$url" | sed -n 's#.*/\([^/]*\)$#\1#p'
 }
 
+# Function to extract Java version from pom.xml
+get_java_version_from_pom() {
+    local pom_file=$1
+    local java_version=$(xmllint --xpath "string(//properties/maven.compiler.source)" "$pom_file")
+    if [ -z "$java_version" ]; then
+        java_version=$(xmllint --xpath "string(//properties/maven.compiler.target)" "$pom_file")
+    fi
+    if [ -z "$java_version" ]; then
+        java_version=$(xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/source)" "$pom_file")
+    fi
+    if [ -z "$java_version" ]; then
+        java_version=$(xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/target)" "$pom_file")
+    fi
+    echo "$java_version"
+}
+
+# Function to extract Jenkins core version from pom.xml
+get_jenkins_core_version_from_pom() {
+    local pom_file=$1
+    local jenkins_core_version=$(xmllint --xpath "string(//properties/jenkins.version)" "$pom_file")
+    if [ -z "$jenkins_core_version" ]; then
+        jenkins_core_version=$(xmllint --xpath "string(//dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version)" "$pom_file")
+    fi
+    echo "$jenkins_core_version"
+}
+
 # Main processing loop: reads each line from the CSV file, extracts plugin name and URL,
 # finds the corresponding plugin in the JSON file, and extracts its latest version.
 # The plugin name and its latest version are then written to the output file.

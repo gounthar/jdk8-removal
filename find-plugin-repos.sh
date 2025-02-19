@@ -104,6 +104,76 @@
     fi
   }
 
+  # Function to parse pom.xml for Java version detection
+  parse_pom_for_java_version() {
+    repo=$1
+    default_branch=$(gh repo view "$repo" --json defaultBranchRef --jq '.defaultBranchRef.name')
+    if [ -z "$default_branch" ]; then
+      error "Failed to retrieve default branch for $repo. Skipping repository."
+      return 1
+    fi
+
+    # Try to fetch pom.xml from the default branch using the resolved variable
+    response=$(curl -s -L -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/$default_branch/pom.xml")
+    http_code=$(echo "$response" | tail -n1)
+    pom_xml=$(echo "$response" | sed '$d')
+
+    # Check the HTTP status code
+    if [ "$http_code" -eq 200 ]; then
+      info "pom.xml found in $repo"
+      # Parse the pom.xml for Java version
+      java_version=$(echo "$pom_xml" | xmllint --xpath "string(//properties/maven.compiler.source)" -)
+      if [ -z "$java_version" ]; then
+        java_version=$(echo "$pom_xml" | xmllint --xpath "string(//properties/maven.compiler.target)" -)
+      fi
+      if [ -z "$java_version" ]; then
+        java_version=$(echo "$pom_xml" | xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/source)" -)
+      fi
+      if [ -z "$java_version" ]; then
+        java_version=$(echo "$pom_xml" | xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/target)" -)
+      fi
+      if [ -n "$java_version" ]; then
+        info "Java version $java_version detected in $repo"
+      else
+        info "No Java version detected in $repo"
+      fi
+    else
+      error "Failed to fetch pom.xml for $repo. HTTP status code: $http_code"
+    fi
+  }
+
+  # Function to parse pom.xml for Jenkins core version detection
+  parse_pom_for_jenkins_core_version() {
+    repo=$1
+    default_branch=$(gh repo view "$repo" --json defaultBranchRef --jq '.defaultBranchRef.name')
+    if [ -z "$default_branch" ]; then
+      error "Failed to retrieve default branch for $repo. Skipping repository."
+      return 1
+    fi
+
+    # Try to fetch pom.xml from the default branch using the resolved variable
+    response=$(curl -s -L -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" "https://raw.githubusercontent.com/$repo/$default_branch/pom.xml")
+    http_code=$(echo "$response" | tail -n1)
+    pom_xml=$(echo "$response" | sed '$d')
+
+    # Check the HTTP status code
+    if [ "$http_code" -eq 200 ]; then
+      info "pom.xml found in $repo"
+      # Parse the pom.xml for Jenkins core version
+      jenkins_core_version=$(echo "$pom_xml" | xmllint --xpath "string(//properties/jenkins.version)" -)
+      if [ -z "$jenkins_core_version" ]; then
+        jenkins_core_version=$(echo "$pom_xml" | xmllint --xpath "string(//dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version)" -)
+      fi
+      if [ -n "$jenkins_core_version" ]; then
+        info "Jenkins core version $jenkins_core_version detected in $repo"
+      else
+        info "No Jenkins core version detected in $repo"
+      fi
+    else
+      error "Failed to fetch pom.xml for $repo. HTTP status code: $http_code"
+    fi
+  }
+
   # Export the functions so they can be used by parallel
   export -f write_to_csv
   export -f write_to_csv_jdk11
@@ -111,6 +181,8 @@
   export -f check_java_version_in_jenkinsfile
   export -f check_for_jenkinsfile
   export -f check_rate_limit
+  export -f parse_pom_for_java_version
+  export -f parse_pom_for_jenkins_core_version
 
   # Create a CSV file and write the header
   echo "Plugin,URL" >"$csv_file"
@@ -131,6 +203,8 @@
     repos=$(echo "$response" | jq -r '.[].full_name')
     # Use parallel to process each repository
     echo "$repos" | parallel check_for_jenkinsfile
+    echo "$repos" | parallel parse_pom_for_java_version
+    echo "$repos" | parallel parse_pom_for_jenkins_core_version
 
     # If the response is empty, break the loop
     [ -z "$repos" ] && break
