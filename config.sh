@@ -20,7 +20,9 @@ plugins_list_old_java_output_file="reports/plugins_old_java_$current_date.txt"  
 plugins_list_old_java_main_output_file="plugins_old_java.txt"
 plugins_list_output_file="plugins.txt"  # Define the output file name.
 plugins_no_jenkinsfile=
+plugins_list_jdk11_output_file="plugins_jdk11.txt"
 export plugins_no_jenkinsfile
+export plugins_list_jdk11_output_file
 # The presence of this file will be used to determine whether the repositories have already been retrieved.
 # Useful in the docker compose heakthcheck.
 repos_retrieved_file="reports/repos-retrieved.txt"
