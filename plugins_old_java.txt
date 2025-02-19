@@ -18,7 +18,6 @@ amqp-build-trigger:1.0
 ansible-tower:0.17.0
 ant-in-workspace:1.2.2
 appcenter:0.11.1
-appknox-scanner:1.0.2
 appray:1.1.1
 apprenda:2.2.0
 aqua-microscanner:1.0.8
@@ -60,17 +59,14 @@ beaker-builder:1.10
 bitbucket-approval-filter:1.0.3
 bitbucket-build-status-notifier:1.4.2
 bitbucket-filter-project-trait:1.0
-bitbucket-kubernetes-credentials:467.vdffa_a_9249dc5
 bitbucket-pullrequest-builder:1.5.0
 bitbucket-scm-filter-jira-validator:0.1.0
-black-duck-sigma:2024.10.1
 bmc-change-manager-imstm:48.v6bd42382a2ee
 breachlock-dast:1.2
 btc-embeddedplatform:23.3.1
 build-discarder:158.vce570d01ce4c
 build-executors-filter-offline:1.1
 build-health-cache-updater:1.1
-build-monitor-plugin:1.14-961.v676e38a_7a_248
 build-symlink:1.1
 build-token-trigger:1.0.0
 build-view-column:0.3
@@ -197,7 +193,6 @@ gprbuild:1.0
 gradle-repo:1.0.1
 graphql-server:0.0.5
 greenballs:1.15.1
-groovy-events-listener-plugin:2.240.ve36a_f312f329
 grypescanner:1.8
 habitat:0.6.5
 hashicorp-vault-pipeline:1.4
@@ -250,7 +245,6 @@ link-column:1.0
 llvm-cov:1.0.0
 loadium:1.6
 loadninja:1.4
-log-cli:183.v28b_9a_3e48061
 log-command:1.0.2
 logback-nats-appender:0.2.2
 logfilesizechecker:1.5
@@ -270,7 +264,6 @@ multi-branch-priority-sorter:1.0
 multi-slave-config-plugin:1.2.0
 muuri-api:0.9.5-3
 neoload-jenkins-plugin:2.2.11
-nested-data-reporting:5.2.3
 netdomain-labeler:0.0.2
 neuro-cucumber:1.0.4
 neuvector-vulnerability-scanner:2.4
@@ -302,7 +295,6 @@ packer:1.5
 periodic-reincarnation:1.13
 phabricator-k8s:1.0.0
 pipeline-bamboo:0.0.2
-pipeline-cloudwatch-logs:178.vf18b_230618a_4
 pipeline-config-history:1.6
 pipeline-deploymon:1.0
 pipeline-giphy-api:2.0.1
@@ -314,7 +306,6 @@ pipeline-keep-running-step:1.3
 pipeline-reporter-by-redpen:1.054.v7b_9517b_6b_202
 pipeline-timeline:1.0.3
 portscanner:1.7
-postgresql-api:42.7.2-40.v76d376d65c77
 preflight-integration:1.4
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
@@ -335,7 +326,6 @@ qualys-cs:1.7.0.3
 qualys-vm:1.2.1
 qualys-was:2.1.3
 queue-cleanup:1.4
-queueredirector:44.v74c8e1210985
 qy-wechat-notification:1.1.3
 r7insight-log-forwarder:0.0.1
 rabbitmq-build-trigger:2.5
@@ -387,14 +377,12 @@ snowglobe:0.4.1
 soapui-pro-functional-testing:1.11
 sofy-ai:1.0.3
 solarized-theme:0.1
-sonar-gerrit:388.v9b_f1cb_e42306
 sonic-ci-helper:1.0.5
 sounds:0.7
 split-admin:2.0
 spring-config:2.0.2
 stackrox-container-image-scanner:1.4.2
 stash-pullrequest-builder:1.17
-statusmonitor:44.v3d97a_d2810f1
 statuspage-gating:1.1
 suppress-stack-trace:1.6
 sweagle:1.2.1
@@ -418,7 +406,6 @@ thycotic-secret-server:1.1.1
 tmpcleaner:1.3
 toolenv:1.2
 translation:1.16
-trilead-api:2.147.vb_73cc728a_32e
 typetalk:194.v3586feb_6e248
 uleska:38.v2f6e7a27eb0a
 updatebot:1.0.10
@@ -436,7 +423,6 @@ variables-replace-plugin:1.0.0
 vdoo-vision:1.9
 viber-notification:1.8.19
 views-containing-job:1.3
-violation-comments-to-github:1.96
 visualexpert:2024.1.1
 vrealize-automation-8:1.4
 vsphere-cloud:2.27
