@@ -18,13 +18,11 @@ All Changes Plugin,https://github.com/jenkinsci/all-changes-plugin
 Amqp Build Trigger Plugin,https://github.com/jenkinsci/amqp-build-trigger-plugin
 Analysis Collector Plugin,https://github.com/jenkinsci/analysis-collector-plugin
 Analysis Core Plugin,https://github.com/jenkinsci/analysis-core-plugin
-Analysis Pom Plugin,https://github.com/jenkinsci/analysis-pom-plugin
 Analysis Test Plugin,https://github.com/jenkinsci/analysis-test-plugin
 Android Lint Plugin,https://github.com/jenkinsci/android-lint-plugin
 Ansible Tower Plugin,https://github.com/jenkinsci/ansible-tower-plugin
 Ant In Workspace Plugin,https://github.com/jenkinsci/ant-in-workspace-plugin
 Appcenter Plugin,https://github.com/jenkinsci/appcenter-plugin
-Appknox Scanner Plugin,https://github.com/jenkinsci/appknox-scanner-plugin
 Appray Plugin,https://github.com/jenkinsci/appray-plugin
 Apprenda Plugin,https://github.com/jenkinsci/apprenda-plugin
 Aqua Microscanner Plugin,https://github.com/jenkinsci/aqua-microscanner-plugin
@@ -70,9 +68,7 @@ Beaker Builder Plugin,https://github.com/jenkinsci/beaker-builder-plugin
 Bitbucket Approval Filter Plugin,https://github.com/jenkinsci/bitbucket-approval-filter-plugin
 Bitbucket Build Status Notifier Plugin,https://github.com/jenkinsci/bitbucket-build-status-notifier-plugin
 Bitbucket Filter Project Trait Plugin,https://github.com/jenkinsci/bitbucket-filter-project-trait-plugin
-Bitbucket Kubernetes Credentials Plugin,https://github.com/jenkinsci/bitbucket-kubernetes-credentials-plugin
 Bitbucket Pullrequest Builder Plugin,https://github.com/jenkinsci/bitbucket-pullrequest-builder-plugin
-Black Duck Sigma Plugin,https://github.com/jenkinsci/black-duck-sigma-plugin
 Blueocean Executor Info Plugin,https://github.com/jenkinsci/blueocean-executor-info-plugin
 Bmc Change Manager Imstm Plugin,https://github.com/jenkinsci/bmc-change-manager-imstm-plugin
 Breachlock Dast Plugin,https://github.com/jenkinsci/breachlock-dast-plugin
@@ -81,7 +77,6 @@ Build Configurator Plugin,https://github.com/jenkinsci/build-configurator-plugin
 Build Discarder Plugin,https://github.com/jenkinsci/build-discarder-plugin
 Build Executors Filter Offline Plugin,https://github.com/jenkinsci/build-executors-filter-offline-plugin
 Build Health Cache Updater Plugin,https://github.com/jenkinsci/build-health-cache-updater-plugin
-Build Monitor Plugin,https://github.com/jenkinsci/build-monitor-plugin
 Build Publisher Plugin,https://github.com/jenkinsci/build-publisher-plugin
 Build Symlink Plugin,https://github.com/jenkinsci/build-symlink-plugin
 Build Token Trigger Plugin,https://github.com/jenkinsci/build-token-trigger-plugin
@@ -232,7 +227,6 @@ Gprbuild Plugin,https://github.com/jenkinsci/gprbuild-plugin
 Gradle Repo Plugin,https://github.com/jenkinsci/gradle-repo-plugin
 Graphql Server Plugin,https://github.com/jenkinsci/graphql-server-plugin
 Greenballs Plugin,https://github.com/jenkinsci/greenballs-plugin
-Groovy Events Listener Plugin,https://github.com/jenkinsci/groovy-events-listener-plugin
 Grypescanner Plugin,https://github.com/jenkinsci/grypescanner-plugin
 Habitat Plugin,https://github.com/jenkinsci/habitat-plugin
 Hashicorp Vault Pipeline Plugin,https://github.com/jenkinsci/hashicorp-vault-pipeline-plugin
@@ -241,7 +235,6 @@ Helix Teamhub Plugin,https://github.com/jenkinsci/helix-teamhub-plugin
 Hipchat Plugin,https://github.com/jenkinsci/hipchat-plugin
 Hockeyapp Plugin,https://github.com/jenkinsci/hockeyapp-plugin
 Hp Quality Center Plugin,https://github.com/jenkinsci/hp-quality-center-plugin
-Hpe Application Automation Tools Plugin,https://github.com/jenkinsci/hpe-application-automation-tools-plugin
 Html5 Notifier Plugin,https://github.com/jenkinsci/html5-notifier-plugin
 Huaweicloud Credentials Plugin,https://github.com/jenkinsci/huaweicloud-credentials-plugin
 Huaweicloud Ecs Plugin,https://github.com/jenkinsci/huaweicloud-ecs-plugin
@@ -300,7 +293,6 @@ Llvm Cov Plugin,https://github.com/jenkinsci/llvm-cov-plugin
 Loadium Plugin,https://github.com/jenkinsci/loadium-plugin
 Loadninja Plugin,https://github.com/jenkinsci/loadninja-plugin
 Localization Tr Plugin,https://github.com/jenkinsci/localization-tr-plugin
-Log Cli Plugin,https://github.com/jenkinsci/log-cli-plugin
 Log Command Plugin,https://github.com/jenkinsci/log-command-plugin
 Logback Nats Appender Plugin,https://github.com/jenkinsci/logback-nats-appender-plugin
 Logfilesizechecker Plugin,https://github.com/jenkinsci/logfilesizechecker-plugin
@@ -323,7 +315,6 @@ Multi Slave Config Plugin,https://github.com/jenkinsci/multi-slave-config-plugin
 Multibranch Scan Webhook Trigger Plugin,https://github.com/jenkinsci/multibranch-scan-webhook-trigger-plugin
 Muuri Api Plugin,https://github.com/jenkinsci/muuri-api-plugin
 Neoload Plugin,https://github.com/jenkinsci/neoload-plugin
-Nested Data Reporting Plugin,https://github.com/jenkinsci/nested-data-reporting-plugin
 Netdomain Labeler Plugin,https://github.com/jenkinsci/netdomain-labeler-plugin
 Neuro Cucumber Plugin,https://github.com/jenkinsci/neuro-cucumber-plugin
 Neuvector Vulnerability Scanner Plugin,https://github.com/jenkinsci/neuvector-vulnerability-scanner-plugin
@@ -361,7 +352,6 @@ Phabricator K8s Plugin,https://github.com/jenkinsci/phabricator-k8s-plugin
 Phoenix Autotest Plugin,https://github.com/jenkinsci/phoenix-autotest-plugin
 Pingcode Plugin,https://github.com/jenkinsci/pingcode-plugin
 Pipeline Bamboo Plugin,https://github.com/jenkinsci/pipeline-bamboo-plugin
-Pipeline Cloudwatch Logs Plugin,https://github.com/jenkinsci/pipeline-cloudwatch-logs-plugin
 Pipeline Config History Plugin,https://github.com/jenkinsci/pipeline-config-history-plugin
 Pipeline Deploymon Plugin,https://github.com/jenkinsci/pipeline-deploymon-plugin
 Pipeline Giphy Api Plugin,https://github.com/jenkinsci/pipeline-giphy-api-plugin
@@ -377,7 +367,6 @@ Plasticscm Mergebot Plugin,https://github.com/jenkinsci/plasticscm-mergebot-plug
 Pmd Plugin,https://github.com/jenkinsci/pmd-plugin
 Pnap Bmc Plugin,https://github.com/jenkinsci/pnap-bmc-plugin
 Portscanner Plugin,https://github.com/jenkinsci/portscanner-plugin
-Postgresql Api Plugin,https://github.com/jenkinsci/postgresql-api-plugin
 Preflight Integration Plugin,https://github.com/jenkinsci/preflight-integration-plugin
 Prisma Cloud Iac Scan Plugin,https://github.com/jenkinsci/prisma-cloud-iac-scan-plugin
 Probely Security Plugin,https://github.com/jenkinsci/probely-security-plugin
@@ -401,7 +390,6 @@ Qualys Cs Plugin,https://github.com/jenkinsci/qualys-cs-plugin
 Qualys Vm Plugin,https://github.com/jenkinsci/qualys-vm-plugin
 Qualys Was Plugin,https://github.com/jenkinsci/qualys-was-plugin
 Queue Cleanup Plugin,https://github.com/jenkinsci/queue-cleanup-plugin
-Queueredirector Plugin,https://github.com/jenkinsci/queueredirector-plugin
 Qy Wechat Notification Plugin,https://github.com/jenkinsci/qy-wechat-notification-plugin
 R7insight Log Forwarder Plugin,https://github.com/jenkinsci/r7insight-log-forwarder-plugin
 Rabbitmq Build Trigger Plugin,https://github.com/jenkinsci/rabbitmq-build-trigger-plugin
@@ -469,7 +457,6 @@ Soapui Pro Functional Testing Plugin,https://github.com/jenkinsci/soapui-pro-fun
 Sofy Ai Plugin,https://github.com/jenkinsci/sofy-ai-plugin
 Sofy Upload Plugin,https://github.com/jenkinsci/sofy-upload-plugin
 Solarized Theme Plugin,https://github.com/jenkinsci/solarized-theme-plugin
-Sonar Gerrit Plugin,https://github.com/jenkinsci/sonar-gerrit-plugin
 Sonargraph Plugin,https://github.com/jenkinsci/sonargraph-plugin
 Sonic Ci Helper Plugin,https://github.com/jenkinsci/sonic-ci-helper-plugin
 Sounds Plugin,https://github.com/jenkinsci/sounds-plugin
@@ -478,7 +465,6 @@ Spring Config Plugin,https://github.com/jenkinsci/spring-config-plugin
 Ssh Cli Auth Module,https://github.com/jenkinsci/ssh-cli-auth-module
 Stackrox Container Image Scanner Plugin,https://github.com/jenkinsci/stackrox-container-image-scanner-plugin
 Stash Pullrequest Builder Plugin,https://github.com/jenkinsci/stash-pullrequest-builder-plugin
-Statusmonitor Plugin,https://github.com/jenkinsci/statusmonitor-plugin
 Statuspage Gating Plugin,https://github.com/jenkinsci/statuspage-gating-plugin
 Stride Notification Plugin,https://github.com/jenkinsci/stride-notification-plugin
 Suppress Stack Trace Plugin,https://github.com/jenkinsci/suppress-stack-trace-plugin
@@ -501,7 +487,6 @@ Teststudio Plugin,https://github.com/jenkinsci/teststudio-plugin
 Teststudioapitesting Plugin,https://github.com/jenkinsci/teststudioapitesting-plugin
 Teststudiomobiletesting Plugin,https://github.com/jenkinsci/teststudiomobiletesting-plugin
 Testweaver Plugin,https://github.com/jenkinsci/testweaver-plugin
-Testwheel Trigger Plugin,https://github.com/jenkinsci/testwheel-trigger-plugin
 Tfs Plugin,https://github.com/jenkinsci/tfs-plugin
 Themis Plugin,https://github.com/jenkinsci/themis-plugin
 Thundra Foresight Plugin,https://github.com/jenkinsci/thundra-foresight-plugin
@@ -512,7 +497,6 @@ Tinfoil Scan Plugin,https://github.com/jenkinsci/tinfoil-scan-plugin
 Tmpcleaner Plugin,https://github.com/jenkinsci/tmpcleaner-plugin
 Toolenv Plugin,https://github.com/jenkinsci/toolenv-plugin
 Translation Plugin,https://github.com/jenkinsci/translation-plugin
-Trilead Api Plugin,https://github.com/jenkinsci/trilead-api-plugin
 Typetalk Plugin,https://github.com/jenkinsci/typetalk-plugin
 Uleska Plugin,https://github.com/jenkinsci/uleska-plugin
 Unik Builder Plugin,https://github.com/jenkinsci/unik-builder-plugin
@@ -533,7 +517,6 @@ Variables Replace Plugin,https://github.com/jenkinsci/variables-replace-plugin
 Vdoo Vision Plugin,https://github.com/jenkinsci/vdoo-vision-plugin
 Viber Notification Plugin,https://github.com/jenkinsci/viber-notification-plugin
 Views Containing Job Plugin,https://github.com/jenkinsci/views-containing-job-plugin
-Violation Comments To Github Plugin,https://github.com/jenkinsci/violation-comments-to-github-plugin
 Visualexpert Plugin,https://github.com/jenkinsci/visualexpert-plugin
 Vrealize Automation 8 Plugin,https://github.com/jenkinsci/vrealize-automation-8-plugin
 Vsphere Cloud Plugin,https://github.com/jenkinsci/vsphere-cloud-plugin
