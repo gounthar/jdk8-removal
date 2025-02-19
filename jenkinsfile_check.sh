@@ -64,15 +64,15 @@
 get_java_version_from_pom() {
     local pom_file=$1
     local java_version
-    java_version=$(xmllint --xpath "string(//properties/maven.compiler.source)" "$pom_file")
+    java_version=$(xsltproc remove-namespaces.xsl "$pom_file" > pom-no-namespaces.xml && mv pom-no-namespaces.xml "$pom_file" && xmllint --xpath "string(//properties/maven.compiler.source)" "$pom_file")
     if [ -z "$java_version" ]; then
-        java_version=$(xmllint --xpath "string(//properties/maven.compiler.target)" "$pom_file")
+        java_version=$(xsltproc remove-namespaces.xsl "$pom_file" > pom-no-namespaces.xml && mv pom-no-namespaces.xml "$pom_file" && xmllint --xpath "string(//properties/maven.compiler.target)" "$pom_file")
     fi
     if [ -z "$java_version" ]; then
-        java_version=$(xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/source)" "$pom_file")
+        java_version=$(xsltproc remove-namespaces.xsl "$pom_file" > pom-no-namespaces.xml && mv pom-no-namespaces.xml "$pom_file" && xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/source)" "$pom_file")
     fi
     if [ -z "$java_version" ]; then
-        java_version=$(xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/target)" "$pom_file")
+        java_version=$(xsltproc remove-namespaces.xsl "$pom_file" > pom-no-namespaces.xml && mv pom-no-namespaces.xml "$pom_file" && xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/target)" "$pom_file")
     fi
     echo "$java_version"
 }
@@ -80,6 +80,6 @@ get_java_version_from_pom() {
 # Function to extract Jenkins core version from pom.xml
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
-    local jenkins_core_version=$(xmllint --xpath "string($pom_xml_jenkins_core_version_xpath)" "$pom_file")
+    local jenkins_core_version=$(xsltproc remove-namespaces.xsl "$pom_file" > pom-no-namespaces.xml && mv pom-no-namespaces.xml "$pom_file" && xmllint --xpath "string($pom_xml_jenkins_core_version_xpath)" "$pom_file")
     echo "$jenkins_core_version"
 }
