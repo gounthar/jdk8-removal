@@ -63,7 +63,8 @@
 # Function to extract Java version from pom.xml
 get_java_version_from_pom() {
     local pom_file=$1
-    local java_version=$(xmllint --xpath "string(//properties/maven.compiler.source)" "$pom_file")
+    local java_version
+    java_version=$(xmllint --xpath "string(//properties/maven.compiler.source)" "$pom_file")
     if [ -z "$java_version" ]; then
         java_version=$(xmllint --xpath "string(//properties/maven.compiler.target)" "$pom_file")
     fi
