@@ -37,6 +37,10 @@ get_plugin_name() {
 }
 
 # Function to extract Java version from pom.xml
+# Ensure that config.sh is sourced to define the pom_xml_java_version_xpath array
+source config.sh
+
+# Function to extract Java version from pom.xml
 get_java_version_from_pom() {
     local pom_file=$1
     local temp_file
@@ -45,6 +49,7 @@ get_java_version_from_pom() {
     # Ensure the temporary file is removed if the function exits unexpectedly
     trap 'rm -f "$temp_file"' EXIT
 
+    # Transform the XML file to remove namespaces
     if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
         echo "Error: Failed to transform XML file" >&2
@@ -52,12 +57,14 @@ get_java_version_from_pom() {
     fi
 
     local java_version=""
+    # Iterate over the array of XPath expressions to capture the first non-empty value
     for xpath in "${pom_xml_java_version_xpath[@]}"; do
         if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
             break
         fi
     done
 
+    # Explicitly remove the temporary file
     rm -f "$temp_file"
     echo "$java_version"
 }
