@@ -61,29 +61,44 @@
  }
 
 # Function to extract Java version from pom.xml
+# Function to extract Java version from pom.xml
+# Ensure that config.sh is sourced to define the pom_xml_java_version_xpath array
 get_java_version_from_pom() {
     local pom_file=$1
-    local temp_file
-    temp_file=$(mktemp)
 
-    # Ensure the temporary file is removed if the function exits unexpectedly
-    trap 'rm -f "$temp_file"' EXIT
-
-    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
-        rm -f "$temp_file"
-        echo "Error: Failed to transform XML file" >&2
+    # Check if the pom_xml_java_version_xpath array is defined
+    if [ -z "${pom_xml_java_version_xpath+x}" ]; then
+        echo "Error: pom_xml_java_version_xpath array is not defined" >&2
         return 1
     fi
 
-    local java_version=""
-    for xpath in "${pom_xml_java_version_xpath[@]}"; do
-        if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
-            break
-        fi
-    done
+    # Use a subshell to localize the trap
+    (
+        local temp_file
+        temp_file=$(mktemp)
 
-    rm -f "$temp_file"
-    echo "$java_version"
+        # Ensure the temporary file is removed if the function exits unexpectedly
+        trap 'rm -f "$temp_file"' EXIT
+
+        # Transform the XML file to remove namespaces
+        if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
+            rm -f "$temp_file"
+            echo "Error: Failed to transform XML file" >&2
+            exit 1
+        fi
+
+        local java_version=""
+        # Iterate over the array of XPath expressions to capture the first non-empty value
+        for xpath in "${pom_xml_java_version_xpath[@]}"; do
+            if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
+                break
+            fi
+        done
+
+        # Explicitly remove the temporary file
+        rm -f "$temp_file"
+        echo "$java_version"
+    )
 }
 
 # Function to extract Jenkins core version from pom.xml
