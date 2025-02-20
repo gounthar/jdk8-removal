@@ -39,16 +39,22 @@ get_plugin_name() {
 # Function to extract Java version from pom.xml
 get_java_version_from_pom() {
     local pom_file=$1
-    local java_version=$(xmllint --xpath "string(//properties/maven.compiler.source)" "$pom_file")
-    if [ -z "$java_version" ]; then
-        java_version=$(xmllint --xpath "string(//properties/maven.compiler.target)" "$pom_file")
+    local temp_file
+    temp_file=$(mktemp)
+    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
+        rm -f "$temp_file"
+        echo "Error: Failed to transform XML file" >&2
+        return 1
     fi
-    if [ -z "$java_version" ]; then
-        java_version=$(xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/source)" "$pom_file")
-    fi
-    if [ -z "$java_version" ]; then
-        java_version=$(xmllint --xpath "string(//plugin[artifactId='maven-compiler-plugin']/configuration/target)" "$pom_file")
-    fi
+    
+    local java_version=""
+    for xpath in "${pom_xml_java_version_xpath[@]}"; do
+        if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
+            break
+        fi
+    done
+    
+    rm -f "$temp_file"
     echo "$java_version"
 }
 
@@ -56,7 +62,22 @@ get_java_version_from_pom() {
 # Function to extract Jenkins core version from pom.xml
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
-    local jenkins_core_version=$(xmllint --xpath "string($pom_xml_jenkins_core_version_xpath)" "$pom_file")
+    local temp_file
+    temp_file=$(mktemp)
+    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
+        rm -f "$temp_file"
+        echo "Error: Failed to transform XML file" >&2
+        return 1
+    fi
+    
+    local jenkins_core_version=""
+    for xpath in "${pom_xml_jenkins_core_version_xpath[@]}"; do
+        if jenkins_core_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_core_version" ]; then
+            break
+        fi
+    done
+    
+    rm -f "$temp_file"
     echo "$jenkins_core_version"
 }
 
