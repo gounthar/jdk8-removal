@@ -62,8 +62,6 @@ get_java_version_from_pom() {
     echo "$java_version"
 }
 
-source config.sh
-
 # Function to extract Jenkins core version from pom.xml
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
