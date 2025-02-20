@@ -41,19 +41,23 @@ get_java_version_from_pom() {
     local pom_file=$1
     local temp_file
     temp_file=$(mktemp)
+
+    # Ensure the temporary file is removed if the function exits unexpectedly
+    trap 'rm -f "$temp_file"' EXIT
+
     if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
         echo "Error: Failed to transform XML file" >&2
         return 1
     fi
-    
+
     local java_version=""
     for xpath in "${pom_xml_java_version_xpath[@]}"; do
         if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
             break
         fi
     done
-    
+
     rm -f "$temp_file"
     echo "$java_version"
 }
