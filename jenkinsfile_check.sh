@@ -72,38 +72,33 @@ get_java_version_from_pom() {
         return 1
     fi
 
-    # Use a subshell to localize the trap
-    (
-        local temp_file
-        temp_file=$(mktemp)
+    local temp_file
+    temp_file=$(mktemp)
 
-        # Ensure the temporary file is removed if the function exits unexpectedly
-        trap 'rm -f "$temp_file"' EXIT
+    # Ensure the temporary file is removed if the function exits unexpectedly
+    trap 'rm -f "$temp_file"' EXIT
 
-        # Transform the XML file to remove namespaces
-        if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
-            rm -f "$temp_file"
-            echo "Error: Failed to transform XML file" >&2
-            exit 1
-        fi
-
-        local java_version=""
-        # Iterate over the array of XPath expressions to capture the first non-empty value
-        for xpath in "${pom_xml_java_version_xpath[@]}"; do
-            if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
-                break
-            fi
-        done
-
-        # Explicitly remove the temporary file
+    # Transform the XML file to remove namespaces
+    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
-        echo "$java_version"
-    )
+        echo "Error: Failed to transform XML file" >&2
+        return 1
+    fi
+
+    local java_version=""
+    # Iterate over the array of XPath expressions to capture the first non-empty value
+    for xpath in "${pom_xml_java_version_xpath[@]}"; do
+        if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
+            break
+        fi
+    done
+
+    # Explicitly remove the temporary file
+    rm -f "$temp_file"
+    echo "$java_version"
 }
 
 # Function to extract Jenkins core version from pom.xml
-# Function to extract Jenkins core version from pom.xml
-# Ensure that config.sh is sourced to define the pom_xml_jenkins_core_version_xpath array
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
 
@@ -113,29 +108,26 @@ get_jenkins_core_version_from_pom() {
         return 1
     fi
 
-    # Use a subshell to localize the trap
-    (
-        local temp_file
-        temp_file=$(mktemp)
+    local temp_file
+    temp_file=$(mktemp)
 
-        # Ensure the temporary file is removed if the function exits unexpectedly
-        trap 'rm -f "$temp_file"' EXIT
+    # Ensure the temporary file is removed if the function exits unexpectedly
+    trap 'rm -f "$temp_file"' EXIT
 
-        if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
-            rm -f "$temp_file"
-            echo "Error: Failed to transform XML file" >&2
-            exit 1
-        fi
-
-        local jenkins_core_version=""
-        for xpath in "${pom_xml_jenkins_core_version_xpath[@]}"; do
-            if jenkins_core_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_core_version" ]; then
-                break
-            fi
-        done
-
-        # Explicitly remove the temporary file
+    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
-        echo "$jenkins_core_version"
-    )
+        echo "Error: Failed to transform XML file" >&2
+        return 1
+    fi
+
+    local jenkins_core_version=""
+    for xpath in "${pom_xml_jenkins_core_version_xpath[@]}"; do
+        if jenkins_core_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_core_version" ]; then
+            break
+        fi
+    done
+
+    # Explicitly remove the temporary file
+    rm -f "$temp_file"
+    echo "$jenkins_core_version"
 }
