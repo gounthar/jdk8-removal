@@ -91,19 +91,23 @@ get_jenkins_core_version_from_pom() {
     local pom_file=$1
     local temp_file
     temp_file=$(mktemp)
+
+    # Ensure the temporary file is removed if the function exits unexpectedly
+    trap 'rm -f "$temp_file"' EXIT
+
     if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
         echo "Error: Failed to transform XML file" >&2
         return 1
     fi
-    
+
     local jenkins_core_version=""
     for xpath in "${pom_xml_jenkins_core_version_xpath[@]}"; do
         if jenkins_core_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_core_version" ]; then
             break
         fi
     done
-    
+
     rm -f "$temp_file"
     echo "$jenkins_core_version"
 }
