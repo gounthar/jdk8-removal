@@ -102,7 +102,6 @@ get_java_version_from_pom() {
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
 
-    # Check if the pom_xml_jenkins_core_version_xpath array is defined
     if [ -z "${pom_xml_jenkins_core_version_xpath+x}" ]; then
         echo "Error: pom_xml_jenkins_core_version_xpath array is not defined" >&2
         return 1
@@ -111,14 +110,20 @@ get_jenkins_core_version_from_pom() {
     local temp_file
     temp_file=$(mktemp)
 
-    # Ensure the temporary file is removed if the function exits unexpectedly
     trap 'rm -f "$temp_file"' EXIT
+
+    # Debugging: Print the temporary file path
+    echo "Temporary file: $temp_file"
 
     if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
         echo "Error: Failed to transform XML file" >&2
         return 1
     fi
+
+    # Debugging: Print the content of the temporary file
+    echo "Transformed XML content:"
+    cat "$temp_file"
 
     local jenkins_core_version=""
     for xpath in "${pom_xml_jenkins_core_version_xpath[@]}"; do
@@ -127,7 +132,6 @@ get_jenkins_core_version_from_pom() {
         fi
     done
 
-    # Explicitly remove the temporary file
     rm -f "$temp_file"
     echo "$jenkins_core_version"
 }
