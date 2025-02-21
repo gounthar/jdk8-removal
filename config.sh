@@ -59,15 +59,26 @@ declare -a pom_xml_java_version_xpath=(
   "//plugin[artifactId='maven-compiler-plugin']/configuration/source"
   "//plugin[artifactId='maven-compiler-plugin']/configuration/target"
 )
+
+# shell arrays are not automatically inherited by subshells created via parallel. One workaround is to store your array elements in a single variable, then rebuild the array in each function.
+pom_xml_java_version_xpath_items="//properties/java.level //properties/maven.compiler.source //properties/maven.compiler.target //plugin[artifactId='maven-compiler-plugin']/configuration/source //plugin[artifactId='maven-compiler-plugin']/configuration/target"
+
 declare -a pom_xml_jenkins_core_version_xpath=(
   "//properties/jenkins.baseline"
   "//properties/jenkins.version"
   "//dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version"
 )
+# shell arrays are not automatically inherited by subshells created via parallel. One workaround is to store your array elements in a single variable, then rebuild the array in each function.
+pom_xml_jenkins_core_version_xpath_items="//properties/jenkins.baseline //properties/jenkins.version //dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version"
+
 declare -a pom_xml_jenkins_parent_pom_version_xpath=(
   "//parent[artifactId='plugin']/version"
 )
+pom_xml_jenkins_parent_pom_version_xpath_items="//parent[artifactId='plugin']/version"
 
 export pom_xml_java_version_xpath
 export pom_xml_jenkins_core_version_xpath
 export pom_xml_jenkins_parent_pom_version_xpath
+export pom_xml_java_version_xpath_items
+export pom_xml_jenkins_core_version_xpath_items
+export pom_xml_jenkins_parent_pom_version_xpath_items
