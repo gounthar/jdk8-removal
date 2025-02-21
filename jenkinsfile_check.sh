@@ -20,6 +20,17 @@ if [ -z "${pom_xml_jenkins_parent_pom_version_xpath+x}" ]; then
   exit 1
 fi
 
+
+if [ ! -f 'remove-namespaces.xsl' ]; then
+  echo "remove-namespaces.xsl not found. Place it in the same directory or adjust the path."
+  exit 1
+fi
+
+if ! command -v xsltproc >/dev/null 2>&1; then
+  echo "xsltproc is not installed. Install it before proceeding."
+  exit 1
+fi
+
 # Source the configuration file
 source config.sh
 
@@ -89,7 +100,8 @@ source config.sh
 # Ensure that config.sh is sourced to define the pom_xml_java_version_xpath array
 get_java_version_from_pom() {
     local pom_file=$1
-
+    # Convert space-delimited items into an array
+    IFS=' ' read -r -a pom_xml_java_version_xpath <<< "$pom_xml_java_version_xpath_items"
     # Check if the pom_xml_java_version_xpath array is defined
     if [ -z "${pom_xml_java_version_xpath+x}" ]; then
         echo "Error: pom_xml_java_version_xpath array is not defined" >&2
@@ -105,7 +117,7 @@ get_java_version_from_pom() {
     # Transform the XML file to remove namespaces
     if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
-        echo "Error: Failed to transform XML file" >&2
+        echo "Error: Failed to transform $pom_file XML file" >&2
         return 1
     fi
 
@@ -126,6 +138,8 @@ get_java_version_from_pom() {
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
 
+    # Convert space-delimited items into an array
+    IFS=' ' read -r -a pom_xml_jenkins_core_version_xpath <<< "$pom_xml_jenkins_core_version_xpath_items"
     if [ -z "${pom_xml_jenkins_core_version_xpath+x}" ]; then
         echo "Error: pom_xml_jenkins_core_version_xpath array is not defined" >&2
         return 1
@@ -141,7 +155,7 @@ get_jenkins_core_version_from_pom() {
 
     if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
-        echo "Error: Failed to transform XML file" >&2
+        echo "Error: Failed to transform $pom_file XML file" >&2
         return 1
     fi
 
@@ -160,14 +174,32 @@ get_jenkins_core_version_from_pom() {
     echo "$jenkins_core_version"
 }
 
-# Function to extract Jenkins parent POM version from pom.xml
-# Ensure that config.sh is sourced to define the pom_xml_jenkins_parent_pom_version_xpath array
-get_jenkins_parent_pom_version_from_pom() {
-    local pom_file=$1
+# Function to download the POM file and transform it
+download_and_transform_pom() {
+     local repo_path=$1
+    # Check the rate limit before making API requests
+    check_rate_limit
 
+    default_branch=$(gh repo view "$repo_path" --json defaultBranchRef --jq '.defaultBranchRef.name')
+    if [ -z "$default_branch" ]; then
+      error "Failed to retrieve default branch for $repo. Skipping repository."
+      return 1
+    fi
+    debug "Found $default_branch as default branch for the repo $repo_path"
+    # https://github.com/jenkinsci/xstream/raw/refs/heads/master/pom.xml
+    # https://github.com/jenkinsci/xstream/raw/refs/heads/main/pom.xml
+    pom_url="https://github.com/$repo_path/raw/refs/heads/$default_branch/pom.xml"
+    local pom_file=$(mktemp /tmp/pom.XXXXXX.xml)
+    debug "Will store in $pom_file the file found at $pom_url"
+    # Ensure the temporary file is removed if the function exits unexpectedly
+    trap 'rm -f "$pom_file"' EXIT
+
+    curl  -s -L -H "Authorization: token $GITHUB_TOKEN"  -o "$pom_file" "$pom_url"
+    # Convert space-delimited items into an array
+    IFS=' ' read -r -a pom_xml_jenkins_parent_pom_version_xpath <<< "$pom_xml_jenkins_parent_pom_version_xpath_items"
     # Check if the pom_xml_jenkins_parent_pom_version_xpath array is defined
     if [ -z "${pom_xml_jenkins_parent_pom_version_xpath+x}" ]; then
-        echo "Error: pom_xml_jenkins_parent_pom_version_xpath array is not defined" >&2
+        error "pom_xml_jenkins_parent_pom_version_xpath array is not defined" >&2
         return 1
     fi
 
@@ -180,13 +212,41 @@ get_jenkins_parent_pom_version_from_pom() {
     # Transform the XML file to remove namespaces
     if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
         rm -f "$temp_file"
-        echo "Error: Failed to transform XML file" >&2
+        error "Failed to transform $pom_file XML file" >&2
+        return 1
+    fi
+    debug "Stored the XML without namespaces in $temp_file"
+    echo "$temp_file"
+}
+
+
+# Function to extract Jenkins parent POM version from pom.xml
+# Ensure that config.sh is sourced to define the pom_xml_jenkins_parent_pom_version_xpath array
+get_jenkins_parent_pom_version_from_pom() {
+    local repo_path=$1
+    local temp_file
+    temp_file=$(download_and_transform_pom "$repo_path")
+    if [ $? -ne 0 ]; then
+        echo "Failed to download and transform POM for $repo_path"
         return 1
     fi
 
+    echo "Will try to find parent pom version for $repo_path in the $temp_file XML file"
+
+    # Debugging: Print the content of the temporary file before running xmllint
+    echo "Content of $temp_file:"
+    cat "$temp_file"
+
+    # Convert space-delimited items into an array
+    IFS=' ' read -r -a pom_xml_jenkins_parent_pom_version_xpath <<< "$pom_xml_jenkins_parent_pom_version_xpath_items"
+    if [ -z "${pom_xml_jenkins_parent_pom_version_xpath+x}" ]; then
+        echo "Error: pom_xml_jenkins_parent_pom_version_xpath array is not defined" >&2
+        return 1
+    fi
     local jenkins_parent_pom_version=""
     # Iterate over the array of XPath expressions to capture the first non-empty value
     for xpath in "${pom_xml_jenkins_parent_pom_version_xpath[@]}"; do
+        echo "Trying XPath: $xpath"
         if jenkins_parent_pom_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_parent_pom_version" ]; then
             break
         fi
@@ -194,5 +254,5 @@ get_jenkins_parent_pom_version_from_pom() {
 
     # Explicitly remove the temporary file
     rm -f "$temp_file"
-    echo "$jenkins_parent_pom_version"
+    echo "Parent POM version is $jenkins_parent_pom_version for $repo_path"
 }
