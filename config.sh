@@ -64,6 +64,10 @@ declare -a pom_xml_jenkins_core_version_xpath=(
   "//properties/jenkins.version"
   "//dependencyManagement/dependencies/dependency[artifactId='jenkins-core']/version"
 )
+declare -a pom_xml_jenkins_parent_pom_version_xpath=(
+  "//parent[artifactId='plugin']/version"
+)
 
 export pom_xml_java_version_xpath
 export pom_xml_jenkins_core_version_xpath
+export pom_xml_jenkins_parent_pom_version_xpath
