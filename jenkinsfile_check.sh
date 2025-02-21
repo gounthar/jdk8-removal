@@ -1,5 +1,29 @@
 #!/usr/bin/env bash
 
+source config.sh
+
+# Check if pom_xml_java_version_xpath is defined
+if [ -z "${pom_xml_java_version_xpath+x}" ]; then
+  echo "Error: pom_xml_java_version_xpath array is not defined"
+  exit 1
+fi
+
+# Check if pom_xml_jenkins_core_version_xpath is defined
+if [ -z "${pom_xml_jenkins_core_version_xpath+x}" ]; then
+  echo "Error: pom_xml_jenkins_core_version_xpath array is not defined"
+  exit 1
+fi
+
+# Check if pom_xml_jenkins_parent_pom_version_xpath is defined
+if [ -z "${pom_xml_jenkins_parent_pom_version_xpath+x}" ]; then
+  echo "Error: pom_xml_jenkins_parent_pom_version_xpath array is not defined"
+  exit 1
+fi
+
+# Source the configuration file
+source config.sh
+
+# Rest of the script...
  # Check if the csv_file_jdk11 variable is set
  if [ -z "$csv_file_jdk11" ]; then
    echo "Error: csv_file_jdk11 is not set"
@@ -134,4 +158,41 @@ get_jenkins_core_version_from_pom() {
 
     rm -f "$temp_file"
     echo "$jenkins_core_version"
+}
+
+# Function to extract Jenkins parent POM version from pom.xml
+# Ensure that config.sh is sourced to define the pom_xml_jenkins_parent_pom_version_xpath array
+get_jenkins_parent_pom_version_from_pom() {
+    local pom_file=$1
+
+    # Check if the pom_xml_jenkins_parent_pom_version_xpath array is defined
+    if [ -z "${pom_xml_jenkins_parent_pom_version_xpath+x}" ]; then
+        echo "Error: pom_xml_jenkins_parent_pom_version_xpath array is not defined" >&2
+        return 1
+    fi
+
+    local temp_file
+    temp_file=$(mktemp)
+
+    # Ensure the temporary file is removed if the function exits unexpectedly
+    trap 'rm -f "$temp_file"' EXIT
+
+    # Transform the XML file to remove namespaces
+    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
+        rm -f "$temp_file"
+        echo "Error: Failed to transform XML file" >&2
+        return 1
+    fi
+
+    local jenkins_parent_pom_version=""
+    # Iterate over the array of XPath expressions to capture the first non-empty value
+    for xpath in "${pom_xml_jenkins_parent_pom_version_xpath[@]}"; do
+        if jenkins_parent_pom_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_parent_pom_version" ]; then
+            break
+        fi
+    done
+
+    # Explicitly remove the temporary file
+    rm -f "$temp_file"
+    echo "$jenkins_parent_pom_version"
 }
