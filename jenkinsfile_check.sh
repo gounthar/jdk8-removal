@@ -105,13 +105,13 @@ determine_jdk_version() {
     local jdk17_required_version="5.0"
 
     if [ "$(compare_versions "$found_version" "$jdk8_last_version")" = "less" ] || [ "$(compare_versions "$found_version" "$jdk8_last_version")" = "equal" ]; then
-        echo "JDK8"
+        echo "8"
     elif [ "$(compare_versions "$found_version" "$jdk11_first_version")" = "greater" ] && [ "$(compare_versions "$found_version" "$jdk11_last_version")" = "less" ] || [ "$(compare_versions "$found_version" "$jdk11_last_version")" = "equal" ]; then
-        echo "JDK11"
+        echo "11"
     elif [ "$(compare_versions "$found_version" "$jdk17_first_version")" = "greater" ] && [ "$(compare_versions "$found_version" "$jdk17_required_version")" = "less" ] || [ "$(compare_versions "$found_version" "$jdk17_required_version")" = "equal" ]; then
-        echo "JDK17"
+        echo "17"
     elif [ "$(compare_versions "$found_version" "$jdk17_required_version")" = "greater" ]; then
-        echo "JDK17"
+        echo "17"
     else
         echo "Unknown JDK version"
     fi
@@ -156,69 +156,36 @@ get_java_version_from_pom() {
         return 1
     fi
 
-    local temp_file
-    temp_file=$(mktemp)
-
-    # Ensure the temporary file is removed if the function exits unexpectedly
-    trap 'rm -f "$temp_file"' EXIT
-
-    # Transform the XML file to remove namespaces
-    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
-        rm -f "$temp_file"
-        echo "Error: Failed to transform $pom_file XML file" >&2
-        return 1
-    fi
-
     local java_version=""
     # Iterate over the array of XPath expressions to capture the first non-empty value
     for xpath in "${pom_xml_java_version_xpath[@]}"; do
-        if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
+        if java_version=$(xmllint --xpath "string($xpath)" "$pom_file" 2>/dev/null) && [ -n "$java_version" ]; then
             break
         fi
     done
-
-    # Explicitly remove the temporary file
-    rm -f "$temp_file"
     echo "$java_version"
 }
 
 # Function to extract Jenkins core version from pom.xml
 get_jenkins_core_version_from_pom() {
     local pom_file=$1
-
+    if [ -z "${pom_xml_jenkins_core_version_xpath_items+x}" ]; then
+        error "pom_xml_jenkins_core_version_xpath_items is not defined" >&2
+        return 1
+    fi
     # Convert space-delimited items into an array
     IFS=' ' read -r -a pom_xml_jenkins_core_version_xpath <<< "$pom_xml_jenkins_core_version_xpath_items"
     if [ -z "${pom_xml_jenkins_core_version_xpath+x}" ]; then
-        echo "Error: pom_xml_jenkins_core_version_xpath array is not defined" >&2
+        error "pom_xml_jenkins_core_version_xpath array is not defined" >&2
         return 1
     fi
-
-    local temp_file
-    temp_file=$(mktemp)
-
-    trap 'rm -f "$temp_file"' EXIT
-
-    # Debugging: Print the temporary file path
-    echo "Temporary file: $temp_file"
-
-    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
-        rm -f "$temp_file"
-        echo "Error: Failed to transform $pom_file XML file" >&2
-        return 1
-    fi
-
-    # Debugging: Print the content of the temporary file
-    echo "Transformed XML content:"
-    cat "$temp_file"
 
     local jenkins_core_version=""
     for xpath in "${pom_xml_jenkins_core_version_xpath[@]}"; do
-        if jenkins_core_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_core_version" ]; then
+        if jenkins_core_version=$(xmllint --xpath "string($xpath)" "$pom_file" 2>/dev/null) && [ -n "$jenkins_core_version" ]; then
             break
         fi
     done
-
-    rm -f "$temp_file"
     echo "$jenkins_core_version"
 }
 
@@ -304,6 +271,9 @@ get_jenkins_parent_pom_version_from_pom() {
     rm -f "$temp_file"
     echo "Parent POM version is $jenkins_parent_pom_version for $repo_path"
     jdk_version=$(determine_jdk_version "$jenkins_parent_pom_version")
-    echo "Induced JDK version is $jdk_version"
-
+    echo "Induced JDK version is $jdk_version for $repo_path"
+    jdk_version_from_pom=$(get_java_version_from_pom $temp_file)
+    echo "Found JDK version $jdk_version_from_pom in POM for $repo_path"
+    jenkins_core_version=$(get_jenkins_core_version_from_pom $temp_file)
+    echo "Found Jenkins core version $jenkins_core_version in POM for $repo_path"
 }
