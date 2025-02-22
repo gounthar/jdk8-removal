@@ -1,26 +1,68 @@
 #!/usr/bin/env bash
 
-# Debug script to download a POM and call parsing functions
-
 # Stop on errors
 set -e
+source config.sh
 
-# Source the existing definitions (adjust the path if needed)
-source jenkinsfile_check.sh
+# Function to extract the Java version from a POM file
+get_java_version_from_pom() {
+  local pom_file=$1
+  echo "Starting $pom_file"
 
-# Download the POM to a local file
-pom_url="https://github.com/jenkinsci/concordionpresenter-plugin/raw/refs/heads/master/pom.xml"
-pom_file='pom_concordion.xml'
-curl  -s -L -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN"  -o $pom_file $pom_url
+  # Convert space-delimited items into an array
+  IFS=' ' read -r -a pom_xml_java_version_xpath <<< "$pom_xml_java_version_xpath_items"
 
-echo "Testing get_jenkins_core_version_from_pom..."
-core_version="$(get_jenkins_core_version_from_pom "$pom_file")"
-echo "Core version: $core_version"
+  # Check if the pom_xml_java_version_xpath array is defined
+  if [ -z "${pom_xml_java_version_xpath+x}" ]; then
+      echo "Error: pom_xml_java_version_xpath array is not defined" >&2
+      return 1
+  fi
 
-echo "Testing get_java_version_from_pom..."
-java_version="$(get_java_version_from_pom "$pom_file")"
-echo "Java version: $java_version"
+  local java_version=""
 
-echo "Testing get_jenkins_parent_pom_version_from_pom..."
-parent_version="$(get_jenkins_parent_pom_version_from_pom "$pom_file")"
-echo "Parent POM version: $parent_version"
+  # Iterate over the array of XPath expressions to capture the first non-empty value
+  for xpath in "${pom_xml_java_version_xpath[@]}"; do
+      if java_version=$(xmllint --xpath "string($xpath)" "$pom_file" 2>/dev/null) && [ -n "$java_version" ]; then
+          break
+      fi
+  done
+
+  # Default to "17" if no java.version is found or if the version starts with "1."
+  if [ -z "$java_version" ]; then
+      java_version="17"
+      echo "Didn't find java.version, using default $java_version"
+  fi
+  if [[ "$java_version" == 1.* ]]; then
+      java_version="8"
+      echo "Found java.version $java_version thanks to $xpath"
+  fi
+
+  # Round up to 8 if the version is less than 8
+  if [[ "$java_version" -lt 8 ]]; then
+      java_version="8"
+      echo "Found java.version less than 8, rounding up to $java_version"
+  fi
+
+  echo "$java_version"
+  echo "Found java.version $java_version thanks to $xpath"
+
+  # Ensure java_version is a number, default to 17 if not
+  if ! [[ "$java_version" =~ ^[0-9]+$ ]]; then
+      java_version="17"
+      echo "Invalid java.version, setting to default $java_version"
+      echo "Found java.version $java_version thanks to invalid java version"
+  fi
+
+  echo "Ending $pom_file"
+}
+
+# Check if a version argument is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <pom_file>"
+    exit 1
+fi
+
+# Get the POM file to check from the argument
+pom_file=$1
+java_version=$(get_java_version_from_pom "$pom_file")
+echo "Java version: $java_version for $pom_file"
