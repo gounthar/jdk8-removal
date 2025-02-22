@@ -186,7 +186,33 @@ get_jenkins_core_version_from_pom() {
             break
         fi
     done
-    echo "$jenkins_core_version"
+
+    # If no version is found, default to JDK 8
+    if [ -z "$jenkins_core_version" ]; then
+        error "No version found, defaulting to JDK 8 for $pom_file"
+        echo "8"
+        return
+    fi
+
+    # Split the version into major, minor, and patch components
+    IFS='.' read -r major minor patch <<< "$jenkins_core_version"
+
+    # Default minor and patch to 0 if they are not present
+    minor=${minor:-0}
+    patch=${patch:-0}
+
+    # Determine the underlying Java version
+    local jdk_version=""
+    if [ "$major" -lt 2 ] || { [ "$major" -eq 2 ] && [ "$minor" -lt 346 ]; }; then
+        jdk_version="8"
+    elif [ "$major" -eq 2 ] && [ "$minor" -le 462 ]; then
+        jdk_version="11"
+    else
+        jdk_version="17"
+    fi
+
+    debug "$jenkins_core_version implies JDK $jdk_version for $pom_file"
+    echo "$jdk_version"
 }
 
 # Function to download the POM file and transform it
@@ -248,10 +274,6 @@ get_jenkins_parent_pom_version_from_pom() {
 
     echo "Will try to find parent pom version for $repo_path in the $temp_file XML file"
 
-    # Debugging: Print the content of the temporary file before running xmllint
-    # echo "Content of $temp_file:"
-    # cat "$temp_file"
-
     # Convert space-delimited items into an array
     IFS=' ' read -r -a pom_xml_jenkins_parent_pom_version_xpath <<< "$pom_xml_jenkins_parent_pom_version_xpath_items"
     if [ -z "${pom_xml_jenkins_parent_pom_version_xpath+x}" ]; then
@@ -267,8 +289,6 @@ get_jenkins_parent_pom_version_from_pom() {
         fi
     done
 
-    # Explicitly remove the temporary file
-    rm -f "$temp_file"
     echo "Parent POM version is $jenkins_parent_pom_version for $repo_path"
     jdk_version=$(determine_jdk_version "$jenkins_parent_pom_version")
     echo "Induced JDK version is $jdk_version for $repo_path"
@@ -276,4 +296,7 @@ get_jenkins_parent_pom_version_from_pom() {
     echo "Found JDK version $jdk_version_from_pom in POM for $repo_path"
     jenkins_core_version=$(get_jenkins_core_version_from_pom $temp_file)
     echo "Found Jenkins core version $jenkins_core_version in POM for $repo_path"
+
+    # Explicitly remove the temporary file
+    rm -f "$temp_file"
 }
