@@ -69,6 +69,54 @@ source config.sh
    sync
  }
 
+normalize_version() {
+    local version=$1
+    # Remove the dot and add trailing zeroes
+    normalized_version=$(echo "$version" | sed 's/\.//g' | awk '{printf "%-6s", $0}' | tr ' ' '0')
+    # Cut after 6 characters
+    normalized_version=${normalized_version:0:6}
+    echo "$normalized_version"
+}
+
+compare_versions() {
+    local found_version=$1
+    local ref_version=$2
+
+    normalized_found_version=$(normalize_version "$found_version")
+    normalized_ref_version=$(normalize_version "$ref_version")
+
+    if [ "$normalized_found_version" -lt "$normalized_ref_version" ]; then
+        echo "less"
+    elif [ "$normalized_found_version" -gt "$normalized_ref_version" ]; then
+        echo "greater"
+    else
+        echo "equal"
+    fi
+}
+
+determine_jdk_version() {
+    local found_version=$1
+
+    # Reference versions
+    local jdk8_last_version="4.39"
+    local jdk11_first_version="4.40"
+    local jdk11_last_version="4.88"
+    local jdk17_first_version="4.52"
+    local jdk17_required_version="5.0"
+
+    if [ "$(compare_versions "$found_version" "$jdk8_last_version")" = "less" ] || [ "$(compare_versions "$found_version" "$jdk8_last_version")" = "equal" ]; then
+        echo "JDK8"
+    elif [ "$(compare_versions "$found_version" "$jdk11_first_version")" = "greater" ] && [ "$(compare_versions "$found_version" "$jdk11_last_version")" = "less" ] || [ "$(compare_versions "$found_version" "$jdk11_last_version")" = "equal" ]; then
+        echo "JDK11"
+    elif [ "$(compare_versions "$found_version" "$jdk17_first_version")" = "greater" ] && [ "$(compare_versions "$found_version" "$jdk17_required_version")" = "less" ] || [ "$(compare_versions "$found_version" "$jdk17_required_version")" = "equal" ]; then
+        echo "JDK17"
+    elif [ "$(compare_versions "$found_version" "$jdk17_required_version")" = "greater" ]; then
+        echo "JDK17"
+    else
+        echo "Unknown JDK version"
+    fi
+}
+
  # Function to check for Java versions in Jenkinsfile
  # Arguments:
  #   $1 - The Jenkinsfile content
@@ -234,8 +282,8 @@ get_jenkins_parent_pom_version_from_pom() {
     echo "Will try to find parent pom version for $repo_path in the $temp_file XML file"
 
     # Debugging: Print the content of the temporary file before running xmllint
-    echo "Content of $temp_file:"
-    cat "$temp_file"
+    # echo "Content of $temp_file:"
+    # cat "$temp_file"
 
     # Convert space-delimited items into an array
     IFS=' ' read -r -a pom_xml_jenkins_parent_pom_version_xpath <<< "$pom_xml_jenkins_parent_pom_version_xpath_items"
@@ -255,4 +303,7 @@ get_jenkins_parent_pom_version_from_pom() {
     # Explicitly remove the temporary file
     rm -f "$temp_file"
     echo "Parent POM version is $jenkins_parent_pom_version for $repo_path"
+    jdk_version=$(determine_jdk_version "$jenkins_parent_pom_version")
+    echo "Induced JDK version is $jdk_version"
+
 }
