@@ -35,6 +35,10 @@ jobs:
             echo "csv_file_no_jenkinsfile=$csv_file_no_jenkinsfile" >> $GITHUB_ENV
             echo "csv_file_without_java_version=$csv_file" >> $GITHUB_ENV
             echo "csv_file_jdk11=$csv_file_jdk11" >> $GITHUB_ENV
+            echo "depends_on_java_8_txt=$depends_on_java_8_txt" >> $GITHUB_ENV
+            echo "depends_on_java_8_csv=$depends_on_java_8_csv" >> $GITHUB_ENV
+            echo "depends_on_java_11_txt=$depends_on_java_11_txt" >> $GITHUB_ENV
+            echo "depends_on_java_11_csv=$depends_on_java_11_csv" >> $GITHUB_ENV
 
       - name: Run create-plugins-list-file.sh
         run: |
@@ -56,6 +60,12 @@ jobs:
           ./create-plugins-list-file.sh ${{ env.csv_file_jdk11 }} plugins.json
           touch plugins.txt && mv plugins.txt $plugins_list_jdk11_output_file
           cp $plugins_list_jdk11_output_file $plugins_list_jdk11_main_output_file
+          # Run the script again to create a plugins list file for repositories depending on Java 8
+          ./create-plugins-list-file.sh ${{ env.depends_on_java_8_csv }} plugins.json
+          touch plugins.txt && mv plugins.txt $depends_on_java_8_txt
+          # Run the script again to create a plugins list file for repositories depending on Java 11
+          ./create-plugins-list-file.sh ${{ env.depends_on_java_11_csv }} plugins.json
+          touch plugins.txt && mv plugins.txt $depends_on_java_11_txt
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
