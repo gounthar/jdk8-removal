@@ -42,7 +42,8 @@ check_rate_limit() {
     while [ $((current_time + wait_time)) -gt $(date +%s) ]; do
       # Calculate the elapsed time and progress percentage
       elapsed_time=$(( $(date +%s) - start_time ))
-      progress=$(( 100 * elapsed_time / wait_time ))
+      progress=$(printf "%d" $(( 100 * elapsed_time / wait_time )))
+
 
       # Print the progress bar
       printf "\rProgress: [%-50s] %d%%" $(printf "%0.s#" $(seq 1 $(( progress / 2 )))) $progress
