@@ -17,29 +17,42 @@ echo "Plugin,URL" >"$csv_file"
 echo "Plugin,URL" >"$csv_file_no_jenkinsfile"
 echo "Plugin,URL" >"$csv_file_jdk11"
 
-# Function to check the rate limit status
-  check_rate_limit() {
-    rate_limit_response=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/rate_limit")
-    remaining=$(echo "$rate_limit_response" | jq '.resources.graphql.remaining')
-    reset=$(echo "$rate_limit_response" | jq '.resources.graphql.reset')
+# Function to check the rate limit status of the GitHub API
+check_rate_limit() {
+  # Make a request to the GitHub API to get the rate limit status
+  rate_limit_response=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/rate_limit")
 
-    if [ "$remaining" -eq 0 ]; then
-      current_time=$(date +%s)
-      wait_time=$((reset - current_time))
-      end_time=$(date -d "@$reset" +"%H:%M")
-      echo "API rate limit exceeded for GraphQL. Please wait $wait_time seconds before retrying. Come back at $end_time."
+  # Extract the remaining, reset, and limit values from the response using jq
+  remaining=$(echo "$rate_limit_response" | jq '.resources.graphql.remaining')
+  reset=$(echo "$rate_limit_response" | jq '.resources.graphql.reset')
+  limit=$(echo "$rate_limit_response" | jq '.resources.graphql.limit')
 
-      # Initialize progress bar
-      start_time=$(date +%s)
-      while [ $((current_time + wait_time)) -gt $(date +%s) ]; do
-        elapsed_time=$(( $(date +%s) - start_time ))
-        progress=$(( 100 * elapsed_time / wait_time ))
-        printf "\rProgress: [%-50s] %d%%" $(printf "%0.s#" $(seq 1 $(( progress / 2 )))) $progress
-        sleep 1
-      done
-      echo -e "\nWait time completed. Resuming..."
-    fi
-  }
+  # Check if the remaining requests are less than 5% of the limit
+  if [ "$remaining" -lt $((limit / 20)) ]; then
+    # Calculate the current time and the wait time until the rate limit resets
+    current_time=$(date +%s)
+    wait_time=$((reset - current_time))
+    end_time=$(date -d "@$reset" +"%H:%M")
+
+    # Log an error message indicating the rate limit has been exceeded
+    error "API rate limit exceeded for GraphQL. Please wait $wait_time seconds before retrying. Come back at $end_time."
+
+    # Initialize progress bar
+    start_time=$(date +%s)
+    while [ $((current_time + wait_time)) -gt $(date +%s) ]; do
+      # Calculate the elapsed time and progress percentage
+      elapsed_time=$(( $(date +%s) - start_time ))
+      progress=$(( 100 * elapsed_time / wait_time ))
+
+      # Print the progress bar
+      printf "\rProgress: [%-50s] %d%%" $(printf "%0.s#" $(seq 1 $(( progress / 2 )))) $progress
+      sleep 1
+    done
+
+    # Log a message indicating the wait time is completed
+    info -e "\nWait time completed. Resuming..."
+  fi
+}
 
   # Function to check for Jenkinsfile
   # This function takes a repository name as an argument.
