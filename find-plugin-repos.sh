@@ -135,7 +135,7 @@ while :; do
 done
 
 # Sort and finalize CSV files
-for file in "$csv_file" "$csv_file_no_jenkinsfile" "$csv_file_jdk11" "$depends_on_java_8_csv" "depends_on_java_11_csv"; do
+for file in "$csv_file" "$csv_file_no_jenkinsfile" "$csv_file_jdk11" "$depends_on_java_8_csv" "$depends_on_java_11_csv"; do
   header=$(head -n 1 "$file")
   tail -n +2 "$file" | sort > temp_file.csv
   echo "$header" > "$file"
