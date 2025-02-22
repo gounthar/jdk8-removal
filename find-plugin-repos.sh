@@ -113,8 +113,6 @@ while :; do
 
   echo "Processing repositories..."
   echo "$repos" | parallel check_for_jenkinsfile
-  echo "$repos" | parallel get_java_version_from_pom
-  echo "$repos" | parallel get_jenkins_core_version_from_pom
   echo "$repos" | parallel get_jenkins_parent_pom_version_from_pom
 
   ((page++))
