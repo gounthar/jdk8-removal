@@ -94,7 +94,9 @@ export -f download_and_transform_pom
 export -f get_java_version_from_pom
 export -f get_jenkins_core_version_from_pom
 export -f get_jenkins_parent_pom_version_from_pom
-
+export -f normalize_version
+export -f compare_versions
+export -f determine_jdk_version
 # Fetch all repositories under the jenkinsci organization
 page=1
 while :; do
