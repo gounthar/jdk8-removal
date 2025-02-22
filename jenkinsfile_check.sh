@@ -31,9 +31,6 @@ if ! command -v xsltproc >/dev/null 2>&1; then
   exit 1
 fi
 
-# Source the configuration file
-source config.sh
-
 # Rest of the script...
  # Check if the csv_file_jdk11 variable is set
  if [ -z "$csv_file_jdk11" ]; then
