@@ -53,7 +53,9 @@ export RATE_LIMIT_DELAY
 
 # New configuration variables for pom.xml analysis
 declare -a pom_xml_java_version_xpath=(
+  "//properties/version.java.source"
   "//properties/java.level"
+  "//properties/compileTarget"
   "//properties/maven.compiler.source"
   "//properties/maven.compiler.target"
   "//plugin[artifactId='maven-compiler-plugin']/configuration/source"
@@ -61,7 +63,7 @@ declare -a pom_xml_java_version_xpath=(
 )
 
 # shell arrays are not automatically inherited by subshells created via parallel. One workaround is to store your array elements in a single variable, then rebuild the array in each function.
-pom_xml_java_version_xpath_items="//properties/java.level //properties/maven.compiler.source //properties/maven.compiler.target //plugin[artifactId='maven-compiler-plugin']/configuration/source //plugin[artifactId='maven-compiler-plugin']/configuration/target"
+pom_xml_java_version_xpath_items="//properties/maven.compiler.release //properties/java.version //properties/project.java.version //properties/jdk.version //properties/jvm.version //properties/version.java.source //properties/java.level //properties/compileTarget //properties/maven.compiler.source //properties/maven.compiler.target //plugin[artifactId='maven-compiler-plugin']/configuration/source //plugin[artifactId='maven-compiler-plugin']/configuration/target"
 
 declare -a pom_xml_jenkins_core_version_xpath=(
   "//properties/jenkins.baseline"
