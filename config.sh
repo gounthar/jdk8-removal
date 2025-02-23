@@ -30,8 +30,19 @@ csv_file_jdk11="reports/plugins_using_jdk11_$current_date.csv"
 
 plugins_list_jdk11_main_output_file="plugins_jdk11_main_$current_date.txt"
 
+# New variables for depends_on_java files
+depends_on_java_8_txt="depends_on_java_8.txt"
+depends_on_java_8_csv="depends_on_java_8.csv"
+depends_on_java_11_txt="depends_on_java_11.txt"
+depends_on_java_11_csv="depends_on_java_11.csv"
+
 # Export the variables so they can be used by other scripts
 export plugins_list_jdk11_main_output_file
+export depends_on_java_8_txt
+export depends_on_java_8_csv
+export depends_on_java_11_txt
+export depends_on_java_11_csv
+
 # Define the rate limit delay in seconds
 RATE_LIMIT_DELAY=${RATE_LIMIT_DELAY:-2}
 

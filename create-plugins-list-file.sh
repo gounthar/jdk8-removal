@@ -148,3 +148,49 @@ if [ "$csv_file" == "$csv_file_jdk11" ]; then
     echo "Processing complete. Results saved in $plugins_list_jdk11_output_file"
     cp "$plugins_list_jdk11_output_file" "$plugins_list_jdk11_main_output_file"
 fi
+
+# Process the new CSV file for plugins depending on Java 8
+if [ "$csv_file" == "$depends_on_java_8_csv" ]; then
+    : "${depends_on_java_8_txt:=depends_on_java_8.txt}"
+    rm -f "$depends_on_java_8_txt"
+    while IFS=, read -r name url; do
+        plugin_name=$(get_plugin_name "$url")
+        if [ -n "$plugin_name" ]; then
+            gav=$(jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url) | .gav' "$json_file")
+            if [ -n "$gav" ]; then
+                echo "Found gav $gav for plugin $plugin_name"
+                echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$depends_on_java_8_txt"
+            else
+                echo "gav not found for plugin: $plugin_name with name: $name"
+                jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url)' "$json_file"
+            fi
+        else
+            echo "Plugin name not found for URL: $url"
+        fi
+    done < "$csv_file"
+    sort "$depends_on_java_8_txt" -o "$depends_on_java_8_txt"
+    echo "Processing complete. Results saved in $depends_on_java_8_txt"
+fi
+
+# Process the new CSV file for plugins depending on Java 11
+if [ "$csv_file" == "$depends_on_java_11_csv" ]; then
+    : "${depends_on_java_11_txt:=depends_on_java_11.txt}"
+    rm -f "$depends_on_java_11_txt"
+    while IFS=, read -r name url; do
+        plugin_name=$(get_plugin_name "$url")
+        if [ -n "$plugin_name" ]; then
+            gav=$(jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url) | .gav' "$json_file")
+            if [ -n "$gav" ]; then
+                echo "Found gav $gav for plugin $plugin_name"
+                echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$depends_on_java_11_txt"
+            else
+                echo "gav not found for plugin: $plugin_name with name: $name"
+                jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url)' "$json_file"
+            fi
+        else
+            echo "Plugin name not found for URL: $url"
+        fi
+    done < "$csv_file"
+    sort "$depends_on_java_11_txt" -o "$depends_on_java_11_txt"
+    echo "Processing complete. Results saved in $depends_on_java_11_txt"
+fi

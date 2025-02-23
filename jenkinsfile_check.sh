@@ -320,6 +320,32 @@ get_jenkins_parent_pom_version_from_pom() {
     jenkins_core_version=$(get_jenkins_core_version_from_pom $temp_file)
     echo "Found Jenkins core version $jenkins_core_version in POM for $repo_path"
 
+    # Determine the lowest detected Java version
+    lowest_java_version=$jdk_version
+    if [ "$jdk_version_from_pom" -lt "$lowest_java_version" ]; then
+        lowest_java_version=$jdk_version_from_pom
+    fi
+    if [ "$jenkins_core_version" -lt "$lowest_java_version" ]; then
+        lowest_java_version=$jenkins_core_version
+    fi
+
+    # Create files based on the lowest detected Java version
+    case $lowest_java_version in
+        8)
+            # Format the repository name
+            formatted_repo=$(format_repo_name "$repo_path")
+            echo "$formatted_repo,https://github.com/$repo_path" >>"$depends_on_java_8_csv"
+            ;;
+        11)
+            # Format the repository name
+            formatted_repo=$(format_repo_name "$repo_path")
+            echo "$formatted_repo,https://github.com/$repo_path" >>"$depends_on_java_11_csv"
+            ;;
+        *)
+            echo "Unknown Java version for $repo_path"
+            ;;
+    esac
+
     # Explicitly remove the temporary file
     rm -f "$temp_file"
 }
