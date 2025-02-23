@@ -212,8 +212,8 @@ get_jenkins_core_version_from_pom() {
 
     # If no version is found, default to JDK 8
     if [ -z "$jenkins_core_version" ]; then
-        error "No version found, defaulting to JDK 8 for $pom_file"
-        echo "8"
+        error "No version found, defaulting to JDK 17 for $pom_file"
+        echo "17"
         return
     fi
 
