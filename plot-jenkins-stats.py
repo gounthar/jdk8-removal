@@ -20,6 +20,9 @@ def create_plugins_evolution_plot(input_csv, output_svg):
     # Convert dates to datetime
     df['Date'] = pd.to_datetime(df['Date'])
 
+    # Handle NaN values by setting them to None (non-plottable)
+    df = df.where(pd.notnull(df), None)
+
     # Create the plot with a larger figure size
     plt.figure(figsize=(12, 7))
 
