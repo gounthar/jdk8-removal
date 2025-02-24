@@ -7,7 +7,9 @@ PLOT_COLORS = {
     'without_jenkinsfile': '#e74c3c',
     'with_java8': '#2ecc71',
     'without_java_versions': '#3498db',
-    'using_jdk11': '#ff5733'
+    'using_jdk11': '#ff5733',
+    'depends_on_java_8': '#8e44ad',
+    'depends_on_java_11': '#f39c12'
 }
 
 
@@ -30,6 +32,10 @@ def create_plugins_evolution_plot(input_csv, output_svg):
              marker='^', label='Without Java Versions', color=PLOT_COLORS['without_java_versions'])
     plt.plot(df['Date'], df['Plugins_Using_JDK11'],
              marker='d', label='Using JDK 11', color=PLOT_COLORS['using_jdk11'])
+    plt.plot(df['Date'], df['Plugins_Depends_On_Java_8'],
+             marker='*', label='Depends On Java 8', color=PLOT_COLORS['depends_on_java_8'])
+    plt.plot(df['Date'], df['Plugins_Depends_On_Java_11'],
+             marker='x', label='Depends On Java 11', color=PLOT_COLORS['depends_on_java_11'])
 
     # Customize the plot
     plt.title('Jenkins Plugins Evolution', pad=20, fontsize=14)
