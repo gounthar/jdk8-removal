@@ -17,6 +17,17 @@ def create_plugins_evolution_plot(input_csv, output_svg):
     # Read the CSV file
     df = pd.read_csv(input_csv)
 
+    # Replace 'MISSING' values with NaN
+    df.replace('MISSING', pd.NA, inplace=True)
+
+    # Drop rows with NaN values
+    df.dropna(inplace=True)
+
+    # Check if the DataFrame is empty
+    if df.empty:
+        print("Warning: The CSV file is empty or contains only 'MISSING' values.")
+        return
+
     # Convert dates to datetime
     df['Date'] = pd.to_datetime(df['Date'])
 

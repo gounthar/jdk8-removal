@@ -109,63 +109,27 @@ for ((i=1; i<${#csv_lines[@]}; i++)); do
     IFS=',' read -r date plugins_without_jenkinsfile plugins_with_java8 plugins_without_java_versions plugins_using_jdk11 plugins_depends_on_java_8 plugins_depends_on_java_11 <<< "${csv_lines[i]}"
 
     if [[ $plugins_without_jenkinsfile -eq 0 ]]; then
-        for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-            IFS=',' read -r _ next_plugins_without_jenkinsfile _ _ _ _ _ <<< "${csv_lines[j]}"
-            if [[ $next_plugins_without_jenkinsfile -ne 0 ]]; then
-                plugins_without_jenkinsfile=$next_plugins_without_jenkinsfile
-                break
-            fi
-        done
+        plugins_without_jenkinsfile="MISSING"
     fi
 
     if [[ $plugins_with_java8 -eq 0 ]]; then
-        for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-            IFS=',' read -r _ _ next_plugins_with_java8 _ _ _ _ <<< "${csv_lines[j]}"
-            if [[ $next_plugins_with_java8 -ne 0 ]]; then
-                plugins_with_java8=$next_plugins_with_java8
-                break
-            fi
-        done
+        plugins_with_java8="MISSING"
     fi
 
     if [[ $plugins_without_java_versions -eq 0 ]]; then
-        for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-            IFS=',' read -r _ _ _ next_plugins_without_java_versions _ _ _ <<< "${csv_lines[j]}"
-            if [[ $next_plugins_without_java_versions -ne 0 ]]; then
-                plugins_without_java_versions=$next_plugins_without_java_versions
-                break
-            fi
-        done
+        plugins_without_java_versions="MISSING"
     fi
 
     if [[ $plugins_using_jdk11 -eq 0 ]]; then
-        for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-            IFS=',' read -r _ _ _ _ next_plugins_using_jdk11 _ _ <<< "${csv_lines[j]}"
-            if [[ $next_plugins_using_jdk11 -ne 0 ]]; then
-                plugins_using_jdk11=$next_plugins_using_jdk11
-                break
-            fi
-        done
+        plugins_using_jdk11="MISSING"
     fi
 
     if [[ $plugins_depends_on_java_8 -eq 0 ]]; then
-        for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-            IFS=',' read -r _ _ _ _ _ next_plugins_depends_on_java_8 _ <<< "${csv_lines[j]}"
-            if [[ $next_plugins_depends_on_java_8 -ne 0 ]]; then
-                plugins_depends_on_java_8=$next_plugins_depends_on_java_8
-                break
-            fi
-        done
+        plugins_depends_on_java_8="MISSING"
     fi
 
     if [[ $plugins_depends_on_java_11 -eq 0 ]]; then
-        for ((j=i+1; j<${#csv_lines[@]}; j++)); do
-            IFS=',' read -r _ _ _ _ _ _ next_plugins_depends_on_java_11 <<< "${csv_lines[j]}"
-            if [[ $next_plugins_depends_on_java_11 -ne 0 ]]; then
-                plugins_depends_on_java_11=$next_plugins_depends_on_java_11
-                break
-            fi
-        done
+        plugins_depends_on_java_11="MISSING"
     fi
 
     csv_lines[i]="$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11,$plugins_depends_on_java_8,$plugins_depends_on_java_11"
