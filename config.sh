@@ -33,10 +33,10 @@ csv_file_jdk11="reports/plugins_using_jdk11_$current_date.csv"
 plugins_list_jdk11_main_output_file="plugins_jdk11_main_$current_date.txt"
 
 # New variables for depends_on_java files
-depends_on_java_8_txt="depends_on_java_8.txt"
-depends_on_java_8_csv="depends_on_java_8.csv"
-depends_on_java_11_txt="depends_on_java_11.txt"
-depends_on_java_11_csv="depends_on_java_11.csv"
+depends_on_java_8_txt="reports/depends_on_java_8_$current_date.txt"
+depends_on_java_8_csv="reports/depends_on_java_8_$current_date.csv"
+depends_on_java_11_txt="reports/depends_on_java_11_$current_date.txt"
+depends_on_java_11_csv="reports/depends_on_java_11_$current_date.csv"
 
 # Export the variables so they can be used by other scripts
 export plugins_list_jdk11_main_output_file
