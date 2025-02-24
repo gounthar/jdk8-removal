@@ -65,6 +65,7 @@ done < "$csv_file"
 
 # Sort the output file alphabetically
 temp_plugins_file=$(mktemp /tmp/plugins.XXXXXXXXX.tmp)
+trap 'rm -f "$temp_plugins_file"' EXIT
 sort "$plugins_list_output_file" -o "$temp_plugins_file" && mv "$temp_plugins_file" "$plugins_list_output_file"
 # Final log statement indicating the script has completed processing.
 info "Processing complete. Results saved in $plugins_list_output_file"
