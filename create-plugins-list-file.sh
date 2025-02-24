@@ -36,64 +36,7 @@ get_plugin_name() {
     echo "$url" | sed -n 's#.*/\([^/]*\)$#\1#p'
 }
 
-# Function to extract Java version from pom.xml
-# Ensure that config.sh is sourced to define the pom_xml_java_version_xpath array
-source config.sh
-
-# Function to extract Java version from pom.xml
-get_java_version_from_pom() {
-    local pom_file=$1
-    local temp_file
-    temp_file=$(mktemp)
-
-    # Ensure the temporary file is removed if the function exits unexpectedly
-    trap 'rm -f "$temp_file"' EXIT
-
-    # Transform the XML file to remove namespaces
-    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
-        rm -f "$temp_file"
-        echo "Error: Failed to transform XML file" >&2
-        return 1
-    fi
-
-    local java_version=""
-    # Iterate over the array of XPath expressions to capture the first non-empty value
-    for xpath in "${pom_xml_java_version_xpath[@]}"; do
-        if java_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$java_version" ]; then
-            break
-        fi
-    done
-
-    # Explicitly remove the temporary file
-    rm -f "$temp_file"
-    echo "$java_version"
-}
-
-# Function to extract Jenkins core version from pom.xml
-get_jenkins_core_version_from_pom() {
-    local pom_file=$1
-    local temp_file
-    temp_file=$(mktemp)
-
-    # Ensure the temporary file is removed if the function exits unexpectedly
-    trap 'rm -f "$temp_file"' EXIT
-
-    if ! xsltproc remove-namespaces.xsl "$pom_file" > "$temp_file" 2>/dev/null; then
-        rm -f "$temp_file"
-        echo "Error: Failed to transform XML file" >&2
-        return 1
-    fi
-
-    local jenkins_core_version=""
-    for xpath in "${pom_xml_jenkins_core_version_xpath[@]}"; do
-        if jenkins_core_version=$(xmllint --xpath "string($xpath)" "$temp_file" 2>/dev/null) && [ -n "$jenkins_core_version" ]; then
-            break
-        fi
-    done
-
-    rm -f "$temp_file"
-    echo "$jenkins_core_version"
-}
+debug "I will transform $csv_file into $plugins_list_output_file"
 
 # Main processing loop: reads each line from the CSV file, extracts plugin name and URL,
 # finds the corresponding plugin in the JSON file, and extracts its latest version.
@@ -106,91 +49,22 @@ while IFS=, read -r name url; do
         gav=$(jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url) | .gav' "$json_file")
         if [ -n "$gav" ]; then
             # If GAV is found, process and save the artifactId:version to the output file.
-            echo "Found gav $gav for plugin $plugin_name"
+            info "Found GroupId, ArtifactId, and Version $gav for plugin $plugin_name"
             echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$plugins_list_output_file"
         else
             # If GAV is not found, log the missing GAV for the plugin.
-            echo "gav not found for plugin: $plugin_name with name: $name"
+            info "GroupId, ArtifactId, and Version not found for plugin: $plugin_name with name: $name"
             # Additionally, print the plugin's JSON data for debugging.
             jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url)' "$json_file"
         fi
     else
         # Log an error if the plugin name could not be extracted from the URL.
-        echo "Plugin name not found for URL: $url"
+        error "Plugin name not found for URL: $url"
     fi
 done < "$csv_file"
 
 # Sort the output file alphabetically
-sort "$plugins_list_output_file" -o "$plugins_list_output_file"
+temp_plugins_file=$(mktemp /tmp/plugins.XXXXXXXXX.tmp)
+sort "$plugins_list_output_file" -o "$temp_plugins_file" && mv "$temp_plugins_file" "$plugins_list_output_file"
 # Final log statement indicating the script has completed processing.
-echo "Processing complete. Results saved in $plugins_list_output_file"
-
-# Process the new CSV file for plugins using JDK 11
-if [ "$csv_file" == "$csv_file_jdk11" ]; then
-    : "${plugins_list_jdk11_output_file:=plugins_jdk11.txt}"
-    rm -f "$plugins_list_jdk11_output_file"
-    while IFS=, read -r name url; do
-        plugin_name=$(get_plugin_name "$url")
-        if [ -n "$plugin_name" ]; then
-            gav=$(jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url) | .gav' "$json_file")
-            if [ -n "$gav" ]; then
-                echo "Found gav $gav for plugin $plugin_name"
-                echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$plugins_list_jdk11_output_file"
-            else
-                echo "gav not found for plugin: $plugin_name with name: $name"
-                jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url)' "$json_file"
-            fi
-        else
-            echo "Plugin name not found for URL: $url"
-        fi
-    done < "$csv_file"
-    sort "$plugins_list_jdk11_output_file" -o "$plugins_list_jdk11_output_file"
-    echo "Processing complete. Results saved in $plugins_list_jdk11_output_file"
-    cp "$plugins_list_jdk11_output_file" "$plugins_list_jdk11_main_output_file"
-fi
-
-# Process the new CSV file for plugins depending on Java 8
-if [ "$csv_file" == "$depends_on_java_8_csv" ]; then
-    : "${depends_on_java_8_txt:=depends_on_java_8.txt}"
-    rm -f "$depends_on_java_8_txt"
-    while IFS=, read -r name url; do
-        plugin_name=$(get_plugin_name "$url")
-        if [ -n "$plugin_name" ]; then
-            gav=$(jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url) | .gav' "$json_file")
-            if [ -n "$gav" ]; then
-                echo "Found gav $gav for plugin $plugin_name"
-                echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$depends_on_java_8_txt"
-            else
-                echo "gav not found for plugin: $plugin_name with name: $name"
-                jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url)' "$json_file"
-            fi
-        else
-            echo "Plugin name not found for URL: $url"
-        fi
-    done < "$csv_file"
-    sort "$depends_on_java_8_txt" -o "$depends_on_java_8_txt"
-    echo "Processing complete. Results saved in $depends_on_java_8_txt"
-fi
-
-# Process the new CSV file for plugins depending on Java 11
-if [ "$csv_file" == "$depends_on_java_11_csv" ]; then
-    : "${depends_on_java_11_txt:=depends_on_java_11.txt}"
-    rm -f "$depends_on_java_11_txt"
-    while IFS=, read -r name url; do
-        plugin_name=$(get_plugin_name "$url")
-        if [ -n "$plugin_name" ]; then
-            gav=$(jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url) | .gav' "$json_file")
-            if [ -n "$gav" ]; then
-                echo "Found gav $gav for plugin $plugin_name"
-                echo "$gav" | rev | cut -d':' -f1,2 | rev >> "$depends_on_java_11_txt"
-            else
-                echo "gav not found for plugin: $plugin_name with name: $name"
-                jq -r --arg plugin_url "$url" '.plugins[] | select(.scm == $plugin_url)' "$json_file"
-            fi
-        else
-            echo "Plugin name not found for URL: $url"
-        fi
-    done < "$csv_file"
-    sort "$depends_on_java_11_txt" -o "$depends_on_java_11_txt"
-    echo "Processing complete. Results saved in $depends_on_java_11_txt"
-fi
+info "Processing complete. Results saved in $plugins_list_output_file"
