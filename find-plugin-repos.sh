@@ -12,6 +12,10 @@ source check-env.sh
 source config.sh
 source jenkinsfile_check.sh
 
+# Ensure the variables are assigned a default value if not already defined
+depends_on_java_8_csv=${depends_on_java_8_csv:-"./depends_on_java_8.csv"}
+depends_on_java_11_csv=${depends_on_java_11_csv:-"./depends_on_java_11.csv"}
+
 # Create CSV files and write headers
 echo "Plugin,URL" >"$csv_file"
 echo "Plugin,URL" >"$csv_file_no_jenkinsfile"
