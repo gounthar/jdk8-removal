@@ -44,3 +44,13 @@ The output of the from-csv-to-plugins-file.sh script is a file named "plugins.tx
 ## Jenkins Plugins Evolution
 
 ![Jenkins Plugins Evolution](./plugins_evolution.svg)
+
+## Handling NaN Values
+
+### process_reports.sh
+
+The `process_reports.sh` script has been updated to use the string `NaN` to represent missing or unavailable data in the CSV file. This ensures that the CSV file accurately represents the state of the data. The section of the script that replaces zeroes with the first meaningful value has been removed.
+
+### plot-jenkins-stats.py
+
+The `plot-jenkins-stats.py` script has been updated to handle `NaN` entries. It treats `NaN` values as "non-plottable" and correctly plots any available data for those lines. This ensures that `NaN` values are correctly handled to prevent errors during plotting.
