@@ -77,9 +77,18 @@ for date in $dates; do
 
     # Find and count "depends_on_java_11" files
     depends_on_java_11_file=$(find $REPORTS_DIR -type f -name "depends_on_java_11_$date.txt" | head -n 1)
+
+    # Check if the file exists and is not empty
     if [[ -n "$depends_on_java_11_file" && -f "$depends_on_java_11_file" ]]; then
+      # Validate the file content to ensure it is not empty or contains only whitespace
+      if ! grep -q "^[[:space:]]*$" "$depends_on_java_11_file"; then
+        # Count the number of lines in the file and update the count of plugins depending on Java 11
         plugins_depends_on_java_11=$(wc -l < "$depends_on_java_11_file")
         last_plugins_depends_on_java_11=$plugins_depends_on_java_11
+      else
+        # Print a warning if the file is empty or contains invalid content
+        echo "Warning: Empty or invalid content in $depends_on_java_11_file"
+      fi
     fi
 
     # Append the results to the output file
