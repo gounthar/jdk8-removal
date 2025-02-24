@@ -18,6 +18,8 @@ plugins_list_no_jenkinsfile_output_file="reports/plugins_no_jenkinsfile_$current
 plugins_list_no_jenkinsfile_main_output_file="plugins_no_jenkinsfile.txt"  # Define the output file name.
 plugins_list_old_java_output_file="reports/plugins_old_java_$current_date.txt"  # Define the output file name.
 plugins_list_old_java_main_output_file="plugins_old_java.txt"
+plugins_list_depends_on_java_8_main_output_file="depends_on_java_8.txt"
+plugins_list_depends_on_java_11_main_output_file="depends_on_java_11.txt"
 plugins_list_output_file="plugins.txt"  # Define the output file name.
 plugins_no_jenkinsfile=
 plugins_list_jdk11_output_file="plugins_jdk11.txt"
@@ -59,6 +61,8 @@ export plugins_list_old_java_output_file
 export plugins_list_output_file
 export plugins_list_no_jenkinsfile_main_output_file
 export plugins_list_old_java_main_output_file
+export plugins_list_depends_on_java_8_main_output_file
+export plugins_list_depends_on_java_11_main_output_file
 export csv_file_jdk11
 export RATE_LIMIT_DELAY
 
