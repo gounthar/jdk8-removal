@@ -17,4 +17,13 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday
+  
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 5
+
     
