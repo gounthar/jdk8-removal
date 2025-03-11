@@ -1,0 +1,69 @@
+name: Test PR Collector
+
+on:
+  schedule:
+    - cron: '18 07 * * 2'  # Run every Tuesday at 07:18 UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  test-pr-collector:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}  # Use PAT for checkout to enable PR creation
+
+      - name: Download latest plugins data
+        run: |
+          echo "Downloading latest Jenkins plugins data..."
+          curl -L https://updates.jenkins.io/current/update-center.actual.json -o plugins.json
+          echo "Download completed. File size: $(stat -c%s plugins.json) bytes"
+
+      - name: Prepare output files
+        run: |
+          # Create empty files if they don't exist
+          touch report.json found_prs.json jenkins_prs.json
+          # Ensure they are files, not directories
+          [ -f report.json ] || (rm -rf report.json && touch report.json)
+          [ -f found_prs.json ] || (rm -rf found_prs.json && touch found_prs.json)
+          [ -f jenkins_prs.json ] || (rm -rf jenkins_prs.json && touch jenkins_prs.json)
+
+      - name: Build Docker image
+        run: docker build -t jenkins-pr-collector -f Dockerfile.golang .
+
+      - name: Run PR collector
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use PAT for API calls
+        run: |
+          docker run \
+            -e GITHUB_TOKEN=$GITHUB_TOKEN \
+            -v ${{ github.workspace }}/plugins.json:/app/plugins.json:ro \
+            -v ${{ github.workspace }}/report.json:/app/report.json \
+            -v ${{ github.workspace }}/found_prs.json:/app/found_prs.json \
+            -v ${{ github.workspace }}/jenkins_prs.json:/app/jenkins_prs.json \
+            jenkins-pr-collector
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.PAT_TOKEN }}  # Use PAT for PR creation
+          commit-message: 'Update PR statistics report'
+          title: 'Update PR statistics report'
+          body: |
+            This PR updates the PR statistics report using the jenkins-pr-collector.
+            
+            - Generated automatically by the PR Collector Test workflow
+            - Data collection period: From August 2024 to current date
+            - Using latest Jenkins plugins data from update-center.actual.json
+          branch: update-pr-stats
+          delete-branch: true
+          base: main
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
