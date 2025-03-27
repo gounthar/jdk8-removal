@@ -1,3 +1,4 @@
+42crunch-security-audit:5.9
 Matrix-sorter-plugin:1.3
 abap-ci:1.21
 adaptive-disconnector:0.2
@@ -180,6 +181,7 @@ github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
 github-label-filter:1.0.0
+github-pr-comment-build:103.vc8919acf2a6b
 github-scm-filter-jira-validator:0.1.0
 global-pre-script:20.02
 gogs-webhook:1.0.15
@@ -264,7 +266,7 @@ neoload-jenkins-plugin:2.2.11
 netdomain-labeler:0.0.2
 neuro-cucumber:1.0.4
 neuvector-vulnerability-scanner:2.4
-newrelic-deployment-notifier:1.12
+newrelic-deployment-notifier:1.11
 nirmata:1.0.11
 nodenamecolumn:1.2
 nodepool-agents:0.0.21
@@ -348,7 +350,7 @@ rich-text-publisher-plugin:1.5
 rpmsign-plugin:0.5.1
 run-condition-extras:0.3
 run-selector:1.1.1
-rundeck:3.6.14
+rundeck:3.6.13
 saltstack:3.2.2
 scm-httpclient:1.5
 sdelements:1.0.2
