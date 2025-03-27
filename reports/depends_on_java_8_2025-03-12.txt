@@ -244,7 +244,7 @@ bitbucket-scm-filter-jira-validator:0.1.0
 bitbucket:263.v7f6ef03c9ef8
 bitkeeper:1.8
 black-duck-sigma:2024.10.1
-blackduck-coverity-on-polaris:2.0.0
+blackduck-coverity-on-polaris:2.0.1
 blackduck-security-scan:2.1.0
 blink1:1.1
 block-build-final-project:1.0
@@ -503,7 +503,7 @@ cucumber-trends-report:1.3
 curseforge-publisher:1.0
 custom-build-properties:2.90.v4c63458e3ec8
 custom-checkbox-parameter:1.4
-custom-folder-icon:2.18
+custom-folder-icon:2.19
 custom-job-icon:0.2
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
@@ -780,7 +780,7 @@ github-pr-coverage-status:2.2.0
 github-release:10.vc8cd6962b_e7f
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-filter-jira-validator:0.1.0
-github-scm-trait-notification-context:40.vfa_7f31a_b_d7f8
+github-scm-trait-notification-context:45.v8ef831829589
 github:1.42.0
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:718.v40b_5f0e67cd3
@@ -946,7 +946,7 @@ jigomerge:0.9
 jira-ext:114.v7b_8b_1d4274c6
 jira-integration:5.6.0-52.v095e44e20b_25
 jira-steps:2.0.180.vccfe35b_5910d
-jira:3.13
+jira:3.14
 jjwt-api:0.11.5-120.v0268cf544b_89
 jmh-report:0.9.0
 jms-messaging:1.1.28
@@ -1029,7 +1029,7 @@ lambda-test-runner:0.1.0
 last-changes:2.8.0
 lastfailureversioncolumn:1.1
 lastsuccessversioncolumn:1.1
-ldap:776.vddf3e325103b_
+ldap:780.vcb_33c9a_e4332
 ldapemail:0.8
 leanix-microservice-intelligence:1.0.13-rc209.455d336ddb_a_e
 leapwork:4.0.12-106.v6005e76d0560
@@ -1631,7 +1631,7 @@ structs:343.vdcf37b_a_c81d5
 subversion:1287.vd2d507146906
 summary_report:1.15
 sumologic-publisher:2.2.6
-support-core:1668.v8377d290cb_57
+support-core:1671.v1a_d55b_86706a_
 suppress-stack-trace:1.6
 svn-partial-release-mgr:1.0.1
 svn-revert-plugin:279.va_77c7e060d51
@@ -1813,7 +1813,7 @@ workflow-aggregator:600.vb_57cdd26fdd7
 workflow-api:1363.v03f731255494
 workflow-basic-steps:1079.vce64b_a_929c5a_
 workflow-cps-global-lib-http:2.53.0
-workflow-cps-global-lib:612.v55f2f80781ef
+workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps:4043.va_fb_de6a_a_8b_f5
 workflow-durable-task-step:1405.v1fcd4a_d00096
 workflow-job:1505.vea_4b_20a_4a_495
