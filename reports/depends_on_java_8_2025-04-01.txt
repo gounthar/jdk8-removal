@@ -90,7 +90,7 @@ appray:1.1.1
 apprenda:2.2.0
 appscan:1.6.0
 aqua-microscanner:1.0.8
-aqua-security-scanner:3.2.7
+aqua-security-scanner:3.2.8
 aqua-serverless:1.0.6
 arachni-scanner:1.0.0
 arestocats:2.1
@@ -777,7 +777,7 @@ github-oauth:651.v135e939e8b_60
 github-organization-folder:1.6
 github-pr-comment-build:134.ve7ff0b_719821
 github-pr-coverage-status:2.2.0
-github-release:10.vc8cd6962b_e7f
+github-release:16.vd8ca_4b_e037f4
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-filter-jira-validator:0.1.0
 github-scm-trait-notification-context:45.v8ef831829589
@@ -1616,7 +1616,7 @@ ssh:158.ve2a_e90fb_7319
 sshd:3.353.v2b_d33c46e970
 stackhammer:1.0.6
 stackify-deployment-recorder:1.1.0
-stackrox-container-image-scanner:1.4.2
+stackrox-container-image-scanner:1.4.3
 started-by-envvar:1.0
 startup-trigger-plugin:2.9.4
 stash-pullrequest-builder:1.17
@@ -1724,7 +1724,7 @@ uleska:38.v2f6e7a27eb0a
 unicorn:0.1.1
 unique-id:2.113.va_25f74db_66a_b_
 unity3d-plugin:1.3
-unleash:107.va_5ea_63ff3ca_0
+unleash:110.v6a_d46d76d560
 uno-choice:2.8.6
 unreliable-slave-plugin:1.2
 update-sites-manager:2.0.0
