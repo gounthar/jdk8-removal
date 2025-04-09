@@ -117,6 +117,7 @@ https://github.com/jenkinsci/config-autorefresh-plugin
 https://github.com/jenkinsci/config-provider-model
 https://github.com/jenkinsci/config-rotator-plugin
 https://github.com/jenkinsci/confluence-pipeline-steps-plugin
+https://github.com/jenkinsci/console-log-text-replacer-plugin
 https://github.com/jenkinsci/constant-pool-scanner
 https://github.com/jenkinsci/copyarchiver-plugin
 https://github.com/jenkinsci/core-changelog-generator
@@ -165,6 +166,7 @@ https://github.com/jenkinsci/environment-plugin
 https://github.com/jenkinsci/es-extensions
 https://github.com/jenkinsci/event-streamer-plugin
 https://github.com/jenkinsci/events-materials
+https://github.com/jenkinsci/external-resource-dispatcher-plugin
 https://github.com/jenkinsci/external-scheduler-plugin
 https://github.com/jenkinsci/extras-android
 https://github.com/jenkinsci/extras-client-demo
@@ -194,6 +196,7 @@ https://github.com/jenkinsci/gcloud-plugin
 https://github.com/jenkinsci/gcm-notification-plugin
 https://github.com/jenkinsci/gcrawler-plugin
 https://github.com/jenkinsci/gerrit-verify-status-reporter-plugin
+https://github.com/jenkinsci/git-changelist-maven-extension
 https://github.com/jenkinsci/git-notes-plugin
 https://github.com/jenkinsci/github-additional-traits-plugin
 https://github.com/jenkinsci/github-sqs-plugin
@@ -296,6 +299,7 @@ https://github.com/jenkinsci/jmx-plugin
 https://github.com/jenkinsci/jna-posix-api-plugin
 https://github.com/jenkinsci/jna-posix
 https://github.com/jenkinsci/jna
+https://github.com/jenkinsci/job-direct-mail-plugin
 https://github.com/jenkinsci/job-run-uuid-plugin
 https://github.com/jenkinsci/jobinjector-plugin
 https://github.com/jenkinsci/jpi.rb
@@ -377,7 +381,6 @@ https://github.com/jenkinsci/mber-plugin
 https://github.com/jenkinsci/measurement-plots-plugin
 https://github.com/jenkinsci/meister-plugin
 https://github.com/jenkinsci/memegen-plugin
-https://github.com/jenkinsci/memkins
 https://github.com/jenkinsci/merge-queue-plugin
 https://github.com/jenkinsci/metrics-librato-plugin
 https://github.com/jenkinsci/mibsr-m2-plugin
@@ -573,6 +576,7 @@ https://github.com/jenkinsci/updatejob-plugin
 https://github.com/jenkinsci/url-change-trigger-plugin
 https://github.com/jenkinsci/user-builds-starter-plugin
 https://github.com/jenkinsci/uvision-plugin
+https://github.com/jenkinsci/ux-widget-framework
 https://github.com/jenkinsci/VMWareLabManager-plugin
 https://github.com/jenkinsci/valid-network-plugin
 https://github.com/jenkinsci/vcvarsall-plugin
