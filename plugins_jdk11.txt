@@ -122,18 +122,15 @@ miniorange-two-factor:1.0.8
 mock-load-builder:105.v1fc7e407a_0b_1
 mq-notifier:1.4.2
 mstestrunner:1.5.0
-multibranch-job-tear-down:1.2
 multiselect-parameter:1.8
 nant:248.vcc8a_3eec8db_a
 netsparker-cloud-scan:2.1.16
-nexus-artifact-uploader:2.14
 node-sharing-executor:2.0.8
 node-sharing-orchestrator:2.0.8
 nomad:0.10.0
 oak9:1.0.9
 oes-template:1.44.v2a_1c4a_7ccfb_2
 onepassword-secrets:1.0.3
-openshift-client:1.1.0.424.v829cb_ccf8798
 openshift-login:1.1.0.248.v1908df5c4f5e
 openshift-sync:1.1.0.802.v45585f8cdc07
 openstack-cloud:2.66
@@ -155,7 +152,6 @@ project-stats-plugin:23.v47fee1f77b_84
 provar-automation:68.v91b_13f4101e2
 publish-over-cifs:0.16
 publish-over-ftp:248.v1487ff759c7a_
-purge-build-queue-plugin:88.v23b_97b_f2c7a_d
 qualys-iac-security:1.0.0
 qualys-pc:1.0.8
 radargun:1.25

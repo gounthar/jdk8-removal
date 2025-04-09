@@ -21,7 +21,6 @@ artifactory:4.0.8
 asakusa-satellite-plugin:0.1.1
 assembla:1.4
 associated-files:0.2.1
-async-job:1.3
 audit2db:0.5
 aws-beanstalk-releaser:1.0.4
 aws-bucket-credentials:1.0.0
@@ -89,8 +88,6 @@ cmvc:0.4
 codebeamer-result-trend-updater:1.1.5
 codebeamer-xunit-importer:1.9
 codebeamer-xunit-uploader:1.1.4
-codecommit-url-helper:0.0.3
-codecover:1.1
 codefresh:1.8
 codescene:1.5.7
 collabnet-automic-deploy:1.0.1
@@ -176,7 +173,6 @@ escaped-markup-plugin:0.1
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
 export-params:1.9
-extensivetesting:1.4.4b
 extreme-feedback:1.7
 extreme-notification:1.6
 ezwall:0.3
@@ -336,7 +332,6 @@ nouvola-divecloud:1.08
 nsiqcollector:1.3.3
 octopusdeploy:4.0.2
 one-shot-executor:1.2
-onesky:1.1
 openJDK-native-plugin:1.8
 openid4java:0.9.8.0
 openshift-deployer:1.2.0
@@ -389,7 +384,6 @@ rad-builder:1.1.4
 radiatorviewplugin:1.29
 rally-plugin:2.2.2
 random-string-parameter:1.0
-ranorex-integration:1.0.2
 readonly-parameters:1.0.0
 recipe:1.2
 redgate-sql-ci:2.0.8
@@ -430,7 +424,6 @@ selenium-axis:0.0.6
 selenium-builder:1.14
 seleniumrc-plugin:1.0
 sensedia-api-platform:1.0
-serenity:1.4
 shared-objects:0.44
 shared-workspace:1.0.2
 SSSCM:1.0
@@ -453,7 +446,6 @@ sonar:2.18
 sourcemonitor:0.2
 spoonscript:1.3
 spotinst:2.2.21
-spring-initalzr:1.6
 sqlplus-script-runner:3.0.1
 sra-deploy:1.4.2.4
 srcclr-installer:1.0.2
@@ -503,7 +495,6 @@ thycotic-vault:1.0.4
 tibco-builder:1.4
 tm4j-automation:3.3.4
 trac:1.13
-trac-publisher-plugin:1.3
 tracking-git:1.0
 tracking-svn:1.1
 transifex:0.1.0
@@ -516,7 +507,6 @@ ui-test-capture:1.0.43
 unicorn:0.1.1
 unity3d-plugin:1.3
 unreliable-slave-plugin:1.2
-url-auth-sso:1.0
 utplsql:0.6.1
 vaddy-plugin:1.2.8
 vagrant:1.0.2
@@ -529,7 +519,6 @@ vertx:1.0.1
 view-cloner:1.1
 view26:1.0.7
 viewVC:1.7
-violation-columns:1.6
 violations:0.7.11
 virtualbox:0.7
 vmware-vrealize-automation-plugin:1.2.3
