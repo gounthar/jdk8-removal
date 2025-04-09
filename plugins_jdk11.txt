@@ -23,6 +23,7 @@ benchmark-evaluator:99.v2b_ee548fa_f54
 benchmark:93.vce1cf2c4175e
 bevigil-ci:1.29.v3ff4d38b_843f
 bigpanda-jenkins:1.58.va_f372a_c29b_d5
+bitbucket-pullrequests-filter:13.vda_de92e841b_b_
 blackduck-security-scan:2.1.1
 bmc-cfa:185.v12e778cdcc5c
 bootstrap4-api:4.6.0-6
@@ -32,6 +33,7 @@ build-keeper-plugin:19.va_df8a_2c65123
 build-time-blame:75.v44a_51cc97cdd-2.1.0
 buildtriggerbadge:251.vdf6ef853f3f5
 catlight:1.7.v75b_f2d126819
+cdevents:1-40.vb_3d2c94f2379
 chartjs-api:4.2.1.5
 checkmarx-ast-scanner:2.0.13-797.v3e165b_5b_6ce5
 clif-performance-testing:71.v0741865e206f
@@ -44,6 +46,7 @@ container-image-link:11.v2fee68a69c54
 copy-project-link:106.veb_028794a_844
 cppcheck:1.26
 create-fingerprint:25.v0a_b_e60b_42fa_4
+crowdstrike-security:1.2.2
 cucumber-slack-notifier:0.10.0
 datadog:9.1.4
 date-parameter:58.v0ee8d1c59323
@@ -52,6 +55,8 @@ delphix:3.2.1
 deployed-on-column:1.9
 deployer-framework:88.ve78a_92f39e8e
 deployment-notification:78.v94930204e4f7
+devops-portal:415.vaf57f86bb4d1
+digicert-software-trust-code-sign:18.v7ec4e7c19a_1b
 digicert-software-trust-gpg-sign:19.va_8b_60320b_ec8
 distfork:1.8
 doclinks:0.7
@@ -99,16 +104,19 @@ kpp-management-plugin:105.v767485951b_d2
 leapwork:4.0.13-110.vac430703b705
 libvirt-slave:286.vc21fa_98f531c
 liquibase-runner:1.4.10
+loadmance:1.0
 loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
 mabl-integration:0.0.49
 machine-learning:1.0.1
 manage-permission:1.0.1
 material-theme:0.5.2-rc100.6121925fe229
 matlab:970.v2a_b_10cc96e58
+matomo-analytics:1.14.vfd9785108a_45
 matrix-combinations-parameter:1.3.3
 maven-invoker-plugin:2.5
 maven-metadata-plugin:2.2
 maven-repo-cleaner:1.3
+mend-cloud-native-security-scanner:39.vdce6e5d3b_ca_a_
 minio:1.3.3-rc93.9e92f846d4cf
 miniorange-two-factor:1.0.8
 mock-load-builder:105.v1fc7e407a_0b_1
