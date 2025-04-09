@@ -25,6 +25,7 @@ Benchmark Evaluator Plugin,https://github.com/jenkinsci/benchmark-evaluator-plug
 Benchmark Plugin,https://github.com/jenkinsci/benchmark-plugin
 Bevigil Ci Plugin,https://github.com/jenkinsci/bevigil-ci-plugin
 Bigpanda Plugin,https://github.com/jenkinsci/bigpanda-plugin
+Bitbucket Pullrequests Filter Plugin,https://github.com/jenkinsci/bitbucket-pullrequests-filter-plugin
 Blackduck Security Scan Plugin,https://github.com/jenkinsci/blackduck-security-scan-plugin
 Bmc Cfa Plugin,https://github.com/jenkinsci/bmc-cfa-plugin
 Bootstrap4 Api Plugin,https://github.com/jenkinsci/bootstrap4-api-plugin
@@ -34,6 +35,7 @@ Build Keeper Plugin,https://github.com/jenkinsci/build-keeper-plugin
 Build Time Blame Plugin,https://github.com/jenkinsci/build-time-blame-plugin
 Buildtriggerbadge Plugin,https://github.com/jenkinsci/buildtriggerbadge-plugin
 Catlight Plugin,https://github.com/jenkinsci/catlight-plugin
+Cdevents Plugin,https://github.com/jenkinsci/cdevents-plugin
 Chartjs Api Plugin,https://github.com/jenkinsci/chartjs-api-plugin
 Checkmarx Ast Scanner Plugin,https://github.com/jenkinsci/checkmarx-ast-scanner-plugin
 Clif Performance Testing Plugin,https://github.com/jenkinsci/clif-performance-testing-plugin
@@ -48,6 +50,7 @@ Copy Project Link Plugin,https://github.com/jenkinsci/copy-project-link-plugin
 Cppcheck Plugin,https://github.com/jenkinsci/cppcheck-plugin
 Create Fingerprint Plugin,https://github.com/jenkinsci/create-fingerprint-plugin
 Crowd2 Plugin,https://github.com/jenkinsci/crowd2-plugin
+Crowdstrike Security Plugin,https://github.com/jenkinsci/crowdstrike-security-plugin
 Cucumber Slack Notifier Plugin,https://github.com/jenkinsci/cucumber-slack-notifier-plugin
 Custom Markup Formatter Plugin,https://github.com/jenkinsci/custom-markup-formatter-plugin
 Datadog Plugin,https://github.com/jenkinsci/datadog-plugin
@@ -57,6 +60,8 @@ Delphix Plugin,https://github.com/jenkinsci/delphix-plugin
 Deployed On Column Plugin,https://github.com/jenkinsci/deployed-on-column-plugin
 Deployer Framework Plugin,https://github.com/jenkinsci/deployer-framework-plugin
 Deployment Notification Plugin,https://github.com/jenkinsci/deployment-notification-plugin
+Devops Portal Plugin,https://github.com/jenkinsci/devops-portal-plugin
+Digicert Software Trust Code Sign Plugin,https://github.com/jenkinsci/digicert-software-trust-code-sign-plugin
 Digicert Software Trust Gpg Sign Plugin,https://github.com/jenkinsci/digicert-software-trust-gpg-sign-plugin
 Distfork Plugin,https://github.com/jenkinsci/distfork-plugin
 Doclinks Plugin,https://github.com/jenkinsci/doclinks-plugin
@@ -110,12 +115,14 @@ Leapwork Plugin,https://github.com/jenkinsci/leapwork-plugin
 Lib Jenkins Maven Embedder,https://github.com/jenkinsci/lib-jenkins-maven-embedder
 Libvirt Agent Plugin,https://github.com/jenkinsci/libvirt-agent-plugin
 Liquibase Runner Plugin,https://github.com/jenkinsci/liquibase-runner-plugin
+Loadmance Plugin,https://github.com/jenkinsci/loadmance-plugin
 Loadrunner Cloud Plugin,https://github.com/jenkinsci/loadrunner-cloud-plugin
 Mabl Integration Plugin,https://github.com/jenkinsci/mabl-integration-plugin
 Machine Learning Plugin,https://github.com/jenkinsci/machine-learning-plugin
 Manage Permission Plugin,https://github.com/jenkinsci/manage-permission-plugin
 Material Theme Plugin,https://github.com/jenkinsci/material-theme-plugin
 Matlab Plugin,https://github.com/jenkinsci/matlab-plugin
+Matomo Analytics Plugin,https://github.com/jenkinsci/matomo-analytics-plugin
 Matrix Combinations Plugin,https://github.com/jenkinsci/matrix-combinations-plugin
 Maven Cache Plugin,https://github.com/jenkinsci/maven-cache-plugin
 Maven Interceptors,https://github.com/jenkinsci/maven-interceptors
@@ -123,6 +130,7 @@ Maven Invoker Plugin,https://github.com/jenkinsci/maven-invoker-plugin
 Maven Metadata Plugin,https://github.com/jenkinsci/maven-metadata-plugin
 Maven Repo Cleaner Plugin,https://github.com/jenkinsci/maven-repo-cleaner-plugin
 Maven Repository Plugin,https://github.com/jenkinsci/maven-repository-plugin
+Mend Cloud Native Security Scanner Plugin,https://github.com/jenkinsci/mend-cloud-native-security-scanner-plugin
 Minio Plugin,https://github.com/jenkinsci/minio-plugin
 Miniorange Two Factor Plugin,https://github.com/jenkinsci/miniorange-two-factor-plugin
 Mock Load Builder Plugin,https://github.com/jenkinsci/mock-load-builder-plugin
