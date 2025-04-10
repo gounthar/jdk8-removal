@@ -43,7 +43,6 @@ alauda-devops-credentials-provider:2.4.1
 alauda-devops-pipeline:2.3.2
 alauda-devops-sync:2.4.2
 alauda-kubernetes-support:2.3.0
-alauda-pipeline:1.4.3
 alibabacloud-credentials:1.3
 alibabacloud-ecs:1.26
 alibabacloud-edas:1.0.0
@@ -629,7 +628,7 @@ easyqa:1.0
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
 ec2-fleet:3.2.0
-ec2:1887.ve06a_75dcb_31f
+ec2:1891.v03c1282cf236
 echarts-api:5.6.0-2
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
@@ -764,7 +763,6 @@ gitea-checks:530.v38d502df428f
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitea:238.v626a_cf5e1940
 gitee:1189.v6cb_10c9d63b_8
-gitflow:1.0.1
 github-api:1.321-488.v9b_c0da_9533f8
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
@@ -1713,7 +1711,7 @@ tracking-svn:1.1
 transifex:0.1.0
 translation:1.16
 tricentis-ci:1.3
-trilead-api:2.192.vc50a_d147e369
+trilead-api:2.209.v0e69b_c43c245
 trunk-io:1.5.0
 tuleap-api:2.5.2
 tuleap-git-branch-source:3.2.8
@@ -1771,7 +1769,6 @@ viewVC:1.7
 views-containing-job:1.3
 violation-columns:1.6
 violation-comments-to-github:1.96
-violation-comments-to-gitlab:2.62.0
 violation-comments-to-stash:1.134
 violations:0.7.11
 virtualbox:0.7
@@ -1825,7 +1822,7 @@ workflow-multibranch:803.v08103b_87c280
 workflow-remote-loader:1.6
 workflow-scm-step:437.v05a_f66b_e5ef8
 workflow-step-api:700.v6e45cb_a_5a_a_21
-workflow-support:963.va_600813d04a_a_
+workflow-support:968.v8f17397e87b_8
 working-hours:1.1
 workplace-notifier:1.16
 worktile:1.1.17
