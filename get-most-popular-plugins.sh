@@ -19,6 +19,10 @@ jq -r '
   | sort_by(-.popularity)[:250] # Sort by popularity in descending order and limit to top 250
   | "name,popularity", (.[] | "\(.name),\(.popularity)") # Format as CSV
 ' plugins.json > top-250-plugins.csv
+if [ $? -ne 0 ]; then
+  echo "Error: jq command failed."
+  exit 1
+fi
 
 # Extract plugin names from 'top-250-plugins.csv' into 'top_plugins.txt'
 # This file contains only the names of the top 250 plugins
@@ -32,6 +36,10 @@ jq -r '
   | map("\(.key):\(.value.version // "unknown")") # Format as "plugin-name:version"
   | .[]
 ' plugins.json > plugins_with_versions.txt
+  if [ $? -ne 0 ]; then
+    echo "Error: jq command failed."
+    exit 1
+  fi
 
 # Check if 'plugins_with_versions.txt' is non-empty
 # Exit with an error message if the file is empty or missing
