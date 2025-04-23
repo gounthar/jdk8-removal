@@ -45,6 +45,8 @@ jq -r '
 # The output file contains plugins sorted by popularity with their versions appended
 awk -F',' 'NR==FNR {split($1, a, ":"); versions[a[1]]=$1; next} $1 in versions {print versions[$1]}' \
   plugins_with_versions.txt top-250-plugins.csv > top_plugins_with_versions.txt
+# Verify the merged output
+[[ ! -s top_plugins_with_versions.txt ]] && { echo "Error: top_plugins_with_versions.txt is empty or missing."; exit 1; }
 
 # Print a success message indicating the output file has been generated
-echo "Generated top_plugins_with_versions.txt sorted by popularity"
+echo "Generated top_plugins_with_versions.txt sorted by popularity. Total plugins: $(wc -l < top_plugins_with_versions.txt)"
