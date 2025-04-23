@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -euo pipefail
 # This script processes plugin data from 'plugins.json' to generate a list of the top 250 plugins
 # sorted by popularity, along with their versions. The output is saved in 'top_plugins_with_versions.txt'.
 
