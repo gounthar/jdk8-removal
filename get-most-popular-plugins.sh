@@ -1,33 +1,44 @@
 #!/bin/bash
 
-  # Generate 'top-250-plugins.csv' with the top 250 plugins sorted by popularity
-  jq -r '
-    .plugins
-    | to_entries
-    | map(select(.value.popularity)) # Filter plugins with a "popularity" field
-    | map({name: .key, popularity: .value.popularity})
-    | sort_by(-.popularity)[:250] # Sort and limit to top 250
-    | "name,popularity", (.[] | "\(.name),\(.popularity)")
-  ' plugins.json > top-250-plugins.csv
+# This script processes plugin data from 'plugins.json' to generate a list of the top 250 plugins
+# sorted by popularity, along with their versions. The output is saved in 'top_plugins_with_versions.txt'.
 
-  # Extract plugin names from 'top-250-plugins.csv' into 'top_plugins.txt'
-  awk -F',' 'NR > 1 {print $1}' top-250-plugins.csv > top_plugins.txt
+# Generate 'top-250-plugins.csv' with the top 250 plugins sorted by popularity
+# The CSV contains two columns: plugin name and popularity
+jq -r '
+  .plugins
+  | to_entries
+  | map(select(.value.popularity)) # Filter plugins with a "popularity" field
+  | map({name: .key, popularity: .value.popularity}) # Extract plugin name and popularity
+  | sort_by(-.popularity)[:250] # Sort by popularity in descending order and limit to top 250
+  | "name,popularity", (.[] | "\(.name),\(.popularity)") # Format as CSV
+' plugins.json > top-250-plugins.csv
 
-  # Generate 'plugins_with_versions.txt' with plugin names and versions
-  jq -r '
-    .plugins
-    | to_entries
-    | map("\(.key):\(.value.version // "unknown")") # Default version to "unknown" if missing
-    | .[]
-  ' plugins.json > plugins_with_versions.txt
+# Extract plugin names from 'top-250-plugins.csv' into 'top_plugins.txt'
+# This file contains only the names of the top 250 plugins
+awk -F',' 'NR > 1 {print $1}' top-250-plugins.csv > top_plugins.txt
 
-  # Exit if required files are missing or empty
-  [[ ! -s plugins_with_versions.txt ]] && { echo "Error: plugins_with_versions.txt is empty or missing."; exit 1; }
-  [[ ! -s top-250-plugins.csv ]] && { echo "Error: top-250-plugins.csv is empty or missing."; exit 1; }
+# Generate 'plugins_with_versions.txt' with plugin names and their versions
+# Each line is formatted as "plugin-name:version". If the version is missing, it defaults to "unknown".
+jq -r '
+  .plugins
+  | to_entries
+  | map("\(.key):\(.value.version // "unknown")") # Format as "plugin-name:version"
+  | .[]
+' plugins.json > plugins_with_versions.txt
 
-  # Create 'top_plugins_with_versions.txt' by joining files and preserving order
-  awk -F',' 'NR==FNR {split($1, a, ":"); versions[a[1]]=$1; next} $1 in versions {print versions[$1]}' \
-    plugins_with_versions.txt top-250-plugins.csv > top_plugins_with_versions.txt
+# Check if 'plugins_with_versions.txt' is non-empty
+# Exit with an error message if the file is empty or missing
+[[ ! -s plugins_with_versions.txt ]] && { echo "Error: plugins_with_versions.txt is empty or missing."; exit 1; }
 
-  # Success message
-  echo "Generated top_plugins_with_versions.txt sorted by popularity"
+# Check if 'top-250-plugins.csv' is non-empty
+# Exit with an error message if the file is empty or missing
+[[ ! -s top-250-plugins.csv ]] && { echo "Error: top-250-plugins.csv is empty or missing."; exit 1; }
+
+# Create 'top_plugins_with_versions.txt' by joining 'plugins_with_versions.txt' and 'top-250-plugins.csv'
+# The output file contains plugins sorted by popularity with their versions appended
+awk -F',' 'NR==FNR {split($1, a, ":"); versions[a[1]]=$1; next} $1 in versions {print versions[$1]}' \
+  plugins_with_versions.txt top-250-plugins.csv > top_plugins_with_versions.txt
+
+# Print a success message indicating the output file has been generated
+echo "Generated top_plugins_with_versions.txt sorted by popularity"
