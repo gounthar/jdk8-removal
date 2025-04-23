@@ -5,6 +5,12 @@ set -euo pipefail
 
 # Generate 'top-250-plugins.csv' with the top 250 plugins sorted by popularity
 # The CSV contains two columns: plugin name and popularity
+# Ensure the source data file exists
+if [[ ! -f plugins.json ]]; then
+  echo "Error: plugins.json not found."
+  exit 1
+fi
+
 jq -r '
   .plugins
   | to_entries
