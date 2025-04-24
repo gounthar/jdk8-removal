@@ -5,10 +5,11 @@ set -euo pipefail
 
 # Generate 'top-250-plugins.csv' with the top 250 plugins sorted by popularity
 # The CSV contains two columns: plugin name and popularity
-# Ensure the source data file exists
-if [[ ! -f plugins.json ]]; then
-  echo "Error: plugins.json not found."
-  exit 1
+
+# Check if plugins.json exists and is older than one day
+if [[ ! -f plugins.json || $(find plugins.json -mtime +0) ]]; then
+  echo "Downloading a fresh copy of plugins.json..."
+  curl -L https://updates.jenkins.io/current/update-center.actual.json -o plugins.json
 fi
 
 jq -r '
