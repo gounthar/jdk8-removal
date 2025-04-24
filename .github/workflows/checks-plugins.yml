@@ -87,6 +87,7 @@ jobs:
 
       - name: Generate top plugins by popularity
         run: |
+          curl -L https://updates.jenkins.io/current/update-center.actual.json > plugins.json
           chmod +x ./get-most-popular-plugins.sh
           ./get-most-popular-plugins.sh
           # Verify the output files exist and are not empty
