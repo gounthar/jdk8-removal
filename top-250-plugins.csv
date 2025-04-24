@@ -95,13 +95,10 @@ eddsa-api,127332
 maven-plugin,123735
 git-server,119838
 docker-commons,119412
-ace-editor,115475
 metrics,113248
-momentjs,107545
 config-file-provider,106941
 docker-workflow,105161
 lockable-resources,101284
-handlebars,96741
 htmlpublisher,94666
 workflow-cps-global-lib,89592
 popper2-api,89463
@@ -249,3 +246,6 @@ aws-java-sdk-secretsmanager,16162
 ivy,15998
 job-import-plugin,15812
 extensible-choice-parameter,15721
+allure-jenkins-plugin,15370
+node-iterator-api,15260
+coverage,14731
