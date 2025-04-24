@@ -85,6 +85,18 @@ jobs:
           chmod +x ./cleanup-reports.sh
           ./cleanup-reports.sh
 
+      - name: Generate top plugins by popularity
+        run: |
+          curl -L https://updates.jenkins.io/current/update-center.actual.json > plugins.json
+          chmod +x ./get-most-popular-plugins.sh
+          ./get-most-popular-plugins.sh
+          # Verify the output files exist and are not empty
+          if [[ ! -s top_plugins_with_versions.txt ]]; then
+            echo "Warning: top_plugins_with_versions.txt is empty or was not created"
+          else
+            echo "Successfully generated top_plugins_with_versions.txt with $(wc -l < top_plugins_with_versions.txt) plugins"
+          fi
+
       - name: Check for changes
         run: |
           git diff --exit-code || echo "changed=true" >> $GITHUB_ENV
