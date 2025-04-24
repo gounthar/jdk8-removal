@@ -124,7 +124,7 @@ blueocean-web:1.27.18
 blueocean-jwt:1.27.18
 blueocean-pipeline-scm-api:1.27.18
 publish-over:0.22
-pipeline-graph-view:451.v4471731966f8
+pipeline-graph-view:457.v63db_b_c75dc28
 data-tables-api:2.2.2-1
 blueocean-rest-impl:1.27.18
 blueocean-pipeline-api-impl:1.27.18
@@ -157,7 +157,7 @@ sonar:2.18
 docker-java-api:3.5.0-108.v211cdd21c383
 ansicolor:1.0.6
 prism-api:1.30.0-1
-apache-httpcomponents-client-5-api:5.4.3-140.v2516ccde99e7
+apache-httpcomponents-client-5-api:5.4.4-144.vc483d91903d2
 mercurial:1309.v6802b_f0efb_b_9
 rebuild:338.va_0a_b_50e29397
 docker-plugin:1274.vc0203fdf2e74
