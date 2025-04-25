@@ -950,7 +950,7 @@ inedo-buildmaster:3.1.0
 inedo-proget:1.4
 infisical:29.va_e0dc5ca_b_8fa_
 inflectra-spira-integration:4.0.0
-influxdb:4.1
+influxdb:5.0
 influxdb-query:1.2
 inline-pipeline:1.0.3
 inodes-monitor:52.v05406b_c33a_b_0
@@ -1333,7 +1333,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.18
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.2.8-40.v9b_b_d172b_b_fa_7
+oras-java-api:0.2.9-44.v67da_9c0db_1b_f
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1407,7 +1407,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:458.vda_20b_9b_63f10
+pipeline-graph-view:464.v3d2a_ffcc717f
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1751,7 +1751,7 @@ subversion:1287.vd2d507146906
 suite-test-groups-publisher:1.13
 summary_report:1.15
 sumologic-publisher:2.2.6
-support-core:1718.vb_3b_47b_e0b_8d3
+support-core:1723.v63c3a_2f2c82c
 suppress-stack-trace:1.6
 svn-partial-release-mgr:1.0.1
 svn-revert-plugin:279.va_77c7e060d51
