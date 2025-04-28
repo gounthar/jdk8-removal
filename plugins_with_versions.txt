@@ -308,7 +308,7 @@ build-discarder:158.vce570d01ce4c
 build-env-propagator:1.0
 build-environment:1.7
 build-executors-filter-offline:1.1
-build-failure-analyzer:2.5.4
+build-failure-analyzer:2.5.5
 build-health-cache-updater:1.1
 build-history-manager:1.12.0
 build-history-metrics-plugin:141.v371b_7a_d37753
@@ -631,7 +631,7 @@ docker-slaves:1.0.7
 docker-swarm:1.11
 docker-traceability:1.2
 docker-workflow:611.v16e84da_6d3ff
-dockerhub-notification:220.vf1f1c582fe8d
+dockerhub-notification:222.v483263f10718
 doclinks:0.7
 dogu-integration:27.vd4da_5fea_e29f
 doktor:0.4.1
@@ -1407,7 +1407,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:471.vd78d487a_a_1a_0
+pipeline-graph-view:477.v42d998fde36d
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89

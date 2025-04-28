@@ -245,16 +245,19 @@ logback-nats-appender:0.2.2
 logfilesizechecker:1.5
 mac:1.6.1
 macstadium-orka:2.06
+matrix-reloaded:1.1.3
 mergebase-sca:1.0.1
 metadefender:1.0
 metrics-aggregation:0.2.0
 metrics-datadog:1.0
+miniorange-saml-sp:2.4.6
 misra-compliance-report-generator:1.0
 mixing-security-realm:1.3
 modernstatus:1.3
 monitor-pro:1.0.9
 multi-branch-priority-sorter:1.0
 multi-slave-config-plugin:1.2.0
+muuri-api:0.9.5-3
 neoload-jenkins-plugin:2.2.11
 netdomain-labeler:0.0.2
 neuro-cucumber:1.0.4
@@ -266,6 +269,7 @@ nodepool-agents:0.0.21
 non-dynamic-hello-world:1.0
 notify-events:1.6.2
 nowsecure-auto-security-test:1.25
+nuclei:1.0.0
 nuget:1.1
 nutanix-calm:1.2.2
 nvm-wrapper:0.1.7
@@ -278,7 +282,9 @@ osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
 osf-builder-suite-for-sfcc-run-job:1.0.5
 osf-builder-suite-standalone-sonar-linter:1.0.3
+ostorlab:1.11
 overops-query:3.0.3
+oversecured:1.1
 ownership:0.13.0
 packer:1.5
 periodic-reincarnation:1.13
@@ -289,9 +295,12 @@ pipeline-deploymon:1.0
 pipeline-giphy-api:2.0.1
 pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
+pipeline-global-lib-nexus:0.3.2
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-keep-running-step:1.3
 pipeline-reporter-by-redpen:1.054.v7b_9517b_6b_202
+pipeline-timeline:1.0.3
+portscanner:1.7
 preflight-integration:1.4
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
@@ -305,12 +314,14 @@ pyenv-pipeline:2.1.2
 qftest:2.1.1
 qiniu:1.2.0
 qrebel:1.0.1
+quali-torque:2.1.0-307.vfa_3d28f8a_8b_3
 qualityclouds:1.0.1
 qualys-cs:1.7.0.3
 qualys-vm:1.2.1
 qualys-was:2.1.3
 queue-cleanup:1.4
 qy-wechat-notification:1.1.3
+r7insight-log-forwarder:0.0.1
 rabbitmq-build-trigger:2.5
 rabbitmq-consumer:2.8
 rabbitmq-publisher:1.3.1
@@ -325,6 +336,7 @@ redis-notifier:0.1.6-RELEASE
 redmine-metrics-report:1.0.1
 redmine:0.21
 remote-terminal-access:1.6
+remoting-kafka:2.0.1
 repo:1.16.0
 repository-connector:2.2.1
 requests:3.5
@@ -339,6 +351,7 @@ scm-httpclient:1.5
 sdelements:1.0.2
 secure-post-script:0.1
 security-inspector:117.v6eecc36919c2
+select2-api:4.0.13-8
 selenium:3.141.59
 semantic-versioning-plugin:1.15
 sematext:1.0.6
@@ -358,7 +371,9 @@ soapui-pro-functional-testing:1.11
 sofy-ai:1.0.3
 sonic-ci-helper:1.0.5
 sounds:0.7
+split-admin:2.0
 spring-config:2.0.2
+stackrox-container-image-scanner:1.4.3
 stash-pullrequest-builder:1.17
 statuspage-gating:1.1
 suppress-stack-trace:1.6
@@ -402,6 +417,7 @@ viber-notification:1.8.19
 views-containing-job:1.3
 violation-comments-to-github:1.96
 visualexpert:2024.1.1
+vrealize-automation-8:1.4
 vstestrunner:1.0.8
 wallarm-fast:0.4.2
 wattspeed:1.0
@@ -422,3 +438,4 @@ zanata:0.6
 zap-pipeline:1.16
 zerobug:1.14
 zoom:1.6
+zscaler-iac-scan:2.2.1
