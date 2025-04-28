@@ -287,6 +287,7 @@ browser-axis-plugin:1.0
 browserstack-integration:1.2.16
 btc-embeddedplatform:25.1.2
 buckminster:1.1.1
+bugzilla:1.5
 build-alias-setter:44.vb_f626d6f2734
 build-blocker-plugin:166.vc82fc20b_a_ed6
 build-cause-run-condition:0.1
@@ -333,6 +334,7 @@ caffeine-api:3.2.0-166.v72a_6d74b_870f
 calendar-view:0.3.6
 caliper-ci:2.3
 call-remote-job-plugin:1.0.21
+campfire:2.7
 carbonetes-serverless-container-scanning-and-policy-compliance:1.9
 carl:1.1.0
 cas-plugin:1.7.0
@@ -375,7 +377,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:936.0.1
+cloudbees-bitbucket-branch-source:936.1.0
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:239.v6a_f1a_c1c8046
@@ -595,7 +597,7 @@ docker-slaves:1.0.7
 docker-swarm:1.11
 docker-traceability:1.2
 docker-workflow:611.v16e84da_6d3ff
-dockerhub-notification:220.vf1f1c582fe8d
+dockerhub-notification:222.v483263f10718
 doclinks:0.7
 dogu-integration:27.vd4da_5fea_e29f
 dos-trigger:1.23
@@ -667,6 +669,7 @@ escaped-markup-plugin:0.1
 exam:1.2.2
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
+experitest-cloud:1.0.3
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
 extended-read-permission:61.vf24570ff3b_e9
@@ -1069,6 +1072,7 @@ logaction-plugin:1.2
 logback-nats-appender:0.2.2
 logentries:0.0.2
 logfilesizechecker:1.5
+logging:1.0.0
 login-theme:262.vb_4ce39d5279f
 logstash:2.5.0218.v0a_ff8fefc12b_
 lotus-connections-plugin:1.25
@@ -1101,6 +1105,7 @@ matrix-auth:3.2.6
 matrix-combinations-parameter:1.3.3
 matrix-communication:13.vdcfb_b_44ce852
 matrix-project:849.v0cd64ed7e531
+matrix-reloaded:1.1.3
 matrixtieparent:1.2
 mattermost:3.1.3
 maven-artifact-choicelistprovider:1.17
@@ -1116,6 +1121,7 @@ maven-snapshot-check:1146.v108e506eda_7b_
 mdt-deployment:1.0.4
 mdtool:0.1.1
 meliora-testlab:1.24
+memory-map:2.2.1
 mend-cloud-native-security-scanner:39.vdce6e5d3b_ca_a_
 mentor-questa-vrm:1.15
 mercurial:1309.v6802b_f0efb_b_9
@@ -1135,6 +1141,7 @@ mina-sshd-api-scp:2.15.0-161.vb_200831a_c15b_
 mina-sshd-api-sftp:2.15.0-161.vb_200831a_c15b_
 minio-storage:0.0.3
 minio:1.3.3-rc93.9e92f846d4cf
+miniorange-saml-sp:2.4.6
 miniorange-two-factor:1.0.8
 misra-compliance-report-generator:1.0
 mission-control-view:0.9.16
@@ -1155,6 +1162,7 @@ msbuild:1.36
 msginject:0.1.1
 mstest:1.0.5
 mstestrunner:1.5.0
+mttr:1.1
 multi-branch-priority-sorter:1.0
 multi-branch-project-plugin:0.7
 multi-module-tests-publisher:1.44
@@ -1162,6 +1170,7 @@ multi-slave-config-plugin:1.2.0
 multibranch-action-triggers:1.8.10
 multibranch-job-tear-down:1.2
 multiselect-parameter:1.8
+muuri-api:0.9.5-3
 mysql-api:9.2.0-55.v0c3a_9754999c
 myst-plugin:2.5.0.0
 naginator:1.496.v94260e77b_3f5
@@ -1195,6 +1204,8 @@ notification:1.18
 notify-events:1.6.2
 nouvola-divecloud:1.08
 nowsecure-auto-security-test:1.25
+nsiqcollector:1.3.3
+nuclei:1.0.0
 nuget:1.1
 nunit:571.v30a_1e3f86709
 nutanix-calm:1.2.2
@@ -1202,6 +1213,7 @@ nvm-wrapper:0.1.7
 oak9:1.0.9
 oauth-credentials:0.657.v7d8dd90b_0382
 octoperf:4.7.0
+octopusdeploy:4.0.2
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
 oic-auth:4.494.v6b_f419104767
@@ -1240,7 +1252,9 @@ osf-builder-suite-for-sfcc-run-job:1.0.5
 osf-builder-suite-standalone-sonar-linter:1.0.3
 oslc-cm:1.31
 oss-symbols-api:324.v432cce4172ca_
+ostorlab:1.11
 overops-query:3.0.3
+oversecured:1.1
 ownership:0.13.0
 p4:1.17.1
 paaslane-estimate:1.0.4
@@ -1278,6 +1292,7 @@ permissive-script-security:0.7
 persistent-build-queue-plugin:0.1.1
 persistent-parameter:1.3
 phabricator-k8s:1.0.0
+phabricator-plugin:2.1.5
 phing:0.13.3
 php-builtin-web-server:0.1
 piketec-tpt:9.4
@@ -1298,8 +1313,9 @@ pipeline-github-lib:65.v203688e7727e
 pipeline-github:2.8-162.382498405fdc
 pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
+pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:471.vd78d487a_a_1a_0
+pipeline-graph-view:477.v42d998fde36d
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1323,6 +1339,7 @@ pipeline-restful-api:0.11
 pipeline-stage-step:322.vecffa_99f371c
 pipeline-stage-tags-metadata:2.2254.v2a_978de46f35
 pipeline-stage-view:2.37
+pipeline-timeline:1.0.3
 pipeline-utility-steps:2.19.0
 pitmutation:1.0-18
 piwikanalytics:1.2.0
@@ -1340,6 +1357,8 @@ pom2config:1.2
 popper-api:1.16.1-3
 popper2-api:2.11.6-5
 port-allocator:351.v7a_94cf6e4677
+portscanner:1.7
+post-completed-build-result:1.1
 postbuild-task:72.v75dc459e4747
 postbuildscript:3.4.1-695.vf6b_0b_8053979
 postgresql-api:42.7.5-56.vc0921b_3cc11e
@@ -1347,6 +1366,7 @@ postgresql-fingerprint-storage:356.vb_b_879da_38f38
 powershell:2.3
 preSCMbuildstep:115.vf9808414429d
 preflight-integration:1.4
+pretested-integration:3.1.2
 prism-api:1.30.0-1
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
@@ -1375,14 +1395,17 @@ pureload:1.9
 purge-build-queue-plugin:88.v23b_97b_f2c7a_d
 purge-job-history:74.vf21030329dda_
 pvcs_scm:1.2
+pwauth:0.4
 pyenv-pipeline:2.1.2
 python:1.3
+qc:1.2.1
 qftest:2.1.1
 qiniu:1.2.0
 qmetry-for-jira-test-management:1.25
 qmetry-test-management:1.13
 qrebel:1.0.1
 qtest:2024.3
+quali-torque:2.1.0-307.vfa_3d28f8a_8b_3
 quality-gates:2.5
 qualityclouds:1.0.1
 qualys-cs:1.7.0.3
@@ -1394,10 +1417,12 @@ quayio-trigger:0.1
 queue-cleanup:1.4
 queueredirector:44.v74c8e1210985
 qy-wechat-notification:1.1.3
+r7insight-log-forwarder:0.0.1
 r:0.7
 rabbitmq-build-trigger:2.5
 rabbitmq-consumer:2.8
 rabbitmq-publisher:1.3.1
+rad-builder:1.1.4
 radargun-reporting:1.0.3
 radargun:1.25
 radiatorviewplugin:1.29
@@ -1421,12 +1446,14 @@ redis-fingerprint-storage:1.0-rc-3
 redis-notifier:0.1.6-RELEASE
 redmine-metrics-report:1.0.1
 redmine:0.21
+refit:0.3.1
 regression-report-plugin:1.5
 release:2.19
 reliza-integration:0.3.5
 remote-file:1.24
 remote-result-trigger:3.146.vfa_f6a_4f28961
 remote-terminal-access:1.6
+remoting-kafka:2.0.1
 repo:1.16.0
 report-diff:4.1
 report-generic-chart-column:4.1
@@ -1443,9 +1470,12 @@ rhnpush-plugin:0.5.2
 rich-text-publisher-plugin:1.5
 rigor-optimization:1.04
 robot:6.0.0
+rocketchatnotifier:1.5.2
 role-strategy:756.v978cb_392eb_d3
 rpi-build-status:0.7
 rpmsign-plugin:0.5.1
+rqm-plugin:2.8
+rrod:1.1.0
 run-condition-extras:0.3
 run-condition:243.v3c3f94e46a_8b_
 run-selector:1.1.1
@@ -1479,7 +1509,10 @@ scmskip:72.vc2f9088d11e2
 scons:0.4
 scoring-load-balancer:165.v1b_ef69a_329d1
 scoverage:1.4.0
+scp:1.8
+script-realm:1.5
 script-security:1373.vb_b_4a_a_c26fa_00
+scripted-cloud-plugin:0.12
 scriptler:397.vc46f19cb_3c18
 sdelements:1.0.2
 sealights:1.4.353
@@ -1491,9 +1524,13 @@ sectioned-view:1.30
 secure-post-script:0.1
 secure-requester-whitelist:72.v6cce468c5513
 security-inspector:117.v6eecc36919c2
+select2-api:4.0.13-8
 selected-tests-executor:1.3.3
+selection-tasks-plugin:1.0
+selenium-aes:0.5
 selenium-builder:1.14
 selenium:3.141.59
+seleniumrc-plugin:1.0
 semantic-versioning-plugin:1.15
 sematext:1.0.6
 send-stacktrace-to-eclipse-plugin:1.8
@@ -1513,12 +1550,16 @@ shortcut-job:0.5
 shutdown-queue:1.4
 sicci_for_xcode:0.0.8
 sidebar-link:2.4.2
+sidebar-update-notification:1.1.0
 sideex:1.0.3-1
 signal-killer:1.3
+signpath:3.0.1.323.v07185b_6c0c43
 silk-performer-plugin:2.0.32
 simple-build-for-pipeline:0.2
+simple-parameterized-builds-report:1.5
 simple-queue:1.4.7
 simple-theme-plugin:211.v5424a_5510e47
+simpleclearcase:1.2.2
 simpleupdatesite:1.1.2
 simplifyqa-pipeline-executor:1.14
 sitemonitor:0.6
@@ -1539,6 +1580,7 @@ slsa:40.v733b_0005fa_fd
 smalltest:1.0.4
 smart-jenkins:1.0
 smartfrog-plugin:2.2.6
+smilehubnotifier:1.4.22
 sms:1.2
 snakeyaml-api:2.3-125.v4d77857a_b_402
 snowglobe:0.4.1
@@ -1556,6 +1598,7 @@ sonic-ci-helper:1.0.5
 soos-sca:65.v9050fc6365a_2
 sounds:0.7
 sourcemonitor:0.2
+split-admin:2.0
 splunk-devops-extend:1.10.2
 splunk-devops:1.10.2
 spoonscript:1.3
@@ -1576,6 +1619,8 @@ ssh:158.ve2a_e90fb_7319
 sshd:3.353.v2b_d33c46e970
 stackhammer:1.0.6
 stackify-deployment-recorder:1.1.0
+stackrox-container-image-scanner:1.4.3
+started-by-envvar:1.0
 startup-trigger-plugin:2.9.4
 stash-pullrequest-builder:1.17
 stashNotifier:1.516.v6d49910f22a_5
@@ -1607,6 +1652,7 @@ systemloadaverage-monitor:1.2
 tag-profiler:0.2
 talend:1.5
 tanaguru:1.3
+tap:2.4.4
 tattletale-plugin:0.3
 teams-webhook-trigger:0.1.1
 teamscale-upload:1.4.7
@@ -1654,6 +1700,7 @@ thycotic-devops-secrets-vault:67.v9d3c184cf594
 thycotic-secret-server:1.1.1
 thycotic-vault:1.0.4
 tibco-builder:1.4
+tics:2024.1.1.1
 timestamper:1.28
 tm4j-automation:3.3.4
 tmpcleaner:1.3
@@ -1662,6 +1709,7 @@ toolenv:1.2
 trac-publisher-plugin:1.3
 trac:1.13
 tracking-git:1.0
+tracking-svn:1.1
 transifex:0.1.0
 translation:1.16
 tricentis-ci:1.3
@@ -1676,6 +1724,7 @@ typetalk:194.v3586feb_6e248
 ui-test-capture:1.0.43
 uipath-automation-package:4.0.327.v39580c233fd7
 uleska:38.v2f6e7a27eb0a
+unicorn:0.1.1
 unique-id:2.117.v7a_81333a_584b_
 unity3d-plugin:1.3
 unleash:110.v6a_d46d76d560
@@ -1735,6 +1784,7 @@ vmware-vrealize-codestream:1.2
 vmware-vrealize-orchestrator:3.0
 vncrecorder:1.35
 vncviewer:1.9
+vrealize-automation-8:1.4
 vs-code-metrics:1.7
 vsphere-cloud:2.27
 vss:1.9
@@ -1743,6 +1793,7 @@ wallarm-fast:0.4.2
 waptpro:1.6
 warnings-ng:12.5.0
 warrior:1.2
+was-builder:1.6.1
 wattspeed:1.0
 wavefront:1.1.4
 webhook-eventsource:0.0.1
@@ -1807,6 +1858,7 @@ youtrack-plugin:0.7.3
 zanata:0.6
 zap-pipeline:1.16
 zap:1.1.0
+zapper:1.0.7
 zdevops:1.1.3.50.ve350c9b_450b_1
 zentimestamp:4.2
 zephyr-enterprise-test-management:2.9.1
@@ -1815,4 +1867,5 @@ zohoqengine:1.0.31.v4a_b_1db_6d6a_f2
 zohosprints:2.1
 zoom:1.6
 zos-connector:3.313.v1342f28a_5310
+zscaler-iac-scan:2.2.1
 zulip:2.1.1
