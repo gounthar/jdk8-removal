@@ -295,7 +295,7 @@ build-discarder:158.vce570d01ce4c
 build-env-propagator:1.0
 build-environment:1.7
 build-executors-filter-offline:1.1
-build-failure-analyzer:2.5.4
+build-failure-analyzer:2.5.5
 build-health-cache-updater:1.1
 build-history-manager:1.12.0
 build-history-metrics-plugin:141.v371b_7a_d37753
@@ -1749,7 +1749,7 @@ vagrant:1.0.2
 valgrind:0.28
 validating-email-parameter:1.10
 validating-string-parameter:255.v31e2e6d0d273
-validating-yaml-parameter:296.va_e760a_e60720
+validating-yaml-parameter:308.vfb_567c6663b_a_
 variables-replace-plugin:1.0.0
 variant:70.va_d9f17f859e0
 vault-scm-plugin:1.1.1
