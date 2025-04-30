@@ -4,6 +4,7 @@ BlameSubversion:1.200
 BlazeMeterJenkinsPlugin:4.25
 CustomHistory:1.6
 Exclusion:0.15
+GatekeeperPlugin:3.0.5
 JiraTestResultReporter:280.v359a_d57c2fb_0
 Matrix-sorter-plugin:1.3
 NegotiateSSO:153.v85355f1cb_26d
@@ -247,6 +248,7 @@ black-duck-sigma:2024.10.1
 blackduck-coverity-on-polaris:2.0.1
 blackduck-security-scan:2.1.2-rc1260.7b_76fec1174c
 blink1:1.1
+block-build-final-project:1.0
 block-queued-job:0.2.0
 block-same-builds:1.3
 blueocean-autofavorite:1.2.5
@@ -458,6 +460,7 @@ console-tail:15.vc54cb_4ca_6981
 consul-kv-builder:2.0.13
 consul:2.1
 container-image-link:11.v2fee68a69c54
+content-replace:1.8.2
 continuum:1.0.1
 contrast-continuous-application-security:3.10
 conventional-commits:0.11.2
@@ -593,6 +596,7 @@ docker-plugin:1274.vc0203fdf2e74
 docker-slaves:1.0.7
 docker-swarm:1.11
 docker-traceability:1.2
+docker-workflow:611.v16e84da_6d3ff
 dockerhub-notification:222.v483263f10718
 doclinks:0.7
 dogu-integration:27.vd4da_5fea_e29f
@@ -603,9 +607,11 @@ dotnet-as-script:1.0.2
 dotnet-sdk:1.4.0
 downstream-build-cache:1.7
 downstream-buildview:69.v16da_b_2c36f6c
+downstream-ext:73.vdda_16e6eb_0da
 doxygen:178.v6ea_ef5f7dfdb
 drecycler:0.20
 drmemory-plugin:1.12
+dropdown-viewstabbar-plugin:1.7
 drupal-developer:0.8
 dry-run:0.9
 dtkit-api:3.0.3
@@ -926,6 +932,7 @@ jenkins-cloudformation-plugin:231.v3b_84a_7a_074ec
 jenkins-design-language:1.27.19
 jenkins-flowdock-plugin:1.1.8
 jenkins-infra-test:206.v7d994a_630972
+jenkins-jira-issue-updater:1.18
 jenkins-multijob-plugin:662.vd2e0001f6b_b_d
 jenkins-tag-cloud-plugin:1.6
 jenkins-testswarm-plugin:1.2
@@ -944,6 +951,7 @@ jira-steps:2.0.180.vccfe35b_5910d
 jira:3.15
 jjwt-api:0.11.5-120.v0268cf544b_89
 jmh-report:0.9.0
+jms-messaging:1.1.28
 jnr-posix-api:3.1.20-138.vdb_9db_a_39182f
 job-dsl:1.92
 job-exporter:0.4
@@ -954,6 +962,7 @@ job-node-stalker:1.0.5
 job-parameter-summary:0.5
 job-poll-action-plugin:1.0
 job-restrictions:216.v0732cc7fb_076
+job-strongauth-simple:0.5
 jobConfigHistory:1305.vf20a_356586b_8
 jobcacher-artifactory-storage:158.vc4b_753b_b_7f04
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
@@ -1110,6 +1119,7 @@ maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
 mdt-deployment:1.0.4
+mdtool:0.1.1
 meliora-testlab:1.24
 memory-map:2.2.1
 mend-cloud-native-security-scanner:39.vdce6e5d3b_ca_a_
@@ -1137,6 +1147,7 @@ misra-compliance-report-generator:1.0
 mission-control-view:0.9.16
 mixing-security-realm:1.3
 mktmpio:0.3.2
+mock-load-builder:105.v1fc7e407a_0b_1
 mock-security-realm:106.va_5286004db_2e
 mock-slave:193.v88c279d0c584
 modernstatus:1.3
@@ -1151,6 +1162,7 @@ msbuild:1.36
 msginject:0.1.1
 mstest:1.0.5
 mstestrunner:1.5.0
+mttr:1.1
 multi-branch-priority-sorter:1.0
 multi-branch-project-plugin:0.7
 multi-module-tests-publisher:1.44
@@ -1212,6 +1224,7 @@ onepassword-secrets:1.0.3
 onesky:1.1
 ontrack:4.1.2
 open-stf:1.0.9
+openJDK-native-plugin:1.8
 opencover:79.v78d40e1fc27e
 openedge:0.23
 openid4java:0.9.8.0
@@ -1222,6 +1235,7 @@ openshift-k8s-credentials:248.v30f377a_b_34f0
 openshift-login:1.1.0.248.v1908df5c4f5e
 openshift-pipeline:1.0.57
 openshift-sync:1.1.0.802.v45585f8cdc07
+openstack-cloud:2.66
 opentelemetry-agent-metrics:1.4.1
 opentelemetry-api:1.49.0.59.vc32561e77cf3
 opentelemetry:3.1515.v1b_2d6b_526498
@@ -1266,6 +1280,10 @@ pending-changes:0.3.0
 people-redirector:1.3
 people-view:1.2
 percentage-du-node-column:0.1.0
+performance-signature-dynatrace:3.2.2
+performance-signature-dynatracesaas:3.2.2
+performance-signature-ui:3.2.2
+performance-signature-viewer:3.2.2
 performance:980.vf4df84f69474
 perfpublisher:8.09
 periodic-reincarnation:1.13
@@ -1335,6 +1353,7 @@ plugin-util-api:6.1.0
 polarion:1.3
 policycenter-gate-validator:1.0.1
 pollscm:1.9
+pom2config:1.2
 popper-api:1.16.1-3
 popper2-api:2.11.6-5
 port-allocator:351.v7a_94cf6e4677
@@ -1351,11 +1370,13 @@ pretested-integration:3.1.2
 prism-api:1.30.0-1
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
+proc-cleaner-plugin:2.4
 progress-bar-column-plugin:11.vdef198c2d6c1
 project-build-times:1.2.1
 project-description-setter:1.2
 project-stats-plugin:23.v47fee1f77b_84
 prometheus:819.v50953a_c560dd
+promoted-builds-simple:1.9
 promoted-builds:992.va_00888f21b_74
 propelo-job-reporter:1.0.35
 provar-automation:68.v91b_13f4101e2
@@ -1365,6 +1386,7 @@ publish-over-cifs:0.16
 publish-over-dropbox:1.3.2
 publish-over-ftp:248.v1487ff759c7a_
 publish-over-ssh:387.vec3df0f668cd
+publish-over:0.22
 publish-to-bitbucket:0.4
 pubsub-light:1.19
 pull-request-monitoring:335.v525cd64ec76b_
@@ -1402,6 +1424,7 @@ rabbitmq-consumer:2.8
 rabbitmq-publisher:1.3.1
 rad-builder:1.1.4
 radargun-reporting:1.0.3
+radargun:1.25
 radiatorviewplugin:1.29
 railflow-testrail:65.vd0b_18fa_46b_7e
 rake:1.8.0
@@ -1600,6 +1623,7 @@ stackrox-container-image-scanner:1.4.3
 started-by-envvar:1.0
 startup-trigger-plugin:2.9.4
 stash-pullrequest-builder:1.17
+stashNotifier:1.516.v6d49910f22a_5
 statistics-gatherer:2.0.3
 statusmonitor:44.v3d97a_d2810f1
 statuspage-gating:1.1
@@ -1623,6 +1647,7 @@ sweagle:1.2.1
 synergy:1.7
 synopsys-security-scan:1.8.1
 sysdig-secure:3.0.2
+syslog-logger:1.0.5
 systemloadaverage-monitor:1.2
 tag-profiler:0.2
 talend:1.5
@@ -1743,6 +1768,7 @@ view-cloner:1.1
 view-job-filters:399.v6c89d5e6ff54
 view26:1.0.7
 viewVC:1.7
+views-containing-job:1.3
 violation-columns:1.6
 violation-comments-to-github:1.96
 violation-comments-to-gitlab:2.62.0
@@ -1801,6 +1827,7 @@ workflow-scm-step:437.v05a_f66b_e5ef8
 workflow-step-api:700.v6e45cb_a_5a_a_21
 workflow-support:968.v8f17397e87b_8
 working-hours:1.1
+workplace-notifier:1.16
 worktile:1.1.17
 writable-filesystem-monitor:0.1
 ws-cleanup:0.48
