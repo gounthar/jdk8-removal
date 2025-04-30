@@ -26,7 +26,6 @@ https://github.com/jenkinsci/autocomplete-parameter-plugin
 https://github.com/jenkinsci/aws-s3-cleaner-plugin
 https://github.com/jenkinsci/azure-iot-edge-plugin
 https://github.com/jenkinsci/azure-slave-plugin
-https://github.com/jenkinsci/backend-crowd-javanet-directory
 https://github.com/jenkinsci/backend-deprecation-checker
 https://github.com/jenkinsci/backend-donation-thankyou
 https://github.com/jenkinsci/backend-git-pushf-finder
@@ -49,7 +48,6 @@ https://github.com/jenkinsci/bamboo-notifier-plugin
 https://github.com/jenkinsci/bearychat-plugin
 https://github.com/jenkinsci/blackduck-hub-plugin
 https://github.com/jenkinsci/blame-upstream-commiters-plugin
-https://github.com/jenkinsci/blitz_io-plugin
 https://github.com/jenkinsci/blueocean-js-builder
 https://github.com/jenkinsci/blueocean-pipeline-editor-plugin
 https://github.com/jenkinsci/blueocean-rfc
@@ -59,7 +57,6 @@ https://github.com/jenkinsci/brakeman-plugin
 https://github.com/jenkinsci/bruceschneier-plugin
 https://github.com/jenkinsci/btrfs-workspace-plugin
 https://github.com/jenkinsci/buddycloud-plugin
-https://github.com/jenkinsci/buggame-plugin
 https://github.com/jenkinsci/build-description-plugin
 https://github.com/jenkinsci/build-flow-pipeline-integration-sandbox
 https://github.com/jenkinsci/build-flow-plugin
@@ -152,7 +149,6 @@ https://github.com/jenkinsci/domain-discovery-module
 https://github.com/jenkinsci/doony-plugin
 https://github.com/jenkinsci/DotCi
 https://github.com/jenkinsci/drools-plugin
-https://github.com/jenkinsci/dry-run-lib
 https://github.com/jenkinsci/dynamicparameter-plugin
 https://github.com/jenkinsci/dynaslave-plugin
 https://github.com/jenkinsci/easyant-plugin
@@ -167,7 +163,6 @@ https://github.com/jenkinsci/es-extensions
 https://github.com/jenkinsci/event-streamer-plugin
 https://github.com/jenkinsci/events-materials
 https://github.com/jenkinsci/external-resource-dispatcher-plugin
-https://github.com/jenkinsci/external-scheduler-plugin
 https://github.com/jenkinsci/extras-android
 https://github.com/jenkinsci/extras-client-demo
 https://github.com/jenkinsci/extras-ec2-launcher
@@ -246,7 +241,6 @@ https://github.com/jenkinsci/ibm-ucdeploy-pipeline-plugin
 https://github.com/jenkinsci/ibvc-plugin
 https://github.com/jenkinsci/impersonation-plugin
 https://github.com/jenkinsci/incrementals-tools
-https://github.com/jenkinsci/infra-cla
 https://github.com/jenkinsci/install-necessary-plugins
 https://github.com/jenkinsci/installshield-plugin
 https://github.com/jenkinsci/instant-messaging-parent-plugin
@@ -313,7 +307,6 @@ https://github.com/jenkinsci/js-storage
 https://github.com/jenkinsci/js-test
 https://github.com/jenkinsci/jsgames-plugin
 https://github.com/jenkinsci/jshint-checkstyle-plugin
-https://github.com/jenkinsci/juseppe
 https://github.com/jenkinsci/jwsdp-sqe-plugin
 https://github.com/jenkinsci/jython-postbuild-plugin
 https://github.com/jenkinsci/kagemai-plugin
@@ -397,7 +390,6 @@ https://github.com/jenkinsci/multiline-tabbar-plugin-plugin
 https://github.com/jenkinsci/myappci-plugin
 https://github.com/jenkinsci/mypeople-plugin
 https://github.com/jenkinsci/mysql-auth-plugin
-https://github.com/jenkinsci/nabaztag-plugin
 https://github.com/jenkinsci/ncover-plugin
 https://github.com/jenkinsci/netio-plugin
 https://github.com/jenkinsci/netx
@@ -415,7 +407,6 @@ https://github.com/jenkinsci/openconnect-plugin
 https://github.com/jenkinsci/openstack-plugin
 https://github.com/jenkinsci/opsramp-notifier-plugin
 https://github.com/jenkinsci/optional-plugin-helper-module
-https://github.com/jenkinsci/origo-issue-notifier-plugin
 https://github.com/jenkinsci/overthere-remoting
 https://github.com/jenkinsci/page-note-plugin
 https://github.com/jenkinsci/parallel-test-executor-plugin-sample
@@ -428,7 +419,6 @@ https://github.com/jenkinsci/periodic-jobs-balancer-plugin
 https://github.com/jenkinsci/persona-plugin
 https://github.com/jenkinsci/php-plugin
 https://github.com/jenkinsci/pipeline-charts-plugin
-https://github.com/jenkinsci/pipeline-classpath-step-plugin
 https://github.com/jenkinsci/pipeline-editor-plugin
 https://github.com/jenkinsci/pipeline-examples
 https://github.com/jenkinsci/pipeline-plugin
@@ -441,7 +431,6 @@ https://github.com/jenkinsci/plugin-blekkoPanel
 https://github.com/jenkinsci/plumber-plugin
 https://github.com/jenkinsci/pom-importer-plugin
 https://github.com/jenkinsci/popular-jobs-plugin
-https://github.com/jenkinsci/practitest-integration-plugin
 https://github.com/jenkinsci/pre-build-plugin
 https://github.com/jenkinsci/proc-plugin
 https://github.com/jenkinsci/protecode-sc-plugin
@@ -468,7 +457,6 @@ https://github.com/jenkinsci/redline-plugin
 https://github.com/jenkinsci/redmine-plugin-1
 https://github.com/jenkinsci/regexemail-plugin
 https://github.com/jenkinsci/release-test
-https://github.com/jenkinsci/remote-queue-plugin
 https://github.com/jenkinsci/repeat-build-plugin
 https://github.com/jenkinsci/require-tool-plugin
 https://github.com/jenkinsci/rest-service-scheduler-plugin
@@ -511,7 +499,6 @@ https://github.com/jenkinsci/serenitec-plugin
 https://github.com/jenkinsci/setenv-plugin
 https://github.com/jenkinsci/sfee-plugin
 https://github.com/jenkinsci/sge-cloud-plugin
-https://github.com/jenkinsci/sig-cloud-native
 https://github.com/jenkinsci/sig-ux
 https://github.com/jenkinsci/silktestsuite-plugin
 https://github.com/jenkinsci/simple-travis-runner-plugin
@@ -520,7 +507,6 @@ https://github.com/jenkinsci/singleuseslave-plugin
 https://github.com/jenkinsci/sitecore-package-installer-plugin
 https://github.com/jenkinsci/sitespeed-plugin
 https://github.com/jenkinsci/skype-plugin
-https://github.com/jenkinsci/skype-status-plugin
 https://github.com/jenkinsci/sladiator-plugin
 https://github.com/jenkinsci/SmoothDashboardView-plugin
 https://github.com/jenkinsci/sonarqube-slack-pusher-plugin
@@ -596,7 +582,6 @@ https://github.com/jenkinsci/whitesource-plugin
 https://github.com/jenkinsci/wiki-publisher-plugin
 https://github.com/jenkinsci/windmill-plugin
 https://github.com/jenkinsci/windows-package-checker
-https://github.com/jenkinsci/workflow-plugin-pipeline-demo
 https://github.com/jenkinsci/worksoft-certify-dashboard-plugin
 https://github.com/jenkinsci/worksoft-certify-process-runner-plugin
 https://github.com/jenkinsci/worksoft-certify-process-suite-plugin
