@@ -174,7 +174,6 @@ Aws Sqs Trigger Plugin,https://github.com/jenkinsci/aws-sqs-trigger-plugin
 Awseb Deployment Plugin,https://github.com/jenkinsci/awseb-deployment-plugin
 Azure Acs Plugin,https://github.com/jenkinsci/azure-acs-plugin
 Azure Ad Plugin,https://github.com/jenkinsci/azure-ad-plugin
-Azure App Service Plugin,https://github.com/jenkinsci/azure-app-service-plugin
 Azure Artifact Manager Plugin,https://github.com/jenkinsci/azure-artifact-manager-plugin
 Azure Batch Parallel Plugin,https://github.com/jenkinsci/azure-batch-parallel-plugin
 Azure Cli Plugin,https://github.com/jenkinsci/azure-cli-plugin
@@ -332,7 +331,6 @@ Built On Column Plugin,https://github.com/jenkinsci/built-on-column-plugin
 Bulk Builder Plugin,https://github.com/jenkinsci/bulk-builder-plugin
 Bumblebee Plugin,https://github.com/jenkinsci/bumblebee-plugin
 Byte Buddy Api Plugin,https://github.com/jenkinsci/byte-buddy-api-plugin
-Bytecode Compatibility Transformer,https://github.com/jenkinsci/bytecode-compatibility-transformer
 Byteguard Build Actions Plugin,https://github.com/jenkinsci/byteguard-build-actions-plugin
 CFLint Plugin,https://github.com/jenkinsci/CFLint-plugin
 Ca Apm Plugin,https://github.com/jenkinsci/ca-apm-plugin
@@ -474,7 +472,6 @@ Composer Dependency Analysis Plugin,https://github.com/jenkinsci/composer-depend
 Composer Security Checker Plugin,https://github.com/jenkinsci/composer-security-checker-plugin
 Composer Trigger Plugin,https://github.com/jenkinsci/composer-trigger-plugin
 Compound Slaves Plugin,https://github.com/jenkinsci/compound-slaves-plugin
-Compress Artifacts Plugin,https://github.com/jenkinsci/compress-artifacts-plugin
 Compress Buildlog Plugin,https://github.com/jenkinsci/compress-buildlog-plugin
 Compressed_files_viewer Plugin,https://github.com/jenkinsci/compressed_files_viewer-plugin
 Computer Queue Plugin,https://github.com/jenkinsci/computer-queue-plugin
@@ -516,7 +513,6 @@ Console Navigation Plugin,https://github.com/jenkinsci/console-navigation-plugin
 Console Tail Plugin,https://github.com/jenkinsci/console-tail-plugin
 Constant Pool Scanner,https://github.com/jenkinsci/constant-pool-scanner
 Consul Kv Builder Plugin,https://github.com/jenkinsci/consul-kv-builder-plugin
-Consul Plugin,https://github.com/jenkinsci/consul-plugin
 Container Image Link Plugin,https://github.com/jenkinsci/container-image-link-plugin
 Content Replace Plugin,https://github.com/jenkinsci/content-replace-plugin
 Continuum Plugin,https://github.com/jenkinsci/continuum-plugin
@@ -663,7 +659,6 @@ Dimensionsscm Plugin,https://github.com/jenkinsci/dimensionsscm-plugin
 Dingding Json Pusher Plugin,https://github.com/jenkinsci/dingding-json-pusher-plugin
 Dingtalk Plugin,https://github.com/jenkinsci/dingtalk-plugin
 Disable Bitbucket Multibranch Status Plugin,https://github.com/jenkinsci/disable-bitbucket-multibranch-status-plugin
-Disable Failed Job Plugin,https://github.com/jenkinsci/disable-failed-job-plugin
 Disable Github Multibranch Status Plugin,https://github.com/jenkinsci/disable-github-multibranch-status-plugin
 Disable Job Button Plugin,https://github.com/jenkinsci/disable-job-button-plugin
 Discard Old Build Plugin,https://github.com/jenkinsci/discard-old-build-plugin
@@ -1099,7 +1094,6 @@ Instant Messaging Parent Plugin,https://github.com/jenkinsci/instant-messaging-p
 Instant Messaging Plugin,https://github.com/jenkinsci/instant-messaging-plugin
 Integrity Plugin,https://github.com/jenkinsci/integrity-plugin
 Intellij Jenkins Control Plugin,https://github.com/jenkinsci/intellij-jenkins-control-plugin
-Internet Meme Plugin,https://github.com/jenkinsci/internet-meme-plugin
 Iojs Plugin,https://github.com/jenkinsci/iojs-plugin
 Ion Deployer Plugin,https://github.com/jenkinsci/ion-deployer-plugin
 Ionicons Api Plugin,https://github.com/jenkinsci/ionicons-api-plugin
@@ -1228,7 +1222,6 @@ Jquery3 Api Plugin,https://github.com/jenkinsci/jquery3-api-plugin
 Jruby Xstream,https://github.com/jenkinsci/jruby-xstream
 Js Libs,https://github.com/jenkinsci/js-libs
 Js Samples,https://github.com/jenkinsci/js-samples
-Jsch Plugin,https://github.com/jenkinsci/jsch-plugin
 Jsgames Plugin,https://github.com/jenkinsci/jsgames-plugin
 Jshint Checkstyle Plugin,https://github.com/jenkinsci/jshint-checkstyle-plugin
 Jslint Jenkins Plugin,https://github.com/jenkinsci/jslint-jenkins-plugin
@@ -1380,7 +1373,6 @@ Localization Plugin,https://github.com/jenkinsci/localization-plugin
 Localization Support Plugin,https://github.com/jenkinsci/localization-support-plugin
 Localization Tr Plugin,https://github.com/jenkinsci/localization-tr-plugin
 Localization Zh Cn Plugin,https://github.com/jenkinsci/localization-zh-cn-plugin
-Lockable Resources Plugin,https://github.com/jenkinsci/lockable-resources-plugin
 Locked Files Report Plugin,https://github.com/jenkinsci/locked-files-report-plugin
 Locks And Latches Plugin,https://github.com/jenkinsci/locks-and-latches-plugin
 Log Cli Plugin,https://github.com/jenkinsci/log-cli-plugin
@@ -1629,7 +1621,6 @@ Osf Builder Suite Standalone Sonar Linter Plugin,https://github.com/jenkinsci/os
 Osf Builder Suite Xml Linter Plugin,https://github.com/jenkinsci/osf-builder-suite-xml-linter-plugin
 Oslc Cm Plugin,https://github.com/jenkinsci/oslc-cm-plugin
 Oss Symbols Api Plugin,https://github.com/jenkinsci/oss-symbols-api-plugin
-Ostorlab Plugin,https://github.com/jenkinsci/ostorlab-plugin
 Overops Query Plugin,https://github.com/jenkinsci/overops-query-plugin
 Oversecured Plugin,https://github.com/jenkinsci/oversecured-plugin
 Overthere Remoting,https://github.com/jenkinsci/overthere-remoting
@@ -1663,7 +1654,6 @@ Pendingchanges Plugin,https://github.com/jenkinsci/pendingchanges-plugin
 People Redirector Plugin,https://github.com/jenkinsci/people-redirector-plugin
 People View Plugin,https://github.com/jenkinsci/people-view-plugin
 Percentage Du Node Column Plugin,https://github.com/jenkinsci/percentage-du-node-column-plugin
-Perfci Plugin,https://github.com/jenkinsci/perfci-plugin
 Perfecto Plugin,https://github.com/jenkinsci/perfecto-plugin
 Perfectomobile Plugin,https://github.com/jenkinsci/perfectomobile-plugin
 Perforce Plugin,https://github.com/jenkinsci/perforce-plugin
@@ -1933,7 +1923,6 @@ S3 Jobcacher Storage Plugin,https://github.com/jenkinsci/s3-jobcacher-storage-pl
 S3 Plugin,https://github.com/jenkinsci/s3-plugin
 S3explorer Plugin,https://github.com/jenkinsci/s3explorer-plugin
 SCTMExecutor Plugin,https://github.com/jenkinsci/SCTMExecutor-plugin
-SECURITY 144 Compat,https://github.com/jenkinsci/SECURITY-144-compat
 Safe Batch Environment Filter Plugin,https://github.com/jenkinsci/safe-batch-environment-filter-plugin
 Saferestart Plugin,https://github.com/jenkinsci/saferestart-plugin
 Sahagin Plugin,https://github.com/jenkinsci/sahagin-plugin
@@ -2380,7 +2369,6 @@ Webload Plugin,https://github.com/jenkinsci/webload-plugin
 Weblogic Deployer Plugin,https://github.com/jenkinsci/weblogic-deployer-plugin
 Websocket Plugin,https://github.com/jenkinsci/websocket-plugin
 Websocketin Notification Plugin,https://github.com/jenkinsci/websocketin-notification-plugin
-Websphere Deployer Plugin,https://github.com/jenkinsci/websphere-deployer-plugin
 Webtestpresenter Plugin,https://github.com/jenkinsci/webtestpresenter-plugin
 Weibo Plugin,https://github.com/jenkinsci/weibo-plugin
 Wetest Automation Plugin,https://github.com/jenkinsci/wetest-automation-plugin

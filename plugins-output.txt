@@ -39,7 +39,6 @@ BlameSubversion:1.200
 BlazeMeterJenkinsPlugin:4.25
 blink1:1.1
 block-build-final-project:1.0
-block-queued-job:0.2.0
 block-same-builds:1.3
 bmc-rpd:1.1
 boot-clj:1.0.0
@@ -66,7 +65,6 @@ catalogic-ecx:1.9
 cccc:0.6
 cerberus-testing:1.6.5
 changelog-history:1.7
-checkmarx:2024.3.2
 chef-tracking:1.0
 chosen:1.0
 chosen-views-tabbar:1.2
@@ -164,7 +162,6 @@ easyqa:1.0
 ec2-deployment-dashboard:1.0.10
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
-elasticbox:5.0.1
 elasticsearch-query:1.2
 elOyente:1.3
 emmacoveragecolumn:0.0.4
@@ -370,7 +367,6 @@ piwikanalytics:1.2.0
 polarion:1.3
 policycenter-gate-validator:1.0.1
 poll-mailbox-trigger-plugin:1.026
-pom2config:1.2
 popper-api:1.16.1-3
 post-completed-build-result:1.1
 pretested-integration:3.1.2
