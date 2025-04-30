@@ -79,8 +79,8 @@ commons-text-api:1.13.0-153.v91dcd89e2a_22
 pipeline-github-lib:65.v203688e7727e
 command-launcher:123.v37cfdc92ef67
 jdk-tool:83.v417146707a_3d
-pipeline-rest-api:2.37
-pipeline-stage-view:2.37
+pipeline-rest-api:2.38
+pipeline-stage-view:2.38
 jsch:0.2.16-95.v3eecb_55fa_b_78
 sshd:3.353.v2b_d33c46e970
 gson-api:2.13.1-139.v4569c2ef303f
@@ -183,7 +183,7 @@ generic-webhook-trigger:2.3.1
 extended-choice-parameter:388.ve7b_d0b_920e10
 forensics-api:3.1.0
 build-name-setter:2.5.0
-active-directory:2.39
+active-directory:2.40
 dashboard-view:2.528.v3470c02b_d7c9
 http_request:1.20
 thinBackup:2.1.3
