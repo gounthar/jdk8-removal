@@ -15,8 +15,10 @@ appetize:1.1.0
 applatix:1.1
 application-director-plugin:1.3
 appscan:1.6.0
+jenkinsci-appspider-plugin:1.0.17
 artifact-promotion:0.5.2
 artifactory:4.0.8
+asakusa-satellite-plugin:0.1.1
 assembla:1.4
 associated-files:0.2.1
 async-job:1.3
@@ -26,7 +28,9 @@ aws-bucket-credentials:1.0.0
 aws-lambda:0.5.10
 awseb-deployment-plugin:0.3.21
 azure-batch-parallel:0.2
+backup:1.6.1
 bazaar:1.22
+behave-testresults-publisher:0.0.11
 bitbucket-approve:1.0.3
 bitkeeper:1.8
 blackduck-coverity-on-polaris:2.0.1
@@ -68,6 +72,7 @@ chosen:1.0
 chosen-views-tabbar:1.2
 chromedriver:1.2
 chroot:0.1.4
+ci-with-toad-edge:2.14
 cisco-spark-notifier:1.1.1
 cisco-spark:1.1.1
 clamav:0.3
@@ -117,6 +122,7 @@ coverity:1.11.4
 crap4j:0.9
 crittercism-dsym:1.1
 cron-shelve:1.3
+crowd:1.2
 cucumber-perf:2.0.9
 cucumber-trends-report:1.3
 curseforge-publisher:1.0
@@ -124,10 +130,13 @@ CustomHistory:1.6
 custom-job-icon:0.2
 customized-build-message:1.1
 daily-quote:1.0
+darcs:0.3.11
 datical-db-plugin:2.0.41
+dbCharts:0.5.2
 deadmanssnitch:0.1
 delete-log-plugin:1.0
 dependencyanalyzer:0.7
+dependency-queue-plugin:1.1
 deploygate-plugin:1.2
 deployhub:8.0.14
 deployment-sphere:0.1.105
@@ -149,6 +158,7 @@ drupal-developer:0.8
 dry-run:0.9
 dumpinfo-buildwrapper-plugin:1.1
 dynamic_extended_choice_parameter:1.0.1
+dynatrace-dashboard:2.1.5
 ease-plugin:2.7
 easyqa:1.0
 ec2-deployment-dashboard:1.0.10
@@ -210,6 +220,7 @@ heavy-job:1.1
 housekeeper:1.1
 hp-operations-orchestration-automation-execution-plugin:2.1.1
 html-audio-notifier:0.4
+htmlresource:1.02
 http-post:1.2
 humbug:0.1.4
 humio:1.4
@@ -282,6 +293,7 @@ loadcomplete:1.0
 loadfocus-loadtest:1.1.5
 loadimpact-plugin:1.62
 locked-files-report:1.6
+logaction-plugin:1.2
 logentries:0.0.2
 logging:1.0.0
 lotus-connections-plugin:1.25
@@ -326,6 +338,7 @@ one-shot-executor:1.2
 onesky:1.1
 openJDK-native-plugin:1.8
 openid4java:0.9.8.0
+openshift-deployer:1.2.0
 openshift-pipeline:1.0.57
 opsgenie:1.11
 oracle-cloud-infrastructure-compute-classic:1.0.0
@@ -462,6 +475,7 @@ synopsys-polaris:1.4.0
 syslog-logger:1.0.5
 systemloadaverage-monitor:1.2
 jenkins-tag-cloud-plugin:1.6
+tattletale-plugin:0.3
 teamconcert-git:2.0.5
 teamconcert:2.4.4
 telerik-appbuilder-plugin:1.6
@@ -497,6 +511,7 @@ tuxdroid:1.7
 TwilioNotifier:0.2.1
 twitter:0.7
 URLSCM:1.6
+ui-test-capture:1.0.43
 unicorn:0.1.1
 unity3d-plugin:1.3
 unreliable-slave-plugin:1.2
@@ -520,6 +535,7 @@ vmware-vrealize-automation-plugin:1.2.3
 vmware-vrealize-codestream:1.2
 vmware-vrealize-orchestrator:3.0
 vncrecorder:1.35
+vncviewer:1.9
 vs-code-metrics:1.7
 vss:1.9
 jenkinswalldisplay:0.6.34
