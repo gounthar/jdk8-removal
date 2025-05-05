@@ -213,7 +213,7 @@ azure-keyvault:282.v43b_691a_13d19
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
 azure-sdk:211.vd3b_6c5504331
-azure-vm-agents:1013.v7a_2a_cd831714
+azure-vm-agents:1025.v082b_eee0b_88a_
 azure-vmss:0.2.4
 backlog:2.7
 backup-interrupt-plugin:17.va_b_50ca_9df8d0
@@ -1315,7 +1315,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:504.vb_643f0e2e9c0
+pipeline-graph-view:507.v03a_924e4e863
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
