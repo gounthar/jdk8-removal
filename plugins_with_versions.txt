@@ -223,7 +223,7 @@ azure-keyvault:282.v43b_691a_13d19
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
 azure-sdk:211.vd3b_6c5504331
-azure-vm-agents:1025.v082b_eee0b_88a_
+azure-vm-agents:1026.v6b_6edb_b_e3fff
 azure-vmss:0.2.4
 backlog:2.7
 backup:1.6.1
@@ -835,7 +835,7 @@ github-scm-trait-notification-context:45.v8ef831829589
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:718.v40b_5f0e67cd3
 gitlab-kubernetes-credentials:424.vd4c848a_61813
-gitlab-logo:188.v634a_09dee365
+gitlab-logo:189.v5e1cea_57233a_
 gitlab-merge-request-jenkins:2.0.0
 gitlab-oauth:1.22
 gitlab-plugin:1.9.8
@@ -960,10 +960,10 @@ instance-identity:203.v15e81a_1b_7a_38
 instant-messaging:2.858.v84187da_c9fa_7
 integrity-plugin:2.6
 internetmeme:1.0
-ionicons-api:87.ve74b_60c10b_57
+ionicons-api:88.va_4187cb_eddf1
 ios-device-connector:1.2
 ipmessenger-plugin:1.2
-ircbot:3.991.v875d872a_956f
+ircbot:3.1001.v3ce93f595181
 ironmq-notifier:1.0.19
 issue-link:1.0.0
 itest:1.1.1
@@ -1088,7 +1088,7 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2
-kubernetes:4333.v6172b_e4fe2a_3
+kubernetes:4334.v32b_f157682d6
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:6.10.0-251.v556f5f100500
 kubernetes-credentials:192.v4d5b_1c429d17
@@ -1407,7 +1407,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:235.vb_a_a_36b_f248c2
-pipeline-graph-view:509.v49b_b_74e9d2a_9
+pipeline-graph-view:510.v3b_d26869c4f8
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1476,7 +1476,7 @@ project-stats-plugin:23.v47fee1f77b_84
 prometheus:819.v50953a_c560dd
 promoted-builds:992.va_00888f21b_74
 promoted-builds-simple:1.9
-propelo-job-reporter:1.0.35
+propelo-job-reporter:1.0.36
 provar-automation:68.v91b_13f4101e2
 proxmox:0.7.1
 prqa-plugin:3.3.5
@@ -1906,7 +1906,7 @@ visual-basic-6:2.3
 visualexpert:2024.1.1
 visualworks-store:1.1.4
 vk-notifier:1.0.3
-vmanager-plugin:4.0.1-286.v9e25a_740b_a_48
+vmanager-plugin:4.0.1-288.v8804b_ea_a_cb_7f
 vmware-vrealize-automation-plugin:1.2.3
 vmware-vrealize-codestream:1.2
 vmware-vrealize-orchestrator:3.0
