@@ -124,7 +124,7 @@ blueocean-web:1.27.19
 blueocean-jwt:1.27.19
 blueocean-pipeline-scm-api:1.27.19
 publish-over:0.22
-pipeline-graph-view:511.v7047a_622b_a_a_e
+pipeline-graph-view:521.v799963fd568a_
 data-tables-api:2.2.2-1
 blueocean-rest-impl:1.27.19
 blueocean-pipeline-api-impl:1.27.19
@@ -210,7 +210,7 @@ analysis-model-api:13.2.0
 aws-java-sdk-ssm:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-codebuild:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-logs:1.12.780-480.v4a_0819121a_9e
-warnings-ng:12.5.0
+warnings-ng:12.6.0
 artifactory:4.0.8
 emailext-template:233.v1eb_88fc160b_5
 extended-read-permission:61.vf24570ff3b_e9
@@ -239,7 +239,7 @@ cobertura:1.17
 groovy-postbuild:272.v52a_03efb_8653
 prometheus:819.v50953a_c560dd
 postbuild-task:72.v75dc459e4747
-cvs:476.v1a_f0c9e7e218
+cvs:483.v69a_98dfd973b_
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 ivy:582.v35fb_da_0312f7
