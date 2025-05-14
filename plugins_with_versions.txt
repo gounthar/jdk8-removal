@@ -70,7 +70,7 @@ ansible-tower:0.17.0
 ansicolor:1.0.6
 ant:513.vde9e7b_a_0da_0f
 ant-in-workspace:1.2.2
-antexec:408.v287a_b_6c5a_0a_4
+antexec:414.v2df1b_3ea_959b_
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -108,7 +108,7 @@ artifact-promotion:0.5.2
 artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
 artifactory:4.0.8
-artifactory-artifact-manager:198.v70e5f9e07b_22
+artifactory-artifact-manager:222.v721418296a_b_1
 artifactory-client-api:2.19.0-92.v57b_50df9c76f
 artifactz:1.3.1-49.v21e3510b_2b_67
 asakusa-satellite-plugin:0.1.1
@@ -532,9 +532,9 @@ cucumber-trends-report:1.3
 curseforge-publisher:1.0
 custom-build-properties:2.90.v4c63458e3ec8
 custom-checkbox-parameter:1.4
-custom-folder-icon:2.19
+custom-folder-icon:2.20
 custom-job-icon:0.2
-custom-markup-formatter:29.ve5d4614ca_d01
+custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
 customizable-header:182.v8cdc9e35576a_
@@ -581,7 +581,7 @@ dependency-queue-plugin:1.1
 dependency-track:6.0.1
 dependencyanalyzer:0.7
 depgraph-view:1.0.5
-deploy:1.16
+deploy:1.17
 deploy-dashboard:0.1.0
 deploy-integrationserver:1.0
 deploydb:0.1
@@ -751,7 +751,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:11.8.1-289.v8ef002d664f2
+flyway-api:11.8.2-295.v6e6f834ff5e9
 flyway-runner:224.v20b_74326e2c1
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -810,7 +810,7 @@ gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
 gitea-checks:530.v38d502df428f
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1197.v2a_b_30a_0982b_7
+gitee:1198.vf35a_c423421e
 gitflow:1.0.1
 github:1.43.0
 github-api:1.321-488.v9b_c0da_9533f8
@@ -870,7 +870,7 @@ google-source-plugin:0.4
 google-storage-plugin:1.371.vc3434e76e0c4
 googleanalytics:1.3
 gprbuild:1.0
-gradle:2.14.1
+gradle:2.15
 gradle-daemon:0.1.0
 gradle-repo:1.0.1
 graphiteIntegrator:1.2
@@ -1063,7 +1063,7 @@ jsoup:1.20.1-46.ve5f1416988c2
 jsunit:1.6
 jswidgets:1.10
 jucies:0.2.1
-junit:1322.v1556dc1c59a_f
+junit:1335.v6b_a_a_e18534e1
 junit-attachments:299.v2e00f511b_538
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit-sql-storage:355.v9d5995fb_06a_5
@@ -1154,7 +1154,7 @@ logstash:2.5.0218.v0a_ff8fefc12b_
 lotus-connections-plugin:1.25
 lucene-search:425.v2ccf4cc3a_d55
 m2release:0.16.4
-mabl-integration:0.0.49
+mabl-integration:0.0.50
 mac:1.6.1
 machine-learning:1.0.1
 macstadium-orka:2.06
@@ -1323,7 +1323,7 @@ openshift-deployer:1.2.0
 openshift-k8s-credentials:248.v30f377a_b_34f0
 openshift-login:1.1.0.248.v1908df5c4f5e
 openshift-pipeline:1.0.57
-openshift-sync:1.1.0.802.v45585f8cdc07
+openshift-sync:1.1.0.818.v3883b_3b_df89a_
 openstack-cloud:2.66
 opentelemetry:3.1525.v604f3b_1a_e07b_
 opentelemetry-agent-metrics:1.4.1
@@ -1406,7 +1406,7 @@ pipeline-github-lib:65.v203688e7727e
 pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
-pipeline-graph-analysis:235.vb_a_a_36b_f248c2
+pipeline-graph-analysis:237.v2b_75640ca_888
 pipeline-graph-view:521.v799963fd568a_
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
@@ -1553,7 +1553,7 @@ release-helper:1.3.3
 reliza-integration:0.3.5
 relution-publisher:1.24
 remote-file:1.24
-remote-result-trigger:3.146.vfa_f6a_4f28961
+remote-result-trigger:3.158.v405fd8300dee
 remote-terminal-access:1.6
 remoting-kafka:2.0.1
 remoting-opentelemetry:1.0-rc89.d67d14d05962
@@ -1726,7 +1726,7 @@ sra-deploy:1.4.2.4
 srcclr-installer:1.0.2
 sse-gateway:1.28
 ssh:158.ve2a_e90fb_7319
-ssh-agent:384.ve275343791a_6
+ssh-agent:386.v36cc0c7582f0
 ssh-credentials:355.v9b_e5b_cde5003
 ssh-slaves:3.1031.v72c6b_883b_869
 ssh-steps:2.0.79.v1d1b_5f76dda_8
@@ -1943,7 +1943,7 @@ winrm-client:1.0
 wix:1.12
 wiz-scanner:86.v1ca_10b_a_5ef2f
 workflow-aggregator:608.v67378e9d3db_1
-workflow-api:1371.ve334280b_d611
+workflow-api:1373.v7b_813f10efa_b_
 workflow-basic-steps:1079.vce64b_a_929c5a_
 workflow-cps:4106.v7a_8a_8176d450
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
