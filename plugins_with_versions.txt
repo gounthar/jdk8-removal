@@ -75,7 +75,7 @@ antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.4.4-144.vc483d91903d2
+apache-httpcomponents-client-5-api:5.5-150.veb_76e719855b_
 apifortress:1.0
 apimap:1-rc26.87a_0f950121f
 app-detector:1.0.9
@@ -103,7 +103,7 @@ arestocats:2.1
 argus-notifier:1.1
 aribot:76.vf71346f9ea_d8
 artifact-diff-plugin:1.3
-artifact-manager-s3:917.ve48b_51064a_a_0
+artifact-manager-s3:926.ve7c0b_ffccd20
 artifact-promotion:0.5.2
 artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
@@ -243,7 +243,7 @@ benchmark-evaluator:99.v2b_ee548fa_f54
 better-pipeline-flowgraph-table:1.5.vd6dfd1f235cb_
 bevigil-ci:1.29.v3ff4d38b_843f
 bigpanda-jenkins:1.58.va_f372a_c29b_d5
-bitbucket:270.vdb_c342a_178b_f
+bitbucket:273.v7b_535e8f11c2
 bitbucket-approval-filter:1.0.3
 bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
@@ -398,7 +398,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:936.2.0
+cloudbees-bitbucket-branch-source:936.3.0
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:241.v0ea_d9a_a_96ee8
@@ -731,7 +731,7 @@ ezwall:0.3
 fail-the-build-plugin:5.v153b_2c826ef0
 failedJobDeactivator:1.2.1
 fast-track:1.0.0
-favorite:2.225.v68765b_b_a_1fa_3
+favorite:2.235.v4d873c7d02e9
 favorite-view:27.ve63a_9a_ecd782
 feature-branch-notifier:1.4
 fedora-module-build-system:1.0.1
@@ -977,7 +977,7 @@ jabber:1.42
 jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
-jackson2-api:2.18.3-402.v74c4eb_f122b_2
+jackson2-api:2.19.0-404.vb_b_0fd2fea_e10
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
@@ -1058,7 +1058,7 @@ jquery3-api:3.7.1-3
 jsch:0.2.16-95.v3eecb_55fa_b_78
 jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
-json-api:20250107-125.v28b_a_ffa_eb_f01
+json-api:20250517-153.vc8a_a_d87c0ce3
 json-editor-parameter:54.v71962f37a_416
 json-path-api:2.9.0-148.v22a_7ffe323ce
 jsoup:1.20.1-46.ve5f1416988c2
@@ -1137,7 +1137,7 @@ loadium:1.6
 loadmance:1.0
 loadninja:1.4
 loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
-locale:566.v3323643741cc
+locale:584.v41dc8d4f9377
 localization-support:1.3
 localization-zh-cn:371.v23851f835d6b_
 lockable-resources:1349.v8b_ccb_c5487f7
@@ -1267,6 +1267,7 @@ nested-data-reporting:932.vb_56fa_a_954885
 nested-view:235.vecfa_743cb_531
 netdomain-labeler:0.0.2
 netsparker-cloud-scan:2.1.17
+netty-api:4.1.118.Final-9.v776038d601a_7
 network-monitor:1.1
 neuro-cucumber:1.0.4
 neuvector-vulnerability-scanner:2.5
@@ -1318,7 +1319,7 @@ open-stf:1.0.9
 openJDK-native-plugin:1.8
 opencover:79.v78d40e1fc27e
 openedge:0.23
-openid:213.v08218170eb_89
+openid:218.vefb_d6f146e42
 openid4java:0.9.8.0
 openscada-jenkins-exporter:0.0.2
 openshift-client:1.1.0.424.v829cb_ccf8798
@@ -1327,7 +1328,7 @@ openshift-k8s-credentials:248.v30f377a_b_34f0
 openshift-login:1.1.0.248.v1908df5c4f5e
 openshift-pipeline:1.0.57
 openshift-sync:1.1.0.818.v3883b_3b_df89a_
-openstack-cloud:2.66
+openstack-cloud:1452.va_8a_1774193e7
 opentelemetry:3.1525.v604f3b_1a_e07b_
 opentelemetry-agent-metrics:1.4.1
 opentelemetry-api:1.49.0.59.vc32561e77cf3
@@ -1410,7 +1411,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:237.v2b_75640ca_888
-pipeline-graph-view:536.vd9674ce4b_46a_
+pipeline-graph-view:538.v647ee88449dd
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1580,7 +1581,7 @@ rich-text-publisher-plugin:1.5
 rigor-optimization:1.04
 robot:6.0.0
 rocketchatnotifier:1.5.2
-role-strategy:764.v3c95b_fcb_32ee
+role-strategy:767.v4ffe48a_50303
 rpi-build-status:0.7
 rpmsign-plugin:0.5.1
 rqm-plugin:2.8
@@ -1617,7 +1618,7 @@ scm-manager:1.10.0
 scm-sqs:1.4
 scm-sync-configuration:0.0.10
 scm2job:2.5
-scmskip:72.vc2f9088d11e2
+scmskip:79.v311ff68f9df1
 scons:0.4
 scoring-load-balancer:165.v1b_ef69a_329d1
 scoverage:1.4.0
@@ -1717,8 +1718,8 @@ soos-sca:65.v9050fc6365a_2
 sounds:0.7
 sourcemonitor:0.2
 split-admin:2.0
-splunk-devops:1.10.2
-splunk-devops-extend:1.10.2
+splunk-devops:1.11.0
+splunk-devops-extend:1.11.0
 spoonscript:1.3
 spotinst:2.2.21
 spring-config:2.0.2
@@ -1918,7 +1919,6 @@ vncviewer:1.9
 vrealize-automation-8:1.4
 vs-code-metrics:1.7
 vsphere-cloud:2.27
-vss:1.9
 vstestrunner:1.0.8
 vsts-cd:1.3
 wallarm-fast:0.4.2
