@@ -2,9 +2,7 @@ Plugin,URL
 Absint A3 Plugin,https://github.com/jenkinsci/absint-a3-plugin
 Accelerated Build Now Plugin,https://github.com/jenkinsci/accelerated-build-now-plugin
 Activiti Explorer Plugin,https://github.com/jenkinsci/activiti-explorer-plugin
-Acunetix Plugin,https://github.com/jenkinsci/acunetix-plugin
 Advanced Installer Msi Builder Plugin,https://github.com/jenkinsci/advanced-installer-msi-builder-plugin
-Agent Loadbalance Plugin,https://github.com/jenkinsci/agent-loadbalance-plugin
 Agile Cockpit Notification Plugin,https://github.com/jenkinsci/agile-cockpit-notification-plugin
 Ajax List View Plugin,https://github.com/jenkinsci/ajax-list-view-plugin
 Aliyun Container Service Deploy Plugin,https://github.com/jenkinsci/aliyun-container-service-deploy-plugin
@@ -16,19 +14,14 @@ Analysis Runner,https://github.com/jenkinsci/analysis-runner
 Analysis Suite Plugin,https://github.com/jenkinsci/analysis-suite-plugin
 Anchor Chain Plugin,https://github.com/jenkinsci/anchor-chain-plugin
 Anchore Container Scanner Plugin,https://github.com/jenkinsci/anchore-container-scanner-plugin
-Android Apk Size Watcher Plugin,https://github.com/jenkinsci/android-apk-size-watcher-plugin
 Android Signing Plugin,https://github.com/jenkinsci/android-signing-plugin
 Anonymous Token Root Plugin,https://github.com/jenkinsci/anonymous-token-root-plugin
-Anonymous Uptime Check Plugin,https://github.com/jenkinsci/anonymous-uptime-check-plugin
 Ant Interceptor,https://github.com/jenkinsci/ant-interceptor
 Ant Spy,https://github.com/jenkinsci/ant-spy
 Apica Loadtest Plugin,https://github.com/jenkinsci/apica-loadtest-plugin
-Apifortress Plugin,https://github.com/jenkinsci/apifortress-plugin
-App Detector Plugin,https://github.com/jenkinsci/app-detector-plugin
 App.io Plugin,https://github.com/jenkinsci/app.io-plugin
 Appaloosa Plugin,https://github.com/jenkinsci/appaloosa-plugin
 Appetize Plugin,https://github.com/jenkinsci/appetize-plugin
-Applatix Plugin,https://github.com/jenkinsci/applatix-plugin
 Application Director Plugin,https://github.com/jenkinsci/application-director-plugin
 Appscan Plugin,https://github.com/jenkinsci/appscan-plugin
 Appspider Build Scanner Plugin,https://github.com/jenkinsci/appspider-build-scanner-plugin
@@ -39,7 +32,6 @@ Archive Files Scm Plugin,https://github.com/jenkinsci/archive-files-scm-plugin
 Archived Artifact Url Viewer Plugin,https://github.com/jenkinsci/archived-artifact-url-viewer-plugin
 Artifact Parameter Plugin,https://github.com/jenkinsci/artifact-parameter-plugin
 Artifact Promotion Plugin,https://github.com/jenkinsci/artifact-promotion-plugin
-Artifact Version Recorder Plugin,https://github.com/jenkinsci/artifact-version-recorder-plugin
 Artifactory Plugin,https://github.com/jenkinsci/artifactory-plugin
 Asakusa Satellite Plugin,https://github.com/jenkinsci/asakusa-satellite-plugin
 Assembla Merge Request Builder Plugin,https://github.com/jenkinsci/assembla-merge-request-builder-plugin
@@ -47,14 +39,9 @@ Assembla Plugin,https://github.com/jenkinsci/assembla-plugin
 Associated Files Plugin,https://github.com/jenkinsci/associated-files-plugin
 Async Job Plugin,https://github.com/jenkinsci/async-job-plugin
 Audit2db Plugin,https://github.com/jenkinsci/audit2db-plugin
-Autocomplete Parameter Plugin,https://github.com/jenkinsci/autocomplete-parameter-plugin
-Aws Beanstalk Releaser Plugin,https://github.com/jenkinsci/aws-beanstalk-releaser-plugin
-Aws Bucket Credentials Plugin,https://github.com/jenkinsci/aws-bucket-credentials-plugin
 Aws Lambda Plugin,https://github.com/jenkinsci/aws-lambda-plugin
-Aws S3 Cleaner Plugin,https://github.com/jenkinsci/aws-s3-cleaner-plugin
 Awseb Deployment Plugin,https://github.com/jenkinsci/awseb-deployment-plugin
 Azure Batch Parallel Plugin,https://github.com/jenkinsci/azure-batch-parallel-plugin
-Azure Iot Edge Plugin,https://github.com/jenkinsci/azure-iot-edge-plugin
 Azure Slave Plugin,https://github.com/jenkinsci/azure-slave-plugin
 Backend Crowd Javanet Directory,https://github.com/jenkinsci/backend-crowd-javanet-directory
 Backend Deprecation Checker,https://github.com/jenkinsci/backend-deprecation-checker
@@ -82,8 +69,6 @@ Bearychat Plugin,https://github.com/jenkinsci/bearychat-plugin
 Behave Testresults Publisher Plugin,https://github.com/jenkinsci/behave-testresults-publisher-plugin
 Bitbucket Approve Plugin,https://github.com/jenkinsci/bitbucket-approve-plugin
 Bitkeeper Plugin,https://github.com/jenkinsci/bitkeeper-plugin
-Blackduck Coverity On Polaris Plugin,https://github.com/jenkinsci/blackduck-coverity-on-polaris-plugin
-Blackduck Detect Plugin,https://github.com/jenkinsci/blackduck-detect-plugin
 Blackduck Hub Plugin,https://github.com/jenkinsci/blackduck-hub-plugin
 Blame Upstream Commiters Plugin,https://github.com/jenkinsci/blame-upstream-commiters-plugin
 BlameSubversion Plugin,https://github.com/jenkinsci/BlameSubversion-plugin
@@ -92,12 +77,8 @@ Blink1 Plugin,https://github.com/jenkinsci/blink1-plugin
 Blitz_io Plugin,https://github.com/jenkinsci/blitz_io-plugin
 Block Build Final Project Plugin,https://github.com/jenkinsci/block-build-final-project-plugin
 Block Queued Job Plugin,https://github.com/jenkinsci/block-queued-job-plugin
-Block Same Builds Plugin,https://github.com/jenkinsci/block-same-builds-plugin
-Blueocean Js Builder,https://github.com/jenkinsci/blueocean-js-builder
 Blueocean Pipeline Editor Plugin,https://github.com/jenkinsci/blueocean-pipeline-editor-plugin
 Blueocean Rfc,https://github.com/jenkinsci/blueocean-rfc
-Blueocean Test Ssh Server,https://github.com/jenkinsci/blueocean-test-ssh-server
-Bmc Policy Plugin,https://github.com/jenkinsci/bmc-policy-plugin
 Bmc Rpd Plugin,https://github.com/jenkinsci/bmc-rpd-plugin
 Boot Clj Plugin,https://github.com/jenkinsci/boot-clj-plugin
 Brakeman Plugin,https://github.com/jenkinsci/brakeman-plugin
@@ -118,7 +99,6 @@ Build Flow Plugin,https://github.com/jenkinsci/build-flow-plugin
 Build Line Plugin,https://github.com/jenkinsci/build-line-plugin
 Build Metrics Plugin,https://github.com/jenkinsci/build-metrics-plugin
 Build Node Column Plugin,https://github.com/jenkinsci/build-node-column-plugin
-Build Notifications Plugin,https://github.com/jenkinsci/build-notifications-plugin
 Build Pipeline Extension Layout Plugin,https://github.com/jenkinsci/build-pipeline-extension-layout-plugin
 Build Steps From Json Plugin,https://github.com/jenkinsci/build-steps-from-json-plugin
 Buildcoin Plugin,https://github.com/jenkinsci/buildcoin-plugin
@@ -128,7 +108,6 @@ Buildheroes Plugin,https://github.com/jenkinsci/buildheroes-plugin
 Builds Chain Fingerprinter Plugin,https://github.com/jenkinsci/builds-chain-fingerprinter-plugin
 Bulk Builder Plugin,https://github.com/jenkinsci/bulk-builder-plugin
 Bumblebee Plugin,https://github.com/jenkinsci/bumblebee-plugin
-Byteguard Build Actions Plugin,https://github.com/jenkinsci/byteguard-build-actions-plugin
 CFLint Plugin,https://github.com/jenkinsci/CFLint-plugin
 Caliper Ci Plugin,https://github.com/jenkinsci/caliper-ci-plugin
 Call Remote Job Plugin,https://github.com/jenkinsci/call-remote-job-plugin
@@ -136,15 +115,11 @@ Callback Buildstep Plugin,https://github.com/jenkinsci/callback-buildstep-plugin
 Campfire Plugin,https://github.com/jenkinsci/campfire-plugin
 Capability Annotation,https://github.com/jenkinsci/capability-annotation
 Capitomcat Plugin,https://github.com/jenkinsci/capitomcat-plugin
-Carl Plugin,https://github.com/jenkinsci/carl-plugin
 Caroline Plugin,https://github.com/jenkinsci/caroline-plugin
 Cas1 Plugin,https://github.com/jenkinsci/cas1-plugin
 Catalogic Ecx Plugin,https://github.com/jenkinsci/catalogic-ecx-plugin
-Cavirin Image Secure Plugin,https://github.com/jenkinsci/cavirin-image-secure-plugin
 Cccc Plugin,https://github.com/jenkinsci/cccc-plugin
 Ccm Plugin,https://github.com/jenkinsci/ccm-plugin
-Central Repository Pom,https://github.com/jenkinsci/central-repository-pom
-Cerberus Testing Plugin,https://github.com/jenkinsci/cerberus-testing-plugin
 Certificate Authentication Plugin,https://github.com/jenkinsci/certificate-authentication-plugin
 Ceylon Plugin,https://github.com/jenkinsci/ceylon-plugin
 Changelog History Plugin,https://github.com/jenkinsci/changelog-history-plugin
@@ -160,19 +135,14 @@ Chromedriver Plugin,https://github.com/jenkinsci/chromedriver-plugin
 Chroot Plugin,https://github.com/jenkinsci/chroot-plugin
 Ci Game Plugin,https://github.com/jenkinsci/ci-game-plugin
 Ci Skip Plugin,https://github.com/jenkinsci/ci-skip-plugin
-Ci With Toad Devops Toolkit Plugin,https://github.com/jenkinsci/ci-with-toad-devops-toolkit-plugin
-Ci With Toad Edge Plugin,https://github.com/jenkinsci/ci-with-toad-edge-plugin
 Cifs Plugin,https://github.com/jenkinsci/cifs-plugin
 Cisco Spark Notifier Plugin,https://github.com/jenkinsci/cisco-spark-notifier-plugin
 Cisco Spark Plugin,https://github.com/jenkinsci/cisco-spark-plugin
 Clamav Plugin,https://github.com/jenkinsci/clamav-plugin
 Clang Scanbuild Plugin,https://github.com/jenkinsci/clang-scanbuild-plugin
-Clang Tidy Plugin,https://github.com/jenkinsci/clang-tidy-plugin
 Clearcase Plugin,https://github.com/jenkinsci/clearcase-plugin
 Clearcase Release Plugin,https://github.com/jenkinsci/clearcase-release-plugin
-Clearcase Ucm Api Plugin,https://github.com/jenkinsci/clearcase-ucm-api-plugin
 Clearcase Ucm Baseline Plugin,https://github.com/jenkinsci/clearcase-ucm-baseline-plugin
-Clever Cloud Plugin,https://github.com/jenkinsci/clever-cloud-plugin
 Cli Channel Demo,https://github.com/jenkinsci/cli-channel-demo
 Cli Extras Plugin,https://github.com/jenkinsci/cli-extras-plugin
 Cloudbees Credentials Plugin,https://github.com/jenkinsci/cloudbees-credentials-plugin
@@ -180,17 +150,14 @@ Cloudbees Deployer Plugin,https://github.com/jenkinsci/cloudbees-deployer-plugin
 Cloudbees Enterprise Plugins Plugin,https://github.com/jenkinsci/cloudbees-enterprise-plugins-plugin
 Cloudbees Plugin Gateway,https://github.com/jenkinsci/cloudbees-plugin-gateway
 Cloudbees Registration Plugin,https://github.com/jenkinsci/cloudbees-registration-plugin
-Cloudcoreo Deploytime Plugin,https://github.com/jenkinsci/cloudcoreo-deploytime-plugin
 Cloudforge Plugin,https://github.com/jenkinsci/cloudforge-plugin
 Cloudfoundry Plugin,https://github.com/jenkinsci/cloudfoundry-plugin
-Cloudshare Docker Plugin,https://github.com/jenkinsci/cloudshare-docker-plugin
 Cloudtest Plugin,https://github.com/jenkinsci/cloudtest-plugin
 Cluster Stats Plugin,https://github.com/jenkinsci/cluster-stats-plugin
 Cmvc Plugin,https://github.com/jenkinsci/cmvc-plugin
 Codebeamer Coverage Publisher Plugin,https://github.com/jenkinsci/codebeamer-coverage-publisher-plugin
 Codebeamer Result Trend Updater Plugin,https://github.com/jenkinsci/codebeamer-result-trend-updater-plugin
 Codebeamer Xunit Importer Plugin,https://github.com/jenkinsci/codebeamer-xunit-importer-plugin
-Codebeamer Xunit Uploader Plugin,https://github.com/jenkinsci/codebeamer-xunit-uploader-plugin
 Codeclimate Plugin,https://github.com/jenkinsci/codeclimate-plugin
 Codecommit Url Helper Plugin,https://github.com/jenkinsci/codecommit-url-helper-plugin
 Codecover Plugin,https://github.com/jenkinsci/codecover-plugin
@@ -199,12 +166,9 @@ Codehealth Plugin,https://github.com/jenkinsci/codehealth-plugin
 Codeplex Plugin,https://github.com/jenkinsci/codeplex-plugin
 Codescan Plugin,https://github.com/jenkinsci/codescan-plugin
 Codescanner Plugin,https://github.com/jenkinsci/codescanner-plugin
-Codescene Plugin,https://github.com/jenkinsci/codescene-plugin
 Codeviation Plugin,https://github.com/jenkinsci/codeviation-plugin
 Collabnet Automic Deploy Plugin,https://github.com/jenkinsci/collabnet-automic-deploy-plugin
 Collabnet Plugin,https://github.com/jenkinsci/collabnet-plugin
-Color Logger Plugin,https://github.com/jenkinsci/color-logger-plugin
-Comments Remover Plugin,https://github.com/jenkinsci/comments-remover-plugin
 Commit Message Trigger Plugin,https://github.com/jenkinsci/commit-message-trigger-plugin
 Commons Fileupload,https://github.com/jenkinsci/commons-fileupload
 Compatibility Action Storage Plugin,https://github.com/jenkinsci/compatibility-action-storage-plugin
@@ -212,13 +176,7 @@ Composer Dependency Analysis Plugin,https://github.com/jenkinsci/composer-depend
 Composer Security Checker Plugin,https://github.com/jenkinsci/composer-security-checker-plugin
 Composer Trigger Plugin,https://github.com/jenkinsci/composer-trigger-plugin
 Compound Slaves Plugin,https://github.com/jenkinsci/compound-slaves-plugin
-Compuware Common Configuration Plugin,https://github.com/jenkinsci/compuware-common-configuration-plugin
-Compuware Ispw Operations Plugin,https://github.com/jenkinsci/compuware-ispw-operations-plugin
 Compuware Scm Downloader Plugin,https://github.com/jenkinsci/compuware-scm-downloader-plugin
-Compuware Strobe Measurement Plugin,https://github.com/jenkinsci/compuware-strobe-measurement-plugin
-Compuware Topaz Utilities Plugin,https://github.com/jenkinsci/compuware-topaz-utilities-plugin
-Compuware Xpediter Code Coverage Plugin,https://github.com/jenkinsci/compuware-xpediter-code-coverage-plugin
-Compuware Zadviser Api Plugin,https://github.com/jenkinsci/compuware-zadviser-api-plugin
 Concordionpresenter Plugin,https://github.com/jenkinsci/concordionpresenter-plugin
 Concurrent Login Plugin,https://github.com/jenkinsci/concurrent-login-plugin
 Concurrent Run Blocker Plugin,https://github.com/jenkinsci/concurrent-run-blocker-plugin
@@ -226,21 +184,17 @@ Conditional Upstream Trigger Plugin,https://github.com/jenkinsci/conditional-ups
 Config Autorefresh Plugin,https://github.com/jenkinsci/config-autorefresh-plugin
 Config Provider Model,https://github.com/jenkinsci/config-provider-model
 Config Rotator Plugin,https://github.com/jenkinsci/config-rotator-plugin
-Confluence Pipeline Steps Plugin,https://github.com/jenkinsci/confluence-pipeline-steps-plugin
 Console Badge Plugin,https://github.com/jenkinsci/console-badge-plugin
 Console Log Text Replacer Plugin,https://github.com/jenkinsci/console-log-text-replacer-plugin
 Constant Pool Scanner,https://github.com/jenkinsci/constant-pool-scanner
 Consul Kv Builder Plugin,https://github.com/jenkinsci/consul-kv-builder-plugin
-Continuum Plugin,https://github.com/jenkinsci/continuum-plugin
 Contrast Continuous Application Security Plugin,https://github.com/jenkinsci/contrast-continuous-application-security-plugin
 Convertigo Mobile Platform Plugin,https://github.com/jenkinsci/convertigo-mobile-platform-plugin
 Coordinator Plugin,https://github.com/jenkinsci/coordinator-plugin
 Copado Plugin,https://github.com/jenkinsci/copado-plugin
 Copr Plugin,https://github.com/jenkinsci/copr-plugin
 Copyarchiver Plugin,https://github.com/jenkinsci/copyarchiver-plugin
-Core Changelog Generator,https://github.com/jenkinsci/core-changelog-generator
 Core Js,https://github.com/jenkinsci/core-js
-Core Pr Tester,https://github.com/jenkinsci/core-pr-tester
 Cors Plugin,https://github.com/jenkinsci/cors-plugin
 Covcomplplot Plugin,https://github.com/jenkinsci/covcomplplot-plugin
 Coverage Ratcheting Plugin,https://github.com/jenkinsci/coverage-ratcheting-plugin
@@ -260,8 +214,6 @@ Culprit Report Plugin,https://github.com/jenkinsci/culprit-report-plugin
 Curseforge Publisher Plugin,https://github.com/jenkinsci/curseforge-publisher-plugin
 Custom History Plugin,https://github.com/jenkinsci/custom-history-plugin
 Custom Job Icon Plugin,https://github.com/jenkinsci/custom-job-icon-plugin
-Customized Build Message Plugin,https://github.com/jenkinsci/customized-build-message-plugin
-Customtools Extended Choice Version Plugin,https://github.com/jenkinsci/customtools-extended-choice-version-plugin
 Cvs Mail Address Resolver Plugin,https://github.com/jenkinsci/cvs-mail-address-resolver-plugin
 Cvs Tag Plugin,https://github.com/jenkinsci/cvs-tag-plugin
 Cvsclient,https://github.com/jenkinsci/cvsclient
@@ -270,7 +222,6 @@ Darcs Plugin,https://github.com/jenkinsci/darcs-plugin
 Database Drizzle Plugin,https://github.com/jenkinsci/database-drizzle-plugin
 Datical Db Plugin,https://github.com/jenkinsci/datical-db-plugin
 DbCharts Plugin,https://github.com/jenkinsci/dbCharts-plugin
-Ddt Plugin,https://github.com/jenkinsci/ddt-plugin
 Deadmanssnitch Plugin,https://github.com/jenkinsci/deadmanssnitch-plugin
 Debian Package Builder Plugin,https://github.com/jenkinsci/debian-package-builder-plugin
 Delete Log Plugin,https://github.com/jenkinsci/delete-log-plugin
@@ -282,24 +233,17 @@ Deploygate Plugin,https://github.com/jenkinsci/deploygate-plugin
 Deployhub Plugin,https://github.com/jenkinsci/deployhub-plugin
 Deployment Sphere Plugin,https://github.com/jenkinsci/deployment-sphere-plugin
 Dev Mode Plugin,https://github.com/jenkinsci/dev-mode-plugin
-Dev Notifier Plugin,https://github.com/jenkinsci/dev-notifier-plugin
 Deveo Plugin,https://github.com/jenkinsci/deveo-plugin
-Diawi Upload Plugin,https://github.com/jenkinsci/diawi-upload-plugin
 Dimensions Plugin,https://github.com/jenkinsci/dimensions-plugin
-Dingding Json Pusher Plugin,https://github.com/jenkinsci/dingding-json-pusher-plugin
-Disable Bitbucket Multibranch Status Plugin,https://github.com/jenkinsci/disable-bitbucket-multibranch-status-plugin
 Disable Failed Job Plugin,https://github.com/jenkinsci/disable-failed-job-plugin
-Disable Github Multibranch Status Plugin,https://github.com/jenkinsci/disable-github-multibranch-status-plugin
 Discobit Autoconfig Plugin,https://github.com/jenkinsci/discobit-autoconfig-plugin
 Diskcheck Plugin,https://github.com/jenkinsci/diskcheck-plugin
-Display Console Output Plugin,https://github.com/jenkinsci/display-console-output-plugin
 Display Upstream Changes Plugin,https://github.com/jenkinsci/display-upstream-changes-plugin
 DistTest Plugin,https://github.com/jenkinsci/distTest-plugin
 Distinguishable Gray Balls Plugin,https://github.com/jenkinsci/distinguishable-gray-balls-plugin
 Docker Flow Plugin,https://github.com/jenkinsci/docker-flow-plugin
 Docker Traceability Plugin,https://github.com/jenkinsci/docker-traceability-plugin
 Dockerhub Plugin,https://github.com/jenkinsci/dockerhub-plugin
-Doktor Plugin,https://github.com/jenkinsci/doktor-plugin
 Domain Discovery Module,https://github.com/jenkinsci/domain-discovery-module
 Doony Plugin,https://github.com/jenkinsci/doony-plugin
 Dos Trigger Plugin,https://github.com/jenkinsci/dos-trigger-plugin
@@ -317,12 +261,10 @@ Dynaslave Plugin,https://github.com/jenkinsci/dynaslave-plugin
 Dynatrace Plugin,https://github.com/jenkinsci/dynatrace-plugin
 Ease Plugin,https://github.com/jenkinsci/ease-plugin
 Easyant Plugin,https://github.com/jenkinsci/easyant-plugin
-Easyqa Plugin,https://github.com/jenkinsci/easyqa-plugin
 Easytestreport Plugin,https://github.com/jenkinsci/easytestreport-plugin
 Ec2 Deployment Dashboard,https://github.com/jenkinsci/ec2-deployment-dashboard
 Ec2 Testharness,https://github.com/jenkinsci/ec2-testharness
 Eclipse Update Site Plugin,https://github.com/jenkinsci/eclipse-update-site-plugin
-Ecs Publisher Plugin,https://github.com/jenkinsci/ecs-publisher-plugin
 Eggplant Plugin,https://github.com/jenkinsci/eggplant-plugin
 Elasticbox Plugin,https://github.com/jenkinsci/elasticbox-plugin
 Elasticsearch Query Plugin,https://github.com/jenkinsci/elasticsearch-query-plugin
@@ -332,10 +274,8 @@ Embed Grafana Graph Plugin,https://github.com/jenkinsci/embed-grafana-graph-plug
 Emmacoveragecolumn Plugin,https://github.com/jenkinsci/emmacoveragecolumn-plugin
 Emotional Hudson Plugin,https://github.com/jenkinsci/emotional-hudson-plugin
 Emotional Jenkins Plugin,https://github.com/jenkinsci/emotional-jenkins-plugin
-Environment Filter Utils Plugin,https://github.com/jenkinsci/environment-filter-utils-plugin
 Environment Manager Tools Plugin,https://github.com/jenkinsci/environment-manager-tools-plugin
 Environment Plugin,https://github.com/jenkinsci/environment-plugin
-Es Extensions,https://github.com/jenkinsci/es-extensions
 Escaped Markup Plugin,https://github.com/jenkinsci/escaped-markup-plugin
 Event Streamer Plugin,https://github.com/jenkinsci/event-streamer-plugin
 Events Materials,https://github.com/jenkinsci/events-materials
@@ -364,12 +304,10 @@ Failedjobdeactivator Plugin,https://github.com/jenkinsci/failedjobdeactivator-pl
 Failure Visualizer Plugin,https://github.com/jenkinsci/failure-visualizer-plugin
 Figlet Buildstep Plugin,https://github.com/jenkinsci/figlet-buildstep-plugin
 Files Found Trigger Plugin,https://github.com/jenkinsci/files-found-trigger-plugin
-Filtered Dashboard View Plugin,https://github.com/jenkinsci/filtered-dashboard-view-plugin
 Firefox Extension Buildmonitor,https://github.com/jenkinsci/firefox-extension-buildmonitor
 Fit Plugin,https://github.com/jenkinsci/fit-plugin
 Flashlog Plugin,https://github.com/jenkinsci/flashlog-plugin
 Flexteam Plugin,https://github.com/jenkinsci/flexteam-plugin
-Flock Plugin,https://github.com/jenkinsci/flock-plugin
 Flowdock Plugin,https://github.com/jenkinsci/flowdock-plugin
 Flyweight Build Step Plugin,https://github.com/jenkinsci/flyweight-build-step-plugin
 Fogbugz Plugin,https://github.com/jenkinsci/fogbugz-plugin
@@ -377,7 +315,6 @@ Font Awesome Icons Plugin,https://github.com/jenkinsci/font-awesome-icons-plugin
 Foofoo,https://github.com/jenkinsci/foofoo
 Fortify360 Plugin,https://github.com/jenkinsci/fortify360-plugin
 Freestyle Multibranch Plugin,https://github.com/jenkinsci/freestyle-multibranch-plugin
-Ftp Rename Plugin,https://github.com/jenkinsci/ftp-rename-plugin
 Ftppublisher Plugin,https://github.com/jenkinsci/ftppublisher-plugin
 Fxcop Runner Plugin,https://github.com/jenkinsci/fxcop-runner-plugin
 Gallio Plugin,https://github.com/jenkinsci/gallio-plugin
@@ -390,14 +327,11 @@ Gcm Notification Plugin,https://github.com/jenkinsci/gcm-notification-plugin
 Gcrawler Plugin,https://github.com/jenkinsci/gcrawler-plugin
 Gem Publisher Plugin,https://github.com/jenkinsci/gem-publisher-plugin
 Gerrit Verify Status Reporter Plugin,https://github.com/jenkinsci/gerrit-verify-status-reporter-plugin
-Git Changelist Maven Extension,https://github.com/jenkinsci/git-changelist-maven-extension
 Git Chooser Alternative Plugin,https://github.com/jenkinsci/git-chooser-alternative-plugin
 Git Notes Plugin,https://github.com/jenkinsci/git-notes-plugin
 Git UserContent Plugin,https://github.com/jenkinsci/git-userContent-plugin
 Gitbucket Plugin,https://github.com/jenkinsci/gitbucket-plugin
 Gitcolony Plugin,https://github.com/jenkinsci/gitcolony-plugin
-Github Additional Traits Plugin,https://github.com/jenkinsci/github-additional-traits-plugin
-Github Coverage Reporter Plugin,https://github.com/jenkinsci/github-coverage-reporter-plugin
 Github Issues Plugin,https://github.com/jenkinsci/github-issues-plugin
 Github Organization Folder Plugin,https://github.com/jenkinsci/github-organization-folder-plugin
 Github Sqs Plugin,https://github.com/jenkinsci/github-sqs-plugin
@@ -407,14 +341,12 @@ Gitlab Automatic Item Creator Plugin,https://github.com/jenkinsci/gitlab-automat
 Gitlab Hook Plugin,https://github.com/jenkinsci/gitlab-hook-plugin
 Gitlab Merge Request Builder Plugin,https://github.com/jenkinsci/gitlab-merge-request-builder-plugin
 Gitorious Plugin,https://github.com/jenkinsci/gitorious-plugin
-Global Slack Notifier Plugin,https://github.com/jenkinsci/global-slack-notifier-plugin
 Global Variable String Parameter Plugin,https://github.com/jenkinsci/global-variable-string-parameter-plugin
 Gmaven,https://github.com/jenkinsci/gmaven
 Gnat Plugin,https://github.com/jenkinsci/gnat-plugin
 Go Performance Publisher Plugin,https://github.com/jenkinsci/go-performance-publisher-plugin
 Golo Plugin,https://github.com/jenkinsci/golo-plugin
 Google Analytics Usage Reporter Plugin,https://github.com/jenkinsci/google-analytics-usage-reporter-plugin
-Google Chat Plugin,https://github.com/jenkinsci/google-chat-plugin
 Google Cloud Backup Plugin,https://github.com/jenkinsci/google-cloud-backup-plugin
 Google Cloud Health Check Plugin,https://github.com/jenkinsci/google-cloud-health-check-plugin
 Google Container Registry Auth Plugin,https://github.com/jenkinsci/google-container-registry-auth-plugin
@@ -423,7 +355,6 @@ Google Desktop Gadget Plugin,https://github.com/jenkinsci/google-desktop-gadget-
 Google Git Notes Publisher Plugin,https://github.com/jenkinsci/google-git-notes-publisher-plugin
 Googleanalytics Plugin,https://github.com/jenkinsci/googleanalytics-plugin
 Googlecode Plugin,https://github.com/jenkinsci/googlecode-plugin
-Gradle Jte Plugin,https://github.com/jenkinsci/gradle-jte-plugin
 Grails Plugin,https://github.com/jenkinsci/grails-plugin
 Graphite Plugin,https://github.com/jenkinsci/graphite-plugin
 Graven Plugin,https://github.com/jenkinsci/graven-plugin
@@ -439,16 +370,13 @@ Growl Plugin,https://github.com/jenkinsci/growl-plugin
 Gssh Plugin,https://github.com/jenkinsci/gssh-plugin
 Hadoop Plugin,https://github.com/jenkinsci/hadoop-plugin
 Hall Plugin,https://github.com/jenkinsci/hall-plugin
-Hangouts Chat Plugin,https://github.com/jenkinsci/hangouts-chat-plugin
 Harvest Plugin,https://github.com/jenkinsci/harvest-plugin
 Hckrnews Plugin,https://github.com/jenkinsci/hckrnews-plugin
 Heavy Job Plugin,https://github.com/jenkinsci/heavy-job-plugin
 Hello World Groovy Plugin,https://github.com/jenkinsci/hello-world-groovy-plugin
 Hello World Groovy View Plugin,https://github.com/jenkinsci/hello-world-groovy-view-plugin
-Hello World Maven Builder,https://github.com/jenkinsci/hello-world-maven-builder
 Hello World Plugin,https://github.com/jenkinsci/hello-world-plugin
 Hello World Scala Plugin,https://github.com/jenkinsci/hello-world-scala-plugin
-Helm Charts,https://github.com/jenkinsci/helm-charts
 Help Editor Plugin,https://github.com/jenkinsci/help-editor-plugin
 Hgca Plugin,https://github.com/jenkinsci/hgca-plugin
 Housekeeper Plugin,https://github.com/jenkinsci/housekeeper-plugin
@@ -465,26 +393,20 @@ Hudson Gerrit Plugin,https://github.com/jenkinsci/Hudson-Gerrit-Plugin
 Hudson Notifo Plugin,https://github.com/jenkinsci/hudson-notifo-plugin
 Hudsontrayapp Plugin,https://github.com/jenkinsci/hudsontrayapp-plugin
 Humbug Plugin,https://github.com/jenkinsci/humbug-plugin
-Humio Plugin,https://github.com/jenkinsci/humio-plugin
 Hyper Build Step Plugin,https://github.com/jenkinsci/hyper-build-step-plugin
 Hyper Commons Plugin,https://github.com/jenkinsci/hyper-commons-plugin
 Hyper Slaves Plugin,https://github.com/jenkinsci/hyper-slaves-plugin
 IOS AdHoc Deployment Plugin,https://github.com/jenkinsci/iOS-AdHoc-Deployment-Plugin
-Ibm Cloud Devops Plugin,https://github.com/jenkinsci/ibm-cloud-devops-plugin
 Ibm Security Appscansource Scanner Plugin,https://github.com/jenkinsci/ibm-security-appscansource-scanner-plugin
 Ibm Security Appscanstandard Scanner Plugin,https://github.com/jenkinsci/ibm-security-appscanstandard-scanner-plugin
-Ibm Ucdeploy Pipeline Plugin,https://github.com/jenkinsci/ibm-ucdeploy-pipeline-plugin
 Ibvc Plugin,https://github.com/jenkinsci/ibvc-plugin
 Icescrum Plugin,https://github.com/jenkinsci/icescrum-plugin
-Icn Plugin Loader Plugin,https://github.com/jenkinsci/icn-plugin-loader-plugin
 Ifttt Build Notifier Plugin,https://github.com/jenkinsci/ifttt-build-notifier-plugin
 Image Gallery Plugin,https://github.com/jenkinsci/image-gallery-plugin
 Imagecomparison Plugin,https://github.com/jenkinsci/imagecomparison-plugin
 Impersonation Plugin,https://github.com/jenkinsci/impersonation-plugin
-Incrementals Tools,https://github.com/jenkinsci/incrementals-tools
 Inedo Buildmaster Plugin,https://github.com/jenkinsci/inedo-buildmaster-plugin
 Inedo Proget Plugin,https://github.com/jenkinsci/inedo-proget-plugin
-Inflectra Spira Integration Plugin,https://github.com/jenkinsci/inflectra-spira-integration-plugin
 Infra Cla,https://github.com/jenkinsci/infra-cla
 Install Necessary Plugins,https://github.com/jenkinsci/install-necessary-plugins
 Installshield Plugin,https://github.com/jenkinsci/installshield-plugin
@@ -501,7 +423,6 @@ Iphoneview Plugin,https://github.com/jenkinsci/iphoneview-plugin
 Ipmessenger Plugin,https://github.com/jenkinsci/ipmessenger-plugin
 Ipmsg Plugin,https://github.com/jenkinsci/ipmsg-plugin
 Item Forwarder Plugin,https://github.com/jenkinsci/item-forwarder-plugin
-Itest Plugin,https://github.com/jenkinsci/itest-plugin
 Ivy Report Plugin,https://github.com/jenkinsci/ivy-report-plugin
 Jabber Server Plugin,https://github.com/jenkinsci/jabber-server-plugin
 Japex Plugin,https://github.com/jenkinsci/japex-plugin
@@ -516,32 +437,20 @@ Jaxen,https://github.com/jenkinsci/jaxen
 Jboss Plugin,https://github.com/jenkinsci/jboss-plugin
 Jbpm Plugin,https://github.com/jenkinsci/jbpm-plugin
 Jbpm Workflow Plugin,https://github.com/jenkinsci/jbpm-workflow-plugin
-Jcasc Vscode Extension,https://github.com/jenkinsci/jcasc-vscode-extension
-Jdependency,https://github.com/jenkinsci/jdependency
-Jenkins Ace Editor,https://github.com/jenkinsci/jenkins-ace-editor
-Jenkins Automation Operator,https://github.com/jenkinsci/jenkins-automation-operator
 Jenkins Charm,https://github.com/jenkinsci/jenkins-charm
-Jenkins Js Diag,https://github.com/jenkinsci/jenkins-js-diag
 Jenkins Plugin Runtime.rb,https://github.com/jenkinsci/jenkins-plugin-runtime.rb
-Jenkins Prototype,https://github.com/jenkinsci/jenkins-prototype
 Jenkins Scripts,https://github.com/jenkinsci/jenkins-scripts
 Jenkins Test Harness Tools,https://github.com/jenkinsci/jenkins-test-harness-tools
 Jenkins User Event,https://github.com/jenkinsci/jenkins-user-event
 Jenkins Wargemmer,https://github.com/jenkinsci/jenkins-wargemmer
 Jenkins.py,https://github.com/jenkinsci/jenkins.py
 Jenkins.rb,https://github.com/jenkinsci/jenkins.rb
-Jenkinsfile Runner Github Actions,https://github.com/jenkinsci/jenkinsfile-runner-github-actions
-Jenkinsfile Runner Image Packs,https://github.com/jenkinsci/jenkinsfile-runner-image-packs
 Jenkow Plugin,https://github.com/jenkinsci/jenkow-plugin
-Jep,https://github.com/jenkinsci/jep
 Jexl,https://github.com/jenkinsci/jexl
-Jfr Action Demo,https://github.com/jenkinsci/jfr-action-demo
-Jfr Action Doc,https://github.com/jenkinsci/jfr-action-doc
 Jgit,https://github.com/jenkinsci/jgit
 Jgiven Plugin,https://github.com/jenkinsci/jgiven-plugin
 Jianliao Plugin,https://github.com/jenkinsci/jianliao-plugin
 Jigomerge Plugin,https://github.com/jenkinsci/jigomerge-plugin
-Jira Finder Plugin,https://github.com/jenkinsci/jira-finder-plugin
 Jira Issues Versioning Plugin,https://github.com/jenkinsci/jira-issues-versioning-plugin
 Jmdns Fork,https://github.com/jenkinsci/jmdns-fork
 Jmdns,https://github.com/jenkinsci/jmdns
@@ -549,7 +458,6 @@ Jmeter Performance Reporter Plugin,https://github.com/jenkinsci/jmeter-performan
 Jmeter Performance Runner Plugin,https://github.com/jenkinsci/jmeter-performance-runner-plugin
 Jmx Invoker Plugin,https://github.com/jenkinsci/jmx-invoker-plugin
 Jmx Plugin,https://github.com/jenkinsci/jmx-plugin
-Jna Posix Api Plugin,https://github.com/jenkinsci/jna-posix-api-plugin
 Jna Posix,https://github.com/jenkinsci/jna-posix
 Jna,https://github.com/jenkinsci/jna
 Job Direct Mail Plugin,https://github.com/jenkinsci/job-direct-mail-plugin
@@ -569,12 +477,8 @@ Jobtemplates Plugin,https://github.com/jenkinsci/jobtemplates-plugin
 Join Plugin,https://github.com/jenkinsci/join-plugin
 Jpi.rb,https://github.com/jenkinsci/jpi.rb
 Jprt Plugin,https://github.com/jenkinsci/jprt-plugin
-Jquery Detached,https://github.com/jenkinsci/jquery-detached
 Jruby Xstream,https://github.com/jenkinsci/jruby-xstream
-Js Builder Jest,https://github.com/jenkinsci/js-builder-jest
-Js Logging,https://github.com/jenkinsci/js-logging
 Js Modules,https://github.com/jenkinsci/js-modules
-Js Preferences,https://github.com/jenkinsci/js-preferences
 Js Samples,https://github.com/jenkinsci/js-samples
 Js Storage,https://github.com/jenkinsci/js-storage
 Js Test,https://github.com/jenkinsci/js-test
@@ -600,15 +504,10 @@ Kiuwan Plugin,https://github.com/jenkinsci/kiuwan-plugin
 Klocwork Plugin,https://github.com/jenkinsci/klocwork-plugin
 Kmap Plugin,https://github.com/jenkinsci/kmap-plugin
 Koji Plugin,https://github.com/jenkinsci/koji-plugin
-Kotlin Plugin Pom,https://github.com/jenkinsci/kotlin-plugin-pom
-Kotlin V1 Stdlib Jdk8 Plugin,https://github.com/jenkinsci/kotlin-v1-stdlib-jdk8-plugin
-Kryptowire Plugin,https://github.com/jenkinsci/kryptowire-plugin
 Kubernetes Ci Plugin,https://github.com/jenkinsci/kubernetes-ci-plugin
-Kubernetes Operator,https://github.com/jenkinsci/kubernetes-operator
 Kubernetes Pipeline Plugin,https://github.com/jenkinsci/kubernetes-pipeline-plugin
 Kundo Plugin,https://github.com/jenkinsci/kundo-plugin
 Kwjlib,https://github.com/jenkinsci/kwjlib
-Label Test,https://github.com/jenkinsci/label-test
 Labeled Test Groups Publisher Plugin,https://github.com/jenkinsci/labeled-test-groups-publisher-plugin
 Labmanager Plugin,https://github.com/jenkinsci/labmanager-plugin
 Lastfailureversioncolumn Plugin,https://github.com/jenkinsci/lastfailureversioncolumn-plugin
@@ -619,41 +518,29 @@ Ldapemail Plugin,https://github.com/jenkinsci/ldapemail-plugin
 Lechat Plugin,https://github.com/jenkinsci/lechat-plugin
 Leiningen Plugin,https://github.com/jenkinsci/leiningen-plugin
 Lenient Shutdown Plugin,https://github.com/jenkinsci/lenient-shutdown-plugin
-Leo Auth Plugin,https://github.com/jenkinsci/leo-auth-plugin
-Lib Async Http Client,https://github.com/jenkinsci/lib-async-http-client
-Lib Bom Jep309,https://github.com/jenkinsci/lib-bom-jep309
-Lib Commons Httpclient,https://github.com/jenkinsci/lib-commons-httpclient
 Lib Confluence Api,https://github.com/jenkinsci/lib-confluence-api
 Lib Embedded Rhino Debugger,https://github.com/jenkinsci/lib-embedded-rhino-debugger
 Lib Groovy Guice Binder,https://github.com/jenkinsci/lib-groovy-guice-binder
-Lib Jenkins Stapler Support,https://github.com/jenkinsci/lib-jenkins-stapler-support
 Lib Jira Scraper,https://github.com/jenkinsci/lib-jira-scraper
-Lib Multiline Secrets Ui,https://github.com/jenkinsci/lib-multiline-secrets-ui
 Lib Onepass Blob Tree,https://github.com/jenkinsci/lib-onepass-blob-tree
-Lib Revapi Hpi Extractor,https://github.com/jenkinsci/lib-revapi-hpi-extractor
 Lib Windows Remote Command,https://github.com/jenkinsci/lib-windows-remote-command
 Libdtkit,https://github.com/jenkinsci/libdtkit
 Libxpublisher,https://github.com/jenkinsci/libxpublisher
 Lifx Notifier Plugin,https://github.com/jenkinsci/lifx-notifier-plugin
-Line Notify Plugin,https://github.com/jenkinsci/line-notify-plugin
 Lingr Plugin,https://github.com/jenkinsci/lingr-plugin
 List Command Plugin,https://github.com/jenkinsci/list-command-plugin
 Literate Api,https://github.com/jenkinsci/literate-api
 Literate Cli,https://github.com/jenkinsci/literate-cli
 Liverebel Deploy Plugin,https://github.com/jenkinsci/liverebel-deploy-plugin
 Livescreenshot Plugin,https://github.com/jenkinsci/livescreenshot-plugin
-Livingdoc Reports Plugin,https://github.com/jenkinsci/livingdoc-reports-plugin
 Load Simulator,https://github.com/jenkinsci/load-simulator
-Loadcomplete Plugin,https://github.com/jenkinsci/loadcomplete-plugin
 Loaderio Plugin,https://github.com/jenkinsci/loaderio-plugin
-Loadfocus Jmeter Load Testing Integration Plugin,https://github.com/jenkinsci/loadfocus-jmeter-load-testing-integration-plugin
 Loadfocus Loadtest Plugin,https://github.com/jenkinsci/loadfocus-loadtest-plugin
 Loadimpact Plugin,https://github.com/jenkinsci/loadimpact-plugin
 Local Groovy Cli Plugin,https://github.com/jenkinsci/local-groovy-cli-plugin
 Localization Plugin,https://github.com/jenkinsci/localization-plugin
 Locked Files Report Plugin,https://github.com/jenkinsci/locked-files-report-plugin
 Locks And Latches Plugin,https://github.com/jenkinsci/locks-and-latches-plugin
-Log Sanitizer Plugin,https://github.com/jenkinsci/log-sanitizer-plugin
 Logaction Plugin,https://github.com/jenkinsci/logaction-plugin
 Logentries Plugin,https://github.com/jenkinsci/logentries-plugin
 Logging Plugin,https://github.com/jenkinsci/logging-plugin
@@ -666,7 +553,6 @@ Mail Reminder Plugin,https://github.com/jenkinsci/mail-reminder-plugin
 Mailmap Resolver Plugin,https://github.com/jenkinsci/mailmap-resolver-plugin
 Maintenance Jobs Scheduler Plugin,https://github.com/jenkinsci/maintenance-jobs-scheduler-plugin
 Major Minor Plugin,https://github.com/jenkinsci/major-minor-plugin
-Make Jenkins Slow Plugin,https://github.com/jenkinsci/make-jenkins-slow-plugin
 Mansion Cloud Plugin,https://github.com/jenkinsci/mansion-cloud-plugin
 Mantis Plugin,https://github.com/jenkinsci/mantis-plugin
 Marathon Plugin,https://github.com/jenkinsci/marathon-plugin
@@ -691,7 +577,6 @@ Mdtool Plugin,https://github.com/jenkinsci/mdtool-plugin
 Measurement Plots Plugin,https://github.com/jenkinsci/measurement-plots-plugin
 Meister Plugin,https://github.com/jenkinsci/meister-plugin
 Memegen Plugin,https://github.com/jenkinsci/memegen-plugin
-Memkins,https://github.com/jenkinsci/memkins
 Memory Map Plugin,https://github.com/jenkinsci/memory-map-plugin
 Mentor Questa Vrm Plugin,https://github.com/jenkinsci/mentor-questa-vrm-plugin
 Merge Queue Plugin,https://github.com/jenkinsci/merge-queue-plugin
@@ -703,7 +588,6 @@ Metrics Librato Plugin,https://github.com/jenkinsci/metrics-librato-plugin
 Mibsr M2 Plugin,https://github.com/jenkinsci/mibsr-m2-plugin
 Mibsr Plugin,https://github.com/jenkinsci/mibsr-plugin
 Microdocs Integration Plugin,https://github.com/jenkinsci/microdocs-integration-plugin
-Microfocus Da Plugin,https://github.com/jenkinsci/microfocus-da-plugin
 Minio Storage Plugin,https://github.com/jenkinsci/minio-storage-plugin
 Mission Control View Plugin,https://github.com/jenkinsci/mission-control-view-plugin
 Mktmpio Plugin,https://github.com/jenkinsci/mktmpio-plugin
@@ -722,7 +606,6 @@ Mttr Plugin,https://github.com/jenkinsci/mttr-plugin
 Multi Branch Project Plugin,https://github.com/jenkinsci/multi-branch-project-plugin
 Multi Module Tests Publisher Plugin,https://github.com/jenkinsci/multi-module-tests-publisher-plugin
 Multiline Tabbar Plugin Plugin,https://github.com/jenkinsci/multiline-tabbar-plugin-plugin
-Myappci Plugin,https://github.com/jenkinsci/myappci-plugin
 Mypeople Plugin,https://github.com/jenkinsci/mypeople-plugin
 Mysql Auth Plugin,https://github.com/jenkinsci/mysql-auth-plugin
 Myst Plugin,https://github.com/jenkinsci/myst-plugin
@@ -733,8 +616,6 @@ Netio Plugin,https://github.com/jenkinsci/netio-plugin
 Network Monitor Plugin,https://github.com/jenkinsci/network-monitor-plugin
 Netx,https://github.com/jenkinsci/netx
 Newgen Servers Plugin,https://github.com/jenkinsci/newgen-servers-plugin
-Newrelic Insights Plugin,https://github.com/jenkinsci/newrelic-insights-plugin
-Nexus Platform Plugin,https://github.com/jenkinsci/nexus-platform-plugin
 Nis Notification Lamp Plugin,https://github.com/jenkinsci/nis-notification-lamp-plugin
 Node Offline Notification Plugin,https://github.com/jenkinsci/node-offline-notification-plugin
 Nodejs Packages,https://github.com/jenkinsci/nodejs-packages
@@ -746,7 +627,6 @@ Octopus Client Plugin,https://github.com/jenkinsci/octopus-client-plugin
 Octopusdeploy Plugin,https://github.com/jenkinsci/octopusdeploy-plugin
 One Shot Executor Plugin,https://github.com/jenkinsci/one-shot-executor-plugin
 Onealert Trigger Plugin,https://github.com/jenkinsci/onealert-trigger-plugin
-Oneandone Cloudserver Plugin,https://github.com/jenkinsci/oneandone-cloudserver-plugin
 Onesky Plugin,https://github.com/jenkinsci/onesky-plugin
 OpenJDK Native Plugin,https://github.com/jenkinsci/openJDK-native-plugin
 Openconnect Plugin,https://github.com/jenkinsci/openconnect-plugin
@@ -754,33 +634,25 @@ Openid4java Plugin,https://github.com/jenkinsci/openid4java-plugin
 Openshift Deployer Plugin,https://github.com/jenkinsci/openshift-deployer-plugin
 Openshift Pipeline Plugin,https://github.com/jenkinsci/openshift-pipeline-plugin
 Openstack Plugin,https://github.com/jenkinsci/openstack-plugin
-Opsgenie Plugin,https://github.com/jenkinsci/opsgenie-plugin
 Opsramp Notifier Plugin,https://github.com/jenkinsci/opsramp-notifier-plugin
 Optional Plugin Helper Module,https://github.com/jenkinsci/optional-plugin-helper-module
-Oracle Cloud Infrastructure Compute Classic Plugin,https://github.com/jenkinsci/oracle-cloud-infrastructure-compute-classic-plugin
-Oracle Cloud Infrastructure Compute Plugin,https://github.com/jenkinsci/oracle-cloud-infrastructure-compute-plugin
 Origo Issue Notifier Plugin,https://github.com/jenkinsci/origo-issue-notifier-plugin
 Oslc Cm Plugin,https://github.com/jenkinsci/oslc-cm-plugin
-Outbound Webhook Plugin,https://github.com/jenkinsci/outbound-webhook-plugin
 Overthere Remoting,https://github.com/jenkinsci/overthere-remoting
 Paaslane Plugin,https://github.com/jenkinsci/paaslane-plugin
 Packagecloud Plugin,https://github.com/jenkinsci/packagecloud-plugin
-Packageversion Plugin,https://github.com/jenkinsci/packageversion-plugin
 Page Note Plugin,https://github.com/jenkinsci/page-note-plugin
-Pangolin Testrail Connector Plugin,https://github.com/jenkinsci/pangolin-testrail-connector-plugin
 Parallel Test Executor Plugin Sample,https://github.com/jenkinsci/parallel-test-executor-plugin-sample
 Parallels Desktop Plugin,https://github.com/jenkinsci/parallels-desktop-plugin
 Parameter Defaults Options Plugin,https://github.com/jenkinsci/parameter-defaults-options-plugin
 Parameter Pool Plugin,https://github.com/jenkinsci/parameter-pool-plugin
 Parasoft Findings Plugin,https://github.com/jenkinsci/parasoft-findings-plugin
-Partyparrotstatus Plugin,https://github.com/jenkinsci/partyparrotstatus-plugin
 Patch Parameter Plugin,https://github.com/jenkinsci/patch-parameter-plugin
 Pathignore Plugin,https://github.com/jenkinsci/pathignore-plugin
 Pegdown Formatter Plugin,https://github.com/jenkinsci/pegdown-formatter-plugin
 Pendingchanges Plugin,https://github.com/jenkinsci/pendingchanges-plugin
 People Redirector Plugin,https://github.com/jenkinsci/people-redirector-plugin
 Percentage Du Node Column Plugin,https://github.com/jenkinsci/percentage-du-node-column-plugin
-Perfci Plugin,https://github.com/jenkinsci/perfci-plugin
 Perfectomobile Plugin,https://github.com/jenkinsci/perfectomobile-plugin
 Perforce Plugin,https://github.com/jenkinsci/perforce-plugin
 Perfpublisher Plugin,https://github.com/jenkinsci/perfpublisher-plugin
@@ -792,15 +664,11 @@ Phabricator Plugin,https://github.com/jenkinsci/phabricator-plugin
 Phing Plugin,https://github.com/jenkinsci/phing-plugin
 Php Builtin Web Server Plugin,https://github.com/jenkinsci/php-builtin-web-server-plugin
 Php Plugin,https://github.com/jenkinsci/php-plugin
-Pipeline Charts Plugin,https://github.com/jenkinsci/pipeline-charts-plugin
 Pipeline Classpath Step Plugin,https://github.com/jenkinsci/pipeline-classpath-step-plugin
 Pipeline Dependency Walker Plugin,https://github.com/jenkinsci/pipeline-dependency-walker-plugin
 Pipeline Editor Plugin,https://github.com/jenkinsci/pipeline-editor-plugin
 Pipeline Examples,https://github.com/jenkinsci/pipeline-examples
 Pipeline Plugin,https://github.com/jenkinsci/pipeline-plugin
-Pipeline Reporter Plugin,https://github.com/jenkinsci/pipeline-reporter-plugin
-Pipeline Restful Api Plugin,https://github.com/jenkinsci/pipeline-restful-api-plugin
-Pipeline Snippetizer Plugin,https://github.com/jenkinsci/pipeline-snippetizer-plugin
 Pipeline View Plugin,https://github.com/jenkinsci/pipeline-view-plugin
 Piwikanalytics Plugin,https://github.com/jenkinsci/piwikanalytics-plugin
 Play Plugin,https://github.com/jenkinsci/play-plugin
@@ -812,10 +680,8 @@ Policycenter Gate Validator Plugin,https://github.com/jenkinsci/policycenter-gat
 Poll Mailbox Trigger Plugin,https://github.com/jenkinsci/poll-mailbox-trigger-plugin
 Pom Importer Plugin,https://github.com/jenkinsci/pom-importer-plugin
 Pom2config Plugin,https://github.com/jenkinsci/pom2config-plugin
-Popper Api Plugin,https://github.com/jenkinsci/popper-api-plugin
 Popular Jobs Plugin,https://github.com/jenkinsci/popular-jobs-plugin
 Post Completed Build Result Plugin,https://github.com/jenkinsci/post-completed-build-result-plugin
-Practitest Integration Plugin,https://github.com/jenkinsci/practitest-integration-plugin
 Pre Build Plugin,https://github.com/jenkinsci/pre-build-plugin
 Pretested Integration Plugin,https://github.com/jenkinsci/pretested-integration-plugin
 Proc Plugin,https://github.com/jenkinsci/proc-plugin
@@ -836,24 +702,17 @@ Pview Plugin,https://github.com/jenkinsci/pview-plugin
 Pwauth Plugin,https://github.com/jenkinsci/pwauth-plugin
 Pxe Plugin,https://github.com/jenkinsci/pxe-plugin
 Pyenv Plugin,https://github.com/jenkinsci/pyenv-plugin
-Qaconsole Test Automation Reporter Plugin,https://github.com/jenkinsci/qaconsole-test-automation-reporter-plugin
 Qc Plugin,https://github.com/jenkinsci/qc-plugin
 Qmakebuilder Plugin,https://github.com/jenkinsci/qmakebuilder-plugin
-Qmetry For Jira Test Management Plugin,https://github.com/jenkinsci/qmetry-for-jira-test-management-plugin
-Qmetry Test Management Plugin,https://github.com/jenkinsci/qmetry-test-management-plugin
 Qtest Plugin,https://github.com/jenkinsci/qtest-plugin
 Quality Gates Plugin,https://github.com/jenkinsci/quality-gates-plugin
-Quamotion Cloud Plugin,https://github.com/jenkinsci/quamotion-cloud-plugin
 Quayio Trigger Plugin,https://github.com/jenkinsci/quayio-trigger-plugin
 Rad Builder Plugin,https://github.com/jenkinsci/rad-builder-plugin
 Radiatorview Plugin,https://github.com/jenkinsci/radiatorview-plugin
 Rally Plugin,https://github.com/jenkinsci/rally-plugin
 Random String Parameter Plugin,https://github.com/jenkinsci/random-string-parameter-plugin
-Ranorex Integration Plugin,https://github.com/jenkinsci/ranorex-integration-plugin
 Rbenv Plugin,https://github.com/jenkinsci/rbenv-plugin
-React Flow,https://github.com/jenkinsci/react-flow
 React Material Icons,https://github.com/jenkinsci/react-material-icons
-React Plugin Template,https://github.com/jenkinsci/react-plugin-template
 Readonly Parameter Plugin,https://github.com/jenkinsci/readonly-parameter-plugin
 Recipe Plugin,https://github.com/jenkinsci/recipe-plugin
 Redgate Sql Ci Plugin,https://github.com/jenkinsci/redgate-sql-ci-plugin
@@ -867,12 +726,10 @@ Release Test,https://github.com/jenkinsci/release-test
 Relution Publisher Plugin,https://github.com/jenkinsci/relution-publisher-plugin
 Remote Queue Plugin,https://github.com/jenkinsci/remote-queue-plugin
 Repeat Build Plugin,https://github.com/jenkinsci/repeat-build-plugin
-Reportportal Plugin,https://github.com/jenkinsci/reportportal-plugin
 Require Tool Plugin,https://github.com/jenkinsci/require-tool-plugin
 Rest Service Scheduler Plugin,https://github.com/jenkinsci/rest-service-scheduler-plugin
 Restricted Register Plugin,https://github.com/jenkinsci/restricted-register-plugin
 Reviewboard Plugin,https://github.com/jenkinsci/reviewboard-plugin
-Rhamt Plugin,https://github.com/jenkinsci/rhamt-plugin
 Rhapsodybuilder Plugin,https://github.com/jenkinsci/rhapsodybuilder-plugin
 Rigor Optimization Plugin,https://github.com/jenkinsci/rigor-optimization-plugin
 Root Cause Plugin,https://github.com/jenkinsci/root-cause-plugin
@@ -889,7 +746,6 @@ Rusalad Plugin,https://github.com/jenkinsci/rusalad-plugin
 Rvm Plugin,https://github.com/jenkinsci/rvm-plugin
 SCTMExecutor Plugin,https://github.com/jenkinsci/SCTMExecutor-plugin
 SECURITY 144 Compat,https://github.com/jenkinsci/SECURITY-144-compat
-Safe Batch Environment Filter Plugin,https://github.com/jenkinsci/safe-batch-environment-filter-plugin
 Sahagin Plugin,https://github.com/jenkinsci/sahagin-plugin
 Salesforce Migration Assistant Plugin,https://github.com/jenkinsci/salesforce-migration-assistant-plugin
 Sametime Plugin,https://github.com/jenkinsci/sametime-plugin
@@ -901,7 +757,6 @@ Sbuild Plugin,https://github.com/jenkinsci/sbuild-plugin
 Scala Junit Name Decoder Plugin,https://github.com/jenkinsci/scala-junit-name-decoder-plugin
 Scala Plugin,https://github.com/jenkinsci/scala-plugin
 Scaleway Cloud Plugin,https://github.com/jenkinsci/scaleway-cloud-plugin
-Schedule Display Plugin,https://github.com/jenkinsci/schedule-display-plugin
 Schedule Failed Builds Plugin,https://github.com/jenkinsci/schedule-failed-builds-plugin
 ScheduledTasksView Plugin,https://github.com/jenkinsci/ScheduledTasksView-plugin
 Schmant Plugin,https://github.com/jenkinsci/schmant-plugin
@@ -918,7 +773,6 @@ Script Realm Plugin,https://github.com/jenkinsci/script-realm-plugin
 Script Scm Plugin,https://github.com/jenkinsci/script-scm-plugin
 Scriptcs Plugin,https://github.com/jenkinsci/scriptcs-plugin
 Scripted Cloud Plugin,https://github.com/jenkinsci/scripted-cloud-plugin
-Sealights Plugin,https://github.com/jenkinsci/sealights-plugin
 Search All Results Plugin,https://github.com/jenkinsci/search-all-results-plugin
 Secondary Timestamper Plugin,https://github.com/jenkinsci/secondary-timestamper-plugin
 Secret Plugin,https://github.com/jenkinsci/secret-plugin
@@ -935,7 +789,6 @@ Seleniumhq Plugin,https://github.com/jenkinsci/seleniumhq-plugin
 Seleniumhtmlreport Plugin,https://github.com/jenkinsci/seleniumhtmlreport-plugin
 Seleniumrc Plugin,https://github.com/jenkinsci/seleniumrc-plugin
 Selfie Trigger Plugin,https://github.com/jenkinsci/selfie-trigger-plugin
-Sensedia Api Platform Plugin,https://github.com/jenkinsci/sensedia-api-platform-plugin
 Sep Plugin,https://github.com/jenkinsci/sep-plugin
 Serenitec Plugin,https://github.com/jenkinsci/serenitec-plugin
 Serenity Plugin,https://github.com/jenkinsci/serenity-plugin
@@ -947,8 +800,6 @@ Shared Workspace Plugin,https://github.com/jenkinsci/shared-workspace-plugin
 Shell Script Scm Plugin,https://github.com/jenkinsci/shell-script-scm-plugin
 Sicci For Xcode Plugin,https://github.com/jenkinsci/sicci-for-xcode-plugin
 Sidebar Update Notification Plugin,https://github.com/jenkinsci/sidebar-update-notification-plugin
-Sig Cloud Native,https://github.com/jenkinsci/sig-cloud-native
-Sig Ux,https://github.com/jenkinsci/sig-ux
 Silk Performer Plugin,https://github.com/jenkinsci/silk-performer-plugin
 Silktestsuite Plugin,https://github.com/jenkinsci/silktestsuite-plugin
 Simple Parameterized Builds Report Plugin,https://github.com/jenkinsci/simple-parameterized-builds-report-plugin
@@ -971,7 +822,6 @@ Slave Squatter Plugin,https://github.com/jenkinsci/slave-squatter-plugin
 Smart Jenkins Plugin,https://github.com/jenkinsci/smart-jenkins-plugin
 SmoothDashboardView Plugin,https://github.com/jenkinsci/SmoothDashboardView-plugin
 Sms Plugin,https://github.com/jenkinsci/sms-plugin
-Sonarqube Generic Coverage Plugin,https://github.com/jenkinsci/sonarqube-generic-coverage-plugin
 Sonarqube Plugin,https://github.com/jenkinsci/sonarqube-plugin
 Sonarqube Slack Pusher Plugin,https://github.com/jenkinsci/sonarqube-slack-pusher-plugin
 Sonatype Ci For Jenkins,https://github.com/jenkinsci/sonatype-ci-for-jenkins
@@ -981,17 +831,13 @@ Sparkle Appcast Plugin,https://github.com/jenkinsci/sparkle-appcast-plugin
 Speaks Plugin,https://github.com/jenkinsci/speaks-plugin
 Spoonscript Plugin,https://github.com/jenkinsci/spoonscript-plugin
 Spotinst Plugin,https://github.com/jenkinsci/spotinst-plugin
-Spring Initalzr Plugin,https://github.com/jenkinsci/spring-initalzr-plugin
 Springbeandoc Plugin,https://github.com/jenkinsci/springbeandoc-plugin
 Sqlplus Script Runner Plugin,https://github.com/jenkinsci/sqlplus-script-runner-plugin
-Sqs Notification Plugin,https://github.com/jenkinsci/sqs-notification-plugin
-Squashtm Publisher Plugin,https://github.com/jenkinsci/squashtm-publisher-plugin
 Sra Deploy Plugin,https://github.com/jenkinsci/sra-deploy-plugin
 Srcclr Installer Plugin,https://github.com/jenkinsci/srcclr-installer-plugin
 Ssh Cli Plugin,https://github.com/jenkinsci/ssh-cli-plugin
 SshProcess Check Plugin,https://github.com/jenkinsci/sshProcess-check-plugin
 Stackhammer Plugin,https://github.com/jenkinsci/stackhammer-plugin
-Stackify Deployment Recorder Plugin,https://github.com/jenkinsci/stackify-deployment-recorder-plugin
 Staf Plugin,https://github.com/jenkinsci/staf-plugin
 Staging Plugin,https://github.com/jenkinsci/staging-plugin
 Starteam Plugin,https://github.com/jenkinsci/starteam-plugin
@@ -1003,14 +849,12 @@ Statistics Notification Plugin,https://github.com/jenkinsci/statistics-notificat
 Status Monitors,https://github.com/jenkinsci/status-monitors
 Status View Plugin,https://github.com/jenkinsci/status-view-plugin
 Stepcounter Plugin,https://github.com/jenkinsci/stepcounter-plugin
-Stoplightio Report Plugin,https://github.com/jenkinsci/stoplightio-report-plugin
 Storable Configs Plugin,https://github.com/jenkinsci/storable-configs-plugin
 Strawboss Plugin,https://github.com/jenkinsci/strawboss-plugin
 Submitted Recipes,https://github.com/jenkinsci/submitted-recipes
 Subversion Mail Address Resolver Plugin,https://github.com/jenkinsci/subversion-mail-address-resolver-plugin
 Surround SCM Plugin,https://github.com/jenkinsci/Surround-SCM-plugin
 Svn Global Auth Provider Plugin,https://github.com/jenkinsci/svn-global-auth-provider-plugin
-Svn Partial Release Mgr Plugin,https://github.com/jenkinsci/svn-partial-release-mgr-plugin
 Svn Release Mgr Plugin,https://github.com/jenkinsci/svn-release-mgr-plugin
 Svn Tag Plugin,https://github.com/jenkinsci/svn-tag-plugin
 Svncompat13 Plugin,https://github.com/jenkinsci/svncompat13-plugin
@@ -1019,10 +863,7 @@ Svnimport Plugin,https://github.com/jenkinsci/svnimport-plugin
 Svnkit,https://github.com/jenkinsci/svnkit
 Svnmerge Plugin,https://github.com/jenkinsci/svnmerge-plugin
 Svnpublisher Plugin,https://github.com/jenkinsci/svnpublisher-plugin
-Swamp Plugin,https://github.com/jenkinsci/swamp-plugin
 Synergy_scm Plugin,https://github.com/jenkinsci/synergy_scm-plugin
-Synopsys Coverity Plugin,https://github.com/jenkinsci/synopsys-coverity-plugin
-Synopsys Polaris Plugin,https://github.com/jenkinsci/synopsys-polaris-plugin
 Syslog Logger Plugin,https://github.com/jenkinsci/syslog-logger-plugin
 System Config Dsl Plugin,https://github.com/jenkinsci/system-config-dsl-plugin
 Systemloadaverage Monitor Plugin,https://github.com/jenkinsci/systemloadaverage-monitor-plugin
@@ -1034,10 +875,8 @@ Teamconcert Git Plugin,https://github.com/jenkinsci/teamconcert-git-plugin
 Teamconcert Plugin,https://github.com/jenkinsci/teamconcert-plugin
 Telerik Appbuilder Plugin,https://github.com/jenkinsci/telerik-appbuilder-plugin
 Template Project Plugin,https://github.com/jenkinsci/template-project-plugin
-Templating Engine Plugin,https://github.com/jenkinsci/templating-engine-plugin
 Tepco Epuw Plugin,https://github.com/jenkinsci/tepco-epuw-plugin
 Tepco Plugin,https://github.com/jenkinsci/tepco-plugin
-Teresa Build Plugin,https://github.com/jenkinsci/teresa-build-plugin
 Terminal Plugin,https://github.com/jenkinsci/terminal-plugin
 Terraform Plugin,https://github.com/jenkinsci/terraform-plugin
 Test Plexus Component,https://github.com/jenkinsci/test-plexus-component
@@ -1048,24 +887,19 @@ Testabilityexplorer,https://github.com/jenkinsci/testabilityexplorer
 Testbed Ant Sample,https://github.com/jenkinsci/testbed-ant-sample
 Testbed Anttest Sample,https://github.com/jenkinsci/testbed-anttest-sample
 Testcomplete Xunit Plugin,https://github.com/jenkinsci/testcomplete-xunit-plugin
-Testcomplete11 Xunit Plugin,https://github.com/jenkinsci/testcomplete11-xunit-plugin
 Testfairy Plugin Old,https://github.com/jenkinsci/testfairy-plugin-old
 Testfairy Plugin,https://github.com/jenkinsci/testfairy-plugin
 Testflight Plugin,https://github.com/jenkinsci/testflight-plugin
 Testingbot Plugin,https://github.com/jenkinsci/testingbot-plugin
 Testodyssey Execution Plugin,https://github.com/jenkinsci/testodyssey-execution-plugin
 Testopia Plugin,https://github.com/jenkinsci/testopia-plugin
-Testquality Updater Plugin,https://github.com/jenkinsci/testquality-updater-plugin
 Testrail Plugin,https://github.com/jenkinsci/testrail-plugin
-Testsigma Plugin,https://github.com/jenkinsci/testsigma-plugin
 Testswarm Plugin,https://github.com/jenkinsci/testswarm-plugin
 Text File Operations Plugin,https://github.com/jenkinsci/text-file-operations-plugin
 Thread Dump Action Plugin,https://github.com/jenkinsci/thread-dump-action-plugin
 Threadfix Plugin,https://github.com/jenkinsci/threadfix-plugin
 Thucydides Plugin,https://github.com/jenkinsci/thucydides-plugin
-Thycotic Vault Plugin,https://github.com/jenkinsci/thycotic-vault-plugin
 Tibco Builder Plugin,https://github.com/jenkinsci/tibco-builder-plugin
-Tm4j Automation Plugin,https://github.com/jenkinsci/tm4j-automation-plugin
 Tortoisesvn Browser Plugin,https://github.com/jenkinsci/tortoisesvn-browser-plugin
 Trac Artifacts Publisher Plugin,https://github.com/jenkinsci/trac-artifacts-publisher-plugin
 Trac Plugin,https://github.com/jenkinsci/trac-plugin
@@ -1075,7 +909,6 @@ Tracking Svn Plugin,https://github.com/jenkinsci/tracking-svn-plugin
 Transifex Plugin,https://github.com/jenkinsci/transifex-plugin
 Travis Yml Plugin,https://github.com/jenkinsci/travis-yml-plugin
 Trial Balloon Plugin,https://github.com/jenkinsci/trial-balloon-plugin
-Tricentis Ci Plugin,https://github.com/jenkinsci/tricentis-ci-plugin
 Tusarnotifier Plugin,https://github.com/jenkinsci/tusarnotifier-plugin
 Tuxdroid Plugin,https://github.com/jenkinsci/tuxdroid-plugin
 Twilio Notifier Plugin,https://github.com/jenkinsci/twilio-notifier-plugin
@@ -1083,7 +916,6 @@ Twitter Plugin,https://github.com/jenkinsci/twitter-plugin
 URLSCM Plugin,https://github.com/jenkinsci/URLSCM-plugin
 Ucm4svn Plugin,https://github.com/jenkinsci/ucm4svn-plugin
 Ui Test Capture Plugin,https://github.com/jenkinsci/ui-test-capture-plugin
-Ui Ux Hackfest 2020,https://github.com/jenkinsci/ui-ux-hackfest-2020
 Uithemes Plugin,https://github.com/jenkinsci/uithemes-plugin
 Unicorn Plugin,https://github.com/jenkinsci/unicorn-plugin
 Unity Asset Server Plugin,https://github.com/jenkinsci/unity-asset-server-plugin
@@ -1095,22 +927,18 @@ Url Change Trigger Plugin,https://github.com/jenkinsci/url-change-trigger-plugin
 User Builds Starter Plugin,https://github.com/jenkinsci/user-builds-starter-plugin
 Utplsql Plugin,https://github.com/jenkinsci/utplsql-plugin
 Uvision Plugin,https://github.com/jenkinsci/uvision-plugin
-Ux Widget Framework,https://github.com/jenkinsci/ux-widget-framework
 VMWareLabManager Plugin,https://github.com/jenkinsci/VMWareLabManager-plugin
 Vaddy Plugin,https://github.com/jenkinsci/vaddy-plugin
 Vagrant Plugin,https://github.com/jenkinsci/vagrant-plugin
 Valgrind Plugin,https://github.com/jenkinsci/valgrind-plugin
-Valid Network Plugin,https://github.com/jenkinsci/valid-network-plugin
 Vault Scm Plugin,https://github.com/jenkinsci/vault-scm-plugin
 Vboxwrapper Plugin,https://github.com/jenkinsci/vboxwrapper-plugin
-Vcvarsall Plugin,https://github.com/jenkinsci/vcvarsall-plugin
 Vectorcast Coverage Plugin,https://github.com/jenkinsci/vectorcast-coverage-plugin
 Vectorcast Execution Plugin,https://github.com/jenkinsci/vectorcast-execution-plugin
 Veracode Scanner Plugin,https://github.com/jenkinsci/veracode-scanner-plugin
 Vertx Plugin,https://github.com/jenkinsci/vertx-plugin
 Vessel Plugin,https://github.com/jenkinsci/vessel-plugin
 View Cloner Plugin,https://github.com/jenkinsci/view-cloner-plugin
-View26 Plugin,https://github.com/jenkinsci/view26-plugin
 ViewVC Plugin,https://github.com/jenkinsci/viewVC-plugin
 Violation Columns Plugin,https://github.com/jenkinsci/violation-columns-plugin
 Violations Plugin,https://github.com/jenkinsci/violations-plugin
@@ -1130,11 +958,8 @@ Vsts Cd Plugin,https://github.com/jenkinsci/vsts-cd-plugin
 Walldisplay Plugin,https://github.com/jenkinsci/walldisplay-plugin
 Walti Plugin,https://github.com/jenkinsci/walti-plugin
 Waptpro Plugin,https://github.com/jenkinsci/waptpro-plugin
-Warrior Plugin,https://github.com/jenkinsci/warrior-plugin
 Was Builder Plugin,https://github.com/jenkinsci/was-builder-plugin
-Wavefront Plugin,https://github.com/jenkinsci/wavefront-plugin
 WebSVN2 Plugin,https://github.com/jenkinsci/WebSVN2-plugin
-Webhook Eventsource Plugin,https://github.com/jenkinsci/webhook-eventsource-plugin
 Webinspect Plugin,https://github.com/jenkinsci/webinspect-plugin
 Webload Plugin,https://github.com/jenkinsci/webload-plugin
 Websocket Plugin,https://github.com/jenkinsci/websocket-plugin
@@ -1152,18 +977,13 @@ Workflow Plugin Pipeline Demo,https://github.com/jenkinsci/workflow-plugin-pipel
 Workplace Plugin,https://github.com/jenkinsci/workplace-plugin
 Worksoft Certify Dashboard Plugin,https://github.com/jenkinsci/worksoft-certify-dashboard-plugin
 Worksoft Certify Process Runner Plugin,https://github.com/jenkinsci/worksoft-certify-process-runner-plugin
-Worksoft Certify Process Suite Plugin,https://github.com/jenkinsci/worksoft-certify-process-suite-plugin
 Writable Filesystem Monitor,https://github.com/jenkinsci/writable-filesystem-monitor
-Ws Execution Manager Plugin,https://github.com/jenkinsci/ws-execution-manager-plugin
 Ws Ws Replacement Plugin,https://github.com/jenkinsci/ws-ws-replacement-plugin
 Ws7 Plugin,https://github.com/jenkinsci/ws7-plugin
-Wso2 Import Plugin,https://github.com/jenkinsci/wso2-import-plugin
-Wso2id Oauth Plugin,https://github.com/jenkinsci/wso2id-oauth-plugin
 Wwpass Plugin,https://github.com/jenkinsci/wwpass-plugin
 Xcp Ci Plugin,https://github.com/jenkinsci/xcp-ci-plugin
 Xfpanel Plugin,https://github.com/jenkinsci/xfpanel-plugin
 Xframe Filter Plugin,https://github.com/jenkinsci/xframe-filter-plugin
-Xframium Plugin,https://github.com/jenkinsci/xframium-plugin
 Xlrelease Plugin,https://github.com/jenkinsci/xlrelease-plugin
 Xltestview Plugin,https://github.com/jenkinsci/xltestview-plugin
 Xpath Config Viewer Plugin,https://github.com/jenkinsci/xpath-config-viewer-plugin
