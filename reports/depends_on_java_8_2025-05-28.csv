@@ -884,10 +884,12 @@ Gcloud Plugin,https://github.com/jenkinsci/gcloud-plugin
 Gcloud Sdk Plugin,https://github.com/jenkinsci/gcloud-sdk-plugin
 Gcm Notification Plugin,https://github.com/jenkinsci/gcm-notification-plugin
 Gcp Java Sdk Plugin,https://github.com/jenkinsci/gcp-java-sdk-plugin
+Gcp Secrets Manager Credentials Provider Plugin,https://github.com/jenkinsci/gcp-secrets-manager-credentials-provider-plugin
 Gcr Scanner Plugin,https://github.com/jenkinsci/gcr-scanner-plugin
 Gcrawler Plugin,https://github.com/jenkinsci/gcrawler-plugin
 Gearman Plugin,https://github.com/jenkinsci/gearman-plugin
 Gem Publisher Plugin,https://github.com/jenkinsci/gem-publisher-plugin
+Generic Environment Filters Plugin,https://github.com/jenkinsci/generic-environment-filters-plugin
 Generic Event Plugin,https://github.com/jenkinsci/generic-event-plugin
 Generic Tool Plugin,https://github.com/jenkinsci/generic-tool-plugin
 Generic Webhook Trigger Plugin,https://github.com/jenkinsci/generic-webhook-trigger-plugin
@@ -951,6 +953,7 @@ Gitorious Plugin,https://github.com/jenkinsci/gitorious-plugin
 Global Build Stats Plugin,https://github.com/jenkinsci/global-build-stats-plugin
 Global Pipeline Parameters Plugin,https://github.com/jenkinsci/global-pipeline-parameters-plugin
 Global Post Script Plugin,https://github.com/jenkinsci/global-post-script-plugin
+Global Pre Script Plugin,https://github.com/jenkinsci/global-pre-script-plugin
 Global Slack Notifier Plugin,https://github.com/jenkinsci/global-slack-notifier-plugin
 Global Variable String Parameter Plugin,https://github.com/jenkinsci/global-variable-string-parameter-plugin
 Global Yaml Properties Plugin,https://github.com/jenkinsci/global-yaml-properties-plugin
@@ -1406,6 +1409,7 @@ M2release Plugin,https://github.com/jenkinsci/m2release-plugin
 Mabl Integration Plugin,https://github.com/jenkinsci/mabl-integration-plugin
 Mac Plugin,https://github.com/jenkinsci/mac-plugin
 Machine Learning Plugin,https://github.com/jenkinsci/machine-learning-plugin
+Macstadium Orka Plugin,https://github.com/jenkinsci/macstadium-orka-plugin
 Mail Commander Plugin,https://github.com/jenkinsci/mail-commander-plugin
 Mail Reminder Plugin,https://github.com/jenkinsci/mail-reminder-plugin
 Mail Watcher Plugin,https://github.com/jenkinsci/mail-watcher-plugin
@@ -1839,6 +1843,7 @@ Quamotion Cloud Plugin,https://github.com/jenkinsci/quamotion-cloud-plugin
 Quayio Trigger Plugin,https://github.com/jenkinsci/quayio-trigger-plugin
 Queue Cleanup Plugin,https://github.com/jenkinsci/queue-cleanup-plugin
 Queueredirector Plugin,https://github.com/jenkinsci/queueredirector-plugin
+Qy Wechat Notification Plugin,https://github.com/jenkinsci/qy-wechat-notification-plugin
 R Plugin,https://github.com/jenkinsci/r-plugin
 R7insight Log Forwarder Plugin,https://github.com/jenkinsci/r7insight-log-forwarder-plugin
 Rabbitmq Build Trigger Plugin,https://github.com/jenkinsci/rabbitmq-build-trigger-plugin
@@ -1868,6 +1873,8 @@ Redeploy Rancher2 Workload Plugin,https://github.com/jenkinsci/redeploy-rancher2
 Redgate Sql Ci Plugin,https://github.com/jenkinsci/redgate-sql-ci-plugin
 Redhat Codeready Dependency Analysis Plugin,https://github.com/jenkinsci/redhat-codeready-dependency-analysis-plugin
 Redhat Dependency Analytics Plugin,https://github.com/jenkinsci/redhat-dependency-analytics-plugin
+Redis Fingerprint Storage Plugin,https://github.com/jenkinsci/redis-fingerprint-storage-plugin
+Redis Notifier Plugin,https://github.com/jenkinsci/redis-notifier-plugin
 Redline Plugin,https://github.com/jenkinsci/redline-plugin
 Redmine Metrics Report Plugin,https://github.com/jenkinsci/redmine-metrics-report-plugin
 Redmine Plugin,https://github.com/jenkinsci/redmine-plugin
@@ -2102,6 +2109,7 @@ Split Admin Plugin,https://github.com/jenkinsci/split-admin-plugin
 Splunk Devops Plugin,https://github.com/jenkinsci/splunk-devops-plugin
 Spoonscript Plugin,https://github.com/jenkinsci/spoonscript-plugin
 Spotinst Plugin,https://github.com/jenkinsci/spotinst-plugin
+Spring Config Plugin,https://github.com/jenkinsci/spring-config-plugin
 Spring Initalzr Plugin,https://github.com/jenkinsci/spring-initalzr-plugin
 Springbeandoc Plugin,https://github.com/jenkinsci/springbeandoc-plugin
 Sqlplus Script Runner Plugin,https://github.com/jenkinsci/sqlplus-script-runner-plugin
@@ -2188,6 +2196,7 @@ Team Views Plugin,https://github.com/jenkinsci/team-views-plugin
 Teambition Devops Plugin,https://github.com/jenkinsci/teambition-devops-plugin
 Teams Webhook Trigger Plugin,https://github.com/jenkinsci/teams-webhook-trigger-plugin
 Teamscale Upload Plugin,https://github.com/jenkinsci/teamscale-upload-plugin
+Tekton Client Plugin,https://github.com/jenkinsci/tekton-client-plugin
 Telegram Notifications Plugin,https://github.com/jenkinsci/telegram-notifications-plugin
 Telerik Appbuilder Plugin,https://github.com/jenkinsci/telerik-appbuilder-plugin
 Template Project Plugin,https://github.com/jenkinsci/template-project-plugin
@@ -2202,6 +2211,7 @@ Test Results Analyzer Plugin,https://github.com/jenkinsci/test-results-analyzer-
 Test Stability Plugin,https://github.com/jenkinsci/test-stability-plugin
 TestInProgress Plugin,https://github.com/jenkinsci/testInProgress-plugin
 Testabilityexplorer,https://github.com/jenkinsci/testabilityexplorer
+Testcafe Plugin,https://github.com/jenkinsci/testcafe-plugin
 Testcomplete Plugin,https://github.com/jenkinsci/testcomplete-plugin
 Testcomplete Xunit Plugin,https://github.com/jenkinsci/testcomplete-xunit-plugin
 Testcomplete11 Xunit Plugin,https://github.com/jenkinsci/testcomplete11-xunit-plugin
@@ -2279,6 +2289,7 @@ Uipath Automation Package Plugin,https://github.com/jenkinsci/uipath-automation-
 Uithemes Plugin,https://github.com/jenkinsci/uithemes-plugin
 Uleska Plugin,https://github.com/jenkinsci/uleska-plugin
 Unicorn Plugin,https://github.com/jenkinsci/unicorn-plugin
+Unik Builder Plugin,https://github.com/jenkinsci/unik-builder-plugin
 Unique Id Plugin,https://github.com/jenkinsci/unique-id-plugin
 Unity Asset Server Plugin,https://github.com/jenkinsci/unity-asset-server-plugin
 Unity3d Plugin,https://github.com/jenkinsci/unity3d-plugin
@@ -2367,6 +2378,7 @@ Warnings Plugin,https://github.com/jenkinsci/warnings-plugin
 Warrior Plugin,https://github.com/jenkinsci/warrior-plugin
 Was Builder Plugin,https://github.com/jenkinsci/was-builder-plugin
 Wattspeed Plugin,https://github.com/jenkinsci/wattspeed-plugin
+Wavefront Plugin,https://github.com/jenkinsci/wavefront-plugin
 WebSVN2 Plugin,https://github.com/jenkinsci/WebSVN2-plugin
 Webhook Eventsource Plugin,https://github.com/jenkinsci/webhook-eventsource-plugin
 Webhook Step Plugin,https://github.com/jenkinsci/webhook-step-plugin
@@ -2374,6 +2386,7 @@ Webinspect Plugin,https://github.com/jenkinsci/webinspect-plugin
 Webload Plugin,https://github.com/jenkinsci/webload-plugin
 Weblogic Deployer Plugin,https://github.com/jenkinsci/weblogic-deployer-plugin
 Websocket Plugin,https://github.com/jenkinsci/websocket-plugin
+Websocketin Notification Plugin,https://github.com/jenkinsci/websocketin-notification-plugin
 Websphere Deployer Plugin,https://github.com/jenkinsci/websphere-deployer-plugin
 Webtestpresenter Plugin,https://github.com/jenkinsci/webtestpresenter-plugin
 Weibo Plugin,https://github.com/jenkinsci/weibo-plugin

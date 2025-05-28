@@ -34,6 +34,7 @@ Ascentialtest Cmd Line Plugin,https://github.com/jenkinsci/ascentialtest-cmd-lin
 Assertthat Bdd Jira Plugin,https://github.com/jenkinsci/assertthat-bdd-jira-plugin
 Audit Log Plugin,https://github.com/jenkinsci/audit-log-plugin
 Autoaction Step Plugin,https://github.com/jenkinsci/autoaction-step-plugin
+Autocancel Plugin,https://github.com/jenkinsci/autocancel-plugin
 Autonomiq Plugin,https://github.com/jenkinsci/autonomiq-plugin
 Aws Batch Plugin,https://github.com/jenkinsci/aws-batch-plugin
 Aws Cloudwatch Logs Publisher Plugin,https://github.com/jenkinsci/aws-cloudwatch-logs-publisher-plugin
@@ -99,6 +100,7 @@ Cli Commander Plugin,https://github.com/jenkinsci/cli-commander-plugin
 Cloudbees Devoptics Enabler Plugin,https://github.com/jenkinsci/cloudbees-devoptics-enabler-plugin
 Cloudbees Feature Management Plugin,https://github.com/jenkinsci/cloudbees-feature-management-plugin
 Cloudevents Plugin,https://github.com/jenkinsci/cloudevents-plugin
+Cloudguard Shiftleft Plugin,https://github.com/jenkinsci/cloudguard-shiftleft-plugin
 Cloudhub Deployer Plugin,https://github.com/jenkinsci/cloudhub-deployer-plugin
 Cloudify Plugin,https://github.com/jenkinsci/cloudify-plugin
 Cloudshell Sandbox Plugin,https://github.com/jenkinsci/cloudshell-sandbox-plugin
@@ -157,6 +159,7 @@ Docker Compose Build Step Plugin,https://github.com/jenkinsci/docker-compose-bui
 Docker Custom Build Environment Plugin,https://github.com/jenkinsci/docker-custom-build-environment-plugin
 Docker Slaves Plugin,https://github.com/jenkinsci/docker-slaves-plugin
 Docker Swarm Plugin,https://github.com/jenkinsci/docker-swarm-plugin
+Dotcommonitor Loadview Plugin,https://github.com/jenkinsci/dotcommonitor-loadview-plugin
 Dotnet As Script Plugin,https://github.com/jenkinsci/dotnet-as-script-plugin
 Dry Plugin,https://github.com/jenkinsci/dry-plugin
 Dtkit Plugin,https://github.com/jenkinsci/dtkit-plugin
@@ -186,6 +189,7 @@ Fireline Plugin,https://github.com/jenkinsci/fireline-plugin
 Fitnesse Plugin,https://github.com/jenkinsci/fitnesse-plugin
 Fluentd Plugin,https://github.com/jenkinsci/fluentd-plugin
 Form Element Path Plugin,https://github.com/jenkinsci/form-element-path-plugin
+Forticnp Cicd Plugin,https://github.com/jenkinsci/forticnp-cicd-plugin
 Fortify Cloudscan Plugin,https://github.com/jenkinsci/fortify-cloudscan-plugin
 Freestyle Project Plugin,https://github.com/jenkinsci/freestyle-project-plugin
 Frugal Testing Plugin,https://github.com/jenkinsci/frugal-testing-plugin
@@ -202,7 +206,9 @@ Git Tag Message Plugin,https://github.com/jenkinsci/git-tag-message-plugin
 Gitblit Plugin,https://github.com/jenkinsci/gitblit-plugin
 Gitea Pat Kubernetes Credentials Plugin,https://github.com/jenkinsci/gitea-pat-kubernetes-credentials-plugin
 Gitflow Plugin,https://github.com/jenkinsci/gitflow-plugin
+Github App Kubernetes Credentials Plugin,https://github.com/jenkinsci/github-app-kubernetes-credentials-plugin
 Github Autostatus Plugin,https://github.com/jenkinsci/github-autostatus-plugin
+Github Branch Pr Change Filter Plugin,https://github.com/jenkinsci/github-branch-pr-change-filter-plugin
 Github Label Filter Plugin,https://github.com/jenkinsci/github-label-filter-plugin
 Global Pre Script Plugin,https://github.com/jenkinsci/global-pre-script-plugin
 Gogs Webhook Plugin,https://github.com/jenkinsci/gogs-webhook-plugin
