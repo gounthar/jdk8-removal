@@ -121,6 +121,7 @@ Artifactdeployer Plugin,https://github.com/jenkinsci/artifactdeployer-plugin
 Artifactory Artifact Manager Plugin,https://github.com/jenkinsci/artifactory-artifact-manager-plugin
 Artifactory Client Api Plugin,https://github.com/jenkinsci/artifactory-client-api-plugin
 Artifactory Plugin,https://github.com/jenkinsci/artifactory-plugin
+Artifactz Plugin,https://github.com/jenkinsci/artifactz-plugin
 Asakusa Satellite Plugin,https://github.com/jenkinsci/asakusa-satellite-plugin
 Ascentialtest Cmd Line Plugin,https://github.com/jenkinsci/ascentialtest-cmd-line-plugin
 Ascii Magician Plugin,https://github.com/jenkinsci/ascii-magician-plugin
@@ -139,6 +140,7 @@ Audit2db Plugin,https://github.com/jenkinsci/audit2db-plugin
 Authentication Tokens Plugin,https://github.com/jenkinsci/authentication-tokens-plugin
 Authorize Project Plugin,https://github.com/jenkinsci/authorize-project-plugin
 Autify Plugin,https://github.com/jenkinsci/autify-plugin
+Autoaction Step Plugin,https://github.com/jenkinsci/autoaction-step-plugin
 Autocancel Plugin,https://github.com/jenkinsci/autocancel-plugin
 Autocomplete Parameter Plugin,https://github.com/jenkinsci/autocomplete-parameter-plugin
 Autograding Plugin,https://github.com/jenkinsci/autograding-plugin
@@ -503,6 +505,7 @@ Configuration As Code Plugin,https://github.com/jenkinsci/configuration-as-code-
 Configuration As Code Secret Ssm Plugin,https://github.com/jenkinsci/configuration-as-code-secret-ssm-plugin
 Configurationslicing Plugin,https://github.com/jenkinsci/configurationslicing-plugin
 Configure Job Column Plugin,https://github.com/jenkinsci/configure-job-column-plugin
+Conflict Aware Ondemand Strategy Plugin,https://github.com/jenkinsci/conflict-aware-ondemand-strategy-plugin
 Confluence Pipeline Steps Plugin,https://github.com/jenkinsci/confluence-pipeline-steps-plugin
 Confluence Publisher Plugin,https://github.com/jenkinsci/confluence-publisher-plugin
 Conjur Credentials Plugin,https://github.com/jenkinsci/conjur-credentials-plugin
@@ -739,6 +742,7 @@ Ecutest Plugin,https://github.com/jenkinsci/ecutest-plugin
 Eddsa Api Plugin,https://github.com/jenkinsci/eddsa-api-plugin
 Editable Choice Plugin,https://github.com/jenkinsci/editable-choice-plugin
 Eggplant Plugin,https://github.com/jenkinsci/eggplant-plugin
+Eggplant Runner Plugin,https://github.com/jenkinsci/eggplant-runner-plugin
 Eiffel Broadcaster Plugin,https://github.com/jenkinsci/eiffel-broadcaster-plugin
 Eks Token Plugin,https://github.com/jenkinsci/eks-token-plugin
 Elastest Plugin,https://github.com/jenkinsci/elastest-plugin
@@ -936,6 +940,7 @@ Github Release Plugin,https://github.com/jenkinsci/github-release-plugin
 Github Scm Trait Notification Context Plugin,https://github.com/jenkinsci/github-scm-trait-notification-context-plugin
 Github Sqs Plugin,https://github.com/jenkinsci/github-sqs-plugin
 Gitlab Api Plugin Archived,https://github.com/jenkinsci/gitlab-api-plugin-archived
+Gitlab Api Plugin,https://github.com/jenkinsci/gitlab-api-plugin
 Gitlab Auth Plugin,https://github.com/jenkinsci/gitlab-auth-plugin
 Gitlab Automatic Item Creator Plugin,https://github.com/jenkinsci/gitlab-automatic-item-creator-plugin
 Gitlab Branch Source Plugin,https://github.com/jenkinsci/gitlab-branch-source-plugin
@@ -985,6 +990,7 @@ Gradle Plugin,https://github.com/jenkinsci/gradle-plugin
 Gradle Repo Plugin,https://github.com/jenkinsci/gradle-repo-plugin
 Grails Plugin,https://github.com/jenkinsci/grails-plugin
 Graphite Plugin,https://github.com/jenkinsci/graphite-plugin
+Graphql Server Plugin,https://github.com/jenkinsci/graphql-server-plugin
 Gravatar Plugin,https://github.com/jenkinsci/gravatar-plugin
 Graven Plugin,https://github.com/jenkinsci/graven-plugin
 Greenballs Plugin,https://github.com/jenkinsci/greenballs-plugin
@@ -1902,6 +1908,7 @@ Resources Ai Chatbot Plugin,https://github.com/jenkinsci/resources-ai-chatbot-pl
 Rest List Parameter Plugin,https://github.com/jenkinsci/rest-list-parameter-plugin
 Rest Service Scheduler Plugin,https://github.com/jenkinsci/rest-service-scheduler-plugin
 Restrict Steps Plugin,https://github.com/jenkinsci/restrict-steps-plugin
+Results Cache Plugin,https://github.com/jenkinsci/results-cache-plugin
 Revbits Pam Plugin,https://github.com/jenkinsci/revbits-pam-plugin
 Reverse Proxy Auth Plugin,https://github.com/jenkinsci/reverse-proxy-auth-plugin
 Reviewboard Plugin,https://github.com/jenkinsci/reviewboard-plugin
