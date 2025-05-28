@@ -90,7 +90,7 @@ joda-time-api:2.14.0-127.v7d9da_295a_d51
 asm-api:9.8-135.vb_2239d08ee90
 eddsa-api:0.3.0.1-19.vc432d923e5ee
 authentication-tokens:1.131.v7199556c3004
-metrics:4.2.30-471.v55fa_495f2b_f5
+metrics:4.2.32-476.v5042e1c1edd7
 javadoc:327.vdfe586651ee0
 maven-plugin:3.26
 docker-commons:451.vd12c371eeeb_3
@@ -101,7 +101,7 @@ dark-theme:524.vd675b_22b_30cb_
 docker-workflow:611.v16e84da_6d3ff
 htmlpublisher:425
 lockable-resources:1349.v8b_ccb_c5487f7
-pipeline-graph-view:538.v647ee88449dd
+pipeline-graph-view:543.v7e391c24713d
 role-strategy:771.v3fa_85a_df2c50
 handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
@@ -109,10 +109,10 @@ mapdb-api:1.0.9-44.va_1e1310c9118
 popper2-api:2.11.6-5
 subversion:1287.vd2d507146906
 jersey2-api:2.45-154.v4ded3dc34f81
-favorite:2.235.v4d873c7d02e9
+favorite:2.237.v79163ca_8b_892
 pubsub-light:1.19
 external-monitor-job:223.vb_fddcf42c9b_3
-cloudbees-bitbucket-branch-source:936.3.0
+cloudbees-bitbucket-branch-source:936.3.1
 blueocean-commons:1.27.19
 jenkins-design-language:1.27.19
 blueocean-rest:1.27.19
@@ -165,12 +165,12 @@ copyartifact:770.va_6c69e063442
 mercurial:1309.v6802b_f0efb_b_9
 uno-choice:2.8.8
 kubernetes-client-api:6.10.0-251.v556f5f100500
-configuration-as-code:1967.va_968e15fd05b_
+configuration-as-code:1971.vf9280461ea_89
 kubernetes-credentials:192.v4d5b_1c429d17
 cloud-stats:377.vd8a_6c953e98e
 slack:761.v2a_8770f0d169
 job-dsl:1.92
-kubernetes:4340.v345364d31a_2a_
+kubernetes:4349.v8fe8f2b_ee9f1
 aws-java-sdk-minimal:1.12.780-480.v4a_0819121a_9e
 build-user-vars-plugin:195.v8c35f9d5c3dc
 aws-credentials:245.v8a_1b_7c11a_94d
