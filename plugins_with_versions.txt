@@ -8,7 +8,7 @@ CustomHistory:1.6
 Exclusion:0.15
 GatekeeperPlugin:3.0.5
 JDK_Parameter_Plugin:1.3
-JiraTestResultReporter:280.v359a_d57c2fb_0
+JiraTestResultReporter:300.v7a_d8b_cee2906
 Matrix-sorter-plugin:1.3
 NegotiateSSO:153.v85355f1cb_26d
 Office-365-Connector:5.1.0
@@ -144,7 +144,7 @@ aws-codebuild:0.59
 aws-codecommit-jobs:0.3.0
 aws-codecommit-trigger:3.0.12
 aws-codepipeline:0.49
-aws-credentials:245.v8a_1b_7c11a_94d
+aws-credentials:248.v78a_dcfc9db_ff
 aws-device-farm:1.34
 aws-global-configuration:146.vfcec61593eea_
 aws-java-sdk:1.12.780-480.v4a_0819121a_9e
@@ -405,7 +405,7 @@ cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:241.v0ea_d9a_a_96ee8
 cloudbees-enabler:1.43.v5b_7c0c898e84
 cloudbees-feature-management:141.v77cb_218b_8813
-cloudbees-folder:6.1021.v98130a_a_71a_94
+cloudbees-folder:6.1023.v4fcb_72152519
 cloudbees-jenkins-advisor:384.vf19423a_eb_9b_0
 cloudcoreo-deploytime:0.2.3
 cloudevents:1.0.0
@@ -599,7 +599,7 @@ deployment-sphere:0.1.105
 describe-with-params:1.0
 description-column-plugin:1.3
 description-setter:264.v1957f215dcd5
-design-library:380.v552d32a_3b_8a_c
+design-library:392.v39c9a_b_da_4e71
 deveo:1.1.2
 device-watcher:36.v584f65b_8e185
 devops-portal:415.vaf57f86bb4d1
@@ -626,7 +626,7 @@ distfork:1.8
 dlisting-cov:1.0
 docker-build-publish:1.4.0
 docker-build-step:2.12
-docker-commons:451.vd12c371eeeb_3
+docker-commons:457.v0f62a_94f11a_3
 docker-compose-build-step:1.0
 docker-custom-build-environment:1.7.3
 docker-java-api:3.5.0-108.v211cdd21c383
@@ -634,7 +634,7 @@ docker-plugin:1274.vc0203fdf2e74
 docker-slaves:1.0.7
 docker-swarm:1.11
 docker-traceability:1.2
-docker-workflow:611.v16e84da_6d3ff
+docker-workflow:621.va_73f881d9232
 dockerhub-notification:222.v483263f10718
 doclinks:0.7
 dogu-integration:27.vd4da_5fea_e29f
@@ -814,14 +814,14 @@ gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
 gitea-checks:530.v38d502df428f
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1201.vc0f481dff802
+gitee:1204.v4635f4272c96
 gitflow:1.0.1
 github:1.43.0
 github-api:1.321-488.v9b_c0da_9533f8
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
-github-branch-source:1815.v9152b_2ff7a_1b_
+github-branch-source:1822.v9eec8e5e69e3
 github-checks:602.v264a_83610da_6
 github-coverage-reporter:1.10
 github-issues:1.2.4
@@ -979,7 +979,7 @@ jabber:1.42
 jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
-jackson2-api:2.19.0-404.vb_b_0fd2fea_e10
+jackson2-api:2.18.3-402.v74c4eb_f122b_2
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
@@ -1093,7 +1093,7 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2
-kubernetes:4350.va_0283de0d6d6
+kubernetes:4353.vb_47977da_9417
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:6.10.0-251.v556f5f100500
 kubernetes-credentials:192.v4d5b_1c429d17
@@ -1378,7 +1378,7 @@ pending-changes:0.3.0
 people-redirector:1.3
 people-view:1.2
 percentage-du-node-column:0.1.0
-performance:984.v7a_a_a_123a_a_952
+performance:986.v58145e1e2781
 performance-signature-dynatrace:3.2.2
 performance-signature-dynatracesaas:3.2.2
 performance-signature-ui:3.2.2
@@ -1412,12 +1412,12 @@ pipeline-github-lib:65.v203688e7727e
 pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
-pipeline-graph-analysis:237.v2b_75640ca_888
-pipeline-graph-view:543.v7e391c24713d
+pipeline-graph-analysis:241.vc3d48fb_b_2582
+pipeline-graph-view:551.vde72dc246b_c4
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
-pipeline-input-step:517.vf8e782ee645c
+pipeline-input-step:527.vd61b_1d3c5078
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.1
 pipeline-maven:1530.v625a_45ca_0fdd
@@ -1559,7 +1559,7 @@ release-helper:1.3.3
 reliza-integration:0.3.5
 relution-publisher:1.24
 remote-file:1.24
-remote-result-trigger:3.160.vc6cb_9e187364
+remote-result-trigger:3.162.v2cddcd0a_5c9e
 remote-terminal-access:1.6
 remoting-kafka:2.0.1
 remoting-opentelemetry:1.0-rc89.d67d14d05962
@@ -1583,7 +1583,7 @@ rich-text-publisher-plugin:1.5
 rigor-optimization:1.04
 robot:6.0.0
 rocketchatnotifier:1.5.2
-role-strategy:771.v3fa_85a_df2c50
+role-strategy:775.vf7c4a_97194dd
 rpi-build-status:0.7
 rpmsign-plugin:0.5.1
 rqm-plugin:2.8
@@ -1611,7 +1611,7 @@ sauce-ondemand:2.0
 sbt:88.vee3829489c40
 scala-junit-name-decoder:1.0
 scalable-amazon-ecs:1.0
-schedule-build:649.vd4058b_a_a_cf54
+schedule-build:667.vda_a_fe31e1659
 scm-api:704.v3ce5c542825a_
 scm-filter-branch-pr:222.v72301ecb_a_ee7
 scm-filter-jervis:2.0.1-68.v738626177078
@@ -1752,7 +1752,7 @@ stepcounter:2.0.0
 stoplightio-report:2.2.5
 strawboss:1.3
 strict-crumb-issuer:2.1.1
-structs:343.vdcf37b_a_c81d5
+structs:350.v3b_30f09f2363
 subversion:1287.vd2d507146906
 suite-test-groups-publisher:1.13
 summary_report:1.15
@@ -1800,7 +1800,7 @@ testabilityexplorer:0.4
 testcafe:1.0
 testcomplete-xunit:1.1
 testcomplete11-xunit:1.1
-testdroid-run-in-cloud:3.24
+testdroid-run-in-cloud:3.40.0
 testein:1.0
 testflo-for-jira-test-management-automation:1.3.3
 testingbot:1.21
@@ -1954,7 +1954,7 @@ workflow-cps:4106.v7a_8a_8176d450
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
 workflow-durable-task-step:1405.v1fcd4a_d00096
-workflow-job:1520.v56d65e3b_4566
+workflow-job:1532.va_9a_d244074a_3
 workflow-multibranch:806.vb_b_688f609ee9
 workflow-remote-loader:1.6
 workflow-scm-step:437.v05a_f66b_e5ef8
