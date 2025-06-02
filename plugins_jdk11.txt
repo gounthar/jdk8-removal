@@ -52,6 +52,8 @@ delphix:3.2.1
 deployed-on-column:1.9
 deployer-framework:88.ve78a_92f39e8e
 deployment-notification:78.v94930204e4f7
+devops-portal:415.vaf57f86bb4d1
+digicert-software-trust-code-sign:18.v7ec4e7c19a_1b
 digicert-software-trust-gpg-sign:19.va_8b_60320b_ec8
 distfork:1.8
 doclinks:0.7
@@ -155,6 +157,7 @@ redhat-dependency-analytics:0.9.1.134.va_886e3790140
 redis-fingerprint-storage:1.0-rc-3
 release:2.19
 remote-file:1.24
+report-diff:4.1
 rocketchatnotifier:1.5.2
 s3explorer:1.0.8
 scoverage:1.4.0
@@ -169,6 +172,7 @@ splunk-devops:1.11.0
 ssh2easy:1.6
 sumologic-publisher:2.2.6
 svn-revert-plugin:279.va_77c7e060d51
+synopsys-security-scan:1.8.1
 teamscale-upload:1.4.7
 template-workflows:41.v32d86a_313b_4a
 test-results-aggregator:3.0
