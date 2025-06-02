@@ -629,7 +629,7 @@ docker-build-step:2.12
 docker-commons:457.v0f62a_94f11a_3
 docker-compose-build-step:1.0
 docker-custom-build-environment:1.7.3
-docker-java-api:3.5.0-108.v211cdd21c383
+docker-java-api:3.5.1-116.v2798d5ed4ce7
 docker-plugin:1274.vc0203fdf2e74
 docker-slaves:1.0.7
 docker-swarm:1.11
@@ -1253,7 +1253,7 @@ multi-branch-project-plugin:0.7
 multi-module-tests-publisher:1.44
 multi-slave-config-plugin:1.2.0
 multibranch-action-triggers:1.8.10
-multibranch-build-strategy-extension:61.vf6d8f6f5ed02
+multibranch-build-strategy-extension:64.v348e3c69f1f5
 multibranch-job-tear-down:1.2
 multibranch-scan-webhook-trigger:1.0.11
 multiple-scms:0.8
@@ -1266,7 +1266,7 @@ nant:248.vcc8a_3eec8db_a
 neoload-jenkins-plugin:2.2.11
 nerrvana-plugin:1.02.06
 nested-data-reporting:932.vb_56fa_a_954885
-nested-view:239.vb_8c100b_46b_a_8
+nested-view:241.v178f0b_a_cd76a_
 netdomain-labeler:0.0.2
 netsparker-cloud-scan:2.1.17
 netty-api:4.1.118.Final-9.v776038d601a_7
@@ -1403,6 +1403,7 @@ pipeline-build-step:567.vea_ce550ece97
 pipeline-cloudwatch-logs:195.va_a_dcfa_e6e78d
 pipeline-config-history:1.6
 pipeline-cps-http:157.vf9a_893b_ed047
+pipeline-cps-oras:8.v5d229eb_a_22c5
 pipeline-dependency-walker:1.0.0
 pipeline-deploymon:1.0
 pipeline-gcp:22.vcc10eff7c13f
