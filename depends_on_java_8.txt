@@ -36,6 +36,7 @@ adobe-cloud-manager:43.v4560e7fa191c
 adoptopenjdk:1.7
 advanced-installer-msi-builder:3.0.0
 agent-loadbalance:1.0
+agent-maintenance:2.220.v4b_a_5cfe9e18b_
 agent-server-parameter:1.1
 aio-tests:1.14
 alauda-devops-credentials-provider:2.4.1
@@ -509,6 +510,7 @@ custom-build-properties:2.90.v4c63458e3ec8
 custom-checkbox-parameter:1.4
 custom-folder-icon:2.20
 custom-job-icon:0.2
+custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
 customizable-header:192.vce4a_5da_934c4
@@ -543,6 +545,7 @@ debian-pbuilder:1.11
 declarative-pipeline-migration-assistant-api:1.6.5
 declarative-pipeline-migration-assistant:1.6.5
 deepcrawl-test:37.vb_ea_2b_c3d76ef
+defectdojo:1.064.v65b_f28b_4a_fea_
 defensics:2024.11.0
 delete-log-plugin:1.0
 delivery-pipeline-plugin:1.4.2
@@ -571,6 +574,7 @@ devops-portal:415.vaf57f86bb4d1
 diagnostics:1.2
 diawi-upload:1.5
 digicert-software-trust-code-sign:18.v7ec4e7c19a_1b
+digicert-software-trust-gpg-sign:19.va_8b_60320b_ec8
 digitalocean-plugin:1.3.1
 dimensionsscm:0.9.3.1
 dingding-json-pusher:2.0
@@ -635,6 +639,7 @@ echarts-api:5.6.0-4
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
 ecutest:2.46
+eddsa-api:0.3.0.1-19.vc432d923e5ee
 editable-choice:71.v02a291ebbe45
 eggplant-runner:0.0.1.300.v6280c46cd670
 eiffel-broadcaster:2.10.3
@@ -840,6 +845,7 @@ hashicorp-vault-pipeline:1.4
 hashicorp-vault-plugin:371.v884a_4dd60fb_6
 hckrnews:1.1
 heavy-job:1.1
+helix-alm-test-management:1.0.15
 helix-teamhub:1.1.5
 hetzner-cloud:87.v3e433a96543b
 hidden-parameter:414.vfe0a_8b_052546
@@ -973,6 +979,7 @@ jobdelete-builder:1.0
 jobgenerator:1.22
 jobrequeue:1.1
 jobrevision:0.6
+jobtag:25.va_12b_1dd63367
 jobtemplates:1.0
 jobtype-column:1.3
 joda-time-api:2.14.0-127.v7d9da_295a_d51
@@ -1252,6 +1259,7 @@ osf-builder-suite-for-sfcc-deploy:1.1.13
 osf-builder-suite-for-sfcc-run-job:1.0.5
 osf-builder-suite-standalone-sonar-linter:1.0.3
 oslc-cm:1.31
+oss-symbols-api:324.v432cce4172ca_
 ostorlab:1.11
 overops-query:3.0.3
 oversecured:1.1
@@ -1380,6 +1388,7 @@ prometheus:819.v50953a_c560dd
 promoted-builds-simple:1.9
 promoted-builds:992.va_00888f21b_74
 propelo-job-reporter:1.0.36
+provar-automation:68.v91b_13f4101e2
 proxmox:0.7.1
 prqa-plugin:3.3.5
 publish-over-cifs:0.16

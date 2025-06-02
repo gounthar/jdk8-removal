@@ -22,6 +22,7 @@ Adoptopenjdk Plugin,https://github.com/jenkinsci/adoptopenjdk-plugin
 Advanced Installer Msi Builder Plugin,https://github.com/jenkinsci/advanced-installer-msi-builder-plugin
 Agc App Upload Plugin,https://github.com/jenkinsci/agc-app-upload-plugin
 Agent Loadbalance Plugin,https://github.com/jenkinsci/agent-loadbalance-plugin
+Agent Maintenance Plugin,https://github.com/jenkinsci/agent-maintenance-plugin
 Agent Server Parameter Plugin,https://github.com/jenkinsci/agent-server-parameter-plugin
 Agent Setup Plugin,https://github.com/jenkinsci/agent-setup-plugin
 Agent Status Plugin,https://github.com/jenkinsci/agent-status-plugin
@@ -583,6 +584,7 @@ Custom Distribution Service,https://github.com/jenkinsci/custom-distribution-ser
 Custom Folder Icon Plugin,https://github.com/jenkinsci/custom-folder-icon-plugin
 Custom History Plugin,https://github.com/jenkinsci/custom-history-plugin
 Custom Job Icon Plugin,https://github.com/jenkinsci/custom-job-icon-plugin
+Custom Markup Formatter Plugin,https://github.com/jenkinsci/custom-markup-formatter-plugin
 Custom Tools Plugin,https://github.com/jenkinsci/custom-tools-plugin
 Custom View Tabs Plugin,https://github.com/jenkinsci/custom-view-tabs-plugin
 Custom War Packager,https://github.com/jenkinsci/custom-war-packager
@@ -624,6 +626,7 @@ Debian Pbuilder Plugin,https://github.com/jenkinsci/debian-pbuilder-plugin
 Declarative Pipeline Migration Assistant Plugin,https://github.com/jenkinsci/declarative-pipeline-migration-assistant-plugin
 Declarative Pipeline When Conditions Plugin,https://github.com/jenkinsci/declarative-pipeline-when-conditions-plugin
 Deepcrawl Test Plugin,https://github.com/jenkinsci/deepcrawl-test-plugin
+Defectdojo Plugin,https://github.com/jenkinsci/defectdojo-plugin
 Defensics Plugin,https://github.com/jenkinsci/defensics-plugin
 Delete Log Plugin,https://github.com/jenkinsci/delete-log-plugin
 Delivery Pipeline Plugin,https://github.com/jenkinsci/delivery-pipeline-plugin
@@ -655,6 +658,7 @@ Devops Portal Plugin,https://github.com/jenkinsci/devops-portal-plugin
 Diagnostics Plugin,https://github.com/jenkinsci/diagnostics-plugin
 Diawi Upload Plugin,https://github.com/jenkinsci/diawi-upload-plugin
 Digicert Software Trust Code Sign Plugin,https://github.com/jenkinsci/digicert-software-trust-code-sign-plugin
+Digicert Software Trust Gpg Sign Plugin,https://github.com/jenkinsci/digicert-software-trust-gpg-sign-plugin
 Digitalocean Plugin,https://github.com/jenkinsci/digitalocean-plugin
 Dimensions Plugin,https://github.com/jenkinsci/dimensions-plugin
 Dimensionsscm Plugin,https://github.com/jenkinsci/dimensionsscm-plugin
@@ -735,6 +739,7 @@ Eclipse Builder Plugin,https://github.com/jenkinsci/eclipse-builder-plugin
 Eclipse Update Site Plugin,https://github.com/jenkinsci/eclipse-update-site-plugin
 Ecs Publisher Plugin,https://github.com/jenkinsci/ecs-publisher-plugin
 Ecutest Plugin,https://github.com/jenkinsci/ecutest-plugin
+Eddsa Api Plugin,https://github.com/jenkinsci/eddsa-api-plugin
 Editable Choice Plugin,https://github.com/jenkinsci/editable-choice-plugin
 Eggplant Plugin,https://github.com/jenkinsci/eggplant-plugin
 Eggplant Runner Plugin,https://github.com/jenkinsci/eggplant-runner-plugin
@@ -1017,6 +1022,7 @@ Hashicorp Vault Plugin,https://github.com/jenkinsci/hashicorp-vault-plugin
 Hckrnews Plugin,https://github.com/jenkinsci/hckrnews-plugin
 Headspin Plugin,https://github.com/jenkinsci/headspin-plugin
 Heavy Job Plugin,https://github.com/jenkinsci/heavy-job-plugin
+Helix Alm Test Management Plugin,https://github.com/jenkinsci/helix-alm-test-management-plugin
 Helix Teamhub Plugin,https://github.com/jenkinsci/helix-teamhub-plugin
 Hello World Groovy Plugin,https://github.com/jenkinsci/hello-world-groovy-plugin
 Hello World Groovy View Plugin,https://github.com/jenkinsci/hello-world-groovy-view-plugin
@@ -1212,6 +1218,7 @@ Jobgenerator Plugin,https://github.com/jenkinsci/jobgenerator-plugin
 Jobinjector Plugin,https://github.com/jenkinsci/jobinjector-plugin
 Jobrequeue Plugin,https://github.com/jenkinsci/jobrequeue-plugin
 Jobrevision Plugin,https://github.com/jenkinsci/jobrevision-plugin
+Jobtag Plugin,https://github.com/jenkinsci/jobtag-plugin
 Jobtemplates Plugin,https://github.com/jenkinsci/jobtemplates-plugin
 Jobtype Column Plugin,https://github.com/jenkinsci/jobtype-column-plugin
 Joda Time Api Plugin,https://github.com/jenkinsci/joda-time-api-plugin
@@ -1627,6 +1634,7 @@ Osf Builder Suite For Sfcc Run Job Plugin,https://github.com/jenkinsci/osf-build
 Osf Builder Suite Standalone Sonar Linter Plugin,https://github.com/jenkinsci/osf-builder-suite-standalone-sonar-linter-plugin
 Osf Builder Suite Xml Linter Plugin,https://github.com/jenkinsci/osf-builder-suite-xml-linter-plugin
 Oslc Cm Plugin,https://github.com/jenkinsci/oslc-cm-plugin
+Oss Symbols Api Plugin,https://github.com/jenkinsci/oss-symbols-api-plugin
 Ostorlab Plugin,https://github.com/jenkinsci/ostorlab-plugin
 Overops Query Plugin,https://github.com/jenkinsci/overops-query-plugin
 Oversecured Plugin,https://github.com/jenkinsci/oversecured-plugin
@@ -1784,6 +1792,7 @@ Promoted Builds Plugin,https://github.com/jenkinsci/promoted-builds-plugin
 Promoted Builds Simple Plugin,https://github.com/jenkinsci/promoted-builds-simple-plugin
 Propelo Job Reporter Plugin,https://github.com/jenkinsci/propelo-job-reporter-plugin
 Protecode Sc Plugin,https://github.com/jenkinsci/protecode-sc-plugin
+Provar Automation Plugin,https://github.com/jenkinsci/provar-automation-plugin
 Proxmox Plugin,https://github.com/jenkinsci/proxmox-plugin
 Prqa Plugin,https://github.com/jenkinsci/prqa-plugin
 Pry Plugin,https://github.com/jenkinsci/pry-plugin
@@ -2465,6 +2474,7 @@ Zentimestamp Plugin,https://github.com/jenkinsci/zentimestamp-plugin
 Zephyr Enterprise Test Management Plugin,https://github.com/jenkinsci/zephyr-enterprise-test-management-plugin
 Zephyr For Jira Test Management Plugin,https://github.com/jenkinsci/zephyr-for-jira-test-management-plugin
 Zerobug Plugin,https://github.com/jenkinsci/zerobug-plugin
+Zerothreat Dast Scanner Plugin,https://github.com/jenkinsci/zerothreat-dast-scanner-plugin
 Zfs Plugin,https://github.com/jenkinsci/zfs-plugin
 Zohoqengine Plugin,https://github.com/jenkinsci/zohoqengine-plugin
 Zohosprints Plugin,https://github.com/jenkinsci/zohosprints-plugin
