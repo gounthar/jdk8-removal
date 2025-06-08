@@ -33,7 +33,7 @@ acunetix:1.2.14
 acunetix-360-scan:2.1.17
 adaptive-disconnector:0.2
 add-changes-to-build-changelog:21.v537f074cf2cc
-additional-identities-plugin:109.v2c51a_117a_7b_4
+additional-identities-plugin:132.vb_3f63a_db_8f4b_
 additional-metrics:146.v88cfe819665c
 admin-params:1.0.0
 adobe-cloud-manager:43.v4560e7fa191c
@@ -108,7 +108,7 @@ artifact-promotion:0.5.2
 artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
 artifactory:4.0.8
-artifactory-artifact-manager:222.v721418296a_b_1
+artifactory-artifact-manager:237.v4000e4b_72cfd
 artifactory-client-api:2.19.0-92.v57b_50df9c76f
 artifactz:1.3.1-49.v21e3510b_2b_67
 asakusa-satellite-plugin:0.1.1
@@ -208,7 +208,7 @@ aws-sqs-trigger:1.2
 aws-yum-parameter:1.5
 awseb-deployment-plugin:0.3.21
 azure-acs:1.0.4
-azure-ad:561.v85263ce9a_b_b_f
+azure-ad:580.v2f665882b_a_71
 azure-app-service:1.0.2
 azure-artifact-manager:187.vc45952e6c7fc
 azure-batch-parallel:0.2
@@ -399,7 +399,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:936.3.1
+cloudbees-bitbucket-branch-source:936.4.0
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:241.v0ea_d9a_a_96ee8
@@ -536,12 +536,12 @@ cucumber-trends-report:1.3
 curseforge-publisher:1.0
 custom-build-properties:2.90.v4c63458e3ec8
 custom-checkbox-parameter:1.4
-custom-folder-icon:2.20
+custom-folder-icon:2.21
 custom-job-icon:0.2
 custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
-customizable-header:196.vc0ff775f5dcf
+customizable-header:204.v3b_e97b_a_194b_f
 customize-build-now:45.v783928138223
 customized-build-message:1.1
 cvs:483.v69a_98dfd973b_
@@ -574,7 +574,7 @@ declarative-pipeline-migration-assistant:1.6.5
 declarative-pipeline-migration-assistant-api:1.6.5
 deepcrawl-test:37.vb_ea_2b_c3d76ef
 deepsecurity-smartcheck:1.1.3
-defectdojo:1.064.v65b_f28b_4a_fea_
+defectdojo:1.070.vd1b_4f6c9ec73
 defensics:2024.11.0
 delete-log-plugin:1.0
 delivery-pipeline-plugin:1.4.2
@@ -734,7 +734,7 @@ fail-the-build-plugin:5.v153b_2c826ef0
 failedJobDeactivator:1.2.1
 fast-track:1.0.0
 favorite:2.237.v79163ca_8b_892
-favorite-view:27.ve63a_9a_ecd782
+favorite-view:35.v2b_e0cc172fb_7
 feature-branch-notifier:1.4
 fedora-module-build-system:1.0.1
 figlet-buildstep:0.2
@@ -812,7 +812,7 @@ gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
-gitea-checks:530.v38d502df428f
+gitea-checks:551.vd306d7ca_b_18f
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1204.v4635f4272c96
 gitflow:1.0.1
@@ -879,7 +879,7 @@ gradle-daemon:0.1.0
 gradle-repo:1.0.1
 graphiteIntegrator:1.2
 graphql-server:0.0.5
-gravatar:136.vd91673a_6b_b_3d
+gravatar:159.v205f4fffb_8cd
 greenballs:1.15.1
 groovy:497.v7b_061a_a_de65d
 groovy-events-listener-plugin:2.261.vb_0834490b_821
@@ -1016,7 +1016,7 @@ jfrog:1.5.8
 jgiven:0.15.1
 jianliao:1.1
 jigomerge:0.9
-jira:3.16
+jira:3.17
 jira-ext:114.v7b_8b_1d4274c6
 jira-integration:5.6.0-52.v095e44e20b_25
 jira-steps:2.0.180.vccfe35b_5910d
@@ -1026,7 +1026,7 @@ jmh-report:0.9.0
 jms-messaging:1.1.28
 jna-posix-api:1.0.3-jenkins-1
 jnr-posix-api:3.1.20-138.vdb_9db_a_39182f
-job-dsl:1.92
+job-dsl:1.93
 job-exporter:0.4
 job-fan-in:1.1.4
 job-import-plugin:122.v35289550f1e6
@@ -1036,7 +1036,7 @@ job-parameter-summary:0.5
 job-poll-action-plugin:1.0
 job-restrictions:216.v0732cc7fb_076
 job-strongauth-simple:0.5
-jobConfigHistory:1305.vf20a_356586b_8
+jobConfigHistory:1309.vb_4360782b_d22
 jobcacher:658.v3a_c3ed19fd14
 jobcacher-artifactory-storage:158.vc4b_753b_b_7f04
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
@@ -1177,7 +1177,7 @@ marathon:1.6.0
 mariadb-api:3.5.3-129.v941f87fa_d251
 markdown-formatter:235.v2b_16f8e14918
 markdown-params:71.v576911a_6e3b_c
-mask-passwords:196.v7d505d39886e
+mask-passwords:199.va_0218b_a_59186
 material-theme:0.5.2-rc100.6121925fe229
 mathworks-polyspace:1.0.12
 matlab:970.v2a_b_10cc96e58
@@ -1414,7 +1414,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:555.v9240755e262d
+pipeline-graph-view:565.vb_991078a_56d6
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1623,7 +1623,7 @@ scm-sync-configuration:0.0.10
 scm2job:2.5
 scmskip:79.v311ff68f9df1
 scons:0.4
-scoring-load-balancer:165.v1b_ef69a_329d1
+scoring-load-balancer:183.v3377a_8d2ca_31
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
@@ -1890,7 +1890,7 @@ vault-scm-plugin:1.1.1
 vboxwrapper:1.3
 vdoo-vision:1.9
 vectorcast-coverage:0.22
-vectorcast-execution:0.77
+vectorcast-execution:0.78
 venafi-codesigning:1.2.1
 venafi-vcert:2.1.0
 veracode-scan:25.3.24.0
