@@ -1324,7 +1324,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:572.vdf005772f358
+pipeline-graph-view:573.v7fc7fb_cfd029
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1370,7 +1370,7 @@ portscanner:1.7
 post-completed-build-result:1.1
 postbuild-task:72.v75dc459e4747
 postbuildscript:3.4.1-695.vf6b_0b_8053979
-postgresql-api:42.7.5-56.vc0921b_3cc11e
+postgresql-api:42.7.7-67.v70a_30b_84f58b_
 postgresql-fingerprint-storage:356.vb_b_879da_38f38
 powershell:2.3
 preSCMbuildstep:115.vf9808414429d
