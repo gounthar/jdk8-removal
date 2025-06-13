@@ -59,7 +59,7 @@ amazon-ecr:1.151.vb_ca_71ddd0b_cf
 amazon-ecs:1.49
 amazon-inspector-image-scanner:492.v4996d9230272
 amqp-build-trigger:1.0
-analysis-model-api:13.2.0
+analysis-model-api:13.5.0
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -1036,7 +1036,7 @@ job-parameter-summary:0.5
 job-poll-action-plugin:1.0
 job-restrictions:216.v0732cc7fb_076
 job-strongauth-simple:0.5
-jobConfigHistory:1328.vb_24fa_565cfec
+jobConfigHistory:1330.vcb_8320ea_cdb_e
 jobcacher:658.v3a_c3ed19fd14
 jobcacher-artifactory-storage:158.vc4b_753b_b_7f04
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
@@ -1860,7 +1860,7 @@ uleska:38.v2f6e7a27eb0a
 unicorn:0.1.1
 unique-id:2.117.v7a_81333a_584b_
 unity3d-plugin:1.3
-unleash:113.v1b_534213e217
+unleash:115.v7f18ecc3758a_
 uno-choice:2.8.8
 unreliable-slave-plugin:1.2
 update-sites-manager:91.v38ff0407cb_a_d
