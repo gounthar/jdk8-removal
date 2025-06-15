@@ -59,7 +59,7 @@ amazon-ecr:1.151.vb_ca_71ddd0b_cf
 amazon-ecs:1.49
 amazon-inspector-image-scanner:492.v4996d9230272
 amqp-build-trigger:1.0
-analysis-model-api:13.2.0
+analysis-model-api:13.5.0
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -248,7 +248,7 @@ bitbucket:273.v7b_535e8f11c2
 bitbucket-approval-filter:1.0.3
 bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
-bitbucket-filter-project-trait:1.0
+bitbucket-filter-project-trait:19.vdd668c4d36c7
 bitbucket-kubernetes-credentials:505.v9b_c3edf104f6
 bitbucket-oauth:0.14
 bitbucket-pullrequest-builder:1.5.0
@@ -373,7 +373,7 @@ chatter-notifier:2.1.1
 chatwork:1.0.10
 checkmarx:2024.3.2
 checkmarx-ast-scanner:2.0.13-804.va_472353f5a_5b_
-checks-api:370.vb_61a_c57328f3
+checks-api:373.vfe7645102093
 chef-cookbook-pipeline:0.1.0
 chef-identity:2.0.3
 chef-tracking:1.0
@@ -541,7 +541,7 @@ custom-job-icon:0.2
 custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
-customizable-header:206.vcb_285113d9fd
+customizable-header:214.vf2a_c8767e457
 customize-build-now:45.v783928138223
 customized-build-message:1.1
 cvs:483.v69a_98dfd973b_
@@ -559,7 +559,7 @@ database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:134.v4287ed4a_ccd6
 database-mysql:142.vc259713f0032
 database-postgresql:146.vd1a_f70b_56e0e
-database-sqlite:1.9
+database-sqlite:1.10
 database-sqlserver:91.v61e8e4680cdc
 datadog:9.1.6
 datatheorem-mobile-app-security:2.4.2
@@ -1010,7 +1010,7 @@ jenkins-testswarm-plugin:1.2
 jenkinsci-appspider-plugin:1.0.17
 jenkinslint:0.14.0
 jenkinswalldisplay:0.6.34
-jersey2-api:2.45-154.v4ded3dc34f81
+jersey2-api:2.47-165.ve7809a_3e87e0
 jetbrains-space:1.53.vcd2e91eb_a_620
 jfrog:1.5.8
 jgiven:0.15.1
@@ -1036,7 +1036,7 @@ job-parameter-summary:0.5
 job-poll-action-plugin:1.0
 job-restrictions:216.v0732cc7fb_076
 job-strongauth-simple:0.5
-jobConfigHistory:1328.vb_24fa_565cfec
+jobConfigHistory:1330.vcb_8320ea_cdb_e
 jobcacher:658.v3a_c3ed19fd14
 jobcacher-artifactory-storage:158.vc4b_753b_b_7f04
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
@@ -1339,7 +1339,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.18
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.2.10-48.vc5cca_8d3f946
+oras-java-api:0.2.11-64.va_d3e7ee471ef
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1460,7 +1460,7 @@ port-allocator:351.v7a_94cf6e4677
 portscanner:1.7
 portshift-scanner:49.v106d3c954452
 post-completed-build-result:1.1
-postbuild-task:72.v75dc459e4747
+postbuild-task:78.v24529f1f5cdb_
 postbuildscript:3.4.1-695.vf6b_0b_8053979
 postgresql-api:42.7.7-67.v70a_30b_84f58b_
 postgresql-fingerprint-storage:356.vb_b_879da_38f38
@@ -1860,7 +1860,7 @@ uleska:38.v2f6e7a27eb0a
 unicorn:0.1.1
 unique-id:2.117.v7a_81333a_584b_
 unity3d-plugin:1.3
-unleash:113.v1b_534213e217
+unleash:115.v7f18ecc3758a_
 uno-choice:2.8.8
 unreliable-slave-plugin:1.2
 update-sites-manager:91.v38ff0407cb_a_d
