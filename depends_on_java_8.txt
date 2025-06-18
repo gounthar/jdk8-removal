@@ -38,7 +38,7 @@ advanced-installer-msi-builder:3.0.0
 agent-loadbalance:1.0
 agent-maintenance:2.220.v4b_a_5cfe9e18b_
 agent-server-parameter:1.1
-aio-tests:1.14
+aio-tests:1.15
 alauda-devops-credentials-provider:2.4.1
 alauda-devops-pipeline:2.3.2
 alauda-devops-sync:2.4.2
@@ -287,7 +287,7 @@ branch-api:2.1217.v43d8b_b_d8b_2c7
 breachlock-dast:1.2
 browser-axis-plugin:1.0
 browserstack-integration:1.2.17
-btc-embeddedplatform:25.1.2
+btc-embeddedplatform:25.1.3
 buckminster:1.1.1
 bugzilla:1.5
 build-alias-setter:44.vb_f626d6f2734
@@ -455,7 +455,7 @@ configuration-as-code:1971.vf9280461ea_89
 configurationslicing:664.vdda_74145b_b_d0
 configure-job-column-plugin:84.v792c9269f95a
 conflict-aware-ondemand-strategy:2.164.v72960e62e06b_
-conjur-credentials:3.0.3
+conjur-credentials:3.0.5
 conjur-simple-integration:0.0.1
 console-badge:1.1
 console-column-plugin:261.vd7e35335049b_
@@ -1088,7 +1088,7 @@ m2release:0.16.4
 mabl-integration:0.0.51
 mac:1.6.1
 machine-learning:1.0.1
-macstadium-orka:2.06
+macstadium-orka:2.07
 mail-watcher-plugin:1.20
 mailcommander:1.0.0
 mailer:489.vd4b_25144138f
