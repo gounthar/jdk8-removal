@@ -294,7 +294,7 @@ bmc-change-manager-imstm:48.v6bd42382a2ee
 bmc-rpd:1.1
 boot-clj:1.0.0
 bootstrap4-api:4.6.0-6
-bootstrap5-api:5.3.5-1
+bootstrap5-api:5.3.7-1
 bootstraped-multi-test-results-report:2.2.1
 bouncycastle-api:2.30.1.80-261.v00c0e2618ec3
 branch-api:2.1226.ve1e7e0b_4b_95f
@@ -509,7 +509,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.7.0
+coverage:2.7.1
 coverage-badges-extension:157.vf5d725246222
 coverity:1.11.4
 cppcheck:1.26
@@ -553,7 +553,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:567.v9d3ca_a_3142f5
 dashboard-view:2.528.v3470c02b_d7c9
-data-tables-api:2.2.2-1
+data-tables-api:2.3.2-1
 database:274.vea_2e859b_2661
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:134.v4287ed4a_ccd6
@@ -669,7 +669,7 @@ ec2:1935.v9b_77210472b_1
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
 ec2-fleet:3.2.0
-echarts-api:5.6.0-4
+echarts-api:5.6.0-5
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
 ecu-test-execution:3.9
@@ -1098,7 +1098,7 @@ kubernetes:4358.vcfd9c5a_0a_f51
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:203.v85b_9836a_f44b_
-kubernetes-credentials-provider:1.284.v003ef70a_a_9cd
+kubernetes-credentials-provider:1.290.ve56494531260
 kubernetes-pipeline-devops-steps:1.6
 kubesphere-token-auth:1.7
 label-linked-jobs:6.0.1
@@ -1957,7 +1957,7 @@ workflow-basic-steps:1079.vce64b_a_929c5a_
 workflow-cps:4150.ve20ca_b_a_a_2815
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
-workflow-durable-task-step:1431.v16e66c8a_58b_f
+workflow-durable-task-step:1434.v1b_595c29ddd7
 workflow-job:1540.v295eccc9778f
 workflow-multibranch:806.vb_b_688f609ee9
 workflow-remote-loader:1.6
