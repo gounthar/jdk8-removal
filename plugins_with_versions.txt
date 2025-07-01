@@ -1094,10 +1094,10 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2
-kubernetes:4356.vfa_556c21f086
+kubernetes:4358.vcfd9c5a_0a_f51
 kubernetes-cli:1.364.vadef8cb8b823
-kubernetes-client-api:6.14.0-255.v44e4b_386fb_a_e
-kubernetes-credentials:195.v0c273a_cfb_4f4
+kubernetes-client-api:7.3.1-256.v788a_0b_787114
+kubernetes-credentials:203.v85b_9836a_f44b_
 kubernetes-credentials-provider:1.284.v003ef70a_a_9cd
 kubernetes-pipeline-devops-steps:1.6
 kubesphere-token-auth:1.7
