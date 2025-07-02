@@ -629,7 +629,7 @@ docker-build-step:2.12
 docker-commons:457.v0f62a_94f11a_3
 docker-compose-build-step:1.0
 docker-custom-build-environment:1.7.3
-docker-java-api:3.5.1-116.v2798d5ed4ce7
+docker-java-api:3.5.2-119.v54c784c71fa_3
 docker-plugin:1274.vc0203fdf2e74
 docker-slaves:1.0.7
 docker-swarm:1.11
@@ -1380,7 +1380,7 @@ pending-changes:0.3.0
 people-redirector:1.3
 people-view:1.2
 percentage-du-node-column:0.1.0
-performance:986.v58145e1e2781
+performance:988.v5699a_d7c9162
 performance-signature-dynatrace:3.2.2
 performance-signature-dynatracesaas:3.2.2
 performance-signature-ui:3.2.2
@@ -1741,7 +1741,7 @@ ssh-credentials:359.v2191c4cf635f
 ssh-slaves:3.1031.v72c6b_883b_869
 ssh-steps:2.0.79.v1d1b_5f76dda_8
 ssh2easy:1.6
-sshd:3.353.v2b_d33c46e970
+sshd:3.372.v5d04a_e92d8cf
 stackhammer:1.0.6
 stackify-deployment-recorder:1.1.0
 stackrox-container-image-scanner:1.4.3
