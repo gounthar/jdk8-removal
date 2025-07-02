@@ -25,7 +25,7 @@ accelerated-build-now-plugin:1.0.1
 accelq-ci-connect:132.v4b_f3197e02c1
 accurev:0.7.24
 active-directory:2.40
-acunetix-360-scan:2.1.17
+acunetix-360-scan:2.1.18
 acunetix:1.2.14
 adaptive-disconnector:0.2
 add-changes-to-build-changelog:21.v537f074cf2cc
@@ -89,6 +89,7 @@ applatix:1.1
 application-director-plugin:1.3
 applitools-eyes:1.16.5
 appray:1.1.1
+apprenda:2.2.0
 appscan:1.7.0
 aqua-microscanner:1.0.8
 aqua-security-scanner:3.2.8
@@ -506,6 +507,7 @@ cucumber-slack-notifier:0.10.0
 cucumber-testresult-plugin:0.10.1
 cucumber-trends-report:1.3
 curseforge-publisher:1.0
+custom-build-properties:2.90.v4c63458e3ec8
 custom-checkbox-parameter:1.4
 custom-folder-icon:2.21
 custom-job-icon:0.2
@@ -1188,7 +1190,7 @@ nerrvana-plugin:1.02.06
 nested-data-reporting:932.vb_56fa_a_954885
 nested-view:241.v178f0b_a_cd76a_
 netdomain-labeler:0.0.2
-netsparker-cloud-scan:2.1.17
+netsparker-cloud-scan:2.1.18
 netty-api:4.1.118.Final-9.v776038d601a_7
 network-monitor:1.1
 neuro-cucumber:1.0.4
@@ -1197,6 +1199,7 @@ newrelic-deployment-notifier:1.12
 next-build-number:66.v4b_4762172d53
 next-executions:424.v631378313e29
 nexus-artifact-uploader:2.14
+nirmata:1.0.11
 nis-notification-lamp:1.131
 no-agent-job-purge:24.vb_2e4b_b_e0e938
 node-iterator-api:72.vc90e81737df1
@@ -1414,7 +1417,7 @@ qiniu:1.2.0
 qmetry-for-jira-test-management:1.25
 qmetry-test-management:1.13
 qrebel:1.0.1
-qtest:2024.3
+qtest:2025.1
 quali-torque:2.1.0-307.vfa_3d28f8a_8b_3
 quality-gates:2.5
 qualityclouds:1.0.1
@@ -1711,7 +1714,7 @@ thycotic-secret-server:2.0
 thycotic-vault:1.0.4
 tibco-builder:1.4
 tics:2024.1.2
-timestamper:1.29
+timestamper:1.30
 tm4j-automation:3.3.4
 tmpcleaner:1.3
 token-macro:444.v52de7e9c573d
