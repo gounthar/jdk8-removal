@@ -526,7 +526,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:574.va_19f05d54df5
 dashboard-view:2.528.v3470c02b_d7c9
-data-tables-api:2.3.2-2
+data-tables-api:2.3.2-3
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:134.v4287ed4a_ccd6
 database-mysql:142.vc259713f0032
@@ -1317,7 +1317,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-cloudwatch-logs:195.va_a_dcfa_e6e78d
 pipeline-config-history:1.6
 pipeline-cps-http:157.vf9a_893b_ed047
-pipeline-cps-oras:8.v5d229eb_a_22c5
+pipeline-cps-oras:26.v2fc834c2e7a_9
 pipeline-dependency-walker:1.0.0
 pipeline-deploymon:1.0
 pipeline-gcp:22.vcc10eff7c13f
