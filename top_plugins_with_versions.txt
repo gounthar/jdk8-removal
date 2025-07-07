@@ -95,14 +95,14 @@ javadoc:327.vdfe586651ee0
 maven-plugin:3.26
 docker-commons:457.v0f62a_94f11a_3
 git-server:137.ve0060b_432302
-theme-manager:294.vf2c2fd783821
+theme-manager:310.v234c7de84f9c
 config-file-provider:988.v0461fcc2b_9d1
-dark-theme:567.v9d3ca_a_3142f5
+dark-theme:574.va_19f05d54df5
 docker-workflow:621.va_73f881d9232
 htmlpublisher:425
 lockable-resources:1349.v8b_ccb_c5487f7
-pipeline-graph-view:588.v1efd7e219272
-role-strategy:783.ve14e9f60fc26
+pipeline-graph-view:590.v06d574696250
+role-strategy:785.v8d262df0f607
 handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 mapdb-api:1.0.9-44.va_1e1310c9118
@@ -112,7 +112,7 @@ jersey2-api:2.47-165.ve7809a_3e87e0
 favorite:2.237.v79163ca_8b_892
 pubsub-light:1.19
 external-monitor-job:223.vb_fddcf42c9b_3
-cloudbees-bitbucket-branch-source:936.4.2
+cloudbees-bitbucket-branch-source:936.4.3
 blueocean-commons:1.27.21
 jenkins-design-language:1.27.21
 blueocean-rest:1.27.21
@@ -136,7 +136,7 @@ blueocean-git-pipeline:1.27.21
 pipeline-utility-steps:2.19.0
 localization-zh-cn:371.v23851f835d6b_
 blueocean-dashboard:1.27.21
-publish-over-ssh:387.vec3df0f668cd
+publish-over-ssh:390.vb_f56e7405751
 blueocean-github-pipeline:1.27.21
 bootstrap4-api:4.6.0-6
 run-condition:243.v3c3f94e46a_8b_
@@ -228,7 +228,7 @@ commons-httpclient3-api:3.1-3
 Office-365-Connector:5.1.0
 code-coverage-api:4.99.0
 jacoco:3.3.7
-msbuild:1.36
+msbuild:1.37
 prometheus:819.v50953a_c560dd
 built-on-column:1.5
 nodelabelparameter:759.vb_b_e95db_f3251
