@@ -525,7 +525,7 @@ dagshub-branch-source:19.v23b9b9c2c08f
 daily-quote:1.0
 darcs:0.3.11
 dark-theme:574.va_19f05d54df5
-dashboard-view:2.528.v3470c02b_d7c9
+dashboard-view:2.537.v5132851f6ca_f
 data-tables-api:2.3.2-3
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:134.v4287ed4a_ccd6
@@ -763,6 +763,7 @@ git-push:34.vd474e0fe7b_ec
 git-server:137.ve0060b_432302
 git-tag-message:1.7.1
 git-userContent:1.4
+git-version-monitor:5.v9a_1e79cdff09
 git:5.7.0
 gitblit:1.2
 gitbucket:0.8
@@ -1328,7 +1329,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:595.va_7a_db_787a_a_a_5
+pipeline-graph-view:596.v55503fe10d5d
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
