@@ -65,7 +65,7 @@ anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
 android-signing:2.2.5
-anka-build:2.12.0
+anka-build:2.13.0
 ansible:524.v9fa_a_4c989224
 ansible-tower:0.17.0
 ansicolor:1.0.6
@@ -1399,7 +1399,7 @@ phabricator-k8s:1.0.0
 phabricator-plugin:2.1.5
 phing:0.13.3
 php-builtin-web-server:0.1
-piketec-tpt:9.4
+piketec-tpt:9.5
 pipeline-agent-build-history:100.v42603a_8d8477
 pipeline-aggregator-view:119.v4b_ec11953552
 pipeline-as-yaml:270.vc348a_45d9214
@@ -1636,7 +1636,7 @@ scp:1.8
 script-realm:1.5
 script-security:1373.vb_b_4a_a_c26fa_00
 scripted-cloud-plugin:0.12
-scriptler:421.vdd840443a_851
+scriptler:424.v7d2218cec040
 sdelements:1.0.2
 sealights:1.4.353
 search-all-results-plugin:1.0
