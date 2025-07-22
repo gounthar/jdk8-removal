@@ -56,7 +56,7 @@ alibabacloud-pkg-deployment:1.0
 aliyun-oss-uploader:1.4
 all-changes:1.5
 allure-jenkins-plugin:2.32.0
-amazon-ecr:1.151.vb_ca_71ddd0b_cf
+amazon-ecr:1.155.v3d884c1b_dee1
 amazon-ecs:1.49
 amazon-inspector-image-scanner:492.v4996d9230272
 amqp-build-trigger:1.0
@@ -347,7 +347,7 @@ ca-apm:2.1.8
 ca-mat-performance-benchmarking-by-broadcom:1.7
 ca-service-virtualization:1.0.7
 cachet-gating:1.0.10
-caffeine-api:3.2.0-166.v72a_6d74b_870f
+caffeine-api:3.2.2-178.v353b_8428ed56
 calendar-view:0.3.6
 caliper-ci:2.3
 call-remote-job-plugin:1.0.21
@@ -373,7 +373,7 @@ chaos-monkey:0.4.1
 chartjs-api:4.2.1.5
 chatter-notifier:2.1.1
 chatwork:1.0.10
-checkmarx:2024.3.2
+checkmarx:2025.3.1
 checkmarx-ast-scanner:2.0.13-808.v2b_45cb_61a_8a_4
 checks-api:373.vfe7645102093
 chef-cookbook-pipeline:0.1.0
@@ -401,7 +401,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:936.4.3
+cloudbees-bitbucket-branch-source:936.4.4
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:241.v0ea_d9a_a_96ee8
@@ -819,7 +819,7 @@ gitea-checks:551.vd306d7ca_b_18f
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1204.v4635f4272c96
 gitflow:1.0.1
-github:1.43.0
+github:1.44.0
 github-api:1.321-488.v9b_c0da_9533f8
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
@@ -982,7 +982,7 @@ jabber:1.42
 jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
-jackson2-api:2.19.0-404.vb_b_0fd2fea_e10
+jackson2-api:2.19.2-408.v18248a_324cfe
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
@@ -1230,7 +1230,7 @@ mina-sshd-api-scp:2.15.0-161.vb_200831a_c15b_
 mina-sshd-api-sftp:2.15.0-161.vb_200831a_c15b_
 minio:1.3.499.v9d1eeeee3a_68
 minio-storage:0.0.3
-miniorange-saml-sp:2.4.6
+miniorange-saml-sp:2.4.7
 miniorange-two-factor:1.0.9
 misra-compliance-report-generator:1.0
 mission-control-view:0.9.16
@@ -1269,7 +1269,7 @@ naginator:1.504.vfc3736332f16
 nant:248.vcc8a_3eec8db_a
 neoload-jenkins-plugin:2.2.11
 nerrvana-plugin:1.02.06
-nested-data-reporting:932.vb_56fa_a_954885
+nested-data-reporting:999.va_f6e0da_b_979f
 nested-view:241.v178f0b_a_cd76a_
 netdomain-labeler:0.0.2
 netsparker-cloud-scan:2.1.18
@@ -1351,7 +1351,7 @@ osf-builder-suite-for-sfcc-deploy:1.1.13
 osf-builder-suite-for-sfcc-run-job:1.0.5
 osf-builder-suite-standalone-sonar-linter:1.0.3
 oslc-cm:1.31
-oss-symbols-api:356.v2da_d59a_3742b_
+oss-symbols-api:388.v1e168e8f0d76
 ostorlab:1.11
 outbound-webhook:0.3.0
 overops-query:3.0.3
@@ -1420,7 +1420,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:600.vc287d1a_d4b_47
+pipeline-graph-view:603.v23e636851f81
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1613,7 +1613,7 @@ sahagin:0.10.1
 salesforce-migration-assistant-plugin:2.2.2
 saltstack:3.2.2
 sametime:0.4
-saml:4.544.v264eea_ed3eed
+saml:4.568.v78a_9a_db_8dc9b_
 sasunit-plugin:1.024
 sauce-ondemand:2.2.0
 sbt:88.vee3829489c40
@@ -1958,7 +1958,7 @@ wiz-scanner:86.v1ca_10b_a_5ef2f
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1380.ve03e7a_63d139
 workflow-basic-steps:1079.vce64b_a_929c5a_
-workflow-cps:4168.v7ea_f89c358b_d
+workflow-cps:4169.vb_7e492a_1c7b_e
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
 workflow-durable-task-step:1434.v1b_595c29ddd7
