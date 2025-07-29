@@ -21,7 +21,6 @@ https://github.com/jenkinsci/archive-files-scm-plugin
 https://github.com/jenkinsci/archived-artifact-url-viewer-plugin
 https://github.com/jenkinsci/artifact-parameter-plugin
 https://github.com/jenkinsci/artifact-version-recorder-plugin
-https://github.com/jenkinsci/assembla-merge-request-builder-plugin
 https://github.com/jenkinsci/autocomplete-parameter-plugin
 https://github.com/jenkinsci/aws-s3-cleaner-plugin
 https://github.com/jenkinsci/azure-iot-edge-plugin
@@ -42,7 +41,6 @@ https://github.com/jenkinsci/backend-list-pending-pull-requests
 https://github.com/jenkinsci/backend-plugin-report-card
 https://github.com/jenkinsci/backend-plugin2rpm
 https://github.com/jenkinsci/backend-pull-request-greeter
-https://github.com/jenkinsci/backend-recipe-submission-app
 https://github.com/jenkinsci/backend-update-center
 https://github.com/jenkinsci/backend-war-size-tracker
 https://github.com/jenkinsci/bamboo-notifier-plugin
@@ -110,7 +108,6 @@ https://github.com/jenkinsci/color-logger-plugin
 https://github.com/jenkinsci/commit-message-trigger-plugin
 https://github.com/jenkinsci/commons-fileupload
 https://github.com/jenkinsci/composer-dependency-analysis-plugin
-https://github.com/jenkinsci/composer-trigger-plugin
 https://github.com/jenkinsci/concurrent-run-blocker-plugin
 https://github.com/jenkinsci/conditional-upstream-trigger-plugin
 https://github.com/jenkinsci/config-autorefresh-plugin
@@ -135,7 +132,6 @@ https://github.com/jenkinsci/customtools-extended-choice-version-plugin
 https://github.com/jenkinsci/cvs-mail-address-resolver-plugin
 https://github.com/jenkinsci/cvs-tag-plugin
 https://github.com/jenkinsci/cvsclient
-https://github.com/jenkinsci/database-drizzle-plugin
 https://github.com/jenkinsci/ddt-plugin
 https://github.com/jenkinsci/debian-package-builder-plugin
 https://github.com/jenkinsci/delta-cloud-plugin
@@ -148,7 +144,6 @@ https://github.com/jenkinsci/discobit-autoconfig-plugin
 https://github.com/jenkinsci/distinguishable-gray-balls-plugin
 https://github.com/jenkinsci/docker-flow-plugin
 https://github.com/jenkinsci/dockerhub-plugin
-https://github.com/jenkinsci/domain-discovery-module
 https://github.com/jenkinsci/doony-plugin
 https://github.com/jenkinsci/DotCi
 https://github.com/jenkinsci/drools-plugin
@@ -167,7 +162,6 @@ https://github.com/jenkinsci/es-extensions
 https://github.com/jenkinsci/event-streamer-plugin
 https://github.com/jenkinsci/events-materials
 https://github.com/jenkinsci/external-resource-dispatcher-plugin
-https://github.com/jenkinsci/external-scheduler-plugin
 https://github.com/jenkinsci/extras-android
 https://github.com/jenkinsci/extras-client-demo
 https://github.com/jenkinsci/extras-ec2-launcher
@@ -207,10 +201,8 @@ https://github.com/jenkinsci/gitlab-hook-plugin
 https://github.com/jenkinsci/gitlab-merge-request-builder-plugin
 https://github.com/jenkinsci/gitorious-plugin
 https://github.com/jenkinsci/gmaven
-https://github.com/jenkinsci/go-performance-publisher-plugin
 https://github.com/jenkinsci/golo-plugin
 https://github.com/jenkinsci/google-chat-plugin
-https://github.com/jenkinsci/google-deployment-manager-plugin
 https://github.com/jenkinsci/google-desktop-gadget-plugin
 https://github.com/jenkinsci/googlecode-plugin
 https://github.com/jenkinsci/gradle-jte-plugin
@@ -253,7 +245,6 @@ https://github.com/jenkinsci/instant-messaging-parent-plugin
 https://github.com/jenkinsci/intellij-jenkins-control-plugin
 https://github.com/jenkinsci/iojs-plugin
 https://github.com/jenkinsci/ion-deployer-plugin
-https://github.com/jenkinsci/ios-otabuilder-plugin
 https://github.com/jenkinsci/iosbuilder-plugin
 https://github.com/jenkinsci/iphoneview-plugin
 https://github.com/jenkinsci/ipmsg-plugin
@@ -370,7 +361,6 @@ https://github.com/jenkinsci/mansion-cloud-plugin
 https://github.com/jenkinsci/marketing
 https://github.com/jenkinsci/mashup-portlets-plugin
 https://github.com/jenkinsci/master-to-master-api-plugin
-https://github.com/jenkinsci/matrix-checkout-strategies-plugin
 https://github.com/jenkinsci/maven-deployment-linker-plugin
 https://github.com/jenkinsci/maven-dump-test-dependencies-plugin
 https://github.com/jenkinsci/maven-scm-plugin
@@ -407,7 +397,6 @@ https://github.com/jenkinsci/nexus-platform-plugin
 https://github.com/jenkinsci/node-offline-notification-plugin
 https://github.com/jenkinsci/nodejs-packages
 https://github.com/jenkinsci/notify-yo-plugin
-https://github.com/jenkinsci/nsis-plugin
 https://github.com/jenkinsci/octopus-client-plugin
 https://github.com/jenkinsci/onealert-trigger-plugin
 https://github.com/jenkinsci/oneandone-cloudserver-plugin
@@ -442,8 +431,10 @@ https://github.com/jenkinsci/plumber-plugin
 https://github.com/jenkinsci/pom-importer-plugin
 https://github.com/jenkinsci/popular-jobs-plugin
 https://github.com/jenkinsci/practitest-integration-plugin
+https://github.com/jenkinsci/pre-build-plugin
 https://github.com/jenkinsci/proc-plugin
 https://github.com/jenkinsci/protecode-sc-plugin
+https://github.com/jenkinsci/pry-plugin
 https://github.com/jenkinsci/pucm-plugin
 https://github.com/jenkinsci/puppet-jenkinstracking
 https://github.com/jenkinsci/pure-coverage-plugin
@@ -476,6 +467,7 @@ https://github.com/jenkinsci/rhapsodybuilder-plugin
 https://github.com/jenkinsci/root-cause-plugin
 https://github.com/jenkinsci/rotatews-plugin
 https://github.com/jenkinsci/rss-retaliation
+https://github.com/jenkinsci/rtc-plugin
 https://github.com/jenkinsci/ruby-plugin
 https://github.com/jenkinsci/rubywm
 https://github.com/jenkinsci/rvm-plugin
@@ -497,7 +489,6 @@ https://github.com/jenkinsci/script-realm-extended-plugin
 https://github.com/jenkinsci/script-scm-plugin
 https://github.com/jenkinsci/scriptcs-plugin
 https://github.com/jenkinsci/secret-plugin
-https://github.com/jenkinsci/security-no-captcha-plugin
 https://github.com/jenkinsci/selenium-grails-plugin
 https://github.com/jenkinsci/selenium-tests
 https://github.com/jenkinsci/seleniumhq-plugin
@@ -539,8 +530,6 @@ https://github.com/jenkinsci/status-monitors
 https://github.com/jenkinsci/status-view-plugin
 https://github.com/jenkinsci/storable-configs-plugin
 https://github.com/jenkinsci/submitted-recipes
-https://github.com/jenkinsci/subversion-mail-address-resolver-plugin
-https://github.com/jenkinsci/svn-global-auth-provider-plugin
 https://github.com/jenkinsci/svn-release-mgr-plugin
 https://github.com/jenkinsci/svn-tag-plugin
 https://github.com/jenkinsci/svnimport-plugin
@@ -562,12 +551,10 @@ https://github.com/jenkinsci/testfairy-plugin-old
 https://github.com/jenkinsci/testflight-plugin
 https://github.com/jenkinsci/testrail-plugin
 https://github.com/jenkinsci/tortoisesvn-browser-plugin
-https://github.com/jenkinsci/trac-artifacts-publisher-plugin
 https://github.com/jenkinsci/travis-yml-plugin
 https://github.com/jenkinsci/trial-balloon-plugin
 https://github.com/jenkinsci/tusarnotifier-plugin
 https://github.com/jenkinsci/ucm4svn-plugin
-https://github.com/jenkinsci/ui-ux-hackfest-2020
 https://github.com/jenkinsci/uithemes-plugin
 https://github.com/jenkinsci/unity-asset-server-plugin
 https://github.com/jenkinsci/updatejob-plugin
@@ -576,7 +563,6 @@ https://github.com/jenkinsci/user-builds-starter-plugin
 https://github.com/jenkinsci/uvision-plugin
 https://github.com/jenkinsci/ux-widget-framework
 https://github.com/jenkinsci/VMWareLabManager-plugin
-https://github.com/jenkinsci/valid-network-plugin
 https://github.com/jenkinsci/vcvarsall-plugin
 https://github.com/jenkinsci/veracode-scanner-plugin
 https://github.com/jenkinsci/vessel-plugin
@@ -612,3 +598,4 @@ https://github.com/jenkinsci/z-mon
 https://github.com/jenkinsci/zaproxy-plugin
 https://github.com/jenkinsci/zephyr-for-jira-test-management-plugin
 https://github.com/jenkinsci/zfs-plugin
+https://github.com/jenkinsci/zubhium-plugin
