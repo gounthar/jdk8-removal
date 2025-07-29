@@ -203,7 +203,6 @@ Codeviation Plugin,https://github.com/jenkinsci/codeviation-plugin
 Collabnet Automic Deploy Plugin,https://github.com/jenkinsci/collabnet-automic-deploy-plugin
 Collabnet Plugin,https://github.com/jenkinsci/collabnet-plugin
 Color Logger Plugin,https://github.com/jenkinsci/color-logger-plugin
-Comments Remover Plugin,https://github.com/jenkinsci/comments-remover-plugin
 Commit Message Trigger Plugin,https://github.com/jenkinsci/commit-message-trigger-plugin
 Commons Fileupload,https://github.com/jenkinsci/commons-fileupload
 Compatibility Action Storage Plugin,https://github.com/jenkinsci/compatibility-action-storage-plugin
@@ -615,7 +614,6 @@ Lastsuccessversioncolumn Plugin,https://github.com/jenkinsci/lastsuccessversionc
 Lavalamp Plugin,https://github.com/jenkinsci/lavalamp-plugin
 Ldapemail Plugin,https://github.com/jenkinsci/ldapemail-plugin
 Lechat Plugin,https://github.com/jenkinsci/lechat-plugin
-Leiningen Plugin,https://github.com/jenkinsci/leiningen-plugin
 Lenient Shutdown Plugin,https://github.com/jenkinsci/lenient-shutdown-plugin
 Leo Auth Plugin,https://github.com/jenkinsci/leo-auth-plugin
 Lib Async Http Client,https://github.com/jenkinsci/lib-async-http-client
@@ -804,6 +802,7 @@ Piwikanalytics Plugin,https://github.com/jenkinsci/piwikanalytics-plugin
 Play Plugin,https://github.com/jenkinsci/play-plugin
 Plexus Utils,https://github.com/jenkinsci/plexus-utils
 Plugin BlekkoPanel,https://github.com/jenkinsci/plugin-blekkoPanel
+Plumber Plugin,https://github.com/jenkinsci/plumber-plugin
 Polarion Plugin,https://github.com/jenkinsci/polarion-plugin
 Policycenter Gate Validator Plugin,https://github.com/jenkinsci/policycenter-gate-validator-plugin
 Poll Mailbox Trigger Plugin,https://github.com/jenkinsci/poll-mailbox-trigger-plugin
@@ -813,13 +812,11 @@ Popper Api Plugin,https://github.com/jenkinsci/popper-api-plugin
 Popular Jobs Plugin,https://github.com/jenkinsci/popular-jobs-plugin
 Post Completed Build Result Plugin,https://github.com/jenkinsci/post-completed-build-result-plugin
 Practitest Integration Plugin,https://github.com/jenkinsci/practitest-integration-plugin
-Pre Build Plugin,https://github.com/jenkinsci/pre-build-plugin
 Pretested Integration Plugin,https://github.com/jenkinsci/pretested-integration-plugin
 Proc Plugin,https://github.com/jenkinsci/proc-plugin
 Promoted Builds Simple Plugin,https://github.com/jenkinsci/promoted-builds-simple-plugin
 Protecode Sc Plugin,https://github.com/jenkinsci/protecode-sc-plugin
 Prqa Plugin,https://github.com/jenkinsci/prqa-plugin
-Pry Plugin,https://github.com/jenkinsci/pry-plugin
 Pucm Plugin,https://github.com/jenkinsci/pucm-plugin
 Puppet Jenkinstracking,https://github.com/jenkinsci/puppet-jenkinstracking
 Puppet Plugin,https://github.com/jenkinsci/puppet-plugin
@@ -878,7 +875,6 @@ Rpi Build Status Plugin,https://github.com/jenkinsci/rpi-build-status-plugin
 Rqm Plugin,https://github.com/jenkinsci/rqm-plugin
 Rrod Plugin,https://github.com/jenkinsci/rrod-plugin
 Rss Retaliation,https://github.com/jenkinsci/rss-retaliation
-Rtc Plugin,https://github.com/jenkinsci/rtc-plugin
 Ruby Plugin,https://github.com/jenkinsci/ruby-plugin
 Rubywm,https://github.com/jenkinsci/rubywm
 Runscope Plugin,https://github.com/jenkinsci/runscope-plugin
@@ -1031,7 +1027,6 @@ Teamconcert Git Plugin,https://github.com/jenkinsci/teamconcert-git-plugin
 Teamconcert Plugin,https://github.com/jenkinsci/teamconcert-plugin
 Telerik Appbuilder Plugin,https://github.com/jenkinsci/telerik-appbuilder-plugin
 Template Project Plugin,https://github.com/jenkinsci/template-project-plugin
-Templating Engine Plugin,https://github.com/jenkinsci/templating-engine-plugin
 Tepco Epuw Plugin,https://github.com/jenkinsci/tepco-epuw-plugin
 Tepco Plugin,https://github.com/jenkinsci/tepco-plugin
 Teresa Build Plugin,https://github.com/jenkinsci/teresa-build-plugin
@@ -1178,4 +1173,3 @@ Zentimestamp Plugin,https://github.com/jenkinsci/zentimestamp-plugin
 Zephyr Enterprise Test Management Plugin,https://github.com/jenkinsci/zephyr-enterprise-test-management-plugin
 Zephyr For Jira Test Management Plugin,https://github.com/jenkinsci/zephyr-for-jira-test-management-plugin
 Zfs Plugin,https://github.com/jenkinsci/zfs-plugin
-Zubhium Plugin,https://github.com/jenkinsci/zubhium-plugin

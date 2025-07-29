@@ -49,7 +49,6 @@ Aws Parameter Store Plugin,https://github.com/jenkinsci/aws-parameter-store-plug
 Aws Sam Plugin,https://github.com/jenkinsci/aws-sam-plugin
 Aws Sqs Plugin,https://github.com/jenkinsci/aws-sqs-plugin
 Aws Sqs Trigger Plugin,https://github.com/jenkinsci/aws-sqs-trigger-plugin
-Azure Acs Plugin,https://github.com/jenkinsci/azure-acs-plugin
 Azure App Service Plugin,https://github.com/jenkinsci/azure-app-service-plugin
 Azure Cli Plugin,https://github.com/jenkinsci/azure-cli-plugin
 Azure Commons Plugin,https://github.com/jenkinsci/azure-commons-plugin
@@ -58,7 +57,6 @@ Azure Credentials Ext Plugin,https://github.com/jenkinsci/azure-credentials-ext-
 Azure Dev Spaces Plugin,https://github.com/jenkinsci/azure-dev-spaces-plugin
 Azure Event Grid Notifier Plugin,https://github.com/jenkinsci/azure-event-grid-notifier-plugin
 Azure Function Plugin,https://github.com/jenkinsci/azure-function-plugin
-Azure Vmss Plugin,https://github.com/jenkinsci/azure-vmss-plugin
 Backlog Plugin,https://github.com/jenkinsci/backlog-plugin
 Bart Plugin,https://github.com/jenkinsci/bart-plugin
 Beagle Security Plugin,https://github.com/jenkinsci/beagle-security-plugin
@@ -116,6 +114,7 @@ Concurrent Step Plugin,https://github.com/jenkinsci/concurrent-step-plugin
 Config Driven Pipeline Plugin,https://github.com/jenkinsci/config-driven-pipeline-plugin
 Configuration As Code Secret Ssm Plugin,https://github.com/jenkinsci/configuration-as-code-secret-ssm-plugin
 Conjur Simple Integration Plugin,https://github.com/jenkinsci/conjur-simple-integration-plugin
+Cons3rt Plugin,https://github.com/jenkinsci/cons3rt-plugin
 Console Navigation Plugin,https://github.com/jenkinsci/console-navigation-plugin
 Consul Plugin,https://github.com/jenkinsci/consul-plugin
 Content Replace Plugin,https://github.com/jenkinsci/content-replace-plugin
@@ -260,7 +259,6 @@ Karaf Build Step Plugin,https://github.com/jenkinsci/karaf-build-step-plugin
 Katalon Plugin,https://github.com/jenkinsci/katalon-plugin
 Keyboard Shortcuts Plugin,https://github.com/jenkinsci/keyboard-shortcuts-plugin
 Klaros Testmanagement Plugin,https://github.com/jenkinsci/klaros-testmanagement-plugin
-Kubernetes Cd Plugin,https://github.com/jenkinsci/kubernetes-cd-plugin
 Kubesphere Extension Plugin,https://github.com/jenkinsci/kubesphere-extension-plugin
 Kubesphere Token Auth Plugin,https://github.com/jenkinsci/kubesphere-token-auth-plugin
 Label Linked Jobs Plugin,https://github.com/jenkinsci/label-linked-jobs-plugin
@@ -388,7 +386,6 @@ Rapiddeploy Plugin,https://github.com/jenkinsci/rapiddeploy-plugin
 Read Only Configurations Plugin,https://github.com/jenkinsci/read-only-configurations-plugin
 Redacted Password Parameters Plugin,https://github.com/jenkinsci/redacted-password-parameters-plugin
 Redeploy Rancher2 Workload Plugin,https://github.com/jenkinsci/redeploy-rancher2-workload-plugin
-Redhat Codeready Dependency Analysis Plugin,https://github.com/jenkinsci/redhat-codeready-dependency-analysis-plugin
 Redis Notifier Plugin,https://github.com/jenkinsci/redis-notifier-plugin
 Redmine Metrics Report Plugin,https://github.com/jenkinsci/redmine-metrics-report-plugin
 Redmine Plugin,https://github.com/jenkinsci/redmine-plugin
