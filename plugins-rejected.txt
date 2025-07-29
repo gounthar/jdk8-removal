@@ -185,6 +185,7 @@ https://github.com/jenkinsci/filtered-dashboard-view-plugin
 https://github.com/jenkinsci/firefox-extension-buildmonitor
 https://github.com/jenkinsci/fit-plugin
 https://github.com/jenkinsci/flexteam-plugin
+https://github.com/jenkinsci/flyweight-build-step-plugin
 https://github.com/jenkinsci/font-awesome-icons-plugin
 https://github.com/jenkinsci/foofoo
 https://github.com/jenkinsci/fortify360-plugin
@@ -229,6 +230,7 @@ https://github.com/jenkinsci/hello-world-groovy-view-plugin
 https://github.com/jenkinsci/hello-world-maven-builder
 https://github.com/jenkinsci/hello-world-plugin
 https://github.com/jenkinsci/hello-world-scala-plugin
+https://github.com/jenkinsci/helm-charts
 https://github.com/jenkinsci/help-editor-plugin
 https://github.com/jenkinsci/hgca-plugin
 https://github.com/jenkinsci/hpe-network-virtualization-plugin
@@ -237,6 +239,7 @@ https://github.com/jenkinsci/hudson-clearcase-plugin
 https://github.com/jenkinsci/hudson-clone-workspace-scm-plugin-plugin
 https://github.com/jenkinsci/hudson-coverage-plugin
 https://github.com/jenkinsci/Hudson-Gerrit-Plugin
+https://github.com/jenkinsci/hudson-notifo-plugin
 https://github.com/jenkinsci/hudsontrayapp-plugin
 https://github.com/jenkinsci/iOS-AdHoc-Deployment-Plugin
 https://github.com/jenkinsci/ibm-ucdeploy-pipeline-plugin
@@ -266,6 +269,7 @@ https://github.com/jenkinsci/jbpm-plugin
 https://github.com/jenkinsci/jcasc-vscode-extension
 https://github.com/jenkinsci/jdependency
 https://github.com/jenkinsci/jenkins-ace-editor
+https://github.com/jenkinsci/jenkins-automation-operator
 https://github.com/jenkinsci/jenkins-charm
 https://github.com/jenkinsci/jenkins-js-diag
 https://github.com/jenkinsci/jenkins-plugin-runtime.rb
@@ -277,6 +281,7 @@ https://github.com/jenkinsci/jenkins-wargemmer
 https://github.com/jenkinsci/jenkins.py
 https://github.com/jenkinsci/jenkins.rb
 https://github.com/jenkinsci/jenkinsfile-runner-github-actions
+https://github.com/jenkinsci/jenkinsfile-runner-image-packs
 https://github.com/jenkinsci/jenkow-plugin
 https://github.com/jenkinsci/jep
 https://github.com/jenkinsci/jexl
@@ -286,6 +291,7 @@ https://github.com/jenkinsci/jgit
 https://github.com/jenkinsci/jira-finder-plugin
 https://github.com/jenkinsci/jira-issues-versioning-plugin
 https://github.com/jenkinsci/jmdns-fork
+https://github.com/jenkinsci/jmdns
 https://github.com/jenkinsci/jmeter-performance-reporter-plugin
 https://github.com/jenkinsci/jmeter-performance-runner-plugin
 https://github.com/jenkinsci/jmx-invoker-plugin
@@ -320,6 +326,7 @@ https://github.com/jenkinsci/keyhole
 https://github.com/jenkinsci/kmap-plugin
 https://github.com/jenkinsci/kotlin-plugin-pom
 https://github.com/jenkinsci/kubernetes-ci-plugin
+https://github.com/jenkinsci/kubernetes-operator
 https://github.com/jenkinsci/kundo-plugin
 https://github.com/jenkinsci/kwjlib
 https://github.com/jenkinsci/label-test
@@ -362,6 +369,7 @@ https://github.com/jenkinsci/make-jenkins-slow-plugin
 https://github.com/jenkinsci/mansion-cloud-plugin
 https://github.com/jenkinsci/marketing
 https://github.com/jenkinsci/mashup-portlets-plugin
+https://github.com/jenkinsci/master-to-master-api-plugin
 https://github.com/jenkinsci/matrix-checkout-strategies-plugin
 https://github.com/jenkinsci/maven-deployment-linker-plugin
 https://github.com/jenkinsci/maven-dump-test-dependencies-plugin
@@ -413,6 +421,7 @@ https://github.com/jenkinsci/page-note-plugin
 https://github.com/jenkinsci/parallel-test-executor-plugin-sample
 https://github.com/jenkinsci/parameter-defaults-options-plugin
 https://github.com/jenkinsci/pathignore-plugin
+https://github.com/jenkinsci/perfci-plugin
 https://github.com/jenkinsci/perfectomobile-plugin
 https://github.com/jenkinsci/perforce-plugin
 https://github.com/jenkinsci/periodic-jobs-balancer-plugin
@@ -551,7 +560,6 @@ https://github.com/jenkinsci/test-plexus-component
 https://github.com/jenkinsci/test
 https://github.com/jenkinsci/testabilityexplorer
 https://github.com/jenkinsci/testbed-ant-sample
-https://github.com/jenkinsci/testbed-anttest-sample
 https://github.com/jenkinsci/testfairy-plugin-old
 https://github.com/jenkinsci/testflight-plugin
 https://github.com/jenkinsci/testrail-plugin

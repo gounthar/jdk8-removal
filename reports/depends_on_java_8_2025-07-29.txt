@@ -40,6 +40,7 @@ agent-maintenance:2.220.v4b_a_5cfe9e18b_
 agent-server-parameter:1.1
 aio-tests:1.15
 akeyless:45.vb_1b_77c5d7385
+alauda-devops-credentials-provider:2.4.1
 alauda-devops-pipeline:2.3.2
 alauda-devops-sync:2.4.2
 alauda-kubernetes-support:2.3.0
@@ -330,6 +331,8 @@ byte-buddy-api:1.17.6-171.ve8cb_b_432ea_b_f
 byteguard-build-actions:1.0
 ca-apm:2.1.8
 ca-mat-performance-benchmarking-by-broadcom:1.7
+ca-service-virtualization:1.0.7
+cachet-gating:1.0.10
 caffeine-api:3.2.2-178.v353b_8428ed56
 calendar-view:0.3.6
 caliper-ci:2.3
@@ -495,6 +498,7 @@ cron-shelve:1.3
 cron_column:83.vd52c9b_5c758c
 crowd:1.2
 crowdstrike-security:1.2.2
+crx-content-package-deployer:1.9
 csp:1.4
 ctrf-json:36.vb_8c67b_f1dc07
 cucumber-living-documentation:3.2
@@ -577,6 +581,7 @@ digitalocean-plugin:1.3.1
 dimensionsscm:0.9.3.1
 dingding-json-pusher:2.0
 dingding-notifications:2.8.0
+disable-failed-job:1.15
 disable-github-multibranch-status:1.2
 disable-job-button:1.v9db_352414f90
 discard-old-build:1.08
@@ -707,7 +712,9 @@ fitnesse:1.36
 flaky-test-handler:1.3.168.v9b_0b_fd020db_8
 flashlog-plugin:1.0
 flatpickr-api:4.6.13-18.vcf5f6a_5b_8468
+flexdeploy:3.300
 flexible-publish:0.16.1
+flock:1.0.1
 fluentd:0.1.5
 flyway-api:11.10.4-327.v1483260fa_599
 flyway-runner:254.vc1b_de1957ddb_
@@ -760,6 +767,8 @@ git-tag-message:1.7.1
 git-userContent:1.4
 git-version-monitor:7.v2a_0f40b_9f2f4
 git:5.7.0
+gitblit:1.2
+gitbucket:0.8
 gitcolony-plugin:1.1
 gitea-checks:551.vd306d7ca_b_18f
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
@@ -803,6 +812,7 @@ golang:1.4
 google-admin-sdk:1.2.2
 google-analytics-usage-reporter:0.4
 google-analyze-code-security:47.v1c5fa_28b_0e8d
+google-chat-notification:166.ve6b_de280f2e8
 google-cloud-backup:0.6
 google-cloud-health-check:0.3
 google-cloudbuild:0.2.6
@@ -817,6 +827,7 @@ google-play-android-publisher:4.2
 google-storage-plugin:1.371.vc3434e76e0c4
 googleanalytics:1.3
 gprbuild:1.0
+gradle-repo:1.0.1
 gradle:2.15
 graphiteIntegrator:1.2
 graphql-server:0.0.5
@@ -835,6 +846,7 @@ hadoop:1.4
 handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 harbor:50.v6d91243ee335
 harvest:0.5.1
+hashicorp-vault-pipeline:1.4
 hashicorp-vault-plugin:371.v884a_4dd60fb_6
 hckrnews:1.1
 heavy-job:1.1
@@ -873,6 +885,7 @@ ibmi-steps:62.vd74c52631039
 icedq:1.5
 icescrum:1.1.6
 icn-plugin-loader:1.0
+icon-shim:3.0.0
 ifttt-build-notifier:1.2
 ignore-committer-strategy:37.v0d3157c4a_ef8
 image-gallery:2.0.2
@@ -880,6 +893,7 @@ image-tag-parameter:3.0
 imagecomparison:1.4
 immuniweb:54.vc3c55e02447d
 implied-labels:356.v6cfef6a_81c0b_
+in-toto:0.3.1
 indusface-was:1.35.vc2d1dc2b_5425
 infisical:29.va_e0dc5ca_b_8fa_
 inflectra-spira-integration:4.0.0
@@ -1015,6 +1029,7 @@ kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2
 kubernetes-cli:1.364.vadef8cb8b823
+kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials-provider:1.290.ve56494531260
 kubernetes-credentials:203.v85b_9836a_f44b_
 kubernetes-ephemeral-container:22.v50de9446065d
@@ -1024,6 +1039,7 @@ kubesphere-token-auth:1.7
 label-linked-jobs:6.0.1
 label-verifier:116.vb_845759df630
 labeled-test-groups-publisher:1.2.9
+labelled-steps:1.0
 labmanager:0.2.8
 lacework-security-scanner:1.1.2
 lambda-test-runner:0.1.0
@@ -1113,6 +1129,7 @@ maven-info:0.3.2
 maven-invoker-plugin:2.5
 maven-metadata-plugin:2.2
 maven-plugin:3.26
+maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
 mcp-server:0.33.vecd845512255
@@ -1189,6 +1206,7 @@ next-executions:446.v57a_a_1b_40702f
 nexus-artifact-uploader:2.14
 nirmata:1.0.11
 nis-notification-lamp:1.131
+no-agent-job-purge:24.vb_2e4b_b_e0e938
 node-iterator-api:72.vc90e81737df1
 node-sharing-executor:2.0.8
 node-sharing-orchestrator:2.0.8
@@ -1312,6 +1330,7 @@ pipeline-deploymon:1.0
 pipeline-gcp:22.vcc10eff7c13f
 pipeline-giphy-api:2.0.1
 pipeline-github-lib:65.v203688e7727e
+pipeline-github:2.8-162.382498405fdc
 pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
@@ -1324,9 +1343,9 @@ pipeline-input-step:532.v9e7466cb_4406
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.1
 pipeline-lib-oras:23.v4d7c8d889a_86
-pipeline-maven-api:1554.v292f3d3479e6
-pipeline-maven-database:1554.v292f3d3479e6
-pipeline-maven:1554.v292f3d3479e6
+pipeline-maven-api:1556.vd9051b_d6ef5d
+pipeline-maven-database:1556.vd9051b_d6ef5d
+pipeline-maven:1556.vd9051b_d6ef5d
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2258.v4e96d2b_da_f9b_
 pipeline-model-declarative-agent:1.1.1
@@ -1409,6 +1428,7 @@ qrebel:1.0.1
 qtest:2025.1
 quali-torque:2.1.0-307.vfa_3d28f8a_8b_3
 quality-gates:2.5
+qualityclouds:1.0.1
 qualys-cs:1.7.0.3
 qualys-iac-security:1.0.0
 qualys-pc:1.0.8
@@ -1432,6 +1452,7 @@ rake:1.8.0
 rally-plugin:2.2.2
 random-job-builder:1.0
 random-string-parameter:1.0
+ranorex-integration:1.0.2
 rapid7-insightvm-container-assessment:1.0.21
 rapiddeploy-jenkins:4.9
 rb:1.4
@@ -1591,6 +1612,7 @@ sofy-ai:1.0.3
 solarized-theme:28.vfe25223f14fe
 sonar-gerrit:388.v9b_f1cb_e42306
 sonar-quality-gates:352.vdcdb_d7994fb_6
+sonar:2.18
 sonargraph-integration:5.0.2
 sonarqube-generic-coverage:1.0
 sonic-ci-helper:1.0.5
@@ -1688,7 +1710,7 @@ testweaver:1.0.8
 text-file-operations:1.3.2
 text-finder-run-condition:6.vdf94e6f8d2c3
 text-finder:1.32
-theme-manager:313.v8657a_a_7692cb_
+theme-manager:318.va_0ef2ddc143b_
 themis:1.4.1
 thinBackup:2.1.3
 thread-dump-action-plugin:1.0
@@ -1749,6 +1771,7 @@ valgrind:0.28
 validating-email-parameter:1.10
 validating-string-parameter:255.v31e2e6d0d273
 validating-yaml-parameter:308.vfb_567c6663b_a_
+variables-replace-plugin:1.0.0
 variant:70.va_d9f17f859e0
 vault-scm-plugin:1.1.1
 vboxwrapper:1.3
@@ -1757,12 +1780,16 @@ vectorcast-coverage:0.22
 vectorcast-execution:0.78
 venafi-codesigning:1.2.1
 venafi-vcert:2.1.0
+veracode-scan:25.6.25.0
 versioncolumn:320.v6b_b_814ca_01f7
 versionnumber:234.v315d3b_3cb_fb_5
 vertx:1.0.1
 viber-notification:1.8.19
+view-cloner:1.1
 view-job-filters:401.va_809f6a_b_0c26
+view26:1.0.7
 viewVC:1.7
+views-containing-job:1.3
 violation-columns:1.6
 violation-comments-to-github:1.96
 violation-comments-to-gitlab:2.62.0
@@ -1848,6 +1875,7 @@ yandex-metrica:1.0
 yet-another-build-visualizer:1.17
 youtrack-plugin:0.7.3
 zanata:0.6
+zap-pipeline:1.16
 zap:1.1.0
 zapper:1.0.7
 zdevops:1.1.3.50.ve350c9b_450b_1

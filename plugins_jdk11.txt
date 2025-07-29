@@ -5,12 +5,14 @@ alibabacloud-pkg-deployment:1.0
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
 apimap:1-rc26.87a_0f950121f
+artifact-repository-parameter:2.0.1
 artifactz:1.3.1-49.v21e3510b_2b_67
 async-http-client:1.9.40.0
 atlassian-bitbucket-server-integration:4.2.0
 autify:118.v557349939c0f
 aws-beanstalk-publisher-plugin:1.8.2
 aws-secrets-manager-credentials-provider:1.214.va_0a_d8268d068
+aws-secrets-manager-secret-source:1.72.v61781b_35c542
 azure-publishersettings-credentials:1.6
 backup-interrupt-plugin:17.va_b_50ca_9df8d0
 benchmark-evaluator:99.v2b_ee548fa_f54
@@ -67,6 +69,7 @@ external-workspace-manager:1.3.1
 fail-the-build-plugin:5.v153b_2c826ef0
 flexdeploy:3.300
 fortify-on-demand-uploader:8.0.1
+gcp-secrets-manager-credentials-provider:0.3.1
 genexus:314.v3f04b4c93171
 gerrit-checks-api:66.v3ef8b_f08f1f3
 git-bisect:1.5
@@ -132,6 +135,7 @@ progress-bar-column-plugin:11.vdef198c2d6c1
 project-stats-plugin:23.v47fee1f77b_84
 provar-automation:68.v91b_13f4101e2
 qualys-iac-security:1.0.0
+qualys-pc:1.0.8
 radargun:1.25
 rb:1.4
 redhat-dependency-analytics:0.9.1.134.va_886e3790140

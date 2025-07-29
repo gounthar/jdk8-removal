@@ -6,6 +6,7 @@ Any Buildstep Plugin,https://github.com/jenkinsci/any-buildstep-plugin
 Anything Goes Formatter Plugin,https://github.com/jenkinsci/anything-goes-formatter-plugin
 Apimap Plugin,https://github.com/jenkinsci/apimap-plugin
 Aristiun Aribot Plugin,https://github.com/jenkinsci/Aristiun-Aribot-Plugin
+Artifact Repository Parameter Plugin,https://github.com/jenkinsci/artifact-repository-parameter-plugin
 Artifactz Plugin,https://github.com/jenkinsci/artifactz-plugin
 Ascii Magician Plugin,https://github.com/jenkinsci/ascii-magician-plugin
 Async Http Client Plugin,https://github.com/jenkinsci/async-http-client-plugin
@@ -13,6 +14,7 @@ Atlassian Bitbucket Server Integration Plugin,https://github.com/jenkinsci/atlas
 Autify Plugin,https://github.com/jenkinsci/autify-plugin
 Aws Beanstalk Publisher Plugin,https://github.com/jenkinsci/aws-beanstalk-publisher-plugin
 Aws Secrets Manager Credentials Provider Plugin,https://github.com/jenkinsci/aws-secrets-manager-credentials-provider-plugin
+Aws Secrets Manager Secret Source Plugin,https://github.com/jenkinsci/aws-secrets-manager-secret-source-plugin
 Azure Publishersettings Credentials Plugin,https://github.com/jenkinsci/azure-publishersettings-credentials-plugin
 Backup Jobs Plugin,https://github.com/jenkinsci/backup-jobs-plugin
 Benchmark Evaluator Plugin,https://github.com/jenkinsci/benchmark-evaluator-plugin
@@ -74,6 +76,7 @@ Extras Executable War,https://github.com/jenkinsci/extras-executable-war
 Fail The Build Plugin,https://github.com/jenkinsci/fail-the-build-plugin
 Flexdeploy Plugin,https://github.com/jenkinsci/flexdeploy-plugin
 Fortify On Demand Uploader Plugin,https://github.com/jenkinsci/fortify-on-demand-uploader-plugin
+Gcp Secrets Manager Credentials Provider Plugin,https://github.com/jenkinsci/gcp-secrets-manager-credentials-provider-plugin
 Genexus Plugin,https://github.com/jenkinsci/genexus-plugin
 Gerrit Checks Api Plugin,https://github.com/jenkinsci/gerrit-checks-api-plugin
 Git Bisect Plugin,https://github.com/jenkinsci/git-bisect-plugin
@@ -141,6 +144,7 @@ Progress Bar Column Plugin,https://github.com/jenkinsci/progress-bar-column-plug
 Project Stats Plugin,https://github.com/jenkinsci/project-stats-plugin
 Provar Automation Plugin,https://github.com/jenkinsci/provar-automation-plugin
 Qualys Iac Security Plugin,https://github.com/jenkinsci/qualys-iac-security-plugin
+Qualys Pc Plugin,https://github.com/jenkinsci/qualys-pc-plugin
 Radargun Plugin,https://github.com/jenkinsci/radargun-plugin
 Rb Plugin,https://github.com/jenkinsci/rb-plugin
 Redhat Dependency Analytics Plugin,https://github.com/jenkinsci/redhat-dependency-analytics-plugin

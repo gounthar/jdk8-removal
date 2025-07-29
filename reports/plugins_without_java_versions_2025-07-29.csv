@@ -9,6 +9,7 @@ Alauda Devops Pipeline Plugin,https://github.com/jenkinsci/alauda-devops-pipelin
 Alauda Devops Sync Plugin,https://github.com/jenkinsci/alauda-devops-sync-plugin
 Alauda Kubernetes Support Plugin,https://github.com/jenkinsci/alauda-kubernetes-support-plugin
 Alauda Pipeline Plugin,https://github.com/jenkinsci/alauda-pipeline-plugin
+Alibabacloud Credentials Plugin,https://github.com/jenkinsci/alibabacloud-credentials-plugin
 Alibabacloud Ecs Plugin,https://github.com/jenkinsci/alibabacloud-ecs-plugin
 Alibabacloud Edas Plugin,https://github.com/jenkinsci/alibabacloud-edas-plugin
 Aliyun Oss Uploader Plugin,https://github.com/jenkinsci/aliyun-oss-uploader-plugin
@@ -42,6 +43,7 @@ Aws Codecommit Jobs Plugin,https://github.com/jenkinsci/aws-codecommit-jobs-plug
 Aws Codecommit Trigger Plugin,https://github.com/jenkinsci/aws-codecommit-trigger-plugin
 Aws Codedeploy Plugin,https://github.com/jenkinsci/aws-codedeploy-plugin
 Aws Device Farm Plugin,https://github.com/jenkinsci/aws-device-farm-plugin
+Aws Kinesis Consumer Plugin,https://github.com/jenkinsci/aws-kinesis-consumer-plugin
 Aws Lambda Cloud Plugin,https://github.com/jenkinsci/aws-lambda-cloud-plugin
 Aws Parameter Store Plugin,https://github.com/jenkinsci/aws-parameter-store-plugin
 Aws Sam Plugin,https://github.com/jenkinsci/aws-sam-plugin
@@ -68,6 +70,8 @@ Blueocean Executor Info Plugin,https://github.com/jenkinsci/blueocean-executor-i
 Breachlock Dast Plugin,https://github.com/jenkinsci/breachlock-dast-plugin
 Btc Embeddedplatform Plugin,https://github.com/jenkinsci/btc-embeddedplatform-plugin
 Build Configurator Plugin,https://github.com/jenkinsci/build-configurator-plugin
+Build Discarder Plugin,https://github.com/jenkinsci/build-discarder-plugin
+Build Executors Filter Offline Plugin,https://github.com/jenkinsci/build-executors-filter-offline-plugin
 Build Health Cache Updater Plugin,https://github.com/jenkinsci/build-health-cache-updater-plugin
 Build Publisher Plugin,https://github.com/jenkinsci/build-publisher-plugin
 Build Symlink Plugin,https://github.com/jenkinsci/build-symlink-plugin
@@ -174,6 +178,7 @@ External Logging Api Plugin,https://github.com/jenkinsci/external-logging-api-pl
 External Logging Elasticsearch Plugin,https://github.com/jenkinsci/external-logging-elasticsearch-plugin
 Fabric Beta Publisher Plugin,https://github.com/jenkinsci/fabric-beta-publisher-plugin
 Fedora Module Build System Plugin,https://github.com/jenkinsci/fedora-module-build-system-plugin
+File Changes Build Strategy Plugin,https://github.com/jenkinsci/file-changes-build-strategy-plugin
 Findbugs Plugin,https://github.com/jenkinsci/findbugs-plugin
 Fireline Plugin,https://github.com/jenkinsci/fireline-plugin
 Fitnesse Plugin,https://github.com/jenkinsci/fitnesse-plugin
@@ -188,6 +193,7 @@ Gcloud Sdk Plugin,https://github.com/jenkinsci/gcloud-sdk-plugin
 Gcr Scanner Plugin,https://github.com/jenkinsci/gcr-scanner-plugin
 Generic Environment Filters Plugin,https://github.com/jenkinsci/generic-environment-filters-plugin
 Gerrit Code Review Plugin,https://github.com/jenkinsci/gerrit-code-review-plugin
+Ghost Inspector Plugin,https://github.com/jenkinsci/ghost-inspector-plugin
 Ghprb Plugin,https://github.com/jenkinsci/ghprb-plugin
 Git Prebuildmerge Trait Plugin,https://github.com/jenkinsci/git-prebuildmerge-trait-plugin
 Git Push Plugin,https://github.com/jenkinsci/git-push-plugin
@@ -288,6 +294,8 @@ Metrics Aggregation Plugin,https://github.com/jenkinsci/metrics-aggregation-plug
 Metrics Datadog Plugin,https://github.com/jenkinsci/metrics-datadog-plugin
 Miniorange Saml Sp Plugin,https://github.com/jenkinsci/miniorange-saml-sp-plugin
 Misra Compliance Report Generator Plugin,https://github.com/jenkinsci/misra-compliance-report-generator-plugin
+Mixing Security Realm Plugin,https://github.com/jenkinsci/mixing-security-realm-plugin
+Modernstatus Plugin,https://github.com/jenkinsci/modernstatus-plugin
 Monitor Pro Plugin,https://github.com/jenkinsci/monitor-pro-plugin
 Multi Branch Priority Sorter Plugin,https://github.com/jenkinsci/multi-branch-priority-sorter-plugin
 Multi Slave Config Plugin,https://github.com/jenkinsci/multi-slave-config-plugin
@@ -362,6 +370,7 @@ Qiniu Plugin,https://github.com/jenkinsci/qiniu-plugin
 Qrebel Plugin,https://github.com/jenkinsci/qrebel-plugin
 Quali Torque Plugin,https://github.com/jenkinsci/quali-torque-plugin
 Qualityclouds Plugin,https://github.com/jenkinsci/qualityclouds-plugin
+Qualys Api Security Plugin,https://github.com/jenkinsci/qualys-api-security-plugin
 Qualys Cs Plugin,https://github.com/jenkinsci/qualys-cs-plugin
 Qualys Vm Plugin,https://github.com/jenkinsci/qualys-vm-plugin
 Qualys Was Plugin,https://github.com/jenkinsci/qualys-was-plugin
@@ -412,6 +421,7 @@ Security Inspector Plugin,https://github.com/jenkinsci/security-inspector-plugin
 Select2 Api Plugin,https://github.com/jenkinsci/select2-api-plugin
 Selenium Plugin,https://github.com/jenkinsci/selenium-plugin
 Semantic Versioning Plugin,https://github.com/jenkinsci/semantic-versioning-plugin
+Sematext Plugin,https://github.com/jenkinsci/sematext-plugin
 Service Fabric Plugin,https://github.com/jenkinsci/service-fabric-plugin
 Service Now Plugin,https://github.com/jenkinsci/service-now-plugin
 Servicenow Devops Plugin,https://github.com/jenkinsci/servicenow-devops-plugin
@@ -487,6 +497,7 @@ Uuid Parameter Plugin,https://github.com/jenkinsci/uuid-parameter-plugin
 Validating Email Parameter Plugin,https://github.com/jenkinsci/validating-email-parameter-plugin
 Variables Replace Plugin,https://github.com/jenkinsci/variables-replace-plugin
 Vdoo Vision Plugin,https://github.com/jenkinsci/vdoo-vision-plugin
+Viber Notification Plugin,https://github.com/jenkinsci/viber-notification-plugin
 Views Containing Job Plugin,https://github.com/jenkinsci/views-containing-job-plugin
 Violation Comments To Github Plugin,https://github.com/jenkinsci/violation-comments-to-github-plugin
 Visualexpert Plugin,https://github.com/jenkinsci/visualexpert-plugin
@@ -502,6 +513,7 @@ Winrm Client Plugin,https://github.com/jenkinsci/winrm-client-plugin
 Working Hours Plugin,https://github.com/jenkinsci/working-hours-plugin
 Wsap Plugin,https://github.com/jenkinsci/wsap-plugin
 Wsclean Plugin,https://github.com/jenkinsci/wsclean-plugin
+X Developer Client Plugin,https://github.com/jenkinsci/x-developer-client-plugin
 Xcode Plugin,https://github.com/jenkinsci/xcode-plugin
 Xlrelease Var Setter Plugin,https://github.com/jenkinsci/xlrelease-var-setter-plugin
 Xml Job To Job Dsl Plugin,https://github.com/jenkinsci/xml-job-to-job-dsl-plugin
