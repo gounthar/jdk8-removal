@@ -2,12 +2,10 @@ Exclusion:0.15
 TestComplete:2.10
 accurev:0.7.24
 alibabacloud-pkg-deployment:1.0
-any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
 apimap:1-rc26.87a_0f950121f
 artifact-repository-parameter:2.0.1
 artifactz:1.3.1-49.v21e3510b_2b_67
-async-http-client:1.9.40.0
 atlassian-bitbucket-server-integration:4.2.0
 autify:118.v557349939c0f
 aws-beanstalk-publisher-plugin:1.8.2
@@ -127,6 +125,7 @@ performance-signature-dynatrace:3.2.2
 performance-signature-dynatracesaas:3.2.2
 performance-signature-ui:3.2.2
 performance-signature-viewer:3.2.2
+permissive-script-security:0.7
 pipeline-keepenv-step:1.1
 popper2-api:2.11.6-5
 proc-cleaner-plugin:2.4

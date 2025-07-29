@@ -2,14 +2,12 @@ Plugin,URL
 Accurev Plugin,https://github.com/jenkinsci/accurev-plugin
 Agent Status Plugin,https://github.com/jenkinsci/agent-status-plugin
 Alibabacloud Pkg Deployment Plugin,https://github.com/jenkinsci/alibabacloud-pkg-deployment-plugin
-Any Buildstep Plugin,https://github.com/jenkinsci/any-buildstep-plugin
 Anything Goes Formatter Plugin,https://github.com/jenkinsci/anything-goes-formatter-plugin
 Apimap Plugin,https://github.com/jenkinsci/apimap-plugin
 Aristiun Aribot Plugin,https://github.com/jenkinsci/Aristiun-Aribot-Plugin
 Artifact Repository Parameter Plugin,https://github.com/jenkinsci/artifact-repository-parameter-plugin
 Artifactz Plugin,https://github.com/jenkinsci/artifactz-plugin
 Ascii Magician Plugin,https://github.com/jenkinsci/ascii-magician-plugin
-Async Http Client Plugin,https://github.com/jenkinsci/async-http-client-plugin
 Atlassian Bitbucket Server Integration Plugin,https://github.com/jenkinsci/atlassian-bitbucket-server-integration-plugin
 Autify Plugin,https://github.com/jenkinsci/autify-plugin
 Aws Beanstalk Publisher Plugin,https://github.com/jenkinsci/aws-beanstalk-publisher-plugin
@@ -136,6 +134,7 @@ P4 Plugin,https://github.com/jenkinsci/p4-plugin
 Paginated Builds Plugin,https://github.com/jenkinsci/paginated-builds-plugin
 Peass Ci Plugin,https://github.com/jenkinsci/peass-ci-plugin
 Performance Signature Dynatrace Plugin,https://github.com/jenkinsci/performance-signature-dynatrace-plugin
+Permissive Script Security Plugin,https://github.com/jenkinsci/permissive-script-security-plugin
 Pipeline Keepenv Step Plugin,https://github.com/jenkinsci/pipeline-keepenv-step-plugin
 Popper2 Api Plugin,https://github.com/jenkinsci/popper2-api-plugin
 Proc Cleaner Plugin,https://github.com/jenkinsci/proc-cleaner-plugin
