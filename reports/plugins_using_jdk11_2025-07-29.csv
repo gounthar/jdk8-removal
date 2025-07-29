@@ -2,16 +2,17 @@ Plugin,URL
 Accurev Plugin,https://github.com/jenkinsci/accurev-plugin
 Agent Status Plugin,https://github.com/jenkinsci/agent-status-plugin
 Alibabacloud Pkg Deployment Plugin,https://github.com/jenkinsci/alibabacloud-pkg-deployment-plugin
+Any Buildstep Plugin,https://github.com/jenkinsci/any-buildstep-plugin
 Anything Goes Formatter Plugin,https://github.com/jenkinsci/anything-goes-formatter-plugin
 Apimap Plugin,https://github.com/jenkinsci/apimap-plugin
 Aristiun Aribot Plugin,https://github.com/jenkinsci/Aristiun-Aribot-Plugin
 Artifact Repository Parameter Plugin,https://github.com/jenkinsci/artifact-repository-parameter-plugin
 Artifactz Plugin,https://github.com/jenkinsci/artifactz-plugin
 Ascii Magician Plugin,https://github.com/jenkinsci/ascii-magician-plugin
+Async Http Client Plugin,https://github.com/jenkinsci/async-http-client-plugin
 Atlassian Bitbucket Server Integration Plugin,https://github.com/jenkinsci/atlassian-bitbucket-server-integration-plugin
 Autify Plugin,https://github.com/jenkinsci/autify-plugin
 Aws Beanstalk Publisher Plugin,https://github.com/jenkinsci/aws-beanstalk-publisher-plugin
-Aws Secrets Manager Credentials Provider Plugin,https://github.com/jenkinsci/aws-secrets-manager-credentials-provider-plugin
 Aws Secrets Manager Secret Source Plugin,https://github.com/jenkinsci/aws-secrets-manager-secret-source-plugin
 Azure Publishersettings Credentials Plugin,https://github.com/jenkinsci/azure-publishersettings-credentials-plugin
 Backup Jobs Plugin,https://github.com/jenkinsci/backup-jobs-plugin
@@ -62,7 +63,6 @@ Dotnet Sdk Plugin,https://github.com/jenkinsci/dotnet-sdk-plugin
 Downstream Buildview Plugin,https://github.com/jenkinsci/downstream-buildview-plugin
 Downstream Ext Plugin,https://github.com/jenkinsci/downstream-ext-plugin
 Doxygen Plugin,https://github.com/jenkinsci/doxygen-plugin
-Dumpling Plugin,https://github.com/jenkinsci/dumpling-plugin
 Editable Choice Plugin,https://github.com/jenkinsci/editable-choice-plugin
 Enhanced Credentials Plugin,https://github.com/jenkinsci/enhanced-credentials-plugin
 Enhanced Old Build Discarder Plugin,https://github.com/jenkinsci/enhanced-old-build-discarder-plugin
