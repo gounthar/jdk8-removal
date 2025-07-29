@@ -382,10 +382,10 @@ Checkstyle Plugin,https://github.com/jenkinsci/checkstyle-plugin
 Chef Cookbook Pipeline Plugin,https://github.com/jenkinsci/chef-cookbook-pipeline-plugin
 Chef Identity Plugin,https://github.com/jenkinsci/chef-identity-plugin
 Chef Tracking Plugin,https://github.com/jenkinsci/chef-tracking-plugin
+Chocolate Theme Plugin,https://github.com/jenkinsci/chocolate-theme-plugin
 Choice From File Parameter Plugin,https://github.com/jenkinsci/choice-from-file-parameter-plugin
 Chosen Plugin,https://github.com/jenkinsci/chosen-plugin
 Chosen Views Tabbar,https://github.com/jenkinsci/chosen-views-tabbar
-Chrome Frame Plugin,https://github.com/jenkinsci/chrome-frame-plugin
 Chromedriver Plugin,https://github.com/jenkinsci/chromedriver-plugin
 Chroot Plugin,https://github.com/jenkinsci/chroot-plugin
 Chucknorris Plugin,https://github.com/jenkinsci/chucknorris-plugin
@@ -652,7 +652,6 @@ Describe With Params Plugin,https://github.com/jenkinsci/describe-with-params-pl
 Description Column Plugin,https://github.com/jenkinsci/description-column-plugin
 Description Setter Plugin,https://github.com/jenkinsci/description-setter-plugin
 Design Library Plugin,https://github.com/jenkinsci/design-library-plugin
-Dev Mode Plugin,https://github.com/jenkinsci/dev-mode-plugin
 Deveo Plugin,https://github.com/jenkinsci/deveo-plugin
 Device Watcher Plugin,https://github.com/jenkinsci/device-watcher-plugin
 Devops Portal Plugin,https://github.com/jenkinsci/devops-portal-plugin
@@ -771,7 +770,6 @@ Envinject Api Plugin,https://github.com/jenkinsci/envinject-api-plugin
 Envinject Lib,https://github.com/jenkinsci/envinject-lib
 Envinject Plugin,https://github.com/jenkinsci/envinject-plugin
 Environment Dashboard Plugin,https://github.com/jenkinsci/environment-dashboard-plugin
-Environment Filter Utils Plugin,https://github.com/jenkinsci/environment-filter-utils-plugin
 Environment Labels Setter Plugin,https://github.com/jenkinsci/environment-labels-setter-plugin
 Environment Manager Tools Plugin,https://github.com/jenkinsci/environment-manager-tools-plugin
 Environment Plugin,https://github.com/jenkinsci/environment-plugin
@@ -953,7 +951,6 @@ Gitlab Merge Request Builder Plugin,https://github.com/jenkinsci/gitlab-merge-re
 Gitlab Oauth Plugin,https://github.com/jenkinsci/gitlab-oauth-plugin
 Gitlab Plugin,https://github.com/jenkinsci/gitlab-plugin
 Gitorious Plugin,https://github.com/jenkinsci/gitorious-plugin
-Global Build Stats Plugin,https://github.com/jenkinsci/global-build-stats-plugin
 Global Pipeline Parameters Plugin,https://github.com/jenkinsci/global-pipeline-parameters-plugin
 Global Post Script Plugin,https://github.com/jenkinsci/global-post-script-plugin
 Global Pre Script Plugin,https://github.com/jenkinsci/global-pre-script-plugin
@@ -1003,7 +1000,6 @@ Groovy Events Listener Plugin,https://github.com/jenkinsci/groovy-events-listene
 Groovy Label Assignment Plugin,https://github.com/jenkinsci/groovy-label-assignment-plugin
 Groovy Pipeline Model,https://github.com/jenkinsci/groovy-pipeline-model
 Groovy Plugin,https://github.com/jenkinsci/groovy-plugin
-Groovy Postbuild Plugin,https://github.com/jenkinsci/groovy-postbuild-plugin
 Groovy Sandbox,https://github.com/jenkinsci/groovy-sandbox
 Groovy Script Scheduler Plugin,https://github.com/jenkinsci/groovy-script-scheduler-plugin
 Groovy,https://github.com/jenkinsci/groovy
@@ -1299,7 +1295,6 @@ Kubesphere Token Auth Plugin,https://github.com/jenkinsci/kubesphere-token-auth-
 Kundo Plugin,https://github.com/jenkinsci/kundo-plugin
 Kwjlib,https://github.com/jenkinsci/kwjlib
 Label Linked Jobs Plugin,https://github.com/jenkinsci/label-linked-jobs-plugin
-Label Verifier Plugin,https://github.com/jenkinsci/label-verifier-plugin
 Labeled Test Groups Publisher Plugin,https://github.com/jenkinsci/labeled-test-groups-publisher-plugin
 Labelled Steps Plugin,https://github.com/jenkinsci/labelled-steps-plugin
 Labmanager Plugin,https://github.com/jenkinsci/labmanager-plugin
@@ -1896,7 +1891,6 @@ Release Plugin,https://github.com/jenkinsci/release-plugin
 Release Test,https://github.com/jenkinsci/release-test
 Reliza Integration Plugin,https://github.com/jenkinsci/reliza-integration-plugin
 Remote File Plugin,https://github.com/jenkinsci/remote-file-plugin
-Remote Jobs View,https://github.com/jenkinsci/remote-jobs-view
 Remote Queue Plugin,https://github.com/jenkinsci/remote-queue-plugin
 Remote Result Trigger Plugin,https://github.com/jenkinsci/remote-result-trigger-plugin
 Remote Terminal Access Plugin,https://github.com/jenkinsci/remote-terminal-access-plugin
@@ -2244,7 +2238,6 @@ Testquality Updater Plugin,https://github.com/jenkinsci/testquality-updater-plug
 Testrail Plugin,https://github.com/jenkinsci/testrail-plugin
 Testsigma Plugin,https://github.com/jenkinsci/testsigma-plugin
 Teststudio Plugin,https://github.com/jenkinsci/teststudio-plugin
-Teststudioapitesting Plugin,https://github.com/jenkinsci/teststudioapitesting-plugin
 Teststudiomobiletesting Plugin,https://github.com/jenkinsci/teststudiomobiletesting-plugin
 Testswarm Plugin,https://github.com/jenkinsci/testswarm-plugin
 Testweaver Plugin,https://github.com/jenkinsci/testweaver-plugin
