@@ -337,7 +337,7 @@ buildcontext-capture:0.6
 buildgraph-view:1.8
 buildresult-trigger:1.01
 buildrotator:1.2
-buildtriggerbadge:294.v928d20c8c8f6
+buildtriggerbadge:297.v9f71e6a_33c44
 built-on-column:1.5
 bulk-builder:1.5
 bumblebee:4.1.9
@@ -454,7 +454,7 @@ commons-httpclient3-api:3.1-3
 commons-lang-api:2.6.0
 commons-lang3-api:3.18.0-98.v3a_674c06072d
 commons-math3-api:3.6.1-70.v4fe220fa_63dd
-commons-text-api:1.13.1-176.v74d88f22034b_
+commons-text-api:1.14.0-194.v804a_dc3a_1b_d8
 compact-columns:1.199.v61a_f51712072
 compatibility-action-storage:1.0
 composer-security-checker:1.7
@@ -1066,7 +1066,7 @@ jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
 json-api:20250517-163.v1c5da_e99c775
 json-editor-parameter:54.v71962f37a_416
-json-parameter:22.v78a_1c06a_7179
+json-parameter:26.vc0a_6039f8925
 json-path-api:2.9.0-178.vca_b_c71881321
 jsoup:1.21.1-58.vfc578e6e2610
 jspecify-api:1.0.0-1.ve7231e6d0d15
@@ -1299,6 +1299,7 @@ nomad:0.10.0
 non-dynamic-hello-world:1.0
 nopmdcheck:0.9
 nopmdverifytrac:0.9
+nord-theme:1.1
 notification:1.18
 notify-events:1.6.2
 nouvola-divecloud:1.08
@@ -1431,9 +1432,9 @@ pipeline-input-step:532.v9e7466cb_4406
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.1
 pipeline-lib-oras:23.v4d7c8d889a_86
-pipeline-maven:1541.vc01544b_d27e8
-pipeline-maven-api:1541.vc01544b_d27e8
-pipeline-maven-database:1541.vc01544b_d27e8
+pipeline-maven:1554.v292f3d3479e6
+pipeline-maven-api:1554.v292f3d3479e6
+pipeline-maven-database:1554.v292f3d3479e6
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2258.v4e96d2b_da_f9b_
 pipeline-model-declarative-agent:1.1.1
