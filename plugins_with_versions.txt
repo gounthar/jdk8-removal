@@ -109,7 +109,7 @@ artifact-promotion:0.5.2
 artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
 artifactory:4.0.8
-artifactory-artifact-manager:247.v7a_c71a_f91755
+artifactory-artifact-manager:252.v944a_69ea_4873
 artifactory-client-api:2.19.0-116.vc6e7efff0e6b_
 artifactz:1.3.1-49.v21e3510b_2b_67
 asakusa-satellite-plugin:0.1.1
@@ -669,7 +669,7 @@ easyqa:1.0
 ec2:1982.vd5c4f4008e4c
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
-ec2-fleet:3.2.0
+ec2-fleet:4.0.0.502.v329a_307d2a_5d
 echarts-api:5.6.0-5
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
@@ -686,7 +686,7 @@ elastic-axis:615.vb_f7c20ec040e
 elasticbox:5.0.1
 elasticsearch-query:1.2
 electricflow:1.1.40
-email-ext:1916.vc954a_f86ff21
+email-ext:1922.v5c93c9e80a_f9
 email-ext-recipients-column:72.v546836954562
 emailext-template:233.v1eb_88fc160b_5
 embeddable-build-status:548.v5653c6e28c41
@@ -825,7 +825,7 @@ github-api:1.321-488.v9b_c0da_9533f8
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
-github-branch-source:1824.v046257273408
+github-branch-source:1833.v77b_6542df5a_8
 github-checks:602.v264a_83610da_6
 github-coverage-reporter:1.10
 github-issues:1.2.4
@@ -1424,7 +1424,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-pipeline-graph-view:612.v864406fe6a_94
+pipeline-graph-view:616.vb_82b_eedecfc4
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1432,9 +1432,9 @@ pipeline-input-step:532.v9e7466cb_4406
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.1
 pipeline-lib-oras:23.v4d7c8d889a_86
-pipeline-maven:1554.v292f3d3479e6
-pipeline-maven-api:1554.v292f3d3479e6
-pipeline-maven-database:1554.v292f3d3479e6
+pipeline-maven:1556.vd9051b_d6ef5d
+pipeline-maven-api:1556.vd9051b_d6ef5d
+pipeline-maven-database:1556.vd9051b_d6ef5d
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2258.v4e96d2b_da_f9b_
 pipeline-model-declarative-agent:1.1.1
@@ -1624,7 +1624,7 @@ sbt:88.vee3829489c40
 scala-junit-name-decoder:1.0
 scalable-amazon-ecs:1.0
 schedule-build:667.vda_a_fe31e1659
-scm-api:704.v3ce5c542825a_
+scm-api:707.v749f968369d4
 scm-filter-branch-pr:222.v72301ecb_a_ee7
 scm-filter-jervis:2.0.1-68.v738626177078
 scm-httpclient:1.5
