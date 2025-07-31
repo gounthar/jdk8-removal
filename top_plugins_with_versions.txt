@@ -19,7 +19,7 @@ credentials-binding:702.vfe613e537e88
 matrix-project:849.v0cd64ed7e531
 git:5.7.0
 cloudbees-folder:6.1037.v4cb_8573b_72a_a_
-token-macro:444.v52de7e9c573d
+token-macro:477.vd4f0dc3cb_cf1
 workflow-job:1540.v295eccc9778f
 durable-task:595.ve87b_f1318d67
 workflow-cps:4169.vb_7e492a_1c7b_e
@@ -207,7 +207,7 @@ aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
 bitbucket:273.v7b_535e8f11c2
-warnings-ng:12.8.0
+warnings-ng:12.9.0
 aws-java-sdk-ecs:1.12.780-480.v4a_0819121a_9e
 emailext-template:233.v1eb_88fc160b_5
 mask-passwords:199.va_0218b_a_59186
