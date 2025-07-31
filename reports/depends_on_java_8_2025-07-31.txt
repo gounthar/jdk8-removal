@@ -29,7 +29,7 @@ acunetix-360-scan:2.1.18
 acunetix:1.2.14
 adaptive-disconnector:0.2
 add-changes-to-build-changelog:21.v537f074cf2cc
-additional-identities-plugin:132.vb_3f63a_db_8f4b_
+additional-identities-plugin:141.vd9ede1e02477
 additional-metrics:146.v88cfe819665c
 admin-params:1.0.0
 adobe-cloud-manager:43.v4560e7fa191c
@@ -770,7 +770,7 @@ git:5.7.0
 gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
-gitea-checks:551.vd306d7ca_b_18f
+gitea-checks:559.va_d764b_5edf3e
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitea:250.v76a_0b_d4fef5b_
 gitee:1204.v4635f4272c96
@@ -831,7 +831,7 @@ gradle-repo:1.0.1
 gradle:2.15
 graphiteIntegrator:1.2
 graphql-server:0.0.5
-gravatar:159.v205f4fffb_8cd
+gravatar:167.va_b_a_b_031a_81e7
 greenballs:1.15.1
 groovy-events-listener-plugin:2.275.v31468b_580ea_4
 groovy-label-assignment:1.2.0
@@ -1269,7 +1269,7 @@ osf-builder-suite-for-sfcc-deploy:1.1.13
 osf-builder-suite-for-sfcc-run-job:1.0.5
 osf-builder-suite-standalone-sonar-linter:1.0.3
 oslc-cm:1.31
-oss-symbols-api:390.va_22c30a_b_23a_2
+oss-symbols-api:392.v27a_482d90083
 ostorlab:1.11
 overops-query:3.0.3
 oversecured:1.1
@@ -1528,7 +1528,7 @@ scm-sync-configuration:0.0.10
 scm2job:2.5
 scmskip:79.v311ff68f9df1
 scons:0.4
-scoring-load-balancer:183.v3377a_8d2ca_31
+scoring-load-balancer:192.v8d5444b_5b_15c
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
