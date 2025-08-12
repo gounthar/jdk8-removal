@@ -16,7 +16,7 @@ plain-credentials:199.v9f8e1f741799
 junit:1335.v6b_a_a_e18534e1
 git-client:6.3.0
 credentials-binding:702.vfe613e537e88
-matrix-project:849.v0cd64ed7e531
+matrix-project:855.va_10985fa_3219
 git:5.7.0
 cloudbees-folder:6.1037.v4cb_8573b_72a_a_
 token-macro:477.vd4f0dc3cb_cf1
@@ -30,14 +30,14 @@ trilead-api:2.209.v0e69b_c43c245
 workflow-basic-steps:1079.vce64b_a_929c5a_
 pipeline-stage-step:322.vecffa_99f371c
 pipeline-input-step:534.v352f0a_e98918
-workflow-multibranch:810.v6b_6e77da_7058
-pipeline-stage-tags-metadata:2.2258.v4e96d2b_da_f9b_
-pipeline-model-api:2.2258.v4e96d2b_da_f9b_
+workflow-multibranch:811.vcd33d074c2a_0
+pipeline-stage-tags-metadata:2.2265.v140e610fe9d5
+pipeline-model-api:2.2265.v140e610fe9d5
 pipeline-build-step:571.v08a_fffd4b_0ce
 snakeyaml-api:2.3-125.v4d77857a_b_402
-pipeline-model-extensions:2.2258.v4e96d2b_da_f9b_
+pipeline-model-extensions:2.2265.v140e610fe9d5
 pipeline-milestone-step:138.v78ca_76831a_43
-pipeline-model-definition:2.2258.v4e96d2b_da_f9b_
+pipeline-model-definition:2.2265.v140e610fe9d5
 plugin-util-api:6.1.0
 jquery3-api:3.7.1-583.vda_6ca_102270d
 pipeline-graph-analysis:241.vc3d48fb_b_2582
@@ -55,7 +55,7 @@ bootstrap5-api:5.3.7-2
 resource-disposer:0.25
 github-api:1.321-488.v9b_c0da_9533f8
 timestamper:1.30
-ws-cleanup:0.48
+ws-cleanup:0.49
 okhttp-api:4.11.0-189.v976fa_d3379d6
 github:1.44.0
 ldap:780.vcb_33c9a_e4332
@@ -65,7 +65,7 @@ email-ext:1925.v1598902b_58dd
 mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-2
-ant:513.vde9e7b_a_0da_0f
+ant:518.v8d8dc7945eca_
 mina-sshd-api-core:2.15.0-161.vb_200831a_c15b_
 build-timeout:1.38
 commons-lang3-api:3.18.0-98.v3a_674c06072d
@@ -92,7 +92,7 @@ eddsa-api:0.3.0.1-19.vc432d923e5ee
 authentication-tokens:1.144.v5ff4a_5ec5c33
 metrics:4.2.32-481.v75f035fdc894
 javadoc:354.vee1a_660b_4990
-maven-plugin:3.26
+maven-plugin:3.27
 docker-commons:457.v0f62a_94f11a_3
 git-server:137.ve0060b_432302
 theme-manager:319.v9193461f9671
@@ -107,7 +107,7 @@ handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 mapdb-api:1.0.9-44.va_1e1310c9118
 popper2-api:2.11.6-5
-subversion:1287.vd2d507146906
+subversion:1292.ve8cf25770ee3
 jersey2-api:2.47-165.ve7809a_3e87e0
 favorite:2.237.v79163ca_8b_892
 pubsub-light:1.19
@@ -131,7 +131,7 @@ blueocean-pipeline-api-impl:1.27.21
 popper-api:1.16.1-3
 ssh-agent:386.v36cc0c7582f0
 localization-support:1.3
-apache-httpcomponents-client-5-api:5.5-150.veb_76e719855b_
+apache-httpcomponents-client-5-api:5.5-157.vb_43ef2f6845e
 blueocean-git-pipeline:1.27.21
 pipeline-utility-steps:2.19.0
 localization-zh-cn:371.v23851f835d6b_
@@ -166,7 +166,7 @@ mercurial:1323.ve69d2a_db_8a_b_d
 uno-choice:2.8.8
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 configuration-as-code:1985.vdda_32d0c4ea_b_
-kubernetes-credentials:203.v85b_9836a_f44b_
+kubernetes-credentials:206.vde31a_b_0f71a_c
 cloud-stats:377.vd8a_6c953e98e
 slack:795.v4b_9705b_e6d47
 job-dsl:1.93
@@ -179,7 +179,7 @@ generic-webhook-trigger:2.3.1
 blueocean-autofavorite:1.2.5
 jira:3.18
 aws-java-sdk-ec2:1.12.780-480.v4a_0819121a_9e
-jobConfigHistory:1343.v4b_e819a_ecdc2
+jobConfigHistory:1352.va_201a_8389340
 ssh:158.ve2a_e90fb_7319
 forensics-api:3.1.0
 build-name-setter:2.5.1
@@ -189,7 +189,7 @@ dashboard-view:2.537.v5132851f6ca_f
 http_request:1.20
 oss-symbols-api:392.v27a_482d90083
 thinBackup:2.1.3
-pipeline-maven:1559.vb_03b_1b_f1a_25c
+pipeline-maven:1563.v2e75645a_7d43
 groovy:497.v7b_061a_a_de65d
 locale:597.v7781ce70d4cf
 aws-java-sdk-ecr:1.12.780-480.v4a_0819121a_9e
@@ -220,9 +220,9 @@ extended-read-permission:61.vf24570ff3b_e9
 throttle-concurrents:2.18
 monitoring:2.5.0
 parameterized-scheduler:285.ve611986d4c48
-pipeline-maven-api:1559.vb_03b_1b_f1a_25c
+pipeline-maven-api:1563.v2e75645a_7d43
 aws-java-sdk-efs:1.12.780-480.v4a_0819121a_9e
-ansible:524.v9fa_a_4c989224
+ansible:588.v2a_a_a_f345e34f
 powershell:2.3
 commons-httpclient3-api:3.1-3
 Office-365-Connector:5.1.0
