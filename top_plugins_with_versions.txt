@@ -175,7 +175,7 @@ aws-java-sdk-minimal:1.12.780-480.v4a_0819121a_9e
 build-user-vars-plugin:195.v8c35f9d5c3dc
 aws-credentials:248.v78a_dcfc9db_ff
 pipeline-model-declarative-agent:1.1.1
-generic-webhook-trigger:2.3.1
+generic-webhook-trigger:2.4.1
 blueocean-autofavorite:1.2.5
 jira:3.18
 aws-java-sdk-ec2:1.12.780-480.v4a_0819121a_9e
@@ -207,7 +207,7 @@ aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
 bitbucket:273.v7b_535e8f11c2
-warnings-ng:12.10.0
+warnings-ng:12.9749.va_2c1361722d3
 aws-java-sdk-ecs:1.12.780-480.v4a_0819121a_9e
 emailext-template:233.v1eb_88fc160b_5
 mask-passwords:204.v24d863065180
