@@ -11,7 +11,7 @@ JDK_Parameter_Plugin:1.3
 JiraTestResultReporter:300.v7a_d8b_cee2906
 Matrix-sorter-plugin:1.3
 NegotiateSSO:153.v85355f1cb_26d
-Office-365-Connector:5.1.0
+Office-365-Connector:5.2.0
 Parameterized-Remote-Trigger:3.2.2
 PrioritySorter:863.v4a_b_974a_5d042
 SBuild:1.0.2
@@ -33,7 +33,7 @@ acunetix:1.2.14
 acunetix-360-scan:2.1.18
 adaptive-disconnector:0.2
 add-changes-to-build-changelog:21.v537f074cf2cc
-additional-identities-plugin:141.vd9ede1e02477
+additional-identities-plugin:145.vc4847603833e
 additional-metrics:146.v88cfe819665c
 admin-params:1.0.0
 adobe-cloud-manager:43.v4560e7fa191c
@@ -126,7 +126,7 @@ atlassian-bitbucket-server-integration:4.2.0
 atlassian-jira-software-cloud:2.0.15
 attention:1.1
 audit-log:1.3
-audit-trail:395.vce180b_359a_b_5
+audit-trail:415.vb_8069769b_121
 audit2db:0.5
 authentication-tokens:1.144.v5ff4a_5ec5c33
 authorize-project:2.0.0
@@ -342,7 +342,7 @@ buildtriggerbadge:307.v19decf05a_0df
 built-on-column:1.5
 bulk-builder:1.5
 bumblebee:4.1.9
-byte-buddy-api:1.17.6-171.ve8cb_b_432ea_b_f
+byte-buddy-api:1.17.7-181.ve4f4387cb_a_86
 byteguard-build-actions:1.0
 ca-apm:2.1.8
 ca-mat-performance-benchmarking-by-broadcom:1.7
@@ -510,7 +510,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.2875.ve560756ff429
+coverage:2.2879.v7434570a_8b_94
 coverage-badges-extension:179.v6c477ce0c246
 coverity:1.11.4
 cppcheck:1.26
@@ -614,7 +614,7 @@ dingding-json-pusher:2.0
 dingding-notifications:2.8.0
 disable-failed-job:1.15
 disable-github-multibranch-status:1.2
-disable-job-button:1.v9db_352414f90
+disable-job-button:1.3.vf55949267366
 discard-old-build:1.08
 discord-notifier:260.v8f28622b_a_6b_7
 disk-usage:1.3
@@ -722,7 +722,7 @@ extended-choice-parameter:388.ve7b_d0b_920e10
 extended-read-permission:61.vf24570ff3b_e9
 extended-security-settings:1.3
 extended-timer-trigger:30.vb_fb_7092cccfa_
-extensible-choice-parameter:237.v51568f37b_78e
+extensible-choice-parameter:239.v5f5c278708cf
 extension-filter:250.v5f608d54f27d
 extensivetesting:1.4.4b
 external-monitor-job:223.vb_fddcf42c9b_3
@@ -758,7 +758,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:11.10.5-329.v87c0226c37d2
+flyway-api:11.11.1-335.v220b_2e03e6de
 flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -816,7 +816,7 @@ gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
-gitea-checks:559.va_d764b_5edf3e
+gitea-checks:564.v803e0cffd010
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1224.v843da_c08c504
 gitflow:1.0.1
@@ -843,7 +843,7 @@ github-scm-trait-notification-context:45.v8ef831829589
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:723.v090f23d3cc49
 gitlab-kubernetes-credentials:484.v2fea_0cc92b_d3
-gitlab-logo:195.vb_b_4dd5cc0f54
+gitlab-logo:219.v451a_3b_74b_7a_a_
 gitlab-merge-request-jenkins:2.0.0
 gitlab-oauth:1.22
 gitlab-plugin:1.9.8
@@ -883,7 +883,7 @@ gradle-daemon:0.1.0
 gradle-repo:1.0.1
 graphiteIntegrator:1.2
 graphql-server:0.0.5
-gravatar:167.va_b_a_b_031a_81e7
+gravatar:170.vb_394745e4d25
 greenballs:1.15.1
 groovy:497.v7b_061a_a_de65d
 groovy-events-listener-plugin:2.275.v31468b_580ea_4
@@ -1005,7 +1005,7 @@ jdk-tool:83.v417146707a_3d
 jenkins-cloudformation-plugin:231.v3b_84a_7a_074ec
 jenkins-design-language:1.27.21
 jenkins-flowdock-plugin:1.1.8
-jenkins-infra-test:206.v7d994a_630972
+jenkins-infra-test:234.v8a_586d88a_960
 jenkins-jira-issue-updater:1.18
 jenkins-multijob-plugin:662.vd2e0001f6b_b_d
 jenkins-reviewbot:2.4.6
@@ -1146,7 +1146,7 @@ loadmance:1.0
 loadninja:1.4
 loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
 locale:597.v7781ce70d4cf
-localization-support:1.3
+localization-support:1.41.v186a_c1569458
 localization-zh-cn:371.v23851f835d6b_
 lockable-resources:1412.v3f305a_fb_a_117
 locked-files-report:1.6
@@ -1180,7 +1180,7 @@ mantis:0.26
 mapdb-api:1.0.9-44.va_1e1310c9118
 maplelabs-apm:1.181.v72a_25e99778e
 marathon:1.6.0
-mariadb-api:3.5.4-147.vb_6fc046ef86a_
+mariadb-api:3.5.5-157.vb_6b_0b_12949f1
 markdown-formatter:292.vf6975a_44502a_
 markdown-params:71.v576911a_6e3b_c
 mask-passwords:204.v24d863065180
@@ -1206,7 +1206,7 @@ maven-plugin:3.27
 maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
-mcp-server:0.37.v5d2d8c089e8b_
+mcp-server:0.46.v43ff45cf7fe5
 mdt-deployment:1.0.4
 mdtool:0.1.1
 meliora-testlab:1.24
@@ -1348,7 +1348,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.18
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.2.15-82.v6001343b_8d80
+oras-java-api:0.2.15-92.v1b_b_0c8a_cf3a_4
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1386,7 +1386,7 @@ peass-ci:2.3.9-1285.va_202a_66e21fa_
 pegdown-formatter:1.3
 pending-changes:0.3.0
 people-redirector:1.3
-people-view:1.2
+people-view:1.16.v774d3b_4b_3a_f3
 percentage-du-node-column:0.1.0
 performance:988.v5699a_d7c9162
 performance-signature-dynatrace:3.2.2
@@ -1459,7 +1459,7 @@ plasticscm-plugin:4.4
 platformlabeler:2734.v604521b_646b_b_
 plot:2.4.0
 plugin-usage-plugin:4.10
-plugin-util-api:6.1.0
+plugin-util-api:6.1154.ved7e7d3035a_5
 polarion:1.3
 policycenter-gate-validator:1.0.1
 poll-mailbox-trigger-plugin:1.026
@@ -1634,7 +1634,7 @@ scm-sync-configuration:0.0.10
 scm2job:2.5
 scmskip:79.v311ff68f9df1
 scons:0.4
-scoring-load-balancer:192.v8d5444b_5b_15c
+scoring-load-balancer:195.v5d0693809c87
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
@@ -2000,7 +2000,7 @@ xunit:3.1.5
 xvfb:1.2
 xvnc:1.28
 xygeni-sensor:1.4
-yaml-axis:306.v5302614360b_e
+yaml-axis:330.vb_fecb_eccb_7d2
 yandex-cloud-workers:78.v72635c3503a_c
 yandex-metrica:1.0
 yet-another-build-visualizer:1.17
