@@ -753,6 +753,7 @@ gerrit-checks-api:66.v3ef8b_f08f1f3
 gerrit-code-review:0.5.0
 gerrit-trigger:2.42.0
 ghost-inspector:3.4
+ghprb:1.42.2
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
@@ -818,6 +819,7 @@ google-cloudbuild:0.2.6
 google-compute-engine:4.683.v0ce26579a_ee7
 google-container-registry-auth:0.3
 google-git-notes-publisher:0.3
+google-kubernetes-engine:0.443.vcf71f5903ef3
 google-login:109.v022b_cf87b_e5b_
 google-metadata-plugin:0.6.70.v87a_e90994a_32
 google-oauth-plugin:1.335.ve6de40e2db_18
@@ -1178,6 +1180,7 @@ mstestrunner:1.5.0
 mttr:1.1
 multi-branch-priority-sorter:1.0
 multi-branch-project-plugin:0.7
+multi-module-tests-publisher:1.44
 multi-slave-config-plugin:1.2.0
 multibranch-action-triggers:1.8.10
 multibranch-job-tear-down:1.2
@@ -1456,6 +1459,7 @@ rb:1.4
 read-only-configurations:1.10
 readonly-parameters:1.0.0
 rebuild:338.va_0a_b_50e29397
+recipe:1.2
 redeploy-rancher2-workload:1.0.1
 redgate-sql-ci:2.0.8
 redhat-dependency-analytics:0.9.1.134.va_886e3790140
