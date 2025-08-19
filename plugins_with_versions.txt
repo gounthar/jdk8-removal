@@ -209,7 +209,7 @@ aws-sqs-trigger:1.2
 aws-yum-parameter:1.5
 awseb-deployment-plugin:0.3.21
 azure-acs:1.0.4
-azure-ad:580.v2f665882b_a_71
+azure-ad:602.v3fc9b_b_20d5a_8
 azure-app-service:1.0.2
 azure-artifact-manager:216.ve6d6d465e371
 azure-batch-parallel:0.2
@@ -747,6 +747,7 @@ file-parameters:385.v1cf03fdff8ce
 files-found-trigger:1.5
 filesystem-list-parameter-plugin:0.0.17
 filesystem_scm:120.vea_35eee5d63f
+finite-state-analysis:1.080.v3581649726b_8
 finite-state-binary-scan:36.vdb_053289b_a_e5
 finite-state-third-party-upload:34.va_f4cd11d49e9
 fitnesse:1.36
@@ -1739,7 +1740,7 @@ spotinst:2.2.21
 spring-config:2.0.2
 spring-initalzr:1.6
 sqlplus-script-runner:3.0.1
-sqlserver-api:12.10.1.jre11-158.v4dde7ea_5c399
+sqlserver-api:13.2.0.jre11-178.v5d4969251cb_d
 sra-deploy:1.4.2.4
 srcclr-installer:1.0.2
 sse-gateway:1.28
