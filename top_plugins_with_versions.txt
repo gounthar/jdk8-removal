@@ -14,7 +14,7 @@ workflow-support:976.vb_d9493c2eb_09
 jackson2-api:2.19.2-408.v18248a_324cfe
 plain-credentials:199.v9f8e1f741799
 junit:1335.v6b_a_a_e18534e1
-git-client:6.3.0
+git-client:6.3.1
 credentials-binding:702.vfe613e537e88
 matrix-project:856.v4c352b_3a_b_23e
 git:5.7.0
@@ -38,10 +38,10 @@ snakeyaml-api:2.3-125.v4d77857a_b_402
 pipeline-model-extensions:2.2265.v140e610fe9d5
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-definition:2.2265.v140e610fe9d5
-plugin-util-api:6.1154.ved7e7d3035a_5
-jquery3-api:3.7.1-583.vda_6ca_102270d
+plugin-util-api:6.1157.vc75ef7129d86
+jquery3-api:3.7.1-594.vb_3864f326cf0
 pipeline-graph-analysis:241.vc3d48fb_b_2582
-font-awesome-api:7.0.0-1
+font-awesome-api:7.0.0-840.vd6c7a_a_a_a_88e1
 matrix-auth:3.2.7
 echarts-api:6.0.0-1
 caffeine-api:3.2.2-178.v353b_8428ed56
@@ -51,7 +51,7 @@ jaxb:2.3.9-133.vb_ec76a_73f706
 variant:70.va_d9f17f859e0
 ssh-slaves:3.1071.v0d059c7b_c555
 javax-activation-api:1.2.0-8
-bootstrap5-api:5.3.7-2
+bootstrap5-api:5.3.7-860.v1251c115c90c
 resource-disposer:0.25
 github-api:1.321-488.v9b_c0da_9533f8
 timestamper:1.30
@@ -118,7 +118,7 @@ jenkins-design-language:1.27.21
 blueocean-rest:1.27.21
 jquery:1.12.4-3
 parameterized-trigger:873.v8b_e37dd8418f
-data-tables-api:2.3.2-3
+data-tables-api:2.3.2-1369.v417fcd327805
 blueocean-core-js:1.27.21
 publish-over:0.22
 blueocean-web:1.27.21
@@ -155,7 +155,7 @@ envinject-api:1.235.va_14c74f8f487
 gitlab-plugin:1.9.8
 commons-compress-api:1.28.0-1
 envinject:2.926.v69c9b_3896a_96
-prism-api:1.30.0-1
+prism-api:1.30.0-600.v0b_eeeb_e43a_f9
 sonar:2.18
 docker-java-api:3.5.3-122.v156e51f30c0a_
 ansicolor:1.0.6
@@ -181,7 +181,7 @@ jira:3.18
 aws-java-sdk-ec2:1.12.780-480.v4a_0819121a_9e
 jobConfigHistory:1352.va_201a_8389340
 ssh:158.ve2a_e90fb_7319
-forensics-api:3.1740.v1d0305a_2747b_
+forensics-api:3.1745.vd1f0b_a_176458
 build-name-setter:2.5.1
 extended-choice-parameter:388.ve7b_d0b_920e10
 active-directory:2.40
