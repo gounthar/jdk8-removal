@@ -294,7 +294,7 @@ bmc-change-manager-imstm:66.v12c841920f7d
 bmc-rpd:1.1
 boot-clj:1.0.0
 bootstrap4-api:4.6.0-6
-bootstrap5-api:5.3.7-2
+bootstrap5-api:5.3.7-860.v1251c115c90c
 bootstraped-multi-test-results-report:2.2.1
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
 branch-api:2.1244.vf95c81f1641c
@@ -554,7 +554,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:574.va_19f05d54df5
 dashboard-view:2.537.v5132851f6ca_f
-data-tables-api:2.3.2-3
+data-tables-api:2.3.2-1369.v417fcd327805
 database:274.vea_2e859b_2661
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:164.v626f5b_6c0114
@@ -562,7 +562,7 @@ database-mysql:142.vc259713f0032
 database-postgresql:146.vd1a_f70b_56e0e
 database-sqlite:1.10
 database-sqlserver:91.v61e8e4680cdc
-datadog:9.1.6
+datadog:9.1.7
 datatheorem-mobile-app-security:2.4.2
 date-parameter:58.v0ee8d1c59323
 datetime-constraint:0.1.2
@@ -764,8 +764,8 @@ flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
 folder-properties:62.v1636b_4a_84608
-font-awesome-api:7.0.0-1
-forensics-api:3.1740.v1d0305a_2747b_
+font-awesome-api:7.0.0-840.vd6c7a_a_a_a_88e1
+forensics-api:3.1745.vd1f0b_a_176458
 form-element-path:1.12
 forticwp-cicd:0.9.8.51.va_308b_11da_d62
 fortify:23.1.40
@@ -804,7 +804,7 @@ git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
-git-client:6.3.0
+git-client:6.3.1
 git-forensics:3.2.0
 git-parameter:444.vca_b_84d3703c2
 git-prebuildmerge-trait:1.0
@@ -1061,7 +1061,7 @@ jqs-monitoring:37.vf50a_82a_0b_f32
 jquery:1.12.4-3
 jquery-detached:1.2.1
 jquery-ui:1.0.2
-jquery3-api:3.7.1-583.vda_6ca_102270d
+jquery3-api:3.7.1-594.vb_3864f326cf0
 jsch:0.2.16-95.v3eecb_55fa_b_78
 jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
@@ -1114,7 +1114,7 @@ labelled-steps:1.0
 labmanager:0.2.8
 lacework-security-scanner:1.1.2
 lambda-test-runner:0.1.0
-lambdatest-automation:1.21.5
+lambdatest-automation:1.21.6
 last-changes:456.vc484b_627e803
 lastfailureversioncolumn:1.1
 lastsuccessversioncolumn:1.1
@@ -1460,7 +1460,7 @@ plasticscm-plugin:4.4
 platformlabeler:2734.v604521b_646b_b_
 plot:2.4.0
 plugin-usage-plugin:4.10
-plugin-util-api:6.1154.ved7e7d3035a_5
+plugin-util-api:6.1157.vc75ef7129d86
 polarion:1.3
 policycenter-gate-validator:1.0.1
 poll-mailbox-trigger-plugin:1.026
@@ -1482,7 +1482,7 @@ preSCMbuildstep:115.vf9808414429d
 preflight-integration:1.4
 prereq-buildstep:1.1
 pretested-integration:3.1.2
-prism-api:1.30.0-1
+prism-api:1.30.0-600.v0b_eeeb_e43a_f9
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
 proc-cleaner-plugin:2.4
