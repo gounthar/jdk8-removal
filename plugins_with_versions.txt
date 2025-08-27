@@ -56,7 +56,7 @@ alibabacloud-pkg-deployment:1.0
 aliyun-oss-uploader:1.4
 all-changes:1.5
 allure-jenkins-plugin:2.32.0
-amazon-ecr:1.155.v3d884c1b_dee1
+amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:562.v9f3473162ee7
 amqp-build-trigger:1.0
@@ -71,7 +71,7 @@ ansible-tower:0.17.0
 ansicolor:1.0.6
 ant:518.v8d8dc7945eca_
 ant-in-workspace:1.2.2
-antexec:430.v622876056f17
+antexec:444.vf0db_191cb_9c8
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -111,7 +111,7 @@ artifactdeployer:1.3
 artifactory:4.0.8
 artifactory-artifact-manager:252.v944a_69ea_4873
 artifactory-client-api:2.19.0-116.vc6e7efff0e6b_
-artifactz:1.3.1-49.v21e3510b_2b_67
+artifactz:1.4.0-53.v7537f8b_3f9b_e
 asakusa-satellite-plugin:0.1.1
 ascentialtest-cmd-line:1.1
 asm-api:9.8-163.vb_2a_96d3f9c3c
@@ -145,7 +145,7 @@ aws-codebuild:0.59
 aws-codecommit-jobs:0.3.0
 aws-codecommit-trigger:3.0.12
 aws-codepipeline:0.49
-aws-credentials:248.v78a_dcfc9db_ff
+aws-credentials:254.v978a_5e206a_d7
 aws-device-farm:1.37
 aws-global-configuration:146.vfcec61593eea_
 aws-java-sdk:1.12.780-480.v4a_0819121a_9e
@@ -245,7 +245,7 @@ benchmark-evaluator:99.v2b_ee548fa_f54
 better-pipeline-flowgraph-table:1.8.v7718fd869731
 bevigil-ci:1.29.v3ff4d38b_843f
 bigpanda-jenkins:1.58.va_f372a_c29b_d5
-bitbucket:273.v7b_535e8f11c2
+bitbucket:282.v85a_7e442f57b_
 bitbucket-approval-filter:1.0.3
 bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
@@ -375,7 +375,7 @@ chartjs-api:4.2.1.5
 chatter-notifier:2.1.1
 chatwork:1.0.10
 checkmarx:2025.3.1
-checkmarx-ast-scanner:2.0.13-811.v7b_b_98716e646
+checkmarx-ast-scanner:2.0.13-821.v6b_495686cdb_a_
 checks-api:373.vfe7645102093
 chef-cookbook-pipeline:0.1.0
 chef-identity:2.0.3
@@ -389,7 +389,7 @@ chucknorris:159.vdfe649cb_9c37
 ci-with-toad-edge:2.14
 cisco-spark:1.1.1
 cisco-spark-notifier:1.1.1
-claim:599.v95c2f92e1c88
+claim:617.v149399f86b_de
 clamav:0.3
 clang-scanbuild:1.8
 clearcase:1.6.8
@@ -439,7 +439,7 @@ codedeploy:1.23
 codedx:4.1.0
 codefresh:1.8
 codeql:1.0
-codescene:1.5.7
+codescene:1.5.8
 codesonar:3.6.0
 codethreat-scanner:1.53.v9a_fb_c447a_a_19
 coding-webhook:1.4.3
@@ -510,7 +510,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.2879.v7434570a_8b_94
+coverage:2.2912.v3dea_6a_4a_73f7
 coverage-badges-extension:179.v6c477ce0c246
 coverity:1.11.4
 cppcheck:1.26
@@ -530,7 +530,7 @@ csp:1.43.vb_e0a_fd67d28d
 ctrf-json:36.vb_8c67b_f1dc07
 cucumber-living-documentation:3.2
 cucumber-perf:2.0.9
-cucumber-reports:5.9.0
+cucumber-reports:5.10.0
 cucumber-slack-notifier:0.10.0
 cucumber-testresult-plugin:0.10.1
 cucumber-trends-report:1.3
@@ -554,7 +554,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:574.va_19f05d54df5
 dashboard-view:2.537.v5132851f6ca_f
-data-tables-api:2.3.2-1369.v417fcd327805
+data-tables-api:2.3.3-1383.va_5607a_a_3f3c2
 database:274.vea_2e859b_2661
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:164.v626f5b_6c0114
@@ -583,7 +583,7 @@ delphix:3.2.1
 depbuilder:1.1.0
 dependency-check-jenkins-plugin:5.6.1
 dependency-queue-plugin:1.1
-dependency-track:6.0.1
+dependency-track:6.0.2
 dependencyanalyzer:0.7
 depgraph-view:1.0.5
 deploy:1.17
@@ -666,11 +666,11 @@ dynatrace-dashboard:2.1.5
 eagle-tester:1.0.9
 ease-plugin:2.7
 easyqa:1.0
-ec2:2012.v94a_4ed1543b_4
+ec2:2018.vc13c882e22db_
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
-ec2-fleet:4.1.1.510.v0b_8363265374
-echarts-api:6.0.0-1
+ec2-fleet:4.2.0.513.v46b_5d5cd156c
+echarts-api:6.0.0-1146.v5c8f3b_8f0573
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
 ecu-test-execution:3.10
@@ -691,6 +691,7 @@ email-ext-recipients-column:72.v546836954562
 emailext-template:233.v1eb_88fc160b_5
 embeddable-build-status:602.v766a_264519c7
 embotics-vcommander:2.0
+emergency-stop-pipelines:41.vb_e979ca_5204c
 emma:1.31
 emmacoveragecolumn:0.0.4
 emoji-symbols-api:16.0-26.v9818ff7423f0
@@ -715,7 +716,7 @@ excludeMatrixParent:1.1
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
 experitest-cloud:1.0.3
-explain-error:70.v508f5b_f64a_a_9
+explain-error:76.v1e161791ea_77
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -759,13 +760,13 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:11.11.1-335.v220b_2e03e6de
+flyway-api:11.11.2-341.v95c9fa_65115b_
 flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
 folder-properties:62.v1636b_4a_84608
-font-awesome-api:7.0.0-840.vd6c7a_a_a_a_88e1
-forensics-api:3.1745.vd1f0b_a_176458
+font-awesome-api:7.0.0-851.vd1feb_218a_a_63
+forensics-api:3.1754.v2a_6613b_77002
 form-element-path:1.12
 forticwp-cicd:0.9.8.51.va_308b_11da_d62
 fortify:23.1.40
@@ -804,8 +805,8 @@ git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
-git-client:6.3.1
-git-forensics:3.2.0
+git-client:6.3.2
+git-forensics:3.2088.v3a_896f5e4937
 git-parameter:444.vca_b_84d3703c2
 git-prebuildmerge-trait:1.0
 git-push:34.vd474e0fe7b_ec
@@ -817,9 +818,9 @@ gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
-gitea-checks:564.v803e0cffd010
+gitea-checks:569.v1305768a_83e5
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1224.v843da_c08c504
+gitee:1232.v1f6eca_6f587e
 gitflow:1.0.1
 github:1.44.0
 github-api:1.321-488.v9b_c0da_9533f8
@@ -879,7 +880,7 @@ google-source-plugin:0.4
 google-storage-plugin:1.371.vc3434e76e0c4
 googleanalytics:1.3
 gprbuild:1.0
-gradle:2.15
+gradle:2.16.1149.v711b_998b_0532
 gradle-daemon:0.1.0
 gradle-repo:1.0.1
 graphiteIntegrator:1.2
@@ -1021,7 +1022,7 @@ jfrog:1.5.8
 jgiven:0.15.1
 jianliao:1.1
 jigomerge:0.9
-jira:3.18
+jira:3.19
 jira-ext:114.v7b_8b_1d4274c6
 jira-integration:5.6.0-52.v095e44e20b_25
 jira-steps:2.0.180.vccfe35b_5910d
@@ -1067,9 +1068,9 @@ jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
 json-api:20250517-163.v1c5da_e99c775
 json-editor-parameter:54.v71962f37a_416
-json-parameter:34.v5690a_e4c8dfc
+json-parameter:46.v77e082c26f00
 json-path-api:2.9.0-178.vca_b_c71881321
-jsoup:1.21.1-58.vfc578e6e2610
+jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
 jswidgets:1.10
@@ -1099,7 +1100,7 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2
-kubernetes:4358.vcfd9c5a_0a_f51
+kubernetes:4369.va_9a_89327dd35
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:206.vde31a_b_0f71a_c
@@ -1172,7 +1173,7 @@ machine-learning:1.0.1
 macstadium-orka:2.08
 mail-watcher-plugin:1.21
 mailcommander:1.0.0
-mailer:515.vd788654779b_1
+mailer:522.va_995fa_cfb_8b_d
 mailmap-resolver:0.2
 maintenance-jobs-scheduler:0.1.0
 manage-permission:1.0.1
@@ -1189,7 +1190,7 @@ material-theme:0.5.2-rc100.6121925fe229
 mathworks-polyspace:1.0.12
 matlab:970.v2a_b_10cc96e58
 matomo-analytics:1.14.vfd9785108a_45
-matrix-auth:3.2.7
+matrix-auth:3.2.8
 matrix-combinations-parameter:1.3.3
 matrix-communication:13.vdcfb_b_44ce852
 matrix-groovy-execution-strategy:1.0.8
@@ -1217,6 +1218,7 @@ mend-cloud-native-security-scanner:39.vdce6e5d3b_ca_a_
 mentor-questa-vrm:1.15
 mercurial:1323.ve69d2a_db_8a_b_d
 mergebase-sca:1.0.1
+mergify:1.88.v1de8b_0b_9e0a_f
 mesos:2.0
 metadata:1.1.0b
 metadefender:1.0
@@ -1342,7 +1344,7 @@ openshift-sync:1.1.0.825.v30618768da_42
 openstack-cloud:1456.v1c7380506a_ed
 opentelemetry:3.1543.v8446b_92b_cd64
 opentelemetry-agent-metrics:1.4.2
-opentelemetry-api:1.49.0.77.va_c69ec2472c0
+opentelemetry-api:1.49.0.82.vf56234f0d9c1
 opsbox-utility:1.0.0.25.v403b_2c237e6a_
 opsgenie:1.11
 opslevel:1.2.6
@@ -1389,7 +1391,7 @@ pending-changes:0.3.0
 people-redirector:1.3
 people-view:1.16.v774d3b_4b_3a_f3
 percentage-du-node-column:0.1.0
-performance:988.v5699a_d7c9162
+performance:995.v8e27b_a_c368c1
 performance-signature-dynatrace:3.2.2
 performance-signature-dynatracesaas:3.2.2
 performance-signature-ui:3.2.2
@@ -1433,9 +1435,9 @@ pipeline-input-step:534.v352f0a_e98918
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.17.v407d68513ea_6
 pipeline-lib-oras:23.v4d7c8d889a_86
-pipeline-maven:1563.v2e75645a_7d43
-pipeline-maven-api:1563.v2e75645a_7d43
-pipeline-maven-database:1563.v2e75645a_7d43
+pipeline-maven:1567.vb_2c3a_2116860
+pipeline-maven-api:1567.vb_2c3a_2116860
+pipeline-maven-database:1567.vb_2c3a_2116860
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2265.v140e610fe9d5
 pipeline-model-declarative-agent:1.1.1
@@ -1460,7 +1462,7 @@ plasticscm-plugin:4.4
 platformlabeler:2734.v604521b_646b_b_
 plot:2.4.0
 plugin-usage-plugin:4.10
-plugin-util-api:6.1157.vc75ef7129d86
+plugin-util-api:6.1167.v022176c7e0ca_
 polarion:1.3
 policycenter-gate-validator:1.0.1
 poll-mailbox-trigger-plugin:1.026
@@ -1482,7 +1484,7 @@ preSCMbuildstep:115.vf9808414429d
 preflight-integration:1.4
 prereq-buildstep:1.1
 pretested-integration:3.1.2
-prism-api:1.30.0-600.v0b_eeeb_e43a_f9
+prism-api:1.30.0-609.vf0a_df102d9a_f
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
 proc-cleaner-plugin:2.4
@@ -1587,6 +1589,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
+resources-ai-chatbot:340.v756b_e3731704
 rest-list-parameter:348.v9506fdc4b_d07
 restricted-register:0.1.7
 results-cache:2.0.2
@@ -1784,7 +1787,7 @@ synergy:1.7
 synopsys-coverity:3.0.5
 synopsys-polaris:1.4.0
 synopsys-security-scan:1.8.1
-sysdig-secure:3.1.1
+sysdig-secure:3.1.2
 syslog-logger:1.0.5
 systemloadaverage-monitor:1.2
 tag-profiler:0.2
@@ -1867,7 +1870,7 @@ tuxdroid:1.7
 twitter:0.7
 typetalk:194.v3586feb_6e248
 ui-test-capture:1.0.43
-uipath-automation-package:4.0.327.v39580c233fd7
+uipath-automation-package:4.0.331.v1f81b_c4227cb_
 uleska:38.v2f6e7a27eb0a
 unicorn:0.1.1
 unique-id:2.117.v7a_81333a_584b_
@@ -1938,7 +1941,7 @@ vstestrunner:1.0.8
 vsts-cd:1.3
 wallarm-fast:0.4.2
 waptpro:1.6
-warnings-ng:12.9749.va_2c1361722d3
+warnings-ng:12.9783.ve1cb_9f060738
 warrior:1.2
 was-builder:1.6.1
 wattspeed:1.0
