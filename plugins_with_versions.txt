@@ -76,7 +76,7 @@ antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.5-157.vb_43ef2f6845e
+apache-httpcomponents-client-5-api:5.5-166.v870a_96374f91
 apifortress:1.0
 apimap:1-rc26.87a_0f950121f
 app-detector:1.0.9
@@ -126,7 +126,7 @@ atlassian-bitbucket-server-integration:4.2.0
 atlassian-jira-software-cloud:2.0.15
 attention:1.1
 audit-log:1.3
-audit-trail:415.vb_8069769b_121
+audit-trail:436.vc0d1e79fc5a_3
 audit2db:0.5
 authentication-tokens:1.144.v5ff4a_5ec5c33
 authorize-project:2.0.0
@@ -147,7 +147,7 @@ aws-codecommit-trigger:3.0.12
 aws-codepipeline:0.49
 aws-credentials:254.v978a_5e206a_d7
 aws-device-farm:1.37
-aws-global-configuration:146.vfcec61593eea_
+aws-global-configuration:152.ve13a_2a_c319a_9
 aws-java-sdk:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-api-gateway:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-autoscaling:1.12.780-480.v4a_0819121a_9e
@@ -405,11 +405,11 @@ cloudaeye:31.ve35d238d8144
 cloudbees-bitbucket-branch-source:936.4.4
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
-cloudbees-disk-usage-simple:241.v0ea_d9a_a_96ee8
+cloudbees-disk-usage-simple:256.v20ec4eb_884f1
 cloudbees-enabler:1.43.v5b_7c0c898e84
 cloudbees-feature-management:141.v77cb_218b_8813
 cloudbees-folder:6.1037.v4cb_8573b_72a_a_
-cloudbees-jenkins-advisor:384.vf19423a_eb_9b_0
+cloudbees-jenkins-advisor:392.v6ca_b_ff4e12fa_
 cloudcoreo-deploytime:0.2.3
 cloudevents:1.0.0
 cloudfoundry:2.3.2
@@ -608,7 +608,7 @@ diagnostics:1.2
 diawi-upload:1.5
 digicert-software-trust-code-sign:18.v7ec4e7c19a_1b
 digicert-software-trust-gpg-sign:19.va_8b_60320b_ec8
-digitalocean-plugin:219.va_ef06807c245
+digitalocean-plugin:229.v0087c555dedd
 dimensionsscm:0.9.3.1
 dingding-json-pusher:2.0
 dingding-notifications:2.8.0
@@ -669,7 +669,7 @@ easyqa:1.0
 ec2:2018.vc13c882e22db_
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
-ec2-fleet:4.2.0.513.v46b_5d5cd156c
+ec2-fleet:4.2.1.515.v100267825939
 echarts-api:6.0.0-1146.v5c8f3b_8f0573
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
@@ -827,8 +827,8 @@ github-api:1.321-488.v9b_c0da_9533f8
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
-github-branch-source:1834.v857721ea_74c6
-github-checks:602.v264a_83610da_6
+github-branch-source:1848.v42f74f7f4500
+github-checks:634.v371dc6d978a_3
 github-coverage-reporter:1.10
 github-issues:1.2.4
 github-label-filter:1.0.0
@@ -837,7 +837,7 @@ github-organization-folder:1.6
 github-pr-comment-build:134.ve7ff0b_719821
 github-pr-coverage-status:2.2.0
 github-pullrequest:0.7.2
-github-release:16.vd8ca_4b_e037f4
+github-release:24.vde1f4a_943fe4
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-filter-jira-validator:0.1.0
 github-scm-trait-commit-skip:0.4.0
@@ -1018,7 +1018,7 @@ jenkinslint:0.14.0
 jenkinswalldisplay:0.6.34
 jersey2-api:2.47-165.ve7809a_3e87e0
 jetbrains-space:1.53.vcd2e91eb_a_620
-jfrog:1.5.8
+jfrog:1.5.10
 jgiven:0.15.1
 jianliao:1.1
 jigomerge:0.9
@@ -1066,10 +1066,10 @@ jquery3-api:3.7.1-594.vb_3864f326cf0
 jsch:0.2.16-95.v3eecb_55fa_b_78
 jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
-json-api:20250517-163.v1c5da_e99c775
+json-api:20250517-173.v596efb_962a_31
 json-editor-parameter:54.v71962f37a_416
-json-parameter:46.v77e082c26f00
-json-path-api:2.9.0-178.vca_b_c71881321
+json-parameter:57.v7d1333b_1e259
+json-path-api:2.9.0-190.veefca_05d5477
 jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
@@ -1218,7 +1218,7 @@ mend-cloud-native-security-scanner:39.vdce6e5d3b_ca_a_
 mentor-questa-vrm:1.15
 mercurial:1323.ve69d2a_db_8a_b_d
 mergebase-sca:1.0.1
-mergify:1.88.v1de8b_0b_9e0a_f
+mergify:1.94.vc3d4b_a_5b_a_329
 mesos:2.0
 metadata:1.1.0b
 metadefender:1.0
@@ -1230,10 +1230,10 @@ metrics-ganglia:3.0.0
 metrics-graphite:3.0.0
 micro-focus-performance-center-integration:1.1.9
 microdocs-integration:1.2
-mina-sshd-api-common:2.15.0-161.vb_200831a_c15b_
-mina-sshd-api-core:2.15.0-161.vb_200831a_c15b_
-mina-sshd-api-scp:2.15.0-161.vb_200831a_c15b_
-mina-sshd-api-sftp:2.15.0-161.vb_200831a_c15b_
+mina-sshd-api-common:2.16.0-167.va_269f38cc024
+mina-sshd-api-core:2.16.0-167.va_269f38cc024
+mina-sshd-api-scp:2.16.0-167.va_269f38cc024
+mina-sshd-api-sftp:2.16.0-167.va_269f38cc024
 minio:1.3.499.v9d1eeeee3a_68
 minio-storage:0.0.3
 miniorange-saml-sp:2.4.7
@@ -1275,7 +1275,7 @@ naginator:1.504.vfc3736332f16
 nant:248.vcc8a_3eec8db_a
 neoload-jenkins-plugin:2.2.11
 nerrvana-plugin:1.02.06
-nested-data-reporting:999.va_f6e0da_b_979f
+nested-data-reporting:1025.vf15643f73401
 nested-view:241.v178f0b_a_cd76a_
 netdomain-labeler:0.0.2
 netsparker-cloud-scan:2.1.18
@@ -1597,7 +1597,7 @@ reverse-proxy-auth-plugin:245.v93f25b_b_b_3102
 rhnpush-plugin:0.5.2
 rich-text-publisher-plugin:1.5
 rigor-optimization:1.04
-robot:6.0.0
+robot:6.1.0
 rocketchatnotifier:1.5.2
 role-strategy:799.v5b_e7b_ecc231e
 rpi-build-status:0.7
@@ -1760,7 +1760,7 @@ stackrox-container-image-scanner:1.4.3
 started-by-envvar:1.0
 startup-trigger-plugin:2.9.4
 stash-pullrequest-builder:1.17
-stashNotifier:1.516.v6d49910f22a_5
+stashNotifier:1.528.v9637674a_673f
 statistics-gatherer:2.0.3
 statusmonitor:44.v3d97a_d2810f1
 statuspage-gating:1.1
@@ -1772,7 +1772,7 @@ structs:353.v261ea_40a_80fb_
 subversion:1292.ve8cf25770ee3
 suite-test-groups-publisher:1.13
 summary_report:1.15
-sumologic-publisher:2.2.6
+sumologic-publisher:2.2.7
 support-core:1763.ve4ce0d10a_3f0
 suppress-stack-trace:1.6
 svn-partial-release-mgr:1.0.1
@@ -2016,7 +2016,7 @@ zap-pipeline:1.16
 zapper:1.0.7
 zdevops:1.1.3.50.ve350c9b_450b_1
 zentimestamp:4.2
-zephyr-enterprise-test-management:2.9.1
+zephyr-enterprise-test-management:2.10
 zephyr-for-jira-test-management:1.5
 zerobug:1.14
 zmq-event-publisher:0.0.5
