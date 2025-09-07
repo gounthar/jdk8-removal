@@ -338,7 +338,7 @@ buildgraph-view:1.8
 buildkite:1.22.v11fef623d49e
 buildresult-trigger:1.01
 buildrotator:1.2
-buildtriggerbadge:307.v19decf05a_0df
+buildtriggerbadge:325.vdcd8a_826e87a_
 built-on-column:1.5
 bulk-builder:1.5
 bumblebee:4.1.9
@@ -402,13 +402,13 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:936.4.4
+cloudbees-bitbucket-branch-source:937.0.1
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:256.v20ec4eb_884f1
 cloudbees-enabler:1.43.v5b_7c0c898e84
 cloudbees-feature-management:141.v77cb_218b_8813
-cloudbees-folder:6.1037.v4cb_8573b_72a_a_
+cloudbees-folder:6.1040.v8a_e6330a_54e3
 cloudbees-jenkins-advisor:392.v6ca_b_ff4e12fa_
 cloudcoreo-deploytime:0.2.3
 cloudevents:1.0.0
@@ -760,7 +760,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:11.11.2-341.v95c9fa_65115b_
+flyway-api:11.12.0-345.v1695a_fd5399e
 flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -805,7 +805,7 @@ git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
-git-client:6.3.2
+git-client:6.3.3
 git-forensics:3.2088.v3a_896f5e4937
 git-parameter:444.vca_b_84d3703c2
 git-prebuildmerge-trait:1.0
@@ -822,8 +822,8 @@ gitea-checks:569.v1305768a_83e5
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1232.v1f6eca_6f587e
 gitflow:1.0.1
-github:1.44.0
-github-api:1.321-488.v9b_c0da_9533f8
+github:1.45.0
+github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
@@ -845,11 +845,11 @@ github-scm-trait-notification-context:45.v8ef831829589
 gitlab-api:5.6.0-100.v83f8f4b_f1129
 gitlab-branch-source:723.v090f23d3cc49
 gitlab-kubernetes-credentials:484.v2fea_0cc92b_d3
-gitlab-logo:219.v451a_3b_74b_7a_a_
+gitlab-logo:221.v4041f5e65573
 gitlab-merge-request-jenkins:2.0.0
 gitlab-oauth:1.22
-gitlab-plugin:1.9.8
-global-build-stats:322.v22f4db_18e2dd
+gitlab-plugin:1.9.9
+global-build-stats:347.v32a_eb_0493c4f
 global-pipeline-parameters:64.v0422ef148e18
 global-post-script:1.1.4
 global-pre-script:20.02
@@ -1007,7 +1007,7 @@ jdk-tool:83.v417146707a_3d
 jenkins-cloudformation-plugin:231.v3b_84a_7a_074ec
 jenkins-design-language:1.27.21
 jenkins-flowdock-plugin:1.1.8
-jenkins-infra-test:234.v8a_586d88a_960
+jenkins-infra-test:238.v55f482f9cffa_
 jenkins-jira-issue-updater:1.18
 jenkins-multijob-plugin:662.vd2e0001f6b_b_d
 jenkins-reviewbot:2.4.6
@@ -1042,7 +1042,7 @@ job-parameter-summary:0.5
 job-poll-action-plugin:1.0
 job-restrictions:216.v0732cc7fb_076
 job-strongauth-simple:0.5
-jobConfigHistory:1352.va_201a_8389340
+jobConfigHistory:1356.ve360da_6c523a_
 jobcacher:732.ve164e3059a_a_a_
 jobcacher-artifactory-storage:198.vd6fa_ec5e1028
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
@@ -1075,7 +1075,7 @@ jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
 jswidgets:1.10
 jucies:0.2.1
-junit:1335.v6b_a_a_e18534e1
+junit:1354.v5b_348580de7f
 junit-attachments:330.v25180b_263160
 junit-realtime-test-reporter:166.v889e7b_0e23a_a_
 junit-sql-storage:355.v9d5995fb_06a_5
@@ -1100,11 +1100,11 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2
-kubernetes:4369.va_9a_89327dd35
+kubernetes:4371.vb_33b_086d54a_1
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:206.vde31a_b_0f71a_c
-kubernetes-credentials-provider:1.290.ve56494531260
+kubernetes-credentials-provider:1.299.v610fa_e76761a_
 kubernetes-ephemeral-container:28.vc9eb_a_db_2b_2a_6
 kubernetes-pipeline-devops-steps:1.6
 kubesphere-token-auth:1.7
@@ -1341,8 +1341,8 @@ openshift-k8s-credentials:280.vb_4938766c373
 openshift-login:1.1.0.263.v2e0ddecf8b_25
 openshift-pipeline:1.0.57
 openshift-sync:1.1.0.825.v30618768da_42
-openstack-cloud:1456.v1c7380506a_ed
-opentelemetry:3.1543.v8446b_92b_cd64
+openstack-cloud:1464.vfb_f8244122f2
+opentelemetry:3.1543.1545.vf5a_4ec123769
 opentelemetry-agent-metrics:1.4.2
 opentelemetry-api:1.49.0.82.vf56234f0d9c1
 opsbox-utility:1.0.0.25.v403b_2c237e6a_
@@ -1621,7 +1621,7 @@ sahagin:0.10.1
 salesforce-migration-assistant-plugin:2.2.2
 saltstack:3.2.2
 sametime:0.4
-saml:4.569.vcff838e19ed1
+saml:4.580.v4cb_5b_9ec2cc2
 sasunit-plugin:1.024
 sauce-ondemand:2.2.0
 sbt:88.vee3829489c40
@@ -1875,7 +1875,7 @@ uleska:38.v2f6e7a27eb0a
 unicorn:0.1.1
 unique-id:2.117.v7a_81333a_584b_
 unity3d-plugin:1.3
-unleash:119.v9a_90f24da_4d5
+unleash:121.v4d3122cc5517
 uno-choice:2.8.8
 unreliable-slave-plugin:1.2
 update-sites-manager:91.v38ff0407cb_a_d
@@ -1939,6 +1939,7 @@ vs-code-metrics:1.7
 vsphere-cloud:2.27
 vstestrunner:1.0.8
 vsts-cd:1.3
+vulnerability-vines-ai:48.v91718555f056
 wallarm-fast:0.4.2
 waptpro:1.6
 warnings-ng:12.9783.ve1cb_9f060738
