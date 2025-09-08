@@ -13,12 +13,12 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 workflow-support:976.vb_d9493c2eb_09
 jackson2-api:2.19.2-408.v18248a_324cfe
 plain-credentials:199.v9f8e1f741799
-junit:1335.v6b_a_a_e18534e1
-git-client:6.3.2
+junit:1354.v5b_348580de7f
+git-client:6.3.3
 credentials-binding:702.vfe613e537e88
 matrix-project:856.v4c352b_3a_b_23e
 git:5.7.0
-cloudbees-folder:6.1037.v4cb_8573b_72a_a_
+cloudbees-folder:6.1040.v8a_e6330a_54e3
 token-macro:477.vd4f0dc3cb_cf1
 workflow-job:1540.v295eccc9778f
 durable-task:595.ve87b_f1318d67
@@ -53,11 +53,11 @@ ssh-slaves:3.1071.v0d059c7b_c555
 javax-activation-api:1.2.0-8
 bootstrap5-api:5.3.7-860.v1251c115c90c
 resource-disposer:0.25
-github-api:1.321-488.v9b_c0da_9533f8
+github-api:1.330-492.v3941a_032db_2a_
 timestamper:1.30
 ws-cleanup:0.49
 okhttp-api:4.11.0-189.v976fa_d3379d6
-github:1.44.0
+github:1.45.0
 ldap:780.vcb_33c9a_e4332
 pam-auth:1.12
 github-branch-source:1848.v42f74f7f4500
@@ -112,7 +112,7 @@ jersey2-api:2.47-165.ve7809a_3e87e0
 favorite:2.237.v79163ca_8b_892
 pubsub-light:1.19
 external-monitor-job:223.vb_fddcf42c9b_3
-cloudbees-bitbucket-branch-source:936.4.4
+cloudbees-bitbucket-branch-source:937.0.1
 blueocean-commons:1.27.21
 jenkins-design-language:1.27.21
 blueocean-rest:1.27.21
@@ -152,7 +152,7 @@ blueocean:1.27.21
 jquery-detached:1.2.1
 conditional-buildstep:1.5.0
 envinject-api:1.235.va_14c74f8f487
-gitlab-plugin:1.9.8
+gitlab-plugin:1.9.9
 commons-compress-api:1.28.0-1
 envinject:2.926.v69c9b_3896a_96
 prism-api:1.30.0-609.vf0a_df102d9a_f
@@ -170,7 +170,7 @@ kubernetes-credentials:206.vde31a_b_0f71a_c
 cloud-stats:377.vd8a_6c953e98e
 slack:795.v4b_9705b_e6d47
 job-dsl:1.93
-kubernetes:4369.va_9a_89327dd35
+kubernetes:4371.vb_33b_086d54a_1
 aws-java-sdk-minimal:1.12.780-480.v4a_0819121a_9e
 build-user-vars-plugin:195.v8c35f9d5c3dc
 aws-credentials:254.v978a_5e206a_d7
@@ -179,7 +179,7 @@ generic-webhook-trigger:2.4.1
 blueocean-autofavorite:1.2.5
 jira:3.19
 aws-java-sdk-ec2:1.12.780-480.v4a_0819121a_9e
-jobConfigHistory:1352.va_201a_8389340
+jobConfigHistory:1356.ve360da_6c523a_
 ssh:158.ve2a_e90fb_7319
 forensics-api:3.1754.v2a_6613b_77002
 build-name-setter:2.5.1
@@ -232,7 +232,7 @@ msbuild:1.37
 prometheus:819.v50953a_c560dd
 built-on-column:1.5
 nodelabelparameter:759.vb_b_e95db_f3251
-saml:4.569.vcff838e19ed1
+saml:4.580.v4cb_5b_9ec2cc2
 groovy-postbuild:272.v52a_03efb_8653
 build-pipeline-plugin:2.0.2
 multiple-scms:0.8
