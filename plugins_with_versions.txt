@@ -855,7 +855,7 @@ global-post-script:1.1.4
 global-pre-script:20.02
 global-slack-notifier:1.5
 global-variable-string-parameter:1.2
-global-yaml-properties:1.25.v8593c53ce6ea_
+global-yaml-properties:1.26.v4a_6b_6f3b_ee51
 gnat:0.14
 gogs-webhook:1.0.15
 golang:1.4
@@ -1787,7 +1787,7 @@ synergy:1.7
 synopsys-coverity:3.0.5
 synopsys-polaris:1.4.0
 synopsys-security-scan:1.8.1
-sysdig-secure:3.1.2
+sysdig-secure:3.2.0
 syslog-logger:1.0.5
 systemloadaverage-monitor:1.2
 tag-profiler:0.2
