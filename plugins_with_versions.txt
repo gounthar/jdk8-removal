@@ -8,7 +8,7 @@ CustomHistory:1.6
 Exclusion:0.15
 GatekeeperPlugin:3.0.5
 JDK_Parameter_Plugin:1.3
-JiraTestResultReporter:325.va_931c13e2209
+JiraTestResultReporter:326.v92b_b_f9a_d05a_d
 Matrix-sorter-plugin:1.3
 NegotiateSSO:153.v85355f1cb_26d
 Office-365-Connector:5.2.0
@@ -218,7 +218,7 @@ azure-commons:1.1.3
 azure-container-agents:372.v073266fff4a_7
 azure-container-registry-tasks:0.6.5
 azure-cosmosdb:2.v738e7ec0eeea_
-azure-credentials:357.v6447d38fb_007
+azure-credentials:395.vb_a_9203343ef5
 azure-credentials-ext:1.0
 azure-event-grid-notifier:0.1
 azure-function:0.3.3
@@ -226,12 +226,12 @@ azure-keyvault:282.v43b_691a_13d19
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
 azure-sdk:243.v4a_0d23a_c71a_7
-azure-vm-agents:1043.v6c34a_871003d
+azure-vm-agents:1050.v45467b_03322a_
 azure-vmss:0.2.4
 backlog:2.7
 backup:1.6.1
 backup-interrupt-plugin:17.va_b_50ca_9df8d0
-badge:2.9.1
+badge:2.10
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 batch-task:1.398.v550a_8e8ca_e5f
 bazaar:1.22
@@ -402,7 +402,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:937.0.1
+cloudbees-bitbucket-branch-source:937.0.3
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:256.v20ec4eb_884f1
@@ -487,7 +487,7 @@ conflict-aware-ondemand-strategy:2.184.vda_f21c7fa_b_1d
 conjur-credentials:3.0.6
 conjur-simple-integration:0.0.1
 console-badge:1.1
-console-column-plugin:261.vd7e35335049b_
+console-column-plugin:270.vda_2472462073
 console-navigation:1.0
 console-tail:15.vc54cb_4ca_6981
 consul:2.1
@@ -510,7 +510,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.2912.v3dea_6a_4a_73f7
+coverage:2.2933.v84e9b_19d9e6f
 coverage-badges-extension:179.v6c477ce0c246
 coverity:1.11.4
 cppcheck:1.26
@@ -518,7 +518,7 @@ cppncss:1.2
 crap4j:0.9
 create-fingerprint:25.v0a_b_e60b_42fa_4
 createjobadvanced:1.9.0
-credentials:1419.v2337d1ceceef
+credentials:1447.v4cb_b_539b_5321
 credentials-binding:702.vfe613e537e88
 crittercism-dsym:1.1
 cron-shelve:1.3
@@ -712,7 +712,7 @@ environment-variables-status-sync:2.0.2
 escaped-markup-plugin:0.1
 event-announcer:1.0.4
 exam:1.2.2
-excludeMatrixParent:1.1
+excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
 experitest-cloud:1.0.3
@@ -827,7 +827,7 @@ github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
-github-branch-source:1848.v42f74f7f4500
+github-branch-source:1862.v1a_fc22a_d3788
 github-checks:634.v371dc6d978a_3
 github-coverage-reporter:1.10
 github-issues:1.2.4
@@ -894,7 +894,7 @@ groovy-postbuild:272.v52a_03efb_8653
 groovy-remote:0.2
 growl:1.1
 grypescanner:1.8
-gson-api:2.13.1-153.vb_3d0c48a_a_b_4a_
+gson-api:2.13.2-173.va_a_092315913c
 h2-api:11.1.4.199-36.vb_ee07e965744
 habitat:0.6.5
 hadoop:1.4
@@ -950,7 +950,7 @@ idobata-notifier:1.0
 ifttt-build-notifier:1.2
 ignore-committer-strategy:37.v0d3157c4a_ef8
 image-gallery:2.0.2
-image-tag-parameter:3.0
+image-tag-parameter:3.1
 imagecomparison:1.4
 immuniweb:54.vc3c55e02447d
 implied-labels:356.v6cfef6a_81c0b_
@@ -989,6 +989,7 @@ jackson2-api:2.20.0-411.v6ef8fdee4fe9
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-3
+jakarta-xml-bind-api:4.0.5-3.v3d5b_a_73965b_9
 japex:1.7
 javadoc:354.vee1a_660b_4990
 javancss:1.1
@@ -1238,6 +1239,7 @@ minio:1.3.499.v9d1eeeee3a_68
 minio-storage:0.0.3
 miniorange-saml-sp:2.4.7
 miniorange-two-factor:1.0.9
+misc-info-tools:1.116.vc62c5b_55b_d93
 misra-compliance-report-generator:1.0
 mission-control-view:0.9.16
 mixing-security-realm:1.3
@@ -1271,7 +1273,7 @@ multiselect-parameter:1.8
 muuri-api:0.9.5-3
 mysql-api:9.4.0-69.va_d35f1c8187a_
 myst-plugin:2.5.0.0
-naginator:1.504.vfc3736332f16
+naginator:1.530.vb_6d120f250b_1
 nant:248.vcc8a_3eec8db_a
 neoload-jenkins-plugin:2.2.11
 nerrvana-plugin:1.02.06
@@ -1320,7 +1322,7 @@ octoperf:4.7.0
 octopusdeploy:4.0.2
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
-oic-auth:4.600.vd5a_61e076596
+oic-auth:4.609.v9de140f63d01
 oidc-provider:111.v29fd614b_3617
 okhttp-api:4.11.0-189.v976fa_d3379d6
 oki-docki:1.1
@@ -1632,7 +1634,7 @@ scm-api:707.v749f968369d4
 scm-filter-branch-pr:222.v72301ecb_a_ee7
 scm-filter-jervis:2.0.1-68.v738626177078
 scm-httpclient:1.5
-scm-manager:1.10.0
+scm-manager:1.11.0
 scm-sqs:1.4
 scm-sync-configuration:0.0.10
 scm2job:2.5
@@ -1756,7 +1758,7 @@ ssh2easy:1.6
 sshd:3.374.v19b_d59ce6610
 stackhammer:1.0.6
 stackify-deployment-recorder:1.1.0
-stackrox-container-image-scanner:1.4.3
+stackrox-container-image-scanner:1.4.4
 started-by-envvar:1.0
 startup-trigger-plugin:2.9.4
 stash-pullrequest-builder:1.17
@@ -2026,4 +2028,5 @@ zohosprints:2.1
 zoom:1.6
 zos-connector:3.313.v1342f28a_5310
 zscaler-iac-scan:2.2.1
+zscan-upload:2.4.4
 zulip:2.1.1
