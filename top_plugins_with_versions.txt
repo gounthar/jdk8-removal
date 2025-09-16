@@ -41,7 +41,7 @@ pipeline-model-definition:2.2265.v140e610fe9d5
 plugin-util-api:6.1167.v022176c7e0ca_
 jquery3-api:3.7.1-594.vb_3864f326cf0
 pipeline-graph-analysis:245.v88f03631a_b_21
-font-awesome-api:7.0.0-851.vd1feb_218a_a_63
+font-awesome-api:7.0.1-859.v128d3a_efb_6e5
 matrix-auth:3.2.8
 echarts-api:6.0.0-1146.v5c8f3b_8f0573
 caffeine-api:3.2.2-178.v353b_8428ed56
@@ -51,7 +51,7 @@ jaxb:2.3.9-133.vb_ec76a_73f706
 variant:70.va_d9f17f859e0
 ssh-slaves:3.1071.v0d059c7b_c555
 javax-activation-api:1.2.0-8
-bootstrap5-api:5.3.7-860.v1251c115c90c
+bootstrap5-api:5.3.8-876.vb_c62a_27d9a_77
 resource-disposer:0.25
 github-api:1.330-492.v3941a_032db_2a_
 timestamper:1.30
@@ -101,7 +101,7 @@ dark-theme:574.va_19f05d54df5
 docker-workflow:621.va_73f881d9232
 htmlpublisher:427
 lockable-resources:1412.v3f305a_fb_a_117
-pipeline-graph-view:637.vb_6105ed84508
+pipeline-graph-view:642.v39f37c8e1e70
 role-strategy:799.v5b_e7b_ecc231e
 handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
@@ -118,7 +118,7 @@ jenkins-design-language:1.27.21
 blueocean-rest:1.27.21
 jquery:1.12.4-3
 parameterized-trigger:873.v8b_e37dd8418f
-data-tables-api:2.3.3-1383.va_5607a_a_3f3c2
+data-tables-api:2.3.4-1400.vb_1e3e3c4dfc8
 blueocean-core-js:1.27.21
 publish-over:0.22
 blueocean-web:1.27.21

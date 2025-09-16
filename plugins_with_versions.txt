@@ -94,7 +94,7 @@ application-director-plugin:1.3
 applitools-eyes:1.16.6
 appray:1.1.1
 apprenda:2.2.0
-appscan:1.7.0
+appscan:1.8.0
 aqua-microscanner:1.0.8
 aqua-security-scanner:3.2.10
 aqua-serverless:1.0.6
@@ -294,7 +294,7 @@ bmc-change-manager-imstm:66.v12c841920f7d
 bmc-rpd:1.1
 boot-clj:1.0.0
 bootstrap4-api:4.6.0-6
-bootstrap5-api:5.3.7-860.v1251c115c90c
+bootstrap5-api:5.3.8-876.vb_c62a_27d9a_77
 bootstraped-multi-test-results-report:2.2.1
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
 branch-api:2.1244.vf95c81f1641c
@@ -554,7 +554,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:574.va_19f05d54df5
 dashboard-view:2.537.v5132851f6ca_f
-data-tables-api:2.3.3-1383.va_5607a_a_3f3c2
+data-tables-api:2.3.4-1400.vb_1e3e3c4dfc8
 database:274.vea_2e859b_2661
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:164.v626f5b_6c0114
@@ -666,7 +666,7 @@ dynatrace-dashboard:2.1.5
 eagle-tester:1.0.9
 ease-plugin:2.7
 easyqa:1.0
-ec2:2029.v50458f410ef9
+ec2:2032.v92a_4b_e703974
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
 ec2-fleet:4.2.1.515.v100267825939
@@ -765,7 +765,7 @@ flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
 folder-properties:62.v1636b_4a_84608
-font-awesome-api:7.0.0-851.vd1feb_218a_a_63
+font-awesome-api:7.0.1-859.v128d3a_efb_6e5
 forensics-api:3.1754.v2a_6613b_77002
 form-element-path:1.12
 forticwp-cicd:0.9.8.51.va_308b_11da_d62
@@ -1343,7 +1343,7 @@ openshift-k8s-credentials:280.vb_4938766c373
 openshift-login:1.1.0.263.v2e0ddecf8b_25
 openshift-pipeline:1.0.57
 openshift-sync:1.1.0.825.v30618768da_42
-openstack-cloud:1464.vfb_f8244122f2
+openstack-cloud:1465.vd3b_a_103e31fd
 opentelemetry:3.1543.1545.vf5a_4ec123769
 opentelemetry-agent-metrics:2.0.0
 opentelemetry-api:1.49.0.82.vf56234f0d9c1
@@ -1429,7 +1429,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:245.v88f03631a_b_21
-pipeline-graph-view:637.vb_6105ed84508
+pipeline-graph-view:642.v39f37c8e1e70
 pipeline-groovy-lib:752.vdddedf804e72
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1447,7 +1447,7 @@ pipeline-model-definition:2.2265.v140e610fe9d5
 pipeline-model-extensions:2.2265.v140e610fe9d5
 pipeline-multibranch-defaults:2.1
 pipeline-npm:424.v57d3deb_ea_909
-pipeline-project-env:129.ve552fdda_5604
+pipeline-project-env:143.v701f8fb_6cf41
 pipeline-reporter-by-redpen:1.054.v7b_9517b_6b_202
 pipeline-rest-api:2.38
 pipeline-restful-api:0.11
@@ -1522,7 +1522,7 @@ python:1.3
 qc:1.2.1
 qftest:2.1.1
 qiniu:1.2.0
-qmetry-for-jira-test-management:1.25
+qmetry-for-jira-test-management:1.26
 qmetry-test-management:1.13
 qrebel:1.0.1
 qtest:2025.1
