@@ -14,7 +14,7 @@ workflow-support:976.vb_d9493c2eb_09
 jackson2-api:2.20.0-411.v6ef8fdee4fe9
 plain-credentials:199.v9f8e1f741799
 junit:1355.v45e2ea_65863c
-git-client:6.3.3
+git-client:6.4.0
 credentials-binding:702.vfe613e537e88
 matrix-project:858.vb_b_eb_9a_7ea_99e
 git:5.7.0
@@ -241,7 +241,7 @@ h2-api:11.1.4.199-36.vb_ee07e965744
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
-coverage:2.2933.v84e9b_19d9e6f
+coverage:2.2941.v08df75b_767f1
 allure-jenkins-plugin:2.32.0
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e

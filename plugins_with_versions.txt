@@ -226,7 +226,7 @@ azure-keyvault:282.v43b_691a_13d19
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
 azure-sdk:248.v0c922122245c
-azure-vm-agents:1050.v45467b_03322a_
+azure-vm-agents:1053.v5b_86d7b_d9211
 azure-vmss:0.2.4
 backlog:2.7
 backup:1.6.1
@@ -510,7 +510,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.2933.v84e9b_19d9e6f
+coverage:2.2941.v08df75b_767f1
 coverage-badges-extension:179.v6c477ce0c246
 coverity:1.11.4
 cppcheck:1.26
@@ -805,7 +805,7 @@ git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
-git-client:6.3.3
+git-client:6.4.0
 git-forensics:3.2088.v3a_896f5e4937
 git-parameter:444.vca_b_84d3703c2
 git-prebuildmerge-trait:1.0
