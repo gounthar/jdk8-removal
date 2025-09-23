@@ -15,10 +15,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug token availability
+        run: |
+          echo "Checking token availability..."
+          if [ -n "${{ secrets.PAT_TOKEN }}" ]; then
+            echo "PAT_TOKEN is available"
+          else
+            echo "PAT_TOKEN is not set, will use GITHUB_TOKEN"
+          fi
+          echo "Repository: ${{ github.repository }}"
+          echo "Actor: ${{ github.actor }}"
+
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
-          token: ${{ secrets.PAT_TOKEN }}  # Use PAT for checkout to enable PR creation
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}  # Use PAT if available, fallback to default
+          fetch-depth: 1
 
       - name: Download latest plugins data
         run: |
@@ -40,7 +52,7 @@ jobs:
 
       - name: Run PR collector
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use PAT for API calls
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}  # Use PAT if available, fallback to default
         run: |
           docker run \
             -e GITHUB_TOKEN=$GITHUB_TOKEN \
@@ -53,7 +65,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.PAT_TOKEN }}  # Use PAT for PR creation
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}  # Use PAT if available, fallback to default
           commit-message: 'Update PR statistics report'
           title: 'Update PR statistics report'
           body: |
