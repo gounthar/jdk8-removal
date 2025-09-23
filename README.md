@@ -62,20 +62,20 @@ go mod tidy
 #### Complete Pipeline
 Run the full analysis and modernization pipeline:
 ```bash
-docker-compose up
+docker compose up
 ```
 This executes the complete workflow: repository discovery → recipe application → reporting.
 
 #### Recipe Application Only
 If you have existing repository data and want to apply recipes only:
 ```bash
-docker-compose --profile recipes up apply-recipe-alone
+docker compose --profile recipes up apply-recipe-alone
 ```
 
 #### Debug Mode
 For development and debugging:
 ```bash
-docker-compose -f docker-compose.debug.yaml up
+docker compose -f docker-compose.debug.yaml up
 ```
 
 ### Direct Script Execution
