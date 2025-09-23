@@ -2,13 +2,14 @@
 FROM debian:bookworm-20250908-slim
 
 # Install necessary tools such as parallel, jq, git, curl, gnupg2, software-properties-common, and Python
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     parallel \
     jq \
     git \
     curl \
     gnupg2 \
     software-properties-common \
+    ca-certificates \
     python3 \
     python3-pip \
     python3-venv \
