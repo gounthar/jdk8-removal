@@ -51,7 +51,7 @@ go mod tidy
 ```
 
 ### Environment Variables
-- `GITHUB_TOKEN` - GitHub Personal Access Token with repo scope (required)
+- `GITHUB_TOKEN` - GitHub token (PAT for local runs; in CI the built-in Actions GITHUB_TOKEN is used; ensure permissions match your workflow)
 - `START_DATE` - Start date for PR collection in YYYY-MM-DD format (optional, defaults to 2024-08-01)
 - `RATE_LIMIT_DELAY` - Delay between API calls in seconds (optional, defaults to 2)
 
@@ -182,7 +182,7 @@ RATE_LIMIT_DELAY=2
 
 ### Google Sheets Integration (Optional)
 For data upload to Google Sheets, place your service account credentials file as:
-```
+```text
 concise-complex-344219-062a255ca56f.json
 ```
 
