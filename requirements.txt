@@ -1,0 +1,16 @@
+# Data analysis and visualization
+pandas==2.2.2
+matplotlib==3.8.4
+
+# Google Sheets integration
+gspread==6.1.2
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+
+# OAuth2 for Google services
+google-oauth2-service-account==1.0.0
+
+# Additional dependencies that may be required
+requests==2.31.0
+urllib3==2.2.1

@@ -29,7 +29,14 @@ This project is a comprehensive analysis and automation system designed to moder
 
 ### Python Dependencies
 ```bash
-pip install pandas matplotlib gspread google-oauth2-service-account
+pip install -r requirements.txt
+```
+
+Or for development with a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
 ### Go Dependencies
