@@ -28,9 +28,15 @@ This project is a comprehensive analysis and automation system designed to moder
 - **Java/Maven** - For plugin build verification
 
 ### Python Dependencies
+Install required packages for data analysis and Google Sheets integration:
 ```bash
 pip install -r requirements.txt
 ```
+
+This installs:
+- **pandas** & **matplotlib** - Data analysis and visualization
+- **gspread** - Google Sheets API integration
+- **google-auth** - Service account authentication support for gspread
 
 Or for development with a virtual environment:
 ```bash
