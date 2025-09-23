@@ -36,8 +36,8 @@ RUN echo "alias ll='ls -artl'" >> ~/.bashrc
 # Copy all shell scripts and CSV files into the /scripts and /data directories in the image, respectively
 COPY *.sh /scripts/
 COPY *.csv /data/
-COPY *.py /scripts/
 COPY requirements.txt /scripts/
+COPY *.py /scripts/
 
 # Set the working directory to /scripts
 # This is the directory that commands will run in by default
