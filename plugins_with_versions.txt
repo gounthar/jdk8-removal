@@ -76,7 +76,7 @@ antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.5-166.v870a_96374f91
+apache-httpcomponents-client-5-api:5.5-170.v023de017ccd7
 apifortress:1.0
 apimap:1-rc26.87a_0f950121f
 app-detector:1.0.9
@@ -297,7 +297,7 @@ bootstrap4-api:4.6.0-6
 bootstrap5-api:5.3.8-876.vb_c62a_27d9a_77
 bootstraped-multi-test-results-report:2.2.1
 bouncycastle-api:2.30.1.81-264.v95c79c0e772c
-branch-api:2.1244.vf95c81f1641c
+branch-api:2.1253.v6e7f7519f710
 breachlock-dast:1.2
 browser-axis-plugin:1.0
 browserstack-integration:1.2.24
@@ -408,7 +408,7 @@ cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:256.v20ec4eb_884f1
 cloudbees-enabler:1.43.v5b_7c0c898e84
 cloudbees-feature-management:141.v77cb_218b_8813
-cloudbees-folder:6.1040.v8a_e6330a_54e3
+cloudbees-folder:6.1042.v37b_8229708e4
 cloudbees-jenkins-advisor:392.v6ca_b_ff4e12fa_
 cloudcoreo-deploytime:0.2.3
 cloudevents:1.0.0
@@ -477,7 +477,7 @@ concurrent-login-plugin:0.7
 concurrent-step:1.0.0
 conditional-buildstep:1.5.0
 config-driven-pipeline:1.3
-config-file-provider:994.v3d4a_5fa_f353a_
+config-file-provider:1002.v93e06b_792d44
 configuration-as-code:1985.vdda_32d0c4ea_b_
 configuration-as-code-groovy:1.1
 configuration-as-code-secret-ssm:1.0.1
@@ -608,7 +608,7 @@ diagnostics:1.2
 diawi-upload:1.5
 digicert-software-trust-code-sign:18.v7ec4e7c19a_1b
 digicert-software-trust-gpg-sign:19.va_8b_60320b_ec8
-digitalocean-plugin:229.v0087c555dedd
+digitalocean-plugin:230.v2246586df170
 dimensionsscm:0.9.3.1
 dingding-json-pusher:2.0
 dingding-notifications:2.8.0
@@ -658,7 +658,7 @@ dtkit:2.1.3
 dtkit-api:3.0.3
 dumpinfo-buildwrapper-plugin:1.1
 dumpling:2.2
-durable-task:595.ve87b_f1318d67
+durable-task:605.v9a_b_9040c9970
 dynamic-axis:1.0.3
 dynamic-search-view:0.4.0
 dynamic_extended_choice_parameter:1.0.1
@@ -685,13 +685,13 @@ elastest:1.2.1
 elastic-axis:615.vb_f7c20ec040e
 elasticbox:5.0.1
 elasticsearch-query:1.2
-electricflow:1.1.40
+electricflow:1.1.41
 email-ext:1925.v1598902b_58dd
 email-ext-recipients-column:72.v546836954562
 emailext-template:233.v1eb_88fc160b_5
 embeddable-build-status:602.v766a_264519c7
 embotics-vcommander:2.0
-emergency-stop-pipelines:41.vb_e979ca_5204c
+emergency-stop-pipelines:54.vd2b_6336e1e93
 emma:1.31
 emmacoveragecolumn:0.0.4
 emoji-symbols-api:17.0-57.v8d44b_9a_b_d5ea_
@@ -744,7 +744,7 @@ fedora-module-build-system:1.0.1
 figlet-buildstep:0.2
 file-leak-detector:1.14
 file-operations:353.vf3b_9b_a_f1f7f7
-file-parameters:385.v1cf03fdff8ce
+file-parameters:407.v69e65a_6cb_744
 files-found-trigger:1.5
 filesystem-list-parameter-plugin:0.0.17
 filesystem_scm:120.vea_35eee5d63f
@@ -827,7 +827,7 @@ github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
-github-branch-source:1862.v1a_fc22a_d3788
+github-branch-source:1864.v411feec5e78e
 github-checks:634.v371dc6d978a_3
 github-coverage-reporter:1.10
 github-issues:1.2.4
@@ -842,8 +842,8 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-filter-jira-validator:0.1.0
 github-scm-trait-commit-skip:0.4.0
 github-scm-trait-notification-context:45.v8ef831829589
-gitlab-api:5.6.0-100.v83f8f4b_f1129
-gitlab-branch-source:723.v090f23d3cc49
+gitlab-api:5.8.1-106.vef1de800710e
+gitlab-branch-source:724.v6e30226050b_3
 gitlab-kubernetes-credentials:484.v2fea_0cc92b_d3
 gitlab-logo:221.v4041f5e65573
 gitlab-merge-request-jenkins:2.0.0
@@ -960,7 +960,7 @@ inedo-buildmaster:3.1.0
 inedo-proget:1.4
 infisical:29.va_e0dc5ca_b_8fa_
 inflectra-spira-integration:4.0.0
-influxdb:5.0
+influxdb:6.0
 influxdb-query:1.2
 inline-pipeline:1.0.32.vf433f2d57630
 inodes-monitor:52.v05406b_c33a_b_0
@@ -1025,7 +1025,7 @@ jianliao:1.1
 jigomerge:0.9
 jira:3.19
 jira-ext:114.v7b_8b_1d4274c6
-jira-integration:5.6.0-52.v095e44e20b_25
+jira-integration:5.7.1-67.v64a_b_673b_9306
 jira-steps:2.0.180.vccfe35b_5910d
 jira-trigger:1.0.3
 jjwt-api:0.11.5-120.v0268cf544b_89
@@ -1069,7 +1069,7 @@ jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
 json-api:20250517-173.v596efb_962a_31
 json-editor-parameter:54.v71962f37a_416
-json-parameter:57.v7d1333b_1e259
+json-parameter:61.v012e4d714091
 json-path-api:2.9.0-190.veefca_05d5477
 jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
@@ -1126,7 +1126,7 @@ leanix-microservice-intelligence:1.0.13-rc209.455d336ddb_a_e
 leapwork:4.0.13-110.vac430703b705
 leastload:62.vfa_8830902733
 leiningen-plugin:0.5.6
-lenientshutdown:1.1.1
+lenientshutdown:2.125.v1156982d427d
 levo:33.vc34b_8f81dc9a
 libvirt-slave:315.v5d33b_333a_551
 lifx-notifier:0.3
@@ -1209,7 +1209,7 @@ maven-plugin:3.27
 maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
-mcp-server:0.57.vc17d46a_5d10b_
+mcp-server:0.77.veb_c7b_a_b_f0445
 mdt-deployment:1.0.4
 mdtool:0.1.1
 meliora-testlab:1.24
@@ -1237,7 +1237,7 @@ mina-sshd-api-scp:2.16.0-167.va_269f38cc024
 mina-sshd-api-sftp:2.16.0-167.va_269f38cc024
 minio:1.3.499.v9d1eeeee3a_68
 minio-storage:0.0.3
-miniorange-saml-sp:2.4.7
+miniorange-saml-sp:2.4.8
 miniorange-two-factor:1.0.9
 misc-info-tools:1.116.vc62c5b_55b_d93
 misra-compliance-report-generator:1.0
@@ -1430,7 +1430,7 @@ pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:245.v88f03631a_b_21
 pipeline-graph-view:642.v39f37c8e1e70
-pipeline-groovy-lib:752.vdddedf804e72
+pipeline-groovy-lib:763.v13008816b_de7
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
 pipeline-input-step:534.v352f0a_e98918
@@ -1441,10 +1441,10 @@ pipeline-maven:1567.vb_2c3a_2116860
 pipeline-maven-api:1567.vb_2c3a_2116860
 pipeline-maven-database:1567.vb_2c3a_2116860
 pipeline-milestone-step:138.v78ca_76831a_43
-pipeline-model-api:2.2265.v140e610fe9d5
+pipeline-model-api:2.2273.v643f36ed9e94
 pipeline-model-declarative-agent:1.1.1
-pipeline-model-definition:2.2265.v140e610fe9d5
-pipeline-model-extensions:2.2265.v140e610fe9d5
+pipeline-model-definition:2.2273.v643f36ed9e94
+pipeline-model-extensions:2.2273.v643f36ed9e94
 pipeline-multibranch-defaults:2.1
 pipeline-npm:424.v57d3deb_ea_909
 pipeline-project-env:143.v701f8fb_6cf41
@@ -1452,7 +1452,7 @@ pipeline-reporter-by-redpen:1.054.v7b_9517b_6b_202
 pipeline-rest-api:2.38
 pipeline-restful-api:0.11
 pipeline-stage-step:322.vecffa_99f371c
-pipeline-stage-tags-metadata:2.2265.v140e610fe9d5
+pipeline-stage-tags-metadata:2.2273.v643f36ed9e94
 pipeline-stage-view:2.38
 pipeline-timeline:1.0.3
 pipeline-utility-steps:2.19.0
@@ -1614,7 +1614,7 @@ run-selector:1.1.1
 rundeck:3.6.14
 runscope:1.50
 rusalad-plugin:1.0.8
-s3:508.vc5478ef36921
+s3:515.vc2f8153c5dc6
 s3-jobcacher-storage:46.v54b_1e939c810
 s3explorer:1.0.8
 safe-batch-environment-filter:0.13.v1d2eb_d4291f5
@@ -1834,6 +1834,7 @@ teststudio:1.0.2
 teststudioapitesting:1.0.1
 teststudiomobiletesting:1.0.1
 testweaver:1.0.8
+testwheel-trigger:68.v679a_5b_870299
 text-file-operations:1.3.2
 text-finder:1.33
 text-finder-run-condition:6.vdf94e6f8d2c3
@@ -1972,13 +1973,13 @@ workflow-basic-steps:1079.vce64b_a_929c5a_
 workflow-cps:4183.v94b_6fd39da_c1
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
-workflow-durable-task-step:1458.va_2e10a_a_b_7c4d
+workflow-durable-task-step:1464.v2d3f5c68f84c
 workflow-job:1546.v62a_c59c112dd
-workflow-multibranch:811.vcd33d074c2a_0
+workflow-multibranch:821.vc3b_4ea_780798
 workflow-remote-loader:1.6
-workflow-scm-step:437.v05a_f66b_e5ef8
+workflow-scm-step:452.vdf1ca_c8d3a_87
 workflow-step-api:706.v518c5dcb_24c0
-workflow-support:976.vb_d9493c2eb_09
+workflow-support:989.va_20a_1a_57710a_
 working-hours:1.1
 workplace-notifier:1.16
 worktile:1.1.17
