@@ -1,0 +1,7 @@
+# Data analysis and visualization
+pandas==2.2.2
+matplotlib==3.8.4
+
+# Google Sheets integration
+gspread==6.1.2
+google-auth==2.29.0

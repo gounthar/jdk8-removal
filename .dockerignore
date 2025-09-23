@@ -1,0 +1,41 @@
+# Version control
+.git/
+.gitignore
+
+# Reports and outputs
+reports/
+target/
+*.log
+output.txt
+result.log
+get_java_version_from_pom.log
+
+# Plugin data files
+plugins_*.txt
+head-plugins.json
+plugin_evolution.csv.bak
+update-center.actual.json
+
+# Build artifacts
+*.iml
+pom.xml
+pom-no-namespaces.xml
+pom_concordion.xml
+xml.xml
+
+# IDE files
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+
+# Documentation
+*.md
+repod.md
+
+# Large CSV files in reports directory
+*.csv.bak
