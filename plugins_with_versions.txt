@@ -847,7 +847,7 @@ gitlab-branch-source:724.v6e30226050b_3
 gitlab-kubernetes-credentials:484.v2fea_0cc92b_d3
 gitlab-logo:221.v4041f5e65573
 gitlab-merge-request-jenkins:2.0.0
-gitlab-oauth:1.22
+gitlab-oauth:1.23
 gitlab-plugin:1.9.9
 global-build-stats:347.v32a_eb_0493c4f
 global-pipeline-parameters:64.v0422ef148e18
@@ -1455,7 +1455,7 @@ pipeline-stage-step:322.vecffa_99f371c
 pipeline-stage-tags-metadata:2.2273.v643f36ed9e94
 pipeline-stage-view:2.38
 pipeline-timeline:1.0.3
-pipeline-utility-steps:2.19.0
+pipeline-utility-steps:2.20.0
 pitmutation:1.0-18
 piwikanalytics:1.2.0
 plain-credentials:199.v9f8e1f741799
