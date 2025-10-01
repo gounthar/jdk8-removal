@@ -13,7 +13,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 workflow-support:989.va_20a_1a_57710a_
 jackson2-api:2.20.0-411.v6ef8fdee4fe9
 plain-credentials:199.v9f8e1f741799
-junit:1355.v45e2ea_65863c
+junit:1359.v71188fea_0df5
 git-client:6.4.0
 credentials-binding:702.vfe613e537e88
 matrix-project:858.vb_b_eb_9a_7ea_99e
@@ -215,7 +215,7 @@ aws-java-sdk-ssm:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-codebuild:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-logs:1.12.780-480.v4a_0819121a_9e
 artifactory:4.0.8
-badge:2.10
+badge:2.11
 extended-read-permission:61.vf24570ff3b_e9
 throttle-concurrents:2.18
 monitoring:2.5.0
