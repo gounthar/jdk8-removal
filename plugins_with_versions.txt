@@ -8,7 +8,7 @@ CustomHistory:1.6
 Exclusion:0.15
 GatekeeperPlugin:3.0.5
 JDK_Parameter_Plugin:1.3
-JiraTestResultReporter:332.ve7580d5c109f
+JiraTestResultReporter:340.v8ea_26d65222d
 Matrix-sorter-plugin:1.3
 NegotiateSSO:153.v85355f1cb_26d
 Office-365-Connector:5.2.0
@@ -43,7 +43,7 @@ agent-loadbalance:1.0
 agent-maintenance:2.241.vb_5595f7d6ea_8
 agent-server-parameter:1.1
 aio-tests:1.15
-akeyless:45.vb_1b_77c5d7385
+akeyless:62.vb_05cea_69ed08
 alauda-devops-credentials-provider:2.4.1
 alauda-devops-pipeline:2.3.2
 alauda-devops-sync:2.4.2
@@ -58,7 +58,7 @@ all-changes:1.5
 allure-jenkins-plugin:2.32.0
 amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
-amazon-inspector-image-scanner:562.v9f3473162ee7
+amazon-inspector-image-scanner:564.v2cd388148cc8
 amqp-build-trigger:1.0
 analysis-model-api:13.9.0-911.v94cd6dcdedf7
 anchore-container-scanner:3.3.0
@@ -71,7 +71,7 @@ ansible-tower:0.17.0
 ansicolor:1.0.6
 ant:518.v8d8dc7945eca_
 ant-in-workspace:1.2.2
-antexec:444.vf0db_191cb_9c8
+antexec:454.v1a_6526458b_f4
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -363,7 +363,7 @@ catlight:1.7.v75b_f2d126819
 catppuccin-theme:3.v903b_635ffa_b_4
 cavisson-ns-nd-integration:4.11.0.48
 cccc:0.6
-cctray-xml:127.vc433f5b_3b_9e7
+cctray-xml:144.vdda_180d7987a_
 cdevents:1-40.vb_3d2c94f2379
 cerberus-testing:1.6.5
 change-assembly-version-plugin:1.10
@@ -1101,7 +1101,7 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2
-kubernetes:4371.vb_33b_086d54a_1
+kubernetes:4384.v1b_6367f393d9
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:206.vde31a_b_0f71a_c
@@ -1430,7 +1430,7 @@ pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:245.v88f03631a_b_21
 pipeline-graph-view:646.va_da_a_047edca_c
-pipeline-groovy-lib:763.v13008816b_de7
+pipeline-groovy-lib:766.v2b_e08c2e6ff2
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
 pipeline-input-step:534.v352f0a_e98918
@@ -1629,7 +1629,7 @@ sbt:88.vee3829489c40
 scala-junit-name-decoder:1.0
 scalable-amazon-ecs:1.0
 schedule-build:667.vda_a_fe31e1659
-scm-api:709.v6c27075a_b_1c7
+scm-api:710.v7b_a_484d81f45
 scm-filter-branch-pr:222.v72301ecb_a_ee7
 scm-filter-jervis:2.0.1-68.v738626177078
 scm-httpclient:1.5
