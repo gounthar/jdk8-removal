@@ -262,7 +262,7 @@ bitkeeper:1.8
 black-duck-sigma:2024.10.1
 blackduck-coverity-on-polaris:2.0.1
 blackduck-detect:10.0.0
-blackduck-security-scan:2.4.0-1373.v16a_7f00df585
+blackduck-security-scan:2.5.0-1409.v6f2f5e296062
 blink1:1.1
 block-build-final-project:1.0
 block-queued-job:0.2.0
@@ -986,6 +986,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.20.0-420.v8a_08b_d57ca_05
+jackson3-api:3.0.0-3.v69a_efc2288d6
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-3

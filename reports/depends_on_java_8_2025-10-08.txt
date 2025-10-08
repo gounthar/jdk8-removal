@@ -249,7 +249,7 @@ bitbucket:282.v85a_7e442f57b_
 bitkeeper:1.8
 black-duck-sigma:2024.10.1
 blackduck-coverity-on-polaris:2.0.1
-blackduck-security-scan:2.4.0-1373.v16a_7f00df585
+blackduck-security-scan:2.5.0-1409.v6f2f5e296062
 blink1:1.1
 block-build-final-project:1.0
 block-queued-job:0.2.0
@@ -679,7 +679,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
 experitest-cloud:1.0.3
-explain-error:81.v980b_eeb_fc5a_8
+explain-error:83.vf80461460f09
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -924,6 +924,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.20.0-420.v8a_08b_d57ca_05
+jackson3-api:3.0.0-3.v69a_efc2288d6
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-3
