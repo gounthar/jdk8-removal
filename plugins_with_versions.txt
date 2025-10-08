@@ -60,7 +60,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:564.v2cd388148cc8
 amqp-build-trigger:1.0
-analysis-model-api:13.9.0-911.v94cd6dcdedf7
+analysis-model-api:13.10.0-914.v0e7249a_76a_13
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -716,7 +716,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
 experitest-cloud:1.0.3
-explain-error:81.v980b_eeb_fc5a_8
+explain-error:83.vf80461460f09
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
