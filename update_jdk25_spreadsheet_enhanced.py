@@ -356,7 +356,8 @@ for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip h
             # Update Is Merged column
             if is_merged_col != -1:
                 if jdk25_entry['jdk25_pr']['url']:
-                    row[is_merged_col] = True if jdk25_entry['jdk25_pr']['is_merged'] else False
+                    # Use uppercase strings for proper Google Sheets boolean recognition
+                    row[is_merged_col] = "TRUE" if jdk25_entry['jdk25_pr']['is_merged'] else "FALSE"
                     if jdk25_entry['jdk25_pr']['is_merged']:
                         plugins_with_merged_pr += 1
                 else:
@@ -427,7 +428,8 @@ for entry in jdk25_data:
     # Set merge status
     if is_merged_col != -1:
         if entry['jdk25_pr']['url']:
-            new_row[is_merged_col] = True if entry['jdk25_pr']['is_merged'] else False
+            # Use uppercase strings for proper Google Sheets boolean recognition
+            new_row[is_merged_col] = "TRUE" if entry['jdk25_pr']['is_merged'] else "FALSE"
             if entry['jdk25_pr']['is_merged']:
                 plugins_with_merged_pr += 1
         else:
