@@ -124,13 +124,27 @@ jobs:
           chmod +x validate_jdk25_detection.py
 
           REPORT_FILE="reports/jdk25_tracking_with_prs_${{ steps.date.outputs.date }}.json"
+          MANUAL_CSV="Java_25_Compatibility_check.csv"
 
-          if [ -f "$REPORT_FILE" ] && [ -f "Java_25_Compatibility_check.csv" ]; then
-            echo "Running validation..."
-            ./validate_jdk25_detection.py "$REPORT_FILE" || true
-          else
-            echo "Skipping validation (missing files)"
+          echo "Checking validation prerequisites..."
+          echo "  Report file: $REPORT_FILE"
+          echo "  Manual CSV: $MANUAL_CSV"
+
+          if [ ! -f "$REPORT_FILE" ]; then
+            echo "⚠️ Report file not found: $REPORT_FILE"
+            echo "Validation requires the automated tracking results."
+            exit 0
           fi
+
+          if [ ! -f "$MANUAL_CSV" ]; then
+            echo "ℹ️ Skipping validation - manual CSV not available in CI"
+            echo "The validation script compares automated results against manual tracking."
+            echo "To run validation locally, export the manual spreadsheet as CSV first."
+            exit 0
+          fi
+
+          echo "✓ All prerequisites met, running validation..."
+          ./validate_jdk25_detection.py "$REPORT_FILE" || true
 
       - name: Generate summary
         if: always()
