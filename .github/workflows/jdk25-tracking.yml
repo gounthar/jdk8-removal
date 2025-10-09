@@ -58,7 +58,34 @@ jobs:
       - name: Download Jenkins plugins data
         run: |
           echo "Downloading latest Jenkins plugin registry..."
-          curl -o plugins.json https://updates.jenkins.io/current/update-center.actual.json
+
+          # Download with redirects and show errors
+          if ! curl -L -f -o plugins.json https://updates.jenkins.io/current/update-center.actual.json; then
+            echo "❌ Failed to download Jenkins plugin registry"
+            exit 1
+          fi
+
+          # Validate downloaded file
+          FILE_SIZE=$(stat -c%s plugins.json 2>/dev/null || stat -f%z plugins.json 2>/dev/null)
+          echo "Downloaded file size: $FILE_SIZE bytes"
+
+          if [ "$FILE_SIZE" -lt 100000 ]; then
+            echo "❌ Downloaded file is too small ($FILE_SIZE bytes)"
+            echo "Expected file size: several MB"
+            echo "First 500 characters of downloaded file:"
+            head -c 500 plugins.json
+            exit 1
+          fi
+
+          # Validate JSON format
+          if ! jq empty plugins.json 2>/dev/null; then
+            echo "❌ Downloaded file is not valid JSON"
+            echo "First 500 characters of downloaded file:"
+            head -c 500 plugins.json
+            exit 1
+          fi
+
+          echo "✓ Successfully downloaded and validated plugin registry ($FILE_SIZE bytes)"
 
           echo "Generating top 250 plugins list..."
           ./get-most-popular-plugins.sh
