@@ -6,5 +6,5 @@ matplotlib==3.8.4
 openpyxl==3.1.5
 
 # Google Sheets integration
-gspread==6.1.2
+gspread==6.2.1
 google-auth==2.29.0
