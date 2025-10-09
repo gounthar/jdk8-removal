@@ -33,7 +33,9 @@ def retry_with_backoff(func, max_retries=5, initial_delay=5):
         try:
             return func()
         except gspread.exceptions.APIError as e:
-            if "429" in str(e):  # Rate limit error
+            # Check for rate limit errors (429) or quota exceeded errors (403)
+            error_code = getattr(e.response, 'status_code', None) if hasattr(e, 'response') else None
+            if error_code in (429, 403) or "429" in str(e) or "quota" in str(e).lower():
                 if attempt == max_retries - 1:
                     raise
                 logging.warning(f"Rate limit hit. Waiting {delay} seconds before retry {attempt + 1}/{max_retries}")
@@ -41,7 +43,6 @@ def retry_with_backoff(func, max_retries=5, initial_delay=5):
                 delay *= 2  # Exponential backoff
             else:
                 raise
-    return None
 
 def update_sheet_with_retry(sheet, data, range_name="A1", value_input_option="USER_ENTERED"):
     """Update a sheet with retry logic and rate limiting."""
@@ -135,8 +136,8 @@ if SPREADSHEET_ID:
     # Use proper URL parsing to prevent URL injection attacks
     if SPREADSHEET_ID.startswith('http://') or SPREADSHEET_ID.startswith('https://'):
         parsed = urlparse(SPREADSHEET_ID)
-        # Only accept URLs from docs.google.com domain (with or without www)
-        if parsed.netloc in ('docs.google.com', 'www.docs.google.com'):
+        # Only accept URLs from docs.google.com domain
+        if parsed.netloc == 'docs.google.com':
             match = re.search(r'/d/([a-zA-Z0-9-_]+)', parsed.path)
             if match:
                 SPREADSHEET_ID = match.group(1)
