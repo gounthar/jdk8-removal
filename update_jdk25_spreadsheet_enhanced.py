@@ -135,8 +135,8 @@ if SPREADSHEET_ID:
     # Use proper URL parsing to prevent URL injection attacks
     if SPREADSHEET_ID.startswith('http://') or SPREADSHEET_ID.startswith('https://'):
         parsed = urlparse(SPREADSHEET_ID)
-        # Only accept URLs from docs.google.com domain
-        if parsed.netloc == 'docs.google.com':
+        # Only accept URLs from docs.google.com domain (with or without www)
+        if parsed.netloc in ('docs.google.com', 'www.docs.google.com'):
             match = re.search(r'/d/([a-zA-Z0-9-_]+)', parsed.path)
             if match:
                 SPREADSHEET_ID = match.group(1)
@@ -281,12 +281,12 @@ for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip h
 
             # Update Is Merged column
             if is_merged_col != -1:
-                is_merged = jdk25_entry['jdk25_pr']['is_merged']
-                if is_merged:
-                    row[is_merged_col] = "TRUE"
-                    plugins_with_merged_pr += 1
+                if jdk25_entry['jdk25_pr']['url']:
+                    row[is_merged_col] = "TRUE" if jdk25_entry['jdk25_pr']['is_merged'] else "FALSE"
+                    if jdk25_entry['jdk25_pr']['is_merged']:
+                        plugins_with_merged_pr += 1
                 else:
-                    row[is_merged_col] = "FALSE" if jdk25_entry['jdk25_pr']['url'] else ""
+                    row[is_merged_col] = ""
 
             existing_data[i-1] = row
             updated_count += 1
