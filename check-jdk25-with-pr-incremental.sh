@@ -28,8 +28,9 @@ if [ -z "$LOG_FILE" ]; then
   export LOG_FILE="logs/jdk25_tracking_$current_date.log"
 fi
 
-# Create log directory
+# Create required directories
 mkdir -p "$(dirname "$LOG_FILE")"
+mkdir -p "reports"
 
 # Initialize log file with header
 echo "========================================" > "$LOG_FILE"

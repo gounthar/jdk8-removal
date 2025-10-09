@@ -64,7 +64,7 @@ The ID of the Google Spreadsheet to update.
 5. Value: Your spreadsheet ID (extract from the spreadsheet URL)
 
 **To get the spreadsheet ID from URL:**
-```
+```text
 https://docs.google.com/spreadsheets/d/SPREADSHEET_ID_HERE/edit
                                           ^^^^^^^^^^^^^^^^^^^^
 Example: 1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI

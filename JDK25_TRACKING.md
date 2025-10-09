@@ -416,7 +416,7 @@ name: JDK 25 Compatibility Tracking
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Run weekly on Sunday at midnight
+    - cron: '0 6 * * *'  # Run daily at 6:00 AM UTC
   workflow_dispatch:  # Allow manual triggers
 
 jobs:
@@ -441,24 +441,25 @@ jobs:
           curl -o plugins.json https://updates.jenkins.io/current/update-center.actual.json
           ./get-most-popular-plugins.sh
 
-      - name: Scan Jenkinsfiles
+      - name: Scan Jenkinsfiles (incremental)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./check-jdk-versions.sh
+        run: ./check-jdk25-with-pr-incremental.sh
 
       - name: Update Spreadsheet
         env:
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+          JDK25_SPREADSHEET_ID: ${{ secrets.JDK25_SPREADSHEET_ID }}
         run: |
-          echo "$GOOGLE_CREDENTIALS" > concise-complex-344219-062a255ca56f.json
-          ./update_jdk25_spreadsheet.py reports/jdk_versions_in_jenkinsfiles_$(date +%Y-%m-%d).json
+          echo "$GOOGLE_CREDENTIALS" > google-credentials.json
+          ./update_jdk25_spreadsheet_enhanced.py reports/jdk25_tracking_with_prs_$(date +%Y-%m-%d).json
 
       - name: Commit results
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add reports/
-          git commit -m "Update JDK version tracking - $(date +%Y-%m-%d)" || true
+          git commit -m "Update JDK 25 tracking - $(date +%Y-%m-%d)" || true
           git push
 ```
 

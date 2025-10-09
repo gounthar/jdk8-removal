@@ -12,6 +12,7 @@ Java 25 Compatibility check spreadsheet with the exact columns from the existing
 import gspread
 import gspread.exceptions
 from google.oauth2.service_account import Credentials
+from gspread.utils import rowcol_to_a1
 import json
 import logging
 import sys
@@ -90,7 +91,7 @@ try:
     creds = Credentials.from_service_account_file(credentials_file, scopes=scope)
     logging.info(f"Successfully loaded service account credentials from {credentials_file}")
 except FileNotFoundError:
-    logging.error(f"Service account credentials file not found: {credentials_file}")
+    logging.exception(f"Service account credentials file not found: {credentials_file}")
     logging.error("Set GOOGLE_APPLICATION_CREDENTIALS environment variable or ensure google-credentials.json exists")
     sys.exit(1)
 
@@ -104,10 +105,10 @@ try:
     logging.info(f"Successfully loaded JDK 25 tracking data from {JDK25_TRACKING_FILE}")
     logging.info(f"Found {len(jdk25_data)} plugins in the data")
 except FileNotFoundError:
-    logging.error(f"File {JDK25_TRACKING_FILE} not found.")
+    logging.exception(f"File {JDK25_TRACKING_FILE} not found.")
     sys.exit(1)
 except json.JSONDecodeError:
-    logging.error(f"Error decoding {JDK25_TRACKING_FILE}.")
+    logging.exception(f"Error decoding {JDK25_TRACKING_FILE}.")
     sys.exit(1)
 
 # Create a mapping from plugin name/repo to JDK 25 data
@@ -150,7 +151,7 @@ if SPREADSHEET_ID:
         spreadsheet = client.open_by_key(SPREADSHEET_ID)
         logging.info(f"Opened spreadsheet by ID: {SPREADSHEET_ID}")
     except gspread.exceptions.SpreadsheetNotFound:
-        logging.error(f"Spreadsheet with ID '{SPREADSHEET_ID}' not found.")
+        logging.exception(f"Spreadsheet with ID '{SPREADSHEET_ID}' not found.")
         sys.exit(1)
 else:
     logging.error("No spreadsheet ID or URL provided. Please provide it as the second argument.")
@@ -188,7 +189,7 @@ try:
     existing_data = worksheet.get_all_values()
     logging.info(f"Read {len(existing_data)} rows from existing spreadsheet")
 except Exception as e:
-    logging.error(f"Could not read existing data: {e}")
+    logging.exception(f"Could not read existing data: {e}")
     sys.exit(1)
 
 if not existing_data or len(existing_data) == 0:
@@ -306,7 +307,8 @@ update_sheet_with_retry(worksheet, existing_data, "A1")
 
 # Format the header row
 logging.info("Formatting header row...")
-header_range = f"A1:{chr(65 + len(headers) - 1)}1"
+last_cell = rowcol_to_a1(1, len(headers))
+header_range = f"A1:{last_cell}"
 format_sheet_with_retry(worksheet, header_range, {
     "textFormat": {
         "bold": True,
@@ -315,8 +317,7 @@ format_sheet_with_retry(worksheet, header_range, {
     "backgroundColor": {
         "red": 0.2,
         "green": 0.5,
-        "blue": 0.8,
-        "alpha": 1.0
+        "blue": 0.8
     },
     "horizontalAlignment": "CENTER"
 })
@@ -356,8 +357,7 @@ format_sheet_with_retry(stats_sheet, "A1:C1", {
     "backgroundColor": {
         "red": 0.2,
         "green": 0.5,
-        "blue": 0.8,
-        "alpha": 1.0
+        "blue": 0.8
     },
     "horizontalAlignment": "CENTER"
 })

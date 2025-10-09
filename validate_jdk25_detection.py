@@ -118,7 +118,7 @@ def main():
                     print(f"  ✓ PR matches: {automated_pr}")
                 else:
                     pr_mismatch_count += 1
-                    print(f"  ✗ PR mismatch!")
+                    print("  ✗ PR mismatch!")
                     print(f"    Manual:    {manual_pr}")
                     print(f"    Automated: {automated_pr}")
 
@@ -131,12 +131,12 @@ def main():
                     print(f"  ✓ Merge status matches: {automated_merged}")
                 else:
                     merge_mismatch_count += 1
-                    print(f"  ✗ Merge status mismatch!")
+                    print("  ✗ Merge status mismatch!")
                     print(f"    Manual:    {manual_merged}")
                     print(f"    Automated: {automated_merged}")
             else:
                 pr_mismatch_count += 1
-                print(f"  ✗ No PR found in automated results")
+                print("  ✗ No PR found in automated results")
                 print(f"    Expected: {manual_pr}")
 
             print()
@@ -169,7 +169,7 @@ def main():
                 print(f"  PR: {plugin['jdk25_pr']['url']}")
                 print(f"  Merged: {plugin['jdk25_pr']['is_merged']}")
             else:
-                print(f"  No PR found")
+                print("  No PR found")
             print()
 
     if additional_count == 0:
