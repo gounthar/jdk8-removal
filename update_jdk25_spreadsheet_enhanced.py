@@ -375,6 +375,16 @@ for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip h
             if is_merged_col != -1:
                 row[is_merged_col] = ""
             existing_data[i-1] = row
+    else:
+        # No match found - this plugin is not in our current scan
+        # Clear JDK 25 PR data to avoid stale entries
+        while len(row) <= max(java25_pr_col, is_merged_col):
+            row.append("")
+        if java25_pr_col != -1:
+            row[java25_pr_col] = ""
+        if is_merged_col != -1:
+            row[is_merged_col] = ""
+        existing_data[i-1] = row
 
 logging.info(f"Updated {updated_count} rows with JDK 25 PR data")
 
