@@ -39,6 +39,7 @@ This installs:
 - **pandas** & **matplotlib** - Data analysis and visualization
 - **gspread** - Google Sheets API integration
 - **google-auth** - Service account authentication support for gspread
+- **openpyxl** - Excel file reading for JDK 25 tracking validation
 
 Or for development with a virtual environment:
 ```bash
@@ -212,7 +213,7 @@ JDK25_SPREADSHEET_ID=1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI
 ```
 
 **JDK 25 Automated Tracking Spreadsheet:**
-- URL: https://docs.google.com/spreadsheets/d/1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI/edit
+- [Spreadsheet URL](https://docs.google.com/spreadsheets/d/1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI/edit)
 - This is the default automated spreadsheet for JDK 25 compatibility tracking
 
 ### Google Sheets Integration (Optional)
