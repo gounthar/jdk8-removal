@@ -4,9 +4,14 @@ Update Google Spreadsheet with JDK 25 detection results including PR tracking.
 This script reads the JSON output from check-jdk25-with-pr.sh and updates the
 Java 25 Compatibility check spreadsheet with the exact columns from the existing sheet:
 - Name
-- Installation Count (preserved)
+- Installation Count (from plugins.json or preserved from spreadsheet)
 - Java 25 pull request (populated)
 - Is merged? (populated)
+
+The script maintains a cumulative list of all plugins that have ever had JDK 25:
+- Updates existing rows with latest PR tracking data
+- Adds NEW rows for plugins with JDK 25 that aren't in the spreadsheet yet
+- Preserves historical data for plugins not in the current scan
 """
 
 import gspread
@@ -104,13 +109,72 @@ try:
     with open(JDK25_TRACKING_FILE) as f:
         jdk25_data = json.load(f)
     logging.info(f"Successfully loaded JDK 25 tracking data from {JDK25_TRACKING_FILE}")
-    logging.info(f"Found {len(jdk25_data)} plugins in the data")
+    logging.info(f"Found {len(jdk25_data)} plugins in the current scan")
 except FileNotFoundError:
     logging.exception(f"File {JDK25_TRACKING_FILE} not found.")
     sys.exit(1)
 except json.JSONDecodeError:
     logging.exception(f"Error decoding {JDK25_TRACKING_FILE}.")
     sys.exit(1)
+
+# Load and merge ALL historical tracking files to maintain cumulative data
+# This ensures we don't lose plugins that drop out of the top 250
+import glob
+historical_files = sorted(glob.glob("reports/jdk25_tracking_with_prs_*.json"))
+logging.info(f"Found {len(historical_files)} historical tracking files")
+
+# Create a map keyed by repository to track all historical data
+historical_plugins = {}
+for hist_file in historical_files:
+    if hist_file == JDK25_TRACKING_FILE:
+        continue  # Skip current file, we already loaded it
+    try:
+        with open(hist_file) as f:
+            hist_data = json.load(f)
+        for entry in hist_data:
+            repo = entry['repository']
+            # Keep the entry with JDK 25 if we find one
+            if entry.get('has_jdk25', False):
+                # If we don't have this repo yet, or if this entry has JDK 25, store it
+                if repo not in historical_plugins or not historical_plugins[repo].get('has_jdk25', False):
+                    historical_plugins[repo] = entry
+    except Exception as e:
+        logging.warning(f"Could not load historical file {hist_file}: {e}")
+
+logging.info(f"Loaded {len(historical_plugins)} plugins from historical data")
+
+# Merge historical data with current data
+# Priority: current data overwrites historical data for the same repository
+current_repos = {entry['repository'] for entry in jdk25_data}
+for repo, hist_entry in historical_plugins.items():
+    if repo not in current_repos and hist_entry.get('has_jdk25', False):
+        # This plugin is not in current scan but had JDK 25 historically
+        jdk25_data.append(hist_entry)
+
+logging.info(f"After merging with historical data: {len(jdk25_data)} total plugins to process")
+plugins_from_history = len(jdk25_data) - len(current_repos)
+if plugins_from_history > 0:
+    logging.info(f"  Including {plugins_from_history} plugins from historical scans")
+
+# Load Jenkins plugins data for installation counts
+plugins_data = {}
+plugins_json_file = "plugins.json"
+if os.path.exists(plugins_json_file):
+    try:
+        with open(plugins_json_file) as f:
+            plugins_registry = json.load(f)
+        if 'plugins' in plugins_registry:
+            for plugin_name, plugin_info in plugins_registry['plugins'].items():
+                plugins_data[plugin_name.lower()] = {
+                    'name': plugin_name,
+                    'title': plugin_info.get('title', ''),
+                    'popularity': plugin_info.get('popularity', 0)
+                }
+            logging.info(f"Loaded installation data for {len(plugins_data)} plugins")
+    except Exception:
+        logging.exception(f"Could not load {plugins_json_file}, installation counts will not be available")
+else:
+    logging.warning(f"{plugins_json_file} not found, installation counts will not be populated for new entries")
 
 # Create a mapping from plugin name/repo to JDK 25 data
 jdk25_map = {}
@@ -235,6 +299,7 @@ updated_count = 0
 plugins_with_jdk25 = 0
 plugins_with_pr = 0
 plugins_with_merged_pr = 0
+existing_plugin_names = set()  # Track plugins already in spreadsheet
 
 for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip header)
     if name_col >= len(row):
@@ -243,6 +308,9 @@ for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip h
     plugin_name = row[name_col].strip()
     if not plugin_name:
         continue
+
+    # Track this plugin as existing in the spreadsheet
+    existing_plugin_names.add(plugin_name.lower())
 
     # Try to find this plugin in our JDK 25 data
     jdk25_entry = None
@@ -303,6 +371,77 @@ for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip h
             existing_data[i-1] = row
 
 logging.info(f"Updated {updated_count} rows with JDK 25 PR data")
+
+# Now add NEW plugins with JDK 25 that aren't in the spreadsheet yet
+new_plugins_added = 0
+logging.info("Checking for new plugins with JDK 25 to add...")
+
+for entry in jdk25_data:
+    if not entry['has_jdk25']:
+        continue  # Skip plugins without JDK 25
+
+    plugin_name = entry['plugin']
+    repo_name = entry['repository']
+
+    # Check if this plugin is already in the spreadsheet
+    is_existing = False
+    lookup_keys = [
+        plugin_name.lower(),
+        repo_name.lower().replace('jenkinsci/', ''),
+        plugin_name.lower().replace(' ', '-'),
+        plugin_name.lower().replace(' plugin', ''),
+    ]
+
+    for key in lookup_keys:
+        if key in existing_plugin_names:
+            is_existing = True
+            break
+
+    if is_existing:
+        continue  # Already in spreadsheet
+
+    # This is a new plugin with JDK 25 - add it!
+    new_row = [""] * max(len(headers), max(name_col, installation_count_col, java25_pr_col, is_merged_col) + 1)
+
+    # Set plugin name
+    new_row[name_col] = plugin_name
+
+    # Set installation count if available
+    if installation_count_col != -1:
+        # Try to find installation count from plugins.json
+        plugin_key = repo_name.replace('jenkinsci/', '').lower()
+        if plugin_key in plugins_data:
+            new_row[installation_count_col] = plugins_data[plugin_key]['popularity']
+        else:
+            new_row[installation_count_col] = 0
+
+    # Set JDK 25 PR URL
+    if java25_pr_col != -1 and entry['jdk25_pr']['url']:
+        new_row[java25_pr_col] = entry['jdk25_pr']['url']
+
+    # Set merge status
+    if is_merged_col != -1:
+        if entry['jdk25_pr']['url']:
+            new_row[is_merged_col] = "TRUE" if entry['jdk25_pr']['is_merged'] else "FALSE"
+            if entry['jdk25_pr']['is_merged']:
+                plugins_with_merged_pr += 1
+        else:
+            new_row[is_merged_col] = ""
+
+    existing_data.append(new_row)
+    new_plugins_added += 1
+    plugins_with_jdk25 += 1
+
+    if entry['jdk25_pr']['url']:
+        plugins_with_pr += 1
+
+    # Track this plugin to avoid duplicates
+    existing_plugin_names.add(plugin_name.lower())
+
+    if new_plugins_added % 10 == 0:
+        logging.info(f"Added {new_plugins_added} new plugins...")
+
+logging.info(f"Added {new_plugins_added} new plugins with JDK 25 to spreadsheet")
 logging.info(f"Writing {len(existing_data)} rows to spreadsheet...")
 update_sheet_with_retry(worksheet, existing_data, "A1")
 
@@ -368,6 +507,8 @@ logging.info(f"Spreadsheet URL: {spreadsheet.url}")
 logging.info("\nSummary:")
 logging.info(f"  Total plugins scanned: {total_plugins_scanned}")
 logging.info(f"  Plugins with JDK 25: {plugins_with_jdk25}")
+logging.info(f"  New plugins added to spreadsheet: {new_plugins_added}")
+logging.info(f"  Existing plugins updated: {updated_count}")
 logging.info(f"  Plugins with JDK 25 PR identified: {plugins_with_pr}")
 logging.info(f"  Plugins with merged JDK 25 PR: {plugins_with_merged_pr}")
 logging.info(f"  Success rate: {plugins_with_pr/plugins_with_jdk25*100:.1f}% of JDK 25 plugins have PR identified" if plugins_with_jdk25 > 0 else "  No JDK 25 plugins found")
