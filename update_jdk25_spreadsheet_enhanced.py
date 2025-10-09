@@ -309,8 +309,13 @@ for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip h
     if not plugin_name:
         continue
 
-    # Track this plugin as existing in the spreadsheet
+    # Track this plugin as existing in the spreadsheet with ALL variations
+    # to avoid duplicate detection later
     existing_plugin_names.add(plugin_name.lower())
+    existing_plugin_names.add(plugin_name.lower().replace(' ', '-'))
+    existing_plugin_names.add(plugin_name.lower().replace(' ', '-') + '-plugin')
+    if plugin_name.lower().endswith(' plugin'):
+        existing_plugin_names.add(plugin_name.lower()[:-7].strip())
 
     # Try to find this plugin in our JDK 25 data
     jdk25_entry = None
