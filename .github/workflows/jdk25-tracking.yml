@@ -132,6 +132,7 @@ jobs:
       - name: Update Google Spreadsheet
         env:
           JDK25_SPREADSHEET_ID: ${{ secrets.JDK25_SPREADSHEET_ID }}
+          GOOGLE_APPLICATION_CREDENTIALS: concise-complex-344219-062a255ca56f.json
         run: |
           chmod +x update_jdk25_spreadsheet_enhanced.py
 
