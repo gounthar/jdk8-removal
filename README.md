@@ -18,9 +18,11 @@ This project is a comprehensive analysis and automation system designed to moder
 - **Docker & Docker Compose** (recommended) - For containerized execution
 - **Bash** - Shell scripting environment
 - **Git** - Version control operations
+- **GitHub CLI (`gh`)** - GitHub API interactions, repository forking, and operations
 - **jq** - JSON processing
-- **parallel** - Concurrent script execution
+- **parallel** (GNU parallel) - Concurrent script execution
 - **xmlstarlet** - XML parsing for pom.xml analysis
+- **xsltproc** - XSLT processor for XML namespace removal
 
 ### Programming Languages
 - **Go 1.23.2+** - For Jenkins PR collector tool
@@ -37,6 +39,7 @@ This installs:
 - **pandas** & **matplotlib** - Data analysis and visualization
 - **gspread** - Google Sheets API integration
 - **google-auth** - Service account authentication support for gspread
+- **openpyxl** - Excel file reading for JDK 25 tracking validation
 
 Or for development with a virtual environment:
 ```bash
@@ -54,6 +57,8 @@ go mod tidy
 - `GITHUB_TOKEN` - GitHub token (PAT for local runs; in CI the built-in Actions GITHUB_TOKEN is used; ensure permissions match your workflow)
 - `START_DATE` - Start date for PR collection in YYYY-MM-DD format (optional, defaults to 2024-08-01)
 - `RATE_LIMIT_DELAY` - Delay between API calls in seconds (optional, defaults to 2)
+- `DEBUG_MODE` - Enable debug output when set to "true" (optional)
+- `JDK25_SPREADSHEET_ID` - Google Spreadsheet ID for JDK 25 tracking (optional, defaults to 1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI)
 
 ## Usage
 
@@ -93,11 +98,13 @@ docker compose -f docker-compose.debug.yaml up
 ```bash
 ./apply-recipe.sh
 ```
-- Reads recipes from `recipes-to-apply.csv`
+- Reads recipes from `recipes-to-apply.csv` (4-column format: Recipe Name, URL, Commit Message, Maven Command)
 - Applies OpenRewrite modernization recipes to discovered plugins
-- Creates forks and branches for each plugin
+- Forks target repositories to your GitHub account
+- Creates `jdk8-removal` branch for changes
+- Generates patches and applies them to the forked repository
 - Validates changes with Maven builds
-- Pushes changes to GitHub
+- Pushes changes to GitHub and logs results per repository
 
 #### 3. Plugin List Generation
 ```bash
@@ -139,6 +146,28 @@ python3 plot-jenkins-stats.py
 ```
 Generates SVG charts showing Jenkins plugin evolution over time.
 
+### JDK 25 Compatibility Tracking
+
+The project includes an automated system for tracking JDK 25 adoption across Jenkins plugins:
+
+```bash
+# Run incremental scan (recommended for regular updates)
+./check-jdk25-with-pr-incremental.sh [previous-results.json]
+
+# Update Google Spreadsheet with results
+python3 update_jdk25_spreadsheet_enhanced.py reports/jdk25_tracking_with_prs_YYYY-MM-DD.json
+
+# Validate detection results
+python3 validate_jdk25_detection.py reports/jdk25_tracking_with_prs_YYYY-MM-DD.json
+```
+
+**For complete documentation**, see [JDK25_TRACKING.md](JDK25_TRACKING.md) which includes:
+- Detailed usage instructions
+- Automated workflows with GitHub Actions
+- PR tracking and merge status detection
+- Google Sheets integration
+- Troubleshooting guides
+
 ## Output Files
 
 The system generates date-stamped files for tracking evolution over time. All files use the format `YYYY-MM-DD` to maintain historical data.
@@ -149,6 +178,7 @@ The system generates date-stamped files for tracking evolution over time. All fi
 - `plugins_using_jdk11_YYYY-MM-DD.csv` - Plugins already using JDK 11+
 - `repos_where_recipes_work_YYYY-MM-DD.csv` - Successful recipe applications
 - `repos_where_recipes_dont_work_YYYY-MM-DD.csv` - Failed recipe applications
+- `recipes/{repo}.csv` - Per-repository recipe application logs tracking which recipes were applied and whether changes were made
 
 ### Plugin Lists (in root directory)
 - `plugins_jdk11_main_YYYY-MM-DD.txt` - Main list of plugins using JDK 11+
@@ -173,12 +203,18 @@ The system generates date-stamped files for tracking evolution over time. All fi
 ## Configuration
 
 ### Environment Setup
-Create a `.env` file in the project root with your configuration:
+Create a `.env` file in the project root with your configuration (see `.env.example` for a template):
 ```bash
 GITHUB_TOKEN=your_github_token_here
 START_DATE=2024-08-01
 RATE_LIMIT_DELAY=2
+DEBUG_MODE=false
+JDK25_SPREADSHEET_ID=1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI
 ```
+
+**JDK 25 Automated Tracking Spreadsheet:**
+- [Spreadsheet URL](https://docs.google.com/spreadsheets/d/1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI/edit)
+- This is the default automated spreadsheet for JDK 25 compatibility tracking
 
 ### Google Sheets Integration (Optional)
 For data upload to Google Sheets, place your service account credentials file as:
@@ -187,11 +223,13 @@ concise-complex-344219-062a255ca56f.json
 ```
 
 ### Recipe Configuration
-Edit `recipes-to-apply.csv` to specify which OpenRewrite recipes to apply:
+Edit `recipes-to-apply.csv` to specify which OpenRewrite recipes to apply. The CSV format includes 4 columns: Recipe Name, URL, Commit Message, and Maven Command.
+
+Example:
 ```csv
-recipe_name,description
-org.openrewrite.java.migrate.UpgradeToJava11,Migrate from Java 8 to 11
-org.openrewrite.java.migrate.RemoveObsoleteApiUsage,Remove deprecated API usage
+Recipe Name,URL,Commit Message,Maven Command
+UpgradeToJava11,https://docs.openrewrite.org/recipes/java/migrate/upgradetojava11,"Upgrade to Java 11","mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.recipeArtifactCoordinates=org.openrewrite.recipe:rewrite-migrate-java:RELEASE -Drewrite.activeRecipes=org.openrewrite.java.migrate.UpgradeToJava11"
+ModernizePluginForJava8,https://docs.openrewrite.org/recipes/jenkins/modernizepluginforjava8,"Modernize plugin for Java 8","mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.recipeArtifactCoordinates=org.openrewrite.recipe:rewrite-jenkins:RELEASE -Drewrite.activeRecipes=org.openrewrite.jenkins.ModernizePluginForJava8"
 ```
 
 ## Architecture

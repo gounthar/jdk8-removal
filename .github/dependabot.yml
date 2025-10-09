@@ -11,17 +11,26 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-      
+
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "weekly"
       day: "sunday"
-  
+
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
       interval: "weekly"
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
     commit-message:
       prefix: "deps"
     open-pull-requests-limit: 5    
