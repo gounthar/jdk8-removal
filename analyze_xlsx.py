@@ -1,30 +1,49 @@
 #!/usr/bin/env python3
+"""
+Analyze Excel files and convert them to CSV format.
+
+Usage:
+    python3 analyze_xlsx.py <excel-file.xlsx>
+
+Example:
+    python3 analyze_xlsx.py "Java 25 Compatibility check.xlsx"
+"""
+
 import sys
-try:
-    import pandas as pd
-    import openpyxl
-except ImportError as e:
-    print(f"Missing dependency: {e}")
-    print("Installing openpyxl...")
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "openpyxl"])
-    import pandas as pd
+import pandas as pd
+import openpyxl
 
-xlsx_file = 'Java 25 Compatibility check.xlsx'
-xl_file = pd.ExcelFile(xlsx_file)
-print(f'Sheet names: {xl_file.sheet_names}')
-print()
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print("Usage: python3 analyze_xlsx.py <excel-file.xlsx>")
+        print("\nExample:")
+        print('  python3 analyze_xlsx.py "Java 25 Compatibility check.xlsx"')
+        sys.exit(1)
 
-df = pd.read_excel(xlsx_file, sheet_name=0)
-print(f'Columns: {list(df.columns)}')
-print()
-print(f'Shape: {df.shape}')
-print()
-print('First 10 rows:')
-print(df.head(10).to_string())
-print()
+    xlsx_file = sys.argv[1]
 
-# Save as CSV for easier processing
-csv_file = 'Java_25_Compatibility_check.csv'
-df.to_csv(csv_file, index=False)
-print(f'Saved to {csv_file}')
+    try:
+        xl_file = pd.ExcelFile(xlsx_file)
+        print(f'Sheet names: {xl_file.sheet_names}')
+        print()
+
+        df = pd.read_excel(xlsx_file, sheet_name=0)
+        print(f'Columns: {list(df.columns)}')
+        print()
+        print(f'Shape: {df.shape}')
+        print()
+        print('First 10 rows:')
+        print(df.head(10).to_string())
+        print()
+
+        # Save as CSV for easier processing
+        csv_file = xlsx_file.rsplit('.', 1)[0] + '.csv'
+        df.to_csv(csv_file, index=False)
+        print(f'Saved to {csv_file}')
+
+    except FileNotFoundError:
+        print(f"Error: File '{xlsx_file}' not found")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error processing file: {e}")
+        sys.exit(1)

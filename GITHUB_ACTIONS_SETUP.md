@@ -29,21 +29,21 @@ The Google service account credentials JSON file.
 2. Navigate to **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
 4. Name: `GOOGLE_CREDENTIALS`
-5. Value: Copy the entire contents of `concise-complex-344219-062a255ca56f.json`
+5. Value: Copy the entire contents of your Google service account credentials file (e.g., `google-credentials.json`)
 
 **To get the JSON content:**
 ```bash
-cat concise-complex-344219-062a255ca56f.json
+cat google-credentials.json
 ```
 
 **Example format (DO NOT use this, use your actual credentials):**
 ```json
 {
   "type": "service_account",
-  "project_id": "concise-complex-344219",
+  "project_id": "<your-project-id>",
   "private_key_id": "...",
   "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
-  "client_email": "367475118703-compute@developer.gserviceaccount.com",
+  "client_email": "<your-service-account-email>",
   "client_id": "...",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
@@ -61,12 +61,13 @@ The ID of the Google Spreadsheet to update.
 2. Navigate to **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
 4. Name: `JDK25_SPREADSHEET_ID`
-5. Value: `1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI`
+5. Value: Your spreadsheet ID (extract from the spreadsheet URL)
 
 **To get the spreadsheet ID from URL:**
 ```
 https://docs.google.com/spreadsheets/d/SPREADSHEET_ID_HERE/edit
                                           ^^^^^^^^^^^^^^^^^^^^
+Example: 1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI
 ```
 
 ### 3. GITHUB_TOKEN (Automatic)
@@ -77,9 +78,9 @@ GitHub automatically provides this token - no setup needed.
 
 Make sure the service account has **Editor** access to the spreadsheet:
 
-1. Open the spreadsheet: https://docs.google.com/spreadsheets/d/1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI/edit
+1. Open your spreadsheet in Google Sheets
 2. Click **Share** button
-3. Add: `367475118703-compute@developer.gserviceaccount.com`
+3. Add your service account email (found in your credentials JSON file, e.g., `your-service-account@your-project.iam.gserviceaccount.com`)
 4. Role: **Editor**
 5. Uncheck "Notify people"
 6. Click **Share**
@@ -166,7 +167,7 @@ This scans all 250 plugins from scratch (takes 20-30 minutes).
 
 **Solution:**
 1. Open the spreadsheet
-2. Share with service account email: `367475118703-compute@developer.gserviceaccount.com`
+2. Share with your service account email (found in your credentials JSON file)
 3. Grant Editor permissions
 
 ### Workflow Fails: "Invalid credentials"
@@ -174,7 +175,7 @@ This scans all 250 plugins from scratch (takes 20-30 minutes).
 **Problem:** GOOGLE_CREDENTIALS secret is incorrect
 
 **Solution:**
-1. Verify the JSON is valid (use `jq . concise-complex-344219-062a255ca56f.json`)
+1. Verify the JSON is valid (use `jq . google-credentials.json`)
 2. Copy the ENTIRE file content including braces
 3. Update the secret in GitHub Settings
 
@@ -183,8 +184,8 @@ This scans all 250 plugins from scratch (takes 20-30 minutes).
 **Problem:** JDK25_SPREADSHEET_ID is incorrect
 
 **Solution:**
-1. Get the ID from spreadsheet URL
-2. Update the secret with correct ID: `1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI`
+1. Get the ID from your spreadsheet URL (the long alphanumeric string between `/d/` and `/edit`)
+2. Update the secret with the correct spreadsheet ID
 
 ### Rate Limiting
 

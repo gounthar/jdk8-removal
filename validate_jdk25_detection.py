@@ -186,8 +186,11 @@ def main():
     print(f"Automated plugins with JDK 25:  {len(automated_jdk25)}")
     print()
     print("Detection Accuracy:")
-    print(f"  ✓ Found in automation:         {found_count}/{len(manual_map)} ({found_count/len(manual_map)*100:.1f}%)")
-    print(f"  ✗ Missing from automation:     {missing_count}/{len(manual_map)}")
+    if len(manual_map) > 0:
+        print(f"  ✓ Found in automation:         {found_count}/{len(manual_map)} ({found_count/len(manual_map)*100:.1f}%)")
+        print(f"  ✗ Missing from automation:     {missing_count}/{len(manual_map)}")
+    else:
+        print("  (Manual spreadsheet lists no JDK 25 plugins)")
     print()
     print("PR Matching:")
     print(f"  ✓ PR matches:                  {pr_match_count}")

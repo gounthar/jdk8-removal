@@ -95,7 +95,8 @@ check_rate_limit() {
       printf "\rProgress: [%-50s] %d%%" $(printf "%0.s#" $(seq 1 $(( progress / 2 )))) $progress
       sleep 1
     done
-    info -e "\nWait time completed. Resuming..."
+    echo
+    info "Wait time completed. Resuming..."
   fi
 }
 
@@ -110,8 +111,12 @@ find_jdk25_commit() {
 
   debug "Cloning $repo to $temp_dir"
 
+  # Configure git to use token via HTTP header (more secure than URL embedding)
+  git config --global credential.helper store
+  git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+
   # Clone with minimal depth for faster operation
-  if ! git clone --depth 100 "https://${GITHUB_TOKEN}@github.com/$repo.git" "$temp_dir" &>/dev/null; then
+  if ! git clone --depth 100 "https://github.com/$repo.git" "$temp_dir" &>/dev/null; then
     error "Failed to clone $repo"
     return 1
   fi
@@ -200,13 +205,14 @@ get_commit_date() {
 # Function to add a validated plugin entry from cache
 add_cached_entry() {
   local repo=$1
+  local previous_results=$2
 
-  if [ -z "$1" ] || [ ! -f "$1" ]; then
+  if [ -z "$previous_results" ] || [ ! -f "$previous_results" ]; then
     return 1
   fi
 
   # Find the entry in the previous results
-  local cached_entry=$(jq --arg repo "$repo" '.[] | select(.repository == $repo)' "$1" 2>/dev/null)
+  local cached_entry=$(jq --arg repo "$repo" '.[] | select(.repository == $repo)' "$previous_results" 2>/dev/null)
 
   if [ -n "$cached_entry" ] && [ "$cached_entry" != "null" ]; then
     # Extract values
@@ -420,6 +426,12 @@ tail -n +2 "top-250-plugins.csv" | while IFS=',' read -r plugin_name popularity;
 done
 
 info "Found $plugin_count repositories to check"
+
+# Deduplicate repositories (multiple plugins may map to same repo)
+sort -u "$repos_list" -o "$repos_list"
+unique_repo_count=$(wc -l < "$repos_list")
+info "After deduplication: $unique_repo_count unique repositories to check"
+
 info "Processing repositories..."
 
 # Process repositories sequentially

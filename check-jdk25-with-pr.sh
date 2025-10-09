@@ -66,7 +66,8 @@ check_rate_limit() {
       printf "\rProgress: [%-50s] %d%%" $(printf "%0.s#" $(seq 1 $(( progress / 2 )))) $progress
       sleep 1
     done
-    info -e "\nWait time completed. Resuming..."
+    echo
+    info "Wait time completed. Resuming..."
   fi
 }
 
@@ -81,8 +82,12 @@ find_jdk25_commit() {
 
   debug "Cloning $repo to $temp_dir"
 
+  # Configure git to use token via HTTP header (more secure than URL embedding)
+  git config --global credential.helper store
+  git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+
   # Clone with minimal depth for faster operation
-  if ! git clone --depth 100 "https://${GITHUB_TOKEN}@github.com/$repo.git" "$temp_dir" &>/dev/null; then
+  if ! git clone --depth 100 "https://github.com/$repo.git" "$temp_dir" &>/dev/null; then
     error "Failed to clone $repo"
     return 1
   fi
@@ -326,6 +331,12 @@ tail -n +2 "top-250-plugins.csv" | while IFS=',' read -r plugin_name popularity;
 done
 
 info "Found $plugin_count repositories to check"
+
+# Deduplicate repositories (multiple plugins may map to same repo)
+sort -u "$repos_list" -o "$repos_list"
+unique_repo_count=$(wc -l < "$repos_list")
+info "After deduplication: $unique_repo_count unique repositories to check"
+
 info "Processing repositories..."
 
 # Process repositories sequentially for better git operations

@@ -177,11 +177,10 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update JDK 25 tracking data - $(date +%Y-%m-%d)
-
-Automated update from GitHub Actions
-
-[skip ci]"
+            git commit \
+              -m "chore: update JDK 25 tracking data - $(date +%Y-%m-%d)" \
+              -m "Automated update from GitHub Actions" \
+              -m "[skip ci]"
             git push
           fi
 

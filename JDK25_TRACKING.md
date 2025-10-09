@@ -59,7 +59,7 @@ This replaces the manual process of checking each plugin and updating the spread
 
 **Use this script** for the first full scan or when you want to re-check all plugins.
 
-### 1b. check-jdk-versions.sh (Basic version)
+### 1c. check-jdk-versions.sh (Basic version)
 
 Bash script that scans Jenkins plugin repositories to detect JDK versions in their Jenkinsfiles.
 
@@ -356,7 +356,7 @@ Starting JDK 25 spreadsheet update script...
 Successfully loaded service account credentials
 Successfully loaded JDK 25 tracking data from reports/jdk25_tracking_with_prs_2025-10-09.json
 Found 250 plugins in the data
-Opened spreadsheet by ID: 1_XHzakLNwA44cUnRsY01kQ1X1SymMcJGFxXzhr5s3_s
+Opened spreadsheet by ID: 1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI
 Found worksheet: 'Java 25 compatibility progress'
 Read 2235 rows from existing spreadsheet
 Existing headers: ['Name', 'Installation Count (June 2025)', 'Java 25 pull request', 'Is merged?']
@@ -366,7 +366,7 @@ Writing 2235 rows to spreadsheet...
 Formatting header row...
 Updating existing Statistics sheet...
 Spreadsheet update complete!
-Spreadsheet URL: https://docs.google.com/spreadsheets/d/1_XHzakLNwA44cUnRsY01kQ1X1SymMcJGFxXzhr5s3_s/edit
+Spreadsheet URL: https://docs.google.com/spreadsheets/d/1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI/edit
 
 Summary:
   Total plugins scanned: 250
@@ -469,7 +469,7 @@ jobs:
 crontab -e
 
 # Add this line to run every Sunday at midnight
-0 0 * * 0 cd /path/to/jdk8-removal && ./check-jdk-versions.sh && ./update_jdk25_spreadsheet.py reports/jdk_versions_in_jenkinsfiles_$(date +\%Y-\%m-\%d).json
+0 0 * * 0 cd /path/to/your-project-root && ./check-jdk-versions.sh && ./update_jdk25_spreadsheet.py reports/jdk_versions_in_jenkinsfiles_$(date +\%Y-\%m-\%d).json
 ```
 
 ## Troubleshooting

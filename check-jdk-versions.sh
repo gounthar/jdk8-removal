@@ -215,10 +215,18 @@ tail -n +2 "top-250-plugins.csv" | while IFS=',' read -r plugin_name popularity;
 done
 
 info "Found $plugin_count repositories to check"
+
+# Deduplicate repositories (multiple plugins may map to same repo)
+sort -u "$repos_list" -o "$repos_list"
+unique_repo_count=$(wc -l < "$repos_list")
+info "After deduplication: $unique_repo_count unique repositories to check"
+
 info "Processing repositories..."
 
-# Process repositories in parallel (but be mindful of rate limits)
-cat "$repos_list" | parallel -j 5 check_jdk_versions_in_jenkinsfile
+# Process repositories sequentially to avoid JSON/CSV corruption from parallel writes
+while read -r repo_path; do
+  check_jdk_versions_in_jenkinsfile "$repo_path"
+done < "$repos_list"
 
 # Clean up temp file
 rm -f "$repos_list"

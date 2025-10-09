@@ -17,6 +17,9 @@ import logging
 import sys
 import time
 from datetime import datetime
+import os
+import re
+from urllib.parse import urlparse
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -65,7 +68,6 @@ if len(sys.argv) < 2:
 JDK25_TRACKING_FILE = sys.argv[1]
 
 # Get spreadsheet ID from command line, environment variable, or default
-import os
 SPREADSHEET_ID = None
 if len(sys.argv) > 2:
     SPREADSHEET_ID = sys.argv[2]
@@ -80,12 +82,16 @@ elif os.getenv('JDK25_SPREADSHEET_ID'):
 # Define the scope
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 
+# Get credentials filename from environment variable or use default
+credentials_file = os.getenv('GOOGLE_APPLICATION_CREDENTIALS', 'google-credentials.json')
+
 # Add your service account credentials
 try:
-    creds = Credentials.from_service_account_file('concise-complex-344219-062a255ca56f.json', scopes=scope)
-    logging.info("Successfully loaded service account credentials")
+    creds = Credentials.from_service_account_file(credentials_file, scopes=scope)
+    logging.info(f"Successfully loaded service account credentials from {credentials_file}")
 except FileNotFoundError:
-    logging.error("Service account credentials file not found: concise-complex-344219-062a255ca56f.json")
+    logging.error(f"Service account credentials file not found: {credentials_file}")
+    logging.error("Set GOOGLE_APPLICATION_CREDENTIALS environment variable or ensure google-credentials.json exists")
     sys.exit(1)
 
 # Authorize the client
@@ -127,8 +133,6 @@ if SPREADSHEET_ID:
     # Extract ID from URL if a URL was provided
     # Use proper URL parsing to prevent URL injection attacks
     if SPREADSHEET_ID.startswith('http://') or SPREADSHEET_ID.startswith('https://'):
-        from urllib.parse import urlparse
-        import re
         parsed = urlparse(SPREADSHEET_ID)
         # Only accept URLs from docs.google.com domain
         if parsed.netloc == 'docs.google.com':
@@ -277,7 +281,7 @@ for i, row in enumerate(existing_data[1:], start=2):  # Start from row 2 (skip h
             # Update Is Merged column
             if is_merged_col != -1:
                 is_merged = jdk25_entry['jdk25_pr']['is_merged']
-                if is_merged == True or is_merged == 'true':
+                if is_merged:
                     row[is_merged_col] = "TRUE"
                     plugins_with_merged_pr += 1
                 else:
