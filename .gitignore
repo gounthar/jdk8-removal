@@ -1,0 +1,10 @@
+/CLAUDE.md
+# Google Service Account Credentials
+/concise-complex-*.json
+credentials*.json
+.env
+logs/
+# Generated validation and tracking files
+validated_jdk25_plugins.txt
+manual_jdk25_plugins.txt
+/.claude/

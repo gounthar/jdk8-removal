@@ -1,0 +1,202 @@
+name: JDK 25 Compatibility Tracking
+
+on:
+  schedule:
+    # Run every day at 6:00 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Allow manual triggers
+    inputs:
+      full_scan:
+        description: 'Run full scan instead of incremental'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write  # Need write permission to commit results
+
+jobs:
+  track-jdk25:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for git operations
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq parallel git
+
+          # Install GitHub CLI
+          type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
+          && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
+          && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+          && sudo apt update \
+          && sudo apt install gh -y
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install gspread google-auth pandas openpyxl
+
+      - name: Set up Google Service Account credentials
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        run: |
+          echo "$GOOGLE_CREDENTIALS" > concise-complex-344219-062a255ca56f.json
+          chmod 600 concise-complex-344219-062a255ca56f.json
+
+      - name: Download Jenkins plugins data
+        run: |
+          echo "Downloading latest Jenkins plugin registry..."
+          curl -o plugins.json https://updates.jenkins.io/current/update-center.actual.json
+
+          echo "Generating top 250 plugins list..."
+          ./get-most-popular-plugins.sh
+
+      - name: Find previous results
+        id: previous
+        run: |
+          # Find the most recent tracking results
+          LATEST=$(ls -t reports/jdk25_tracking_with_prs_*.json 2>/dev/null | head -1 || echo "")
+          if [ -n "$LATEST" ]; then
+            echo "previous_file=$LATEST" >> $GITHUB_OUTPUT
+            echo "Found previous results: $LATEST"
+          else
+            echo "previous_file=" >> $GITHUB_OUTPUT
+            echo "No previous results found, will run full scan"
+          fi
+
+      - name: Run JDK 25 detection (incremental)
+        if: github.event.inputs.full_scan != 'true' && steps.previous.outputs.previous_file != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RATE_LIMIT_DELAY: 2
+          DEBUG_MODE: false
+        run: |
+          echo "Running incremental scan..."
+          chmod +x check-jdk25-with-pr-incremental.sh
+          ./check-jdk25-with-pr-incremental.sh "${{ steps.previous.outputs.previous_file }}"
+
+      - name: Run JDK 25 detection (full scan)
+        if: github.event.inputs.full_scan == 'true' || steps.previous.outputs.previous_file == ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RATE_LIMIT_DELAY: 2
+          DEBUG_MODE: false
+        run: |
+          echo "Running full scan..."
+          chmod +x check-jdk25-with-pr.sh
+          ./check-jdk25-with-pr.sh
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +%Y-%m-%d)" >> $GITHUB_OUTPUT
+
+      - name: Update Google Spreadsheet
+        env:
+          JDK25_SPREADSHEET_ID: ${{ secrets.JDK25_SPREADSHEET_ID }}
+        run: |
+          chmod +x update_jdk25_spreadsheet_enhanced.py
+
+          REPORT_FILE="reports/jdk25_tracking_with_prs_${{ steps.date.outputs.date }}.json"
+
+          if [ -f "$REPORT_FILE" ]; then
+            echo "Updating spreadsheet with: $REPORT_FILE"
+            ./update_jdk25_spreadsheet_enhanced.py "$REPORT_FILE"
+          else
+            echo "Error: Report file not found: $REPORT_FILE"
+            exit 1
+          fi
+
+      - name: Run validation
+        if: always()
+        run: |
+          chmod +x validate_jdk25_detection.py
+
+          REPORT_FILE="reports/jdk25_tracking_with_prs_${{ steps.date.outputs.date }}.json"
+
+          if [ -f "$REPORT_FILE" ] && [ -f "Java_25_Compatibility_check.csv" ]; then
+            echo "Running validation..."
+            ./validate_jdk25_detection.py "$REPORT_FILE" || true
+          else
+            echo "Skipping validation (missing files)"
+          fi
+
+      - name: Generate summary
+        if: always()
+        run: |
+          echo "## JDK 25 Tracking Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          REPORT_FILE="reports/jdk25_tracking_with_prs_${{ steps.date.outputs.date }}.json"
+
+          if [ -f "$REPORT_FILE" ]; then
+            TOTAL=$(jq 'length' "$REPORT_FILE")
+            JDK25_COUNT=$(jq '[.[] | select(.has_jdk25 == true)] | length' "$REPORT_FILE")
+            WITH_PR=$(jq '[.[] | select(.has_jdk25 == true and .jdk25_pr.url != "")] | length' "$REPORT_FILE")
+            MERGED=$(jq '[.[] | select(.has_jdk25 == true and .jdk25_pr.is_merged == true)] | length' "$REPORT_FILE")
+
+            echo "### Results" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total plugins scanned:** $TOTAL" >> $GITHUB_STEP_SUMMARY
+            echo "- **Plugins with JDK 25:** $JDK25_COUNT" >> $GITHUB_STEP_SUMMARY
+            echo "- **With PR identified:** $WITH_PR" >> $GITHUB_STEP_SUMMARY
+            echo "- **With merged PR:** $MERGED" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            # List new plugins with JDK 25 (if any)
+            echo "### Plugins with JDK 25" >> $GITHUB_STEP_SUMMARY
+            jq -r '.[] | select(.has_jdk25 == true) | "- [\(.plugin)](\(.url)) - PR: \(.jdk25_pr.url // "Not found") (Merged: \(.jdk25_pr.is_merged))"' "$REPORT_FILE" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ Report file not found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add generated files
+          git add reports/jdk25_tracking_with_prs_*.json || true
+          git add reports/jdk25_tracking_with_prs_*.csv || true
+          git add logs/ || true
+          git add validated_jdk25_plugins.txt || true
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update JDK 25 tracking data - $(date +%Y-%m-%d)
+
+Automated update from GitHub Actions
+
+[skip ci]"
+            git push
+          fi
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jdk25-tracking-results-${{ steps.date.outputs.date }}
+          path: |
+            reports/jdk25_tracking_with_prs_*.json
+            reports/jdk25_tracking_with_prs_*.csv
+            logs/jdk25_tracking_*.log
+          retention-days: 90
+
+      - name: Clean up credentials
+        if: always()
+        run: |
+          rm -f concise-complex-344219-062a255ca56f.json
