@@ -163,7 +163,7 @@ python3 validate_jdk25_detection.py reports/jdk25_tracking_with_prs_2025-10-09.j
 - 2: Validation failed (some plugins not detected)
 
 **Example output:**
-```
+```text
 ✓ FOUND: mailer
   ✓ PR matches: https://github.com/jenkinsci/mailer-plugin/pull/381
   ✓ Merge status matches: True
@@ -469,8 +469,8 @@ jobs:
 # Edit crontab
 crontab -e
 
-# Add this line to run every Sunday at midnight
-0 0 * * 0 cd /path/to/your-project-root && ./check-jdk-versions.sh && ./update_jdk25_spreadsheet.py reports/jdk_versions_in_jenkinsfiles_$(date +\%Y-\%m-\%d).json
+# Add this line to run daily at 6:00 AM UTC
+0 6 * * * cd /path/to/your-project-root && ./check-jdk25-with-pr-incremental.sh && ./update_jdk25_spreadsheet_enhanced.py reports/jdk25_tracking_with_prs_$(date +\%Y-\%m-\%d).json
 ```
 
 ## Troubleshooting

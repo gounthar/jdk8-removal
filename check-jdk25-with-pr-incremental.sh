@@ -112,15 +112,23 @@ find_jdk25_commit() {
 
   debug "Cloning $repo to $temp_dir"
 
+  # Disable xtrace to prevent token leakage
+  [[ "$DEBUG_MODE" = "true" ]] && set +x
+
   # Configure git to use token via HTTP header (more secure than URL embedding)
   git config --global credential.helper store
   git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
 
   # Clone with minimal depth for faster operation
   if ! git clone --depth 100 "https://github.com/$repo.git" "$temp_dir" &>/dev/null; then
+    # Re-enable xtrace if it was on
+    [[ "$DEBUG_MODE" = "true" ]] && set -x
     error "Failed to clone $repo"
     return 1
   fi
+
+  # Re-enable xtrace if it was on
+  [[ "$DEBUG_MODE" = "true" ]] && set -x
 
   cd "$temp_dir" || return 1
 
@@ -406,8 +414,6 @@ fi
 # Read top-250 plugins and map to repository URLs
 info "Reading top-250 plugins list..."
 plugin_count=0
-skipped_count=0
-processed_count=0
 repos_list=$(mktemp)
 previous_results="$1"
 
@@ -437,13 +443,7 @@ info "Processing repositories..."
 
 # Process repositories sequentially
 while read -r repo_path; do
-  if is_validated "$repo_path"; then
-    ((skipped_count++))
-    check_jdk25_with_pr "$repo_path" "$previous_results"
-  else
-    ((processed_count++))
-    check_jdk25_with_pr "$repo_path" "$previous_results"
-  fi
+  check_jdk25_with_pr "$repo_path" "$previous_results"
 done < "$repos_list"
 
 # Clean up temp file
@@ -479,8 +479,6 @@ repos_with_merged_jdk25_pr=$(tail -n +2 "$output_csv" | awk -F',' '$9=="true"' |
 info ""
 info "Summary:"
 info "  Total repositories scanned: $total_repos"
-info "  Repositories skipped (cached): $skipped_count"
-info "  Repositories newly processed: $processed_count"
 info "  Repositories with Jenkinsfile: $repos_with_jenkinsfile"
 info "  Repositories building with JDK 25: $repos_with_jdk25"
 info "  Repositories with JDK 25 PR identified: $repos_with_jdk25_pr"

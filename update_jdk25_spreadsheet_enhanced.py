@@ -188,8 +188,8 @@ if worksheet is None:
 try:
     existing_data = worksheet.get_all_values()
     logging.info(f"Read {len(existing_data)} rows from existing spreadsheet")
-except Exception as e:
-    logging.exception(f"Could not read existing data: {e}")
+except Exception:
+    logging.exception("Could not read existing data")
     sys.exit(1)
 
 if not existing_data or len(existing_data) == 0:
@@ -364,7 +364,7 @@ format_sheet_with_retry(stats_sheet, "A1:C1", {
 
 logging.info("Spreadsheet update complete!")
 logging.info(f"Spreadsheet URL: {spreadsheet.url}")
-logging.info(f"\nSummary:")
+logging.info("\nSummary:")
 logging.info(f"  Total plugins scanned: {total_plugins_scanned}")
 logging.info(f"  Plugins with JDK 25: {plugins_with_jdk25}")
 logging.info(f"  Plugins with JDK 25 PR identified: {plugins_with_pr}")

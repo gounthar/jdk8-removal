@@ -83,15 +83,23 @@ find_jdk25_commit() {
 
   debug "Cloning $repo to $temp_dir"
 
+  # Disable xtrace to prevent token leakage
+  [[ "$DEBUG_MODE" = "true" ]] && set +x
+
   # Configure git to use token via HTTP header (more secure than URL embedding)
   git config --global credential.helper store
   git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
 
   # Clone with minimal depth for faster operation
   if ! git clone --depth 100 "https://github.com/$repo.git" "$temp_dir" &>/dev/null; then
+    # Re-enable xtrace if it was on
+    [[ "$DEBUG_MODE" = "true" ]] && set -x
     error "Failed to clone $repo"
     return 1
   fi
+
+  # Re-enable xtrace if it was on
+  [[ "$DEBUG_MODE" = "true" ]] && set -x
 
   cd "$temp_dir" || return 1
 

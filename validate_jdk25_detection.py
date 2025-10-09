@@ -126,7 +126,14 @@ def main():
                 manual_merged = manual_data['is_merged']
                 automated_merged = automated_plugin['jdk25_pr']['is_merged']
 
-                if str(manual_merged).lower() == str(automated_merged).lower():
+                # Normalize to boolean for comparison
+                manual_bool = str(manual_merged).lower() in ('true', '1', 'yes')
+                automated_bool = (
+                    automated_merged if isinstance(automated_merged, bool)
+                    else str(automated_merged).lower() in ('true', '1', 'yes')
+                )
+
+                if manual_bool == automated_bool:
                     merge_match_count += 1
                     print(f"  ✓ Merge status matches: {automated_merged}")
                 else:
