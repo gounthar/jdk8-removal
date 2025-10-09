@@ -125,11 +125,22 @@ logging.info(f"Created JDK 25 tracking map with {len(jdk25_map)} entries")
 # Open the Google Sheet
 if SPREADSHEET_ID:
     # Extract ID from URL if a URL was provided
-    if 'docs.google.com' in SPREADSHEET_ID:
+    # Use proper URL parsing to prevent URL injection attacks
+    if SPREADSHEET_ID.startswith('http://') or SPREADSHEET_ID.startswith('https://'):
+        from urllib.parse import urlparse
         import re
-        match = re.search(r'/d/([a-zA-Z0-9-_]+)', SPREADSHEET_ID)
-        if match:
-            SPREADSHEET_ID = match.group(1)
+        parsed = urlparse(SPREADSHEET_ID)
+        # Only accept URLs from docs.google.com domain
+        if parsed.netloc == 'docs.google.com':
+            match = re.search(r'/d/([a-zA-Z0-9-_]+)', parsed.path)
+            if match:
+                SPREADSHEET_ID = match.group(1)
+            else:
+                logging.error(f"Could not extract spreadsheet ID from URL: {SPREADSHEET_ID}")
+                sys.exit(1)
+        else:
+            logging.error(f"Invalid spreadsheet URL - must be from docs.google.com domain, got: {parsed.netloc}")
+            sys.exit(1)
 
     try:
         spreadsheet = client.open_by_key(SPREADSHEET_ID)
