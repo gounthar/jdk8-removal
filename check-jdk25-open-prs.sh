@@ -276,9 +276,33 @@ export -f format_repo_name
 info "Starting JDK 25 open PRs detection in Jenkins plugin repositories..."
 info "Output will be written to: $output_csv and $output_json"
 
+# Determine which plugin list to use
+# PLUGIN_LIST_MODE can be "top-250" (default) or "all"
+PLUGIN_LIST_MODE="${PLUGIN_LIST_MODE:-top-250}"
+
+case "$PLUGIN_LIST_MODE" in
+  all)
+    PLUGIN_LIST_FILE="all-plugins.csv"
+    PLUGIN_LIST_NAME="all plugins"
+    REQUIRED_SCRIPT="get-all-plugins.sh"
+    ;;
+  top-250)
+    PLUGIN_LIST_FILE="top-250-plugins.csv"
+    PLUGIN_LIST_NAME="top-250 plugins"
+    REQUIRED_SCRIPT="get-most-popular-plugins.sh"
+    ;;
+  *)
+    error "Invalid PLUGIN_LIST_MODE: $PLUGIN_LIST_MODE. Must be 'top-250' or 'all'."
+    exit 1
+    ;;
+esac
+
+info "Plugin list mode: $PLUGIN_LIST_MODE"
+info "Using: $PLUGIN_LIST_FILE"
+
 # Check if required files exist
-if [ ! -f "top-250-plugins.csv" ]; then
-  error "top-250-plugins.csv not found. Please run get-most-popular-plugins.sh first."
+if [ ! -f "$PLUGIN_LIST_FILE" ]; then
+  error "$PLUGIN_LIST_FILE not found. Please run $REQUIRED_SCRIPT first."
   exit 1
 fi
 
@@ -287,13 +311,13 @@ if [ ! -f "plugins.json" ]; then
   exit 1
 fi
 
-# Read top-250 plugins and map to repository URLs
-info "Reading top-250 plugins list..."
+# Read plugins and map to repository URLs
+info "Reading $PLUGIN_LIST_NAME list..."
 plugin_count=0
 repos_list=$(mktemp)
 
-# Skip header and read plugin names
-tail -n +2 "top-250-plugins.csv" | while IFS=',' read -r plugin_name popularity; do
+# Skip header and read plugin names (avoid subshell)
+while IFS=',' read -r plugin_name popularity; do
   # Get repository URL from plugins.json
   repo_url=$(jq -r --arg plugin "$plugin_name" '.plugins[$plugin].scm // empty' plugins.json)
 
@@ -305,7 +329,7 @@ tail -n +2 "top-250-plugins.csv" | while IFS=',' read -r plugin_name popularity;
   else
     warning "No repository found for plugin: $plugin_name"
   fi
-done
+done < <(tail -n +2 "$PLUGIN_LIST_FILE")
 
 info "Found $plugin_count repositories to check"
 
