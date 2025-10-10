@@ -257,7 +257,7 @@ process_repository() {
     "repository": "$repo",
     "url": "https://github.com/$repo",
     "has_open_jdk25_prs": $has_open_jdk25_prs,
-    "open_jdk25_prs": $(echo "$open_jdk25_prs" | jq -s '.')
+    "open_jdk25_prs": $(echo "$open_jdk25_prs" | jq -s '.'),
     "has_jenkinsfile": $has_jenkinsfile
   }
 EOF
@@ -353,6 +353,91 @@ info "Summary:"
 info "  Total repositories scanned: $total_repos"
 info "  Repositories with open JDK 25 PRs: $repos_with_open_prs"
 info "  Total open PRs adding JDK 25: $total_open_prs"
+
+# Change tracking: Compare with previous run
+info ""
+info "Checking for changes since last run..."
+
+# Find the most recent previous JSON file (excluding today's)
+previous_json=$(ls -t reports/jdk25_open_prs_tracking_*.json 2>/dev/null | grep -v "$current_date" | head -1)
+
+if [ -n "$previous_json" ] && [ -f "$previous_json" ]; then
+  previous_date=$(basename "$previous_json" | sed 's/jdk25_open_prs_tracking_//' | sed 's/.json$//')
+  info "Comparing with previous run from $previous_date"
+
+  # Create temporary files for comparison
+  current_prs=$(mktemp)
+  previous_prs=$(mktemp)
+
+  # Extract PR details: repo|pr_number|is_draft|url
+  jq -r '.[] | select(.has_open_jdk25_prs == true) | .repository as $repo | .open_jdk25_prs[] | "\($repo)|\(.number)|\(.isDraft)|\(.url)"' "$output_json" | sort > "$current_prs"
+  jq -r '.[] | select(.has_open_jdk25_prs == true) | .repository as $repo | .open_jdk25_prs[] | "\($repo)|\(.number)|\(.isDraft)|\(.url)"' "$previous_json" | sort > "$previous_prs"
+
+  # Detect changes
+  new_prs=$(comm -13 "$previous_prs" "$current_prs" | cut -d'|' -f1-2)
+  closed_prs=$(comm -23 "$previous_prs" "$current_prs" | cut -d'|' -f1-2)
+
+  # Detect draft status changes
+  draft_to_regular=0
+  regular_to_draft=0
+
+  while IFS='|' read -r repo pr_num is_draft url; do
+    # Check if this PR existed before
+    prev_line=$(grep "^$repo|$pr_num|" "$previous_prs")
+    if [ -n "$prev_line" ]; then
+      prev_draft=$(echo "$prev_line" | cut -d'|' -f3)
+      # Draft to regular
+      if [ "$prev_draft" = "true" ] && [ "$is_draft" = "false" ]; then
+        ((draft_to_regular++))
+        info "  📝 PR #$pr_num in $repo: Draft → Ready for review"
+      fi
+      # Regular to draft
+      if [ "$prev_draft" = "false" ] && [ "$is_draft" = "true" ]; then
+        ((regular_to_draft++))
+        info "  📝 PR #$pr_num in $repo: Ready → Draft"
+      fi
+    fi
+  done < "$current_prs"
+
+  new_count=$(echo "$new_prs" | grep -c . 2>/dev/null || echo 0)
+  closed_count=$(echo "$closed_prs" | grep -c . 2>/dev/null || echo 0)
+
+  info ""
+  info "Changes since $previous_date:"
+  info "  📈 New PRs opened: $new_count"
+  info "  📉 PRs closed/merged: $closed_count"
+  info "  ✅ Draft → Ready: $draft_to_regular"
+  info "  ⏸️  Ready → Draft: $regular_to_draft"
+
+  # Show details of new PRs
+  if [ "$new_count" -gt 0 ]; then
+    info ""
+    info "New PRs:"
+    echo "$new_prs" | while IFS='|' read -r repo pr_num; do
+      if [ -n "$repo" ]; then
+        pr_url=$(grep "^$repo|$pr_num|" "$current_prs" | cut -d'|' -f4)
+        info "  • $repo #$pr_num - $pr_url"
+      fi
+    done
+  fi
+
+  # Show details of closed/merged PRs
+  if [ "$closed_count" -gt 0 ]; then
+    info ""
+    info "Closed/Merged PRs:"
+    echo "$closed_prs" | while IFS='|' read -r repo pr_num; do
+      if [ -n "$repo" ]; then
+        pr_url=$(grep "^$repo|$pr_num|" "$previous_prs" | cut -d'|' -f4)
+        info "  • $repo #$pr_num - $pr_url"
+      fi
+    done
+  fi
+
+  # Clean up temp files
+  rm -f "$current_prs" "$previous_prs"
+else
+  info "No previous run found for comparison"
+fi
 
 # Add completion marker to log file
 echo "" >> "$LOG_FILE"
