@@ -16,16 +16,11 @@ echo "Extracting all plugins from plugins.json..."
 jq -r '
   .plugins
   | to_entries
-  | map(select(.value.popularity)) # Filter plugins with a "popularity" field
-  | map({name: .key, popularity: .value.popularity}) # Extract plugin name and popularity
-  | sort_by(-.popularity) # Sort by popularity in descending order (no limit)
-  | "name,popularity", (.[] | "\(.name),\(.popularity)") # Format as CSV
+  | map(select(.value | has("popularity") and (.popularity != null))) # Keep plugins that have a "popularity" field (including 0)
+  | map({name: .key, popularity: .value.popularity})                  # Extract plugin name and popularity
+  | sort_by(-.popularity)                                            # Sort by popularity in descending order (no limit)
+  | "name,popularity", (.[] | "\(.name),\(.popularity)")             # Format as CSV
 ' plugins.json > all-plugins.csv
-
-if [ $? -ne 0 ]; then
-  echo "Error: jq command failed."
-  exit 1
-fi
 
 # Check if 'all-plugins.csv' is non-empty
 # Exit with an error message if the file is empty or missing

@@ -404,18 +404,22 @@ fi
 # PLUGIN_LIST_MODE can be "top-250" (default) or "all"
 PLUGIN_LIST_MODE="${PLUGIN_LIST_MODE:-top-250}"
 
-if [ "$PLUGIN_LIST_MODE" = "all" ]; then
-  PLUGIN_LIST_FILE="all-plugins.csv"
-  PLUGIN_LIST_NAME="all plugins (~2036)"
-  REQUIRED_SCRIPT="get-all-plugins.sh"
-elif [ "$PLUGIN_LIST_MODE" = "top-250" ]; then
-  PLUGIN_LIST_FILE="top-250-plugins.csv"
-  PLUGIN_LIST_NAME="top-250 plugins"
-  REQUIRED_SCRIPT="get-most-popular-plugins.sh"
-else
-  error "Invalid PLUGIN_LIST_MODE: $PLUGIN_LIST_MODE. Must be 'top-250' or 'all'."
-  exit 1
-fi
+case "$PLUGIN_LIST_MODE" in
+  all)
+    PLUGIN_LIST_FILE="all-plugins.csv"
+    PLUGIN_LIST_NAME="all plugins"
+    REQUIRED_SCRIPT="get-all-plugins.sh"
+    ;;
+  top-250)
+    PLUGIN_LIST_FILE="top-250-plugins.csv"
+    PLUGIN_LIST_NAME="top-250 plugins"
+    REQUIRED_SCRIPT="get-most-popular-plugins.sh"
+    ;;
+  *)
+    error "Invalid PLUGIN_LIST_MODE: $PLUGIN_LIST_MODE. Must be 'top-250' or 'all'."
+    exit 1
+    ;;
+esac
 
 info "Plugin list mode: $PLUGIN_LIST_MODE"
 info "Using: $PLUGIN_LIST_FILE"
@@ -437,8 +441,8 @@ plugin_count=0
 repos_list=$(mktemp)
 previous_results="$1"
 
-# Skip header and read plugin names
-tail -n +2 "$PLUGIN_LIST_FILE" | while IFS=',' read -r plugin_name popularity; do
+# Skip header and read plugin names (avoid subshell)
+while IFS=',' read -r plugin_name popularity; do
   # Get repository URL from plugins.json
   repo_url=$(jq -r --arg plugin "$plugin_name" '.plugins[$plugin].scm // empty' plugins.json)
 
@@ -450,7 +454,7 @@ tail -n +2 "$PLUGIN_LIST_FILE" | while IFS=',' read -r plugin_name popularity; d
   else
     warning "No repository found for plugin: $plugin_name"
   fi
-done
+done < <(tail -n +2 "$PLUGIN_LIST_FILE")
 
 info "Found $plugin_count repositories to check"
 
