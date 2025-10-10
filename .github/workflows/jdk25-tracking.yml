@@ -11,6 +11,14 @@ on:
         required: false
         type: boolean
         default: false
+      plugin_list_mode:
+        description: 'Plugin list mode'
+        required: false
+        type: choice
+        options:
+          - top-250
+          - all
+        default: 'top-250'
 
 permissions:
   contents: write  # Need write permission to commit results
@@ -87,8 +95,18 @@ jobs:
 
           echo "✓ Successfully downloaded and validated plugin registry ($FILE_SIZE bytes)"
 
-          echo "Generating top 250 plugins list..."
-          ./get-most-popular-plugins.sh
+          # Generate plugin list based on mode
+          PLUGIN_MODE="${{ github.event.inputs.plugin_list_mode || 'top-250' }}"
+          echo "Plugin list mode: $PLUGIN_MODE"
+
+          if [ "$PLUGIN_MODE" = "all" ]; then
+            echo "Generating all plugins list (~2036 plugins)..."
+            chmod +x get-all-plugins.sh
+            ./get-all-plugins.sh
+          else
+            echo "Generating top 250 plugins list..."
+            ./get-most-popular-plugins.sh
+          fi
 
       - name: Find previous results
         id: previous
@@ -107,6 +125,7 @@ jobs:
         if: github.event.inputs.full_scan != 'true' && steps.previous.outputs.previous_file != ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PLUGIN_LIST_MODE: ${{ github.event.inputs.plugin_list_mode || 'top-250' }}
           RATE_LIMIT_DELAY: 2
           DEBUG_MODE: false
         run: |
@@ -118,6 +137,7 @@ jobs:
         if: github.event.inputs.full_scan == 'true' || steps.previous.outputs.previous_file == ''
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PLUGIN_LIST_MODE: ${{ github.event.inputs.plugin_list_mode || 'top-250' }}
           RATE_LIMIT_DELAY: 2
           DEBUG_MODE: false
         run: |
@@ -132,6 +152,7 @@ jobs:
       - name: Detect open PRs adding JDK 25
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PLUGIN_LIST_MODE: ${{ github.event.inputs.plugin_list_mode || 'top-250' }}
           RATE_LIMIT_DELAY: 2
           DEBUG_MODE: false
         run: |
@@ -199,6 +220,7 @@ jobs:
           echo "## JDK 25 Tracking Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Date:** $(date '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "**Plugin List Mode:** ${{ github.event.inputs.plugin_list_mode || 'top-250' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
           REPORT_FILE="reports/jdk25_tracking_with_prs_${{ steps.date.outputs.date }}.json"
