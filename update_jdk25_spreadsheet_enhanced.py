@@ -65,19 +65,29 @@ def format_sheet_with_retry(sheet, range_name, format_dict):
 
 # Check command line arguments
 if len(sys.argv) < 2:
-    print("Usage: python3 update_jdk25_spreadsheet_enhanced.py <jdk25-tracking-json-file> [spreadsheet-id-or-url]")
+    print("Usage: python3 update_jdk25_spreadsheet_enhanced.py <jdk25-tracking-json-file> [open-prs-json-file] [spreadsheet-id-or-url]")
     print("\nExample:")
     print("  python3 update_jdk25_spreadsheet_enhanced.py reports/jdk25_tracking_with_prs_2025-10-09.json")
-    print("  python3 update_jdk25_spreadsheet_enhanced.py reports/jdk25_tracking_with_prs_2025-10-09.json '1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI'")
+    print("  python3 update_jdk25_spreadsheet_enhanced.py reports/jdk25_tracking_with_prs_2025-10-09.json reports/jdk25_open_prs_tracking_2025-10-10.json")
+    print("  python3 update_jdk25_spreadsheet_enhanced.py reports/jdk25_tracking_with_prs_2025-10-09.json reports/jdk25_open_prs_tracking_2025-10-10.json '1pNHWUuTx4eebJ8xOiZd6LM3IkzbNUBevRdiBxLK4WPI'")
     print("\nOr set SPREADSHEET_ID in .env file")
     sys.exit(1)
 
 JDK25_TRACKING_FILE = sys.argv[1]
 
+# Check for optional open PRs JSON file
+OPEN_PRS_FILE = None
+if len(sys.argv) > 2 and sys.argv[2].endswith('.json'):
+    OPEN_PRS_FILE = sys.argv[2]
+    logging.info(f"Open PRs file specified: {OPEN_PRS_FILE}")
+
 # Get spreadsheet ID from command line, environment variable, or default
 SPREADSHEET_ID = None
-if len(sys.argv) > 2:
-    SPREADSHEET_ID = sys.argv[2]
+# Adjust index based on whether open PRs file was provided
+spreadsheet_arg_index = 3 if OPEN_PRS_FILE else 2
+
+if len(sys.argv) > spreadsheet_arg_index:
+    SPREADSHEET_ID = sys.argv[spreadsheet_arg_index]
     logging.info(f"Using spreadsheet ID from command line: {SPREADSHEET_ID}")
 elif os.getenv('SPREADSHEET_ID'):
     SPREADSHEET_ID = os.getenv('SPREADSHEET_ID')
@@ -529,3 +539,124 @@ logging.info(f"  Existing plugins updated: {updated_count}")
 logging.info(f"  Plugins with JDK 25 PR identified: {plugins_with_pr}")
 logging.info(f"  Plugins with merged JDK 25 PR: {plugins_with_merged_pr}")
 logging.info(f"  Success rate: {plugins_with_pr/plugins_with_jdk25*100:.1f}% of JDK 25 plugins have PR identified" if plugins_with_jdk25 > 0 else "  No JDK 25 plugins found")
+
+# Handle open PRs data if provided
+if OPEN_PRS_FILE:
+    logging.info(f"\nProcessing open PRs data from {OPEN_PRS_FILE}...")
+    try:
+        with open(OPEN_PRS_FILE) as f:
+            open_prs_data = json.load(f)
+        logging.info(f"Loaded {len(open_prs_data)} plugins from open PRs file")
+
+        # Collect all open PRs
+        all_open_prs = []
+        for entry in open_prs_data:
+            if entry.get('has_open_jdk25_prs', False) and entry.get('open_jdk25_prs'):
+                plugin_name = entry['plugin']
+                repository = entry['repository']
+                for pr in entry['open_jdk25_prs']:
+                    # Calculate days open
+                    if pr.get('createdAt'):
+                        created_date = datetime.fromisoformat(pr['createdAt'].replace('Z', '+00:00'))
+                        days_open = (datetime.now(created_date.tzinfo) - created_date).days
+                    else:
+                        days_open = 0
+
+                    all_open_prs.append({
+                        'plugin': plugin_name,
+                        'repository': repository,
+                        'pr_number': pr.get('number', ''),
+                        'pr_url': pr.get('url', ''),
+                        'title': pr.get('title', ''),
+                        'is_draft': pr.get('isDraft', False),
+                        'author': pr.get('author', {}).get('login', ''),
+                        'created': pr.get('createdAt', '').split('T')[0] if pr.get('createdAt') else '',
+                        'days_open': days_open
+                    })
+
+        logging.info(f"Found {len(all_open_prs)} open PRs that add JDK 25")
+
+        if all_open_prs:
+            # Create or update "Open JDK 25 PRs" sheet
+            try:
+                open_prs_sheet = spreadsheet.worksheet("Open JDK 25 PRs")
+                logging.info("Updating existing 'Open JDK 25 PRs' sheet...")
+                # Clear existing content except header
+                open_prs_sheet.clear()
+            except gspread.exceptions.WorksheetNotFound:
+                logging.info("Creating 'Open JDK 25 PRs' sheet...")
+                open_prs_sheet = spreadsheet.add_worksheet(title="Open JDK 25 PRs", rows=len(all_open_prs) + 50, cols=9)
+
+            # Prepare data
+            headers = ["Plugin Name", "Repository", "PR Number", "PR URL", "Title", "Is Draft?", "Author", "Created", "Days Open"]
+            rows_data = [headers]
+
+            for pr in all_open_prs:
+                rows_data.append([
+                    pr['plugin'],
+                    pr['repository'],
+                    pr['pr_number'],
+                    pr['pr_url'],
+                    pr['title'],
+                    "Yes" if pr['is_draft'] else "No",
+                    pr['author'],
+                    pr['created'],
+                    pr['days_open']
+                ])
+
+            # Write data
+            logging.info(f"Writing {len(rows_data)} rows to 'Open JDK 25 PRs' sheet...")
+            update_sheet_with_retry(open_prs_sheet, rows_data, "A1")
+
+            # Format header
+            last_col = rowcol_to_a1(1, len(headers))
+            header_range = f"A1:{last_col}"
+            format_sheet_with_retry(open_prs_sheet, header_range, {
+                "textFormat": {
+                    "bold": True,
+                    "fontSize": 11
+                },
+                "backgroundColor": {
+                    "red": 0.2,
+                    "green": 0.5,
+                    "blue": 0.8
+                },
+                "horizontalAlignment": "CENTER"
+            })
+
+            # Freeze header row
+            open_prs_sheet.freeze(rows=1)
+
+            # Apply row coloring based on draft status
+            for i, pr in enumerate(all_open_prs, start=2):  # Start from row 2 (after header)
+                row_range = f"A{i}:{last_col}{i}"
+                if pr['is_draft']:
+                    # Dark orange for draft PRs (#FF8C00 = rgb(1.0, 0.55, 0.0))
+                    bg_color = {"red": 1.0, "green": 0.55, "blue": 0.0}
+                else:
+                    # Light orange for regular PRs (#FFD580 = rgb(1.0, 0.84, 0.5))
+                    bg_color = {"red": 1.0, "green": 0.84, "blue": 0.5}
+
+                format_sheet_with_retry(open_prs_sheet, row_range, {
+                    "backgroundColor": bg_color
+                })
+
+                if i % 10 == 0:
+                    logging.info(f"Formatted {i-1}/{len(all_open_prs)} rows...")
+
+            logging.info(f"'Open JDK 25 PRs' sheet updated successfully!")
+            logging.info(f"  Total open PRs: {len(all_open_prs)}")
+            draft_count = sum(1 for pr in all_open_prs if pr['is_draft'])
+            logging.info(f"  Draft PRs: {draft_count}")
+            logging.info(f"  Regular PRs: {len(all_open_prs) - draft_count}")
+        else:
+            logging.info("No open JDK 25 PRs found to display")
+
+    except FileNotFoundError:
+        logging.warning(f"Open PRs file not found: {OPEN_PRS_FILE}")
+    except json.JSONDecodeError:
+        logging.exception(f"Error decoding {OPEN_PRS_FILE}")
+    except Exception:
+        logging.exception("Error processing open PRs data")
+else:
+    logging.info("\nNo open PRs file provided, skipping open PRs sheet update")
