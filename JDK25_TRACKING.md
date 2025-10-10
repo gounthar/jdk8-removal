@@ -59,6 +59,68 @@ This replaces the manual process of checking each plugin and updating the spread
 
 **Use this script** for the first full scan or when you want to re-check all plugins.
 
+### 1d. check-jdk25-open-prs.sh (OPEN PRS DETECTION)
+
+**NEW** bash script that detects open PRs (including drafts) that are adding JDK 25 to Jenkins plugins.
+
+**What it does:**
+- Reads the top-250 most popular Jenkins plugins from `top-250-plugins.csv`
+- Maps plugin names to repository URLs using `plugins.json`
+- For each repository:
+  - **Optimization:** Skips repositories that already have JDK 25 merged (saves ~10% of API calls)
+  - Fetches all open PRs (including drafts)
+  - Checks if the PR modifies the Jenkinsfile
+  - Compares Jenkinsfile content between PR head and base branches
+  - Identifies PRs that are **adding** JDK 25 (not just modifying existing JDK 25)
+  - Tracks draft status, author, creation date
+- Generates output in both CSV and JSON formats
+
+**Use this script** to monitor in-progress JDK 25 adoption efforts.
+
+**Output files:**
+- `reports/jdk25_open_prs_tracking_YYYY-MM-DD.csv` - CSV report
+- `reports/jdk25_open_prs_tracking_YYYY-MM-DD.json` - JSON report
+- `logs/jdk25_open_prs_YYYY-MM-DD.log` - Detailed execution log
+
+**JSON structure:**
+```json
+{
+  "plugin": "Plugin Name",
+  "repository": "jenkinsci/plugin-name",
+  "url": "https://github.com/jenkinsci/plugin-name",
+  "has_open_jdk25_prs": true,
+  "open_jdk25_prs": [
+    {
+      "number": 123,
+      "url": "https://github.com/jenkinsci/plugin-name/pull/123",
+      "title": "Add JDK 25 to test matrix",
+      "isDraft": false,
+      "author": {
+        "login": "username"
+      },
+      "createdAt": "2025-10-01T10:30:00Z",
+      "headRefName": "feature/jdk25",
+      "baseRefName": "main"
+    }
+  ],
+  "has_jenkinsfile": true
+}
+```
+
+**Change Tracking:**
+The script automatically compares with the most recent previous run and reports:
+- 📈 New PRs opened
+- 📉 PRs closed/merged
+- ✅ Draft → Ready for review transitions
+- ⏸️  Ready → Draft transitions
+
+**Benefits:**
+- ✅ Monitors ongoing JDK 25 adoption efforts
+- ✅ Distinguishes between draft and regular PRs
+- ✅ Tracks changes between runs automatically
+- ✅ Helps identify PRs that need review or assistance
+- ✅ Complements merged PR tracking for complete visibility
+
 ### 1c. check-jdk-versions.sh (Basic version)
 
 Bash script that scans Jenkins plugin repositories to detect JDK versions in their Jenkinsfiles.
@@ -90,6 +152,7 @@ Bash script that scans Jenkins plugin repositories to detect JDK versions in the
 
 **What it does:**
 - Reads the JSON output from `check-jdk25-with-pr.sh`
+- **Optionally** reads the JSON output from `check-jdk25-open-prs.sh`
 - Connects to your existing Google Spreadsheet using service account credentials
 - Updates the exact columns from the existing spreadsheet:
   - **Name** - Plugin name (preserved)
@@ -98,8 +161,25 @@ Bash script that scans Jenkins plugin repositories to detect JDK versions in the
   - **Is merged?** - Populated with the merge status we found automatically
 - Generates a statistics sheet with summary metrics
 - Creates clickable hyperlinks for PRs
+- **If open PRs data is provided:**
+  - Creates/updates "Open JDK 25 PRs" sheet
+  - Lists all open PRs that are adding JDK 25
+  - Color-codes rows: dark orange (#FF8C00) for draft PRs, light orange (#FFD580) for regular PRs
+  - Includes columns: Plugin Name, Repository, PR Number, PR URL, Title, Is Draft?, Author, Created, Days Open
 
 **This is the recommended script** as it works with your existing spreadsheet structure.
+
+**Usage with open PRs:**
+```bash
+# Update with both merged and open PRs data
+./update_jdk25_spreadsheet_enhanced.py \
+  reports/jdk25_tracking_with_prs_2025-10-10.json \
+  reports/jdk25_open_prs_tracking_2025-10-10.json
+
+# Or just merged PRs (without open PRs)
+./update_jdk25_spreadsheet_enhanced.py \
+  reports/jdk25_tracking_with_prs_2025-10-10.json
+```
 
 ### 2b. update_jdk25_spreadsheet.py (Basic version)
 
@@ -309,6 +389,82 @@ Summary:
 ```bash
 tail -f logs/jdk25_tracking_2025-10-09.log
 ```
+
+### Step 2b: Detect Open PRs Adding JDK 25 (Optional)
+
+If you want to track in-progress JDK 25 adoption efforts, run the open PRs detection script:
+
+```bash
+./check-jdk25-open-prs.sh
+```
+
+**What happens:**
+1. Reads top-250 plugins from CSV
+2. Maps plugin names to repository URLs
+3. For each repository:
+   - Skips if JDK 25 already merged (optimization)
+   - Fetches all open PRs (including drafts)
+   - Checks if PR modifies Jenkinsfile
+   - Compares head vs base branches for JDK 25 presence
+   - Identifies PRs that are **adding** JDK 25
+4. Generates CSV and JSON reports with PR details
+
+**Duration:** Approximately 15-25 minutes for 250 plugins (GitHub API calls for PR listing and file fetching)
+
+**Output:**
+```
+Starting JDK 25 open PRs detection in Jenkins plugin repositories...
+Output will be written to: reports/jdk25_open_prs_tracking_2025-10-10.csv and reports/jdk25_open_prs_tracking_2025-10-10.json
+Reading top-250 plugins list...
+Found 250 repositories to check
+After deduplication: 204 unique repositories to check
+Processing repositories...
+Processing jenkinsci/mailer-plugin...
+Skipping jenkinsci/mailer-plugin - already has JDK 25 on default branch
+Processing jenkinsci/foo-plugin...
+Found PR #123 that adds JDK 25 to jenkinsci/foo-plugin
+...
+Done! Results saved to:
+  CSV: reports/jdk25_open_prs_tracking_2025-10-10.csv
+  JSON: reports/jdk25_open_prs_tracking_2025-10-10.json
+  Log: logs/jdk25_open_prs_2025-10-10.log
+
+Summary:
+  Total repositories scanned: 204
+  Repositories with open JDK 25 PRs: 3
+  Total open PRs adding JDK 25: 4
+```
+
+**Example output with change tracking:**
+```
+Summary:
+  Total repositories scanned: 204
+  Repositories with open JDK 25 PRs: 3
+  Total open PRs adding JDK 25: 4
+
+Checking for changes since last run...
+Comparing with previous run from 2025-10-09
+
+Changes since 2025-10-09:
+  📈 New PRs opened: 1
+  📉 PRs closed/merged: 2
+  ✅ Draft → Ready: 1
+  ⏸️  Ready → Draft: 0
+
+New PRs:
+  • jenkinsci/foo-plugin #456 - https://github.com/jenkinsci/foo-plugin/pull/456
+
+Closed/Merged PRs:
+  • jenkinsci/bar-plugin #123 - https://github.com/jenkinsci/bar-plugin/pull/123
+  • jenkinsci/baz-plugin #789 - https://github.com/jenkinsci/baz-plugin/pull/789
+```
+
+**Benefits:**
+- Monitor in-progress JDK 25 adoption
+- Identify PRs that may need review or help
+- Track draft vs regular PRs
+- Understand community adoption velocity
+- Automatically see what changed since last run
 
 ### Step 3: Update Google Spreadsheet
 
