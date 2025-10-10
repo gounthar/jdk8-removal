@@ -107,9 +107,17 @@ This replaces the manual process of checking each plugin and updating the spread
 }
 ```
 
+**Change Tracking:**
+The script automatically compares with the most recent previous run and reports:
+- 📈 New PRs opened
+- 📉 PRs closed/merged
+- ✅ Draft → Ready for review transitions
+- ⏸️  Ready → Draft transitions
+
 **Benefits:**
 - ✅ Monitors ongoing JDK 25 adoption efforts
 - ✅ Distinguishes between draft and regular PRs
+- ✅ Tracks changes between runs automatically
 - ✅ Helps identify PRs that need review or assistance
 - ✅ Complements merged PR tracking for complete visibility
 
@@ -427,11 +435,36 @@ Summary:
   Total open PRs adding JDK 25: 4
 ```
 
+**Example output with change tracking:**
+```
+Summary:
+  Total repositories scanned: 204
+  Repositories with open JDK 25 PRs: 3
+  Total open PRs adding JDK 25: 4
+
+Checking for changes since last run...
+Comparing with previous run from 2025-10-09
+
+Changes since 2025-10-09:
+  📈 New PRs opened: 1
+  📉 PRs closed/merged: 2
+  ✅ Draft → Ready: 1
+  ⏸️  Ready → Draft: 0
+
+New PRs:
+  • jenkinsci/foo-plugin #456 - https://github.com/jenkinsci/foo-plugin/pull/456
+
+Closed/Merged PRs:
+  • jenkinsci/bar-plugin #123 - https://github.com/jenkinsci/bar-plugin/pull/123
+  • jenkinsci/baz-plugin #789 - https://github.com/jenkinsci/baz-plugin/pull/789
+```
+
 **Benefits:**
 - Monitor in-progress JDK 25 adoption
 - Identify PRs that may need review or help
 - Track draft vs regular PRs
 - Understand community adoption velocity
+- Automatically see what changed since last run
 
 ### Step 3: Update Google Spreadsheet
 
