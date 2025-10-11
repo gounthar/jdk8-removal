@@ -10,7 +10,7 @@ set -euo pipefail
 
 
 # Enable debug mode if DEBUG_MODE is set to true
-if [ "$DEBUG_MODE" = "true" ]; then
+if [ "${DEBUG_MODE:-false}" = "true" ]; then
   set -x
 fi
 
@@ -28,7 +28,7 @@ output_csv="reports/jdk_versions_tracking_$current_date.csv"
 output_json="reports/jdk_versions_tracking_$current_date.json"
 
 # Set up log file if not already defined
-if [ -z "$LOG_FILE" ]; then
+if [ -z "${LOG_FILE:-}" ]; then
   export LOG_FILE="logs/jdk_versions_tracking_$current_date.log"
 fi
 
