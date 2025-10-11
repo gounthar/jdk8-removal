@@ -5,9 +5,10 @@ on:
     paths:
       - 'reports/**'  # Trigger when reports directory changes
     branches:
-      - main  # Allow manual trigger on the main branch
+      - main
   schedule:
     - cron: '59 6 * * *'  # Run daily at 06:59 UTC
+  workflow_dispatch:  # Allow manual execution of the workflow
 
 jobs:
   update-plot:
