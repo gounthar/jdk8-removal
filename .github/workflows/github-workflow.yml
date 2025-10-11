@@ -7,7 +7,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '59 6 * * *'  # Run daily at 06:59 UTC
+    - cron: '30 8 * * *'  # Run daily at 8:30 AM UTC (90 minutes after JDK tracking starts)
   workflow_dispatch:  # Allow manual execution of the workflow
 
 jobs:
