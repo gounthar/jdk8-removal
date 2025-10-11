@@ -138,19 +138,19 @@ check_jdk_versions() {
     debug "Jenkinsfile found in $repo"
 
     # Check for JDK 17 in a single pass
-    if grep -qiE "(jdk['\": ]+['\"]?17['\"]?|java['\": ]+['\"]?17['\"]?|openjdk-?17)" <<< "$jenkinsfile"; then
+    if grep -qiE "(jdk['\": ]*['\"]?17['\"]?|java['\": ]*['\"]?17['\"]?|openjdk-?17)" <<< "$jenkinsfile"; then
       has_jdk17="true"
       info "JDK 17 detected in $repo"
     fi
 
     # Check for JDK 21
-    if grep -qiE "(jdk['\": ]+['\"]?21['\"]?|java['\": ]+['\"]?21['\"]?|openjdk-?21)" <<< "$jenkinsfile"; then
+    if grep -qiE "(jdk['\": ]*['\"]?21['\"]?|java['\": ]*['\"]?21['\"]?|openjdk-?21)" <<< "$jenkinsfile"; then
       has_jdk21="true"
       info "JDK 21 detected in $repo"
     fi
 
     # Check for JDK 25
-    if grep -qiE "(jdk['\": ]+['\"]?25['\"]?|java['\": ]+['\"]?25['\"]?|openjdk-?25)" <<< "$jenkinsfile"; then
+    if grep -qiE "(jdk['\": ]*['\"]?25['\"]?|java['\": ]*['\"]?25['\"]?|openjdk-?25)" <<< "$jenkinsfile"; then
       has_jdk25="true"
       info "JDK 25 detected in $repo"
     fi
