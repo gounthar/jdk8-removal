@@ -232,7 +232,7 @@ while IFS=',' read -r plugin_name popularity; do
     # Extract repository path (e.g., "jenkinsci/script-security-plugin")
     repo_path=$(echo "$repo_url" | sed 's|https://github.com/||' | sed 's|\.git$||')
     echo "$repo_path" >> "$repos_list"
-    ((plugin_count++))
+    ((plugin_count++)) || true  # Prevent set -e exit when count is 0
   else
     debug "No repository found for plugin: $plugin_name"
   fi
