@@ -291,11 +291,15 @@ jobs:
               -m "[skip ci]"
 
             # Pull with rebase and retry push up to 3 times
+            # Fetch explicitly, handle rebase failures, and push to explicit branch
             for i in {1..3}; do
-              if git pull --rebase origin main && git push; then
+              git fetch origin main --prune
+              if git pull --rebase --autostash origin main && git push origin HEAD:main; then
                 echo "Successfully pushed changes"
                 break
               else
+                # Clean up any in-progress rebase to avoid poisoning the next attempt
+                git rebase --abort 2>/dev/null || true
                 if [ $i -eq 3 ]; then
                   echo "Failed to push after 3 attempts"
                   exit 1
