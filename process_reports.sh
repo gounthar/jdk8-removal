@@ -7,7 +7,7 @@
         OUTPUT_FILE="plugin_evolution.csv"
 
         # Initialize the output file with headers
-        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions,Plugins_Using_JDK11,Plugins_Depends_On_Java_8,Plugins_With_JDK25" > "$OUTPUT_FILE"
+        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions,Plugins_Using_JDK11,Plugins_Depends_On_Java_8,Plugins_With_JDK17,Plugins_With_JDK21,Plugins_With_JDK25" > "$OUTPUT_FILE"
 
         # Extract unique dates from filenames
         dates=$(find "$REPORTS_DIR" -type f -name "*.txt" -o -name "*.csv" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort | uniq)
@@ -18,6 +18,8 @@
         last_plugins_without_java_versions="NaN"
         last_plugins_using_jdk11="NaN"
         last_plugins_depends_on_java_8="NaN"
+        last_plugins_with_jdk17="NaN"
+        last_plugins_with_jdk21="NaN"
         last_plugins_with_jdk25="NaN"
 
         # Loop through each unique date
@@ -28,6 +30,8 @@
             plugins_without_java_versions=$last_plugins_without_java_versions
             plugins_using_jdk11=$last_plugins_using_jdk11
             plugins_depends_on_java_8=$last_plugins_depends_on_java_8
+            plugins_with_jdk17=$last_plugins_with_jdk17
+            plugins_with_jdk21=$last_plugins_with_jdk21
             plugins_with_jdk25=$last_plugins_with_jdk25
 
             # Find and count "plugins_no_jenkinsfile" files
@@ -85,24 +89,43 @@
                 fi
             fi
 
-            # Find and count plugins with JDK 25 from JSON tracking files
-            jdk25_tracking_file=$(find $REPORTS_DIR -type f -name "jdk25_tracking_with_prs_$date.json" | head -n 1)
-            if [[ -n "$jdk25_tracking_file" && -f "$jdk25_tracking_file" ]]; then
-                # Use jq to count entries where has_jdk25 is true
+            # Find and count plugins with JDK versions from unified tracking file
+            jdk_versions_file=$(find $REPORTS_DIR -type f -name "jdk_versions_tracking_$date.json" | head -n 1)
+            if [[ -n "$jdk_versions_file" && -f "$jdk_versions_file" ]]; then
+                # Use jq to count entries for JDK 17, 21, and 25
                 if command -v jq &> /dev/null; then
-                    plugins_with_jdk25=$(jq '[.[] | select(.has_jdk25 == true)] | length' "$jdk25_tracking_file" 2>/dev/null)
+                    plugins_with_jdk17=$(jq '[.[] | select(.has_jdk17 == true)] | length' "$jdk_versions_file" 2>/dev/null)
+                    if [[ -n "$plugins_with_jdk17" && "$plugins_with_jdk17" != "null" ]]; then
+                        last_plugins_with_jdk17=$plugins_with_jdk17
+                    fi
+
+                    plugins_with_jdk21=$(jq '[.[] | select(.has_jdk21 == true)] | length' "$jdk_versions_file" 2>/dev/null)
+                    if [[ -n "$plugins_with_jdk21" && "$plugins_with_jdk21" != "null" ]]; then
+                        last_plugins_with_jdk21=$plugins_with_jdk21
+                    fi
+
+                    plugins_with_jdk25=$(jq '[.[] | select(.has_jdk25 == true)] | length' "$jdk_versions_file" 2>/dev/null)
                     if [[ -n "$plugins_with_jdk25" && "$plugins_with_jdk25" != "null" ]]; then
                         last_plugins_with_jdk25=$plugins_with_jdk25
-                    else
-                        echo "Warning: Could not parse JDK 25 count from $jdk25_tracking_file"
                     fi
                 else
-                    echo "Warning: jq not available, skipping JDK 25 count for $date"
+                    echo "Warning: jq not available, skipping JDK versions count for $date"
+                fi
+            else
+                # Fallback to old JDK 25 tracking file if unified file doesn't exist
+                jdk25_tracking_file=$(find $REPORTS_DIR -type f -name "jdk25_tracking_with_prs_$date.json" | head -n 1)
+                if [[ -n "$jdk25_tracking_file" && -f "$jdk25_tracking_file" ]]; then
+                    if command -v jq &> /dev/null; then
+                        plugins_with_jdk25=$(jq '[.[] | select(.has_jdk25 == true)] | length' "$jdk25_tracking_file" 2>/dev/null)
+                        if [[ -n "$plugins_with_jdk25" && "$plugins_with_jdk25" != "null" ]]; then
+                            last_plugins_with_jdk25=$plugins_with_jdk25
+                        fi
+                    fi
                 fi
             fi
 
             # Append the results to the output file
-            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11,$plugins_depends_on_java_8,$plugins_with_jdk25" >> "$OUTPUT_FILE"
+            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11,$plugins_depends_on_java_8,$plugins_with_jdk17,$plugins_with_jdk21,$plugins_with_jdk25" >> "$OUTPUT_FILE"
         done
 
         echo "Processing complete. Results saved to $OUTPUT_FILE"
