@@ -7,3 +7,10 @@ logs/
 validated_jdk25_plugins.txt
 manual_jdk25_plugins.txt
 /.claude/
+# IDE files
+.idea/
+.vscode/
+# Test output files
+test_run_output.log
+*_test.log
+all-plugins.csv

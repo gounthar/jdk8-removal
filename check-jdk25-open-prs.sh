@@ -277,25 +277,7 @@ info "Starting JDK 25 open PRs detection in Jenkins plugin repositories..."
 info "Output will be written to: $output_csv and $output_json"
 
 # Determine which plugin list to use
-# PLUGIN_LIST_MODE can be "top-250" (default) or "all"
-PLUGIN_LIST_MODE="${PLUGIN_LIST_MODE:-top-250}"
-
-case "$PLUGIN_LIST_MODE" in
-  all)
-    PLUGIN_LIST_FILE="all-plugins.csv"
-    PLUGIN_LIST_NAME="all plugins"
-    REQUIRED_SCRIPT="get-all-plugins.sh"
-    ;;
-  top-250)
-    PLUGIN_LIST_FILE="top-250-plugins.csv"
-    PLUGIN_LIST_NAME="top-250 plugins"
-    REQUIRED_SCRIPT="get-most-popular-plugins.sh"
-    ;;
-  *)
-    error "Invalid PLUGIN_LIST_MODE: $PLUGIN_LIST_MODE. Must be 'top-250' or 'all'."
-    exit 1
-    ;;
-esac
+source resolve-plugin-list.sh
 
 info "Plugin list mode: $PLUGIN_LIST_MODE"
 info "Using: $PLUGIN_LIST_FILE"
