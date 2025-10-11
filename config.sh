@@ -19,7 +19,6 @@ plugins_list_no_jenkinsfile_main_output_file="plugins_no_jenkinsfile.txt"  # Def
 plugins_list_old_java_output_file="reports/plugins_old_java_$current_date.txt"  # Define the output file name.
 plugins_list_old_java_main_output_file="plugins_old_java.txt"
 plugins_list_depends_on_java_8_main_output_file="depends_on_java_8.txt"
-plugins_list_depends_on_java_11_main_output_file="depends_on_java_11.txt"
 plugins_list_output_file="plugins.txt"  # Define the output file name.
 plugins_no_jenkinsfile=
 plugins_list_jdk11_output_file="plugins_jdk11.txt"
@@ -35,15 +34,11 @@ plugins_list_jdk11_main_output_file="plugins_jdk11_main_$current_date.txt"
 # New variables for depends_on_java files
 depends_on_java_8_txt="reports/depends_on_java_8_$current_date.txt"
 depends_on_java_8_csv="reports/depends_on_java_8_$current_date.csv"
-depends_on_java_11_txt="reports/depends_on_java_11_$current_date.txt"
-depends_on_java_11_csv="reports/depends_on_java_11_$current_date.csv"
 
 # Export the variables so they can be used by other scripts
 export plugins_list_jdk11_main_output_file
 export depends_on_java_8_txt
 export depends_on_java_8_csv
-export depends_on_java_11_txt
-export depends_on_java_11_csv
 
 # Define the rate limit delay in seconds
 RATE_LIMIT_DELAY=${RATE_LIMIT_DELAY:-2}
@@ -62,7 +57,6 @@ export plugins_list_output_file
 export plugins_list_no_jenkinsfile_main_output_file
 export plugins_list_old_java_main_output_file
 export plugins_list_depends_on_java_8_main_output_file
-export plugins_list_depends_on_java_11_main_output_file
 export csv_file_jdk11
 export RATE_LIMIT_DELAY
 

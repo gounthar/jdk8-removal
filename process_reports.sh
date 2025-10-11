@@ -7,7 +7,7 @@
         OUTPUT_FILE="plugin_evolution.csv"
 
         # Initialize the output file with headers
-        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions,Plugins_Using_JDK11,Plugins_Depends_On_Java_8,Plugins_Depends_On_Java_11,Plugins_With_JDK25" > $OUTPUT_FILE
+        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions,Plugins_Using_JDK11,Plugins_Depends_On_Java_8,Plugins_With_JDK25" > "$OUTPUT_FILE"
 
         # Extract unique dates from filenames
         dates=$(find "$REPORTS_DIR" -type f -name "*.txt" -o -name "*.csv" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort | uniq)
@@ -18,7 +18,6 @@
         last_plugins_without_java_versions="NaN"
         last_plugins_using_jdk11="NaN"
         last_plugins_depends_on_java_8="NaN"
-        last_plugins_depends_on_java_11="NaN"
         last_plugins_with_jdk25="NaN"
 
         # Loop through each unique date
@@ -29,7 +28,6 @@
             plugins_without_java_versions=$last_plugins_without_java_versions
             plugins_using_jdk11=$last_plugins_using_jdk11
             plugins_depends_on_java_8=$last_plugins_depends_on_java_8
-            plugins_depends_on_java_11=$last_plugins_depends_on_java_11
             plugins_with_jdk25=$last_plugins_with_jdk25
 
             # Find and count "plugins_no_jenkinsfile" files
@@ -87,17 +85,6 @@
                 fi
             fi
 
-            # Find and count "depends_on_java_11" files
-            depends_on_java_11_file=$(find $REPORTS_DIR -type f -name "depends_on_java_11_$date.txt" | head -n 1)
-            if [[ -n "$depends_on_java_11_file" && -f "$depends_on_java_11_file" ]]; then
-                if ! grep -q "^[[:space:]]*$" "$depends_on_java_11_file"; then
-                    plugins_depends_on_java_11=$(wc -l < "$depends_on_java_11_file")
-                    last_plugins_depends_on_java_11=$plugins_depends_on_java_11
-                else
-                    echo "Warning: Empty or invalid content in $depends_on_java_11_file"
-                fi
-            fi
-
             # Find and count plugins with JDK 25 from JSON tracking files
             jdk25_tracking_file=$(find $REPORTS_DIR -type f -name "jdk25_tracking_with_prs_$date.json" | head -n 1)
             if [[ -n "$jdk25_tracking_file" && -f "$jdk25_tracking_file" ]]; then
@@ -115,7 +102,7 @@
             fi
 
             # Append the results to the output file
-            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11,$plugins_depends_on_java_8,$plugins_depends_on_java_11,$plugins_with_jdk25" >> $OUTPUT_FILE
+            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11,$plugins_depends_on_java_8,$plugins_with_jdk25" >> "$OUTPUT_FILE"
         done
 
         echo "Processing complete. Results saved to $OUTPUT_FILE"
