@@ -3,7 +3,11 @@
 # check-jdk-versions.sh
 # Unified script that tracks JDK 17, 21, and 25 adoption across ALL Jenkins plugins
 # Checks all versions in a single pass for optimal performance
-# Usage: ./check-jdk-versions.sh [previous_results.json]
+# Usage: ./check-jdk-versions.sh
+
+# Fail fast and catch unset vars
+set -euo pipefail
+
 
 # Enable debug mode if DEBUG_MODE is set to true
 if [ "$DEBUG_MODE" = "true" ]; then
@@ -48,7 +52,12 @@ first_entry=true
 
 # Function to check the rate limit status of the GitHub API
 check_rate_limit() {
-  rate_limit_response=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/rate_limit")
+  # Use conditional auth header to avoid empty Authorization header
+  rl_hdr=()
+  if [ -n "${GITHUB_TOKEN:-}" ]; then
+    rl_hdr=(-H "Authorization: token $GITHUB_TOKEN")
+  fi
+  rate_limit_response=$(curl -s "${rl_hdr[@]}" "https://api.github.com/rate_limit")
   remaining=$(echo "$rate_limit_response" | jq '.resources.core.remaining')
   reset=$(echo "$rate_limit_response" | jq '.resources.core.reset')
   limit=$(echo "$rate_limit_response" | jq '.resources.core.limit')
@@ -58,6 +67,11 @@ check_rate_limit() {
     wait_time=$((reset - current_time))
     end_time=$(date -d "@$reset" +"%H:%M")
     error "API rate limit exceeded. Please wait $wait_time seconds before retrying. Come back at $end_time."
+
+    if [ "$wait_time" -le 0 ]; then
+      info "Rate limit reset reached; continuing..."
+      return
+    fi
 
     start_time=$(date +%s)
     while [ $((current_time + wait_time)) -gt $(date +%s) ]; do
@@ -73,8 +87,7 @@ check_rate_limit() {
 
 # Function to check for JDK versions in a repository
 check_jdk_versions() {
-  repo=$1
-  previous_results=$2
+  local repo=$1
 
   if [ -z "$repo" ]; then
     error "Repository name is empty. Skipping."
@@ -90,9 +103,27 @@ check_jdk_versions() {
     return 1
   fi
 
+  # Fetch Jenkinsfile with conditional auth header
+  # Disable xtrace temporarily to prevent token leakage in DEBUG_MODE
+  local xtrace_was_set=false
+  if [[ "$-" == *x* ]]; then
+    xtrace_was_set=true
+    set +x
+  fi
+  
+  auth_header=()
+  if [ -n "${GITHUB_TOKEN:-}" ]; then
+    auth_header=(-H "Authorization: token $GITHUB_TOKEN")
+  fi
+  
   # Try to fetch Jenkinsfile from the default branch
   jenkinsfile_url="https://raw.githubusercontent.com/$repo/$default_branch/Jenkinsfile"
-  response=$(curl -s -L -w "\n%{http_code}" -H "Authorization: token $GITHUB_TOKEN" "$jenkinsfile_url")
+  response=$(curl -s -L -w "\n%{http_code}" "${auth_header[@]}" "$jenkinsfile_url")
+  
+  # Re-enable xtrace if it was set
+  if [ "$xtrace_was_set" = true ]; then
+    set -x
+  fi
   http_code=$(echo "$response" | tail -n1)
   jenkinsfile=$(echo "$response" | sed '$d')
 
@@ -107,19 +138,19 @@ check_jdk_versions() {
     debug "Jenkinsfile found in $repo"
 
     # Check for JDK 17 in a single pass
-    if echo "$jenkinsfile" | grep -qiE "(jdk['\": ]+['\"]?17['\"]?|java['\": ]+['\"]?17['\"]?|openjdk-?17)"; then
+    if grep -qiE "(jdk['\": ]+['\"]?17['\"]?|java['\": ]+['\"]?17['\"]?|openjdk-?17)" <<< "$jenkinsfile"; then
       has_jdk17="true"
       info "JDK 17 detected in $repo"
     fi
 
     # Check for JDK 21
-    if echo "$jenkinsfile" | grep -qiE "(jdk['\": ]+['\"]?21['\"]?|java['\": ]+['\"]?21['\"]?|openjdk-?21)"; then
+    if grep -qiE "(jdk['\": ]+['\"]?21['\"]?|java['\": ]+['\"]?21['\"]?|openjdk-?21)" <<< "$jenkinsfile"; then
       has_jdk21="true"
       info "JDK 21 detected in $repo"
     fi
 
     # Check for JDK 25
-    if echo "$jenkinsfile" | grep -qiE "(jdk['\": ]+['\"]?25['\"]?|java['\": ]+['\"]?25['\"]?|openjdk-?25)"; then
+    if grep -qiE "(jdk['\": ]+['\"]?25['\"]?|java['\": ]+['\"]?25['\"]?|openjdk-?25)" <<< "$jenkinsfile"; then
       has_jdk25="true"
       info "JDK 25 detected in $repo"
     fi
@@ -159,11 +190,6 @@ EOF
   sleep "$RATE_LIMIT_DELAY"
 }
 
-# Export the functions so they can be used by parallel
-export -f check_jdk_versions
-export -f check_rate_limit
-export -f format_repo_name
-
 info "Starting unified JDK versions tracking (17, 21, 25)..."
 info "Scanning ALL Jenkins plugins"
 info "Output will be written to: $output_csv and $output_json"
@@ -175,7 +201,6 @@ info "Plugin list mode: ALL PLUGINS"
 # Generate all-plugins list if it doesn't exist or is outdated
 if [ ! -f "all-plugins.csv" ] || [ "plugins.json" -nt "all-plugins.csv" ]; then
   info "Generating all-plugins list..."
-  chmod +x get-all-plugins.sh
   ./get-all-plugins.sh
 fi
 
@@ -197,7 +222,6 @@ fi
 info "Reading all plugins list..."
 plugin_count=0
 repos_list=$(mktemp)
-previous_results="$1"
 
 # Skip header and read plugin names (avoid subshell)
 while IFS=',' read -r plugin_name popularity; do
@@ -225,7 +249,7 @@ info "Processing repositories..."
 
 # Process repositories sequentially
 while read -r repo_path; do
-  check_jdk_versions "$repo_path" "$previous_results"
+  check_jdk_versions "$repo_path"
 done < "$repos_list"
 
 # Clean up temp file
@@ -252,10 +276,13 @@ info "  Log: $LOG_FILE"
 
 # Generate a summary
 total_repos=$(tail -n +2 "$output_csv" | wc -l)
-repos_with_jenkinsfile=$(tail -n +2 "$output_csv" | awk -F',' '$8=="true"' | wc -l)
-repos_with_jdk17=$(tail -n +2 "$output_csv" | awk -F',' '$4=="true"' | wc -l)
-repos_with_jdk21=$(tail -n +2 "$output_csv" | awk -F',' '$5=="true"' | wc -l)
-repos_with_jdk25=$(tail -n +2 "$output_csv" | awk -F',' '$6=="true"' | wc -l)
+# Calculate all stats in a single pass for efficiency
+read -r repos_with_jenkinsfile repos_with_jdk17 repos_with_jdk21 repos_with_jdk25 < <(
+  tail -n +2 "$output_csv" | awk -F',' '
+    {j+=($8=="true"); j17+=($4=="true"); j21+=($5=="true"); j25+=($6=="true")}
+    END {print j, j17, j21, j25}
+  '
+)
 
 info ""
 info "Summary:"

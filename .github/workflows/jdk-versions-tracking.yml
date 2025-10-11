@@ -8,13 +8,17 @@ on:
 permissions:
   contents: write  # Need write permission to commit results
 
+concurrency:
+  group: jdk-versions-tracking
+  cancel-in-progress: false
+
 jobs:
   track-jdk-versions:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Full history for git operations
 
@@ -66,6 +70,7 @@ jobs:
       - name: Run JDK versions tracking
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RATE_LIMIT_DELAY: 2
           DEBUG_MODE: false
         run: |
@@ -104,11 +109,11 @@ jobs:
             echo "- **Plugins building with JDK 25:** $JDK25_COUNT" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
 
-            # Calculate percentages
+            # Calculate percentages (with decimal precision)
             if [ "$WITH_JENKINSFILE" -gt 0 ]; then
-              JDK17_PCT=$((JDK17_COUNT * 100 / WITH_JENKINSFILE))
-              JDK21_PCT=$((JDK21_COUNT * 100 / WITH_JENKINSFILE))
-              JDK25_PCT=$((JDK25_COUNT * 100 / WITH_JENKINSFILE))
+              JDK17_PCT=$(awk "BEGIN {printf \"%.1f\", ($JDK17_COUNT*100)/$WITH_JENKINSFILE}")
+              JDK21_PCT=$(awk "BEGIN {printf \"%.1f\", ($JDK21_COUNT*100)/$WITH_JENKINSFILE}")
+              JDK25_PCT=$(awk "BEGIN {printf \"%.1f\", ($JDK25_COUNT*100)/$WITH_JENKINSFILE}")
 
               echo "### Adoption Rates (of plugins with Jenkinsfile)" >> $GITHUB_STEP_SUMMARY
               echo "- **JDK 17:** ${JDK17_PCT}%" >> $GITHUB_STEP_SUMMARY
