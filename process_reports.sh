@@ -7,7 +7,7 @@
         OUTPUT_FILE="plugin_evolution.csv"
 
         # Initialize the output file with headers
-        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions,Plugins_Using_JDK11,Plugins_Depends_On_Java_8,Plugins_With_JDK25" > $OUTPUT_FILE
+        echo "Date,Plugins_Without_Jenkinsfile,Plugins_With_Java8,Plugins_Without_Java_Versions,Plugins_Using_JDK11,Plugins_Depends_On_Java_8,Plugins_With_JDK25" > "$OUTPUT_FILE"
 
         # Extract unique dates from filenames
         dates=$(find "$REPORTS_DIR" -type f -name "*.txt" -o -name "*.csv" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | sort | uniq)
@@ -102,7 +102,7 @@
             fi
 
             # Append the results to the output file
-            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11,$plugins_depends_on_java_8,$plugins_with_jdk25" >> $OUTPUT_FILE
+            echo "$date,$plugins_without_jenkinsfile,$plugins_with_java8,$plugins_without_java_versions,$plugins_using_jdk11,$plugins_depends_on_java_8,$plugins_with_jdk25" >> "$OUTPUT_FILE"
         done
 
         echo "Processing complete. Results saved to $OUTPUT_FILE"
