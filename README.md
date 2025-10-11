@@ -184,7 +184,7 @@ The system generates date-stamped files for tracking evolution over time. All fi
 - `plugins_jdk11_main_YYYY-MM-DD.txt` - Main list of plugins using JDK 11+
 - `plugins_no_jenkinsfile_YYYY-MM-DD.txt` - Plugins without Jenkinsfiles
 - `plugins_old_java_YYYY-MM-DD.txt` - Plugins still using older Java versions
-- `depends_on_java_8.txt` / `depends_on_java_11.txt` - Dependency analysis results
+- `depends_on_java_8.txt` - Dependency analysis results for Java 8
 
 ### Data Analysis Files
 - `plugin_evolution.csv` - Time series data for trend analysis

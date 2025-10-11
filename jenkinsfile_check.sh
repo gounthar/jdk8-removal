@@ -336,13 +336,9 @@ get_jenkins_parent_pom_version_from_pom() {
             formatted_repo=$(format_repo_name "$repo_path")
             echo "$formatted_repo,https://github.com/$repo_path" >>"$depends_on_java_8_csv"
             ;;
-        11)
-            # Format the repository name
-            formatted_repo=$(format_repo_name "$repo_path")
-            echo "$formatted_repo,https://github.com/$repo_path" >>"$depends_on_java_11_csv"
-            ;;
         *)
-            echo "Unknown Java version for $repo_path"
+            # Java 11+ versions are not tracked
+            debug "Java version $lowest_java_version detected for $repo_path (not tracking)"
             ;;
     esac
 
