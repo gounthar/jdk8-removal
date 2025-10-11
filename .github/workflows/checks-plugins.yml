@@ -2,10 +2,7 @@ name: Update Plugins List and Create PR
 
 on:
   schedule:
-    - cron: '30 5 * * 3'  # Runs at 5:30 AM UTC on Wednesdays
-  push:
-    branches:
-      - main
+    - cron: '30 5 * * *'  # Runs daily at 5:30 AM UTC (at most once per day)
   workflow_dispatch:  # Allows manual execution of the workflow
 
 jobs:
