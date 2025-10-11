@@ -57,7 +57,7 @@ This replaces the manual process of checking each plugin and updating the spread
 - **Checks if the PR is merged**
 - Generates output in both CSV and JSON formats with PR tracking information
 
-**Use this script** for the first full scan or when you want to re-check all plugins.
+#### Use this script for the first full scan or when you want to re-check all plugins.
 
 ### 1d. check-jdk25-open-prs.sh (OPEN PRS DETECTION)
 
@@ -75,7 +75,7 @@ This replaces the manual process of checking each plugin and updating the spread
   - Tracks draft status, author, creation date
 - Generates output in both CSV and JSON formats
 
-**Use this script** to monitor in-progress JDK 25 adoption efforts.
+#### Use this script to monitor in-progress JDK 25 adoption efforts.
 
 **Output files:**
 - `reports/jdk25_open_prs_tracking_YYYY-MM-DD.csv` - CSV report
@@ -281,7 +281,7 @@ The JDK 25 tracking scripts support two plugin list modes, controlled by the `PL
 
 ### Switching Between Modes
 
-**Use top-250 mode (default):**
+#### Use top-250 mode (default)
 ```bash
 # Don't set PLUGIN_LIST_MODE, or explicitly set it
 export PLUGIN_LIST_MODE=top-250
@@ -289,7 +289,7 @@ export PLUGIN_LIST_MODE=top-250
 ./check-jdk25-open-prs.sh
 ```
 
-**Use all-plugins mode:**
+#### Use all-plugins mode
 ```bash
 # First, generate the all-plugins list
 ./get-all-plugins.sh

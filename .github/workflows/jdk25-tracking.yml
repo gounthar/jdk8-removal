@@ -274,13 +274,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Add generated files
+          # Add generated files (skip ignored files)
           git add reports/jdk25_tracking_with_prs_*.json || true
           git add reports/jdk25_tracking_with_prs_*.csv || true
           git add reports/jdk25_open_prs_tracking_*.json || true
           git add reports/jdk25_open_prs_tracking_*.csv || true
-          git add logs/ || true
-          git add validated_jdk25_plugins.txt || true
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then
@@ -291,7 +289,25 @@ jobs:
               -m "Automated update from GitHub Actions" \
               -m "Includes merged and open PRs tracking" \
               -m "[skip ci]"
-            git push
+
+            # Pull with rebase and retry push up to 3 times
+            # Fetch explicitly, handle rebase failures, and push to explicit branch
+            for i in {1..3}; do
+              git fetch origin main --prune
+              if git pull --rebase --autostash origin main && git push origin HEAD:main; then
+                echo "Successfully pushed changes"
+                break
+              else
+                # Clean up any in-progress rebase to avoid poisoning the next attempt
+                git rebase --abort 2>/dev/null || true
+                if [ $i -eq 3 ]; then
+                  echo "Failed to push after 3 attempts"
+                  exit 1
+                fi
+                echo "Push failed, retrying (attempt $i/3)..."
+                sleep 5
+              fi
+            done
           fi
 
       - name: Upload artifacts
