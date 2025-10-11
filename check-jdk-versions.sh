@@ -249,7 +249,7 @@ info "Processing repositories..."
 
 # Process repositories sequentially
 while read -r repo_path; do
-  check_jdk_versions "$repo_path"
+  check_jdk_versions "$repo_path" || true  # Continue even if individual repos fail
 done < "$repos_list"
 
 # Clean up temp file
