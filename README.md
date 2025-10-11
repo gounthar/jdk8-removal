@@ -146,9 +146,40 @@ python3 plot-jenkins-stats.py
 ```
 Generates SVG charts showing Jenkins plugin evolution over time.
 
-### JDK 25 Compatibility Tracking
+### JDK Versions Tracking (17, 21, 25) - **NEW!**
 
-The project includes an automated system for tracking JDK 25 adoption across Jenkins plugins:
+**Status:** ✅ Operational (First successful run: 2025-10-11)
+
+The project includes a unified tracking system that monitors JDK 17, 21, and 25 adoption across **ALL Jenkins plugins** (~1,892 plugins) in a single efficient pass:
+
+```bash
+# Run unified tracking (automated daily at 7:00 AM UTC)
+./check-jdk-versions.sh
+```
+
+**Key Features:**
+- Single-pass checking of all JDK versions (17, 21, 25)
+- Scans ALL plugins, not just top 250
+- Generates both JSON and CSV reports
+- Automated daily workflow with GitHub Actions
+- Historical data tracking and visualization
+
+**First Run Results (2025-10-11):**
+- Total plugins: 1,892
+- With Jenkinsfile: 1,321 (69.8%)
+- JDK 17: 728 plugins (55.1%)
+- JDK 21: 642 plugins (48.6%)
+- JDK 25: 72 plugins (5.5%)
+
+**For complete documentation**, see [JDK_VERSIONS_TRACKING.md](JDK_VERSIONS_TRACKING.md) which includes:
+- Detailed architecture and workflow
+- Bug fixes and troubleshooting
+- Comparison with legacy tracking systems
+- Daily automation schedule
+
+### JDK 25 Compatibility Tracking (Legacy)
+
+The project also includes a legacy system for tracking JDK 25 with PR verification:
 
 ```bash
 # Run incremental scan (recommended for regular updates)
@@ -179,6 +210,8 @@ The system generates date-stamped files for tracking evolution over time. All fi
 - `repos_where_recipes_work_YYYY-MM-DD.csv` - Successful recipe applications
 - `repos_where_recipes_dont_work_YYYY-MM-DD.csv` - Failed recipe applications
 - `recipes/{repo}.csv` - Per-repository recipe application logs tracking which recipes were applied and whether changes were made
+- **`jdk_versions_tracking_YYYY-MM-DD.json`** - **NEW!** Unified tracking of JDK 17, 21, and 25 across ALL plugins (1,892 plugins)
+- **`jdk_versions_tracking_YYYY-MM-DD.csv`** - **NEW!** CSV format of unified JDK versions tracking
 
 ### Plugin Lists (in root directory)
 - `plugins_jdk11_main_YYYY-MM-DD.txt` - Main list of plugins using JDK 11+
