@@ -5,13 +5,21 @@ version: 2
 
 # Paths to ignore for secret detection
 # These are data files that frequently trigger false positives
+# Using explicit file names instead of wildcards to avoid accidentally
+# ignoring real secrets in the root directory
 paths-ignore:
   - reports/**/*
-  - "*.json"
-  - "*.csv"
-  - "*.txt"
   - plugins.json
-  - all-plugins.csv
+  - found_prs.json
+  - jenkins_prs.json
+  - report.json
+  - plugin_evolution.csv
+  - recipes-to-apply.csv
+  - top-250-plugins.csv
+  - depends_on_java_8.txt
+  - depends_on_java_11.txt
+  - manual_jdk25_plugins.txt
+  - plugins_jdk11_main_*.txt
 
 # Ignore specific patterns that are not secrets
 # These are common patterns in Jenkins plugin data that look like secrets but aren't
