@@ -1,0 +1,108 @@
+name: Auto-merge Update Plugins PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  pull_request_review:
+    types: [submitted]
+  check_suite:
+    types: [completed]
+  status: {}
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.title == 'Update plugins list' || github.event.pull_request.user.login == 'github-actions[bot]'
+    steps:
+      - name: Check PR details
+        id: check_pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get PR number from different event types
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            PR_NUMBER="${{ github.event.pull_request.number }}"
+          elif [ "${{ github.event_name }}" = "pull_request_review" ]; then
+            PR_NUMBER="${{ github.event.pull_request.number }}"
+          else
+            # For check_suite/status events, find the PR from the branch
+            PR_NUMBER=$(gh pr list --head "${{ github.event.check_suite.head_branch || github.sha }}" --json number --jq '.[0].number' --repo ${{ github.repository }})
+          fi
+
+          if [ -z "$PR_NUMBER" ]; then
+            echo "No PR found, skipping"
+            exit 0
+          fi
+
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+
+          # Get PR details
+          PR_DATA=$(gh pr view "$PR_NUMBER" --json title,author,labels,state --repo ${{ github.repository }})
+          PR_TITLE=$(echo "$PR_DATA" | jq -r '.title')
+          PR_AUTHOR=$(echo "$PR_DATA" | jq -r '.author.login')
+          PR_STATE=$(echo "$PR_DATA" | jq -r '.state')
+
+          echo "PR #$PR_NUMBER: '$PR_TITLE' by $PR_AUTHOR (state: $PR_STATE)"
+
+          # Check if this is an automated update plugins PR
+          if [[ "$PR_TITLE" == "Update plugins list" ]] && [[ "$PR_AUTHOR" == "github-actions"* ]] && [[ "$PR_STATE" == "OPEN" ]]; then
+            echo "should_merge=true" >> $GITHUB_OUTPUT
+            echo "✅ This is an automated Update plugins list PR"
+          else
+            echo "should_merge=false" >> $GITHUB_OUTPUT
+            echo "⏭️ Skipping: Not an automated Update plugins list PR"
+          fi
+
+      - name: Wait for status checks
+        if: steps.check_pr.outputs.should_merge == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="${{ steps.check_pr.outputs.pr_number }}"
+          echo "Waiting for status checks to complete for PR #$PR_NUMBER..."
+
+          max_attempts=60
+          attempt=0
+
+          while [ $attempt -lt $max_attempts ]; do
+            # Get check status
+            CHECK_DATA=$(gh pr view "$PR_NUMBER" --json statusCheckRollup --repo ${{ github.repository }})
+
+            # Count checks
+            total_checks=$(echo "$CHECK_DATA" | jq '.statusCheckRollup | length')
+            pending_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.status == "IN_PROGRESS" or .status == "QUEUED" or (.state // "" | test("PENDING|EXPECTED")))] | length')
+            failed_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.conclusion == "FAILURE" or (.state // "" | test("FAILURE|ERROR")))] | length')
+
+            echo "Checks: $total_checks total, $pending_checks pending, $failed_checks failed"
+
+            if [ "$failed_checks" -gt 0 ]; then
+              echo "❌ Some checks failed, will not auto-merge"
+              exit 1
+            fi
+
+            if [ "$pending_checks" -eq 0 ] && [ "$total_checks" -gt 0 ]; then
+              echo "✅ All checks passed!"
+              break
+            fi
+
+            attempt=$((attempt + 1))
+            echo "Waiting... (attempt $attempt/$max_attempts)"
+            sleep 10
+          done
+
+          if [ $attempt -eq $max_attempts ]; then
+            echo "⏰ Timeout waiting for checks"
+            exit 1
+          fi
+
+      - name: Merge PR
+        if: steps.check_pr.outputs.should_merge == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          PR_NUMBER="${{ steps.check_pr.outputs.pr_number }}"
+          echo "Merging PR #$PR_NUMBER..."
+
+          gh pr merge "$PR_NUMBER" --squash --delete-branch --repo ${{ github.repository }}
+
+          echo "✅ PR #$PR_NUMBER merged successfully!"
