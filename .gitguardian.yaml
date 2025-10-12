@@ -1,0 +1,24 @@
+# GitGuardian configuration
+# https://docs.gitguardian.com/ggshield-docs/configuration
+
+version: 2
+
+# Paths to ignore for secret detection
+# These are data files that frequently trigger false positives
+paths-ignore:
+  - reports/**/*
+  - "*.json"
+  - "*.csv"
+  - "*.txt"
+  - plugins.json
+  - all-plugins.csv
+
+# Ignore specific patterns that are not secrets
+# These are common patterns in Jenkins plugin data that look like secrets but aren't
+matches-ignore:
+  - name: Ignore Jenkins plugin URLs
+    match: https://github.com/jenkinsci/
+  - name: Ignore update center URLs
+    match: https://updates.jenkins.io/
+  - name: Ignore repository paths
+    match: jenkinsci/.*-plugin
