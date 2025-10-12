@@ -12,6 +12,11 @@ on:
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
+    # Following principle of least privilege - explicitly declare minimal permissions
+    permissions:
+      pull-requests: write  # Required to merge PRs and read PR details
+      contents: write       # Required to delete branches after merge
+      checks: read          # Required to read check status
     if: github.event.pull_request.title == 'Update plugins list' || github.event.pull_request.user.login == 'github-actions[bot]'
     steps:
       - name: Check PR details
