@@ -258,6 +258,7 @@ bitbucket-push-and-pull-request:3.2.0
 bitbucket-scm-filter-aged-refs:59.vc6b_39c26988c
 bitbucket-scm-filter-jira-validator:0.1.0
 bitbucket-scm-trait-commit-skip:0.4.0
+bitbucket-webhooks:1.0.0
 bitkeeper:1.8
 bitwarden-credentials-provider:215.vff8230a_06dd8
 black-duck-sigma:2024.10.1
@@ -403,7 +404,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:937.1.0
+cloudbees-bitbucket-branch-source:937.2.0
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:256.v20ec4eb_884f1
@@ -667,7 +668,7 @@ dynatrace-dashboard:2.1.5
 eagle-tester:1.0.9
 ease-plugin:2.7
 easyqa:1.0
-ec2:2036.vb_105a_db_e4a_ea_
+ec2:2039.v829e6272107c
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
 ec2-fleet:4.2.1.515.v100267825939
@@ -687,7 +688,7 @@ elastic-axis:615.vb_f7c20ec040e
 elasticbox:5.0.1
 elasticsearch-query:1.2
 electricflow:1.1.41
-email-ext:1925.v1598902b_58dd
+email-ext:1933.v45cec755423f
 email-ext-recipients-column:72.v546836954562
 emailext-template:233.v1eb_88fc160b_5
 embeddable-build-status:602.v766a_264519c7
