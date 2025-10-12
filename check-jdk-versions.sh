@@ -137,23 +137,17 @@ check_jdk_versions() {
     has_jenkinsfile="true"
     debug "Jenkinsfile found in $repo"
 
-    # Check for JDK 17 in a single pass
-    if grep -qiE "(jdk['\": ]+['\"]?17['\"]?|java['\": ]+['\"]?17['\"]?|openjdk-?17)" <<< "$jenkinsfile"; then
-      has_jdk17="true"
-      info "JDK 17 detected in $repo"
-    fi
-
-    # Check for JDK 21
-    if grep -qiE "(jdk['\": ]+['\"]?21['\"]?|java['\": ]+['\"]?21['\"]?|openjdk-?21)" <<< "$jenkinsfile"; then
-      has_jdk21="true"
-      info "JDK 21 detected in $repo"
-    fi
-
-    # Check for JDK 25
-    if grep -qiE "(jdk['\": ]+['\"]?25['\"]?|java['\": ]+['\"]?25['\"]?|openjdk-?25)" <<< "$jenkinsfile"; then
-      has_jdk25="true"
-      info "JDK 25 detected in $repo"
-    fi
+    # Check for JDK versions (17, 21, 25) with improved pattern to avoid false positives
+    # Pattern explanation:
+    # - (jdk|java)([: ]+['\"]?VER['\"]?|['\"]VER['\"]?) - requires at least one separator (: or space) OR immediate quote
+    # - This avoids matching variable names like jdk17, JDK17_LABEL, etc.
+    # - openjdk-?VER - matches openjdk17 or openjdk-17
+    for ver in 17 21 25; do
+      if grep -qiE "((jdk|java)([: ]+['\"]?${ver}['\"]?|['\"]${ver}['\"]?)|openjdk-?${ver})" <<< "$jenkinsfile"; then
+        eval "has_jdk${ver}=true"
+        info "JDK ${ver} detected in $repo"
+      fi
+    done
 
   elif [ "$http_code" -eq 404 ]; then
     debug "No Jenkinsfile found in $repo"
