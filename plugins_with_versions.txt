@@ -225,7 +225,7 @@ azure-function:0.3.3
 azure-keyvault:327.v3f37dc30312a_
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
-azure-sdk:248.v0c922122245c
+azure-sdk:254.v895ca_4461c94
 azure-vm-agents:1055.v924d639291f4
 azure-vmss:0.2.4
 backlog:2.7
@@ -637,7 +637,7 @@ docker-plugin:1274.vc0203fdf2e74
 docker-slaves:1.0.7
 docker-swarm:1.11
 docker-traceability:1.2
-docker-workflow:632.vb_4b_d9336b_5ef
+docker-workflow:634.vedc7242b_eda_7
 dockerhub-notification:222.v483263f10718
 doclinks:0.7
 dogu-integration:27.vd4da_5fea_e29f
@@ -762,7 +762,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:11.13.3-357.v7123e4765a_c3
+flyway-api:11.14.0-359.v8a_a_ceb_b_96d7c
 flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -988,7 +988,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.20.0-420.v8a_08b_d57ca_05
-jackson3-api:3.0.0-3.v69a_efc2288d6
+jackson3-api:3.0.0-7.vee2f20796c77
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-3
@@ -1021,6 +1021,7 @@ jenkinsci-appspider-plugin:1.0.17
 jenkinslint:0.14.0
 jenkinswalldisplay:0.6.34
 jersey2-api:2.47-165.ve7809a_3e87e0
+jersey3-api:3.1.11-4.v77818819c2e1
 jetbrains-space:1.53.vcd2e91eb_a_620
 jfrog:1.5.10
 jgiven:0.15.1
@@ -1154,7 +1155,7 @@ loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
 locale:597.v7781ce70d4cf
 localization-support:1.41.v186a_c1569458
 localization-zh-cn:371.v23851f835d6b_
-lockable-resources:1412.v3f305a_fb_a_117
+lockable-resources:1432.v7f7b_69fb_d328
 locked-files-report:1.6
 log-cli:183.v28b_9a_3e48061
 log-command:1.0.2
@@ -1187,7 +1188,7 @@ mapdb-api:1.0.9-44.va_1e1310c9118
 maplelabs-apm:1.181.v72a_25e99778e
 marathon:1.6.0
 mariadb-api:3.5.6-169.v80b_cb_db_d684f
-markdown-formatter:292.vf6975a_44502a_
+markdown-formatter:312.va_b_3dea_1413a_f
 markdown-params:71.v576911a_6e3b_c
 mask-passwords:204.v24d863065180
 material-theme:0.5.2-rc100.6121925fe229
@@ -1356,7 +1357,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.18
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.2.16-114.v44ce93e626ca_
+oras-java-api:0.3.0-118.v5901cf2de6ea_
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
