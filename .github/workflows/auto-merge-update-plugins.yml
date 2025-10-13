@@ -78,14 +78,15 @@ jobs:
           echo "📋 PR #$PR_NUMBER: '$PR_TITLE' by $PR_AUTHOR (state: $PR_STATE)"
 
           # Check if this is an automated update plugins PR that should be auto-merged
-          if [[ "$PR_TITLE" == "Update plugins list" ]] && [[ "$PR_AUTHOR" == "github-actions[bot]" ]] && [[ "$PR_STATE" == "OPEN" ]]; then
+          # Note: Author format varies - gh CLI returns "app/github-actions" while API returns "github-actions[bot]"
+          if [[ "$PR_TITLE" == "Update plugins list" ]] && [[ "$PR_AUTHOR" == *"github-actions"* ]] && [[ "$PR_STATE" == "OPEN" ]]; then
             echo "should_merge=true" >> $GITHUB_OUTPUT
             echo "✅ This is an automated 'Update plugins list' PR - will auto-merge if checks pass"
           else
             echo "should_merge=false" >> $GITHUB_OUTPUT
             echo "⏭️ Skipping: Not an automated 'Update plugins list' PR"
             echo "   - Title match: $([ "$PR_TITLE" = "Update plugins list" ] && echo "✅" || echo "❌ (got: '$PR_TITLE')")"
-            echo "   - Author match: $([ "$PR_AUTHOR" = "github-actions[bot]" ] && echo "✅" || echo "❌ (got: '$PR_AUTHOR')")"
+            echo "   - Author match: $([[ "$PR_AUTHOR" == *"github-actions"* ]] && echo "✅" || echo "❌ (got: '$PR_AUTHOR')")"
             echo "   - State match: $([ "$PR_STATE" = "OPEN" ] && echo "✅" || echo "❌ (got: '$PR_STATE')")"
           fi
 
