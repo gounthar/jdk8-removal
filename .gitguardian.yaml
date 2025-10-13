@@ -8,7 +8,7 @@ version: 2
 # Using explicit file names instead of wildcards to avoid accidentally
 # ignoring real secrets in the root directory
 paths-ignore:
-  - reports/**/*
+  - 'reports/**'
   - plugins.json
   - found_prs.json
   - jenkins_prs.json
@@ -19,7 +19,7 @@ paths-ignore:
   - depends_on_java_8.txt
   - depends_on_java_11.txt
   - manual_jdk25_plugins.txt
-  - plugins_jdk11_main_*.txt
+  - 'plugins_jdk11_main_*.txt'
   - '*plugins_with_versions.txt'
 
 # Ignore specific patterns that are not secrets
