@@ -17,7 +17,8 @@ jobs:
       pull-requests: read  # Sufficient to list and view PR details
       contents: read       # Sufficient for gh CLI read operations in preceding steps
       checks: read          # Required to read check status
-    if: github.event.pull_request.title == 'Update plugins list' || github.event.pull_request.user.login == 'github-actions[bot]'
+    # Note: No job-level condition here - the "Check PR details" step determines if merge should proceed
+    # This allows the workflow to run for all event types (pull_request, check_suite, status, etc.)
     steps:
       - name: Check PR details
         id: check_pr
@@ -25,17 +26,35 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Get PR number from different event types
+          echo "Event type: ${{ github.event_name }}"
+
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             PR_NUMBER="${{ github.event.pull_request.number }}"
+            echo "Found PR from pull_request event: #$PR_NUMBER"
           elif [ "${{ github.event_name }}" = "pull_request_review" ]; then
             PR_NUMBER="${{ github.event.pull_request.number }}"
+            echo "Found PR from pull_request_review event: #$PR_NUMBER"
           else
-            # For check_suite/status events, find the PR from the branch
-            PR_NUMBER=$(gh pr list --head "${{ github.event.check_suite.head_branch || github.sha }}" --json number --jq '.[0].number' --repo ${{ github.repository }})
+            # For check_suite/status events, find the PR from the branch or commit SHA
+            HEAD_REF="${{ github.event.check_suite.head_branch || github.event.check_suite.head_sha || github.sha }}"
+            echo "Searching for PR with head: $HEAD_REF"
+            PR_NUMBER=$(gh pr list --head "$HEAD_REF" --json number --jq '.[0].number' --repo ${{ github.repository }})
+
+            if [ -z "$PR_NUMBER" ]; then
+              # Try searching by commit SHA if branch search failed
+              echo "Branch search failed, trying by commit SHA..."
+              COMMIT_SHA="${{ github.event.check_suite.head_sha || github.sha }}"
+              PR_NUMBER=$(gh pr list --search "$COMMIT_SHA" --json number --jq '.[0].number' --repo ${{ github.repository }})
+            fi
+
+            if [ -n "$PR_NUMBER" ]; then
+              echo "Found PR from check_suite/status event: #$PR_NUMBER"
+            fi
           fi
 
           if [ -z "$PR_NUMBER" ]; then
-            echo "No PR found, skipping"
+            echo "⏭️ No PR found for this event, skipping"
+            echo "should_merge=false" >> $GITHUB_OUTPUT
             exit 0
           fi
 
@@ -47,15 +66,18 @@ jobs:
           PR_AUTHOR=$(echo "$PR_DATA" | jq -r '.author.login')
           PR_STATE=$(echo "$PR_DATA" | jq -r '.state')
 
-          echo "PR #$PR_NUMBER: '$PR_TITLE' by $PR_AUTHOR (state: $PR_STATE)"
+          echo "📋 PR #$PR_NUMBER: '$PR_TITLE' by $PR_AUTHOR (state: $PR_STATE)"
 
-          # Check if this is an automated update plugins PR
+          # Check if this is an automated update plugins PR that should be auto-merged
           if [[ "$PR_TITLE" == "Update plugins list" ]] && [[ "$PR_AUTHOR" == "github-actions"* ]] && [[ "$PR_STATE" == "OPEN" ]]; then
             echo "should_merge=true" >> $GITHUB_OUTPUT
-            echo "✅ This is an automated Update plugins list PR"
+            echo "✅ This is an automated 'Update plugins list' PR - will auto-merge if checks pass"
           else
             echo "should_merge=false" >> $GITHUB_OUTPUT
-            echo "⏭️ Skipping: Not an automated Update plugins list PR"
+            echo "⏭️ Skipping: Not an automated 'Update plugins list' PR"
+            echo "   - Title match: $([ "$PR_TITLE" = "Update plugins list" ] && echo "✅" || echo "❌ (got: '$PR_TITLE')")"
+            echo "   - Author match: $([ "$PR_AUTHOR" = "github-actions[bot]" ] && echo "✅" || echo "❌ (got: '$PR_AUTHOR')")"
+            echo "   - State match: $([ "$PR_STATE" = "OPEN" ] && echo "✅" || echo "❌ (got: '$PR_STATE')")"
           fi
 
       - name: Wait for status checks
@@ -100,13 +122,40 @@ jobs:
             exit 1
           fi
 
+      - name: Final check before merge
+        if: steps.check_pr.outputs.should_merge == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="${{ steps.check_pr.outputs.pr_number }}"
+          echo "Performing final safety check before merge..."
+
+          # Verify PR is still open
+          PR_STATE=$(gh pr view "$PR_NUMBER" --json state --jq '.state' --repo ${{ github.repository }})
+          if [ "$PR_STATE" != "OPEN" ]; then
+            echo "❌ PR is no longer open (state: $PR_STATE), aborting merge"
+            exit 1
+          fi
+
+          # Double-check all status checks are passing
+          CHECK_DATA=$(gh pr view "$PR_NUMBER" --json statusCheckRollup --repo ${{ github.repository }})
+          failed_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.conclusion == "FAILURE" or (.state // "" | test("FAILURE|ERROR")))] | length')
+
+          if [ "$failed_checks" -gt 0 ]; then
+            echo "❌ Found $failed_checks failed check(s), aborting merge"
+            echo "$CHECK_DATA" | jq -r '.statusCheckRollup[] | select(.conclusion == "FAILURE" or (.state // "" | test("FAILURE|ERROR"))) | "  - \(.name): \(.conclusion // .state)"'
+            exit 1
+          fi
+
+          echo "✅ All safety checks passed, proceeding with merge"
+
       - name: Merge PR
         if: steps.check_pr.outputs.should_merge == 'true'
         env:
           GH_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           PR_NUMBER="${{ steps.check_pr.outputs.pr_number }}"
-          echo "Merging PR #$PR_NUMBER..."
+          echo "🔀 Merging PR #$PR_NUMBER..."
 
           gh pr merge "$PR_NUMBER" --squash --delete-branch --repo ${{ github.repository }}
 
