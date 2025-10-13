@@ -20,8 +20,7 @@ paths-ignore:
   - depends_on_java_11.txt
   - manual_jdk25_plugins.txt
   - plugins_jdk11_main_*.txt
-  - plugins_with_versions.txt
-  - top_plugins_with_versions.txt
+  - '*plugins_with_versions.txt'
 
 # Ignore specific patterns that are not secrets
 # These are common patterns in Jenkins plugin data that look like secrets but aren't
