@@ -9,8 +9,8 @@ secret:
   # These are data files that frequently trigger false positives
   # Using gitignore-style glob patterns
   ignored_paths:
-    # Reports directory - all files
-    - 'reports/**'
+    # Reports directory - all files (anchored to root)
+    - '/reports/**'
     # Root level JSON files (anchored with / to match only at root)
     - '/plugins.json'
     - '/found_prs.json'
