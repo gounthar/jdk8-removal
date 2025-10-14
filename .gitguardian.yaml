@@ -11,24 +11,24 @@ secret:
   ignored_paths:
     # Reports directory - all files
     - 'reports/**'
-    # Root level JSON files
-    - 'plugins.json'
-    - 'found_prs.json'
-    - 'jenkins_prs.json'
-    - 'report.json'
-    # Root level data files
-    - 'plugin_evolution.csv'
-    - 'recipes-to-apply.csv'
-    - 'top-250-plugins.csv'
-    - 'depends_on_java_8.txt'
-    - 'depends_on_java_11.txt'
-    - 'manual_jdk25_plugins.txt'
-    # Plugin list files with date stamps
-    - 'plugins_jdk11_main_*.txt'
-    - 'plugins_jdk11_main_20*.txt'
-    # Plugin version files
-    - 'plugins_with_versions.txt'
-    - 'top_plugins_with_versions.txt'
+    # Root level JSON files (anchored with / to match only at root)
+    - '/plugins.json'
+    - '/found_prs.json'
+    - '/jenkins_prs.json'
+    - '/report.json'
+    # Root level data files (anchored with / to match only at root)
+    - '/plugin_evolution.csv'
+    - '/recipes-to-apply.csv'
+    - '/top-250-plugins.csv'
+    - '/depends_on_java_8.txt'
+    - '/depends_on_java_11.txt'
+    - '/manual_jdk25_plugins.txt'
+    # Plugin list files with date stamps (anchored with / to match only at root)
+    - '/plugins_jdk11_main_*.txt'
+    # Plugin version files (anchored with / to match only at root)
+    - '/plugins_with_versions.txt'
+    - '/top_plugins_with_versions.txt'
+    # Match any file ending with plugins_with_versions.txt (not anchored)
     - '*plugins_with_versions.txt'
 
   # Ignore specific patterns that are not secrets
@@ -39,4 +39,4 @@ secret:
     - name: Ignore update center URLs
       match: https://updates.jenkins.io/
     - name: Ignore repository paths
-      match: jenkinsci/.*-plugin
+      regex: jenkinsci/.*-plugin
