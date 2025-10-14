@@ -5,21 +5,32 @@ version: 2
 
 # Paths to ignore for secret detection
 # These are data files that frequently trigger false positives
-# Using explicit file names instead of wildcards to avoid accidentally
-# ignoring real secrets in the root directory
+# GitGuardian uses gitignore-style patterns but doesn't always behave consistently
+# Using multiple pattern variations to ensure coverage
 paths-ignore:
-  - 'reports/**'
+  # Reports directory - all files
+  - reports/
+  - reports/*
+  - reports/**
+  - reports/**/*
+  # Root level JSON files
   - plugins.json
   - found_prs.json
   - jenkins_prs.json
   - report.json
+  # Root level data files
   - plugin_evolution.csv
   - recipes-to-apply.csv
   - top-250-plugins.csv
   - depends_on_java_8.txt
   - depends_on_java_11.txt
   - manual_jdk25_plugins.txt
-  - 'plugins_jdk11_main_*.txt'
+  # Plugin list files with date stamps
+  - plugins_jdk11_main_*.txt
+  - plugins_jdk11_main_20*.txt
+  # Plugin version files
+  - plugins_with_versions.txt
+  - top_plugins_with_versions.txt
   - '*plugins_with_versions.txt'
 
 # Ignore specific patterns that are not secrets
