@@ -251,13 +251,19 @@ process_repository() {
   fi
   first_entry=false
 
+  # Convert open_jdk25_prs to JSON array, with fallback to empty array
+  local prs_json_array="[]"
+  if [ -n "$open_jdk25_prs" ]; then
+    prs_json_array=$(echo "$open_jdk25_prs" | jq -s '.' 2>/dev/null || echo '[]')
+  fi
+
   cat >> "$output_json" <<EOF
   {
     "plugin": "$formatted_repo",
     "repository": "$repo",
     "url": "https://github.com/$repo",
     "has_open_jdk25_prs": $has_open_jdk25_prs,
-    "open_jdk25_prs": $(echo "$open_jdk25_prs" | jq -s '.'),
+    "open_jdk25_prs": $prs_json_array,
     "has_jenkinsfile": $has_jenkinsfile
   }
 EOF
