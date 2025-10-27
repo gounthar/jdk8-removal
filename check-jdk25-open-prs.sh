@@ -405,8 +405,8 @@ if [ -n "$previous_json" ] && [ -f "$previous_json" ]; then
     fi
   done < "$current_prs"
 
-  new_count=$(echo "$new_prs" | grep -c . 2>/dev/null)
-  closed_count=$(echo "$closed_prs" | grep -c . 2>/dev/null)
+  new_count=$(grep -c . <<< "$new_prs")
+  closed_count=$(grep -c . <<< "$closed_prs")
 
   info ""
   info "Changes since $previous_date:"
