@@ -254,7 +254,7 @@ process_repository() {
   # Convert open_jdk25_prs to JSON array, with fallback to empty array
   local prs_json_array="[]"
   if [ -n "$open_jdk25_prs" ]; then
-    prs_json_array=$(echo "$open_jdk25_prs" | jq -s '.' 2>/dev/null || echo '[]')
+    prs_json_array=$(printf '%s\n' "$open_jdk25_prs" | jq -s '.' 2>/dev/null || echo '[]')
   fi
 
   cat >> "$output_json" <<EOF
