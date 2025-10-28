@@ -11,6 +11,7 @@ secret:
   ignored_paths:
     # Reports directory - all files (anchored to root)
     - '/reports/**'
+    - 'reports/**'
     # Root level JSON files (anchored with / to match only at root)
     - '/plugins.json'
     - '/found_prs.json'
@@ -25,11 +26,15 @@ secret:
     - '/manual_jdk25_plugins.txt'
     # Plugin list files with date stamps (anchored with / to match only at root)
     - '/plugins_jdk11_main_*.txt'
+    - 'plugins_jdk11_main_*.txt'
     # Plugin version files (anchored with / to match only at root)
     - '/plugins_with_versions.txt'
     - '/top_plugins_with_versions.txt'
     # Match any file ending with plugins_with_versions.txt (not anchored)
     - '*plugins_with_versions.txt'
+    # Date-stamped output files
+    - 'plugins-output.txt'
+    - '/plugins-output.txt'
 
   # Ignore specific patterns that are not secrets
   # These are common patterns in Jenkins plugin data that look like secrets but aren't
