@@ -762,7 +762,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:11.14.1-364.v6d93c3ddb_24b_
+flyway-api:11.15.0-366.v466fe48914c2
 flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -988,7 +988,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.20.0-420.v8a_08b_d57ca_05
-jackson3-api:3.0.0-7.vee2f20796c77
+jackson3-api:3.0.1-11.v1db_b_61c8b_e4d
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-3
@@ -1648,7 +1648,7 @@ scoring-load-balancer:202.ve8d1e11694e2
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
-script-security:1378.vf25626395f49
+script-security:1385.v7d2d9ec4d909
 scripted-cloud-plugin:0.12
 scriptler:432.v872ed6cd6d5b_
 sdelements:1.0.2
@@ -1794,7 +1794,7 @@ synergy:1.7
 synopsys-coverity:3.0.5
 synopsys-polaris:1.4.0
 synopsys-security-scan:1.8.1
-sysdig-secure:3.3.0
+sysdig-secure:3.3.1
 syslog-logger:1.0.5
 systemloadaverage-monitor:1.2
 tacotruck:31.vfcf6b_6e2f477
