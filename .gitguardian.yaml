@@ -32,6 +32,8 @@ secret:
     - '*plugins_with_versions.txt'
     # Plugin output files (matches at any level)
     - 'plugins-output.txt'
+    - 'plugins_no_jenkinsfile.txt'
+    - 'plugins_old_java.txt'
 
   # Ignore specific patterns that are not secrets
   # These are common patterns in Jenkins plugin data that look like secrets but aren't
