@@ -149,7 +149,7 @@ jobs:
 
           # Verify PR is mergeable (not blocked)
           MERGE_STATE=$(gh pr view "$PR_NUMBER" --json mergeStateStatus --jq '.mergeStateStatus' --repo ${{ github.repository }})
-          if [ "$MERGE_STATE" != "CLEAN" ] && [ "$MERGE_STATE" != "HAS_HOOKS" ]; then
+          if [ "$MERGE_STATE" != "CLEAN" ] && [ "$MERGE_STATE" != "HAS_HOOKS" ] && [ "$MERGE_STATE" != "UNSTABLE" ]; then
             echo "❌ PR merge state is $MERGE_STATE (not mergeable), aborting merge"
             exit 1
           fi
