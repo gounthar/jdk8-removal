@@ -105,10 +105,10 @@ jobs:
             # Get check status
             CHECK_DATA=$(gh pr view "$PR_NUMBER" --json statusCheckRollup --repo ${{ github.repository }})
 
-            # Count checks (excluding GitGuardian which is optional)
-            total_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.name != "GitGuardian Security Checks")] | length')
-            pending_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.name != "GitGuardian Security Checks") | select(.status == "IN_PROGRESS" or .status == "QUEUED" or (.state // "" | test("PENDING|EXPECTED")))] | length')
-            failed_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.name != "GitGuardian Security Checks") | select(.conclusion == "FAILURE" or (.state // "" | test("FAILURE|ERROR")))] | length')
+            # Count checks (excluding optional GitGuardian and the auto-merge check itself to avoid circular dependency)
+            total_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.name != "GitGuardian Security Checks" and .name != "auto-merge")] | length')
+            pending_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.name != "GitGuardian Security Checks" and .name != "auto-merge") | select(.status == "IN_PROGRESS" or .status == "QUEUED" or (.state // "" | test("PENDING|EXPECTED")))] | length')
+            failed_checks=$(echo "$CHECK_DATA" | jq '[.statusCheckRollup[] | select(.name != "GitGuardian Security Checks" and .name != "auto-merge") | select(.conclusion == "FAILURE" or (.state // "" | test("FAILURE|ERROR")))] | length')
 
             echo "Checks: $total_checks total, $pending_checks pending, $failed_checks failed"
 
@@ -154,13 +154,13 @@ jobs:
             exit 1
           fi
 
-          # Double-check all status checks are passing (with null safety, excluding optional GitGuardian)
+          # Double-check all status checks are passing (with null safety, excluding optional GitGuardian and auto-merge itself)
           CHECK_DATA=$(gh pr view "$PR_NUMBER" --json statusCheckRollup --repo ${{ github.repository }})
-          failed_checks=$(echo "$CHECK_DATA" | jq '[(.statusCheckRollup // [])[] | select(.name != "GitGuardian Security Checks") | select((.conclusion // "") == "FAILURE" or (.state // "" | test("FAILURE|ERROR")))] | length')
+          failed_checks=$(echo "$CHECK_DATA" | jq '[(.statusCheckRollup // [])[] | select(.name != "GitGuardian Security Checks" and .name != "auto-merge") | select((.conclusion // "") == "FAILURE" or (.state // "" | test("FAILURE|ERROR")))] | length')
 
           if [ "$failed_checks" -gt 0 ]; then
             echo "❌ Found $failed_checks failed check(s), aborting merge"
-            echo "$CHECK_DATA" | jq -r '(.statusCheckRollup // [])[] | select(.name != "GitGuardian Security Checks") | select((.conclusion // "") == "FAILURE" or (.state // "" | test("FAILURE|ERROR"))) | "  - \(.name): \(.conclusion // .state)"'
+            echo "$CHECK_DATA" | jq -r '(.statusCheckRollup // [])[] | select(.name != "GitGuardian Security Checks" and .name != "auto-merge") | select((.conclusion // "") == "FAILURE" or (.state // "" | test("FAILURE|ERROR"))) | "  - \(.name): \(.conclusion // .state)"'
             exit 1
           fi
 
