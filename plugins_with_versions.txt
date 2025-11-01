@@ -109,7 +109,7 @@ artifact-promotion:0.5.2
 artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
 artifactory:4.0.8
-artifactory-artifact-manager:252.v944a_69ea_4873
+artifactory-artifact-manager:264.v9f7d245cf77c
 artifactory-client-api:2.19.0-116.vc6e7efff0e6b_
 artifactz:1.4.0-53.v7537f8b_3f9b_e
 asakusa-satellite-plugin:0.1.1
@@ -249,7 +249,7 @@ bitbucket-approval-filter:1.0.3
 bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
 bitbucket-filter-project-trait:19.vdd668c4d36c7
-bitbucket-kubernetes-credentials:569.va_1b_9b_fe8897c
+bitbucket-kubernetes-credentials:613.v124fea_1166d5
 bitbucket-oauth:0.14
 bitbucket-pullrequest-builder:1.5.0
 bitbucket-pullrequests-filter:13.vda_de92e841b_b_
@@ -315,7 +315,7 @@ build-executors-filter-offline:1.1
 build-failure-analyzer:2.6.1
 build-health-cache-updater:1.1
 build-history-manager:1.14.0
-build-history-metrics-plugin:165.v1a_db_fb_13a_70e
+build-history-metrics-plugin:183.vb_9c822e0943e
 build-keeper-plugin:19.va_df8a_2c65123
 build-line:1.0.4
 build-metrics:1.3
@@ -512,7 +512,7 @@ couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
 coverage:2.2977.v0e1c1d11042d
-coverage-badges-extension:179.v6c477ce0c246
+coverage-badges-extension:197.vb_390173d00ec
 coverity:1.11.4
 cppcheck:1.26
 cppncss:1.2
@@ -558,7 +558,7 @@ dashboard-view:2.543.vca_9da_3cb_9c60
 data-tables-api:2.3.4-1451.vb_0b_5238f9054
 database:274.vea_2e859b_2661
 database-h2:1.4.116.vc979ffa_d29c7
-database-mariadb:164.v626f5b_6c0114
+database-mariadb:182.v8f1d21b_7c825
 database-mysql:142.vc259713f0032
 database-postgresql:146.vd1a_f70b_56e0e
 database-sqlite:1.10
@@ -717,7 +717,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
 experitest-cloud:1.0.3
-explain-error:87.vdc8a_36340a_00
+explain-error:88.v3109a_f474f50
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -725,12 +725,12 @@ extended-read-permission:61.vf24570ff3b_e9
 extended-security-settings:1.3
 extended-timer-trigger:30.vb_fb_7092cccfa_
 extensible-choice-parameter:239.v5f5c278708cf
-extension-filter:250.v5f608d54f27d
+extension-filter:268.v953673b_16e81
 extensivetesting:1.4.4b
 external-monitor-job:223.vb_fddcf42c9b_3
 external-workspace-manager:1.3.1
 extra-columns:1.27
-extra-tool-installers:202.v32436898800a_
+extra-tool-installers:211.v880567f652f0
 extreme-feedback:1.7
 extreme-notification:1.6
 ez-templates:1.3.5
@@ -821,7 +821,7 @@ gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
 gitea-checks:569.v1305768a_83e5
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1246.va_96d8b_79c02f
+gitee:1247.v3cf071d5ff46
 gitflow:1.0.1
 github:1.45.0
 github-api:1.330-492.v3941a_032db_2a_
@@ -909,7 +909,7 @@ heavy-job:1.1
 helix-alm-test-management:1.0.15
 helix-teamhub:1.1.5
 hetzner-cloud:103.v843b_12130985
-hidden-parameter:494.v9d2513a_9994d
+hidden-parameter:504.v610a_b_b_c05003
 hiddenlayer-model-scanner:1.0.33.v65c50476ec88
 hipchat:2.2.1
 horreum:0.16.162.v33b_4a_a_b_5f828
@@ -1002,7 +1002,7 @@ jaxb:2.3.9-133.vb_ec76a_73f706
 jboss:1.0.5
 jbpm-embedded-plugin:0.2
 jbpm-workflow-plugin:0.3
-jcaptcha-plugin:48.v6c5cca_01a_e10
+jcaptcha-plugin:66.vf5a_222f99e7b_
 jclouds-jenkins:2.42
 jdcloud-codedeploy:1.0.0
 jdepend:1.3.1
@@ -1048,9 +1048,9 @@ job-restrictions:216.v0732cc7fb_076
 job-strongauth-simple:0.5
 jobConfigHistory:1356.ve360da_6c523a_
 jobcacher:732.ve164e3059a_a_a_
-jobcacher-artifactory-storage:198.vd6fa_ec5e1028
+jobcacher-artifactory-storage:218.vb_b_f388660e8b_
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
-jobcacher-oras-storage:62.v394127cf4730
+jobcacher-oras-storage:86.v37b_94609150a_
 jobcopy-builder:1.5.0
 jobdelete-builder:1.0
 jobgenerator:1.22
@@ -1073,7 +1073,7 @@ jsm-alert:22.vd3455f1f86a_3
 json-api:20250517-173.v596efb_962a_31
 json-editor-parameter:54.v71962f37a_416
 json-parameter:68.v5d25a_1167dc9
-json-path-api:2.9.0-190.veefca_05d5477
+json-path-api:2.10.0-202.va_9cc16c1e476
 jsoup:1.21.2-66.v6ea_38164b_8a_2
 jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
@@ -1151,7 +1151,7 @@ loadium:1.6
 loadmance:1.0
 loadninja:1.4
 loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
-locale:597.v7781ce70d4cf
+locale:614.va_6a_5a_1a_f2b_38
 localization-support:1.41.v186a_c1569458
 localization-zh-cn:371.v23851f835d6b_
 lockable-resources:1438.v3c0f8c9e2060
@@ -1290,7 +1290,7 @@ neuro-cucumber:1.0.4
 neuvector-vulnerability-scanner:2.6
 newrelic-deployment-notifier:1.12
 next-build-number:66.v4b_4762172d53
-next-executions:446.v57a_a_1b_40702f
+next-executions:464.v7194fa_725e34
 nexus-artifact-uploader:2.14
 nexus-task-runner:0.9.2
 nirmata:1.0.11
@@ -1422,7 +1422,7 @@ pipeline-build-step:571.v08a_fffd4b_0ce
 pipeline-cloudwatch-logs:195.va_a_dcfa_e6e78d
 pipeline-config-history:1.6
 pipeline-cps-http:171.v419323d0e4b_c
-pipeline-cps-oras:26.v2fc834c2e7a_9
+pipeline-cps-oras:50.v764a_6877d7f1
 pipeline-dependency-walker:1.0.0
 pipeline-deploymon:1.0
 pipeline-gcp:22.vcc10eff7c13f
@@ -1437,10 +1437,10 @@ pipeline-graph-view:698.vc482c2a_50a_30
 pipeline-groovy-lib:776.vfee5327b_b_a_5b_
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
-pipeline-input-step:534.v352f0a_e98918
+pipeline-input-step:540.v14b_100d754dd
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.17.v407d68513ea_6
-pipeline-lib-oras:23.v4d7c8d889a_86
+pipeline-lib-oras:46.va_0ee7b_f1b_02a_
 pipeline-maven:1567.vb_2c3a_2116860
 pipeline-maven-api:1567.vb_2c3a_2116860
 pipeline-maven-database:1567.vb_2c3a_2116860
@@ -1450,7 +1450,7 @@ pipeline-model-declarative-agent:1.1.1
 pipeline-model-definition:2.2277.v00573e73ddf1
 pipeline-model-extensions:2.2277.v00573e73ddf1
 pipeline-multibranch-defaults:2.1
-pipeline-npm:424.v57d3deb_ea_909
+pipeline-npm:458.vfb_92e52f220a_
 pipeline-project-env:143.v701f8fb_6cf41
 pipeline-reporter-by-redpen:1.054.v7b_9517b_6b_202
 pipeline-rest-api:2.38
@@ -1618,7 +1618,7 @@ rundeck:3.6.14
 runscope:1.50
 rusalad-plugin:1.0.8
 s3:515.vc2f8153c5dc6
-s3-jobcacher-storage:46.v54b_1e939c810
+s3-jobcacher-storage:62.v260cb_8db_5b_fa_
 s3explorer:1.0.8
 safe-batch-environment-filter:0.13.v1d2eb_d4291f5
 saferestart:102.v4dc1b_9636a_ee
@@ -1707,7 +1707,7 @@ sitemonitor:0.6
 skenai:1.0.8
 skip-certificate-check:50.vcfa_cdb_b_27312
 skip-cron-rebuild:42.vb_5da_c46203d9
-skip-notifications-trait:542.vf379a_767ced7
+skip-notifications-trait:576.v7a_67396e2e0b_
 skype-notifier:1.1.0
 skytap:2.07
 slack:795.v4b_9705b_e6d47
