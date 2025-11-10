@@ -60,7 +60,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:13.11.0-919.vda_c75b_c73b_cc
+analysis-model-api:13.11.0-924.v4b_39542a_4ff2
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -484,7 +484,7 @@ configuration-as-code-groovy:1.1
 configuration-as-code-secret-ssm:1.0.1
 configurationslicing:664.vdda_74145b_b_d0
 configure-job-column-plugin:84.v792c9269f95a
-conflict-aware-ondemand-strategy:2.184.vda_f21c7fa_b_1d
+conflict-aware-ondemand-strategy:2.190.vd08f48950f3e
 conjur-credentials:3.0.6
 conjur-simple-integration:0.0.1
 console-badge:1.1
@@ -851,7 +851,7 @@ gitlab-merge-request-jenkins:2.0.0
 gitlab-oauth:1.23
 gitlab-plugin:1.9.10
 global-build-stats:347.v32a_eb_0493c4f
-global-pipeline-parameters:64.v0422ef148e18
+global-pipeline-parameters:72.vd21105d8900f
 global-post-script:1.1.4
 global-pre-script:20.02
 global-slack-notifier:1.5
@@ -968,13 +968,13 @@ inodes-monitor:52.v05406b_c33a_b_0
 insightappsec:1.0.7
 instana:1.0.9
 instance-identity:203.v15e81a_1b_7a_38
-instant-messaging:2.868.v404b_2669f077
+instant-messaging:2.875.v954b_d3f33534
 integrity-plugin:2.6
 internetmeme:1.0
 ionicons-api:94.vcc3065403257
 ios-device-connector:1.2
 ipmessenger-plugin:1.2
-ircbot:3.1012.v7962fc6ed27d
+ircbot:3.1020.v1b_420db_08ce4
 ironmq-notifier:1.0.19
 issue-link:1.0.0
 itest:1.1.1
@@ -987,7 +987,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.20.1-423.v13951f6b_6532
-jackson3-api:3.0.1-11.v1db_b_61c8b_e4d
+jackson3-api:3.0.2-19.vb_706c7683d71
 jacoco:3.3.7
 jakarta-activation-api:2.1.3-2
 jakarta-mail-api:2.1.3-3
@@ -1212,7 +1212,7 @@ maven-plugin:3.27
 maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
-mcp-server:0.109.vea_d3ec3083f1
+mcp-server:0.116.v335308141e4e
 mdt-deployment:1.0.4
 mdtool:0.1.1
 meliora-testlab:1.24
@@ -1364,7 +1364,7 @@ osf-builder-suite-for-sfcc-deploy:1.1.13
 osf-builder-suite-for-sfcc-run-job:1.0.5
 osf-builder-suite-standalone-sonar-linter:1.0.3
 oslc-cm:1.31
-oss-symbols-api:418.v9fb_72b_63a_d2b_
+oss-symbols-api:424.ved751e062911
 ostorlab:1.11
 outbound-webhook:0.3.0
 overops-query:3.0.3
