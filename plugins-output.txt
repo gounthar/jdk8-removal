@@ -72,7 +72,6 @@ ci-with-toad-edge:2.14
 cisco-spark-notifier:1.1.1
 cisco-spark:1.1.1
 clamav:0.3
-clang-scanbuild:1.8
 clearcase:1.6.8
 clearcase-release:0.3
 clearcase-ucm-api:1.0.0
@@ -417,7 +416,6 @@ selection-tasks-plugin:1.0
 selenium-aes:0.5
 selenium-axis:0.0.6
 selenium-builder:1.14
-seleniumrc-plugin:1.0
 sensedia-api-platform:1.0
 serenity:1.4
 shared-objects:0.44

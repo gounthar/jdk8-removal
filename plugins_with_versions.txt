@@ -33,7 +33,7 @@ acunetix:1.2.14
 acunetix-360-scan:2.1.19
 adaptive-disconnector:0.2
 add-changes-to-build-changelog:21.v537f074cf2cc
-additional-identities-plugin:151.va_d0a_78e6c31f
+additional-identities-plugin:174.vb_34358b_813de
 additional-metrics:146.v88cfe819665c
 admin-params:1.0.0
 adobe-cloud-manager:43.v4560e7fa191c
@@ -513,14 +513,14 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.2977.v0e1c1d11042d
+coverage:2.3026.ve83b_5d9dfb_c4
 coverage-badges-extension:197.vb_390173d00ec
 coverity:1.11.4
 cppcheck:1.26
 cppncss:1.2
 crap4j:0.9
 create-fingerprint:25.v0a_b_e60b_42fa_4
-createjobadvanced:1.9.0
+createjobadvanced:1.10.0
 credentials:1447.v4cb_b_539b_5321
 credentials-binding:702.vfe613e537e88
 crittercism-dsym:1.1
@@ -821,7 +821,7 @@ gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
-gitea-checks:569.v1305768a_83e5
+gitea-checks:595.vcec3b_27d9ca_e
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1247.v3cf071d5ff46
 gitflow:1.0.1
@@ -1645,7 +1645,7 @@ scm-sync-configuration:0.0.10
 scm2job:2.5
 scmskip:82.v24fc1c6f381b_
 scons:0.4
-scoring-load-balancer:202.ve8d1e11694e2
+scoring-load-balancer:222.v97c84a_6e5a_a_4
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
