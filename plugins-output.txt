@@ -72,6 +72,7 @@ ci-with-toad-edge:2.14
 cisco-spark-notifier:1.1.1
 cisco-spark:1.1.1
 clamav:0.3
+clang-scanbuild:1.8
 clearcase:1.6.8
 clearcase-release:0.3
 clearcase-ucm-api:1.0.0
@@ -268,7 +269,7 @@ kiuwanJenkinsPlugin:1.6.1
 klocwork:2023.3.1
 koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
-kryptowire:0.2
+kryptowire:0.2.1
 kubernetes-pipeline-devops-steps:1.6
 labeled-test-groups-publisher:1.2.9
 labmanager:0.2.8
@@ -416,6 +417,7 @@ selection-tasks-plugin:1.0
 selenium-aes:0.5
 selenium-axis:0.0.6
 selenium-builder:1.14
+seleniumrc-plugin:1.0
 sensedia-api-platform:1.0
 serenity:1.4
 shared-objects:0.44
