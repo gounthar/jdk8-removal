@@ -345,7 +345,7 @@ buildtriggerbadge:325.vdcd8a_826e87a_
 built-on-column:1.5
 bulk-builder:1.5
 bumblebee:4.1.9
-byte-buddy-api:1.18.0-199.vc8831e51d698
+byte-buddy-api:1.18.1-201.v23b_93a_e3c65b_
 byteguard-build-actions:1.0
 ca-apm:2.1.8
 ca-mat-performance-benchmarking-by-broadcom:1.7
@@ -584,7 +584,7 @@ delete-log-plugin:1.0
 delivery-pipeline-plugin:1.4.2
 delphix:3.2.1
 depbuilder:1.1.0
-dependency-check-jenkins-plugin:5.6.1
+dependency-check-jenkins-plugin:5.6.2
 dependency-queue-plugin:1.1
 dependency-track:6.0.2
 dependencyanalyzer:0.7
@@ -845,12 +845,12 @@ github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-filter-jira-validator:0.1.0
 github-scm-trait-commit-skip:0.4.0
 github-scm-trait-notification-context:45.v8ef831829589
-gitlab-api:5.8.1-106.vef1de800710e
-gitlab-branch-source:724.v6e30226050b_3
+gitlab-api:6.2.0-111.vf174d6b_8c12e
+gitlab-branch-source:725.v1a_1e87b_49f3a_
 gitlab-kubernetes-credentials:484.v2fea_0cc92b_d3
-gitlab-logo:221.v4041f5e65573
+gitlab-logo:232.v34a_9b_98d4eb_b_
 gitlab-merge-request-jenkins:2.0.0
-gitlab-oauth:1.23
+gitlab-oauth:1.24
 gitlab-plugin:1.9.10
 global-build-stats:347.v32a_eb_0493c4f
 global-pipeline-parameters:72.vd21105d8900f
@@ -1301,7 +1301,7 @@ no-agent-job-purge:24.vb_2e4b_b_e0e938
 node-iterator-api:72.vc90e81737df1
 node-sharing-executor:2.0.8
 node-sharing-orchestrator:2.0.8
-nodejs:1.6.5
+nodejs:1.6.6
 nodelabelparameter:759.vb_b_e95db_f3251
 nodenamecolumn:1.2
 nodepool-agents:0.0.21
@@ -1324,7 +1324,7 @@ nutanix-calm:1.2.2
 nvm-wrapper:0.1.7
 oak9:1.0.9
 oauth-credentials:0.657.v7d8dd90b_0382
-octoperf:4.7.0
+octoperf:5.0.0
 octopusdeploy:4.0.2
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
@@ -1415,7 +1415,7 @@ phabricator-plugin:2.1.5
 phing:0.13.3
 php-builtin-web-server:0.1
 piketec-tpt:9.7
-pipeline-agent-build-history:100.v42603a_8d8477
+pipeline-agent-build-history:124.v7a_74f72d8447
 pipeline-aggregator-view:119.v4b_ec11953552
 pipeline-as-yaml:270.vc348a_45d9214
 pipeline-aws:1.45
@@ -1436,7 +1436,7 @@ pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:245.v88f03631a_b_21
 pipeline-graph-view:712.v9ea_78cc1e8a_4
-pipeline-groovy-lib:776.vfee5327b_b_a_5b_
+pipeline-groovy-lib:787.ve2fef0efdca_6
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
 pipeline-input-step:540.v14b_100d754dd
@@ -1776,7 +1776,7 @@ stepcounter:2.0.0
 stoplightio-report:2.2.5
 strawboss:1.3
 strict-crumb-issuer:2.1.1
-structs:353.v261ea_40a_80fb_
+structs:362.va_b_695ef4fdf9
 subversion:1292.ve8cf25770ee3
 suite-test-groups-publisher:1.13
 summary_report:1.15
@@ -2012,7 +2012,7 @@ xpdev:1.0
 xray-connector:2.6.2
 xshell:325.v3fda_132b_2641
 xtrigger-api:1.2
-xunit:3.1.5
+xunit:3.1.6
 xvfb:1.2
 xvnc:1.28
 xygeni-sensor:1.4
