@@ -1,5 +1,5 @@
 script-security:1385.v7d2d9ec4d909
-structs:353.v261ea_40a_80fb_
+structs:362.va_b_695ef4fdf9
 scm-api:712.v8846fdd68c88
 workflow-step-api:710.v3e456cc85233
 mailer:522.va_995fa_cfb_8b_d
@@ -72,7 +72,7 @@ commons-lang3-api:3.19.0-104.v12125f33a_255
 ionicons-api:94.vcc3065403257
 instance-identity:203.v15e81a_1b_7a_38
 commons-text-api:1.14.0-194.v804a_dc3a_1b_d8
-pipeline-groovy-lib:776.vfee5327b_b_a_5b_
+pipeline-groovy-lib:787.ve2fef0efdca_6
 jjwt-api:0.11.5-120.v0268cf544b_89
 gradle:2.16.1149.v711b_998b_0532
 pipeline-github-lib:65.v203688e7727e
@@ -124,7 +124,7 @@ publish-over:0.22
 blueocean-web:1.27.23
 blueocean-pipeline-scm-api:1.27.23
 blueocean-jwt:1.27.23
-nodejs:1.6.5
+nodejs:1.6.6
 blueocean-rest-impl:1.27.23
 sse-gateway:1.28
 blueocean-pipeline-api-impl:1.27.23
@@ -201,7 +201,7 @@ aws-java-sdk-elasticbeanstalk:1.12.780-480.v4a_0819121a_9e
 simple-theme-plugin:211.v5424a_5510e47
 blueocean-jira:1.27.23
 jnr-posix-api:3.1.21-186.vb_7ec9b_23ce83
-gitlab-api:5.8.1-106.vef1de800710e
+gitlab-api:6.2.0-111.vf174d6b_8c12e
 analysis-model-api:13.11.0-924.v4b_39542a_4ff2
 aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
