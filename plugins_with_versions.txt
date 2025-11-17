@@ -60,7 +60,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:13.11.0-924.v4b_39542a_4ff2
+analysis-model-api:13.15.0-928.v63f6dc44cfd2
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -103,7 +103,7 @@ archived-artifact-url-viewer:1.1
 arestocats:2.1
 argus-notifier:1.1
 aribot:76.vf71346f9ea_d8
-armorcode-release-gate:28.v4f731c96b_5f9
+armorcode-release-gate:32.v4b_70595007db_
 artifact-diff-plugin:1.3
 artifact-manager-s3:951.v74e888e4e3f2
 artifact-promotion:0.5.2
@@ -260,7 +260,7 @@ bitbucket-scm-filter-jira-validator:0.1.0
 bitbucket-scm-trait-commit-skip:0.4.0
 bitbucket-webhooks:1.0.0
 bitkeeper:1.8
-bitwarden-credentials-provider:215.vff8230a_06dd8
+bitwarden-credentials-provider:243.v0dcb_22a_ce3da_
 black-duck-sigma:2024.10.1
 blackduck-coverity-on-polaris:2.0.1
 blackduck-detect:10.0.0
@@ -292,7 +292,7 @@ blueocean-rest:1.27.23
 blueocean-rest-impl:1.27.23
 blueocean-web:1.27.23
 bmc-cfa:185.v12e778cdcc5c
-bmc-change-manager-imstm:66.v12c841920f7d
+bmc-change-manager-imstm:81.v560fa_d742db_d
 bmc-rpd:1.1
 boot-clj:1.0.0
 bootstrap4-api:4.6.0-6
@@ -334,7 +334,7 @@ build-token-root:151.va_e52fe3215fc
 build-token-trigger:1.0.0
 build-user-vars-plugin:195.v8c35f9d5c3dc
 build-view-column:0.3
-build-with-parameters:76.v9382db_f78962
+build-with-parameters:81.ve4a_9c2499d9a
 buildcontext-capture:0.6
 buildgraph-view:1.8
 buildkite:1.22.v11fef623d49e
@@ -1415,7 +1415,7 @@ phabricator-plugin:2.1.5
 phing:0.13.3
 php-builtin-web-server:0.1
 piketec-tpt:9.7
-pipeline-agent-build-history:124.v7a_74f72d8447
+pipeline-agent-build-history:132.v6a_d3482e7ed6
 pipeline-aggregator-view:119.v4b_ec11953552
 pipeline-as-yaml:270.vc348a_45d9214
 pipeline-aws:1.45
