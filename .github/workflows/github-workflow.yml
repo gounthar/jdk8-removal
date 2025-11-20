@@ -43,4 +43,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add plugin_evolution.csv plugins_evolution.svg
           git commit -m "Update plugins evolution data and plot" -a || exit 0
+          git pull --rebase
           git push
