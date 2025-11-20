@@ -42,6 +42,26 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add plugin_evolution.csv plugins_evolution.svg
-          git commit -m "Update plugins evolution data and plot" -a || exit 0
-          git pull --rebase
-          git push
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update plugins evolution data and plot" -a
+
+            # Pull with rebase and retry push up to 3 times
+            for i in {1..3}; do
+              if git fetch origin main --prune && git pull --rebase --autostash origin main && git push origin HEAD:main; then
+                echo "Successfully pushed changes"
+                break
+              else
+                if [ $i -eq 3 ]; then
+                  echo "Failed to push after 3 attempts"
+                  exit 1
+                fi
+                echo "Push failed, retrying (attempt $i/3)..."
+                git rebase --abort 2>/dev/null || true
+                sleep 5
+              fi
+            done
+          fi
