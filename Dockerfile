@@ -15,17 +15,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     xmlstarlet \
     && rm -rf /var/lib/apt/lists/*  # Clean up to reduce the size of the image
 
-# Install GitHub CLI
+# Install GitHub CLI and Maven
 # First, add the GitHub CLI Debian repository's GPG key
 RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
     && chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
     && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" > /etc/apt/sources.list.d/github-cli.list \
     && apt-get update \
-    && apt-get install -y --no-install-recommends gh \
+    && apt-get install -y --no-install-recommends gh maven \
     && rm -rf /var/lib/apt/lists/*
-
-# Install Maven
-RUN apt-get update && apt-get install -y maven
 
 # Add the 'll' alias for 'ls -artl' to the .bashrc file
 # This makes the 'll' command available in every new bash shell
@@ -44,9 +41,10 @@ WORKDIR /scripts
 # Install Python dependencies inside an isolated virtual environment (PEP 668 compliant)
 RUN python3 -m venv /opt/venv \
     && /opt/venv/bin/pip install --upgrade pip \
-    && /opt/venv/bin/pip install -r requirements.txt \
-    && ln -s /opt/venv/bin/pip /usr/local/bin/pip \
-    && ln -s /opt/venv/bin/python /usr/local/bin/python
+    && /opt/venv/bin/pip install -r requirements.txt
+
+# Add virtual environment to PATH
+ENV PATH="/opt/venv/bin:$PATH"
 
 # Make all shell scripts in the /scripts directory executable
 RUN chmod +x *.sh
