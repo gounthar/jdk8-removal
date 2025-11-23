@@ -1,5 +1,5 @@
 # Use the minimal version of Debian as the base image
-FROM debian:bookworm-20251103-slim
+FROM debian:bookworm-20251117-slim
 
 # Install necessary tools such as parallel, jq, git, curl, gnupg2, software-properties-common, and Python
 RUN apt-get update && apt-get install -y --no-install-recommends \
