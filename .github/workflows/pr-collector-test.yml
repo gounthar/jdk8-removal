@@ -28,7 +28,7 @@ jobs:
           echo "Actor: ${{ github.actor }}"
 
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.PAT_TOKEN || github.token }}  # Use PAT if available, fallback to default
           fetch-depth: 1
