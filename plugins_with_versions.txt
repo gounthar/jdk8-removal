@@ -705,7 +705,7 @@ enhanced-metrics:1.6
 enhanced-old-build-discarder:1.4
 envfile:43.v2644436e7d71
 envinject:2.926.v69c9b_3896a_96
-envinject-api:1.235.va_14c74f8f487
+envinject-api:1.236.v35fd4d7eb_515
 environment-dashboard:1.1.10
 environment-filter-utils:1.17.vc0054371f4a_f
 environment-labels-setter:1.1
@@ -902,7 +902,7 @@ gson-api:2.13.2-173.va_a_092315913c
 h2-api:11.1.4.199-36.vb_ee07e965744
 habitat:0.6.5
 hadoop:1.4
-handy-uri-templates-2-api:2.1.8-36.v85e4cb_234a_13
+handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 harbor:50.v6d91243ee335
 harvest:0.5.1
 hashicorp-vault-pipeline:1.4
@@ -1183,7 +1183,7 @@ mailcommander:1.0.0
 mailer:522.va_995fa_cfb_8b_d
 mailmap-resolver:0.2
 maintenance-jobs-scheduler:0.1.0
-manage-permission:1.0.1
+manage-permission:20.v5e6fa_97fa_0fe
 managed-scripts:1.5.6
 mantis:0.26
 mapdb-api:1.0.9-44.va_1e1310c9118
@@ -1416,7 +1416,7 @@ phabricator-plugin:2.1.5
 phing:0.13.3
 php-builtin-web-server:0.1
 piketec-tpt:9.7
-pipeline-agent-build-history:136.va_346f7b_81f3f
+pipeline-agent-build-history:138.vc85ee72b_cb_4c
 pipeline-aggregator-view:119.v4b_ec11953552
 pipeline-as-yaml:270.vc348a_45d9214
 pipeline-aws:1.45
