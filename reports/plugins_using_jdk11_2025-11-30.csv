@@ -1,0 +1,79 @@
+Plugin,URL
+Accurev Plugin,https://github.com/jenkinsci/accurev-plugin
+Agent Status Plugin,https://github.com/jenkinsci/agent-status-plugin
+Any Buildstep Plugin,https://github.com/jenkinsci/any-buildstep-plugin
+Anything Goes Formatter Plugin,https://github.com/jenkinsci/anything-goes-formatter-plugin
+Async Http Client Plugin,https://github.com/jenkinsci/async-http-client-plugin
+Aws Beanstalk Publisher Plugin,https://github.com/jenkinsci/aws-beanstalk-publisher-plugin
+Azure Publishersettings Credentials Plugin,https://github.com/jenkinsci/azure-publishersettings-credentials-plugin
+Backup Jobs Plugin,https://github.com/jenkinsci/backup-jobs-plugin
+Bigpanda Plugin,https://github.com/jenkinsci/bigpanda-plugin
+Bootstraped Multi Test Results Report Plugin,https://github.com/jenkinsci/bootstraped-multi-test-results-report-plugin
+Build Alias Setter Plugin,https://github.com/jenkinsci/build-alias-setter-plugin
+Build Keeper Plugin,https://github.com/jenkinsci/build-keeper-plugin
+Cloverphp Plugin,https://github.com/jenkinsci/cloverphp-plugin
+Configure Job Column Plugin,https://github.com/jenkinsci/configure-job-column-plugin
+Confluence Publisher Plugin,https://github.com/jenkinsci/confluence-publisher-plugin
+Console Tail Plugin,https://github.com/jenkinsci/console-tail-plugin
+Copy Project Link Plugin,https://github.com/jenkinsci/copy-project-link-plugin
+Cppcheck Plugin,https://github.com/jenkinsci/cppcheck-plugin
+Create Fingerprint Plugin,https://github.com/jenkinsci/create-fingerprint-plugin
+Crowd2 Plugin,https://github.com/jenkinsci/crowd2-plugin
+Cucumber Slack Notifier Plugin,https://github.com/jenkinsci/cucumber-slack-notifier-plugin
+Datadog Plugin,https://github.com/jenkinsci/datadog-plugin
+Delphix Plugin,https://github.com/jenkinsci/delphix-plugin
+Deployed On Column Plugin,https://github.com/jenkinsci/deployed-on-column-plugin
+Deployer Framework Plugin,https://github.com/jenkinsci/deployer-framework-plugin
+Deployment Notification Plugin,https://github.com/jenkinsci/deployment-notification-plugin
+Distfork Plugin,https://github.com/jenkinsci/distfork-plugin
+Doclinks Plugin,https://github.com/jenkinsci/doclinks-plugin
+Downstream Buildview Plugin,https://github.com/jenkinsci/downstream-buildview-plugin
+Downstream Ext Plugin,https://github.com/jenkinsci/downstream-ext-plugin
+Doxygen Plugin,https://github.com/jenkinsci/doxygen-plugin
+Dumpling Plugin,https://github.com/jenkinsci/dumpling-plugin
+Enhanced Old Build Discarder Plugin,https://github.com/jenkinsci/enhanced-old-build-discarder-plugin
+Envfile Plugin,https://github.com/jenkinsci/envfile-plugin
+Envinject Lib,https://github.com/jenkinsci/envinject-lib
+Exclusion Plugin,https://github.com/jenkinsci/exclusion-plugin
+Extras Executable War,https://github.com/jenkinsci/extras-executable-war
+Fail The Build Plugin,https://github.com/jenkinsci/fail-the-build-plugin
+Fortify On Demand Uploader Plugin,https://github.com/jenkinsci/fortify-on-demand-uploader-plugin
+Global Post Script Plugin,https://github.com/jenkinsci/global-post-script-plugin
+Google Play Android Publisher Plugin,https://github.com/jenkinsci/google-play-android-publisher-plugin
+Groovy Sandbox,https://github.com/jenkinsci/groovy-sandbox
+Hsts Filter Plugin,https://github.com/jenkinsci/hsts-filter-plugin
+Instance Identity Plugin,https://github.com/jenkinsci/instance-identity-plugin
+Jdepend Plugin,https://github.com/jenkinsci/jdepend-plugin
+Jenkins Cloudformation Plugin,https://github.com/jenkinsci/jenkins-cloudformation-plugin
+Jqs Monitoring Plugin,https://github.com/jenkinsci/jqs-monitoring-plugin
+Kpp Management Plugin,https://github.com/jenkinsci/kpp-management-plugin
+Lib Jenkins Maven Embedder,https://github.com/jenkinsci/lib-jenkins-maven-embedder
+Liquibase Runner Plugin,https://github.com/jenkinsci/liquibase-runner-plugin
+Matrix Combinations Plugin,https://github.com/jenkinsci/matrix-combinations-plugin
+Maven Interceptors,https://github.com/jenkinsci/maven-interceptors
+Maven Invoker Plugin,https://github.com/jenkinsci/maven-invoker-plugin
+Maven Metadata Plugin,https://github.com/jenkinsci/maven-metadata-plugin
+Maven Repo Cleaner Plugin,https://github.com/jenkinsci/maven-repo-cleaner-plugin
+Maven Repository Plugin,https://github.com/jenkinsci/maven-repository-plugin
+Mstestrunner Plugin,https://github.com/jenkinsci/mstestrunner-plugin
+Nant Plugin,https://github.com/jenkinsci/nant-plugin
+P4 Plugin,https://github.com/jenkinsci/p4-plugin
+Performance Signature Dynatrace Plugin,https://github.com/jenkinsci/performance-signature-dynatrace-plugin
+Proc Cleaner Plugin,https://github.com/jenkinsci/proc-cleaner-plugin
+Progress Bar Column Plugin,https://github.com/jenkinsci/progress-bar-column-plugin
+Project Stats Plugin,https://github.com/jenkinsci/project-stats-plugin
+Radargun Plugin,https://github.com/jenkinsci/radargun-plugin
+Release Plugin,https://github.com/jenkinsci/release-plugin
+Remote Jobs View,https://github.com/jenkinsci/remote-jobs-view
+Scoverage Plugin,https://github.com/jenkinsci/scoverage-plugin
+Sloccount Plugin,https://github.com/jenkinsci/sloccount-plugin
+Ssh2easy Plugin,https://github.com/jenkinsci/ssh2easy-plugin
+Sumologic Publisher Plugin,https://github.com/jenkinsci/sumologic-publisher-plugin
+Svn Revert Plugin,https://github.com/jenkinsci/svn-revert-plugin
+Template Workflows Plugin,https://github.com/jenkinsci/template-workflows-plugin
+Testcomplete Plugin,https://github.com/jenkinsci/testcomplete-plugin
+Text Finder Run Condition Plugin,https://github.com/jenkinsci/text-finder-run-condition-plugin
+Violation Comments To Stash Plugin,https://github.com/jenkinsci/violation-comments-to-stash-plugin
+Visualworks Store Plugin,https://github.com/jenkinsci/visualworks-store-plugin
+Windows Exe Runner Plugin,https://github.com/jenkinsci/windows-exe-runner-plugin
+Windows Slaves Plugin,https://github.com/jenkinsci/windows-slaves-plugin

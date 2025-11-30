@@ -1,0 +1,155 @@
+Plugin,URL
+Adaptive Disconnector Plugin,https://github.com/jenkinsci/adaptive-disconnector-plugin
+All Changes Plugin,https://github.com/jenkinsci/all-changes-plugin
+Analysis Collector Plugin,https://github.com/jenkinsci/analysis-collector-plugin
+Analysis Core Plugin,https://github.com/jenkinsci/analysis-core-plugin
+Analysis Test Plugin,https://github.com/jenkinsci/analysis-test-plugin
+Android Lint Plugin,https://github.com/jenkinsci/android-lint-plugin
+Artifact Diff Plugin,https://github.com/jenkinsci/artifact-diff-plugin
+Aws Codedeploy Plugin,https://github.com/jenkinsci/aws-codedeploy-plugin
+Aws Device Farm Plugin,https://github.com/jenkinsci/aws-device-farm-plugin
+Backlog Plugin,https://github.com/jenkinsci/backlog-plugin
+Beaker Builder Plugin,https://github.com/jenkinsci/beaker-builder-plugin
+Bitbucket Build Status Notifier Plugin,https://github.com/jenkinsci/bitbucket-build-status-notifier-plugin
+Bitbucket Pullrequest Builder Plugin,https://github.com/jenkinsci/bitbucket-pullrequest-builder-plugin
+Build Publisher Plugin,https://github.com/jenkinsci/build-publisher-plugin
+Build View Column Plugin,https://github.com/jenkinsci/build-view-column-plugin
+Buildgraph View Plugin,https://github.com/jenkinsci/buildgraph-view-plugin
+Ca Apm Plugin,https://github.com/jenkinsci/ca-apm-plugin
+Changes Since Last Success Plugin,https://github.com/jenkinsci/changes-since-last-success-plugin
+Chatter Notifier Plugin,https://github.com/jenkinsci/chatter-notifier-plugin
+Chatwork Plugin,https://github.com/jenkinsci/chatwork-plugin
+Checkstyle Plugin,https://github.com/jenkinsci/checkstyle-plugin
+Chef Identity Plugin,https://github.com/jenkinsci/chef-identity-plugin
+Clearcase Ucm Plugin,https://github.com/jenkinsci/clearcase-ucm-plugin
+Cli Commander Plugin,https://github.com/jenkinsci/cli-commander-plugin
+Cmakebuilder Plugin,https://github.com/jenkinsci/cmakebuilder-plugin
+Codedx Plugin,https://github.com/jenkinsci/codedx-plugin
+Compress Buildlog Plugin,https://github.com/jenkinsci/compress-buildlog-plugin
+Computer Queue Plugin,https://github.com/jenkinsci/computer-queue-plugin
+Copy To Slave Plugin,https://github.com/jenkinsci/copy-to-slave-plugin
+Couchdb Statistics Plugin,https://github.com/jenkinsci/couchdb-statistics-plugin
+Countjobs Viewstabbar Plugin,https://github.com/jenkinsci/countjobs-viewstabbar-plugin
+Cppncss Plugin,https://github.com/jenkinsci/cppncss-plugin
+Crx Content Package Deployer Plugin,https://github.com/jenkinsci/crx-content-package-deployer-plugin
+Cucumber Testresult Plugin,https://github.com/jenkinsci/cucumber-testresult-plugin
+Custom Tools Plugin,https://github.com/jenkinsci/custom-tools-plugin
+Custom View Tabs Plugin,https://github.com/jenkinsci/custom-view-tabs-plugin
+Cygpath Plugin,https://github.com/jenkinsci/cygpath-plugin
+Cygwin Process Killer Plugin,https://github.com/jenkinsci/cygwin-process-killer-plugin
+Description Column Plugin,https://github.com/jenkinsci/description-column-plugin
+Docker Build Publish Plugin,https://github.com/jenkinsci/docker-build-publish-plugin
+Docker Custom Build Environment Plugin,https://github.com/jenkinsci/docker-custom-build-environment-plugin
+Docker Slaves Plugin,https://github.com/jenkinsci/docker-slaves-plugin
+Dry Plugin,https://github.com/jenkinsci/dry-plugin
+Dynamic Axis Plugin,https://github.com/jenkinsci/dynamic-axis-plugin
+Dynamic Search View Plugin,https://github.com/jenkinsci/dynamic-search-view-plugin
+Ec2 Plugin,https://github.com/jenkinsci/ec2-plugin
+Emma Plugin,https://github.com/jenkinsci/emma-plugin
+Environment Dashboard Plugin,https://github.com/jenkinsci/environment-dashboard-plugin
+Environment Labels Setter Plugin,https://github.com/jenkinsci/environment-labels-setter-plugin
+Findbugs Plugin,https://github.com/jenkinsci/findbugs-plugin
+Fitnesse Plugin,https://github.com/jenkinsci/fitnesse-plugin
+Form Element Path Plugin,https://github.com/jenkinsci/form-element-path-plugin
+Fortify Cloudscan Plugin,https://github.com/jenkinsci/fortify-cloudscan-plugin
+Gcloud Sdk Plugin,https://github.com/jenkinsci/gcloud-sdk-plugin
+Ghprb Plugin,https://github.com/jenkinsci/ghprb-plugin
+Git Tag Message Plugin,https://github.com/jenkinsci/git-tag-message-plugin
+Golang Plugin,https://github.com/jenkinsci/golang-plugin
+Greenballs Plugin,https://github.com/jenkinsci/greenballs-plugin
+Hipchat Plugin,https://github.com/jenkinsci/hipchat-plugin
+Hockeyapp Plugin,https://github.com/jenkinsci/hockeyapp-plugin
+Html5 Notifier Plugin,https://github.com/jenkinsci/html5-notifier-plugin
+Hue Light Plugin,https://github.com/jenkinsci/hue-light-plugin
+Icon Shim Plugin,https://github.com/jenkinsci/icon-shim-plugin
+Ironmq Notifier Plugin,https://github.com/jenkinsci/ironmq-notifier-plugin
+Jackson Databind Plugin,https://github.com/jenkinsci/jackson-databind-plugin
+Javatest Report Plugin,https://github.com/jenkinsci/javatest-report-plugin
+Jenkinslint Plugin,https://github.com/jenkinsci/jenkinslint-plugin
+Jira Issue Updater Plugin,https://github.com/jenkinsci/jira-issue-updater-plugin
+Job Config History Plugin,https://github.com/jenkinsci/job-config-history-plugin
+Job Parameter Summary Plugin,https://github.com/jenkinsci/job-parameter-summary-plugin
+Jobcopy Builder Plugin,https://github.com/jenkinsci/jobcopy-builder-plugin
+Jobtype Column Plugin,https://github.com/jenkinsci/jobtype-column-plugin
+Jquery Ui Plugin,https://github.com/jenkinsci/jquery-ui-plugin
+Keyboard Shortcuts Plugin,https://github.com/jenkinsci/keyboard-shortcuts-plugin
+Klaros Testmanagement Plugin,https://github.com/jenkinsci/klaros-testmanagement-plugin
+Label Linked Jobs Plugin,https://github.com/jenkinsci/label-linked-jobs-plugin
+Launchd Slave Installer Module,https://github.com/jenkinsci/launchd-slave-installer-module
+Linenumbers Plugin,https://github.com/jenkinsci/linenumbers-plugin
+Literate Plugin,https://github.com/jenkinsci/literate-plugin
+Log Command Plugin,https://github.com/jenkinsci/log-command-plugin
+Logfilesizechecker Plugin,https://github.com/jenkinsci/logfilesizechecker-plugin
+Matrix Reloaded Plugin,https://github.com/jenkinsci/matrix-reloaded-plugin
+Matrix Sorter Plugin,https://github.com/jenkinsci/Matrix-sorter-plugin
+Modernstatus Plugin,https://github.com/jenkinsci/modernstatus-plugin
+Multi Slave Config Plugin,https://github.com/jenkinsci/multi-slave-config-plugin
+Neoload Plugin,https://github.com/jenkinsci/neoload-plugin
+Newrelic Deployment Notifier Plugin,https://github.com/jenkinsci/newrelic-deployment-notifier-plugin
+Nodenamecolumn Plugin,https://github.com/jenkinsci/nodenamecolumn-plugin
+Nuget Plugin,https://github.com/jenkinsci/nuget-plugin
+Octoperf Plugin,https://github.com/jenkinsci/octoperf-plugin
+Offlineonfailure Plugin,https://github.com/jenkinsci/offlineonfailure-plugin
+Ownership Plugin,https://github.com/jenkinsci/ownership-plugin
+Packer Plugin,https://github.com/jenkinsci/packer-plugin
+Parameterized Scheduler Plugin,https://github.com/jenkinsci/parameterized-scheduler-plugin
+Periodic Reincarnation Plugin,https://github.com/jenkinsci/periodic-reincarnation-plugin
+Pmd Plugin,https://github.com/jenkinsci/pmd-plugin
+Project Build Times Plugin,https://github.com/jenkinsci/project-build-times-plugin
+Project Description Setter Plugin,https://github.com/jenkinsci/project-description-setter-plugin
+Publish Over Dropbox Plugin,https://github.com/jenkinsci/publish-over-dropbox-plugin
+Pvcs_scm Plugin,https://github.com/jenkinsci/pvcs_scm-plugin
+Python Plugin,https://github.com/jenkinsci/python-plugin
+Qftest Plugin,https://github.com/jenkinsci/qftest-plugin
+Queue Cleanup Plugin,https://github.com/jenkinsci/queue-cleanup-plugin
+Rabbitmq Build Trigger Plugin,https://github.com/jenkinsci/rabbitmq-build-trigger-plugin
+Rabbitmq Consumer Plugin,https://github.com/jenkinsci/rabbitmq-consumer-plugin
+Rake Plugin,https://github.com/jenkinsci/rake-plugin
+Random Job Builder Plugin,https://github.com/jenkinsci/random-job-builder-plugin
+Rapiddeploy Plugin,https://github.com/jenkinsci/rapiddeploy-plugin
+Read Only Configurations Plugin,https://github.com/jenkinsci/read-only-configurations-plugin
+Redmine Plugin,https://github.com/jenkinsci/redmine-plugin
+Remote Terminal Access Plugin,https://github.com/jenkinsci/remote-terminal-access-plugin
+Repo Plugin,https://github.com/jenkinsci/repo-plugin
+Repository Connector Plugin,https://github.com/jenkinsci/repository-connector-plugin
+Rhnpush Plugin,https://github.com/jenkinsci/rhnpush-plugin
+Rich Text Publisher Plugin,https://github.com/jenkinsci/rich-text-publisher-plugin
+Rpmsign Plugin,https://github.com/jenkinsci/rpmsign-plugin
+Ruby Runtime Plugin,https://github.com/jenkinsci/ruby-runtime-plugin
+Rubymetrics Plugin,https://github.com/jenkinsci/rubymetrics-plugin
+Run Condition Extras Plugin,https://github.com/jenkinsci/run-condition-extras-plugin
+Rundeck Plugin,https://github.com/jenkinsci/rundeck-plugin
+Saltstack Plugin,https://github.com/jenkinsci/saltstack-plugin
+Scripttrigger Plugin,https://github.com/jenkinsci/scripttrigger-plugin
+Selenium Plugin,https://github.com/jenkinsci/selenium-plugin
+Semantic Versioning Plugin,https://github.com/jenkinsci/semantic-versioning-plugin
+Shiningpanda Plugin,https://github.com/jenkinsci/shiningpanda-plugin
+Short Workspace Path Plugin,https://github.com/jenkinsci/short-workspace-path-plugin
+Skytap Cloud Plugin,https://github.com/jenkinsci/skytap-cloud-plugin
+Slave Installer Module,https://github.com/jenkinsci/slave-installer-module
+Smartfrog Plugin,https://github.com/jenkinsci/smartfrog-plugin
+Sonargraph Plugin,https://github.com/jenkinsci/sonargraph-plugin
+Sounds Plugin,https://github.com/jenkinsci/sounds-plugin
+Ssh Cli Auth Module,https://github.com/jenkinsci/ssh-cli-auth-module
+Stash Pullrequest Builder Plugin,https://github.com/jenkinsci/stash-pullrequest-builder-plugin
+Suppress Stack Trace Plugin,https://github.com/jenkinsci/suppress-stack-trace-plugin
+Systemd Slave Installer Module,https://github.com/jenkinsci/systemd-slave-installer-module
+Tag Profiler Plugin,https://github.com/jenkinsci/tag-profiler-plugin
+Tasks Plugin,https://github.com/jenkinsci/tasks-plugin
+Testlink Plugin,https://github.com/jenkinsci/testlink-plugin
+Tfs Plugin,https://github.com/jenkinsci/tfs-plugin
+Tinfoil Scan Plugin,https://github.com/jenkinsci/tinfoil-scan-plugin
+Tmpcleaner Plugin,https://github.com/jenkinsci/tmpcleaner-plugin
+Toolenv Plugin,https://github.com/jenkinsci/toolenv-plugin
+Translation Plugin,https://github.com/jenkinsci/translation-plugin
+Typetalk Plugin,https://github.com/jenkinsci/typetalk-plugin
+Upstart Slave Installer Module,https://github.com/jenkinsci/upstart-slave-installer-module
+Upstream Downstream View Plugin,https://github.com/jenkinsci/upstream-downstream-view-plugin
+Uptime Plugin,https://github.com/jenkinsci/uptime-plugin
+Violation Comments To Github Plugin,https://github.com/jenkinsci/violation-comments-to-github-plugin
+Vstestrunner Plugin,https://github.com/jenkinsci/vstestrunner-plugin
+Weblogic Deployer Plugin,https://github.com/jenkinsci/weblogic-deployer-plugin
+Windows Slave Installer Module,https://github.com/jenkinsci/windows-slave-installer-module
+Wsclean Plugin,https://github.com/jenkinsci/wsclean-plugin
+Xcode Plugin,https://github.com/jenkinsci/xcode-plugin
+Xvfb Plugin,https://github.com/jenkinsci/xvfb-plugin
