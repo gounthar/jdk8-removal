@@ -22,7 +22,7 @@ cloudbees-folder:6.1073.va_7888eb_dd514
 token-macro:477.vd4f0dc3cb_cf1
 workflow-job:1559.va_a_533730b_ea_d
 durable-task:635.v3733cef34b_5e
-workflow-cps:4218.vff679a_5c0f3a_
+workflow-cps:4238.va_6fb_65c1f699
 workflow-durable-task-step:1464.v2d3f5c68f84c
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 branch-api:2.1268.v044a_87612da_8
@@ -156,7 +156,7 @@ gitlab-plugin:1.9.10
 commons-compress-api:1.28.0-2
 envinject:2.926.v69c9b_3896a_96
 prism-api:1.30.0-630.va_e19d17f83b_0
-sonar:2.18
+sonar:2.18.1
 docker-java-api:3.7.0-133.v93b_8fb_c17a_77
 ansicolor:1.0.6
 rebuild:338.va_0a_b_50e29397
