@@ -2,7 +2,7 @@ script-security:1385.v7d2d9ec4d909
 structs:362.va_b_695ef4fdf9
 scm-api:724.v7d839074eb_5c
 workflow-step-api:710.v3e456cc85233
-mailer:522.va_995fa_cfb_8b_d
+mailer:525.v2458b_d8a_1a_71
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
 credentials:1453.v9b_a_29777a_b_fd
 display-url-api:2.217.va_6b_de84cc74b_
@@ -17,7 +17,7 @@ junit:1380.v491ff054cd35
 git-client:6.4.0
 credentials-binding:702.vfe613e537e88
 matrix-project:870.v9db_fcfc2f45b_
-git:5.8.0
+git:5.8.1
 cloudbees-folder:6.1073.va_7888eb_dd514
 token-macro:477.vd4f0dc3cb_cf1
 workflow-job:1559.va_a_533730b_ea_d
@@ -96,13 +96,13 @@ maven-plugin:3.27
 docker-commons:457.v0f62a_94f11a_3
 git-server:137.ve0060b_432302
 theme-manager:327.v780d7096ec29
-config-file-provider:1002.v93e06b_792d44
+config-file-provider:1006.vc7366c201f57
 dark-theme:574.va_19f05d54df5
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
 lockable-resources:1438.v3c0f8c9e2060
 pipeline-graph-view:712.v9ea_78cc1e8a_4
-role-strategy:840.v206ff7f7312e
+role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 mapdb-api:1.0.9-44.va_1e1310c9118
@@ -241,7 +241,7 @@ h2-api:11.1.4.199-36.vb_ee07e965744
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
-coverage:2.3036.v90d485b_810c6
+coverage:2.3054.ve1ff7b_a_a_123b_
 allure-jenkins-plugin:2.33.0
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e
