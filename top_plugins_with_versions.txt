@@ -10,7 +10,7 @@ ssh-credentials:361.vb_f6760818e8c
 workflow-api:1398.v67030756d3fb_
 workflow-scm-step:466.va_d69e602552b_
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-workflow-support:1004.veee3a_d67cdb_9
+workflow-support:1010.vb_b_39488a_9841
 jackson2-api:2.20.1-423.v13951f6b_6532
 plain-credentials:199.v9f8e1f741799
 junit:1380.v491ff054cd35
@@ -21,12 +21,12 @@ git:5.8.1
 cloudbees-folder:6.1073.va_7888eb_dd514
 token-macro:477.vd4f0dc3cb_cf1
 workflow-job:1559.va_a_533730b_ea_d
-durable-task:635.v3733cef34b_5e
+durable-task:639.vefb_3d8372f6d
 workflow-cps:4238.va_6fb_65c1f699
 workflow-durable-task-step:1464.v2d3f5c68f84c
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 branch-api:2.1268.v044a_87612da_8
-trilead-api:2.209.v0e69b_c43c245
+trilead-api:2.284.v1974ea_324382
 workflow-basic-steps:1098.v808b_fd7f8cf4
 pipeline-stage-step:322.vecffa_99f371c
 pipeline-input-step:540.v14b_100d754dd
@@ -101,7 +101,7 @@ dark-theme:574.va_19f05d54df5
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
 lockable-resources:1438.v3c0f8c9e2060
-pipeline-graph-view:712.v9ea_78cc1e8a_4
+pipeline-graph-view:724.v41764e7b_3176
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
@@ -202,7 +202,7 @@ simple-theme-plugin:211.v5424a_5510e47
 blueocean-jira:1.27.25
 jnr-posix-api:3.1.21-186.vb_7ec9b_23ce83
 gitlab-api:6.2.0-111.vf174d6b_8c12e
-analysis-model-api:13.15.0-928.v63f6dc44cfd2
+analysis-model-api:13.17.0-931.v730d8659ea_9c
 aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
@@ -242,7 +242,7 @@ aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
 coverage:2.3054.ve1ff7b_a_a_123b_
-allure-jenkins-plugin:2.33.0
+allure-jenkins-plugin:2.34.0
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-cloudfront:1.12.780-480.v4a_0819121a_9e
