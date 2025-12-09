@@ -71,7 +71,7 @@ build-timeout:1.38
 commons-lang3-api:3.19.0-104.v12125f33a_255
 ionicons-api:94.vcc3065403257
 instance-identity:203.v15e81a_1b_7a_38
-commons-text-api:1.14.0-194.v804a_dc3a_1b_d8
+commons-text-api:1.15.0-210.v7480a_da_70b_9e
 pipeline-groovy-lib:787.ve2fef0efdca_6
 jjwt-api:0.11.5-120.v0268cf544b_89
 gradle:2.16.1149.v711b_998b_0532
@@ -152,7 +152,7 @@ blueocean:1.27.25
 jquery-detached:1.2.1
 conditional-buildstep:1.5.0
 envinject-api:1.236.v35fd4d7eb_515
-gitlab-plugin:1.9.10
+gitlab-plugin:1.9.11
 commons-compress-api:1.28.0-2
 envinject:2.926.v69c9b_3896a_96
 prism-api:1.30.0-630.va_e19d17f83b_0
