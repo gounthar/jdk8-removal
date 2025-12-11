@@ -14,7 +14,7 @@ workflow-support:1010.vb_b_39488a_9841
 jackson2-api:2.20.1-423.v13951f6b_6532
 plain-credentials:199.v9f8e1f741799
 junit:1380.v491ff054cd35
-git-client:6.4.0
+git-client:6.4.1
 credentials-binding:702.vfe613e537e88
 matrix-project:870.v9db_fcfc2f45b_
 git:5.8.1
@@ -112,7 +112,7 @@ jersey2-api:2.47-165.ve7809a_3e87e0
 favorite:2.253.v9b_413168133b_
 pubsub-light:1.19
 external-monitor-job:223.vb_fddcf42c9b_3
-cloudbees-bitbucket-branch-source:937.2.1
+cloudbees-bitbucket-branch-source:937.2.2
 blueocean-commons:1.27.25
 jenkins-design-language:1.27.25
 blueocean-rest:1.27.25
@@ -241,7 +241,7 @@ h2-api:11.1.4.199-36.vb_ee07e965744
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
-coverage:2.3054.ve1ff7b_a_a_123b_
+coverage:2.3060.v035a_5557cdb_c
 allure-jenkins-plugin:2.34.0
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e

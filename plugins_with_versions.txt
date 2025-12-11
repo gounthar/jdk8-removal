@@ -405,7 +405,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:937.2.1
+cloudbees-bitbucket-branch-source:937.2.2
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:256.v20ec4eb_884f1
@@ -513,7 +513,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.3054.ve1ff7b_a_a_123b_
+coverage:2.3060.v035a_5557cdb_c
 coverage-badges-extension:197.vb_390173d00ec
 coverity:1.11.4
 cppcheck:1.26
@@ -809,7 +809,7 @@ git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
-git-client:6.4.0
+git-client:6.4.1
 git-forensics:3.2138.vf25ea_d549e33
 git-parameter:460.v71e7583a_c099
 git-prebuildmerge-trait:1.0
@@ -824,7 +824,7 @@ gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
 gitea-checks:601.607.vcea_0049b_27e5
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1257.v94e12c8783d7
+gitee:1258.v1a_3914c28c90
 gitflow:1.0.1
 github:1.45.0
 github-api:1.330-492.v3941a_032db_2a_
@@ -840,7 +840,7 @@ github-oauth:651.v135e939e8b_60
 github-organization-folder:1.6
 github-pr-comment-build:134.ve7ff0b_719821
 github-pr-coverage-status:2.2.0
-github-pullrequest:0.7.2
+github-pullrequest:0.7.3
 github-release:24.vde1f4a_943fe4
 github-scm-filter-aged-refs:59.vc6b_39c26988c
 github-scm-filter-jira-validator:0.1.0
