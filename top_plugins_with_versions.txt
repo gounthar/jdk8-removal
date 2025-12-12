@@ -156,7 +156,7 @@ gitlab-plugin:1.9.11
 commons-compress-api:1.28.0-2
 envinject:2.926.v69c9b_3896a_96
 prism-api:1.30.0-630.va_e19d17f83b_0
-sonar:2.18.1
+sonar:2.18.2
 docker-java-api:3.7.0-133.v93b_8fb_c17a_77
 ansicolor:1.0.6
 rebuild:338.va_0a_b_50e29397
@@ -215,7 +215,7 @@ aws-java-sdk-ssm:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-codebuild:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-logs:1.12.780-480.v4a_0819121a_9e
 artifactory:4.0.8
-badge:2.12
+badge:2.560.v5135054c2e76
 extended-read-permission:68.vd270568a_7520
 throttle-concurrents:2.18
 monitoring:2.5.0
