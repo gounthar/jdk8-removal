@@ -33,7 +33,7 @@ acunetix:1.2.14
 acunetix-360-scan:2.1.19
 adaptive-disconnector:0.2
 add-changes-to-build-changelog:21.v537f074cf2cc
-additional-identities-plugin:180.175.v18cd5cd0cb_a_f
+additional-identities-plugin:182.184.vef59cb_98ce2d
 additional-metrics:207.v0407e7fe201b_
 admin-params:1.0.0
 adobe-cloud-manager:43.v4560e7fa191c
@@ -110,7 +110,7 @@ artifact-promotion:0.5.2
 artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
 artifactory:4.0.8
-artifactory-artifact-manager:264.v9f7d245cf77c
+artifactory-artifact-manager:275.v941a_4e4a_7df3
 artifactory-client-api:2.19.0-116.vc6e7efff0e6b_
 artifactz:1.4.0-53.v7537f8b_3f9b_e
 asakusa-satellite-plugin:0.1.1
@@ -231,7 +231,7 @@ azure-vmss:0.2.4
 backlog:2.7
 backup:1.6.1
 backup-interrupt-plugin:17.va_b_50ca_9df8d0
-badge:2.560.v5135054c2e76
+badge:2.562.vc3c0b_6925377
 basic-branch-build-strategies:275.vde2351b_4a_58b_
 batch-task:1.398.v550a_8e8ca_e5f
 bazaar:1.22
@@ -545,7 +545,7 @@ custom-job-icon:0.2
 custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
-customizable-header:255.v3a_5dec1a_b_e28
+customizable-header:257.v1c5c2d5c0594
 customize-build-now:45.v783928138223
 customized-build-message:1.1
 cvs:483.v69a_98dfd973b_
@@ -809,7 +809,7 @@ git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
-git-client:6.4.1
+git-client:6.4.2
 git-forensics:3.2138.vf25ea_d549e33
 git-parameter:460.v71e7583a_c099
 git-prebuildmerge-trait:1.0
@@ -822,7 +822,7 @@ gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
-gitea-checks:601.607.vcea_0049b_27e5
+gitea-checks:602.615.veed470de4039
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1259.va_7b_c7a_46a_79d
 gitflow:1.0.1
@@ -889,7 +889,7 @@ gradle-daemon:0.1.0
 gradle-repo:1.0.1
 graphiteIntegrator:1.2
 graphql-server:0.0.5
-gravatar:210.201.vf3640e8d8447
+gravatar:213.212.v09426a_2eb_553
 greenballs:1.15.1
 groovy:497.v7b_061a_a_de65d
 groovy-events-listener-plugin:2.291.vcc69e39f0761
@@ -1331,6 +1331,7 @@ octopusdeploy:4.0.2
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
 oic-auth:4.626.ve5a_d9f26c051
+oidc-backchannel-logout:11.v5e233b_cdf252
 oidc-provider:111.v29fd614b_3617
 okhttp-api:4.12.0-195.vc02552c04ffd
 oki-docki:1.1
@@ -1647,7 +1648,7 @@ scm-sync-configuration:0.0.10
 scm2job:2.5
 scmskip:82.v24fc1c6f381b_
 scons:0.4
-scoring-load-balancer:230.226.v4b_6f3c1b_b_a_f8
+scoring-load-balancer:232.235.vb_e4a_db_a_7095a_
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
@@ -1733,7 +1734,7 @@ snakeyaml-api:2.5-143.v93b_c004f89de
 snowglobe:0.4.1
 snsnotify:2.1
 snyk-security-scanner:5.0.1
-soapui-pro-functional-testing:1.12
+soapui-pro-functional-testing:1.13
 sofy-ai:1.0.3
 solarized-theme:28.vfe25223f14fe
 sonar:2.18.2
@@ -1761,7 +1762,7 @@ ssh:158.ve2a_e90fb_7319
 ssh-agent:386.v36cc0c7582f0
 ssh-credentials:361.vb_f6760818e8c
 ssh-slaves:3.1085.vc64d040efa_85
-ssh-steps:2.0.79.v1d1b_5f76dda_8
+ssh-steps:2.0.85.v4b_2c9d791b_2d
 ssh2easy:1.6
 sshd:3.374.v19b_d59ce6610
 stackhammer:1.0.6
@@ -1976,7 +1977,7 @@ windows-cloud:1.0.1
 windows-exe-runner:35.vea_7d292d39a_2
 winrm-client:1.0
 wix:1.12
-wiz-scanner:86.v1ca_10b_a_5ef2f
+wiz-scanner:93.vf02757d3147c
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4
