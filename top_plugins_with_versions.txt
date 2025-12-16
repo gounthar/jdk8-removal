@@ -14,7 +14,7 @@ workflow-support:1010.vb_b_39488a_9841
 jackson2-api:2.20.1-423.v13951f6b_6532
 plain-credentials:199.v9f8e1f741799
 junit:1380.v491ff054cd35
-git-client:6.4.1
+git-client:6.4.2
 credentials-binding:702.vfe613e537e88
 matrix-project:870.v9db_fcfc2f45b_
 git:5.8.1
@@ -194,7 +194,7 @@ groovy:497.v7b_061a_a_de65d
 locale:614.va_6a_5a_1a_f2b_38
 aws-java-sdk-ecr:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk:1.12.780-480.v4a_0819121a_9e
-ssh-steps:2.0.79.v1d1b_5f76dda_8
+ssh-steps:2.0.85.v4b_2c9d791b_2d
 aws-java-sdk-iam:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-cloudformation:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-elasticbeanstalk:1.12.780-480.v4a_0819121a_9e
@@ -215,7 +215,7 @@ aws-java-sdk-ssm:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-codebuild:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-logs:1.12.780-480.v4a_0819121a_9e
 artifactory:4.0.8
-badge:2.560.v5135054c2e76
+badge:2.562.vc3c0b_6925377
 extended-read-permission:68.vd270568a_7520
 throttle-concurrents:2.18
 monitoring:2.5.0
