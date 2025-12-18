@@ -884,7 +884,7 @@ google-source-plugin:0.4
 google-storage-plugin:1.371.vc3434e76e0c4
 googleanalytics:1.3
 gprbuild:1.0
-gradle:2.16.1149.v711b_998b_0532
+gradle:2.17.1202.v321a_33e01211
 gradle-daemon:0.1.0
 gradle-repo:1.0.1
 graphiteIntegrator:1.2
@@ -1029,10 +1029,10 @@ jfrog:1.5.10
 jgiven:0.15.1
 jianliao:1.1
 jigomerge:0.9
-jira:3.20
+jira:3.21
 jira-ext:114.v7b_8b_1d4274c6
 jira-integration:5.7.1-67.v64a_b_673b_9306
-jira-steps:2.1.183.va_d8e31df4a_9a_
+jira-steps:2.1.185.vf95b_e8a_f13fe
 jira-trigger:1.0.3
 jjwt-api:0.11.5-120.v0268cf544b_89
 jmh-report:0.9.0
@@ -1121,7 +1121,6 @@ labeled-test-groups-publisher:1.2.9
 labelled-steps:1.0
 labmanager:0.2.8
 lacework-security-scanner:1.1.2
-lambda-test-runner:0.1.0
 lambdatest-automation:1.21.6
 last-changes:456.vc484b_627e803
 lastfailureversioncolumn:1.1
@@ -1133,7 +1132,7 @@ leapwork:4.0.13-110.vac430703b705
 leastload:62.vfa_8830902733
 leiningen-plugin:0.5.6
 lenientshutdown:2.125.v1156982d427d
-levo:33.vc34b_8f81dc9a
+levo:36.v1739a_e5cffb_d
 libvirt-slave:315.v5d33b_333a_551
 lifx-notifier:0.3
 lighthouse-report:1.3.0
@@ -1739,7 +1738,7 @@ sofy-ai:1.0.3
 solarized-theme:28.vfe25223f14fe
 sonar:2.18.2
 sonar-gerrit:388.v9b_f1cb_e42306
-sonar-quality-gates:352.vdcdb_d7994fb_6
+sonar-quality-gates:364.v67a_f255f340f
 sonargraph-integration:5.0.3-rc316.005b_0ed72e5b_
 sonarqube-generic-coverage:1.0
 sonic-ci-helper:1.0.5
@@ -1762,12 +1761,12 @@ ssh:158.ve2a_e90fb_7319
 ssh-agent:386.v36cc0c7582f0
 ssh-credentials:361.vb_f6760818e8c
 ssh-slaves:3.1085.vc64d040efa_85
-ssh-steps:2.0.87.vf6c93f7889e0
+ssh-steps:2.0.89.v8f758c756546
 ssh2easy:1.6
 sshd:3.374.v19b_d59ce6610
 stackhammer:1.0.6
 stackify-deployment-recorder:1.1.0
-stackrox-container-image-scanner:1.4.4
+stackrox-container-image-scanner:1.4.5
 started-by-envvar:1.0
 startup-trigger-plugin:2.9.4
 stash-pullrequest-builder:1.17
