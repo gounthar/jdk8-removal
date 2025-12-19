@@ -14,7 +14,7 @@ workflow-support:1010.vb_b_39488a_9841
 jackson2-api:2.20.1-423.v13951f6b_6532
 plain-credentials:199.v9f8e1f741799
 junit:1380.v491ff054cd35
-git-client:6.4.2
+git-client:6.4.3
 credentials-binding:702.vfe613e537e88
 matrix-project:870.v9db_fcfc2f45b_
 git:5.8.1
@@ -202,7 +202,7 @@ simple-theme-plugin:211.v5424a_5510e47
 blueocean-jira:1.27.25
 jnr-posix-api:3.1.21-186.vb_7ec9b_23ce83
 gitlab-api:6.2.0-111.vf174d6b_8c12e
-analysis-model-api:13.18.0-933.v90e9a_fdff4e2
+analysis-model-api:13.18.0-935.v784ca_107400a_
 aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e

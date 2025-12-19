@@ -60,7 +60,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:13.18.0-933.v90e9a_fdff4e2
+analysis-model-api:13.18.0-935.v784ca_107400a_
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -619,7 +619,7 @@ disable-failed-job:1.15
 disable-github-multibranch-status:1.2
 disable-job-button:1.3.vf55949267366
 discard-old-build:1.08
-discord-notifier:260.v8f28622b_a_6b_7
+discord-notifier:264.v70060b_a_b_d300
 disk-usage:1.3
 diskcheck:0.30
 display-console-output:1.0.5
@@ -764,7 +764,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:11.18.0-378.vf3d226f7a_4a_8
+flyway-api:11.19.1-386.v1982043dd1fb_
 flyway-runner:254.vc1b_de1957ddb_
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -809,7 +809,7 @@ git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
-git-client:6.4.2
+git-client:6.4.3
 git-forensics:3.2138.vf25ea_d549e33
 git-parameter:460.v71e7583a_c099
 git-prebuildmerge-trait:1.0
@@ -1330,7 +1330,7 @@ octopusdeploy:4.0.2
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
 oic-auth:4.626.ve5a_d9f26c051
-oidc-backchannel-logout:11.v5e233b_cdf252
+oidc-backchannel-logout:13.vdf9ca_b_b_99fa_6
 oidc-provider:111.v29fd614b_3617
 okhttp-api:4.12.0-195.vc02552c04ffd
 oki-docki:1.1
@@ -2024,6 +2024,7 @@ yandex-metrica:1.0
 yet-another-build-visualizer:1.17
 yet-another-docker-plugin:0.2.0
 youtrack-plugin:0.7.3
+zadviser-pipeline-analysis:1.0
 zanata:0.6
 zap:1.1.0
 zap-pipeline:1.16
