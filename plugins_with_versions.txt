@@ -557,7 +557,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:574.va_19f05d54df5
 dashboard-view:2.543.vca_9da_3cb_9c60
-data-tables-api:2.3.5-1482.vb_47a_3c19f78c
+data-tables-api:2.3.5-1497.v38449eb_7d5a_1
 database:309.vf39a_d78a_cb_e8
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:182.v8f1d21b_7c825
@@ -824,7 +824,7 @@ gitcolony-plugin:1.1
 gitea:250.v76a_0b_d4fef5b_
 gitea-checks:602.615.veed470de4039
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1260.v88b_b_167e8cb_7
+gitee:1261.v9f3fef7e413b_
 gitflow:1.0.1
 github:1.45.0
 github-api:1.330-492.v3941a_032db_2a_
@@ -1536,7 +1536,7 @@ qtest:2025.1
 quali-torque:2.1.0-307.vfa_3d28f8a_8b_3
 quality-gates:2.5
 qualityclouds:1.0.1
-qualys-cs:1.7.0.3
+qualys-cs:1.8.0.1
 qualys-iac-security:1.0.0
 qualys-pc:1.0.8
 qualys-vm:1.2.1
@@ -1598,7 +1598,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:340.v756b_e3731704
+resources-ai-chatbot:383.v7d7b_9a_76a_582
 rest-list-parameter:348.v9506fdc4b_d07
 restricted-register:0.1.7
 results-cache:2.0.2
