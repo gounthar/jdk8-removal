@@ -84,7 +84,7 @@ sshd:3.374.v19b_d59ce6610
 pipeline-rest-api:2.38
 json-path-api:2.10.0-202.va_9cc16c1e476
 jsch:0.2.16-95.v3eecb_55fa_b_78
-json-api:20250517-173.v596efb_962a_31
+json-api:20251224-185.v0cc18490c62c
 pipeline-stage-view:2.38
 joda-time-api:2.14.0-149.v1c3ce991d1b_9
 asm-api:9.9.1-189.vb_5ef2964da_91
@@ -112,7 +112,7 @@ jersey2-api:2.47-165.ve7809a_3e87e0
 favorite:2.253.v9b_413168133b_
 pubsub-light:1.19
 external-monitor-job:223.vb_fddcf42c9b_3
-cloudbees-bitbucket-branch-source:937.2.2
+cloudbees-bitbucket-branch-source:937.2.3
 blueocean-commons:1.27.25
 jenkins-design-language:1.27.25
 blueocean-rest:1.27.25

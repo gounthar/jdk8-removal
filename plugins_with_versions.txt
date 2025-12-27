@@ -64,7 +64,7 @@ analysis-model-api:13.18.0-935.v784ca_107400a_
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
-android-signing:229.vf07a_4a_a_41c9e
+android-signing:230.v310a_3736a_9fb_
 anka-build:2.13.1
 ansible:588.v2a_a_a_f345e34f
 ansible-tower:0.17.0
@@ -405,7 +405,7 @@ clif-performance-testing:71.v0741865e206f
 clone-workspace-scm:121.vf1f73b_d671ef
 cloud-stats:377.vd8a_6c953e98e
 cloudaeye:31.ve35d238d8144
-cloudbees-bitbucket-branch-source:937.2.2
+cloudbees-bitbucket-branch-source:937.2.3
 cloudbees-credentials:3.3
 cloudbees-devoptics-enabler:0.4
 cloudbees-disk-usage-simple:256.v20ec4eb_884f1
@@ -1073,7 +1073,7 @@ jquery3-api:3.7.1-619.vdb_10e002501a_
 jsch:0.2.16-95.v3eecb_55fa_b_78
 jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
-json-api:20250517-173.v596efb_962a_31
+json-api:20251224-185.v0cc18490c62c
 json-editor-parameter:54.v71962f37a_416
 json-parameter:68.v5d25a_1167dc9
 json-path-api:2.10.0-202.va_9cc16c1e476
@@ -1342,7 +1342,7 @@ open-stf:1.0.9
 openJDK-native-plugin:1.8
 opencover:79.v78d40e1fc27e
 openedge:0.23
-openid:218.vefb_d6f146e42
+openid:229.v184171253190
 openid4java:0.9.8.0
 openscada-jenkins-exporter:0.0.2
 openshift-client:1.1.0.437.v08c5053d5fe2
@@ -1598,7 +1598,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:383.v7d7b_9a_76a_582
+resources-ai-chatbot:393.v1fc36efb_cee6
 rest-list-parameter:348.v9506fdc4b_d07
 restricted-register:0.1.7
 results-cache:2.0.2
