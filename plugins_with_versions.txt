@@ -64,7 +64,7 @@ analysis-model-api:13.18.0-935.v784ca_107400a_
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
-android-signing:230.v310a_3736a_9fb_
+android-signing:232.v83c8d539e244
 anka-build:2.13.1
 ansible:588.v2a_a_a_f345e34f
 ansible-tower:0.17.0
@@ -726,7 +726,7 @@ export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
 extended-read-permission:68.vd270568a_7520
 extended-security-settings:1.3
-extended-timer-trigger:42.vd53942623176
+extended-timer-trigger:48.vf99b_c63a_685b_
 extensible-choice-parameter:250.va_1cf60782b_1a_
 extension-filter:268.v953673b_16e81
 extensivetesting:1.4.4b
@@ -852,7 +852,7 @@ gitlab-kubernetes-credentials:538.v99cc6503c421
 gitlab-logo:232.v34a_9b_98d4eb_b_
 gitlab-merge-request-jenkins:2.0.0
 gitlab-oauth:1.24
-gitlab-plugin:1.9.11
+gitlab-plugin:1.9.12
 global-build-stats:347.v32a_eb_0493c4f
 global-pipeline-parameters:72.vd21105d8900f
 global-post-script:1.1.4
