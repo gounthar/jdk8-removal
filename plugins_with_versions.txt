@@ -328,7 +328,7 @@ build-requester:0.7
 build-steps-from-json:1.0
 build-symlink:1.1
 build-time-blame:75.v44a_51cc97cdd-2.1.0
-build-timeout:1.38
+build-timeout:1.39
 build-timestamp:1.1.0
 build-token-root:151.va_e52fe3215fc
 build-token-trigger:1.0.0
@@ -852,7 +852,7 @@ gitlab-kubernetes-credentials:538.v99cc6503c421
 gitlab-logo:232.v34a_9b_98d4eb_b_
 gitlab-merge-request-jenkins:2.0.0
 gitlab-oauth:1.24
-gitlab-plugin:1.9.12
+gitlab-plugin:1.9.13
 global-build-stats:347.v32a_eb_0493c4f
 global-pipeline-parameters:72.vd21105d8900f
 global-post-script:1.1.4
@@ -1587,7 +1587,7 @@ remote-result-trigger:3.164.vec9b_9b_25e61c
 remote-terminal-access:1.6
 remoting-kafka:2.0.1
 remoting-opentelemetry:1.0-rc89.d67d14d05962
-repo:1.16.0
+repo:1.17.0
 report-diff:4.1
 report-generic-chart-column:4.1
 report-info:1.2
@@ -1598,7 +1598,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:393.v1fc36efb_cee6
+resources-ai-chatbot:402.v13306d2084b_6
 rest-list-parameter:348.v9506fdc4b_d07
 restricted-register:0.1.7
 results-cache:2.0.2
