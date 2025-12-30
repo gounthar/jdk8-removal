@@ -67,7 +67,7 @@ jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
 ant:520.vd082ecfb_16a_9
 mina-sshd-api-core:2.16.0-167.va_269f38cc024
-build-timeout:1.38
+build-timeout:1.39
 commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 ionicons-api:94.vcc3065403257
 instance-identity:203.v15e81a_1b_7a_38
@@ -107,7 +107,7 @@ handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 mapdb-api:1.0.9-44.va_1e1310c9118
 popper2-api:2.11.6-5
-subversion:1292.ve8cf25770ee3
+subversion:1303.vcfd9679fb_c12
 jersey2-api:2.47-165.ve7809a_3e87e0
 favorite:2.253.v9b_413168133b_
 pubsub-light:1.19
@@ -152,7 +152,7 @@ blueocean:1.27.25
 jquery-detached:1.2.1
 conditional-buildstep:1.5.0
 envinject-api:1.236.v35fd4d7eb_515
-gitlab-plugin:1.9.12
+gitlab-plugin:1.9.13
 commons-compress-api:1.28.0-2
 envinject:2.926.v69c9b_3896a_96
 prism-api:1.30.0-630.va_e19d17f83b_0
@@ -217,7 +217,7 @@ aws-java-sdk-logs:1.12.780-480.v4a_0819121a_9e
 artifactory:4.0.8
 badge:2.562.vc3c0b_6925377
 extended-read-permission:68.vd270568a_7520
-throttle-concurrents:2.18
+throttle-concurrents:624.vc427fa_e0e503
 monitoring:2.6.0
 parameterized-scheduler:285.ve611986d4c48
 pipeline-maven-api:1567.vb_2c3a_2116860
