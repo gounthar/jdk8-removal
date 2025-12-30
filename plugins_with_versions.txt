@@ -232,7 +232,7 @@ backlog:2.7
 backup:1.6.1
 backup-interrupt-plugin:17.va_b_50ca_9df8d0
 badge:2.562.vc3c0b_6925377
-basic-branch-build-strategies:275.vde2351b_4a_58b_
+basic-branch-build-strategies:317.v85b_331d6cc42
 batch-task:1.398.v550a_8e8ca_e5f
 bazaar:1.22
 bds-plugin:3.1
@@ -328,7 +328,7 @@ build-requester:0.7
 build-steps-from-json:1.0
 build-symlink:1.1
 build-time-blame:75.v44a_51cc97cdd-2.1.0
-build-timeout:1.38
+build-timeout:1.39
 build-timestamp:1.1.0
 build-token-root:151.va_e52fe3215fc
 build-token-trigger:1.0.0
@@ -525,7 +525,7 @@ credentials:1453.v9b_a_29777a_b_fd
 credentials-binding:702.vfe613e537e88
 crittercism-dsym:1.1
 cron-shelve:1.3
-cron_column:83.vd52c9b_5c758c
+cron_column:102.v6db_e80854fd8
 crowd:1.2
 crowdstrike-security:1.3.1
 crx-content-package-deployer:1.9
@@ -852,7 +852,7 @@ gitlab-kubernetes-credentials:538.v99cc6503c421
 gitlab-logo:232.v34a_9b_98d4eb_b_
 gitlab-merge-request-jenkins:2.0.0
 gitlab-oauth:1.24
-gitlab-plugin:1.9.12
+gitlab-plugin:1.9.13
 global-build-stats:347.v32a_eb_0493c4f
 global-pipeline-parameters:72.vd21105d8900f
 global-post-script:1.1.4
@@ -1195,7 +1195,7 @@ mask-passwords:212.v4967a_a_73b_506
 material-theme:0.5.2-rc100.6121925fe229
 mathworks-polyspace:1.0.12
 matlab:1106.v9b_fb_b_7b_29b_5f
-matomo-analytics:1.14.vfd9785108a_45
+matomo-analytics:1.34.v7fe4d35786a_5
 matrix-auth:3.2.9
 matrix-combinations-parameter:1.3.3
 matrix-communication:13.vdcfb_b_44ce852
@@ -1587,7 +1587,7 @@ remote-result-trigger:3.164.vec9b_9b_25e61c
 remote-terminal-access:1.6
 remoting-kafka:2.0.1
 remoting-opentelemetry:1.0-rc89.d67d14d05962
-repo:1.16.0
+repo:1.17.0
 report-diff:4.1
 report-generic-chart-column:4.1
 report-info:1.2
@@ -1598,7 +1598,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:393.v1fc36efb_cee6
+resources-ai-chatbot:419.vc4e4217b_4fea_
 rest-list-parameter:348.v9506fdc4b_d07
 restricted-register:0.1.7
 results-cache:2.0.2
@@ -1779,7 +1779,7 @@ stoplightio-report:2.2.5
 strawboss:1.3
 strict-crumb-issuer:2.1.1
 structs:362.va_b_695ef4fdf9
-subversion:1292.ve8cf25770ee3
+subversion:1303.vcfd9679fb_c12
 suite-test-groups-publisher:1.13
 summary_report:1.15
 sumologic-publisher:2.2.7
@@ -1852,7 +1852,7 @@ themis:1.4.1
 thinBackup:2.1.3
 thread-dump-action-plugin:1.0
 threadfix:1.5.4
-throttle-concurrents:2.18
+throttle-concurrents:624.vc427fa_e0e503
 thucydides:0.1
 thycotic-devops-secrets-vault:67.v9d3c184cf594
 thycotic-secret-server:2.1.0
