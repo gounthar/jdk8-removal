@@ -1,0 +1,205 @@
+Plugin,Repository,URL,Has_Open_JDK25_PRs,Open_PRs_Count,Open_PR_Numbers,Open_PR_URLs,Has_Jenkinsfile
+Active Choices Plugin,jenkinsci/active-choices-plugin,https://github.com/jenkinsci/active-choices-plugin,false,0,"","",true
+Active Directory Plugin,jenkinsci/active-directory-plugin,https://github.com/jenkinsci/active-directory-plugin,false,0,"","",true
+Allure Plugin,jenkinsci/allure-plugin,https://github.com/jenkinsci/allure-plugin,false,0,"","",true
+Analysis Model Api Plugin,jenkinsci/analysis-model-api-plugin,https://github.com/jenkinsci/analysis-model-api-plugin,false,0,"","",true
+Ansible Plugin,jenkinsci/ansible-plugin,https://github.com/jenkinsci/ansible-plugin,false,0,"","",true
+Ansicolor Plugin,jenkinsci/ansicolor-plugin,https://github.com/jenkinsci/ansicolor-plugin,false,0,"","",true
+Ant Plugin,jenkinsci/ant-plugin,https://github.com/jenkinsci/ant-plugin,false,0,"","",true
+Antisamy Markup Formatter Plugin,jenkinsci/antisamy-markup-formatter-plugin,https://github.com/jenkinsci/antisamy-markup-formatter-plugin,false,0,"","",true
+Apache Httpcomponents Client 4 Api Plugin,jenkinsci/apache-httpcomponents-client-4-api-plugin,https://github.com/jenkinsci/apache-httpcomponents-client-4-api-plugin,false,0,"","",true
+Apache Httpcomponents Client 5 Api Plugin,jenkinsci/apache-httpcomponents-client-5-api-plugin,https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin,false,0,"","",true
+Artifactory Plugin,jenkinsci/artifactory-plugin,https://github.com/jenkinsci/artifactory-plugin,false,0,"","",true
+Asm Api Plugin,jenkinsci/asm-api-plugin,https://github.com/jenkinsci/asm-api-plugin,false,0,"","",true
+Authentication Tokens Plugin,jenkinsci/authentication-tokens-plugin,https://github.com/jenkinsci/authentication-tokens-plugin,false,0,"","",true
+Authorize Project Plugin,jenkinsci/authorize-project-plugin,https://github.com/jenkinsci/authorize-project-plugin,false,0,"","",true
+Aws Credentials Plugin,jenkinsci/aws-credentials-plugin,https://github.com/jenkinsci/aws-credentials-plugin,false,0,"","",true
+Aws Java Sdk Plugin,jenkinsci/aws-java-sdk-plugin,https://github.com/jenkinsci/aws-java-sdk-plugin,false,0,"","",true
+Badge Plugin,jenkinsci/badge-plugin,https://github.com/jenkinsci/badge-plugin,false,0,"","",true
+Bitbucket Branch Source Plugin,jenkinsci/bitbucket-branch-source-plugin,https://github.com/jenkinsci/bitbucket-branch-source-plugin,false,0,"","",true
+Bitbucket Plugin,jenkinsci/bitbucket-plugin,https://github.com/jenkinsci/bitbucket-plugin,false,0,"","",true
+Blueocean Autofavorite Plugin,jenkinsci/blueocean-autofavorite-plugin,https://github.com/jenkinsci/blueocean-autofavorite-plugin,false,0,"","",true
+Blueocean Display Url Plugin,jenkinsci/blueocean-display-url-plugin,https://github.com/jenkinsci/blueocean-display-url-plugin,false,0,"","",true
+Blueocean Plugin,jenkinsci/blueocean-plugin,https://github.com/jenkinsci/blueocean-plugin,false,0,"","",true
+Bootstrap4 Api Plugin,jenkinsci/bootstrap4-api-plugin,https://github.com/jenkinsci/bootstrap4-api-plugin,false,0,"","",true
+Bootstrap5 Api Plugin,jenkinsci/bootstrap5-api-plugin,https://github.com/jenkinsci/bootstrap5-api-plugin,false,0,"","",true
+Bouncycastle Api Plugin,jenkinsci/bouncycastle-api-plugin,https://github.com/jenkinsci/bouncycastle-api-plugin,false,0,"","",true
+Branch Api Plugin,jenkinsci/branch-api-plugin,https://github.com/jenkinsci/branch-api-plugin,false,0,"","",true
+Build Name Setter Plugin,jenkinsci/build-name-setter-plugin,https://github.com/jenkinsci/build-name-setter-plugin,false,0,"","",true
+Build Pipeline Plugin,jenkinsci/build-pipeline-plugin,https://github.com/jenkinsci/build-pipeline-plugin,false,0,"","",true
+Build Timeout Plugin,jenkinsci/build-timeout-plugin,https://github.com/jenkinsci/build-timeout-plugin,false,0,"","",true
+Build User Vars Plugin,jenkinsci/build-user-vars-plugin,https://github.com/jenkinsci/build-user-vars-plugin,false,0,"","",true
+Built On Column Plugin,jenkinsci/built-on-column-plugin,https://github.com/jenkinsci/built-on-column-plugin,false,0,"","",true
+Caffeine Api Plugin,jenkinsci/caffeine-api-plugin,https://github.com/jenkinsci/caffeine-api-plugin,false,0,"","",true
+Checks Api Plugin,jenkinsci/checks-api-plugin,https://github.com/jenkinsci/checks-api-plugin,false,0,"","",true
+Cloud Stats Plugin,jenkinsci/cloud-stats-plugin,https://github.com/jenkinsci/cloud-stats-plugin,false,0,"","",true
+Cloudbees Folder Plugin,jenkinsci/cloudbees-folder-plugin,https://github.com/jenkinsci/cloudbees-folder-plugin,false,0,"","",true
+Cobertura Plugin,jenkinsci/cobertura-plugin,https://github.com/jenkinsci/cobertura-plugin,false,0,"","",true
+Code Coverage Api Plugin,jenkinsci/code-coverage-api-plugin,https://github.com/jenkinsci/code-coverage-api-plugin,false,0,"","",true
+Command Launcher Plugin,jenkinsci/command-launcher-plugin,https://github.com/jenkinsci/command-launcher-plugin,false,0,"","",true
+Commons Compress Api Plugin,jenkinsci/commons-compress-api-plugin,https://github.com/jenkinsci/commons-compress-api-plugin,false,0,"","",true
+Commons Httpclient3 Api Plugin,jenkinsci/commons-httpclient3-api-plugin,https://github.com/jenkinsci/commons-httpclient3-api-plugin,false,0,"","",true
+Commons Lang3 Api Plugin,jenkinsci/commons-lang3-api-plugin,https://github.com/jenkinsci/commons-lang3-api-plugin,false,0,"","",true
+Commons Text Api Plugin,jenkinsci/commons-text-api-plugin,https://github.com/jenkinsci/commons-text-api-plugin,false,0,"","",true
+Conditional Buildstep Plugin,jenkinsci/conditional-buildstep-plugin,https://github.com/jenkinsci/conditional-buildstep-plugin,false,0,"","",true
+Config File Provider Plugin,jenkinsci/config-file-provider-plugin,https://github.com/jenkinsci/config-file-provider-plugin,false,0,"","",true
+Configuration As Code Plugin,jenkinsci/configuration-as-code-plugin,https://github.com/jenkinsci/configuration-as-code-plugin,false,0,"","",true
+Copyartifact Plugin,jenkinsci/copyartifact-plugin,https://github.com/jenkinsci/copyartifact-plugin,false,0,"","",true
+Coverage Plugin,jenkinsci/coverage-plugin,https://github.com/jenkinsci/coverage-plugin,false,0,"","",true
+Credentials Binding Plugin,jenkinsci/credentials-binding-plugin,https://github.com/jenkinsci/credentials-binding-plugin,false,0,"","",true
+Credentials Plugin,jenkinsci/credentials-plugin,https://github.com/jenkinsci/credentials-plugin,false,0,"","",true
+Dark Theme Plugin,jenkinsci/dark-theme-plugin,https://github.com/jenkinsci/dark-theme-plugin,false,0,"","",true
+Dashboard View Plugin,jenkinsci/dashboard-view-plugin,https://github.com/jenkinsci/dashboard-view-plugin,false,0,"","",true
+Data Tables Api Plugin,jenkinsci/data-tables-api-plugin,https://github.com/jenkinsci/data-tables-api-plugin,false,0,"","",true
+Display Url Api Plugin,jenkinsci/display-url-api-plugin,https://github.com/jenkinsci/display-url-api-plugin,false,0,"","",true
+Docker Commons Plugin,jenkinsci/docker-commons-plugin,https://github.com/jenkinsci/docker-commons-plugin,false,0,"","",true
+Docker Java Api Plugin,jenkinsci/docker-java-api-plugin,https://github.com/jenkinsci/docker-java-api-plugin,false,0,"","",true
+Docker Plugin,jenkinsci/docker-plugin,https://github.com/jenkinsci/docker-plugin,false,0,"","",true
+Docker Workflow Plugin,jenkinsci/docker-workflow-plugin,https://github.com/jenkinsci/docker-workflow-plugin,false,0,"","",true
+Durable Task Plugin,jenkinsci/durable-task-plugin,https://github.com/jenkinsci/durable-task-plugin,false,0,"","",true
+Echarts Api Plugin,jenkinsci/echarts-api-plugin,https://github.com/jenkinsci/echarts-api-plugin,false,0,"","",true
+Eddsa Api Plugin,jenkinsci/eddsa-api-plugin,https://github.com/jenkinsci/eddsa-api-plugin,false,0,"","",true
+Email Ext Plugin,jenkinsci/email-ext-plugin,https://github.com/jenkinsci/email-ext-plugin,false,0,"","",true
+Emailext Template Plugin,jenkinsci/emailext-template-plugin,https://github.com/jenkinsci/emailext-template-plugin,false,0,"","",true
+Envinject Api Plugin,jenkinsci/envinject-api-plugin,https://github.com/jenkinsci/envinject-api-plugin,false,0,"","",true
+Envinject Plugin,jenkinsci/envinject-plugin,https://github.com/jenkinsci/envinject-plugin,false,0,"","",true
+Extended Choice Parameter Plugin,jenkinsci/extended-choice-parameter-plugin,https://github.com/jenkinsci/extended-choice-parameter-plugin,false,0,"","",true
+Extended Read Permission Plugin,jenkinsci/extended-read-permission-plugin,https://github.com/jenkinsci/extended-read-permission-plugin,false,0,"","",true
+External Monitor Job Plugin,jenkinsci/external-monitor-job-plugin,https://github.com/jenkinsci/external-monitor-job-plugin,false,0,"","",true
+Favorite Plugin,jenkinsci/favorite-plugin,https://github.com/jenkinsci/favorite-plugin,false,0,"","",true
+Font Awesome Api Plugin,jenkinsci/font-awesome-api-plugin,https://github.com/jenkinsci/font-awesome-api-plugin,false,0,"","",true
+Forensics Api Plugin,jenkinsci/forensics-api-plugin,https://github.com/jenkinsci/forensics-api-plugin,false,0,"","",true
+Generic Webhook Trigger Plugin,jenkinsci/generic-webhook-trigger-plugin,https://github.com/jenkinsci/generic-webhook-trigger-plugin,false,0,"","",true
+Git Client Plugin,jenkinsci/git-client-plugin,https://github.com/jenkinsci/git-client-plugin,false,0,"","",true
+Git Parameter Plugin,jenkinsci/git-parameter-plugin,https://github.com/jenkinsci/git-parameter-plugin,false,0,"","",true
+Git Plugin,jenkinsci/git-plugin,https://github.com/jenkinsci/git-plugin,false,0,"","",true
+Git Server Plugin,jenkinsci/git-server-plugin,https://github.com/jenkinsci/git-server-plugin,false,0,"","",true
+Github Api Plugin,jenkinsci/github-api-plugin,https://github.com/jenkinsci/github-api-plugin,false,0,"","",true
+Github Branch Source Plugin,jenkinsci/github-branch-source-plugin,https://github.com/jenkinsci/github-branch-source-plugin,false,0,"","",true
+Github Plugin,jenkinsci/github-plugin,https://github.com/jenkinsci/github-plugin,true,,"","",true
+Gitlab Api Plugin,jenkinsci/gitlab-api-plugin,https://github.com/jenkinsci/gitlab-api-plugin,false,0,"","",true
+Gitlab Plugin,jenkinsci/gitlab-plugin,https://github.com/jenkinsci/gitlab-plugin,false,0,"","",true
+Gradle Plugin,jenkinsci/gradle-plugin,https://github.com/jenkinsci/gradle-plugin,false,0,"","",true
+Groovy Plugin,jenkinsci/groovy-plugin,https://github.com/jenkinsci/groovy-plugin,false,0,"","",true
+Groovy Postbuild Plugin,jenkinsci/groovy-postbuild-plugin,https://github.com/jenkinsci/groovy-postbuild-plugin,false,0,"","",true
+Gson Api Plugin,jenkinsci/gson-api-plugin,https://github.com/jenkinsci/gson-api-plugin,false,0,"","",true
+H2 Api Plugin,jenkinsci/h2-api-plugin,https://github.com/jenkinsci/h2-api-plugin,false,0,"","",true
+Handy Uri Templates 2 Api Plugin,jenkinsci/handy-uri-templates-2-api-plugin,https://github.com/jenkinsci/handy-uri-templates-2-api-plugin,false,0,"","",true
+Htmlpublisher Plugin,jenkinsci/htmlpublisher-plugin,https://github.com/jenkinsci/htmlpublisher-plugin,false,0,"","",true
+Http Request Plugin,jenkinsci/http-request-plugin,https://github.com/jenkinsci/http-request-plugin,false,0,"","",true
+Instance Identity Plugin,jenkinsci/instance-identity-plugin,https://github.com/jenkinsci/instance-identity-plugin,false,0,"","",true
+Ionicons Api Plugin,jenkinsci/ionicons-api-plugin,https://github.com/jenkinsci/ionicons-api-plugin,false,0,"","",true
+Jackson2 Api Plugin,jenkinsci/jackson2-api-plugin,https://github.com/jenkinsci/jackson2-api-plugin,false,0,"","",true
+Jacoco Plugin,jenkinsci/jacoco-plugin,https://github.com/jenkinsci/jacoco-plugin,false,0,"","",true
+Jakarta Activation Api Plugin,jenkinsci/jakarta-activation-api-plugin,https://github.com/jenkinsci/jakarta-activation-api-plugin,false,0,"","",true
+Jakarta Mail Api Plugin,jenkinsci/jakarta-mail-api-plugin,https://github.com/jenkinsci/jakarta-mail-api-plugin,false,0,"","",true
+Javadoc Plugin,jenkinsci/javadoc-plugin,https://github.com/jenkinsci/javadoc-plugin,false,0,"","",true
+Javax Activation Api Plugin,jenkinsci/javax-activation-api-plugin,https://github.com/jenkinsci/javax-activation-api-plugin,false,0,"","",true
+Javax Mail Api Plugin,jenkinsci/javax-mail-api-plugin,https://github.com/jenkinsci/javax-mail-api-plugin,false,0,"","",true
+Jaxb Plugin,jenkinsci/jaxb-plugin,https://github.com/jenkinsci/jaxb-plugin,false,0,"","",true
+Jdk Tool Plugin,jenkinsci/jdk-tool-plugin,https://github.com/jenkinsci/jdk-tool-plugin,false,0,"","",true
+Jersey2 Api Plugin,jenkinsci/jersey2-api-plugin,https://github.com/jenkinsci/jersey2-api-plugin,false,0,"","",true
+Jira Plugin,jenkinsci/jira-plugin,https://github.com/jenkinsci/jira-plugin,false,0,"","",true
+Jjwt Api Plugin,jenkinsci/jjwt-api-plugin,https://github.com/jenkinsci/jjwt-api-plugin,false,0,"","",true
+Jnr Posix Api Plugin,jenkinsci/jnr-posix-api-plugin,https://github.com/jenkinsci/jnr-posix-api-plugin,false,0,"","",true
+Job Config History Plugin,jenkinsci/job-config-history-plugin,https://github.com/jenkinsci/job-config-history-plugin,false,0,"","",true
+Job Dsl Plugin,jenkinsci/job-dsl-plugin,https://github.com/jenkinsci/job-dsl-plugin,false,0,"","",true
+Joda Time Api Plugin,jenkinsci/joda-time-api-plugin,https://github.com/jenkinsci/joda-time-api-plugin,false,0,"","",true
+Jquery Detached,jenkinsci/jquery-detached,https://github.com/jenkinsci/jquery-detached,false,0,"","",true
+Jquery Plugin,jenkinsci/jquery-plugin,https://github.com/jenkinsci/jquery-plugin,false,0,"","",true
+Jquery3 Api Plugin,jenkinsci/jquery3-api-plugin,https://github.com/jenkinsci/jquery3-api-plugin,false,0,"","",true
+Jsch Plugin,jenkinsci/jsch-plugin,https://github.com/jenkinsci/jsch-plugin,false,0,"","",true
+Json Api Plugin,jenkinsci/json-api-plugin,https://github.com/jenkinsci/json-api-plugin,false,0,"","",true
+Json Path Api Plugin,jenkinsci/json-path-api-plugin,https://github.com/jenkinsci/json-path-api-plugin,false,0,"","",true
+Junit Plugin,jenkinsci/junit-plugin,https://github.com/jenkinsci/junit-plugin,false,0,"","",true
+Kubernetes Client Api Plugin,jenkinsci/kubernetes-client-api-plugin,https://github.com/jenkinsci/kubernetes-client-api-plugin,false,0,"","",true
+Kubernetes Credentials Plugin,jenkinsci/kubernetes-credentials-plugin,https://github.com/jenkinsci/kubernetes-credentials-plugin,false,0,"","",true
+Kubernetes Plugin,jenkinsci/kubernetes-plugin,https://github.com/jenkinsci/kubernetes-plugin,false,0,"","",true
+Ldap Plugin,jenkinsci/ldap-plugin,https://github.com/jenkinsci/ldap-plugin,false,0,"","",true
+Locale Plugin,jenkinsci/locale-plugin,https://github.com/jenkinsci/locale-plugin,false,0,"","",true
+Localization Support Plugin,jenkinsci/localization-support-plugin,https://github.com/jenkinsci/localization-support-plugin,false,0,"","",true
+Localization Zh Cn Plugin,jenkinsci/localization-zh-cn-plugin,https://github.com/jenkinsci/localization-zh-cn-plugin,false,0,"","",true
+Lockable Resources Plugin,jenkinsci/lockable-resources-plugin,https://github.com/jenkinsci/lockable-resources-plugin,false,0,"","",true
+Mailer Plugin,jenkinsci/mailer-plugin,https://github.com/jenkinsci/mailer-plugin,false,0,"","",true
+Mapdb Api Plugin,jenkinsci/mapdb-api-plugin,https://github.com/jenkinsci/mapdb-api-plugin,false,0,"","",true
+Mask Passwords Plugin,jenkinsci/mask-passwords-plugin,https://github.com/jenkinsci/mask-passwords-plugin,false,0,"","",true
+Matrix Auth Plugin,jenkinsci/matrix-auth-plugin,https://github.com/jenkinsci/matrix-auth-plugin,false,0,"","",true
+Matrix Project Plugin,jenkinsci/matrix-project-plugin,https://github.com/jenkinsci/matrix-project-plugin,false,0,"","",true
+Maven Plugin,jenkinsci/maven-plugin,https://github.com/jenkinsci/maven-plugin,false,0,"","",true
+Mercurial Plugin,jenkinsci/mercurial-plugin,https://github.com/jenkinsci/mercurial-plugin,false,0,"","",true
+Metrics Plugin,jenkinsci/metrics-plugin,https://github.com/jenkinsci/metrics-plugin,false,0,"","",true
+Mina Sshd Api Plugin,jenkinsci/mina-sshd-api-plugin,https://github.com/jenkinsci/mina-sshd-api-plugin,false,0,"","",true
+Monitoring Plugin,jenkinsci/monitoring-plugin,https://github.com/jenkinsci/monitoring-plugin,false,0,"","",true
+Msbuild Plugin,jenkinsci/msbuild-plugin,https://github.com/jenkinsci/msbuild-plugin,false,0,"","",true
+Multiple Scms Plugin,jenkinsci/multiple-scms-plugin,https://github.com/jenkinsci/multiple-scms-plugin,false,0,"","",true
+Nodejs Plugin,jenkinsci/nodejs-plugin,https://github.com/jenkinsci/nodejs-plugin,false,0,"","",true
+Nodelabelparameter Plugin,jenkinsci/nodelabelparameter-plugin,https://github.com/jenkinsci/nodelabelparameter-plugin,false,0,"","",true
+Office 365 Connector Plugin,jenkinsci/office-365-connector-plugin,https://github.com/jenkinsci/office-365-connector-plugin,false,0,"","",true
+Okhttp Api Plugin,jenkinsci/okhttp-api-plugin,https://github.com/jenkinsci/okhttp-api-plugin,false,0,"","",true
+Oss Symbols Api Plugin,jenkinsci/oss-symbols-api-plugin,https://github.com/jenkinsci/oss-symbols-api-plugin,false,0,"","",true
+Pam Auth Plugin,jenkinsci/pam-auth-plugin,https://github.com/jenkinsci/pam-auth-plugin,false,0,"","",true
+Parameterized Scheduler Plugin,jenkinsci/parameterized-scheduler-plugin,https://github.com/jenkinsci/parameterized-scheduler-plugin,false,0,"","",true
+Parameterized Trigger Plugin,jenkinsci/parameterized-trigger-plugin,https://github.com/jenkinsci/parameterized-trigger-plugin,false,0,"","",true
+Pipeline Build Step Plugin,jenkinsci/pipeline-build-step-plugin,https://github.com/jenkinsci/pipeline-build-step-plugin,false,0,"","",true
+Pipeline Github Lib Plugin,jenkinsci/pipeline-github-lib-plugin,https://github.com/jenkinsci/pipeline-github-lib-plugin,false,0,"","",true
+Pipeline Graph Analysis Plugin,jenkinsci/pipeline-graph-analysis-plugin,https://github.com/jenkinsci/pipeline-graph-analysis-plugin,false,0,"","",true
+Pipeline Graph View Plugin,jenkinsci/pipeline-graph-view-plugin,https://github.com/jenkinsci/pipeline-graph-view-plugin,false,0,"","",true
+Pipeline Groovy Lib Plugin,jenkinsci/pipeline-groovy-lib-plugin,https://github.com/jenkinsci/pipeline-groovy-lib-plugin,false,0,"","",true
+Pipeline Input Step Plugin,jenkinsci/pipeline-input-step-plugin,https://github.com/jenkinsci/pipeline-input-step-plugin,false,0,"","",true
+Pipeline Maven Plugin,jenkinsci/pipeline-maven-plugin,https://github.com/jenkinsci/pipeline-maven-plugin,false,0,"","",true
+Pipeline Milestone Step Plugin,jenkinsci/pipeline-milestone-step-plugin,https://github.com/jenkinsci/pipeline-milestone-step-plugin,false,0,"","",true
+Pipeline Model Definition Plugin,jenkinsci/pipeline-model-definition-plugin,https://github.com/jenkinsci/pipeline-model-definition-plugin,false,0,"","",true
+Pipeline Stage Step Plugin,jenkinsci/pipeline-stage-step-plugin,https://github.com/jenkinsci/pipeline-stage-step-plugin,false,0,"","",true
+Pipeline Stage View Plugin,jenkinsci/pipeline-stage-view-plugin,https://github.com/jenkinsci/pipeline-stage-view-plugin,false,0,"","",true
+Pipeline Utility Steps Plugin,jenkinsci/pipeline-utility-steps-plugin,https://github.com/jenkinsci/pipeline-utility-steps-plugin,false,0,"","",true
+Plain Credentials Plugin,jenkinsci/plain-credentials-plugin,https://github.com/jenkinsci/plain-credentials-plugin,false,0,"","",true
+Plugin Util Api Plugin,jenkinsci/plugin-util-api-plugin,https://github.com/jenkinsci/plugin-util-api-plugin,false,0,"","",true
+Popper Api Plugin,jenkinsci/popper-api-plugin,https://github.com/jenkinsci/popper-api-plugin,false,0,"","",true
+Popper2 Api Plugin,jenkinsci/popper2-api-plugin,https://github.com/jenkinsci/popper2-api-plugin,false,0,"","",true
+Postbuild Task Plugin,jenkinsci/postbuild-task-plugin,https://github.com/jenkinsci/postbuild-task-plugin,false,0,"","",true
+Powershell Plugin,jenkinsci/powershell-plugin,https://github.com/jenkinsci/powershell-plugin,false,0,"","",true
+Prism Api Plugin,jenkinsci/prism-api-plugin,https://github.com/jenkinsci/prism-api-plugin,false,0,"","",true
+Prometheus Plugin,jenkinsci/prometheus-plugin,https://github.com/jenkinsci/prometheus-plugin,false,0,"","",true
+Publish Over Plugin,jenkinsci/publish-over-plugin,https://github.com/jenkinsci/publish-over-plugin,false,0,"","",true
+Publish Over Ssh Plugin,jenkinsci/publish-over-ssh-plugin,https://github.com/jenkinsci/publish-over-ssh-plugin,false,0,"","",true
+Pubsub Light Plugin,jenkinsci/pubsub-light-plugin,https://github.com/jenkinsci/pubsub-light-plugin,false,0,"","",true
+Rebuild Plugin,jenkinsci/rebuild-plugin,https://github.com/jenkinsci/rebuild-plugin,false,0,"","",true
+Resource Disposer Plugin,jenkinsci/resource-disposer-plugin,https://github.com/jenkinsci/resource-disposer-plugin,false,0,"","",true
+Role Strategy Plugin,jenkinsci/role-strategy-plugin,https://github.com/jenkinsci/role-strategy-plugin,false,0,"","",true
+Run Condition Plugin,jenkinsci/run-condition-plugin,https://github.com/jenkinsci/run-condition-plugin,false,0,"","",true
+Saml Plugin,jenkinsci/saml-plugin,https://github.com/jenkinsci/saml-plugin,false,0,"","",true
+Scm Api Plugin,jenkinsci/scm-api-plugin,https://github.com/jenkinsci/scm-api-plugin,false,0,"","",true
+Script Security Plugin,jenkinsci/script-security-plugin,https://github.com/jenkinsci/script-security-plugin,false,0,"","",true
+Simple Theme Plugin,jenkinsci/simple-theme-plugin,https://github.com/jenkinsci/simple-theme-plugin,false,0,"","",true
+Slack Plugin,jenkinsci/slack-plugin,https://github.com/jenkinsci/slack-plugin,false,0,"","",true
+Snakeyaml Api Plugin,jenkinsci/snakeyaml-api-plugin,https://github.com/jenkinsci/snakeyaml-api-plugin,false,0,"","",true
+Sonarqube Plugin,jenkinsci/sonarqube-plugin,https://github.com/jenkinsci/sonarqube-plugin,false,0,"","",true
+Sse Gateway Plugin,jenkinsci/sse-gateway-plugin,https://github.com/jenkinsci/sse-gateway-plugin,true,,"","",true
+Ssh Agent Plugin,jenkinsci/ssh-agent-plugin,https://github.com/jenkinsci/ssh-agent-plugin,false,0,"","",true
+Ssh Agents Plugin,jenkinsci/ssh-agents-plugin,https://github.com/jenkinsci/ssh-agents-plugin,false,0,"","",true
+Ssh Credentials Plugin,jenkinsci/ssh-credentials-plugin,https://github.com/jenkinsci/ssh-credentials-plugin,false,0,"","",true
+Ssh Plugin,jenkinsci/ssh-plugin,https://github.com/jenkinsci/ssh-plugin,false,0,"","",true
+Ssh Steps Plugin,jenkinsci/ssh-steps-plugin,https://github.com/jenkinsci/ssh-steps-plugin,false,0,"","",true
+Sshd Plugin,jenkinsci/sshd-plugin,https://github.com/jenkinsci/sshd-plugin,false,0,"","",true
+Structs Plugin,jenkinsci/structs-plugin,https://github.com/jenkinsci/structs-plugin,false,0,"","",true
+Subversion Plugin,jenkinsci/subversion-plugin,https://github.com/jenkinsci/subversion-plugin,false,0,"","",true
+Theme Manager Plugin,jenkinsci/theme-manager-plugin,https://github.com/jenkinsci/theme-manager-plugin,false,0,"","",true
+Thin Backup Plugin,jenkinsci/thin-backup-plugin,https://github.com/jenkinsci/thin-backup-plugin,false,0,"","",true
+Throttle Concurrent Builds Plugin,jenkinsci/throttle-concurrent-builds-plugin,https://github.com/jenkinsci/throttle-concurrent-builds-plugin,false,0,"","",true
+Timestamper Plugin,jenkinsci/timestamper-plugin,https://github.com/jenkinsci/timestamper-plugin,false,0,"","",true
+Token Macro Plugin,jenkinsci/token-macro-plugin,https://github.com/jenkinsci/token-macro-plugin,false,0,"","",true
+Trilead Api Plugin,jenkinsci/trilead-api-plugin,https://github.com/jenkinsci/trilead-api-plugin,false,0,"","",true
+Variant Plugin,jenkinsci/variant-plugin,https://github.com/jenkinsci/variant-plugin,false,0,"","",true
+Warnings Ng Plugin,jenkinsci/warnings-ng-plugin,https://github.com/jenkinsci/warnings-ng-plugin,false,0,"","",true
+Workflow Aggregator Plugin,jenkinsci/workflow-aggregator-plugin,https://github.com/jenkinsci/workflow-aggregator-plugin,false,0,"","",true
+Workflow Api Plugin,jenkinsci/workflow-api-plugin,https://github.com/jenkinsci/workflow-api-plugin,false,0,"","",true
+Workflow Basic Steps Plugin,jenkinsci/workflow-basic-steps-plugin,https://github.com/jenkinsci/workflow-basic-steps-plugin,false,0,"","",true
+Workflow Cps Global Lib Plugin,jenkinsci/workflow-cps-global-lib-plugin,https://github.com/jenkinsci/workflow-cps-global-lib-plugin,false,0,"","",true
+Workflow Cps Plugin,jenkinsci/workflow-cps-plugin,https://github.com/jenkinsci/workflow-cps-plugin,false,0,"","",true
+Workflow Durable Task Step Plugin,jenkinsci/workflow-durable-task-step-plugin,https://github.com/jenkinsci/workflow-durable-task-step-plugin,false,0,"","",true
+Workflow Job Plugin,jenkinsci/workflow-job-plugin,https://github.com/jenkinsci/workflow-job-plugin,false,0,"","",true
+Workflow Multibranch Plugin,jenkinsci/workflow-multibranch-plugin,https://github.com/jenkinsci/workflow-multibranch-plugin,false,0,"","",true
+Workflow Scm Step Plugin,jenkinsci/workflow-scm-step-plugin,https://github.com/jenkinsci/workflow-scm-step-plugin,false,0,"","",true
+Workflow Step Api Plugin,jenkinsci/workflow-step-api-plugin,https://github.com/jenkinsci/workflow-step-api-plugin,false,0,"","",true
+Workflow Support Plugin,jenkinsci/workflow-support-plugin,https://github.com/jenkinsci/workflow-support-plugin,false,0,"","",true
+Ws Cleanup Plugin,jenkinsci/ws-cleanup-plugin,https://github.com/jenkinsci/ws-cleanup-plugin,false,0,"","",true
