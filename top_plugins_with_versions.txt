@@ -158,7 +158,7 @@ envinject:2.934.vc674e76cf954
 prism-api:1.30.0-630.va_e19d17f83b_0
 sonar:2.18.2
 docker-java-api:3.7.0-133.v93b_8fb_c17a_77
-ansicolor:1.0.6
+ansicolor:536.v13fa_b_860c267
 rebuild:338.va_0a_b_50e29397
 docker-plugin:1308.vff6e33248305
 copyartifact:770.va_6c69e063442
@@ -189,7 +189,7 @@ dashboard-view:2.543.vca_9da_3cb_9c60
 http_request:1.24
 oss-symbols-api:424.ved751e062911
 thinBackup:2.1.3
-pipeline-maven:1610.v7c89b_83ee6ed
+pipeline-maven:1611.v6a_00c04177b_b_
 groovy:497.v7b_061a_a_de65d
 locale:614.va_6a_5a_1a_f2b_38
 aws-java-sdk-ecr:1.12.780-480.v4a_0819121a_9e
@@ -220,7 +220,7 @@ extended-read-permission:68.vd270568a_7520
 throttle-concurrents:624.vc427fa_e0e503
 monitoring:2.6.0
 parameterized-scheduler:374.v531b_4f4d99b_3
-pipeline-maven-api:1610.v7c89b_83ee6ed
+pipeline-maven-api:1611.v6a_00c04177b_b_
 aws-java-sdk-efs:1.12.780-480.v4a_0819121a_9e
 ansible:588.v2a_a_a_f345e34f
 powershell:2.3
@@ -234,7 +234,7 @@ built-on-column:1.5
 nodelabelparameter:759.vb_b_e95db_f3251
 saml:4.590.v6170b_1013da_f
 groovy-postbuild:272.v52a_03efb_8653
-build-pipeline-plugin:2.0.2
+build-pipeline-plugin:2.1.0
 multiple-scms:0.8
 postbuild-task:78.v24529f1f5cdb_
 h2-api:11.1.4.199-36.vb_ee07e965744
