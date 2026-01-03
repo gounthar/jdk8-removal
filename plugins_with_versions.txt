@@ -68,7 +68,7 @@ android-signing:233.v52859b_808905
 anka-build:2.13.1
 ansible:588.v2a_a_a_f345e34f
 ansible-tower:0.17.0
-ansicolor:1.0.6
+ansicolor:536.v13fa_b_860c267
 ant:520.vd082ecfb_16a_9
 ant-in-workspace:1.2.2
 antexec:454.v1a_6526458b_f4
@@ -323,7 +323,7 @@ build-metrics:1.3
 build-monitor-plugin:1.14-985.v7b_f37b_3d0b_f5
 build-name-setter:2.5.1
 build-notifications:1.5.0
-build-pipeline-plugin:2.0.2
+build-pipeline-plugin:2.1.0
 build-requester:0.7
 build-steps-from-json:1.0
 build-symlink:1.1
@@ -1445,9 +1445,9 @@ pipeline-input-step:540.v14b_100d754dd
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.17.v407d68513ea_6
 pipeline-lib-oras:46.va_0ee7b_f1b_02a_
-pipeline-maven:1610.v7c89b_83ee6ed
-pipeline-maven-api:1610.v7c89b_83ee6ed
-pipeline-maven-database:1610.v7c89b_83ee6ed
+pipeline-maven:1611.v6a_00c04177b_b_
+pipeline-maven-api:1611.v6a_00c04177b_b_
+pipeline-maven-database:1611.v6a_00c04177b_b_
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2277.v00573e73ddf1
 pipeline-model-declarative-agent:1.1.1
@@ -1931,7 +1931,7 @@ view-job-filters:406.va_0ec67147ee2
 view26:1.0.7
 viewVC:1.7
 views-containing-job:1.3
-vigilnz-security:1.052.v36928f7f74e9
+vigilnz-security:1.058.v1105d892a_60e
 violation-columns:1.6
 violation-comments-to-github:1.96
 violation-comments-to-gitlab:2.62.0
