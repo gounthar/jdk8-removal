@@ -1,0 +1,3674 @@
+[
+  {
+    "plugin": "Active Choices Plugin",
+    "repository": "jenkinsci/active-choices-plugin",
+    "url": "https://github.com/jenkinsci/active-choices-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/active-choices-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Active Directory Plugin",
+  "repository": "jenkinsci/active-directory-plugin",
+  "url": "https://github.com/jenkinsci/active-directory-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e1b77f4a0e7f137de5dc20c2b1a8e9db77a985e4",
+    "date": "2025-12-27T13:20:02Z"
+  },
+  "jdk25_pr": {
+    "number": "681",
+    "url": "https://github.com/jenkinsci/active-directory-plugin/pull/681",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/active-directory-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Allure Plugin",
+    "repository": "jenkinsci/allure-plugin",
+    "url": "https://github.com/jenkinsci/allure-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/allure-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": false
+  }
+,
+{
+  "plugin": "Analysis Model Api Plugin",
+  "repository": "jenkinsci/analysis-model-api-plugin",
+  "url": "https://github.com/jenkinsci/analysis-model-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "bd200a1c718b359a4717cf8b898a082b6a8d3f3b",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "211",
+    "url": "https://github.com/jenkinsci/analysis-model-api-plugin/pull/211",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/analysis-model-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Ansible Plugin",
+  "repository": "jenkinsci/ansible-plugin",
+  "url": "https://github.com/jenkinsci/ansible-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "d4cde55a4020b4f3b58d77a435b11de64fa842e3",
+    "date": "2025-08-11T07:30:57Z"
+  },
+  "jdk25_pr": {
+    "number": "340",
+    "url": "https://github.com/jenkinsci/ansible-plugin/pull/340",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ansible-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Ansicolor Plugin",
+  "repository": "jenkinsci/ansicolor-plugin",
+  "url": "https://github.com/jenkinsci/ansicolor-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "299e57973a45eb4d6849950c0c5ee20c87dff0d3",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "365",
+    "url": "https://github.com/jenkinsci/ansicolor-plugin/pull/365",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ansicolor-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Ant Plugin",
+  "repository": "jenkinsci/ant-plugin",
+  "url": "https://github.com/jenkinsci/ant-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "dd33fa636417d5951b07394789194a67e5ac5b28",
+    "date": "2025-11-07T22:51:31Z"
+  },
+  "jdk25_pr": {
+    "number": "177",
+    "url": "https://github.com/jenkinsci/ant-plugin/pull/177",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ant-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Antisamy Markup Formatter Plugin",
+  "repository": "jenkinsci/antisamy-markup-formatter-plugin",
+  "url": "https://github.com/jenkinsci/antisamy-markup-formatter-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "8f540def7f4e22a21dc2cca9b45046095dcd173f",
+    "date": "2025-11-07T12:57:28Z"
+  },
+  "jdk25_pr": {
+    "number": "149",
+    "url": "https://github.com/jenkinsci/antisamy-markup-formatter-plugin/pull/149",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/antisamy-markup-formatter-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Apache Httpcomponents Client 4 Api Plugin",
+  "repository": "jenkinsci/apache-httpcomponents-client-4-api-plugin",
+  "url": "https://github.com/jenkinsci/apache-httpcomponents-client-4-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "49197890c1c1876cc9b597424a1821214285f1e0",
+    "date": "2025-10-25T14:11:34Z"
+  },
+  "jdk25_pr": {
+    "number": "265",
+    "url": "https://github.com/jenkinsci/apache-httpcomponents-client-4-api-plugin/pull/265",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/apache-httpcomponents-client-4-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Apache Httpcomponents Client 5 Api Plugin",
+  "repository": "jenkinsci/apache-httpcomponents-client-5-api-plugin",
+  "url": "https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "9da8cbc0f3cdcb578763abf2e2f73f8735faabfb",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "105",
+    "url": "https://github.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/pull/105",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/apache-httpcomponents-client-5-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Artifactory Plugin",
+    "repository": "jenkinsci/artifactory-plugin",
+    "url": "https://github.com/jenkinsci/artifactory-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/artifactory-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": false
+  }
+,
+{
+  "plugin": "Asm Api Plugin",
+  "repository": "jenkinsci/asm-api-plugin",
+  "url": "https://github.com/jenkinsci/asm-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c6b67b7c258660dcbaef8d31ee273ad79aa11462",
+    "date": "2025-08-09T08:40:50Z"
+  },
+  "jdk25_pr": {
+    "number": "91",
+    "url": "https://github.com/jenkinsci/asm-api-plugin/pull/91",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/asm-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Authentication Tokens Plugin",
+  "repository": "jenkinsci/authentication-tokens-plugin",
+  "url": "https://github.com/jenkinsci/authentication-tokens-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "2ff7786695582dc3b09286841e2b2f0cd2f933f2",
+    "date": "2025-08-08T15:43:51Z"
+  },
+  "jdk25_pr": {
+    "number": "223",
+    "url": "https://github.com/jenkinsci/authentication-tokens-plugin/pull/223",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/authentication-tokens-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Authorize Project Plugin",
+  "repository": "jenkinsci/authorize-project-plugin",
+  "url": "https://github.com/jenkinsci/authorize-project-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "aa49dae8e59a189edad9b6197b414be55c8c15dd",
+    "date": "2025-11-09T21:38:02Z"
+  },
+  "jdk25_pr": {
+    "number": "340",
+    "url": "https://github.com/jenkinsci/authorize-project-plugin/pull/340",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/authorize-project-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Aws Credentials Plugin",
+  "repository": "jenkinsci/aws-credentials-plugin",
+  "url": "https://github.com/jenkinsci/aws-credentials-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "8f62397c485d7485f1a470247be8951a6cf66284",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "317",
+    "url": "https://github.com/jenkinsci/aws-credentials-plugin/pull/317",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/aws-credentials-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Aws Java Sdk Plugin",
+    "repository": "jenkinsci/aws-java-sdk-plugin",
+    "url": "https://github.com/jenkinsci/aws-java-sdk-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/aws-java-sdk-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Badge Plugin",
+  "repository": "jenkinsci/badge-plugin",
+  "url": "https://github.com/jenkinsci/badge-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "429bb7712add1886a88a53cc5380a22163913704",
+    "date": "2025-10-25T18:49:51Z"
+  },
+  "jdk25_pr": {
+    "number": "313",
+    "url": "https://github.com/jenkinsci/badge-plugin/pull/313",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/badge-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Bitbucket Branch Source Plugin",
+  "repository": "jenkinsci/bitbucket-branch-source-plugin",
+  "url": "https://github.com/jenkinsci/bitbucket-branch-source-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4566f24e044d8038adfbb4ea4f1d4eb35885f034",
+    "date": "2025-11-17T08:34:39Z"
+  },
+  "jdk25_pr": {
+    "number": "1141",
+    "url": "https://github.com/jenkinsci/bitbucket-branch-source-plugin/pull/1141",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/bitbucket-branch-source-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Bitbucket Plugin",
+  "repository": "jenkinsci/bitbucket-plugin",
+  "url": "https://github.com/jenkinsci/bitbucket-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e6425f2091a42391b38864dca469c6530b9b79db",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "148",
+    "url": "https://github.com/jenkinsci/bitbucket-plugin/pull/148",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/bitbucket-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Blueocean Autofavorite Plugin",
+    "repository": "jenkinsci/blueocean-autofavorite-plugin",
+    "url": "https://github.com/jenkinsci/blueocean-autofavorite-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/blueocean-autofavorite-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+  {
+    "plugin": "Blueocean Display Url Plugin",
+    "repository": "jenkinsci/blueocean-display-url-plugin",
+    "url": "https://github.com/jenkinsci/blueocean-display-url-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/blueocean-display-url-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Blueocean Plugin",
+  "repository": "jenkinsci/blueocean-plugin",
+  "url": "https://github.com/jenkinsci/blueocean-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "06d0609d09ab8404d9bd8e8a29fc680957da8cfd",
+    "date": "2025-09-02T07:33:49Z"
+  },
+  "jdk25_pr": {
+    "number": "2647",
+    "url": "https://github.com/jenkinsci/blueocean-plugin/pull/2647",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/blueocean-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Bootstrap4 Api Plugin",
+    "repository": "jenkinsci/bootstrap4-api-plugin",
+    "url": "https://github.com/jenkinsci/bootstrap4-api-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/bootstrap4-api-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Bootstrap5 Api Plugin",
+  "repository": "jenkinsci/bootstrap5-api-plugin",
+  "url": "https://github.com/jenkinsci/bootstrap5-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "bf866fa91936eb846bc4e9303423afe1c4bde96c",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "458",
+    "url": "https://github.com/jenkinsci/bootstrap5-api-plugin/pull/458",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/bootstrap5-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Bouncycastle Api Plugin",
+  "repository": "jenkinsci/bouncycastle-api-plugin",
+  "url": "https://github.com/jenkinsci/bouncycastle-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "361332b733ebe679905a1567877f50a9c061d2e0",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "198",
+    "url": "https://github.com/jenkinsci/bouncycastle-api-plugin/pull/198",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/bouncycastle-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Branch Api Plugin",
+  "repository": "jenkinsci/branch-api-plugin",
+  "url": "https://github.com/jenkinsci/branch-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "97d1bb24ed9ad08573016e204d9477a70626a89e",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "561",
+    "url": "https://github.com/jenkinsci/branch-api-plugin/pull/561",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/branch-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Build Name Setter Plugin",
+  "repository": "jenkinsci/build-name-setter-plugin",
+  "url": "https://github.com/jenkinsci/build-name-setter-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "d426da33186c124d2c45b0195f62f6b639ab0a00",
+    "date": "2025-10-26T15:45:05Z"
+  },
+  "jdk25_pr": {
+    "number": "178",
+    "url": "https://github.com/jenkinsci/build-name-setter-plugin/pull/178",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/build-name-setter-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Build Pipeline Plugin",
+    "repository": "jenkinsci/build-pipeline-plugin",
+    "url": "https://github.com/jenkinsci/build-pipeline-plugin",
+    "has_jdk25": true,
+    "jdk25_commit": {
+      "sha": "47f8316f93f358d719fdc7b1e100a495c2cfc3a4",
+      "date": "2026-01-02T00:52:46Z"
+    },
+    "jdk25_pr": {
+      "number": "174",
+      "url": "https://github.com/jenkinsci/build-pipeline-plugin/pull/174",
+      "is_merged": true
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/build-pipeline-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Build Timeout Plugin",
+  "repository": "jenkinsci/build-timeout-plugin",
+  "url": "https://github.com/jenkinsci/build-timeout-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "0a63eaea7d2e3b45c699d38af1befe25d1085819",
+    "date": "2025-11-22T21:08:48Z"
+  },
+  "jdk25_pr": {
+    "number": "190",
+    "url": "https://github.com/jenkinsci/build-timeout-plugin/pull/190",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/build-timeout-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Build User Vars Plugin",
+  "repository": "jenkinsci/build-user-vars-plugin",
+  "url": "https://github.com/jenkinsci/build-user-vars-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e1479552a9aeec882dd700b8a4f793f67100d4a0",
+    "date": "2025-10-31T16:14:45Z"
+  },
+  "jdk25_pr": {
+    "number": "183",
+    "url": "https://github.com/jenkinsci/build-user-vars-plugin/pull/183",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/build-user-vars-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Built On Column Plugin",
+  "repository": "jenkinsci/built-on-column-plugin",
+  "url": "https://github.com/jenkinsci/built-on-column-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "bbda2d146d551e0c673f6d3df1b71f6469949606",
+    "date": "2025-10-25T17:50:04Z"
+  },
+  "jdk25_pr": {
+    "number": "66",
+    "url": "https://github.com/jenkinsci/built-on-column-plugin/pull/66",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/built-on-column-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Caffeine Api Plugin",
+  "repository": "jenkinsci/caffeine-api-plugin",
+  "url": "https://github.com/jenkinsci/caffeine-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c80dd86c785ad310d21a6fe5905559124225b661",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "141",
+    "url": "https://github.com/jenkinsci/caffeine-api-plugin/pull/141",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/caffeine-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Checks Api Plugin",
+  "repository": "jenkinsci/checks-api-plugin",
+  "url": "https://github.com/jenkinsci/checks-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "3228135dfb6ede49f99fc34ab37ee884829c2410",
+    "date": "2025-10-26T18:34:50Z"
+  },
+  "jdk25_pr": {
+    "number": "306",
+    "url": "https://github.com/jenkinsci/checks-api-plugin/pull/306",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/checks-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Cloud Stats Plugin",
+  "repository": "jenkinsci/cloud-stats-plugin",
+  "url": "https://github.com/jenkinsci/cloud-stats-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "3ed171a2214f8aeba339ba429c4bd34b346b03c9",
+    "date": "2025-10-25T17:49:24Z"
+  },
+  "jdk25_pr": {
+    "number": "175",
+    "url": "https://github.com/jenkinsci/cloud-stats-plugin/pull/175",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/cloud-stats-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Cloudbees Folder Plugin",
+  "repository": "jenkinsci/cloudbees-folder-plugin",
+  "url": "https://github.com/jenkinsci/cloudbees-folder-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "06d85fcc4ae868cbdea5a46672e36ed1e699b43f",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "544",
+    "url": "https://github.com/jenkinsci/cloudbees-folder-plugin/pull/544",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/cloudbees-folder-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Cobertura Plugin",
+    "repository": "jenkinsci/cobertura-plugin",
+    "url": "https://github.com/jenkinsci/cobertura-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/cobertura-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+  {
+    "plugin": "Code Coverage Api Plugin",
+    "repository": "jenkinsci/code-coverage-api-plugin",
+    "url": "https://github.com/jenkinsci/code-coverage-api-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/code-coverage-api-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Command Launcher Plugin",
+  "repository": "jenkinsci/command-launcher-plugin",
+  "url": "https://github.com/jenkinsci/command-launcher-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "2ea063d59ba3fb9c2655c3b2a7f38013dd007a8c",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "122",
+    "url": "https://github.com/jenkinsci/command-launcher-plugin/pull/122",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/command-launcher-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Commons Compress Api Plugin",
+  "repository": "jenkinsci/commons-compress-api-plugin",
+  "url": "https://github.com/jenkinsci/commons-compress-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "90d134f492ffae6ea94e8723b41c27710a709e85",
+    "date": "2025-11-21T13:47:11Z"
+  },
+  "jdk25_pr": {
+    "number": "57",
+    "url": "https://github.com/jenkinsci/commons-compress-api-plugin/pull/57",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/commons-compress-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Commons Httpclient3 Api Plugin",
+  "repository": "jenkinsci/commons-httpclient3-api-plugin",
+  "url": "https://github.com/jenkinsci/commons-httpclient3-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "cdc7b8a15d8e3e373befe8d1cfbf44d73c1f5895",
+    "date": "2025-12-01T03:43:13Z"
+  },
+  "jdk25_pr": {
+    "number": "43",
+    "url": "https://github.com/jenkinsci/commons-httpclient3-api-plugin/pull/43",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/commons-httpclient3-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Commons Lang3 Api Plugin",
+  "repository": "jenkinsci/commons-lang3-api-plugin",
+  "url": "https://github.com/jenkinsci/commons-lang3-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4a3a22958a404fe712d8d188a80875d3e93493c8",
+    "date": "2025-10-26T18:35:00Z"
+  },
+  "jdk25_pr": {
+    "number": "96",
+    "url": "https://github.com/jenkinsci/commons-lang3-api-plugin/pull/96",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/commons-lang3-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Commons Text Api Plugin",
+  "repository": "jenkinsci/commons-text-api-plugin",
+  "url": "https://github.com/jenkinsci/commons-text-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "a5d499fff1914809ea15a8237bdbed15e5d77296",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "155",
+    "url": "https://github.com/jenkinsci/commons-text-api-plugin/pull/155",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/commons-text-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Conditional Buildstep Plugin",
+  "repository": "jenkinsci/conditional-buildstep-plugin",
+  "url": "https://github.com/jenkinsci/conditional-buildstep-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "714d9a78dca648ec35d1a7ff4e02703ce63a099a",
+    "date": "2025-10-25T17:51:37Z"
+  },
+  "jdk25_pr": {
+    "number": "147",
+    "url": "https://github.com/jenkinsci/conditional-buildstep-plugin/pull/147",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/conditional-buildstep-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Config File Provider Plugin",
+  "repository": "jenkinsci/config-file-provider-plugin",
+  "url": "https://github.com/jenkinsci/config-file-provider-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "6b4fd1320e9617ac1776abc51a2bf49faaa732a4",
+    "date": "2025-08-12T15:55:11Z"
+  },
+  "jdk25_pr": {
+    "number": "384",
+    "url": "https://github.com/jenkinsci/config-file-provider-plugin/pull/384",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/config-file-provider-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Configuration As Code Plugin",
+  "repository": "jenkinsci/configuration-as-code-plugin",
+  "url": "https://github.com/jenkinsci/configuration-as-code-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "918aba0771670ac36d4af96715338a1666704d5c",
+    "date": "2025-10-26T18:35:11Z"
+  },
+  "jdk25_pr": {
+    "number": "2732",
+    "url": "https://github.com/jenkinsci/configuration-as-code-plugin/pull/2732",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/configuration-as-code-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Copyartifact Plugin",
+  "repository": "jenkinsci/copyartifact-plugin",
+  "url": "https://github.com/jenkinsci/copyartifact-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "da39719dcbb64b37959f5d02ddccf9a8db317a8f",
+    "date": "2025-10-25T17:52:00Z"
+  },
+  "jdk25_pr": {
+    "number": "283",
+    "url": "https://github.com/jenkinsci/copyartifact-plugin/pull/283",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/copyartifact-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Coverage Plugin",
+  "repository": "jenkinsci/coverage-plugin",
+  "url": "https://github.com/jenkinsci/coverage-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "470a1bed57fdf8dbd7c1130ab0377b6cddd6f626",
+    "date": "2025-11-28T15:05:58Z"
+  },
+  "jdk25_pr": {
+    "number": "521",
+    "url": "https://github.com/jenkinsci/coverage-plugin/pull/521",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/coverage-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Credentials Binding Plugin",
+  "repository": "jenkinsci/credentials-binding-plugin",
+  "url": "https://github.com/jenkinsci/credentials-binding-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "431c4842c9e3c578126fadf1718936bd50bf8262",
+    "date": "2025-11-14T01:45:19Z"
+  },
+  "jdk25_pr": {
+    "number": "390",
+    "url": "https://github.com/jenkinsci/credentials-binding-plugin/pull/390",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/credentials-binding-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Credentials Plugin",
+  "repository": "jenkinsci/credentials-plugin",
+  "url": "https://github.com/jenkinsci/credentials-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ab6088f4826376627ab383dd85a7b45089e2ab77",
+    "date": "2025-11-15T12:30:28Z"
+  },
+  "jdk25_pr": {
+    "number": "657",
+    "url": "https://github.com/jenkinsci/credentials-plugin/pull/657",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/credentials-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Dark Theme Plugin",
+  "repository": "jenkinsci/dark-theme-plugin",
+  "url": "https://github.com/jenkinsci/dark-theme-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e975868bbeb59c5a3606e48bc4d8a37e80f5a634",
+    "date": "2025-10-26T12:48:03Z"
+  },
+  "jdk25_pr": {
+    "number": "656",
+    "url": "https://github.com/jenkinsci/dark-theme-plugin/pull/656",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/dark-theme-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Dashboard View Plugin",
+  "repository": "jenkinsci/dashboard-view-plugin",
+  "url": "https://github.com/jenkinsci/dashboard-view-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "022d9810a61d218df3b94c82e6f105ccb2150fef",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "431",
+    "url": "https://github.com/jenkinsci/dashboard-view-plugin/pull/431",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/dashboard-view-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Data Tables Api Plugin",
+  "repository": "jenkinsci/data-tables-api-plugin",
+  "url": "https://github.com/jenkinsci/data-tables-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "fd63cc2289d29eb0574087420d37bc20019e4040",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "635",
+    "url": "https://github.com/jenkinsci/data-tables-api-plugin/pull/635",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/data-tables-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Display Url Api Plugin",
+  "repository": "jenkinsci/display-url-api-plugin",
+  "url": "https://github.com/jenkinsci/display-url-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "2463b1e47788e9466b91ca505e738d47f8ef1317",
+    "date": "2025-11-17T13:25:26Z"
+  },
+  "jdk25_pr": {
+    "number": "291",
+    "url": "https://github.com/jenkinsci/display-url-api-plugin/pull/291",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/display-url-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Docker Commons Plugin",
+  "repository": "jenkinsci/docker-commons-plugin",
+  "url": "https://github.com/jenkinsci/docker-commons-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "989c6b221b3d920bbb2045cf69a17d2dc1291096",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "179",
+    "url": "https://github.com/jenkinsci/docker-commons-plugin/pull/179",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/docker-commons-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Docker Java Api Plugin",
+  "repository": "jenkinsci/docker-java-api-plugin",
+  "url": "https://github.com/jenkinsci/docker-java-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "d0e563bd1747bf7b3db67448c2c99fbf6d7dd496",
+    "date": "2025-10-25T17:53:49Z"
+  },
+  "jdk25_pr": {
+    "number": "147",
+    "url": "https://github.com/jenkinsci/docker-java-api-plugin/pull/147",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/docker-java-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Docker Plugin",
+  "repository": "jenkinsci/docker-plugin",
+  "url": "https://github.com/jenkinsci/docker-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "a0b972a7c22676619703ba7f912736a88861c8a1",
+    "date": "2025-10-25T18:09:14Z"
+  },
+  "jdk25_pr": {
+    "number": "1176",
+    "url": "https://github.com/jenkinsci/docker-plugin/pull/1176",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/docker-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Docker Workflow Plugin",
+    "repository": "jenkinsci/docker-workflow-plugin",
+    "url": "https://github.com/jenkinsci/docker-workflow-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/docker-workflow-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Durable Task Plugin",
+  "repository": "jenkinsci/durable-task-plugin",
+  "url": "https://github.com/jenkinsci/durable-task-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "34de90342d535fe1fff4623223f0ef47c4e714be",
+    "date": "2025-11-14T01:42:13Z"
+  },
+  "jdk25_pr": {
+    "number": "304",
+    "url": "https://github.com/jenkinsci/durable-task-plugin/pull/304",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/durable-task-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Echarts Api Plugin",
+  "repository": "jenkinsci/echarts-api-plugin",
+  "url": "https://github.com/jenkinsci/echarts-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "48e2f8240847f4a4e6120e0f4f5796f9607b8efd",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "438",
+    "url": "https://github.com/jenkinsci/echarts-api-plugin/pull/438",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/echarts-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Eddsa Api Plugin",
+  "repository": "jenkinsci/eddsa-api-plugin",
+  "url": "https://github.com/jenkinsci/eddsa-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "d2ccefb8fe1a836cad4e457d22e5f837c3627c2c",
+    "date": "2025-11-22T05:36:01Z"
+  },
+  "jdk25_pr": {
+    "number": "31",
+    "url": "https://github.com/jenkinsci/eddsa-api-plugin/pull/31",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/eddsa-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Email Ext Plugin",
+  "repository": "jenkinsci/email-ext-plugin",
+  "url": "https://github.com/jenkinsci/email-ext-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ff0233ef1c890aefe2f3bc94928977c3243a0cf0",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "644",
+    "url": "https://github.com/jenkinsci/email-ext-plugin/pull/644",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/email-ext-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Emailext Template Plugin",
+  "repository": "jenkinsci/emailext-template-plugin",
+  "url": "https://github.com/jenkinsci/emailext-template-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "769557a69907783c5f8a9a2ee2104e9d3cd56da3",
+    "date": "2025-10-25T18:06:02Z"
+  },
+  "jdk25_pr": {
+    "number": "167",
+    "url": "https://github.com/jenkinsci/emailext-template-plugin/pull/167",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/emailext-template-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Envinject Api Plugin",
+  "repository": "jenkinsci/envinject-api-plugin",
+  "url": "https://github.com/jenkinsci/envinject-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "35fd4d7eb515cd9e3cca55dc1b5fcb3dbdffb65b",
+    "date": "2025-11-28T14:18:39Z"
+  },
+  "jdk25_pr": {
+    "number": "86",
+    "url": "https://github.com/jenkinsci/envinject-api-plugin/pull/86",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/envinject-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Envinject Plugin",
+  "repository": "jenkinsci/envinject-plugin",
+  "url": "https://github.com/jenkinsci/envinject-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "613c75a9550fae56a58cf96976e9a2f1b7a70b51",
+    "date": "2025-11-28T14:17:54Z"
+  },
+  "jdk25_pr": {
+    "number": "321",
+    "url": "https://github.com/jenkinsci/envinject-plugin/pull/321",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/envinject-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Extended Choice Parameter Plugin",
+    "repository": "jenkinsci/extended-choice-parameter-plugin",
+    "url": "https://github.com/jenkinsci/extended-choice-parameter-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/extended-choice-parameter-plugin/main/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Extended Read Permission Plugin",
+  "repository": "jenkinsci/extended-read-permission-plugin",
+  "url": "https://github.com/jenkinsci/extended-read-permission-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "61681d7b63ca30a92091546777b4645bb0d1c6a8",
+    "date": "2025-11-18T05:41:09Z"
+  },
+  "jdk25_pr": {
+    "number": "35",
+    "url": "https://github.com/jenkinsci/extended-read-permission-plugin/pull/35",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/extended-read-permission-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "External Monitor Job Plugin",
+  "repository": "jenkinsci/external-monitor-job-plugin",
+  "url": "https://github.com/jenkinsci/external-monitor-job-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "06424dfaa889cacb6cf9bbc3f9444a7ce93beb98",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "117",
+    "url": "https://github.com/jenkinsci/external-monitor-job-plugin/pull/117",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/external-monitor-job-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Favorite Plugin",
+  "repository": "jenkinsci/favorite-plugin",
+  "url": "https://github.com/jenkinsci/favorite-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "abf28587f1014bb150b00dd484011f382348c7f0",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "229",
+    "url": "https://github.com/jenkinsci/favorite-plugin/pull/229",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/favorite-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Font Awesome Api Plugin",
+  "repository": "jenkinsci/font-awesome-api-plugin",
+  "url": "https://github.com/jenkinsci/font-awesome-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "055fc986fb749de9e895d21d65cf7de6e07e8769",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "366",
+    "url": "https://github.com/jenkinsci/font-awesome-api-plugin/pull/366",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/font-awesome-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Forensics Api Plugin",
+    "repository": "jenkinsci/forensics-api-plugin",
+    "url": "https://github.com/jenkinsci/forensics-api-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/forensics-api-plugin/main/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Generic Webhook Trigger Plugin",
+  "repository": "jenkinsci/generic-webhook-trigger-plugin",
+  "url": "https://github.com/jenkinsci/generic-webhook-trigger-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4c0b8adc09f465054640e19ec03446f1d38f2f8c",
+    "date": "2025-10-26T11:34:42Z"
+  },
+  "jdk25_pr": {
+    "number": "381",
+    "url": "https://github.com/jenkinsci/generic-webhook-trigger-plugin/pull/381",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/generic-webhook-trigger-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Git Client Plugin",
+  "repository": "jenkinsci/git-client-plugin",
+  "url": "https://github.com/jenkinsci/git-client-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ce504cf627d49515a0e20fb9871afe3b2113dac8",
+    "date": "2025-10-25T14:56:42Z"
+  },
+  "jdk25_pr": {
+    "number": "1352",
+    "url": "https://github.com/jenkinsci/git-client-plugin/pull/1352",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/git-client-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Git Parameter Plugin",
+  "repository": "jenkinsci/git-parameter-plugin",
+  "url": "https://github.com/jenkinsci/git-parameter-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "aa3301f283dac86021f3a9db955e95d0b87cf85a",
+    "date": "2025-10-25T18:11:52Z"
+  },
+  "jdk25_pr": {
+    "number": "173",
+    "url": "https://github.com/jenkinsci/git-parameter-plugin/pull/173",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/git-parameter-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Git Plugin",
+  "repository": "jenkinsci/git-plugin",
+  "url": "https://github.com/jenkinsci/git-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "1ed9f039ead68b659d390fe4d43de35edbd9c79b",
+    "date": "2025-10-25T15:09:11Z"
+  },
+  "jdk25_pr": {
+    "number": "1826",
+    "url": "https://github.com/jenkinsci/git-plugin/pull/1826",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/git-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Git Server Plugin",
+  "repository": "jenkinsci/git-server-plugin",
+  "url": "https://github.com/jenkinsci/git-server-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ffa922240548a3461d10e925219ec54626e8a50e",
+    "date": "2025-11-19T05:13:30Z"
+  },
+  "jdk25_pr": {
+    "number": "155",
+    "url": "https://github.com/jenkinsci/git-server-plugin/pull/155",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/git-server-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Github Api Plugin",
+  "repository": "jenkinsci/github-api-plugin",
+  "url": "https://github.com/jenkinsci/github-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "beb610326465aa0d9db5d6c3098e548626b98f48",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "292",
+    "url": "https://github.com/jenkinsci/github-api-plugin/pull/292",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/github-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Github Branch Source Plugin",
+  "repository": "jenkinsci/github-branch-source-plugin",
+  "url": "https://github.com/jenkinsci/github-branch-source-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "5e0079c1acde7bdab7e31185cfe3e32d12852b9f",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "910",
+    "url": "https://github.com/jenkinsci/github-branch-source-plugin/pull/910",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/github-branch-source-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Github Plugin",
+    "repository": "jenkinsci/github-plugin",
+    "url": "https://github.com/jenkinsci/github-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/github-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Gitlab Api Plugin",
+  "repository": "jenkinsci/gitlab-api-plugin",
+  "url": "https://github.com/jenkinsci/gitlab-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "14c6eae7809edbbfda09cf790c4ec00e372a0d31",
+    "date": "2025-10-26T12:04:59Z"
+  },
+  "jdk25_pr": {
+    "number": "125",
+    "url": "https://github.com/jenkinsci/gitlab-api-plugin/pull/125",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/gitlab-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Gitlab Plugin",
+  "repository": "jenkinsci/gitlab-plugin",
+  "url": "https://github.com/jenkinsci/gitlab-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e04966165c70fee5e2d8226c7ec0190bdbce1dcd",
+    "date": "2025-11-15T22:43:26Z"
+  },
+  "jdk25_pr": {
+    "number": "1835",
+    "url": "https://github.com/jenkinsci/gitlab-plugin/pull/1835",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/gitlab-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Gradle Plugin",
+    "repository": "jenkinsci/gradle-plugin",
+    "url": "https://github.com/jenkinsci/gradle-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/gradle-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Groovy Plugin",
+  "repository": "jenkinsci/groovy-plugin",
+  "url": "https://github.com/jenkinsci/groovy-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "56643d755a1fb5352605d5f8666bcb34a3d1d38b",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "101",
+    "url": "https://github.com/jenkinsci/groovy-plugin/pull/101",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/groovy-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Groovy Postbuild Plugin",
+  "repository": "jenkinsci/groovy-postbuild-plugin",
+  "url": "https://github.com/jenkinsci/groovy-postbuild-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "355bc134a871ad74b86c876a744f6309329d4843",
+    "date": "2025-10-25T18:09:58Z"
+  },
+  "jdk25_pr": {
+    "number": "116",
+    "url": "https://github.com/jenkinsci/groovy-postbuild-plugin/pull/116",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/groovy-postbuild-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Gson Api Plugin",
+  "repository": "jenkinsci/gson-api-plugin",
+  "url": "https://github.com/jenkinsci/gson-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "7f2a2bb41eb737b07531e38ee67bd51f44138c1d",
+    "date": "2025-08-09T08:49:50Z"
+  },
+  "jdk25_pr": {
+    "number": "87",
+    "url": "https://github.com/jenkinsci/gson-api-plugin/pull/87",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/gson-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "H2 Api Plugin",
+  "repository": "jenkinsci/h2-api-plugin",
+  "url": "https://github.com/jenkinsci/h2-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c824d43e83914ca873717eccb6c5da01a08c8b3f",
+    "date": "2025-10-26T18:46:31Z"
+  },
+  "jdk25_pr": {
+    "number": "54",
+    "url": "https://github.com/jenkinsci/h2-api-plugin/pull/54",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/h2-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Handy Uri Templates 2 Api Plugin",
+  "repository": "jenkinsci/handy-uri-templates-2-api-plugin",
+  "url": "https://github.com/jenkinsci/handy-uri-templates-2-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "cea5d521d5f3d6dfd0f3e3ad9f5f950d31e85520",
+    "date": "2025-11-28T16:03:15Z"
+  },
+  "jdk25_pr": {
+    "number": "83",
+    "url": "https://github.com/jenkinsci/handy-uri-templates-2-api-plugin/pull/83",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/handy-uri-templates-2-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Htmlpublisher Plugin",
+  "repository": "jenkinsci/htmlpublisher-plugin",
+  "url": "https://github.com/jenkinsci/htmlpublisher-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "097449d589705e130069d1d9e05abbb018bb260a",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "385",
+    "url": "https://github.com/jenkinsci/htmlpublisher-plugin/pull/385",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/htmlpublisher-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Http Request Plugin",
+  "repository": "jenkinsci/http-request-plugin",
+  "url": "https://github.com/jenkinsci/http-request-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "889e2bfdd881995f4ec93f097ade598ebe5640c3",
+    "date": "2025-10-25T18:22:04Z"
+  },
+  "jdk25_pr": {
+    "number": "221",
+    "url": "https://github.com/jenkinsci/http-request-plugin/pull/221",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/http-request-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Instance Identity Plugin",
+  "repository": "jenkinsci/instance-identity-plugin",
+  "url": "https://github.com/jenkinsci/instance-identity-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "1397aa9c626d4cbac192e3c9a3f4244eed211f8f",
+    "date": "2025-10-25T18:08:25Z"
+  },
+  "jdk25_pr": {
+    "number": "153",
+    "url": "https://github.com/jenkinsci/instance-identity-plugin/pull/153",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/instance-identity-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Ionicons Api Plugin",
+  "repository": "jenkinsci/ionicons-api-plugin",
+  "url": "https://github.com/jenkinsci/ionicons-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "3a0ee16eb9a0f208dc7264d5f12e3925c0126d30",
+    "date": "2025-10-26T12:47:35Z"
+  },
+  "jdk25_pr": {
+    "number": "90",
+    "url": "https://github.com/jenkinsci/ionicons-api-plugin/pull/90",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ionicons-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jackson2 Api Plugin",
+  "repository": "jenkinsci/jackson2-api-plugin",
+  "url": "https://github.com/jenkinsci/jackson2-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "749d0aea416110047cce43635009c267572e192a",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "316",
+    "url": "https://github.com/jenkinsci/jackson2-api-plugin/pull/316",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jackson2-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Jacoco Plugin",
+    "repository": "jenkinsci/jacoco-plugin",
+    "url": "https://github.com/jenkinsci/jacoco-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jacoco-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Jakarta Activation Api Plugin",
+  "repository": "jenkinsci/jakarta-activation-api-plugin",
+  "url": "https://github.com/jenkinsci/jakarta-activation-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4e7f719808ec41ebd325b07df15a093738b97869",
+    "date": "2025-11-21T13:55:24Z"
+  },
+  "jdk25_pr": {
+    "number": "99",
+    "url": "https://github.com/jenkinsci/jakarta-activation-api-plugin/pull/99",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jakarta-activation-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jakarta Mail Api Plugin",
+  "repository": "jenkinsci/jakarta-mail-api-plugin",
+  "url": "https://github.com/jenkinsci/jakarta-mail-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "cc0bdc3b873eb5d098fbc28aa50fb0c01906dc00",
+    "date": "2025-11-21T14:20:47Z"
+  },
+  "jdk25_pr": {
+    "number": "125",
+    "url": "https://github.com/jenkinsci/jakarta-mail-api-plugin/pull/125",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jakarta-mail-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Javadoc Plugin",
+  "repository": "jenkinsci/javadoc-plugin",
+  "url": "https://github.com/jenkinsci/javadoc-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ef91079291635e59c2162e093119e55a33b917d7",
+    "date": "2025-10-03T23:36:11Z"
+  },
+  "jdk25_pr": {
+    "number": "233",
+    "url": "https://github.com/jenkinsci/javadoc-plugin/pull/233",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/javadoc-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Javax Activation Api Plugin",
+  "repository": "jenkinsci/javax-activation-api-plugin",
+  "url": "https://github.com/jenkinsci/javax-activation-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "36ab7edbcb4f9164cdda1b83da7e3d865733b346",
+    "date": "2025-11-21T14:00:07Z"
+  },
+  "jdk25_pr": {
+    "number": "90",
+    "url": "https://github.com/jenkinsci/javax-activation-api-plugin/pull/90",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/javax-activation-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Javax Mail Api Plugin",
+  "repository": "jenkinsci/javax-mail-api-plugin",
+  "url": "https://github.com/jenkinsci/javax-mail-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4cd287b4c13e7125695dc4dac44f6b3a279d055f",
+    "date": "2025-11-21T14:17:01Z"
+  },
+  "jdk25_pr": {
+    "number": "116",
+    "url": "https://github.com/jenkinsci/javax-mail-api-plugin/pull/116",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/javax-mail-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jaxb Plugin",
+  "repository": "jenkinsci/jaxb-plugin",
+  "url": "https://github.com/jenkinsci/jaxb-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e617b787d3f8700ebbedfa567a9dc96560c6ead2",
+    "date": "2025-11-07T17:17:43Z"
+  },
+  "jdk25_pr": {
+    "number": "141",
+    "url": "https://github.com/jenkinsci/jaxb-plugin/pull/141",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jaxb-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jdk Tool Plugin",
+  "repository": "jenkinsci/jdk-tool-plugin",
+  "url": "https://github.com/jenkinsci/jdk-tool-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c50ca538d7819558238cdc6c82ffe872dd364130",
+    "date": "2025-11-16T05:58:07Z"
+  },
+  "jdk25_pr": {
+    "number": "101",
+    "url": "https://github.com/jenkinsci/jdk-tool-plugin/pull/101",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jdk-tool-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jersey2 Api Plugin",
+  "repository": "jenkinsci/jersey2-api-plugin",
+  "url": "https://github.com/jenkinsci/jersey2-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "85e3e641a23578d9fcf6927eee472c43ac0a656c",
+    "date": "2025-11-23T14:47:39Z"
+  },
+  "jdk25_pr": {
+    "number": "155",
+    "url": "https://github.com/jenkinsci/jersey2-api-plugin/pull/155",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jersey2-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jira Plugin",
+  "repository": "jenkinsci/jira-plugin",
+  "url": "https://github.com/jenkinsci/jira-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "a48c9576916fdb99e842b9f905cce16f94112e0d",
+    "date": "2025-10-27T10:05:03Z"
+  },
+  "jdk25_pr": {
+    "number": "748",
+    "url": "https://github.com/jenkinsci/jira-plugin/pull/748",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jira-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jjwt Api Plugin",
+  "repository": "jenkinsci/jjwt-api-plugin",
+  "url": "https://github.com/jenkinsci/jjwt-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ed69f3014c4a4fcc1f373fe802ed987d21ff4285",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "119",
+    "url": "https://github.com/jenkinsci/jjwt-api-plugin/pull/119",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jjwt-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jnr Posix Api Plugin",
+  "repository": "jenkinsci/jnr-posix-api-plugin",
+  "url": "https://github.com/jenkinsci/jnr-posix-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "b6696141b2085058da9e2bd926e9769c6d16881e",
+    "date": "2025-08-09T08:59:23Z"
+  },
+  "jdk25_pr": {
+    "number": "126",
+    "url": "https://github.com/jenkinsci/jnr-posix-api-plugin/pull/126",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jnr-posix-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Job Config History Plugin",
+  "repository": "jenkinsci/job-config-history-plugin",
+  "url": "https://github.com/jenkinsci/job-config-history-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e72285ca662ea3d7b6c172986055290ce363ba3a",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "392",
+    "url": "https://github.com/jenkinsci/job-config-history-plugin/pull/392",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/job-config-history-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Job Dsl Plugin",
+  "repository": "jenkinsci/job-dsl-plugin",
+  "url": "https://github.com/jenkinsci/job-dsl-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "6467560a2722701c695447d0b185c15290ad29a8",
+    "date": "2025-11-08T14:09:05Z"
+  },
+  "jdk25_pr": {
+    "number": "1640",
+    "url": "https://github.com/jenkinsci/job-dsl-plugin/pull/1640",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/job-dsl-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Joda Time Api Plugin",
+  "repository": "jenkinsci/joda-time-api-plugin",
+  "url": "https://github.com/jenkinsci/joda-time-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "738f6943c41f27bd10584a3bd2ee7467342996ba",
+    "date": "2025-08-09T08:51:46Z"
+  },
+  "jdk25_pr": {
+    "number": "80",
+    "url": "https://github.com/jenkinsci/joda-time-api-plugin/pull/80",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/joda-time-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Jquery Detached",
+    "repository": "jenkinsci/jquery-detached",
+    "url": "https://github.com/jenkinsci/jquery-detached",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jquery-detached/2.1.4/Jenkinsfile",
+    "has_jenkinsfile": false
+  }
+,
+{
+  "plugin": "Jquery Plugin",
+  "repository": "jenkinsci/jquery-plugin",
+  "url": "https://github.com/jenkinsci/jquery-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "5ddd1d3e4ec1194df5420fc52dccdf3aa10bad9b",
+    "date": "2025-11-29T06:28:01Z"
+  },
+  "jdk25_pr": {
+    "number": "27",
+    "url": "https://github.com/jenkinsci/jquery-plugin/pull/27",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jquery-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jquery3 Api Plugin",
+  "repository": "jenkinsci/jquery3-api-plugin",
+  "url": "https://github.com/jenkinsci/jquery3-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "b3a87c379ee212e2d50adc33725b216ecf369768",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "265",
+    "url": "https://github.com/jenkinsci/jquery3-api-plugin/pull/265",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jquery3-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Jsch Plugin",
+  "repository": "jenkinsci/jsch-plugin",
+  "url": "https://github.com/jenkinsci/jsch-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "8ae024f424d54ec7c047eb0f4fff7e2f2840f9ec",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "136",
+    "url": "https://github.com/jenkinsci/jsch-plugin/pull/136",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/jsch-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Json Api Plugin",
+  "repository": "jenkinsci/json-api-plugin",
+  "url": "https://github.com/jenkinsci/json-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "531bb72b1e23d880c006a8a79d8c6592ff343150",
+    "date": "2025-08-09T08:53:46Z"
+  },
+  "jdk25_pr": {
+    "number": "86",
+    "url": "https://github.com/jenkinsci/json-api-plugin/pull/86",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/json-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Json Path Api Plugin",
+  "repository": "jenkinsci/json-path-api-plugin",
+  "url": "https://github.com/jenkinsci/json-path-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c8caa2cfbc74a186cdbd3c0645778d18c1d94020",
+    "date": "2025-08-09T08:57:29Z"
+  },
+  "jdk25_pr": {
+    "number": "94",
+    "url": "https://github.com/jenkinsci/json-path-api-plugin/pull/94",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/json-path-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Junit Plugin",
+  "repository": "jenkinsci/junit-plugin",
+  "url": "https://github.com/jenkinsci/junit-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "cdb64f99d100d12ee9ce92ffdc38fef15877451f",
+    "date": "2025-10-26T18:42:18Z"
+  },
+  "jdk25_pr": {
+    "number": "757",
+    "url": "https://github.com/jenkinsci/junit-plugin/pull/757",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/junit-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Kubernetes Client Api Plugin",
+  "repository": "jenkinsci/kubernetes-client-api-plugin",
+  "url": "https://github.com/jenkinsci/kubernetes-client-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "8f86796e0b024b9a0661cb89775a86f1624e37f9",
+    "date": "2025-11-18T13:38:27Z"
+  },
+  "jdk25_pr": {
+    "number": "326",
+    "url": "https://github.com/jenkinsci/kubernetes-client-api-plugin/pull/326",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/kubernetes-client-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Kubernetes Credentials Plugin",
+  "repository": "jenkinsci/kubernetes-credentials-plugin",
+  "url": "https://github.com/jenkinsci/kubernetes-credentials-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "492f58828bed005b30f6d6d68fe10a7a198a86e0",
+    "date": "2025-11-30T16:41:53Z"
+  },
+  "jdk25_pr": {
+    "number": "88",
+    "url": "https://github.com/jenkinsci/kubernetes-credentials-plugin/pull/88",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/kubernetes-credentials-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Kubernetes Plugin",
+    "repository": "jenkinsci/kubernetes-plugin",
+    "url": "https://github.com/jenkinsci/kubernetes-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/kubernetes-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Ldap Plugin",
+  "repository": "jenkinsci/ldap-plugin",
+  "url": "https://github.com/jenkinsci/ldap-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "23f32f293930b1c03964086ced3ad2781413a621",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "385",
+    "url": "https://github.com/jenkinsci/ldap-plugin/pull/385",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ldap-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Locale Plugin",
+  "repository": "jenkinsci/locale-plugin",
+  "url": "https://github.com/jenkinsci/locale-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "9867699f4b7a6d905c1663cff800a66f7f76fc2e",
+    "date": "2025-08-09T10:04:51Z"
+  },
+  "jdk25_pr": {
+    "number": "323",
+    "url": "https://github.com/jenkinsci/locale-plugin/pull/323",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/locale-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Localization Support Plugin",
+  "repository": "jenkinsci/localization-support-plugin",
+  "url": "https://github.com/jenkinsci/localization-support-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "863457ac18eb8155b8090ef414c3cf8601bf0039",
+    "date": "2025-11-25T12:52:06Z"
+  },
+  "jdk25_pr": {
+    "number": "17",
+    "url": "https://github.com/jenkinsci/localization-support-plugin/pull/17",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/localization-support-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Localization Zh Cn Plugin",
+    "repository": "jenkinsci/localization-zh-cn-plugin",
+    "url": "https://github.com/jenkinsci/localization-zh-cn-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/localization-zh-cn-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Lockable Resources Plugin",
+  "repository": "jenkinsci/lockable-resources-plugin",
+  "url": "https://github.com/jenkinsci/lockable-resources-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "66e5e0ffa506cf223336319fbc900630476607c5",
+    "date": "2025-10-25T18:25:03Z"
+  },
+  "jdk25_pr": {
+    "number": "823",
+    "url": "https://github.com/jenkinsci/lockable-resources-plugin/pull/823",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/lockable-resources-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Mailer Plugin",
+  "repository": "jenkinsci/mailer-plugin",
+  "url": "https://github.com/jenkinsci/mailer-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "1e1e518ce99e947e44e99a83b48dc4457d947e98",
+    "date": "2025-08-12T16:18:33Z"
+  },
+  "jdk25_pr": {
+    "number": "381",
+    "url": "https://github.com/jenkinsci/mailer-plugin/pull/381",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/mailer-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Mapdb Api Plugin",
+  "repository": "jenkinsci/mapdb-api-plugin",
+  "url": "https://github.com/jenkinsci/mapdb-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "9f9af96f4c5936cfcf45c53c9bb51de69a93271e",
+    "date": "2025-11-16T05:52:30Z"
+  },
+  "jdk25_pr": {
+    "number": "66",
+    "url": "https://github.com/jenkinsci/mapdb-api-plugin/pull/66",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/mapdb-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Mask Passwords Plugin",
+  "repository": "jenkinsci/mask-passwords-plugin",
+  "url": "https://github.com/jenkinsci/mask-passwords-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e55e6953437ee718ecab7d14221c2c20429f8092",
+    "date": "2025-10-25T18:12:06Z"
+  },
+  "jdk25_pr": {
+    "number": "105",
+    "url": "https://github.com/jenkinsci/mask-passwords-plugin/pull/105",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/mask-passwords-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Matrix Auth Plugin",
+  "repository": "jenkinsci/matrix-auth-plugin",
+  "url": "https://github.com/jenkinsci/matrix-auth-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "969ced3c2f2bf99b15639c5c40413b243e1bc7ab",
+    "date": "2025-11-25T12:52:12Z"
+  },
+  "jdk25_pr": {
+    "number": "187",
+    "url": "https://github.com/jenkinsci/matrix-auth-plugin/pull/187",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/matrix-auth-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Matrix Project Plugin",
+  "repository": "jenkinsci/matrix-project-plugin",
+  "url": "https://github.com/jenkinsci/matrix-project-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e0ac7cc858d3db7798e8501080f9bd7cadc93e4e",
+    "date": "2025-10-26T11:19:08Z"
+  },
+  "jdk25_pr": {
+    "number": "307",
+    "url": "https://github.com/jenkinsci/matrix-project-plugin/pull/307",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/matrix-project-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Maven Plugin",
+  "repository": "jenkinsci/maven-plugin",
+  "url": "https://github.com/jenkinsci/maven-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "06fec37624b3b567a28f43da72a8e7f87385bb05",
+    "date": "2025-11-23T11:55:41Z"
+  },
+  "jdk25_pr": {
+    "number": "419",
+    "url": "https://github.com/jenkinsci/maven-plugin/pull/419",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/maven-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Mercurial Plugin",
+  "repository": "jenkinsci/mercurial-plugin",
+  "url": "https://github.com/jenkinsci/mercurial-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "892a7bcf89465de67d064963ecce99698dc6e1d5",
+    "date": "2025-10-25T18:20:09Z"
+  },
+  "jdk25_pr": {
+    "number": "309",
+    "url": "https://github.com/jenkinsci/mercurial-plugin/pull/309",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/mercurial-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Metrics Plugin",
+  "repository": "jenkinsci/metrics-plugin",
+  "url": "https://github.com/jenkinsci/metrics-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "1a9594334915e9fc1f93730bd22677d0214ee809",
+    "date": "2025-10-26T18:29:37Z"
+  },
+  "jdk25_pr": {
+    "number": "363",
+    "url": "https://github.com/jenkinsci/metrics-plugin/pull/363",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/metrics-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Mina Sshd Api Plugin",
+  "repository": "jenkinsci/mina-sshd-api-plugin",
+  "url": "https://github.com/jenkinsci/mina-sshd-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "bb1dabd082346336efe671a249a7437cf21e48cf",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "183",
+    "url": "https://github.com/jenkinsci/mina-sshd-api-plugin/pull/183",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/mina-sshd-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Monitoring Plugin",
+    "repository": "jenkinsci/monitoring-plugin",
+    "url": "https://github.com/jenkinsci/monitoring-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/monitoring-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Msbuild Plugin",
+  "repository": "jenkinsci/msbuild-plugin",
+  "url": "https://github.com/jenkinsci/msbuild-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c48912ce6826dbba96f694b2e551df87de858020",
+    "date": "2025-10-26T12:29:51Z"
+  },
+  "jdk25_pr": {
+    "number": "227",
+    "url": "https://github.com/jenkinsci/msbuild-plugin/pull/227",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/msbuild-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Multiple Scms Plugin",
+    "repository": "jenkinsci/multiple-scms-plugin",
+    "url": "https://github.com/jenkinsci/multiple-scms-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/multiple-scms-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Nodejs Plugin",
+  "repository": "jenkinsci/nodejs-plugin",
+  "url": "https://github.com/jenkinsci/nodejs-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "59f4488ec74ea7d2674bd778c8d026da050284cb",
+    "date": "2025-11-08T16:43:31Z"
+  },
+  "jdk25_pr": {
+    "number": "199",
+    "url": "https://github.com/jenkinsci/nodejs-plugin/pull/199",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/nodejs-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Nodelabelparameter Plugin",
+  "repository": "jenkinsci/nodelabelparameter-plugin",
+  "url": "https://github.com/jenkinsci/nodelabelparameter-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "adbe0f0d78c0c61fedecc7510335ef6da029ed62",
+    "date": "2025-10-03T23:36:33Z"
+  },
+  "jdk25_pr": {
+    "number": "456",
+    "url": "https://github.com/jenkinsci/nodelabelparameter-plugin/pull/456",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/nodelabelparameter-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Office 365 Connector Plugin",
+  "repository": "jenkinsci/office-365-connector-plugin",
+  "url": "https://github.com/jenkinsci/office-365-connector-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ad2296327707ce2f83e6e42e24c25791237dbf09",
+    "date": "2025-10-27T05:45:20Z"
+  },
+  "jdk25_pr": {
+    "number": "414",
+    "url": "https://github.com/jenkinsci/office-365-connector-plugin/pull/414",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/office-365-connector-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Okhttp Api Plugin",
+  "repository": "jenkinsci/okhttp-api-plugin",
+  "url": "https://github.com/jenkinsci/okhttp-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ecf669fbf4e8728c0f80b7d4ab98fde930410119",
+    "date": "2025-11-10T12:09:11Z"
+  },
+  "jdk25_pr": {
+    "number": "272",
+    "url": "https://github.com/jenkinsci/okhttp-api-plugin/pull/272",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/okhttp-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Oss Symbols Api Plugin",
+  "repository": "jenkinsci/oss-symbols-api-plugin",
+  "url": "https://github.com/jenkinsci/oss-symbols-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e325586236cadb9f363c3b97aa6f401975cffd04",
+    "date": "2025-08-09T09:03:08Z"
+  },
+  "jdk25_pr": {
+    "number": "217",
+    "url": "https://github.com/jenkinsci/oss-symbols-api-plugin/pull/217",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/oss-symbols-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pam Auth Plugin",
+  "repository": "jenkinsci/pam-auth-plugin",
+  "url": "https://github.com/jenkinsci/pam-auth-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "03e657d566b37d7fceda4331ec24b39ef2ca6f5e",
+    "date": "2025-11-17T13:36:09Z"
+  },
+  "jdk25_pr": {
+    "number": "35",
+    "url": "https://github.com/jenkinsci/pam-auth-plugin/pull/35",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pam-auth-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Parameterized Scheduler Plugin",
+  "repository": "jenkinsci/parameterized-scheduler-plugin",
+  "url": "https://github.com/jenkinsci/parameterized-scheduler-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "34aac0d6bc29e99141f28e6dfc4b063891c7ce9b",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "289",
+    "url": "https://github.com/jenkinsci/parameterized-scheduler-plugin/pull/289",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/parameterized-scheduler-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Parameterized Trigger Plugin",
+  "repository": "jenkinsci/parameterized-trigger-plugin",
+  "url": "https://github.com/jenkinsci/parameterized-trigger-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "ee0e20093d01cc8a39ca61db6f685562eede0b42",
+    "date": "2025-10-25T18:17:03Z"
+  },
+  "jdk25_pr": {
+    "number": "429",
+    "url": "https://github.com/jenkinsci/parameterized-trigger-plugin/pull/429",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/parameterized-trigger-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Build Step Plugin",
+  "repository": "jenkinsci/pipeline-build-step-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-build-step-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "2fdf402ea52ac8d522ffb47dfa47f4c50bcd1fca",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "169",
+    "url": "https://github.com/jenkinsci/pipeline-build-step-plugin/pull/169",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-build-step-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Github Lib Plugin",
+  "repository": "jenkinsci/pipeline-github-lib-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-github-lib-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "8dbf30b2c1bdcfbb84940b1c372d0f18d0e269ea",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "116",
+    "url": "https://github.com/jenkinsci/pipeline-github-lib-plugin/pull/116",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-github-lib-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Graph Analysis Plugin",
+  "repository": "jenkinsci/pipeline-graph-analysis-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-graph-analysis-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "763e9f58f5e54487747f1274e9ab7292fe5ea07d",
+    "date": "2025-10-26T18:42:25Z"
+  },
+  "jdk25_pr": {
+    "number": "188",
+    "url": "https://github.com/jenkinsci/pipeline-graph-analysis-plugin/pull/188",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-graph-analysis-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Graph View Plugin",
+  "repository": "jenkinsci/pipeline-graph-view-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-graph-view-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "dd77f0ab6ffc0f0bdd79eb52a0a6a1de715af19d",
+    "date": "2025-10-26T12:56:53Z"
+  },
+  "jdk25_pr": {
+    "number": "1036",
+    "url": "https://github.com/jenkinsci/pipeline-graph-view-plugin/pull/1036",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-graph-view-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Groovy Lib Plugin",
+  "repository": "jenkinsci/pipeline-groovy-lib-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-groovy-lib-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "13008816bde70bd61a814350b933c687160692a2",
+    "date": "2025-09-22T19:00:03Z"
+  },
+  "jdk25_pr": {
+    "number": "200",
+    "url": "https://github.com/jenkinsci/pipeline-groovy-lib-plugin/pull/200",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-groovy-lib-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Input Step Plugin",
+  "repository": "jenkinsci/pipeline-input-step-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-input-step-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "380efd9d6072fe1762610d54605b59b35eeae00c",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "247",
+    "url": "https://github.com/jenkinsci/pipeline-input-step-plugin/pull/247",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-input-step-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Maven Plugin",
+  "repository": "jenkinsci/pipeline-maven-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-maven-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "b2d61a81a97e8bcb6f012794decb4cd61a017e1d",
+    "date": "2025-11-30T19:21:35Z"
+  },
+  "jdk25_pr": {
+    "number": "958",
+    "url": "https://github.com/jenkinsci/pipeline-maven-plugin/pull/958",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-maven-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Milestone Step Plugin",
+  "repository": "jenkinsci/pipeline-milestone-step-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-milestone-step-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "dc643fd6175d1e83bd24a7e3b9e663d1bf4a0db0",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "187",
+    "url": "https://github.com/jenkinsci/pipeline-milestone-step-plugin/pull/187",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-milestone-step-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Model Definition Plugin",
+  "repository": "jenkinsci/pipeline-model-definition-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-model-definition-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "f773a5420cc81d2b1bca7562e919b2c6c3ec0b3d",
+    "date": "2025-09-17T05:08:04Z"
+  },
+  "jdk25_pr": {
+    "number": "819",
+    "url": "https://github.com/jenkinsci/pipeline-model-definition-plugin/pull/819",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-model-definition-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Stage Step Plugin",
+  "repository": "jenkinsci/pipeline-stage-step-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-stage-step-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4cfd61c0ea392ae4f116d2bfd9dbb69099052c47",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "170",
+    "url": "https://github.com/jenkinsci/pipeline-stage-step-plugin/pull/170",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-stage-step-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Stage View Plugin",
+  "repository": "jenkinsci/pipeline-stage-view-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-stage-view-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "2e844aa40042b733c243c7f48eeed577842ac0c2",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "406",
+    "url": "https://github.com/jenkinsci/pipeline-stage-view-plugin/pull/406",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-stage-view-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Pipeline Utility Steps Plugin",
+  "repository": "jenkinsci/pipeline-utility-steps-plugin",
+  "url": "https://github.com/jenkinsci/pipeline-utility-steps-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "2870faf9a9f540661c5f45f68a116d592be907fd",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "342",
+    "url": "https://github.com/jenkinsci/pipeline-utility-steps-plugin/pull/342",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pipeline-utility-steps-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Plain Credentials Plugin",
+  "repository": "jenkinsci/plain-credentials-plugin",
+  "url": "https://github.com/jenkinsci/plain-credentials-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c89ed6e97e35ffff846ce0db806e6fa7dcd133c3",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "99",
+    "url": "https://github.com/jenkinsci/plain-credentials-plugin/pull/99",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/plain-credentials-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Plugin Util Api Plugin",
+  "repository": "jenkinsci/plugin-util-api-plugin",
+  "url": "https://github.com/jenkinsci/plugin-util-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e8d2fb002202d49cd30420e2d0b8dc9defa2a9c7",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "481",
+    "url": "https://github.com/jenkinsci/plugin-util-api-plugin/pull/481",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/plugin-util-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Popper Api Plugin",
+    "repository": "jenkinsci/popper-api-plugin",
+    "url": "https://github.com/jenkinsci/popper-api-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/popper-api-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": false
+  }
+,
+  {
+    "plugin": "Popper2 Api Plugin",
+    "repository": "jenkinsci/popper2-api-plugin",
+    "url": "https://github.com/jenkinsci/popper2-api-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/popper2-api-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Postbuild Task Plugin",
+  "repository": "jenkinsci/postbuild-task-plugin",
+  "url": "https://github.com/jenkinsci/postbuild-task-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "f6ca858ae9f65dcd3f2d65f46cf9a422588545a9",
+    "date": "2025-10-26T18:42:42Z"
+  },
+  "jdk25_pr": {
+    "number": "29",
+    "url": "https://github.com/jenkinsci/postbuild-task-plugin/pull/29",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/postbuild-task-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Powershell Plugin",
+  "repository": "jenkinsci/powershell-plugin",
+  "url": "https://github.com/jenkinsci/powershell-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "3cacf62c10ed66a4329bf08751df92fe2406b513",
+    "date": "2025-12-27T12:19:01Z"
+  },
+  "jdk25_pr": {
+    "number": "33",
+    "url": "https://github.com/jenkinsci/powershell-plugin/pull/33",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/powershell-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Prism Api Plugin",
+  "repository": "jenkinsci/prism-api-plugin",
+  "url": "https://github.com/jenkinsci/prism-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4e3fc262de92c0779be2bc45b6a43d00206cc660",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "262",
+    "url": "https://github.com/jenkinsci/prism-api-plugin/pull/262",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/prism-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Prometheus Plugin",
+  "repository": "jenkinsci/prometheus-plugin",
+  "url": "https://github.com/jenkinsci/prometheus-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "a41f8797cb82ed789aa0bb8a7ff235803eecaa34",
+    "date": "2025-11-21T20:57:24Z"
+  },
+  "jdk25_pr": {
+    "number": "793",
+    "url": "https://github.com/jenkinsci/prometheus-plugin/pull/793",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/prometheus-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Publish Over Plugin",
+  "repository": "jenkinsci/publish-over-plugin",
+  "url": "https://github.com/jenkinsci/publish-over-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "23a5fe0fd734a5548a8f19874187d29ad66e6a6e",
+    "date": "2025-12-27T12:36:58Z"
+  },
+  "jdk25_pr": {
+    "number": "78",
+    "url": "https://github.com/jenkinsci/publish-over-plugin/pull/78",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/publish-over-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Publish Over Ssh Plugin",
+  "repository": "jenkinsci/publish-over-ssh-plugin",
+  "url": "https://github.com/jenkinsci/publish-over-ssh-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "fb5b742e0fbdded5e09edd07fe79a7be040a961a",
+    "date": "2025-11-21T17:52:06Z"
+  },
+  "jdk25_pr": {
+    "number": "414",
+    "url": "https://github.com/jenkinsci/publish-over-ssh-plugin/pull/414",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/publish-over-ssh-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Pubsub Light Plugin",
+    "repository": "jenkinsci/pubsub-light-plugin",
+    "url": "https://github.com/jenkinsci/pubsub-light-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/pubsub-light-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Rebuild Plugin",
+  "repository": "jenkinsci/rebuild-plugin",
+  "url": "https://github.com/jenkinsci/rebuild-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c1ec851151823c2a2f93e534ef728db939b4c99d",
+    "date": "2025-11-21T18:43:30Z"
+  },
+  "jdk25_pr": {
+    "number": "231",
+    "url": "https://github.com/jenkinsci/rebuild-plugin/pull/231",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/rebuild-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Resource Disposer Plugin",
+  "repository": "jenkinsci/resource-disposer-plugin",
+  "url": "https://github.com/jenkinsci/resource-disposer-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "74bfcaa51b378207b13785d5fd12a9de603213d3",
+    "date": "2025-11-21T14:18:13Z"
+  },
+  "jdk25_pr": {
+    "number": "139",
+    "url": "https://github.com/jenkinsci/resource-disposer-plugin/pull/139",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/resource-disposer-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Role Strategy Plugin",
+  "repository": "jenkinsci/role-strategy-plugin",
+  "url": "https://github.com/jenkinsci/role-strategy-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "db385d642ce64c0bfe2e26a66ef227e00d03d46f",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "427",
+    "url": "https://github.com/jenkinsci/role-strategy-plugin/pull/427",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/role-strategy-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Run Condition Plugin",
+  "repository": "jenkinsci/run-condition-plugin",
+  "url": "https://github.com/jenkinsci/run-condition-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "b92fb60d523e32d45b2eafa6e71d8e1a0a222a1a",
+    "date": "2025-10-25T18:17:23Z"
+  },
+  "jdk25_pr": {
+    "number": "141",
+    "url": "https://github.com/jenkinsci/run-condition-plugin/pull/141",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/run-condition-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Saml Plugin",
+  "repository": "jenkinsci/saml-plugin",
+  "url": "https://github.com/jenkinsci/saml-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "332736ada2c46253a2e479ee333b3b1e72fd81b2",
+    "date": "2025-10-29T14:39:40Z"
+  },
+  "jdk25_pr": {
+    "number": "573",
+    "url": "https://github.com/jenkinsci/saml-plugin/pull/573",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/saml-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Scm Api Plugin",
+  "repository": "jenkinsci/scm-api-plugin",
+  "url": "https://github.com/jenkinsci/scm-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c1b157716a3fe467bee803ac182973c6771b95b8",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "352",
+    "url": "https://github.com/jenkinsci/scm-api-plugin/pull/352",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/scm-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Script Security Plugin",
+  "repository": "jenkinsci/script-security-plugin",
+  "url": "https://github.com/jenkinsci/script-security-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c93e723979c6d59408c24b0bcec8b4a657e50794",
+    "date": "2025-10-25T15:52:23Z"
+  },
+  "jdk25_pr": {
+    "number": "633",
+    "url": "https://github.com/jenkinsci/script-security-plugin/pull/633",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/script-security-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Simple Theme Plugin",
+  "repository": "jenkinsci/simple-theme-plugin",
+  "url": "https://github.com/jenkinsci/simple-theme-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "3b94d4859fb65a7186b85e01d04b269033506e49",
+    "date": "2025-10-26T11:19:09Z"
+  },
+  "jdk25_pr": {
+    "number": "278",
+    "url": "https://github.com/jenkinsci/simple-theme-plugin/pull/278",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/simple-theme-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Slack Plugin",
+  "repository": "jenkinsci/slack-plugin",
+  "url": "https://github.com/jenkinsci/slack-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "b169d3becb160e9bea0a1aff4107180cb8dcfaa8",
+    "date": "2025-10-07T14:57:35Z"
+  },
+  "jdk25_pr": {
+    "number": "1086",
+    "url": "https://github.com/jenkinsci/slack-plugin/pull/1086",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/slack-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Snakeyaml Api Plugin",
+  "repository": "jenkinsci/snakeyaml-api-plugin",
+  "url": "https://github.com/jenkinsci/snakeyaml-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "27ac6d2e152987cb327741773fb024fb2af267e8",
+    "date": "2025-10-26T18:42:57Z"
+  },
+  "jdk25_pr": {
+    "number": "142",
+    "url": "https://github.com/jenkinsci/snakeyaml-api-plugin/pull/142",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/snakeyaml-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Sonarqube Plugin",
+    "repository": "jenkinsci/sonarqube-plugin",
+    "url": "https://github.com/jenkinsci/sonarqube-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/sonarqube-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": false
+  }
+,
+  {
+    "plugin": "Sse Gateway Plugin",
+    "repository": "jenkinsci/sse-gateway-plugin",
+    "url": "https://github.com/jenkinsci/sse-gateway-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/sse-gateway-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Ssh Agent Plugin",
+  "repository": "jenkinsci/ssh-agent-plugin",
+  "url": "https://github.com/jenkinsci/ssh-agent-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "d7f5c86377369d25985ca1559f8e8472a7d286b9",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "168",
+    "url": "https://github.com/jenkinsci/ssh-agent-plugin/pull/168",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ssh-agent-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Ssh Agents Plugin",
+  "repository": "jenkinsci/ssh-agents-plugin",
+  "url": "https://github.com/jenkinsci/ssh-agents-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "d577bdd4d0883277af03d3affe30a3621ca47c53",
+    "date": "2025-10-26T19:29:03Z"
+  },
+  "jdk25_pr": {
+    "number": "633",
+    "url": "https://github.com/jenkinsci/ssh-agents-plugin/pull/633",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ssh-agents-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Ssh Credentials Plugin",
+  "repository": "jenkinsci/ssh-credentials-plugin",
+  "url": "https://github.com/jenkinsci/ssh-credentials-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "5bdd51ae81674f547db3ecf1540e1027c3d195b2",
+    "date": "2025-11-18T07:56:48Z"
+  },
+  "jdk25_pr": {
+    "number": "272",
+    "url": "https://github.com/jenkinsci/ssh-credentials-plugin/pull/272",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ssh-credentials-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+  {
+    "plugin": "Ssh Plugin",
+    "repository": "jenkinsci/ssh-plugin",
+    "url": "https://github.com/jenkinsci/ssh-plugin",
+    "has_jdk25": false,
+    "jdk25_commit": {
+      "sha": "",
+      "date": ""
+    },
+    "jdk25_pr": {
+      "number": "",
+      "url": "",
+      "is_merged": false
+    },
+    "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ssh-plugin/master/Jenkinsfile",
+    "has_jenkinsfile": true
+  }
+,
+{
+  "plugin": "Ssh Steps Plugin",
+  "repository": "jenkinsci/ssh-steps-plugin",
+  "url": "https://github.com/jenkinsci/ssh-steps-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4b2c9d791b2db9fc6304971401d2082f9954deef",
+    "date": "2025-12-15T14:36:25Z"
+  },
+  "jdk25_pr": {
+    "number": "172",
+    "url": "https://github.com/jenkinsci/ssh-steps-plugin/pull/172",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ssh-steps-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Sshd Plugin",
+  "repository": "jenkinsci/sshd-plugin",
+  "url": "https://github.com/jenkinsci/sshd-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "0325c9c60abd389db111b6e16e60a5c1a503930e",
+    "date": "2025-11-15T21:26:09Z"
+  },
+  "jdk25_pr": {
+    "number": "247",
+    "url": "https://github.com/jenkinsci/sshd-plugin/pull/247",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/sshd-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Structs Plugin",
+  "repository": "jenkinsci/structs-plugin",
+  "url": "https://github.com/jenkinsci/structs-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "5141df1349f617f9c1f71d494a2e67eea06fcbef",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "256",
+    "url": "https://github.com/jenkinsci/structs-plugin/pull/256",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/structs-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Subversion Plugin",
+  "repository": "jenkinsci/subversion-plugin",
+  "url": "https://github.com/jenkinsci/subversion-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "fd197dcfc625533e2a72960403805b0e9af259b8",
+    "date": "2025-12-10T10:25:17Z"
+  },
+  "jdk25_pr": {
+    "number": "367",
+    "url": "https://github.com/jenkinsci/subversion-plugin/pull/367",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/subversion-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Theme Manager Plugin",
+  "repository": "jenkinsci/theme-manager-plugin",
+  "url": "https://github.com/jenkinsci/theme-manager-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "97f05fac4b6a198c1a3ddf3e8887e696a7744fd1",
+    "date": "2025-11-15T21:26:22Z"
+  },
+  "jdk25_pr": {
+    "number": "337",
+    "url": "https://github.com/jenkinsci/theme-manager-plugin/pull/337",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/theme-manager-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Thin Backup Plugin",
+  "repository": "jenkinsci/thin-backup-plugin",
+  "url": "https://github.com/jenkinsci/thin-backup-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "52b7c02e909eb77b93cafabd752632950bef00de",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "223",
+    "url": "https://github.com/jenkinsci/thin-backup-plugin/pull/223",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/thin-backup-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Throttle Concurrent Builds Plugin",
+  "repository": "jenkinsci/throttle-concurrent-builds-plugin",
+  "url": "https://github.com/jenkinsci/throttle-concurrent-builds-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "c5f6fd56a76b71321ce6298d3f584ce16a9fa22a",
+    "date": "2025-12-03T13:00:14Z"
+  },
+  "jdk25_pr": {
+    "number": "339",
+    "url": "https://github.com/jenkinsci/throttle-concurrent-builds-plugin/pull/339",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/throttle-concurrent-builds-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Timestamper Plugin",
+  "repository": "jenkinsci/timestamper-plugin",
+  "url": "https://github.com/jenkinsci/timestamper-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4e63c27ca1c45a9e8f7a6142cb66bf80fc3e7967",
+    "date": "2025-12-17T21:34:37Z"
+  },
+  "jdk25_pr": {
+    "number": "394",
+    "url": "https://github.com/jenkinsci/timestamper-plugin/pull/394",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/timestamper-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Token Macro Plugin",
+  "repository": "jenkinsci/token-macro-plugin",
+  "url": "https://github.com/jenkinsci/token-macro-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "7272a62338910d7fbcf6df386becce4b4a9e9a72",
+    "date": "2025-11-15T20:59:34Z"
+  },
+  "jdk25_pr": {
+    "number": "304",
+    "url": "https://github.com/jenkinsci/token-macro-plugin/pull/304",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/token-macro-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Trilead Api Plugin",
+  "repository": "jenkinsci/trilead-api-plugin",
+  "url": "https://github.com/jenkinsci/trilead-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "1e58fbf2367a55d50c1074f13f16a203da1b25c6",
+    "date": "2025-11-15T20:59:35Z"
+  },
+  "jdk25_pr": {
+    "number": "253",
+    "url": "https://github.com/jenkinsci/trilead-api-plugin/pull/253",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/trilead-api-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Variant Plugin",
+  "repository": "jenkinsci/variant-plugin",
+  "url": "https://github.com/jenkinsci/variant-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "41ab3ad6d2c74bf257d33c690cb1db9ff9a0be5b",
+    "date": "2025-11-23T11:02:23Z"
+  },
+  "jdk25_pr": {
+    "number": "148",
+    "url": "https://github.com/jenkinsci/variant-plugin/pull/148",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/variant-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Warnings Ng Plugin",
+  "repository": "jenkinsci/warnings-ng-plugin",
+  "url": "https://github.com/jenkinsci/warnings-ng-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "2694a9c89298499f06658b98cd0f8809627f1a6f",
+    "date": "2025-11-28T15:05:58Z"
+  },
+  "jdk25_pr": {
+    "number": "2130",
+    "url": "https://github.com/jenkinsci/warnings-ng-plugin/pull/2130",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/warnings-ng-plugin/main/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Aggregator Plugin",
+  "repository": "jenkinsci/workflow-aggregator-plugin",
+  "url": "https://github.com/jenkinsci/workflow-aggregator-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "a91d228934978c6470ce72a6d7199cb0edceaa8c",
+    "date": "2025-11-15T20:59:35Z"
+  },
+  "jdk25_pr": {
+    "number": "114",
+    "url": "https://github.com/jenkinsci/workflow-aggregator-plugin/pull/114",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-aggregator-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Api Plugin",
+  "repository": "jenkinsci/workflow-api-plugin",
+  "url": "https://github.com/jenkinsci/workflow-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "1820d5cef94583f210a9deeb0f14f25a3c79f029",
+    "date": "2025-11-15T20:59:35Z"
+  },
+  "jdk25_pr": {
+    "number": "445",
+    "url": "https://github.com/jenkinsci/workflow-api-plugin/pull/445",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Basic Steps Plugin",
+  "repository": "jenkinsci/workflow-basic-steps-plugin",
+  "url": "https://github.com/jenkinsci/workflow-basic-steps-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "0573509123014a71fbc18f64312df3547ae14f76",
+    "date": "2025-09-17T04:29:44Z"
+  },
+  "jdk25_pr": {
+    "number": "365",
+    "url": "https://github.com/jenkinsci/workflow-basic-steps-plugin/pull/365",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-basic-steps-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Cps Global Lib Plugin",
+  "repository": "jenkinsci/workflow-cps-global-lib-plugin",
+  "url": "https://github.com/jenkinsci/workflow-cps-global-lib-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "eb2b2d81f4651beda337ef441b6f2519a201ffaa",
+    "date": "2025-12-01T01:31:42Z"
+  },
+  "jdk25_pr": {
+    "number": "247",
+    "url": "https://github.com/jenkinsci/workflow-cps-global-lib-plugin/pull/247",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-cps-global-lib-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Cps Plugin",
+  "repository": "jenkinsci/workflow-cps-plugin",
+  "url": "https://github.com/jenkinsci/workflow-cps-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "aa999a2ae5edc5ed5e3ca824dd1b3c82fe247680",
+    "date": "2025-11-15T21:57:03Z"
+  },
+  "jdk25_pr": {
+    "number": "1108",
+    "url": "https://github.com/jenkinsci/workflow-cps-plugin/pull/1108",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-cps-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Durable Task Step Plugin",
+  "repository": "jenkinsci/workflow-durable-task-step-plugin",
+  "url": "https://github.com/jenkinsci/workflow-durable-task-step-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "e580f5fe84b2e90ad83646377f63f05e634b0e26",
+    "date": "2025-11-17T10:51:08Z"
+  },
+  "jdk25_pr": {
+    "number": "482",
+    "url": "https://github.com/jenkinsci/workflow-durable-task-step-plugin/pull/482",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-durable-task-step-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Job Plugin",
+  "repository": "jenkinsci/workflow-job-plugin",
+  "url": "https://github.com/jenkinsci/workflow-job-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "130687fcfd2eb546728dfdb1ac6666f5af174a91",
+    "date": "2025-11-15T21:47:03Z"
+  },
+  "jdk25_pr": {
+    "number": "574",
+    "url": "https://github.com/jenkinsci/workflow-job-plugin/pull/574",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-job-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Multibranch Plugin",
+  "repository": "jenkinsci/workflow-multibranch-plugin",
+  "url": "https://github.com/jenkinsci/workflow-multibranch-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "4851708b54c6eba8484e5515a056eabbabcf9c93",
+    "date": "2025-09-17T03:57:37Z"
+  },
+  "jdk25_pr": {
+    "number": "390",
+    "url": "https://github.com/jenkinsci/workflow-multibranch-plugin/pull/390",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-multibranch-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Scm Step Plugin",
+  "repository": "jenkinsci/workflow-scm-step-plugin",
+  "url": "https://github.com/jenkinsci/workflow-scm-step-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "0288538159380707976a8a1ec4bff1e4fae195aa",
+    "date": "2025-09-17T03:27:52Z"
+  },
+  "jdk25_pr": {
+    "number": "190",
+    "url": "https://github.com/jenkinsci/workflow-scm-step-plugin/pull/190",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-scm-step-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Step Api Plugin",
+  "repository": "jenkinsci/workflow-step-api-plugin",
+  "url": "https://github.com/jenkinsci/workflow-step-api-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "505096c7d60afe06c66258974c52a21339b04097",
+    "date": "2025-11-15T20:59:35Z"
+  },
+  "jdk25_pr": {
+    "number": "243",
+    "url": "https://github.com/jenkinsci/workflow-step-api-plugin/pull/243",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-step-api-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Workflow Support Plugin",
+  "repository": "jenkinsci/workflow-support-plugin",
+  "url": "https://github.com/jenkinsci/workflow-support-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "234e578c0998aeb6eb4acfd3f88ccd37323382da",
+    "date": "2025-09-17T03:03:26Z"
+  },
+  "jdk25_pr": {
+    "number": "344",
+    "url": "https://github.com/jenkinsci/workflow-support-plugin/pull/344",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/workflow-support-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+,
+{
+  "plugin": "Ws Cleanup Plugin",
+  "repository": "jenkinsci/ws-cleanup-plugin",
+  "url": "https://github.com/jenkinsci/ws-cleanup-plugin",
+  "has_jdk25": true,
+  "jdk25_commit": {
+    "sha": "5367621ba1b6e6afef7a06dc19bb0ee3922ef0ce",
+    "date": "2025-11-15T20:59:35Z"
+  },
+  "jdk25_pr": {
+    "number": "267",
+    "url": "https://github.com/jenkinsci/ws-cleanup-plugin/pull/267",
+    "is_merged": true
+  },
+  "jenkinsfile_url": "https://raw.githubusercontent.com/jenkinsci/ws-cleanup-plugin/master/Jenkinsfile",
+  "has_jenkinsfile": true
+}
+
+]
