@@ -352,7 +352,7 @@ ca-mat-performance-benchmarking-by-broadcom:1.7
 ca-service-virtualization:1.0.7
 cachet-gating:1.0.10
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
-calendar-view:0.3.7
+calendar-view:0.4.0
 caliper-ci:2.3
 call-remote-job-plugin:1.0.21
 campfire:2.7
@@ -720,7 +720,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:1.0
 experitest-cloud:1.0.3
-explain-error:98.v5b_2011a_0511e
+explain-error:100.v26a_5376a_9a_6c
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -1598,7 +1598,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:446.vc297761a_162c
+resources-ai-chatbot:477.vfca_7fd0f1d94
 rest-list-parameter:348.v9506fdc4b_d07
 restricted-register:0.1.7
 results-cache:2.0.2
