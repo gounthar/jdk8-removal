@@ -794,7 +794,7 @@ gcr-scanner:2
 gearman-plugin:0.8.0
 gem-publisher:1.0
 generic-environment-filters:1.22.vc8fb_fb_c169e5
-generic-event:45.v2ae6cdb521eb
+generic-event:49.v8cdd8314e99d
 generic-tool:1.17.vb_8a_b_4e5600c9
 generic-webhook-trigger:2.4.1
 genexus:314.v3f04b4c93171
@@ -822,7 +822,7 @@ gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
 gitea:268.v75e47974c01d
-gitea-checks:602.615.veed470de4039
+gitea-checks:603.618.v511559cdca_a_a_
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1266.v5743e3349d54
 gitflow:1.0.1
@@ -1107,7 +1107,7 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2.1
-kubernetes:4398.vb_b_33d9e7fe23
+kubernetes:4416.v2ea_b_5372da_a_e
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:207.v492f58828b_ed
@@ -1352,7 +1352,7 @@ openshift-login:1.1.0.263.v2e0ddecf8b_25
 openshift-pipeline:1.0.57
 openshift-sync:1.1.0.825.v30618768da_42
 openstack-cloud:1465.vd3b_a_103e31fd
-opentelemetry:3.1571.v1a_3c3b_f2d73a_
+opentelemetry:3.1573.v72f1a_711ca_98
 opentelemetry-agent-metrics:2.0.1
 opentelemetry-api:1.49.0.82.vf56234f0d9c1
 opsbox-utility:1.0.0.25.v403b_2c237e6a_
@@ -1956,7 +1956,7 @@ vsts-cd:1.3
 vulnerability-vines-ai:48.v91718555f056
 wallarm-fast:0.4.2
 waptpro:1.6
-warnings-ng:12.9980.va_b_9d5c58d960
+warnings-ng:12.9983.v671a_6b_46f8f1
 warrior:1.2
 was-builder:1.6.1
 wattspeed:1.0
