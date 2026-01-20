@@ -88,7 +88,7 @@ json-api:20251224-185.v0cc18490c62c
 pipeline-stage-view:2.39
 joda-time-api:2.14.0-177.vd7e9347b_e7d5
 asm-api:9.9.1-189.vb_5ef2964da_91
-eddsa-api:0.3.0.1-27.v6ea_07b_e90d1a_
+eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 authentication-tokens:1.144.v5ff4a_5ec5c33
 metrics:4.2.37-494.v06f9a_939d33a_
 javadoc:354.vee1a_660b_4990
@@ -209,7 +209,7 @@ aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
 bitbucket:282.v85a_7e442f57b_
 warnings-ng:12.9990.v14e88294b_d54
 aws-java-sdk-ecs:1.12.780-480.v4a_0819121a_9e
-emailext-template:233.v1eb_88fc160b_5
+emailext-template:249.v81d6ea_f33f2e
 mask-passwords:212.v4967a_a_73b_506
 aws-java-sdk-ssm:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-codebuild:1.12.780-480.v4a_0819121a_9e
@@ -233,7 +233,7 @@ prometheus:847.v8440e5c21e7c
 built-on-column:1.5
 nodelabelparameter:851.vd94e5048d321
 saml:4.595.vec7523b_5d543
-groovy-postbuild:272.v52a_03efb_8653
+groovy-postbuild:300.va_253b_2988cb_1
 build-pipeline-plugin:2.1.0
 multiple-scms:0.8
 postbuild-task:78.v24529f1f5cdb_
