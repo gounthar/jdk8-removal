@@ -226,7 +226,7 @@ azure-keyvault:346.v75201ddefa_e0
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
 azure-sdk:259.vf079c96088a_f
-azure-vm-agents:1087.v3a_d441321149
+azure-vm-agents:1088.va_4c4992184a_9
 azure-vmss:0.2.4
 backlog:2.7
 backup:1.6.1
@@ -878,7 +878,7 @@ google-git-notes-publisher:0.3
 google-kubernetes-engine:0.446.v6a_dd8b_0f678b_
 google-login:109.v022b_cf87b_e5b_
 google-metadata-plugin:0.6.72.v02c1c0e892df
-google-oauth-plugin:1.343.vf0691e62f605
+google-oauth-plugin:1.346.v712b_a_e0d1e60
 google-play-android-publisher:4.2
 google-source-plugin:0.4
 google-storage-plugin:1.372.vdb_857a_f19629
@@ -1369,7 +1369,7 @@ osf-builder-suite-for-sfcc-deploy:1.1.13
 osf-builder-suite-for-sfcc-run-job:1.0.5
 osf-builder-suite-standalone-sonar-linter:1.0.3
 oslc-cm:1.31
-oss-symbols-api:438.vcb_7a_29c179e0
+oss-symbols-api:442.v99039087229b_
 ostorlab:1.11
 outbound-webhook:0.3.0
 overops-query:3.0.3
@@ -1794,7 +1794,7 @@ svncompat13:1.2
 svncompat14:1.1
 svnmerge:2.6
 swarm:3.51
-swarm-agents-cloud:36.v2f7377c14682
+swarm-agents-cloud:1.0.46
 sweagle:1.2.1
 synergy:1.7
 synopsys-coverity:3.0.5
