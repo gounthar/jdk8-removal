@@ -123,7 +123,7 @@ assertthat-bdd-jira:1.7
 associated-files:0.2.1
 async-http-client:1.9.40.0
 async-job:1.3
-atlassian-bitbucket-server-integration:5.0.0
+atlassian-bitbucket-server-integration:5.0.1
 atlassian-jira-software-cloud:2.0.15
 attention:1.1
 audit-log:1.3
@@ -486,7 +486,7 @@ configuration-as-code-groovy:1.1
 configuration-as-code-secret-ssm:1.0.1
 configurationslicing:664.vdda_74145b_b_d0
 configure-job-column-plugin:84.v792c9269f95a
-conflict-aware-ondemand-strategy:2.190.vd08f48950f3e
+conflict-aware-ondemand-strategy:2.195.va_5d583746232
 conjur-credentials:3.0.6
 conjur-simple-integration:0.0.1
 console-badge:1.1
@@ -971,13 +971,13 @@ inodes-monitor:52.v05406b_c33a_b_0
 insightappsec:1.0.8
 instana:1.0.9
 instance-identity:203.v15e81a_1b_7a_38
-instant-messaging:2.875.v954b_d3f33534
+instant-messaging:2.882.v5363d4fd02fb_
 integrity-plugin:2.6
 internetmeme:1.0
 ionicons-api:94.vcc3065403257
 ios-device-connector:1.2
 ipmessenger-plugin:1.2
-ircbot:3.1020.v1b_420db_08ce4
+ircbot:3.1031.v57454589b_76f
 ironmq-notifier:1.0.19
 issue-link:1.0.0
 itest:1.1.1
@@ -990,7 +990,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.20.1-423.v13951f6b_6532
-jackson3-api:3.0.3-29.v1fda_758ca_92b_
+jackson3-api:3.0.4-55.v5dcc25165f20
 jacoco:3.3.7
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -1107,7 +1107,7 @@ koji:0.3
 kotlin-v1-stdlib-jdk8:1.3.20-1.4
 kpp-management-plugin:105.v767485951b_d2
 kryptowire:0.2.1
-kubernetes:4419.v36079e3b_eb_5b_
+kubernetes:4423.vb_59f230b_ce53
 kubernetes-cli:1.364.vadef8cb8b823
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:207.v492f58828b_ed
@@ -1495,7 +1495,7 @@ preSCMbuildstep:115.vf9808414429d
 preflight-integration:1.4
 prereq-buildstep:1.1
 pretested-integration:3.1.2
-prism-api:1.30.0-630.va_e19d17f83b_0
+prism-api:1.30.0-701.vf8f8f1f3fd55
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
 proc-cleaner-plugin:2.4
@@ -1794,7 +1794,7 @@ svncompat13:1.2
 svncompat14:1.1
 svnmerge:2.6
 swarm:3.51
-swarm-agents-cloud:1.0.46
+swarm-agents-cloud:1.0.48
 sweagle:1.2.1
 synergy:1.7
 synopsys-coverity:3.0.5
@@ -1812,7 +1812,7 @@ tattletale-plugin:0.3
 teamconcert:2.4.4
 teamconcert-git:2.0.5
 teams-webhook-trigger:0.1.1
-teamscale-upload:1.4.7
+teamscale-upload:1.4.8
 tekton-client:1.1.0
 telegram-notifications:1.4.0
 telerik-appbuilder-plugin:1.6
@@ -1959,7 +1959,7 @@ vsts-cd:1.3
 vulnerability-vines-ai:48.v91718555f056
 wallarm-fast:0.4.2
 waptpro:1.6
-warnings-ng:12.9990.v14e88294b_d54
+warnings-ng:12.9995.v136a_ccb_6ea_4d
 warrior:1.2
 was-builder:1.6.1
 wattspeed:1.0
@@ -1984,11 +1984,11 @@ wiz-scanner:98.v292089e3108c
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4253.vc894cd5750c6
+workflow-cps:4254.v0c8e228524ea_
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
 workflow-durable-task-step:1464.v2d3f5c68f84c
-workflow-job:1559.va_a_533730b_ea_d
+workflow-job:1570.v75b_888a_138a_3
 workflow-multibranch:821.vc3b_4ea_780798
 workflow-remote-loader:1.6
 workflow-scm-step:466.va_d69e602552b_
