@@ -804,7 +804,7 @@ gerrit-trigger:3.1969.v65d614ec771a_
 gerrit-verify-status-reporter:0.0.3
 ghost-inspector:3.4
 ghprb:1.42.2
-git:5.8.1
+git:5.9.0
 git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
@@ -1214,7 +1214,7 @@ maven-plugin:3.27
 maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
-mcp-server:0.130.v7837b_2a_5447e
+mcp-server:0.138.v7c6a_22ee9160
 mdt-deployment:1.0.4
 mdtool:0.1.1
 meliora-testlab:1.26
