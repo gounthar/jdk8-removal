@@ -13,7 +13,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 workflow-support:1010.vb_b_39488a_9841
 jackson2-api:2.20.1-423.v13951f6b_6532
 plain-credentials:199.v9f8e1f741799
-junit:1380.v491ff054cd35
+junit:1396.v095840ed8491
 git-client:6.5.0
 credentials-binding:702.vfe613e537e88
 matrix-project:870.v9db_fcfc2f45b_
@@ -165,7 +165,7 @@ copyartifact:795.ve8e151429b_27
 mercurial:1323.ve69d2a_db_8a_b_d
 uno-choice:2.8.8
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
-configuration-as-code:2031.veb_a_fdda_b_3ffd
+configuration-as-code:2036.v0b_c2de701dcb_
 kubernetes-credentials:207.v492f58828b_ed
 cloud-stats:377.vd8a_6c953e98e
 slack:795.v4b_9705b_e6d47
