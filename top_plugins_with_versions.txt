@@ -13,11 +13,11 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 workflow-support:1010.vb_b_39488a_9841
 jackson2-api:2.20.1-423.v13951f6b_6532
 plain-credentials:199.v9f8e1f741799
-junit:1380.v491ff054cd35
+junit:1396.v095840ed8491
 git-client:6.5.0
 credentials-binding:702.vfe613e537e88
 matrix-project:870.v9db_fcfc2f45b_
-git:5.8.1
+git:5.9.0
 cloudbees-folder:6.1073.va_7888eb_dd514
 token-macro:477.vd4f0dc3cb_cf1
 workflow-job:1571.vb_423c255d6d9
@@ -60,7 +60,7 @@ okhttp-api:4.12.0-195.vc02552c04ffd
 github:1.45.0
 ldap:807.v7d7de30930cf
 pam-auth:1.12
-github-branch-source:1934.v23cf60a_47fc3
+github-branch-source:1936.vfa_a_5c2cef4e7
 email-ext:1933.v45cec755423f
 mina-sshd-api-common:2.16.0-167.va_269f38cc024
 jakarta-activation-api:2.1.4-1
@@ -155,7 +155,7 @@ envinject-api:1.237.v82803a_511906
 gitlab-plugin:1.9.13
 commons-compress-api:1.28.0-2
 envinject:2.934.vc674e76cf954
-prism-api:1.30.0-701.vf8f8f1f3fd55
+prism-api:1.30.0-703.v116fb_3b_5b_b_a_a_
 sonar:2.18.2
 docker-java-api:3.7.0-133.v93b_8fb_c17a_77
 ansicolor:536.v13fa_b_860c267
@@ -165,7 +165,7 @@ copyartifact:795.ve8e151429b_27
 mercurial:1323.ve69d2a_db_8a_b_d
 uno-choice:2.8.8
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
-configuration-as-code:2031.veb_a_fdda_b_3ffd
+configuration-as-code:2037.v8e5349845172
 kubernetes-credentials:207.v492f58828b_ed
 cloud-stats:377.vd8a_6c953e98e
 slack:795.v4b_9705b_e6d47
@@ -241,7 +241,7 @@ h2-api:11.1.4.199-36.vb_ee07e965744
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
-coverage:2.3120.v73353a_97726e
+coverage:2.3139.v731d2e83ea_8a_
 allure-jenkins-plugin:2.34.0
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e
