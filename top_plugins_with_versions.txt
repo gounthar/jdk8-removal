@@ -25,7 +25,7 @@ durable-task:651.v1f5e074fc83f
 workflow-cps:4255.vd9c37f80fd8a_
 workflow-durable-task-step:1464.v2d3f5c68f84c
 antisamy-markup-formatter:173.v680e3a_b_69ff3
-branch-api:2.1268.v044a_87612da_8
+branch-api:2.1278.v167c2809b_fb_9
 trilead-api:2.284.v1974ea_324382
 workflow-basic-steps:1098.v808b_fd7f8cf4
 pipeline-stage-step:322.vecffa_99f371c
@@ -60,7 +60,7 @@ okhttp-api:4.12.0-195.vc02552c04ffd
 github:1.45.0
 ldap:807.v7d7de30930cf
 pam-auth:1.12
-github-branch-source:1936.vfa_a_5c2cef4e7
+github-branch-source:1967.vdea_d580c1a_b_a_
 email-ext:1933.v45cec755423f
 mina-sshd-api-common:2.16.0-167.va_269f38cc024
 jakarta-activation-api:2.1.4-1
@@ -219,7 +219,7 @@ badge:2.562.vc3c0b_6925377
 extended-read-permission:68.vd270568a_7520
 throttle-concurrents:625.vc8b_e469e9a_b_c
 monitoring:2.6.0
-parameterized-scheduler:374.v531b_4f4d99b_3
+parameterized-scheduler:378.va_234d1c44456
 pipeline-maven-api:1611.v6a_00c04177b_b_
 aws-java-sdk-efs:1.12.780-480.v4a_0819121a_9e
 ansible:635.v34b_48e979c86
