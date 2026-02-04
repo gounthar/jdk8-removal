@@ -218,7 +218,7 @@ azure-commons:1.1.3
 azure-container-agents:372.v073266fff4a_7
 azure-container-registry-tasks:0.6.5
 azure-cosmosdb:2.v738e7ec0eeea_
-azure-credentials:404.vd0fb_33a_8a_14e
+azure-credentials:418.v6628eec6a_2c5
 azure-credentials-ext:1.0
 azure-event-grid-notifier:0.1
 azure-function:0.3.3
@@ -299,7 +299,7 @@ bootstrap4-api:4.6.0-6
 bootstrap5-api:5.3.8-895.v4d0d8e47fea_d
 bootstraped-multi-test-results-report:2.2.1
 bouncycastle-api:2.30.1.82-277.v70ca_0b_877184
-branch-api:2.1268.v044a_87612da_8
+branch-api:2.1278.v167c2809b_fb_9
 breachlock-dast:1.2
 browser-axis-plugin:1.0
 browserstack-integration:1.2.24
@@ -341,7 +341,7 @@ buildkite:1.22.v11fef623d49e
 buildresult-trigger:1.01
 buildrotator:1.2
 buildstash:1.58.v043482c8e823
-buildtriggerbadge:325.vdcd8a_826e87a_
+buildtriggerbadge:341.vcd7e3b_7e7612
 built-on-column:1.5
 bulk-builder:1.5
 bumblebee:4.1.9
@@ -810,6 +810,7 @@ git-bisect:1.5
 git-changelog:3.45
 git-chooser-alternative:1.1
 git-client:6.5.0
+git-collect:37.v06298c1f8d7c
 git-forensics:3.2274.v3dc0fd546572
 git-parameter:462.vdcf3df2ed2ca_
 git-prebuildmerge-trait:1.0
@@ -831,7 +832,7 @@ github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
-github-branch-source:1936.vfa_a_5c2cef4e7
+github-branch-source:1967.vdea_d580c1a_b_a_
 github-checks:634.v371dc6d978a_3
 github-coverage-reporter:1.10
 github-issues:1.2.4
@@ -906,7 +907,7 @@ handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 harbor:50.v6d91243ee335
 harvest:0.5.1
 hashicorp-vault-pipeline:1.4
-hashicorp-vault-plugin:377.vc87a_13718939
+hashicorp-vault-plugin:378.v4d9b_90a_b_361d
 hckrnews:1.1
 heavy-job:1.1
 helix-alm-test-management:1.0.15
@@ -1112,7 +1113,7 @@ kubernetes-cli:1.375.v8001982544ba
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:207.v492f58828b_ed
 kubernetes-credentials-provider:1.303.vdfcf47fb_b_fef
-kubernetes-ephemeral-container:58.vf9d271d4a_0b_4
+kubernetes-ephemeral-container:63.v7da_04b_76365a_
 kubernetes-pipeline-devops-steps:1.6
 kubesphere-token-auth:1.7
 label-linked-jobs:6.0.1
@@ -1391,7 +1392,7 @@ parallel-test-executor:611.va_92b_d1852e52
 parallels-desktop:0.6
 parameter-pool:1.0.3
 parameter-separator:334.v1fc0e534c71d
-parameterized-scheduler:374.v531b_4f4d99b_3
+parameterized-scheduler:378.va_234d1c44456
 parameterized-trigger:873.v8b_e37dd8418f
 parasoft-findings:10.7.6
 partyparrotstatus:1.0
@@ -1665,7 +1666,7 @@ sectioned-view:1.30
 secure-post-script:0.1
 secure-requester-whitelist:72.v6cce468c5513
 security-inspector:117.v6eecc36919c2
-sedstart-runner:21.vf1314ea_ed8a_4
+sedstart-runner:22.vb_88de255500d
 seed:2.1.4
 select2-api:4.0.13-8
 selected-tests-executor:1.3.3
@@ -1965,7 +1966,7 @@ was-builder:1.6.1
 wattspeed:1.0
 wavefront:1.1.4
 webhook-eventsource:0.0.1
-webhook-secret-credentials-provider:12.vcf4a_767c6321
+webhook-secret-credentials-provider:14.v48f59ce9915d
 webhook-step:342.v620877effe14
 webload:1.9
 weblogic-deployer-plugin:4.1
@@ -1976,7 +1977,7 @@ weibo:1.0.1
 wetest-automation:1.8
 wildfly-deployer:1.0.2
 windocks-start-container:1.4
-windows-azure-storage:519.vd15db_1004122
+windows-azure-storage:534.v3964f6b_f4338
 windows-cloud:1.0.1
 windows-exe-runner:35.vea_7d292d39a_2
 winrm-client:1.0
