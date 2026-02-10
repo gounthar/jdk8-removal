@@ -260,7 +260,7 @@ bitbucket-scm-filter-jira-validator:0.1.0
 bitbucket-scm-trait-commit-skip:0.4.0
 bitbucket-webhooks:1.0.0
 bitkeeper:1.8
-bitwarden-credentials-provider:243.v0dcb_22a_ce3da_
+bitwarden-credentials-provider:254.vd33c35d1b_fb_5
 black-duck-sigma:2024.10.1
 blackduck-coverity-on-polaris:2.0.1
 blackduck-detect:11.0.0
@@ -487,7 +487,7 @@ configuration-as-code-secret-ssm:1.0.1
 configurationslicing:664.vdda_74145b_b_d0
 configure-job-column-plugin:84.v792c9269f95a
 conflict-aware-ondemand-strategy:2.197.vd7e077d21c70
-conjur-credentials:3.0.6
+conjur-credentials:3.0.9
 conjur-simple-integration:0.0.1
 console-badge:1.1
 console-column-plugin:270.vda_2472462073
@@ -804,7 +804,7 @@ gerrit-trigger:3.1969.v65d614ec771a_
 gerrit-verify-status-reporter:0.0.3
 ghost-inspector:3.4
 ghprb:1.42.2
-git:5.9.0
+git:5.10.0
 git-automerger:0.6.3
 git-bisect:1.5
 git-changelog:3.45
@@ -849,6 +849,7 @@ github-scm-trait-commit-skip:0.4.0
 github-scm-trait-notification-context:45.v8ef831829589
 gitlab-api:6.2.0-111.vf174d6b_8c12e
 gitlab-branch-source:740.v04f287f9194d
+gitlab-checks:2.v66f9d8d3b_258
 gitlab-kubernetes-credentials:538.v99cc6503c421
 gitlab-logo:232.v34a_9b_98d4eb_b_
 gitlab-merge-request-jenkins:2.0.0
@@ -890,7 +891,7 @@ gradle-daemon:0.1.0
 gradle-repo:1.0.1
 graphiteIntegrator:1.2
 graphql-server:0.0.5
-gravatar:213.219.v181f17b_22f8b_
+gravatar:214.222.ve3d58ca_9015c
 greenballs:1.15.1
 groovy:497.v7b_061a_a_de65d
 groovy-events-listener-plugin:2.291.vcc69e39f0761
@@ -1076,7 +1077,7 @@ jslint:0.8.2
 jsm-alert:22.vd3455f1f86a_3
 json-api:20251224-185.v0cc18490c62c
 json-editor-parameter:54.v71962f37a_416
-json-parameter:96.vf950fb_b_79615
+json-parameter:99.v4b_d4a_315438e
 json-path-api:2.10.0-202.va_9cc16c1e476
 jsoup:1.22.1-76.v9cdb_2456c0e3
 jspecify-api:1.0.0-1.ve7231e6d0d15
@@ -1363,7 +1364,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.19
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.3.2-153.vf3f1881f393d
+oras-java-api:0.3.3-155.v2cb_7e276c5f8
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1513,7 +1514,7 @@ propelo-job-reporter:1.0.36
 provar-automation:68.v91b_13f4101e2
 proxmox:0.7.1
 publish-over:238.v1db_583004c9b_
-publish-over-cifs:0.16
+publish-over-cifs:194.v0274950f275c
 publish-over-dropbox:1.3.2
 publish-over-ftp:248.v1487ff759c7a_
 publish-over-ssh:390.vb_f56e7405751
@@ -1749,8 +1750,8 @@ soos-sca:65.v9050fc6365a_2
 sounds:0.7
 sourcemonitor:0.2
 split-admin:2.0
-splunk-devops:1.11.1
-splunk-devops-extend:1.11.1
+splunk-devops:1.11.2
+splunk-devops-extend:1.11.2
 spoonscript:1.3
 spotinst:2.2.21
 spring-config:2.0.2
@@ -1960,7 +1961,7 @@ vsts-cd:1.3
 vulnerability-vines-ai:48.v91718555f056
 wallarm-fast:0.4.2
 waptpro:1.6
-warnings-ng:12.10007.va_42704b_594d3
+warnings-ng:12.10010.vca_9e003f32a_2
 warrior:1.2
 was-builder:1.6.1
 wattspeed:1.0
