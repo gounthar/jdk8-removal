@@ -88,7 +88,7 @@ appdome-build-2secure:1.3.0
 appdome-validate-2secure:1.0.0
 appdynamics-dashboard:1.0.15
 appetize:1.1.0
-appknox-scanner:1.0.2
+appknox-scanner:1.0.3
 applatix:1.1
 application-director-plugin:1.3
 applitools-eyes:1.16.6
@@ -620,7 +620,7 @@ disable-github-multibranch-status:1.2
 disable-job-button:1.3.vf55949267366
 discard-old-build:1.08
 discord-notifier:264.v70060b_a_b_d300
-disk-usage:1.3
+disk-usage:573.v5269a_8d16a_db_
 diskcheck:0.30
 display-console-output:1.0.5
 display-upstream-changes:0.3.2
@@ -720,7 +720,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:19.v40532946d413
 experitest-cloud:1.0.3
-explain-error:105.v1818f0f29f73
+explain-error:108.vc1203f7e10cb_
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -764,7 +764,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:12.0.0-411.va_40875c6116c
+flyway-api:12.0.1-417.vf87010e74306
 flyway-runner:282.v7e837c0b_ff13
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -1038,7 +1038,7 @@ jira-steps:2.1.185.vf95b_e8a_f13fe
 jira-trigger:1.0.3
 jjwt-api:0.11.5-120.v0268cf544b_89
 jmh-report:0.9.0
-jms-messaging:1.1.28
+jms-messaging:2.0.0
 jna-posix-api:1.0.3-jenkins-1
 jnr-posix-api:3.1.21-186.vb_7ec9b_23ce83
 job-dsl:3654.vdf58f53e2d15
@@ -1474,7 +1474,7 @@ plain-text-console-link:9.vd340b_6d6312a_
 plasticscm-plugin:4.4
 platformlabeler:3198.v06b_04fa_fea_6e
 plot:2.4.0
-plugin-usage-plugin:4.10
+plugin-usage-plugin:418.v308c3c863d25
 plugin-util-api:6.1192.v30fe6e2837ff
 polarion:1.3
 policycenter-gate-validator:1.0.1
@@ -1491,7 +1491,7 @@ postbuild-task:78.v24529f1f5cdb_
 postbuildscript:3.4.1-695.vf6b_0b_8053979
 postgresql-api:42.7.7-67.v70a_30b_84f58b_
 postgresql-fingerprint-storage:386.v7a_364c62704d
-powershell:2.3
+powershell:178.v4b_3a_9f214ea_2
 pragprog:2.0.0
 preSCMbuildstep:115.vf9808414429d
 preflight-integration:1.4
@@ -1515,7 +1515,7 @@ provar-automation:68.v91b_13f4101e2
 proxmox:0.7.1
 publish-over:238.v1db_583004c9b_
 publish-over-cifs:194.v0274950f275c
-publish-over-dropbox:1.3.2
+publish-over-dropbox:127.v6a_eb_14cfb_eb_6
 publish-over-ftp:248.v1487ff759c7a_
 publish-over-ssh:390.vb_f56e7405751
 publish-to-bitbucket:0.4
@@ -1764,7 +1764,7 @@ sse-gateway:1.29
 ssh:158.ve2a_e90fb_7319
 ssh-agent:386.v36cc0c7582f0
 ssh-credentials:361.vb_f6760818e8c
-ssh-slaves:3.1096.v0b_cc466e4323
+ssh-slaves:3.1097.v868116049892
 ssh-steps:2.0.92.vb_a_0583935f9b_
 ssh2easy:1.6
 sshd:3.384.vc89b_5e138cf9
@@ -1943,7 +1943,7 @@ violation-comments-to-gitlab:2.62.0
 violation-comments-to-stash:1.134
 violations:0.7.11
 virtualbox:0.7
-visual-basic-6:2.3
+visual-basic-6:99.v6e533106c94a_
 visualexpert:2024.1.1
 visualworks-store:1.1.4
 vk-notifier:1.0.3
@@ -1961,7 +1961,7 @@ vsts-cd:1.3
 vulnerability-vines-ai:48.v91718555f056
 wallarm-fast:0.4.2
 waptpro:1.6
-warnings-ng:12.10011.va_027181d7658
+warnings-ng:12.10012.v753ff0d0363a_
 warrior:1.2
 was-builder:1.6.1
 wattspeed:1.0
