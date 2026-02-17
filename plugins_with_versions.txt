@@ -71,7 +71,7 @@ ansible-tower:0.17.0
 ansicolor:536.v13fa_b_860c267
 ant:520.vd082ecfb_16a_9
 ant-in-workspace:1.2.2
-antexec:474.v6b_2a_ec53635f
+antexec:477.v8fc8a_46c0d17
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -825,7 +825,7 @@ gitcolony-plugin:1.1
 gitea:268.v75e47974c01d
 gitea-checks:603.625.v731f4b_ecf7d5
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1277.v4988370637e3
+gitee:1278.v35c10a_5844c0
 gitflow:1.0.1
 github:1.46.0
 github-api:1.330-492.v3941a_032db_2a_
@@ -1543,7 +1543,7 @@ qualys-cs:1.8.0.3
 qualys-iac-security:1.0.0
 qualys-pc:1.0.8
 qualys-vm:1.2.1
-qualys-was:2.1.3
+qualys-was:3.0.0
 quayio-trigger:0.1
 queue-cleanup:1.4
 queueredirector:44.v74c8e1210985
@@ -1894,7 +1894,7 @@ unicorn:0.1.1
 unique-id:2.125.vf125c93a_f982
 unity3d-plugin:1.3
 unleash:124.v94b_a_d6d7c506
-uno-choice:2.8.8
+uno-choice:2.8.9
 unreliable-slave-plugin:1.2
 update-sites-manager:91.v38ff0407cb_a_d
 updatebot:1.0.10
