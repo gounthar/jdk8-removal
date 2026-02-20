@@ -545,7 +545,7 @@ custom-job-icon:0.2
 custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
-customizable-header:284.vf03012f0b_961
+customizable-header:285.v70da_c6f8a_420
 customize-build-now:53.v64eb_d7d017d2
 customized-build-message:1.1
 cvs:502.v02d5a_0c6b_9a_3
@@ -954,7 +954,7 @@ icon-shim:3.0.0
 icq-notification:2.0.0
 idobata-notifier:1.0
 ifttt-build-notifier:1.2
-ignore-committer-strategy:55.v51410e712e0c
+ignore-committer-strategy:57.v0756db_b_f6926
 image-gallery:2.0.2
 image-tag-parameter:3.1
 imagecomparison:1.4
@@ -1027,7 +1027,7 @@ jenkinswalldisplay:0.6.34
 jersey2-api:2.47-165.ve7809a_3e87e0
 jersey3-api:3.1.11-4.v77818819c2e1
 jetbrains-space:1.53.vcd2e91eb_a_620
-jfrog:1.6.0
+jfrog:1.6.1
 jgiven:0.15.1
 jianliao:1.1
 jigomerge:0.9
@@ -1052,7 +1052,7 @@ job-poll-action-plugin:1.0
 job-restrictions:216.v0732cc7fb_076
 job-strongauth-simple:0.5
 jobConfigHistory:1356.ve360da_6c523a_
-jobcacher:822.v89a_ee7435e65
+jobcacher:824.v46ef3022797b_
 jobcacher-artifactory-storage:218.vb_b_f388660e8b_
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
 jobcacher-oras-storage:86.v37b_94609150a_
@@ -1114,7 +1114,7 @@ kubernetes-cli:1.375.v8001982544ba
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:207.v492f58828b_ed
 kubernetes-credentials-provider:1.303.vdfcf47fb_b_fef
-kubernetes-ephemeral-container:67.vc6e103563b_e3
+kubernetes-ephemeral-container:69.v195f6fb_8a_ec2
 kubernetes-pipeline-devops-steps:1.6
 kubesphere-token-auth:1.7
 label-linked-jobs:6.0.1
@@ -1364,7 +1364,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.19
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.3.3-155.v2cb_7e276c5f8
+oras-java-api:0.4.0-161.vb_39a_b_4e05c4b_
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1737,7 +1737,7 @@ snakeyaml-api:2.5-149.v72471e9c6371
 snowglobe:0.4.1
 snsnotify:2.1
 snyk-security-scanner:5.0.1
-soapui-pro-functional-testing:1.13
+soapui-pro-functional-testing:1.14
 sofy-ai:1.0.3
 solarized-theme:28.vfe25223f14fe
 sonar:2.18.2
@@ -1987,7 +1987,7 @@ wiz-scanner:98.v292089e3108c
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4255.vd9c37f80fd8a_
+workflow-cps:4256.v991a_f1991c03
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
 workflow-durable-task-step:1464.v2d3f5c68f84c
