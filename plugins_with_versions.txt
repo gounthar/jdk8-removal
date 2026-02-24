@@ -7,7 +7,7 @@ ColumnsPlugin:1.0
 CustomHistory:1.6
 Exclusion:0.15
 GatekeeperPlugin:3.0.5
-JDK_Parameter_Plugin:1.3
+JDK_Parameter_Plugin:1.4
 JiraTestResultReporter:340.v8ea_26d65222d
 Matrix-sorter-plugin:1.3
 NegotiateSSO:153.v85355f1cb_26d
@@ -71,7 +71,7 @@ ansible-tower:0.17.0
 ansicolor:536.v13fa_b_860c267
 ant:520.vd082ecfb_16a_9
 ant-in-workspace:1.2.2
-antexec:474.v6b_2a_ec53635f
+antexec:477.v8fc8a_46c0d17
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -111,7 +111,7 @@ artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
 artifactory:4.0.8
 artifactory-artifact-manager:275.v941a_4e4a_7df3
-artifactory-client-api:2.19.0-116.vc6e7efff0e6b_
+artifactory-client-api:2.19.0-158.ve20b_86b_a_d36a_
 artifactz:1.4.0-53.v7537f8b_3f9b_e
 asakusa-satellite-plugin:0.1.1
 ascentialtest-cmd-line:1.1
@@ -332,7 +332,7 @@ build-timeout:1.39
 build-timestamp:1.1.1
 build-token-root:151.va_e52fe3215fc
 build-token-trigger:1.0.0
-build-user-vars-plugin:212.vd6b_e9f6d0cdb_
+build-user-vars-plugin:214.va_eed2ed849ca_
 build-view-column:0.3
 build-with-parameters:81.ve4a_9c2499d9a
 buildcontext-capture:0.6
@@ -456,7 +456,7 @@ commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.28.0-3
 commons-httpclient3-api:3.1-3
 commons-lang3-api:3.20.0-109.ve43756e2d2b_4
-commons-math3-api:3.6.1-70.v4fe220fa_63dd
+commons-math3-api:3.6.1-104.vc3227d955289
 commons-text-api:1.15.0-210.v7480a_da_70b_9e
 compact-columns:1.222.vcd19e64d7ef5
 compatibility-action-storage:1.0
@@ -521,7 +521,7 @@ cppncss:1.2
 crap4j:0.9
 create-fingerprint:25.v0a_b_e60b_42fa_4
 createjobadvanced:1.10.0
-credentials:1489.v375944c125ee
+credentials:1490.ve7532596f1fd
 credentials-binding:717.v951d49b_5f3a_a_
 crittercism-dsym:1.1
 cron-shelve:1.3
@@ -545,7 +545,7 @@ custom-job-icon:0.2
 custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
 custom-view-tabs:1.3
-customizable-header:284.vf03012f0b_961
+customizable-header:285.v70da_c6f8a_420
 customize-build-now:53.v64eb_d7d017d2
 customized-build-message:1.1
 cvs:502.v02d5a_0c6b_9a_3
@@ -611,7 +611,7 @@ diagnostics:1.2
 diawi-upload:1.5
 digicert-software-trust-code-sign:18.v7ec4e7c19a_1b
 digicert-software-trust-gpg-sign:19.va_8b_60320b_ec8
-digitalocean-plugin:230.v2246586df170
+digitalocean-plugin:235.vca_2b_4e3d34db_
 dimensionsscm:0.9.3.1
 dingding-json-pusher:2.0
 dingding-notifications:2.8.0
@@ -681,7 +681,7 @@ ecu-test-execution:3.11
 ecutest:2.46
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 editable-choice:71.v02a291ebbe45
-eggplant-runner:0.0.1.304.vf87760e239a_a_
+eggplant-runner:0.0.1.305.v7a_fa_c8d8c93e
 eiffel-broadcaster:2.10.3
 eks-token:0.0.2
 elOyente:1.3
@@ -720,13 +720,13 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:19.v40532946d413
 experitest-cloud:1.0.3
-explain-error:110.vea_d6ee0386d2
+explain-error:114.v407b_b_4f5ce36
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
 extended-read-permission:68.vd270568a_7520
 extended-security-settings:1.3
-extended-timer-trigger:50.v1dde6750f820
+extended-timer-trigger:52.v6d7f99f29306
 extensible-choice-parameter:255.vfa_41f46828ef
 extension-filter:268.v953673b_16e81
 extensivetesting:1.4.4b
@@ -764,7 +764,7 @@ flexible-publish:0.16.1
 flock:1.0.1
 flow:1.3
 fluentd:0.1.5
-flyway-api:12.0.1-419.v68c8eb_7f7545
+flyway-api:12.0.2-422.v011eeb_a_42191
 flyway-runner:282.v7e837c0b_ff13
 fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
@@ -798,7 +798,7 @@ generic-event:49.v8cdd8314e99d
 generic-tool:1.17.vb_8a_b_4e5600c9
 generic-webhook-trigger:2.4.1
 genexus:314.v3f04b4c93171
-gerrit-checks-api:66.v3ef8b_f08f1f3
+gerrit-checks-api:68.ve0a_d91c77a_92
 gerrit-code-review:0.5.0
 gerrit-trigger:3.1969.v65d614ec771a_
 gerrit-verify-status-reporter:0.0.3
@@ -825,7 +825,7 @@ gitcolony-plugin:1.1
 gitea:268.v75e47974c01d
 gitea-checks:603.625.v731f4b_ecf7d5
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
-gitee:1277.v4988370637e3
+gitee:1278.v35c10a_5844c0
 gitflow:1.0.1
 github:1.46.0
 github-api:1.330-492.v3941a_032db_2a_
@@ -833,7 +833,7 @@ github-app-kubernetes-credentials:0.0.1
 github-autostatus:3.6.2
 github-branch-pr-change-filter:1.2.4
 github-branch-source:1967.vdea_d580c1a_b_a_
-github-checks:634.v371dc6d978a_3
+github-checks:676.v48c732b_52951
 github-coverage-reporter:1.10
 github-issues:1.2.4
 github-label-filter:1.0.0
@@ -954,7 +954,7 @@ icon-shim:3.0.0
 icq-notification:2.0.0
 idobata-notifier:1.0
 ifttt-build-notifier:1.2
-ignore-committer-strategy:55.v51410e712e0c
+ignore-committer-strategy:57.v0756db_b_f6926
 image-gallery:2.0.2
 image-tag-parameter:3.1
 imagecomparison:1.4
@@ -1027,7 +1027,7 @@ jenkinswalldisplay:0.6.34
 jersey2-api:2.47-165.ve7809a_3e87e0
 jersey3-api:3.1.11-4.v77818819c2e1
 jetbrains-space:1.53.vcd2e91eb_a_620
-jfrog:1.6.0
+jfrog:1.6.1
 jgiven:0.15.1
 jianliao:1.1
 jigomerge:0.9
@@ -1052,10 +1052,10 @@ job-poll-action-plugin:1.0
 job-restrictions:216.v0732cc7fb_076
 job-strongauth-simple:0.5
 jobConfigHistory:1356.ve360da_6c523a_
-jobcacher:822.v89a_ee7435e65
+jobcacher:826.v5e8436d03083
 jobcacher-artifactory-storage:218.vb_b_f388660e8b_
 jobcacher-azure-storage:33.vd1d60ffa_d4ee
-jobcacher-oras-storage:86.v37b_94609150a_
+jobcacher-oras-storage:124.v0fe9b_1eecb_d6
 jobcopy-builder:1.5.0
 jobdelete-builder:1.0
 jobgenerator:1.22
@@ -1078,7 +1078,7 @@ jsm-alert:22.vd3455f1f86a_3
 json-api:20251224-185.v0cc18490c62c
 json-editor-parameter:54.v71962f37a_416
 json-parameter:99.v4b_d4a_315438e
-json-path-api:2.10.0-202.va_9cc16c1e476
+json-path-api:3.0.0-218.vcd4dd1355de2
 jsoup:1.22.1-76.v9cdb_2456c0e3
 jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
@@ -1114,7 +1114,7 @@ kubernetes-cli:1.375.v8001982544ba
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
 kubernetes-credentials:207.v492f58828b_ed
 kubernetes-credentials-provider:1.303.vdfcf47fb_b_fef
-kubernetes-ephemeral-container:67.vc6e103563b_e3
+kubernetes-ephemeral-container:69.v195f6fb_8a_ec2
 kubernetes-pipeline-devops-steps:1.6
 kubesphere-token-auth:1.7
 label-linked-jobs:6.0.1
@@ -1329,12 +1329,12 @@ nvm-wrapper:0.1.7
 oak9:1.0.9
 oauth-credentials:0.657.v7d8dd90b_0382
 octoperf:5.0.0
-octopusdeploy:4.1.0
+octopusdeploy:4.1.1
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
 oic-auth:4.626.ve5a_d9f26c051
 oidc-backchannel-logout:13.vdf9ca_b_b_99fa_6
-oidc-provider:111.v29fd614b_3617
+oidc-provider:170.v15f73e25a_e28
 okhttp-api:4.12.0-195.vc02552c04ffd
 oki-docki:1.1
 one-shot-executor:1.2
@@ -1347,6 +1347,7 @@ opencover:79.v78d40e1fc27e
 openedge:0.23
 openid:229.v184171253190
 openid4java:0.9.8.0
+openmfa:104.v3a_b_a_61fd743e
 openscada-jenkins-exporter:0.0.2
 openshift-client:1.1.0.437.v08c5053d5fe2
 openshift-deployer:1.2.0
@@ -1355,16 +1356,16 @@ openshift-login:1.1.0.263.v2e0ddecf8b_25
 openshift-pipeline:1.0.57
 openshift-sync:1.1.0.825.v30618768da_42
 openstack-cloud:1465.vd3b_a_103e31fd
-opentelemetry:3.1573.v72f1a_711ca_98
+opentelemetry:3.1584.v4f6307b_3766f
 opentelemetry-agent-metrics:2.0.1
-opentelemetry-api:1.49.0.94.v5fc5325d5e7a_
+opentelemetry-api:1.49.0.99.vd48c9e6c4fa_b_
 opsbox-utility:1.0.0.25.v403b_2c237e6a_
 opsgenie:1.11
 opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.19
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.3.3-155.v2cb_7e276c5f8
+oras-java-api:0.4.0-161.vb_39a_b_4e05c4b_
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1394,7 +1395,7 @@ parallels-desktop:0.6
 parameter-pool:1.0.3
 parameter-separator:334.v1fc0e534c71d
 parameterized-scheduler:378.va_234d1c44456
-parameterized-trigger:873.v8b_e37dd8418f
+parameterized-trigger:889.v851b_12208b_a_7
 parasoft-findings:10.7.6
 partyparrotstatus:1.0
 patch-parameter:1.2
@@ -1429,7 +1430,7 @@ pipeline-build-step:584.vdb_a_2cc3a_d07a_
 pipeline-cloudwatch-logs:195.va_a_dcfa_e6e78d
 pipeline-config-history:1.6
 pipeline-cps-http:201.v59370c7cf0ec
-pipeline-cps-oras:50.v764a_6877d7f1
+pipeline-cps-oras:84.vf5ec042a_1b_3c
 pipeline-dependency-walker:1.0.0
 pipeline-deploymon:1.0
 pipeline-gcp:22.vcc10eff7c13f
@@ -1447,10 +1448,10 @@ pipeline-input-notification:17.v3401b_efd3f89
 pipeline-input-step:540.v14b_100d754dd
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.17.v407d68513ea_6
-pipeline-lib-oras:46.va_0ee7b_f1b_02a_
-pipeline-maven:1611.v6a_00c04177b_b_
-pipeline-maven-api:1611.v6a_00c04177b_b_
-pipeline-maven-database:1611.v6a_00c04177b_b_
+pipeline-lib-oras:84.vcfdc020586ef
+pipeline-maven:1672.v1b_d4c0435b_20
+pipeline-maven-api:1672.v1b_d4c0435b_20
+pipeline-maven-database:1672.v1b_d4c0435b_20
 pipeline-milestone-step:138.v78ca_76831a_43
 pipeline-model-api:2.2277.v00573e73ddf1
 pipeline-model-declarative-agent:1.1.1
@@ -1458,7 +1459,7 @@ pipeline-model-definition:2.2277.v00573e73ddf1
 pipeline-model-extensions:2.2277.v00573e73ddf1
 pipeline-multibranch-defaults:2.1
 pipeline-npm:458.vfb_92e52f220a_
-pipeline-project-env:143.v701f8fb_6cf41
+pipeline-project-env:147.v1b_7c8a_f5eea_2
 pipeline-reporter-by-redpen:1.054.v7b_9517b_6b_202
 pipeline-rest-api:2.39
 pipeline-restful-api:0.11
@@ -1540,10 +1541,11 @@ quali-torque:2.1.0-307.vfa_3d28f8a_8b_3
 quality-gates:2.5
 qualityclouds:1.0.1
 qualys-cs:1.8.0.3
-qualys-iac-security:1.0.0
+qualys-iac-security:2.0.0
 qualys-pc:1.0.8
 qualys-vm:1.2.1
-qualys-was:2.1.3
+qualys-was:3.0.0
+quay-tag-parameter:1.0.123.ved40a_a_e1fcd7
 quayio-trigger:0.1
 queue-cleanup:1.4
 queueredirector:44.v74c8e1210985
@@ -1601,7 +1603,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:548.veb_23a_f9a_b_b_d1
+resources-ai-chatbot:549.v6a_26d684a_dcb_
 rest-list-parameter:348.v9506fdc4b_d07
 restricted-register:0.1.7
 results-cache:2.0.2
@@ -1636,7 +1638,7 @@ sametime:0.4
 saml:4.595.vec7523b_5d543
 sasunit-plugin:1.024
 sauce-ondemand:2.2.0
-sbt:88.vee3829489c40
+sbt:126.v4472785f4752
 scala-junit-name-decoder:1.0
 scalable-amazon-ecs:1.0
 schedule-build:696.v0a_b_ec7334c89
@@ -1737,7 +1739,7 @@ snakeyaml-api:2.5-149.v72471e9c6371
 snowglobe:0.4.1
 snsnotify:2.1
 snyk-security-scanner:5.0.1
-soapui-pro-functional-testing:1.13
+soapui-pro-functional-testing:1.14
 sofy-ai:1.0.3
 solarized-theme:28.vfe25223f14fe
 sonar:2.18.2
@@ -1894,7 +1896,7 @@ unicorn:0.1.1
 unique-id:2.125.vf125c93a_f982
 unity3d-plugin:1.3
 unleash:124.v94b_a_d6d7c506
-uno-choice:2.8.8
+uno-choice:2.8.9
 unreliable-slave-plugin:1.2
 update-sites-manager:91.v38ff0407cb_a_d
 updatebot:1.0.10
@@ -1987,7 +1989,7 @@ wiz-scanner:98.v292089e3108c
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4255.vd9c37f80fd8a_
+workflow-cps:4256.v991a_f1991c03
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
 workflow-durable-task-step:1464.v2d3f5c68f84c

@@ -65,6 +65,7 @@ flexdeploy:3.300
 fortify-on-demand-uploader:8.0.1
 gcp-secrets-manager-credentials-provider:0.3.1
 genexus:314.v3f04b4c93171
+gerrit-checks-api:66.v3ef8b_f08f1f3
 git-bisect:1.5
 github-pr-coverage-status:2.2.0
 global-post-script:1.1.4
@@ -78,7 +79,7 @@ instance-identity:203.v15e81a_1b_7a_38
 jacked:1.5.1
 jdepend:1.3.1
 jenkins-cloudformation-plugin:231.v3b_84a_7a_074ec
-jfrog:1.6.1
+jfrog:1.6.0
 jmh-report:0.9.0
 jqs-monitoring:37.vf50a_82a_0b_f32
 keeper-secrets-manager:1.0-89.v00d3747a2090

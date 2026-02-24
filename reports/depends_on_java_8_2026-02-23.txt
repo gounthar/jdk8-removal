@@ -105,7 +105,7 @@ artifact-promotion:0.5.2
 artifact-repository-parameter:2.0.1
 artifactdeployer:1.3
 artifactory-artifact-manager:275.v941a_4e4a_7df3
-artifactory-client-api:2.19.0-158.ve20b_86b_a_d36a_
+artifactory-client-api:2.19.0-116.vc6e7efff0e6b_
 artifactory:4.0.8
 artifactz:1.4.0-53.v7537f8b_3f9b_e
 asakusa-satellite-plugin:0.1.1
@@ -430,7 +430,7 @@ commons-collections4-api:4.5.0-8.va_d5448ef9011
 commons-compress-api:1.28.0-3
 commons-httpclient3-api:3.1-3
 commons-lang3-api:3.20.0-109.ve43756e2d2b_4
-commons-math3-api:3.6.1-104.vc3227d955289
+commons-math3-api:3.6.1-70.v4fe220fa_63dd
 commons-text-api:1.15.0-210.v7480a_da_70b_9e
 compact-columns:1.222.vcd19e64d7ef5
 compatibility-action-storage:1.0
@@ -757,7 +757,7 @@ generic-event:49.v8cdd8314e99d
 generic-tool:1.17.vb_8a_b_4e5600c9
 generic-webhook-trigger:2.4.1
 genexus:314.v3f04b4c93171
-gerrit-checks-api:68.ve0a_d91c77a_92
+gerrit-checks-api:66.v3ef8b_f08f1f3
 gerrit-code-review:0.5.0
 gerrit-trigger:3.1969.v65d614ec771a_
 ghost-inspector:3.4
@@ -1013,7 +1013,7 @@ jsm-alert:22.vd3455f1f86a_3
 json-api:20251224-185.v0cc18490c62c
 json-editor-parameter:54.v71962f37a_416
 json-parameter:99.v4b_d4a_315438e
-json-path-api:3.0.0-218.vcd4dd1355de2
+json-path-api:2.10.0-202.va_9cc16c1e476
 jsoup:1.22.1-76.v9cdb_2456c0e3
 jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
@@ -1264,7 +1264,7 @@ opencover:79.v78d40e1fc27e
 openedge:0.23
 openid4java:0.9.8.0
 openid:229.v184171253190
-openmfa:104.v3a_b_a_61fd743e
+openmfa:99.ve29395359638
 openshift-client:1.1.0.437.v08c5053d5fe2
 openshift-deployer:1.2.0
 openshift-k8s-credentials:280.vb_4938766c373
@@ -1308,7 +1308,7 @@ parallels-desktop:0.6
 parameter-pool:1.0.3
 parameter-separator:334.v1fc0e534c71d
 parameterized-scheduler:378.va_234d1c44456
-parameterized-trigger:889.v851b_12208b_a_7
+parameterized-trigger:873.v8b_e37dd8418f
 parasoft-findings:10.7.6
 partyparrotstatus:1.0
 patch-parameter:1.2
