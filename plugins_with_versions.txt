@@ -720,7 +720,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:19.v40532946d413
 experitest-cloud:1.0.3
-explain-error:114.v407b_b_4f5ce36
+explain-error:116.v3048e572b_ecd
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -992,7 +992,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.20.1-423.v13951f6b_6532
-jackson3-api:3.0.4-55.v5dcc25165f20
+jackson3-api:3.1.0-62.ve14734940314
 jacoco:3.3.7
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -1085,7 +1085,7 @@ jsunit:1.6
 jswidgets:1.10
 jucies:0.2.1
 junit:1396.v095840ed8491
-junit-attachments:330.v25180b_263160
+junit-attachments:367.v30757752b_2b_f
 junit-realtime-test-reporter:195.v25b_5f237c6b_4
 junit-sql-storage:355.v9d5995fb_06a_5
 jwt-auth:0.3.0
@@ -1365,7 +1365,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.19
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.4.0-161.vb_39a_b_4e05c4b_
+oras-java-api:0.4.1-163.vccfffa_3de2a_3
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1395,7 +1395,7 @@ parallels-desktop:0.6
 parameter-pool:1.0.3
 parameter-separator:334.v1fc0e534c71d
 parameterized-scheduler:378.va_234d1c44456
-parameterized-trigger:889.v851b_12208b_a_7
+parameterized-trigger:890.vc240a_a_e1217f
 parasoft-findings:10.7.6
 partyparrotstatus:1.0
 patch-parameter:1.2
