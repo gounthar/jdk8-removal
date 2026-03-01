@@ -131,7 +131,7 @@ blueocean-pipeline-api-impl:1.27.25
 popper-api:1.16.1-3
 ssh-agent:386.v36cc0c7582f0
 localization-support:1.41.v186a_c1569458
-apache-httpcomponents-client-5-api:5.6-183.ve5a_8a_b_e71e59
+apache-httpcomponents-client-5-api:5.6-191.vb_47e2b_41c698
 blueocean-git-pipeline:1.27.25
 pipeline-utility-steps:2.20.0
 localization-zh-cn:371.v23851f835d6b_
@@ -160,7 +160,7 @@ sonar:2.18.2
 docker-java-api:3.7.0-133.v93b_8fb_c17a_77
 ansicolor:536.v13fa_b_860c267
 rebuild:338.va_0a_b_50e29397
-docker-plugin:1308.vff6e33248305
+docker-plugin:1316.v75635a_002b_0a_
 copyartifact:795.ve8e151429b_27
 mercurial:1323.ve69d2a_db_8a_b_d
 uno-choice:2.8.9
