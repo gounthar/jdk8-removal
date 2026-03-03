@@ -13,7 +13,7 @@ apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 workflow-support:1015.v785e5a_b_b_8b_22
 jackson2-api:2.20.1-423.v13951f6b_6532
 plain-credentials:199.v9f8e1f741799
-junit:1396.v095840ed8491
+junit:1402.va_87fd3d15dc3
 git-client:6.5.0
 credentials-binding:717.v951d49b_5f3a_a_
 matrix-project:870.v9db_fcfc2f45b_
@@ -67,7 +67,7 @@ jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
 ant:520.vd082ecfb_16a_9
 mina-sshd-api-core:2.16.0-167.va_269f38cc024
-build-timeout:1.39
+build-timeout:1.40
 commons-lang3-api:3.20.0-109.ve43756e2d2b_4
 ionicons-api:94.vcc3065403257
 instance-identity:203.v15e81a_1b_7a_38
@@ -95,7 +95,7 @@ javadoc:354.vee1a_660b_4990
 maven-plugin:3.27
 docker-commons:457.v0f62a_94f11a_3
 git-server:137.ve0060b_432302
-theme-manager:327.v780d7096ec29
+theme-manager:341.v0fd4f8539b_f0
 config-file-provider:1006.vc7366c201f57
 dark-theme:574.va_19f05d54df5
 docker-workflow:634.vedc7242b_eda_7
@@ -202,7 +202,7 @@ simple-theme-plugin:230.v8b_fd91b_b_800c
 blueocean-jira:1.27.25
 jnr-posix-api:3.1.21-186.vb_7ec9b_23ce83
 gitlab-api:6.2.0-111.vf174d6b_8c12e
-analysis-model-api:13.18.0-935.v784ca_107400a_
+analysis-model-api:13.21.0-941.va_912a_3314a_16
 aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
@@ -225,7 +225,7 @@ aws-java-sdk-efs:1.12.780-480.v4a_0819121a_9e
 ansible:635.v34b_48e979c86
 powershell:178.v4b_3a_9f214ea_2
 commons-httpclient3-api:3.1-3
-Office-365-Connector:5.2.0
+Office-365-Connector:5.3.0
 code-coverage-api:4.99.0
 jacoco:3.3.7
 msbuild:1.38
