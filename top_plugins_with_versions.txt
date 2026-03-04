@@ -11,7 +11,7 @@ workflow-api:1398.v67030756d3fb_
 workflow-scm-step:466.va_d69e602552b_
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 workflow-support:1015.v785e5a_b_b_8b_22
-jackson2-api:2.20.1-423.v13951f6b_6532
+jackson2-api:2.21.1-428.vf8dd988fa_d8d
 plain-credentials:199.v9f8e1f741799
 junit:1402.va_87fd3d15dc3
 git-client:6.5.0
@@ -95,7 +95,7 @@ javadoc:354.vee1a_660b_4990
 maven-plugin:3.27
 docker-commons:457.v0f62a_94f11a_3
 git-server:137.ve0060b_432302
-theme-manager:341.v0fd4f8539b_f0
+theme-manager:343.v1f13e3734719
 config-file-provider:1006.vc7366c201f57
 dark-theme:574.va_19f05d54df5
 docker-workflow:634.vedc7242b_eda_7
