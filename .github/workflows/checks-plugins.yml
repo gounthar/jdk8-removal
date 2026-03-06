@@ -2,7 +2,7 @@ name: Update Plugins List and Create PR
 
 on:
   schedule:
-    - cron: '30 5 * * *'  # Runs daily at 5:30 AM UTC (at most once per day)
+    - cron: '0 10 * * *'  # Runs daily at 10:00 AM UTC (after JDK tracking at 6-7 and plot at 8:30)
   workflow_dispatch:  # Allows manual execution of the workflow
 
 jobs:
@@ -112,6 +112,7 @@ jobs:
         id: create_pr
         uses: peter-evans/create-pull-request@v8
         with:
+          token: ${{ secrets.PAT_TOKEN }}
           branch: ${{ env.DYNAMIC_BRANCH }}
           base: main
           title: "Update plugins list"
