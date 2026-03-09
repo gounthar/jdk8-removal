@@ -1064,7 +1064,7 @@ jobrevision:0.6
 jobtag:25.va_12b_1dd63367
 jobtemplates:1.0
 jobtype-column:1.3
-joda-time-api:2.14.0-177.vd7e9347b_e7d5
+joda-time-api:2.14.1-187.vdf2def02b_8a_1
 join:1.21
 jprt:1.1
 jqs-monitoring:37.vf50a_82a_0b_f32
@@ -1338,6 +1338,7 @@ oidc-backchannel-logout:13.vdf9ca_b_b_99fa_6
 oidc-provider:170.v15f73e25a_e28
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
 oki-docki:1.1
+ompass-2fa:1.0.011.vda_e03a_9fea_b_9
 one-shot-executor:1.2
 onepassword-secrets:1.0.3
 onesky:1.1
@@ -1604,7 +1605,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:557.v11005e58e250
+resources-ai-chatbot:559.va_157481a_da_a_2
 rest-list-parameter:351.vd12ed3e5222c
 restricted-register:0.1.7
 results-cache:2.0.2
@@ -1709,7 +1710,7 @@ silk-performer-plugin:2.0.32
 simple-build-for-pipeline:0.2
 simple-parameterized-builds-report:1.5
 simple-priority-sorter:36.v0c14c3a_9f60d
-simple-queue:1.4.8
+simple-queue:1.4.9
 simple-theme-plugin:230.v8b_fd91b_b_800c
 simpleclearcase:1.2.2
 simpleupdatesite:1.1.2
