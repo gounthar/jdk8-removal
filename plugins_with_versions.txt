@@ -60,7 +60,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:13.21.0-941.va_912a_3314a_16
+analysis-model-api:13.21.0-945.va_f5a_0b_c1404b_
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -302,7 +302,7 @@ bouncycastle-api:2.30.1.83-289.v8426fcd19371
 branch-api:2.1280.v0d4e5b_b_460ef
 breachlock-dast:1.2
 browser-axis-plugin:1.0
-browserstack-integration:1.2.24
+browserstack-integration:1.2.25
 btc-embeddedplatform:25.1.3
 buckminster:1.1.1
 bugzilla:1.5
@@ -1291,7 +1291,7 @@ nested-data-reporting:1025.vf15643f73401
 nested-view:241.v178f0b_a_cd76a_
 netdomain-labeler:0.0.2
 netsparker-cloud-scan:2.1.19
-netty-api:4.1.130.Final-21.v5a_db_3eb_ea_034
+netty-api:4.1.130.Final-24.ve7c35ce81a_b_d
 network-monitor:1.1
 neuro-cucumber:1.0.4
 neuvector-vulnerability-scanner:2.6
@@ -1369,6 +1369,7 @@ oracle-cloud-infrastructure-compute:1.0.19
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
 oras-java-api:0.5.0-171.v3a_b_b_986a_7890
+oras-parameters:13.v25a_7b_c6c175f
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1629,7 +1630,7 @@ run-selector:1.1.1
 rundeck:3.6.14
 runscope:1.50
 rusalad-plugin:1.0.8
-s3:518.vd2b_b_50e5f7f7
+s3:519.v0228461f2b_e0
 s3-jobcacher-storage:62.v260cb_8db_5b_fa_
 s3explorer:1.0.8
 safe-batch-environment-filter:0.13.v1d2eb_d4291f5
@@ -1672,7 +1673,7 @@ sectioned-view:1.30
 secure-post-script:0.1
 secure-requester-whitelist:72.v6cce468c5513
 security-inspector:117.v6eecc36919c2
-sedstart-runner:22.vb_88de255500d
+sedstart-runner:23.vd324860262f7
 seed:2.1.4
 select2-api:4.0.13-8
 selected-tests-executor:1.3.3
@@ -1961,7 +1962,7 @@ vncrecorder:1.35
 vncviewer:1.9
 vrealize-automation-8:1.4
 vs-code-metrics:1.7
-vsphere-cloud:2.27
+vsphere-cloud:3.512.vfb_0824b_5068c
 vstestrunner:1.0.8
 vsts-cd:1.3
 vulnerability-vines-ai:48.v91718555f056
@@ -1993,7 +1994,7 @@ wiz-scanner:98.v292089e3108c
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4
-workflow-cps:4258.v55f7f1691526
+workflow-cps:4259.vf653c2b_8a_b_69
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 workflow-cps-global-lib-http:2.54.0
 workflow-durable-task-step:1464.v2d3f5c68f84c
