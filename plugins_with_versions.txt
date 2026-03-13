@@ -1369,7 +1369,7 @@ oracle-cloud-infrastructure-compute:1.0.19
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
 oras-java-api:0.5.0-171.v3a_b_b_986a_7890
-oras-parameters:13.v25a_7b_c6c175f
+oras-parameters:15.v4142725a_7f94
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
 osf-builder-suite-for-sfcc-deploy:1.1.13
@@ -1434,7 +1434,7 @@ pipeline-build-step:584.vdb_a_2cc3a_d07a_
 pipeline-cloudwatch-logs:195.va_a_dcfa_e6e78d
 pipeline-config-history:1.6
 pipeline-cps-http:201.v59370c7cf0ec
-pipeline-cps-oras:86.v274d45b_50b_02
+pipeline-cps-oras:88.v0d7eff910a_13
 pipeline-dependency-walker:1.0.0
 pipeline-deploymon:1.0
 pipeline-gcp:22.vcc10eff7c13f
@@ -1452,7 +1452,7 @@ pipeline-input-notification:17.v3401b_efd3f89
 pipeline-input-step:540.v14b_100d754dd
 pipeline-keep-running-step:1.3
 pipeline-keepenv-step:1.17.v407d68513ea_6
-pipeline-lib-oras:86.v94b_293cddb_87
+pipeline-lib-oras:90.vecb_55543088a_
 pipeline-maven:1672.v1b_d4c0435b_20
 pipeline-maven-api:1672.v1b_d4c0435b_20
 pipeline-maven-database:1672.v1b_d4c0435b_20
@@ -1607,7 +1607,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:559.va_157481a_da_a_2
+resources-ai-chatbot:561.vb_794837d95eb_
 rest-list-parameter:351.vd12ed3e5222c
 restricted-register:0.1.7
 results-cache:2.0.2
@@ -1667,7 +1667,7 @@ sdelements:1.0.2
 sealights:1.4.353
 search-all-results-plugin:1.0
 secondary-timestamper-plugin:1.1
-secone-sca-sast-security-scanner:14.v5b_74483400a_b_
+secone-sca-sast-security-scanner:22.vd03fd227503c
 secone-security:68.vd43912d34b_57
 sectioned-view:1.30
 secure-post-script:0.1
@@ -1692,7 +1692,7 @@ serenity:1.4
 service-fabric:1.6
 service-now:0.0.4
 servicenow-cicd:2.1
-servicenow-devops:6.2.0
+servicenow-devops:6.3.0
 shared-library-version-override:26.v47363215a_451
 shared-objects:0.44
 shared-workspace:1.0.2
