@@ -893,7 +893,7 @@ graphiteIntegrator:1.2
 graphql-server:0.0.5
 gravatar:214.222.ve3d58ca_9015c
 greenballs:1.15.1
-groovy:497.v7b_061a_a_de65d
+groovy:537.v741a_5a_f1b_581
 groovy-events-listener-plugin:2.291.vcc69e39f0761
 groovy-label-assignment:1.2.0
 groovy-postbuild:300.va_253b_2988cb_1
@@ -1275,7 +1275,7 @@ multi-module-tests-publisher:1.44
 multi-slave-config-plugin:1.2.0
 multibranch-action-triggers:1.8.10
 multibranch-build-strategy-extension:71.va_359eeb_a_a_6f0
-multibranch-filter:16.vcd891d3fc4a_7
+multibranch-filter:22.v5176a_c8395dd
 multibranch-job-tear-down:1.2
 multibranch-scan-webhook-trigger:1.0.11
 multiple-scms:0.8
@@ -1712,7 +1712,7 @@ silk-performer-plugin:2.0.32
 simple-build-for-pipeline:0.2
 simple-parameterized-builds-report:1.5
 simple-priority-sorter:36.v0c14c3a_9f60d
-simple-queue:1.4.9
+simple-queue:1.4.10
 simple-theme-plugin:230.v8b_fd91b_b_800c
 simpleclearcase:1.2.2
 simpleupdatesite:1.1.2
@@ -2014,7 +2014,7 @@ ws-execution-manager:10.0.3.503
 ws-ws-replacement:1.0.1
 wsap:1.0
 wwpass-plugin:2.0
-wxwork-notification:1.0.2-155.v61d48e9846a_7
+wxwork-notification:1.0.2-158.ve7b_411537838
 xcode-plugin:2.0.17-565.v1c48051d46ef
 xcp-ci:0.5.5
 xfpanel:2.0.1
