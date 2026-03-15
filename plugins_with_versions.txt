@@ -320,7 +320,7 @@ build-history-metrics-plugin:183.vb_9c822e0943e
 build-keeper-plugin:19.va_df8a_2c65123
 build-line:1.0.4
 build-metrics:1.3
-build-monitor-plugin:1.14-985.v7b_f37b_3d0b_f5
+build-monitor-plugin:1001.va_0134e1a_04c8
 build-name-setter:2.5.1
 build-notifications:1.5.0
 build-pipeline-plugin:2.1.0
@@ -352,7 +352,7 @@ ca-mat-performance-benchmarking-by-broadcom:1.7
 ca-service-virtualization:1.0.7
 cachet-gating:1.0.10
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
-calendar-view:0.5.0
+calendar-view:0.5.1
 caliper-ci:2.3
 call-remote-job-plugin:1.0.21
 campfire:2.7
@@ -1398,7 +1398,7 @@ parallel-test-executor:611.va_92b_d1852e52
 parallels-desktop:0.6
 parameter-pool:1.0.3
 parameter-separator:334.v1fc0e534c71d
-parameterized-scheduler:378.va_234d1c44456
+parameterized-scheduler:379.v95c73f233a_df
 parameterized-trigger:890.vc240a_a_e1217f
 parasoft-findings:10.7.6
 partyparrotstatus:1.0
@@ -1607,7 +1607,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:561.vb_794837d95eb_
+resources-ai-chatbot:564.ve018e4d39129
 rest-list-parameter:351.vd12ed3e5222c
 restricted-register:0.1.7
 results-cache:2.0.2
@@ -1859,7 +1859,7 @@ testwheel-trigger:75.vb_5b_9d217a_7de
 text-file-operations:1.3.2
 text-finder:1.33
 text-finder-run-condition:6.vdf94e6f8d2c3
-theme-manager:343.v1f13e3734719
+theme-manager:344.vd7b_e20e046dc
 themis:1.4.1
 thinBackup:2.1.3
 thread-dump-action-plugin:1.0
@@ -1922,7 +1922,7 @@ vaddy-plugin:1.2.8
 vagrant:1.0.2
 valgrind:0.28
 validating-email-parameter:1.10
-validating-string-parameter:255.v31e2e6d0d273
+validating-string-parameter:345.v0f4330488a_f6
 validating-yaml-parameter:344.vd34ea_1a_82e90
 variables-replace-plugin:1.0.0
 variant:70.va_d9f17f859e0
