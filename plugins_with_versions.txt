@@ -148,7 +148,7 @@ aws-codecommit-trigger:3.0.12
 aws-codepipeline:0.49
 aws-credentials:254.v978a_5e206a_d7
 aws-device-farm:1.37
-aws-global-configuration:152.ve13a_2a_c319a_9
+aws-global-configuration:159.v882a_ecd03fe6
 aws-java-sdk:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-api-gateway:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-autoscaling:1.12.780-480.v4a_0819121a_9e
@@ -222,7 +222,7 @@ azure-credentials:421.vb_ffd07e951a_2
 azure-credentials-ext:1.0
 azure-event-grid-notifier:0.1
 azure-function:0.3.3
-azure-keyvault:346.v75201ddefa_e0
+azure-keyvault:359.v675a_5ee82d51
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
 azure-sdk:259.vf079c96088a_f
@@ -1171,7 +1171,7 @@ logback-nats-appender:0.2.2
 logentries:0.0.2
 logfilesizechecker:1.5
 logging:1.0.0
-login-theme:284.v95044396a_484
+login-theme:325.v94b_7548124cb_
 logstash:2.5.0221.vdb_e90c1e47d8
 lotus-connections-plugin:1.25
 lucene-search:425.v2ccf4cc3a_d55
@@ -1334,7 +1334,7 @@ octoperf:5.0.0
 octopusdeploy:4.1.1
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
-oic-auth:4.626.ve5a_d9f26c051
+oic-auth:4.668.v653c6b_c6cb_f5
 oidc-backchannel-logout:13.vdf9ca_b_b_99fa_6
 oidc-provider:170.v15f73e25a_e28
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
@@ -1361,7 +1361,7 @@ openshift-sync:1.1.0.825.v30618768da_42
 openstack-cloud:1465.vd3b_a_103e31fd
 opentelemetry:3.1584.v4f6307b_3766f
 opentelemetry-agent-metrics:2.0.1
-opentelemetry-api:1.49.0.99.vd48c9e6c4fa_b_
+opentelemetry-api:1.54.1.102.v276c93ee966d
 opsbox-utility:1.0.0.25.v403b_2c237e6a_
 opsgenie:1.11
 opslevel:1.2.6
@@ -1427,7 +1427,7 @@ php-builtin-web-server:0.1
 piketec-tpt:9.7
 pipeline-agent-build-history:142.v3046581ceb_71
 pipeline-aggregator-view:122.v3fe0b_415385e
-pipeline-as-yaml:270.vc348a_45d9214
+pipeline-as-yaml:319.v1feb_fc679410
 pipeline-aws:1.45
 pipeline-bamboo:0.0.2
 pipeline-build-step:584.vdb_a_2cc3a_d07a_
@@ -1591,6 +1591,7 @@ release:2.19
 release-helper:1.3.3
 reliza-integration:0.3.6
 relution-publisher:1.24
+remote-env-file:14.v3ff13c12f338
 remote-file:1.24
 remote-result-trigger:3.176.v995ed6028604
 remote-terminal-access:1.6
@@ -1667,7 +1668,7 @@ sdelements:1.0.2
 sealights:1.4.353
 search-all-results-plugin:1.0
 secondary-timestamper-plugin:1.1
-secone-sca-sast-security-scanner:22.vd03fd227503c
+secone-sca-sast-security-scanner:24.vf7f4e7888003
 secone-security:68.vd43912d34b_57
 sectioned-view:1.30
 secure-post-script:0.1
@@ -1712,7 +1713,7 @@ silk-performer-plugin:2.0.32
 simple-build-for-pipeline:0.2
 simple-parameterized-builds-report:1.5
 simple-priority-sorter:36.v0c14c3a_9f60d
-simple-queue:1.4.10
+simple-queue:1.4.11
 simple-theme-plugin:230.v8b_fd91b_b_800c
 simpleclearcase:1.2.2
 simpleupdatesite:1.1.2
@@ -1764,7 +1765,7 @@ spotinst:2.2.21
 spring-config:2.0.2
 spring-initalzr:1.6
 sqlplus-script-runner:3.0.1
-sqlserver-api:13.3.0.jre11-preview-192.v599148126a_8f
+sqlserver-api:13.4.0.jre11-206.v6db_4fc15f4c1
 sra-deploy:1.4.2.4
 srcclr-installer:1.0.2
 sse-gateway:1.29
