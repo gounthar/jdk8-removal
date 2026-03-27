@@ -14,8 +14,8 @@ workflow-support:1015.v785e5a_b_b_8b_22
 jackson2-api:2.21.1-428.vf8dd988fa_d8d
 plain-credentials:199.v9f8e1f741799
 junit:1403.vd9d1413fd205
-git-client:6.5.0
-credentials-binding:717.v951d49b_5f3a_a_
+git-client:6.6.0
+credentials-binding:719.v80e905ef14eb_
 matrix-project:870.v9db_fcfc2f45b_
 git:5.10.1
 cloudbees-folder:6.1079.vc0975c2de294
@@ -101,7 +101,7 @@ dark-theme:652.vea_da_dfea_e769
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
 lockable-resources:1469.v52dff5a_80e32
-pipeline-graph-view:803.vb_88f7a_a_1cb_47
+pipeline-graph-view:819.ved496c19e082
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
@@ -112,7 +112,7 @@ jersey2-api:2.47-165.ve7809a_3e87e0
 favorite:2.263.v941d21defef7
 pubsub-light:1.19
 external-monitor-job:223.vb_fddcf42c9b_3
-cloudbees-bitbucket-branch-source:937.2.5
+cloudbees-bitbucket-branch-source:937.2.6
 blueocean-commons:1.27.25
 jenkins-design-language:1.27.25
 blueocean-rest:1.27.25
@@ -233,7 +233,7 @@ prometheus:852.v317db_5d17a_b_0
 built-on-column:1.5
 nodelabelparameter:851.vd94e5048d321
 saml:4.595.vec7523b_5d543
-groovy-postbuild:300.va_253b_2988cb_1
+groovy-postbuild:301.v1b_207df0cdf8
 build-pipeline-plugin:2.2.0
 multiple-scms:0.8
 postbuild-task:78.v24529f1f5cdb_
