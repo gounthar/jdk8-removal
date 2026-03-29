@@ -227,7 +227,7 @@ azure-keyvault:359.v675a_5ee82d51
 azure-kubernetes-credentials:35.v0cefe6111a_b_4
 azure-publishersettings-credentials:1.6
 azure-sdk:259.vf079c96088a_f
-azure-vm-agents:1102.vb_f208c08039b_
+azure-vm-agents:1103.ve4a_50ca_2c617
 azure-vmss:0.2.4
 backlog:2.7
 backup:1.6.1
@@ -802,7 +802,7 @@ generic-webhook-trigger:2.4.1
 genexus:314.v3f04b4c93171
 gerrit-checks-api:68.ve0a_d91c77a_92
 gerrit-code-review:0.5.0
-gerrit-trigger:3.1969.v65d614ec771a_
+gerrit-trigger:3.1971.v217d381e3a_5a_
 gerrit-verify-status-reporter:0.0.3
 ghost-inspector:3.4
 ghprb:1.42.2
@@ -995,7 +995,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.21.1-428.vf8dd988fa_d8d
-jackson3-api:3.1.0-64.v37e742c35905
+jackson3-api:3.1.1-68.v2a_4b_025ea_657
 jacoco:3.3.7
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -1278,7 +1278,7 @@ multi-module-tests-publisher:1.44
 multi-slave-config-plugin:1.2.0
 multibranch-action-triggers:1.8.10
 multibranch-build-strategy-extension:71.va_359eeb_a_a_6f0
-multibranch-filter:24.v03004004e8ff
+multibranch-filter:28.v0d06b_fd6a_4f0
 multibranch-job-tear-down:1.2
 multibranch-scan-webhook-trigger:1.0.11
 multiple-scms:0.8
@@ -1353,7 +1353,7 @@ opencover:79.v78d40e1fc27e
 openedge:0.23
 openid:229.v184171253190
 openid4java:0.9.8.0
-openmfa:104.v3a_b_a_61fd743e
+openmfa:111.v347db_32e7f24
 openscada-jenkins-exporter:0.0.2
 openshift-client:1.1.0.437.v08c5053d5fe2
 openshift-deployer:1.2.0
@@ -1428,7 +1428,7 @@ phabricator-plugin:2.1.5
 phing:0.13.3
 php-builtin-web-server:0.1
 piketec-tpt:9.7
-pipeline-agent-build-history:142.v3046581ceb_71
+pipeline-agent-build-history:144.v1b_a_42390d9ce
 pipeline-aggregator-view:122.v3fe0b_415385e
 pipeline-as-yaml:319.v1feb_fc679410
 pipeline-aws:1.45
@@ -1996,6 +1996,7 @@ windows-exe-runner:35.vea_7d292d39a_2
 winrm-client:1.0
 wix:1.12
 wiz-scanner:98.v292089e3108c
+woodstox-core-api:7.1.1-1.v4d297985f397
 workflow-aggregator:608.v67378e9d3db_1
 workflow-api:1398.v67030756d3fb_
 workflow-basic-steps:1098.v808b_fd7f8cf4
