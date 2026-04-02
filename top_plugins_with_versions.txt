@@ -11,7 +11,7 @@ workflow-api:1398.v67030756d3fb_
 workflow-scm-step:466.va_d69e602552b_
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
 workflow-support:1015.v785e5a_b_b_8b_22
-jackson2-api:2.21.1-431.v30a_74465f776
+jackson2-api:2.21.2-433.v6d50b_92cfe52
 plain-credentials:199.v9f8e1f741799
 junit:1403.vd9d1413fd205
 git-client:6.6.0
@@ -100,7 +100,7 @@ config-file-provider:1006.vc7366c201f57
 dark-theme:652.vea_da_dfea_e769
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
-lockable-resources:1469.v52dff5a_80e32
+lockable-resources:1483.v1a_b_807475cd7
 pipeline-graph-view:819.ved496c19e082
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
@@ -108,7 +108,7 @@ workflow-cps-global-lib:615.vb_b_0664a_b_19f3
 mapdb-api:1.0.9-44.va_1e1310c9118
 popper2-api:2.11.6-5
 subversion:1303.vcfd9679fb_c12
-jersey2-api:2.47-165.ve7809a_3e87e0
+jersey2-api:2.48-180.ve47b_264f849b_
 favorite:2.263.v941d21defef7
 pubsub-light:1.19
 external-monitor-job:223.vb_fddcf42c9b_3
@@ -157,7 +157,7 @@ commons-compress-api:1.28.0-3
 envinject:2.934.vc674e76cf954
 prism-api:1.30.0-703.v116fb_3b_5b_b_a_a_
 sonar:2.18.2
-docker-java-api:3.7.0-133.v93b_8fb_c17a_77
+docker-java-api:3.7.1-136.v5d70f77a_c3d6
 ansicolor:536.v13fa_b_860c267
 rebuild:338.va_0a_b_50e29397
 docker-plugin:1316.v75635a_002b_0a_
@@ -206,7 +206,7 @@ analysis-model-api:13.21.0-945.va_f5a_0b_c1404b_
 aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
-bitbucket:282.v85a_7e442f57b_
+bitbucket:293.v10c900939523
 warnings-ng:12.10012.v753ff0d0363a_
 aws-java-sdk-ecs:1.12.780-480.v4a_0819121a_9e
 emailext-template:249.v81d6ea_f33f2e

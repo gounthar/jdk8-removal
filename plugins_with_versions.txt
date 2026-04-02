@@ -246,7 +246,7 @@ benchmark-evaluator:99.v2b_ee548fa_f54
 better-pipeline-flowgraph-table:1.8.v7718fd869731
 bevigil-ci:1.29.v3ff4d38b_843f
 bigpanda-jenkins:1.58.va_f372a_c29b_d5
-bitbucket:282.v85a_7e442f57b_
+bitbucket:293.v10c900939523
 bitbucket-approval-filter:1.0.3
 bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
@@ -636,7 +636,7 @@ docker-build-step:2.13
 docker-commons:457.v0f62a_94f11a_3
 docker-compose-build-step:1.0
 docker-custom-build-environment:1.7.3
-docker-java-api:3.7.0-133.v93b_8fb_c17a_77
+docker-java-api:3.7.1-136.v5d70f77a_c3d6
 docker-plugin:1316.v75635a_002b_0a_
 docker-slaves:1.0.7
 docker-swarm:1.11
@@ -832,7 +832,7 @@ gitflow:1.0.1
 github:1.46.0
 github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
-github-autostatus:4.232.v0b_1a_7ed5a_634
+github-autostatus:4.259.ve0468d8b_e5f1
 github-branch-pr-change-filter:1.2.4
 github-branch-source:1967.vdea_d580c1a_b_a_
 github-checks:679.v74133da_b_435a_
@@ -875,7 +875,7 @@ google-chat-notification:166.ve6b_de280f2e8
 google-cloud-backup:0.6
 google-cloud-health-check:0.3
 google-cloudbuild:0.2.6
-google-compute-engine:4.721.v36345303a_0c2
+google-compute-engine:4.731.v3a_9e2a_015e5d
 google-container-registry-auth:0.3
 google-deployment-manager:0.1
 google-git-notes-publisher:0.3
@@ -994,7 +994,7 @@ jabber:1.42
 jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
-jackson2-api:2.21.1-431.v30a_74465f776
+jackson2-api:2.21.2-433.v6d50b_92cfe52
 jackson3-api:3.1.1-68.v2a_4b_025ea_657
 jacoco:3.3.7
 jakarta-activation-api:2.1.4-1
@@ -1027,7 +1027,7 @@ jenkins-testswarm-plugin:1.2
 jenkinsci-appspider-plugin:1.0.17
 jenkinslint:0.14.0
 jenkinswalldisplay:0.6.34
-jersey2-api:2.47-165.ve7809a_3e87e0
+jersey2-api:2.48-180.ve47b_264f849b_
 jersey3-api:3.1.11-4.v77818819c2e1
 jetbrains-space:1.53.vcd2e91eb_a_620
 jfrog:1.7.0
@@ -1162,7 +1162,7 @@ loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
 locale:614.va_6a_5a_1a_f2b_38
 localization-support:1.41.v186a_c1569458
 localization-zh-cn:371.v23851f835d6b_
-lockable-resources:1469.v52dff5a_80e32
+lockable-resources:1483.v1a_b_807475cd7
 locked-files-report:1.6
 log-cli:183.v28b_9a_3e48061
 log-command:1.0.2
@@ -1195,7 +1195,7 @@ mapdb-api:1.0.9-44.va_1e1310c9118
 maplelabs-apm:1.181.v72a_25e99778e
 marathon:1.6.0
 mariadb-api:3.5.7-175.v7e6f9d93127d
-markdown-formatter:331.vf411395008f9
+markdown-formatter:338.v5fe99848b_193
 markdown-params:71.v576911a_6e3b_c
 mask-passwords:212.v4967a_a_73b_506
 material-theme:0.5.2-rc100.6121925fe229
@@ -1412,7 +1412,7 @@ pending-changes:0.3.0
 people-redirector:1.3
 people-view:1.16.v774d3b_4b_3a_f3
 percentage-du-node-column:0.1.0
-performance:1007.vd486c5ea_b_416
+performance:1014.va_b_80b_a_7e886f
 performance-signature-dynatrace:3.2.2
 performance-signature-dynatracesaas:3.2.2
 performance-signature-ui:3.2.2
@@ -1807,7 +1807,7 @@ svn-workspace-cleaner:1.1
 svncompat13:1.2
 svncompat14:1.1
 svnmerge:2.6
-swarm:3.51
+swarm:1235.v92890129c64c
 swarm-agents-cloud:1.0.51
 sweagle:1.2.1
 synergy:1.7
