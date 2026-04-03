@@ -74,7 +74,7 @@ instance-identity:203.v15e81a_1b_7a_38
 commons-text-api:1.15.0-218.va_61573470393
 pipeline-groovy-lib:787.ve2fef0efdca_6
 jjwt-api:0.11.5-120.v0268cf544b_89
-gradle:2.19.1238.vff55739b_490f
+gradle:2.19.1244.v1f9866817fec
 pipeline-github-lib:65.v203688e7727e
 javax-mail-api:1.6.2-11
 gson-api:2.13.2-173.va_a_092315913c
@@ -100,7 +100,7 @@ config-file-provider:1006.vc7366c201f57
 dark-theme:652.vea_da_dfea_e769
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
-lockable-resources:1483.v1a_b_807475cd7
+lockable-resources:1484.v57a_4a_43b_8859
 pipeline-graph-view:819.ved496c19e082
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
@@ -206,7 +206,7 @@ analysis-model-api:13.21.0-945.va_f5a_0b_c1404b_
 aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
-bitbucket:293.v10c900939523
+bitbucket:297.v5287d4794f05
 warnings-ng:12.10012.v753ff0d0363a_
 aws-java-sdk-ecs:1.12.780-480.v4a_0819121a_9e
 emailext-template:249.v81d6ea_f33f2e
