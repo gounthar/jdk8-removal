@@ -265,7 +265,7 @@ bitwarden-credentials-provider:254.vd33c35d1b_fb_5
 black-duck-sigma:2024.10.1
 blackduck-coverity-on-polaris:2.0.1
 blackduck-detect:11.0.0
-blackduck-security-scan:2.7.0-1459.v1b_0c660d81f6
+blackduck-security-scan:2.8.0-1474.v082b_6e8b_8c01
 blink1:1.1
 block-build-final-project:1.0
 block-queued-job:0.2.0
@@ -586,7 +586,7 @@ delete-log-plugin:1.0
 delivery-pipeline-plugin:1.4.2
 delphix:3.2.1
 depbuilder:1.1.0
-dependency-check-jenkins-plugin:5.6.2
+dependency-check-jenkins-plugin:5.6.3
 dependency-queue-plugin:1.1
 dependency-track:6.0.2
 dependencyanalyzer:0.7
@@ -691,7 +691,7 @@ elastest:1.2.1
 elastic-axis:615.vb_f7c20ec040e
 elasticbox:5.0.1
 elasticsearch-query:1.2
-electricflow:1.1.41
+electricflow:1.1.42
 email-ext:1933.v45cec755423f
 email-ext-recipients-column:72.v546836954562
 emailext-template:249.v81d6ea_f33f2e
@@ -875,11 +875,11 @@ google-chat-notification:166.ve6b_de280f2e8
 google-cloud-backup:0.6
 google-cloud-health-check:0.3
 google-cloudbuild:0.2.6
-google-compute-engine:4.731.v3a_9e2a_015e5d
+google-compute-engine:4.741.v0d727a_29b_751
 google-container-registry-auth:0.3
 google-deployment-manager:0.1
 google-git-notes-publisher:0.3
-google-kubernetes-engine:0.446.v6a_dd8b_0f678b_
+google-kubernetes-engine:0.456.vb_ea_ee7d94048
 google-login:109.v022b_cf87b_e5b_
 google-metadata-plugin:0.6.72.v02c1c0e892df
 google-oauth-plugin:1.346.v712b_a_e0d1e60
@@ -1221,7 +1221,7 @@ maven-plugin:3.27
 maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
-mcp-server:0.166.v6a_0b_15a_7fd59
+mcp-server:0.167.v7c50149715fa_
 mdt-deployment:1.0.4
 mdtool:0.1.1
 meliora-testlab:1.26
@@ -1251,7 +1251,7 @@ mina-sshd-api-sftp:2.16.0-167.va_269f38cc024
 minio:1.3.499.v9d1eeeee3a_68
 minio-storage:0.0.3
 miniorange-saml-sp:2.4.9
-miniorange-two-factor:1.1.0
+miniorange-two-factor:1.2.0
 misc-info-tools:1.116.vc62c5b_55b_d93
 misra-compliance-report-generator:1.0
 mission-control-view:0.9.16
@@ -1340,7 +1340,7 @@ oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
 oic-auth:4.668.v653c6b_c6cb_f5
 oidc-backchannel-logout:13.vdf9ca_b_b_99fa_6
-oidc-provider:204.v7480c0028da_d
+oidc-provider:206.v0a_5b_09149886
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
 oki-docki:1.1
 ompass-2fa:1.0.011.vda_e03a_9fea_b_9
@@ -1519,7 +1519,7 @@ project-stats-plugin:23.v47fee1f77b_84
 prometheus:852.v317db_5d17a_b_0
 promoted-builds:992.va_00888f21b_74
 promoted-builds-simple:1.9
-propelo-job-reporter:1.0.36
+propelo-job-reporter:1.0.39
 provar-automation:68.v91b_13f4101e2
 proxmox:0.7.1
 publish-over:238.v1db_583004c9b_
@@ -1612,7 +1612,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:567.v7dce2d246048
+resources-ai-chatbot:571.v9f5efc4ea_793
 rest-list-parameter:351.vd12ed3e5222c
 restricted-register:0.1.7
 results-cache:2.0.2
