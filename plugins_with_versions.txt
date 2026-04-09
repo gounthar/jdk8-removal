@@ -467,7 +467,7 @@ compound-slaves:1.2
 compress-artifacts:112.v52b_808b_85a_e8
 compress-buildlog:1.2
 compressed_files_viewer:39.v02dcd6a4a70e
-computer-queue-plugin:1.7
+computer-queue-plugin:54.v2ede89b_dd741
 compuware-common-configuration:1.0.16
 compuware-ispw-operations:2.4.1
 compuware-scm-downloader:2.2.0
@@ -683,7 +683,7 @@ ecu-test-execution:3.11
 ecutest:2.46
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 editable-choice:71.v02a291ebbe45
-eggplant-runner:0.0.1.305.v7a_fa_c8d8c93e
+eggplant-runner:0.0.1.306.v3b_311e4c99e2
 eiffel-broadcaster:2.10.3
 eks-token:0.0.2
 elOyente:1.3
@@ -1221,7 +1221,7 @@ maven-plugin:3.27
 maven-release-cascade:1.3.2
 maven-repo-cleaner:1.3
 maven-snapshot-check:1146.v108e506eda_7b_
-mcp-server:0.167.v7c50149715fa_
+mcp-server:0.168.v13951585050d
 mdt-deployment:1.0.4
 mdtool:0.1.1
 meliora-testlab:1.26
@@ -1231,7 +1231,7 @@ mend-cloud-native-security-scanner:39.vdce6e5d3b_ca_a_
 mentor-questa-vrm:1.15
 mercurial:1323.ve69d2a_db_8a_b_d
 mergebase-sca:1.0.1
-mergify:1.94.vc3d4b_a_5b_a_329
+mergify:1.95.v8b_31e80441fb_
 mesos:2.0
 metadata:1.1.0b
 metadefender:1.0
@@ -1674,7 +1674,7 @@ search-all-results-plugin:1.0
 secondary-timestamper-plugin:1.1
 secone-sca-sast-security-scanner:24.vf7f4e7888003
 secone-security:68.vd43912d34b_57
-sectioned-view:1.31
+sectioned-view:1.32
 secure-post-script:0.1
 secure-requester-whitelist:72.v6cce468c5513
 security-inspector:117.v6eecc36919c2
@@ -1808,7 +1808,7 @@ svn-workspace-cleaner:1.1
 svncompat13:1.2
 svncompat14:1.1
 svnmerge:2.6
-swarm:1250.vb_64495a_a_a_28e
+swarm:1254.vf26a_5e188f26
 swarm-agents-cloud:1.0.54
 sweagle:1.2.1
 synergy:1.7
@@ -1865,7 +1865,7 @@ testwheel-trigger:75.vb_5b_9d217a_7de
 text-file-operations:1.3.2
 text-finder:1.33
 text-finder-run-condition:6.vdf94e6f8d2c3
-theme-manager:344.vd7b_e20e046dc
+theme-manager:346.v06cca_64c6a_37
 themis:1.4.1
 thinBackup:2.1.3
 thread-dump-action-plugin:1.0
