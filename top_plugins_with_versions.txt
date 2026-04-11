@@ -165,7 +165,7 @@ copyartifact:795.ve8e151429b_27
 mercurial:1323.ve69d2a_db_8a_b_d
 uno-choice:2.8.9
 kubernetes-client-api:7.3.1-256.v788a_0b_787114
-configuration-as-code:2065.v7a_20a_b_d84088
+configuration-as-code:2069.vb_a_36d7a_570c8
 kubernetes-credentials:207.v492f58828b_ed
 cloud-stats:377.vd8a_6c953e98e
 slack:795.v4b_9705b_e6d47
@@ -242,7 +242,7 @@ aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
 coverage:2.3139.v731d2e83ea_8a_
-allure-jenkins-plugin:2.34.0
+allure-jenkins-plugin:2.35.0
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-cloudfront:1.12.780-480.v4a_0819121a_9e

@@ -42,7 +42,7 @@ advanced-installer-msi-builder:3.0.0
 agent-loadbalance:1.0
 agent-maintenance:2.241.vb_5595f7d6ea_8
 agent-server-parameter:1.1
-ai-agent:64.va_59cb_cdeb_50c
+ai-agent:78.ve1c92fb_2da_a_c
 aio-tests:1.16
 akeyless:62.vb_05cea_69ed08
 alauda-devops-credentials-provider:2.4.1
@@ -56,7 +56,7 @@ alibabacloud-edas:1.0.0
 alibabacloud-pkg-deployment:1.0
 aliyun-oss-uploader:1.4
 all-changes:1.5
-allure-jenkins-plugin:2.34.0
+allure-jenkins-plugin:2.35.0
 amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
@@ -72,7 +72,7 @@ ansible-tower:0.17.0
 ansicolor:536.v13fa_b_860c267
 ant:520.vd082ecfb_16a_9
 ant-in-workspace:1.2.2
-antexec:477.v8fc8a_46c0d17
+antexec:496.v248f0ca_2255e
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -252,7 +252,7 @@ bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
 bitbucket-filter-project-trait:19.vdd668c4d36c7
 bitbucket-kubernetes-credentials:613.v124fea_1166d5
-bitbucket-oauth:0.14
+bitbucket-oauth:0.15
 bitbucket-pullrequest-builder:1.5.0
 bitbucket-pullrequests-filter:13.vda_de92e841b_b_
 bitbucket-push-and-pull-request:3.3.4
@@ -483,7 +483,7 @@ concurrent-step:1.0.0
 conditional-buildstep:1.5.0
 config-driven-pipeline:1.3
 config-file-provider:1006.vc7366c201f57
-configuration-as-code:2065.v7a_20a_b_d84088
+configuration-as-code:2069.vb_a_36d7a_570c8
 configuration-as-code-groovy:1.1
 configuration-as-code-secret-ssm:1.0.1
 configurationslicing:700.vd71e4a_3a_c0a_a_
@@ -1279,7 +1279,7 @@ multi-module-tests-publisher:1.44
 multi-slave-config-plugin:1.2.0
 multibranch-action-triggers:1.8.10
 multibranch-build-strategy-extension:71.va_359eeb_a_a_6f0
-multibranch-filter:30.va_5b_0db_18d51b_
+multibranch-filter:32.vc4c51fea_1d17
 multibranch-job-tear-down:1.2
 multibranch-scan-webhook-trigger:1.0.11
 multiple-scms:0.8
@@ -1612,7 +1612,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:571.v9f5efc4ea_793
+resources-ai-chatbot:575.v249de2113327
 rest-list-parameter:351.vd12ed3e5222c
 restricted-register:0.1.7
 results-cache:2.0.2
