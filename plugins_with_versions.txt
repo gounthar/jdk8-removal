@@ -61,7 +61,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:14.1.0-954.v44a_a_5856e709
+analysis-model-api:14.2.0-958.v640d7a_650a_17
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -483,7 +483,7 @@ concurrent-step:1.0.0
 conditional-buildstep:1.5.0
 config-driven-pipeline:1.3
 config-file-provider:1006.vc7366c201f57
-configuration-as-code:2069.vb_a_36d7a_570c8
+configuration-as-code:2071.vea_ed8d491f81
 configuration-as-code-groovy:1.1
 configuration-as-code-secret-ssm:1.0.1
 configurationslicing:700.vd71e4a_3a_c0a_a_
@@ -515,7 +515,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:2.3139.v731d2e83ea_8a_
+coverage:3.3202.vcc45760d9b_8c
 coverage-badges-extension:197.vb_390173d00ec
 coverity:1.11.4
 cppcheck:1.26
@@ -559,7 +559,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:652.vea_da_dfea_e769
 dashboard-view:2.558.v96b_901978e47
-data-tables-api:2.3.7-1552.v887990436269
+data-tables-api:2.3.7-1554.v6113418a_6935
 database:309.vf39a_d78a_cb_e8
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:182.v8f1d21b_7c825
@@ -567,7 +567,7 @@ database-mysql:142.vc259713f0032
 database-postgresql:146.vd1a_f70b_56e0e
 database-sqlite:1.10
 database-sqlserver:189.v1570ed89285c
-datadog:9.1.8
+datadog:9.2.0
 datatheorem-mobile-app-security:2.4.2
 date-parameter:58.v0ee8d1c59323
 datetime-constraint:0.1.2
@@ -744,7 +744,7 @@ fail-the-build-plugin:5.v153b_2c826ef0
 failedJobDeactivator:1.2.1
 fast-track:1.0.0
 favorite:2.263.v941d21defef7
-favorite-view:35.v2b_e0cc172fb_7
+favorite-view:50.v9525c96139c6
 feature-branch-notifier:1.4
 fedora-module-build-system:1.0.1
 figlet-buildstep:0.2
@@ -772,7 +772,7 @@ fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
 folder-properties:62.v1636b_4a_84608
 font-awesome-api:7.2.0-983.v3f63c34eddb_9
-forensics-api:4.1869.v5347dff67ef4
+forensics-api:4.1873.vdd4a_4ede278a_
 form-element-path:1.12
 forticwp-cicd:0.9.8.51.va_308b_11da_d62
 fortify:23.1.40
@@ -996,7 +996,7 @@ jabber-server-plugin:1.9
 jacked:1.5.1
 jackson-databind:2.8.10.1
 jackson2-api:2.21.2-433.v6d50b_92cfe52
-jackson3-api:3.1.1-68.v2a_4b_025ea_657
+jackson3-api:3.1.2-71.v0a_23916945fe
 jacoco:3.3.7
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -1231,7 +1231,7 @@ mend-cloud-native-security-scanner:39.vdce6e5d3b_ca_a_
 mentor-questa-vrm:1.15
 mercurial:1323.ve69d2a_db_8a_b_d
 mergebase-sca:1.0.1
-mergify:1.95.v8b_31e80441fb_
+mergify:1.96.v57648fe55a_2e
 mesos:2.0
 metadata:1.1.0b
 metadefender:1.0
@@ -1281,7 +1281,7 @@ multibranch-action-triggers:1.8.10
 multibranch-build-strategy-extension:71.va_359eeb_a_a_6f0
 multibranch-filter:32.vc4c51fea_1d17
 multibranch-job-tear-down:1.2
-multibranch-params:27.v6e7b_a_375b_799
+multibranch-params:28.v1f73992b_4733
 multibranch-scan-webhook-trigger:1.0.11
 multiple-scms:0.8
 multiselect-parameter:1.8
