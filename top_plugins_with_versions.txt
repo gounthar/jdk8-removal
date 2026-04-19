@@ -38,12 +38,12 @@ snakeyaml-api:2.5-149.v72471e9c6371
 pipeline-model-extensions:2.2277.v00573e73ddf1
 pipeline-milestone-step:152.v6e22b_8cfc66c
 pipeline-model-definition:2.2277.v00573e73ddf1
-plugin-util-api:7.1320.v684dd26fca_19
+plugin-util-api:7.1330.v47b_46ee2047a_
 jquery3-api:3.7.1-682.vfa_cdce169929
 pipeline-graph-analysis:254.v0f63a_a_447dca_
 font-awesome-api:7.2.0-983.v3f63c34eddb_9
 matrix-auth:3.2.9
-echarts-api:6.0.0-1273.v36fc9fe89332
+echarts-api:6.0.0-1281.vd3d21a_1ca_cb_4
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
 checks-api:402.vca_263b_f200e3
 workflow-aggregator:608.v67378e9d3db_1
@@ -81,11 +81,11 @@ gson-api:2.13.2-198.v45e4a_55d9b_a_a_
 command-launcher:134.v025a_5fcf9dea_
 jdk-tool:83.v417146707a_3d
 sshd:3.384.vc89b_5e138cf9
-pipeline-rest-api:2.40
+pipeline-rest-api:2.41
 json-path-api:3.0.0-218.vcd4dd1355de2
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20251224-185.v0cc18490c62c
-pipeline-stage-view:2.40
+pipeline-stage-view:2.41
 joda-time-api:2.14.1-187.vdf2def02b_8a_1
 asm-api:9.9.1-189.vb_5ef2964da_91
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
@@ -118,7 +118,7 @@ jenkins-design-language:1.27.25
 blueocean-rest:1.27.25
 jquery:1.12.4-3
 parameterized-trigger:890.vc240a_a_e1217f
-data-tables-api:2.3.7-1554.v6113418a_6935
+data-tables-api:2.3.7-1558.vf82fa_133ce1c
 blueocean-core-js:1.27.25
 publish-over:238.v1db_583004c9b_
 blueocean-web:1.27.25
@@ -181,7 +181,7 @@ jira:3.21
 aws-java-sdk-ec2:1.12.780-480.v4a_0819121a_9e
 jobConfigHistory:1356.ve360da_6c523a_
 ssh:158.ve2a_e90fb_7319
-forensics-api:4.1875.vefb_f97cb_4987
+forensics-api:4.1881.v79c6e496c613
 build-name-setter:2.5.1
 extended-choice-parameter:388.ve7b_d0b_920e10
 active-directory:2.41
@@ -241,7 +241,7 @@ h2-api:11.1.4.199-36.vb_ee07e965744
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
-coverage:3.3208.v500334516e20
+coverage:3.3211.vd80a_a_7203835
 allure-jenkins-plugin:2.35.2
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e
