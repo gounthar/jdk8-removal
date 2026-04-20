@@ -489,7 +489,7 @@ configuration-as-code-secret-ssm:1.0.1
 configurationslicing:700.vd71e4a_3a_c0a_a_
 configure-job-column-plugin:84.v792c9269f95a
 conflict-aware-ondemand-strategy:2.197.vd7e077d21c70
-conjur-credentials:3.0.9
+conjur-credentials:3.0.10
 conjur-simple-integration:0.0.1
 console-badge:1.1
 console-column-plugin:270.vda_2472462073
@@ -515,7 +515,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:3.3211.vd80a_a_7203835
+coverage:3.3212.vd0f86de315fe
 coverage-badges-extension:197.vb_390173d00ec
 coverity:1.11.4
 cppcheck:1.26
@@ -723,7 +723,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:19.v40532946d413
 experitest-cloud:1.0.3
-explain-error:148.v675fb_877076e
+explain-error:149.vf79c3809e17d
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -831,7 +831,7 @@ gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1282.vcb_38e525f3c5
 gitflow:1.0.1
 github:1.46.0
-github-actions-cloud:27.vc473545b_cd30
+github-actions-cloud:34.v5c855fd5fb_7a_
 github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:4.259.ve0468d8b_e5f1
@@ -1166,7 +1166,7 @@ loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
 locale:614.va_6a_5a_1a_f2b_38
 localization-support:1.41.v186a_c1569458
 localization-zh-cn:371.v23851f835d6b_
-lockable-resources:1493.v0db_447235039
+lockable-resources:1504.v8561d98a_104c
 locked-files-report:1.6
 log-cli:183.v28b_9a_3e48061
 log-command:1.0.2
@@ -1339,7 +1339,7 @@ nvm-wrapper:0.1.7
 oak9:1.0.9
 oauth-credentials:0.660.vce7c108f1f3a_
 octoperf:5.0.0
-octopusdeploy:4.1.1
+octopusdeploy:4.1.2
 oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
 oic-auth:4.668.v653c6b_c6cb_f5
@@ -1453,7 +1453,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:836.v68ef091500dd
+pipeline-graph-view:837.vb_2654da_2a_fa_b_
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
