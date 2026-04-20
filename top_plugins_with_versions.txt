@@ -100,8 +100,8 @@ config-file-provider:1006.vc7366c201f57
 dark-theme:652.vea_da_dfea_e769
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
-lockable-resources:1493.v0db_447235039
-pipeline-graph-view:836.v68ef091500dd
+lockable-resources:1504.v8561d98a_104c
+pipeline-graph-view:837.vb_2654da_2a_fa_b_
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
@@ -241,7 +241,7 @@ h2-api:11.1.4.199-36.vb_ee07e965744
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
-coverage:3.3211.vd80a_a_7203835
+coverage:3.3212.vd0f86de315fe
 allure-jenkins-plugin:2.35.2
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e
