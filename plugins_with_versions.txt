@@ -61,7 +61,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:14.2.0-964.v3eb_80540a_92f
+analysis-model-api:14.5.0-968.v4b_155edf8f68
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -72,7 +72,7 @@ ansible-tower:0.17.0
 ansicolor:536.v13fa_b_860c267
 ant:520.vd082ecfb_16a_9
 ant-in-workspace:1.2.2
-antexec:499.v5b_4a_87f3da_ff
+antexec:501.v631614a_19b_f9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -489,7 +489,7 @@ configuration-as-code-secret-ssm:1.0.1
 configurationslicing:700.vd71e4a_3a_c0a_a_
 configure-job-column-plugin:84.v792c9269f95a
 conflict-aware-ondemand-strategy:2.197.vd7e077d21c70
-conjur-credentials:3.0.10
+conjur-credentials:3.0.11
 conjur-simple-integration:0.0.1
 console-badge:1.1
 console-column-plugin:270.vda_2472462073
@@ -831,7 +831,7 @@ gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1282.vcb_38e525f3c5
 gitflow:1.0.1
 github:1.46.0
-github-actions-cloud:34.v5c855fd5fb_7a_
+github-actions-cloud:37.v854e12e1d69f
 github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:4.259.ve0468d8b_e5f1
@@ -924,7 +924,7 @@ hiddenlayer-model-scanner:1.0.37.vb_5f9a_e4d8b_d8
 hipchat:2.2.1
 horreum:0.16.162.v33b_4a_a_b_5f828
 housekeeper:1.1
-hp-application-automation-tools-plugin:26.1
+hp-application-automation-tools-plugin:26.2
 hp-operations-orchestration-automation-execution-plugin:2.1.1
 hp-quality-center:1.6
 hsts-filter-plugin:10.v6e229055329a
@@ -1086,7 +1086,7 @@ json-api:20251224-185.v0cc18490c62c
 json-editor-parameter:54.v71962f37a_416
 json-parameter:99.v4b_d4a_315438e
 json-path-api:3.0.0-218.vcd4dd1355de2
-jsoup:1.22.1-76.v9cdb_2456c0e3
+jsoup:1.22.2-95.vc5d00f1eb_42d
 jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
 jswidgets:1.10
@@ -1779,7 +1779,7 @@ sra-deploy:1.4.2.4
 srcclr-installer:1.0.2
 sse-gateway:1.29
 ssh:158.ve2a_e90fb_7319
-ssh-agent:386.v36cc0c7582f0
+ssh-agent:396.vcc7d84e622ec
 ssh-credentials:372.va_250881b_08cd
 ssh-slaves:3.1097.v868116049892
 ssh-steps:2.0.92.vb_a_0583935f9b_
