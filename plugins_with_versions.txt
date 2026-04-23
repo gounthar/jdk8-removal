@@ -61,7 +61,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:14.2.0-964.v3eb_80540a_92f
+analysis-model-api:14.5.0-968.v4b_155edf8f68
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -72,7 +72,7 @@ ansible-tower:0.17.0
 ansicolor:536.v13fa_b_860c267
 ant:520.vd082ecfb_16a_9
 ant-in-workspace:1.2.2
-antexec:499.v5b_4a_87f3da_ff
+antexec:501.v631614a_19b_f9
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
@@ -489,7 +489,7 @@ configuration-as-code-secret-ssm:1.0.1
 configurationslicing:700.vd71e4a_3a_c0a_a_
 configure-job-column-plugin:84.v792c9269f95a
 conflict-aware-ondemand-strategy:2.197.vd7e077d21c70
-conjur-credentials:3.0.10
+conjur-credentials:3.0.11
 conjur-simple-integration:0.0.1
 console-badge:1.1
 console-column-plugin:270.vda_2472462073
@@ -676,11 +676,11 @@ easyqa:1.0
 ec2:2049.v127f0f109c29
 ec2-cloud-axis:1.2
 ec2-deployment-dashboard:1.0.10
-ec2-fleet:4.2.2.527.v38a_8758950a_0
+ec2-fleet:4.2.3.539.v8fedff2a_81c3
 echarts-api:6.0.0-1281.vd3d21a_1ca_cb_4
 eclipse-update-site:1.2
 ecs-publisher:1.0.1
-ecu-test-execution:3.11
+ecu-test-execution:3.12
 ecutest:2.46
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 editable-choice:71.v02a291ebbe45
@@ -723,7 +723,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:19.v40532946d413
 experitest-cloud:1.0.3
-explain-error:149.vf79c3809e17d
+explain-error:150.vca_d0194c7951
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -831,7 +831,7 @@ gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1282.vcb_38e525f3c5
 gitflow:1.0.1
 github:1.46.0
-github-actions-cloud:34.v5c855fd5fb_7a_
+github-actions-cloud:43.vde12168523fa_
 github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:4.259.ve0468d8b_e5f1
@@ -877,7 +877,7 @@ google-chat-notification:166.ve6b_de280f2e8
 google-cloud-backup:0.6
 google-cloud-health-check:0.3
 google-cloudbuild:0.2.6
-google-compute-engine:4.777.v67b_b_170032f4
+google-compute-engine:4.782.v56d37cb_c391c
 google-container-registry-auth:0.3
 google-deployment-manager:0.1
 google-git-notes-publisher:0.3
@@ -924,7 +924,7 @@ hiddenlayer-model-scanner:1.0.37.vb_5f9a_e4d8b_d8
 hipchat:2.2.1
 horreum:0.16.162.v33b_4a_a_b_5f828
 housekeeper:1.1
-hp-application-automation-tools-plugin:26.1
+hp-application-automation-tools-plugin:26.2
 hp-operations-orchestration-automation-execution-plugin:2.1.1
 hp-quality-center:1.6
 hsts-filter-plugin:10.v6e229055329a
@@ -1043,7 +1043,7 @@ jira-ext:114.v7b_8b_1d4274c6
 jira-integration:5.8.0-75.vea_a_d2df41b_44
 jira-steps:2.1.185.vf95b_e8a_f13fe
 jira-trigger:1.0.3
-jjwt-api:0.11.5-120.v0268cf544b_89
+jjwt-api:0.13.0-141.vd58b_a_9592b_6c
 jmh-report:0.9.0
 jms-messaging:2.0.2
 jna-posix-api:1.0.3-jenkins-1
@@ -1086,7 +1086,7 @@ json-api:20251224-185.v0cc18490c62c
 json-editor-parameter:54.v71962f37a_416
 json-parameter:99.v4b_d4a_315438e
 json-path-api:3.0.0-218.vcd4dd1355de2
-jsoup:1.22.1-76.v9cdb_2456c0e3
+jsoup:1.22.2-95.vc5d00f1eb_42d
 jspecify-api:1.0.0-1.ve7231e6d0d15
 jsunit:1.6
 jswidgets:1.10
@@ -1166,7 +1166,7 @@ loadrunner-cloud:5.1.0-444.vdcb_78cf6a_1c1
 locale:614.va_6a_5a_1a_f2b_38
 localization-support:1.41.v186a_c1569458
 localization-zh-cn:371.v23851f835d6b_
-lockable-resources:1504.v8561d98a_104c
+lockable-resources:1509.va_6b_5b_5cb_0b_40
 locked-files-report:1.6
 log-cli:183.v28b_9a_3e48061
 log-command:1.0.2
@@ -1344,7 +1344,7 @@ oes-template:1.44.v2a_1c4a_7ccfb_2
 offlineonfailure-plugin:1.0
 oic-auth:4.668.v653c6b_c6cb_f5
 oidc-backchannel-logout:13.vdf9ca_b_b_99fa_6
-oidc-provider:206.v0a_5b_09149886
+oidc-provider:212.v7657c4d7b_29f
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
 oki-docki:1.1
 ompass-2fa:1.0.011.vda_e03a_9fea_b_9
@@ -1453,7 +1453,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:837.vb_2654da_2a_fa_b_
+pipeline-graph-view:842.va_457d5d7654f
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1779,7 +1779,7 @@ sra-deploy:1.4.2.4
 srcclr-installer:1.0.2
 sse-gateway:1.29
 ssh:158.ve2a_e90fb_7319
-ssh-agent:386.v36cc0c7582f0
+ssh-agent:396.vcc7d84e622ec
 ssh-credentials:372.va_250881b_08cd
 ssh-slaves:3.1097.v868116049892
 ssh-steps:2.0.92.vb_a_0583935f9b_
