@@ -66,7 +66,7 @@ anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
 android-signing:233.v52859b_808905
-anka-build:2.13.1
+anka-build:2.14.0
 ansible:635.v34b_48e979c86
 ansible-tower:0.17.0
 ansicolor:536.v13fa_b_860c267
@@ -261,7 +261,7 @@ bitbucket-scm-filter-jira-validator:0.1.0
 bitbucket-scm-trait-commit-skip:0.4.0
 bitbucket-webhooks:1.0.1
 bitkeeper:1.8
-bitwarden-credentials-provider:254.vd33c35d1b_fb_5
+bitwarden-credentials-provider:267.v0ff910de10b_b_
 black-duck-sigma:2024.10.1
 blackduck-coverity-on-polaris:2.0.1
 blackduck-detect:11.0.0
@@ -314,7 +314,7 @@ build-discarder:158.vce570d01ce4c
 build-env-propagator:1.0
 build-environment:1.7
 build-executors-filter-offline:1.1
-build-failure-analyzer:2.6.1
+build-failure-analyzer:3.887.vc872cf1b_7dff
 build-health-cache-updater:1.1
 build-history-manager:1.15.0
 build-history-metrics-plugin:183.vb_9c822e0943e
@@ -489,7 +489,7 @@ configuration-as-code-secret-ssm:1.0.1
 configurationslicing:700.vd71e4a_3a_c0a_a_
 configure-job-column-plugin:84.v792c9269f95a
 conflict-aware-ondemand-strategy:2.197.vd7e077d21c70
-conjur-credentials:3.0.11
+conjur-credentials:3.0.12
 conjur-simple-integration:0.0.1
 console-badge:1.1
 console-column-plugin:270.vda_2472462073
@@ -632,7 +632,7 @@ distfork:1.8
 diversion-scm:68.va_f19b_2fb_f134
 dlisting-cov:1.0
 docker-build-publish:1.4.0
-docker-build-step:2.13
+docker-build-step:2.14
 docker-commons:472.vee120e23d3a_c
 docker-compose-build-step:1.0
 docker-custom-build-environment:1.7.3
@@ -723,7 +723,7 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:19.v40532946d413
 experitest-cloud:1.0.3
-explain-error:150.vca_d0194c7951
+explain-error:151.v7438db_714a_4b_
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
@@ -774,6 +774,7 @@ folder-auth:217.vd5b_18537403e
 folder-properties:62.v1636b_4a_84608
 font-awesome-api:7.2.0-983.v3f63c34eddb_9
 forensics-api:4.1881.v79c6e496c613
+forgeai-pipeline-intelligence:30.v353b_35374409
 form-element-path:1.12
 forticwp-cicd:0.9.8.51.va_308b_11da_d62
 fortify:23.1.40
@@ -905,7 +906,7 @@ groovy-remote:0.2
 growl:1.1
 gruvbox-theme:12.v90a_28b_0e0a_9c
 grypescanner:1.8
-gson-api:2.13.2-198.v45e4a_55d9b_a_a_
+gson-api:2.14.0-201.v8eefe5515533
 h2-api:11.1.4.199-36.vb_ee07e965744
 habitat:0.6.5
 hadoop:1.4
@@ -1179,7 +1180,7 @@ logentries:0.0.2
 logfilesizechecker:1.5
 logging:1.0.0
 login-theme:325.v94b_7548124cb_
-logstash:2.5.0221.vdb_e90c1e47d8
+logstash:2.5.0236.v8fc08ee0b_78d
 lotus-connections-plugin:1.25
 lucene-search:425.v2ccf4cc3a_d55
 m2release:0.16.4
@@ -1376,7 +1377,7 @@ opslevel:1.2.6
 oracle-cloud-infrastructure-compute:1.0.19
 oracle-cloud-infrastructure-compute-classic:1.0.0
 oracle-cloud-infrastructure-devops:1.0.1
-oras-java-api:0.5.2-180.v3ed57f2a_a_96d
+oras-java-api:0.6.0-187.vd16c7f6c29cb_
 oras-parameters:27.ve7df57fb_154d
 osf-builder-suite-for-sfcc-credentials:1.0.8
 osf-builder-suite-for-sfcc-data-import:1.1.9
@@ -1453,7 +1454,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:842.va_457d5d7654f
+pipeline-graph-view:851.v11efcdc63a_b_1
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1616,7 +1617,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:581.v7c24e796d8dd
+resources-ai-chatbot:589.v35fc5d4686f7
 rest-list-parameter:351.vd12ed3e5222c
 restricted-register:0.1.7
 results-cache:2.0.2
