@@ -101,7 +101,7 @@ dark-theme:652.vea_da_dfea_e769
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
 lockable-resources:1509.va_6b_5b_5cb_0b_40
-pipeline-graph-view:854.vef85b_ee6e13a_
+pipeline-graph-view:867.vece2ec789435
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
@@ -131,7 +131,7 @@ blueocean-pipeline-api-impl:1.27.25
 popper-api:1.16.1-3
 ssh-agent:396.vcc7d84e622ec
 localization-support:1.41.v186a_c1569458
-apache-httpcomponents-client-5-api:5.6-193.vf028a_770a_fa_c
+apache-httpcomponents-client-5-api:5.6.1-195.v65ffe15189a_d
 blueocean-git-pipeline:1.27.25
 pipeline-utility-steps:2.20.0
 localization-zh-cn:371.v23851f835d6b_
@@ -151,11 +151,11 @@ git-parameter:462.vdcf3df2ed2ca_
 blueocean:1.27.25
 jquery-detached:1.2.1
 conditional-buildstep:1.5.0
-envinject-api:1.237.v82803a_511906
+envinject-api:1.241.vdd714803b_403
 gitlab-plugin:1.9.13
 commons-compress-api:1.28.0-3
-envinject:2.934.vc674e76cf954
-prism-api:1.30.0-720.v1eb_7496954b_3
+envinject:2.941.v351a_20c0a_3ca_
+prism-api:1.30.0-723.v97277866cece
 sonar:2.18.2
 docker-java-api:3.7.1-136.v5d70f77a_c3d6
 ansicolor:536.v13fa_b_860c267

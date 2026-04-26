@@ -77,7 +77,7 @@ antisamy-markup-formatter:173.v680e3a_b_69ff3
 any-buildstep:14.ve115ec1484f0
 anything-goes-formatter:19.v3e2b_1b_3e0ee5
 apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83
-apache-httpcomponents-client-5-api:5.6-193.vf028a_770a_fa_c
+apache-httpcomponents-client-5-api:5.6.1-195.v65ffe15189a_d
 apifortress:1.0
 apimap:1-rc26.87a_0f950121f
 app-detector:1.0.9
@@ -251,7 +251,7 @@ bitbucket-approval-filter:1.0.3
 bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
 bitbucket-filter-project-trait:19.vdd668c4d36c7
-bitbucket-kubernetes-credentials:613.v124fea_1166d5
+bitbucket-kubernetes-credentials:662.v96d8b_a_90e07e
 bitbucket-oauth:0.16
 bitbucket-pullrequest-builder:1.5.0
 bitbucket-pullrequests-filter:13.vda_de92e841b_b_
@@ -317,7 +317,7 @@ build-executors-filter-offline:1.1
 build-failure-analyzer:3.887.vc872cf1b_7dff
 build-health-cache-updater:1.1
 build-history-manager:1.15.0
-build-history-metrics-plugin:183.vb_9c822e0943e
+build-history-metrics-plugin:217.vf34ff6a_b_41ca_
 build-keeper-plugin:19.va_df8a_2c65123
 build-line:1.0.4
 build-metrics:1.3
@@ -516,7 +516,7 @@ couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
 coverage:3.3212.vd0f86de315fe
-coverage-badges-extension:197.vb_390173d00ec
+coverage-badges-extension:234.v43c3ef3878b_c
 coverity:1.11.4
 cppcheck:1.26
 cppncss:1.2
@@ -535,7 +535,7 @@ csp:2.58.v31cd65258cb_2
 ctrf-json:36.vb_8c67b_f1dc07
 cucumber-living-documentation:3.2
 cucumber-perf:2.0.9
-cucumber-reports:5.10.2
+cucumber-reports:5.11.0
 cucumber-slack-notifier:0.10.0
 cucumber-testresult-plugin:0.10.1
 cucumber-trends-report:1.3
@@ -707,8 +707,8 @@ enhanced-credentials:1.2
 enhanced-metrics:1.6
 enhanced-old-build-discarder:1.4
 envfile:43.v2644436e7d71
-envinject:2.934.vc674e76cf954
-envinject-api:1.237.v82803a_511906
+envinject:2.941.v351a_20c0a_3ca_
+envinject-api:1.241.vdd714803b_403
 environment-dashboard:1.1.10
 environment-filter-utils:1.17.vc0054371f4a_f
 environment-labels-setter:1.1
@@ -723,13 +723,13 @@ excludeMatrixParent:26.vea_96c11cf217
 exclusive-execution:0.8
 exclusive-label-plugin:19.v40532946d413
 experitest-cloud:1.0.3
-explain-error:151.v7438db_714a_4b_
+explain-error:152.vf2899f7b_e6d3
 export-job-parameters:12.v2e0754d7870c
 export-params:1.9
 extended-choice-parameter:388.ve7b_d0b_920e10
 extended-read-permission:68.vd270568a_7520
 extended-security-settings:1.3
-extended-timer-trigger:52.v6d7f99f29306
+extended-timer-trigger:58.vc0ea_9c8503c3
 extensible-choice-parameter:255.vfa_41f46828ef
 extension-filter:268.v953673b_16e81
 extensivetesting:1.4.4b
@@ -1015,7 +1015,7 @@ jaxb:2.3.9-143.v5979df3304e6
 jboss:1.0.5
 jbpm-embedded-plugin:0.2
 jbpm-workflow-plugin:0.3
-jcaptcha-plugin:66.vf5a_222f99e7b_
+jcaptcha-plugin:108.v49e0795497c2
 jclouds-jenkins:2.45
 jdcloud-codedeploy:1.0.0
 jdepend:1.3.1
@@ -1454,7 +1454,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:854.vef85b_ee6e13a_
+pipeline-graph-view:867.vece2ec789435
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1471,7 +1471,7 @@ pipeline-model-declarative-agent:1.1.1
 pipeline-model-definition:2.2277.v00573e73ddf1
 pipeline-model-extensions:2.2277.v00573e73ddf1
 pipeline-multibranch-defaults:2.1
-pipeline-npm:458.vfb_92e52f220a_
+pipeline-npm:503.vf29ef1b_913ce
 pipeline-project-env:147.v1b_7c8a_f5eea_2
 pipeline-reporter-by-redpen:1.054.v7b_9517b_6b_202
 pipeline-rest-api:2.41
@@ -1511,7 +1511,7 @@ preSCMbuildstep:115.vf9808414429d
 preflight-integration:1.4
 prereq-buildstep:1.1
 pretested-integration:3.1.2
-prism-api:1.30.0-720.v1eb_7496954b_3
+prism-api:1.30.0-723.v97277866cece
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
 proc-cleaner-plugin:2.4
@@ -1732,7 +1732,7 @@ sitemonitor:0.6
 skenai:1.0.8
 skip-certificate-check:50.vcfa_cdb_b_27312
 skip-cron-rebuild:42.vb_5da_c46203d9
-skip-notifications-trait:576.v7a_67396e2e0b_
+skip-notifications-trait:625.vb_f5e11e9b_158
 skype-notifier:1.1.0
 skytap:2.07
 slack:795.v4b_9705b_e6d47
