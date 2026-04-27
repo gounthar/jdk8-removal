@@ -22,7 +22,7 @@ cloudbees-folder:6.1100.ve9eed61d16c4
 token-macro:477.vd4f0dc3cb_cf1
 workflow-job:1573.v1465f6f78810
 durable-task:664.v2b_e7a_dfff66c
-workflow-cps:4285.v8df38f05c3c5
+workflow-cps:4303.v8fa_2a_581f0a_6
 workflow-durable-task-step:1475.ved562f6ec8b_3
 antisamy-markup-formatter:173.v680e3a_b_69ff3
 branch-api:2.1280.v0d4e5b_b_460ef
@@ -100,7 +100,7 @@ config-file-provider:1006.vc7366c201f57
 dark-theme:652.vea_da_dfea_e769
 docker-workflow:634.vedc7242b_eda_7
 htmlpublisher:427
-lockable-resources:1509.va_6b_5b_5cb_0b_40
+lockable-resources:1515.v380548282a_59
 pipeline-graph-view:867.vece2ec789435
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
@@ -207,7 +207,7 @@ aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
 bitbucket:307.va_9f30d0b_8f0d
-warnings-ng:13.10087.ve5ccdb_b_17f4c
+warnings-ng:13.10091.vd687e63e8591
 aws-java-sdk-ecs:1.12.780-480.v4a_0819121a_9e
 emailext-template:249.v81d6ea_f33f2e
 mask-passwords:220.v95819055b_265
@@ -218,7 +218,7 @@ artifactory:4.0.8
 badge:3.591.v9074c6c6f0b_9
 extended-read-permission:68.vd270568a_7520
 throttle-concurrents:625.vc8b_e469e9a_b_c
-monitoring:2.6.0
+monitoring:2.7.0
 parameterized-scheduler:379.v95c73f233a_df
 pipeline-maven-api:1672.v1b_d4c0435b_20
 aws-java-sdk-efs:1.12.780-480.v4a_0819121a_9e
