@@ -211,7 +211,7 @@ aws-sqs-trigger:1.2
 aws-yum-parameter:1.5
 awseb-deployment-plugin:0.3.21
 azure-acs:1.0.4
-azure-ad:666.v6060de32f87d
+azure-ad:667.v4c5827a_e74a_0
 azure-app-service:1.0.2
 azure-artifact-manager:216.ve6d6d465e371
 azure-batch-parallel:0.2
@@ -252,7 +252,7 @@ bitbucket-approve:1.0.3
 bitbucket-build-status-notifier:1.4.2
 bitbucket-filter-project-trait:19.vdd668c4d36c7
 bitbucket-kubernetes-credentials:662.v96d8b_a_90e07e
-bitbucket-oauth:0.16
+bitbucket-oauth:0.17
 bitbucket-pullrequest-builder:1.5.0
 bitbucket-pullrequests-filter:13.vda_de92e841b_b_
 bitbucket-push-and-pull-request:3.3.4
@@ -524,7 +524,7 @@ crap4j:0.9
 create-fingerprint:25.v0a_b_e60b_42fa_4
 createjobadvanced:1.10.0
 credentials:1502.v5c95e620ddfe
-credentials-binding:719.v80e905ef14eb_
+credentials-binding:720.v3f6decef43ea_
 crittercism-dsym:1.1
 cron-shelve:1.3
 cron_column:106.v492da_45b_051b_
@@ -831,13 +831,13 @@ gitea-checks:604.638.ve9e5472551b_3
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1282.vcb_38e525f3c5
 gitflow:1.0.1
-github:1.46.0
+github:1.46.0.1
 github-actions-cloud:43.vde12168523fa_
 github-api:1.330-492.v3941a_032db_2a_
 github-app-kubernetes-credentials:0.0.1
 github-autostatus:4.259.ve0468d8b_e5f1
 github-branch-pr-change-filter:1.2.4
-github-branch-source:1967.vdea_d580c1a_b_a_
+github-branch-source:1967.1969.v205fd594c821
 github-checks:679.v74133da_b_435a_
 github-coverage-reporter:1.10
 github-issues:1.2.4
@@ -932,7 +932,7 @@ hsts-filter-plugin:10.v6e229055329a
 html-audio-notifier:0.4
 html-parameters:10.v9a_56672a_96a_5
 html5-notifier-plugin:1.5
-htmlpublisher:427
+htmlpublisher:427.1
 htmlresource:1.02
 http-post:1.2
 http_request:1.25
@@ -1072,7 +1072,7 @@ jobrevision:0.6
 jobtag:25.va_12b_1dd63367
 jobtemplates:1.0
 jobtype-column:1.3
-joda-time-api:2.14.1-187.vdf2def02b_8a_1
+joda-time-api:2.14.2-193.v422b_efce56e0
 join:1.21
 jprt:1.1
 jqs-monitoring:37.vf50a_82a_0b_f32
@@ -1207,7 +1207,7 @@ material-theme:0.5.2-rc100.6121925fe229
 mathworks-polyspace:1.0.12
 matlab:1106.v9b_fb_b_7b_29b_5f
 matomo-analytics:1.34.v7fe4d35786a_5
-matrix-auth:3.2.9
+matrix-auth:3.2.10
 matrix-combinations-parameter:1.3.3
 matrix-communication:13.vdcfb_b_44ce852
 matrix-groovy-execution-strategy:1.0.8
@@ -1262,7 +1262,7 @@ mission-control-view:0.9.16
 mixing-security-realm:1.3
 mktmpio:0.3.2
 mock-load-builder:105.v1fc7e407a_0b_1
-mock-security-realm:106.va_5286004db_2e
+mock-security-realm:134.v31b_1cc496b_43
 mock-slave:217.v67c790ca_a_c31
 modernstatus:1.3
 mongodb:1.3
@@ -1391,7 +1391,7 @@ outbound-webhook:0.3.0
 overops-query:3.0.3
 oversecured:1.1
 ownership:0.13.0
-p4:1.17.2
+p4:1.17.3
 p4sa:1.0
 paaslane-estimate:1.0.4
 package-drone:0.6.0
@@ -1454,7 +1454,7 @@ pipeline-githubnotify-step:49.vf37bf92d2bc8
 pipeline-gitstatuswrapper:1.2.0
 pipeline-global-lib-nexus:0.3.2
 pipeline-graph-analysis:254.v0f63a_a_447dca_
-pipeline-graph-view:871.vd450b_6eb_d1e1
+pipeline-graph-view:872.vf5b_ec277ffb_b_
 pipeline-groovy-lib:797.v90ea_a_9b_e45a_0
 pipeline-huaweicloud-plugin:0.0.1
 pipeline-input-notification:17.v3401b_efd3f89
@@ -1658,7 +1658,7 @@ scalable-amazon-ecs:1.0
 schedule-build:696.v0a_b_ec7334c89
 scm-api:728.vc30dcf7a_0df5
 scm-filter-branch-pr:264.v39ce4f34d572
-scm-filter-jervis:2.3-81.vb_39e0fea_b_ca_3
+scm-filter-jervis:2.4-83.vc8a_a_175de935
 scm-httpclient:1.5
 scm-manager:1.11.1
 scm-sqs:1.4
@@ -1670,7 +1670,7 @@ scoring-load-balancer:232.235.vb_e4a_db_a_7095a_
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
-script-security:1399.ve6a_66547f6e1
+script-security:1402.v94c9ce464861
 scripted-cloud-plugin:0.12
 scriptler:451.v02fdb_b_d6c619
 sdelements:1.0.2
@@ -1679,7 +1679,7 @@ search-all-results-plugin:1.0
 secondary-timestamper-plugin:1.1
 secone-sca-sast-security-scanner:24.vf7f4e7888003
 secone-security:68.vd43912d34b_57
-secret-guard:110.ve4e4dfc8cf26
+secret-guard:112.v7f1b_9523a_e7f
 sectioned-view:1.32
 secure-post-script:0.1
 secure-requester-whitelist:72.v6cce468c5513
@@ -1772,7 +1772,7 @@ split-admin:2.0
 splunk-devops:1.11.2
 splunk-devops-extend:1.11.2
 spoonscript:1.3
-spotinst:2.2.21
+spotinst:2.2.22
 spring-config:2.0.2
 spring-initalzr:1.6
 sqlplus-script-runner:3.0.1
