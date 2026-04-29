@@ -1,4 +1,4 @@
-script-security:1399.ve6a_66547f6e1
+script-security:1402.v94c9ce464861
 structs:362.va_b_695ef4fdf9
 scm-api:728.vc30dcf7a_0df5
 workflow-step-api:724.v538c2362b_dfb_
@@ -15,7 +15,7 @@ jackson2-api:2.21.2-436.v29efdb_7418ff
 plain-credentials:199.v9f8e1f741799
 junit:1403.vd9d1413fd205
 git-client:6.6.0
-credentials-binding:719.v80e905ef14eb_
+credentials-binding:720.v3f6decef43ea_
 matrix-project:870.v9db_fcfc2f45b_
 git:5.10.1
 cloudbees-folder:6.1100.ve9eed61d16c4
@@ -42,7 +42,7 @@ plugin-util-api:7.1330.v47b_46ee2047a_
 jquery3-api:3.7.1-682.vfa_cdce169929
 pipeline-graph-analysis:254.v0f63a_a_447dca_
 font-awesome-api:7.2.0-983.v3f63c34eddb_9
-matrix-auth:3.2.9
+matrix-auth:3.2.10
 echarts-api:6.0.0-1281.vd3d21a_1ca_cb_4
 caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81
 checks-api:402.vca_263b_f200e3
@@ -57,10 +57,10 @@ github-api:1.330-492.v3941a_032db_2a_
 timestamper:1.30
 ws-cleanup:0.49
 okhttp-api:5.3.2-200.vedb_720a_cf1f8
-github:1.46.0
+github:1.46.0.1
 ldap:807.v7d7de30930cf
 pam-auth:1.12
-github-branch-source:1967.vdea_d580c1a_b_a_
+github-branch-source:1967.1969.v205fd594c821
 email-ext:1933.v45cec755423f
 mina-sshd-api-common:2.16.0-167.va_269f38cc024
 jakarta-activation-api:2.1.4-1
@@ -86,7 +86,7 @@ json-path-api:3.0.0-218.vcd4dd1355de2
 jsch:0.2.16-95.v3eecb_55fa_b_78
 json-api:20251224-185.v0cc18490c62c
 pipeline-stage-view:2.41
-joda-time-api:2.14.1-187.vdf2def02b_8a_1
+joda-time-api:2.14.2-193.v422b_efce56e0
 asm-api:9.9.1-189.vb_5ef2964da_91
 eddsa-api:0.3.0.1-29.v67e9a_1c969b_b_
 authentication-tokens:1.144.v5ff4a_5ec5c33
@@ -99,9 +99,9 @@ theme-manager:346.v06cca_64c6a_37
 config-file-provider:1006.vc7366c201f57
 dark-theme:652.vea_da_dfea_e769
 docker-workflow:634.vedc7242b_eda_7
-htmlpublisher:427
+htmlpublisher:427.1
 lockable-resources:1515.v380548282a_59
-pipeline-graph-view:871.vd450b_6eb_d1e1
+pipeline-graph-view:872.vf5b_ec277ffb_b_
 role-strategy:848.va_a_ea_673cf0b_c
 handy-uri-templates-2-api:2.1.8-38.vcea_5d521d5f3
 workflow-cps-global-lib:615.vb_b_0664a_b_19f3
