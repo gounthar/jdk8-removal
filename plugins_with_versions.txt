@@ -486,7 +486,7 @@ config-file-provider:1006.vc7366c201f57
 configuration-as-code:2077.v41f1011a_5110
 configuration-as-code-groovy:1.1
 configuration-as-code-secret-ssm:1.0.1
-configurationslicing:700.vd71e4a_3a_c0a_a_
+configurationslicing:709.v4c76e613470f
 configure-job-column-plugin:84.v792c9269f95a
 conflict-aware-ondemand-strategy:2.197.vd7e077d21c70
 conjur-credentials:3.0.12
@@ -1000,7 +1000,7 @@ jacked:1.5.1
 jackson-annotations2-api:2.21-7.v4777a_f3a_a_d47
 jackson-databind:2.8.10.1
 jackson2-api:2.21.2-436.v29efdb_7418ff
-jackson3-api:3.1.2-73.v3e5485d8b_148
+jackson3-api:3.1.3-76.vd9b_7cd2e80b_8
 jacoco:3.3.7
 jakarta-activation-api:2.1.4-1
 jakarta-mail-api:2.1.5-1
@@ -1448,6 +1448,7 @@ pipeline-cps-http:201.v59370c7cf0ec
 pipeline-cps-oras:88.v0d7eff910a_13
 pipeline-dependency-walker:1.0.0
 pipeline-deploymon:1.0
+pipeline-dora-metrics:35.v22727d6ff968
 pipeline-gcp:22.vcc10eff7c13f
 pipeline-giphy-api:2.0.1
 pipeline-github:2.8-162.382498405fdc
@@ -1619,7 +1620,7 @@ repository-connector:2.2.1
 reqtify:4.0.2
 requests:3.5
 resource-disposer:0.25
-resources-ai-chatbot:589.v35fc5d4686f7
+resources-ai-chatbot:598.v587b_4041e5e0
 rest-list-parameter:351.vd12ed3e5222c
 restricted-register:0.1.7
 results-cache:2.0.2
