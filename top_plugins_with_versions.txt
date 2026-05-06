@@ -118,7 +118,7 @@ jenkins-design-language:1.27.25
 blueocean-rest:1.27.25
 jquery:1.12.4-3
 parameterized-trigger:890.vc240a_a_e1217f
-data-tables-api:2.3.7-1566.v3f104e6d13ea_
+data-tables-api:2.3.8-1570.v1cb_1cd2a_0fb_c
 blueocean-core-js:1.27.25
 publish-over:238.v1db_583004c9b_
 blueocean-web:1.27.25
@@ -155,7 +155,7 @@ envinject-api:1.241.vdd714803b_403
 gitlab-plugin:1.9.13
 commons-compress-api:1.28.0-3
 envinject:2.941.v351a_20c0a_3ca_
-prism-api:1.30.0-726.v81a_cd0f1e53b_
+prism-api:1.30.0-727.vc475481f034d
 sonar:2.18.2
 docker-java-api:3.7.1-136.v5d70f77a_c3d6
 ansicolor:536.v13fa_b_860c267
@@ -181,7 +181,7 @@ jira:3.21
 aws-java-sdk-ec2:1.12.780-480.v4a_0819121a_9e
 jobConfigHistory:1356.ve360da_6c523a_
 ssh:158.ve2a_e90fb_7319
-forensics-api:4.1881.v79c6e496c613
+forensics-api:4.1891.v5e60f3377506
 build-name-setter:2.5.1
 extended-choice-parameter:388.ve7b_d0b_920e10
 active-directory:2.41
@@ -202,7 +202,7 @@ simple-theme-plugin:230.v8b_fd91b_b_800c
 blueocean-jira:1.27.25
 jnr-posix-api:3.1.22-204.v925e2b_09a_42c
 gitlab-api:6.2.0-111.vf174d6b_8c12e
-analysis-model-api:14.5.0-968.v4b_155edf8f68
+analysis-model-api:14.5.0-972.v41833a_663046
 aws-java-sdk-sqs:1.12.780-480.v4a_0819121a_9e
 authorize-project:2.0.0
 aws-java-sdk-sns:1.12.780-480.v4a_0819121a_9e
@@ -241,7 +241,7 @@ h2-api:11.1.4.199-36.vb_ee07e965744
 aws-java-sdk-secretsmanager:1.12.780-480.v4a_0819121a_9e
 cobertura:1.17
 aws-java-sdk-kinesis:1.12.780-480.v4a_0819121a_9e
-coverage:3.3212.vd0f86de315fe
+coverage:3.3220.v9f7ea_a_7f63b_4
 allure-jenkins-plugin:2.35.2
 aws-java-sdk-elasticloadbalancingv2:1.12.780-480.v4a_0819121a_9e
 aws-java-sdk-lambda:1.12.780-480.v4a_0819121a_9e

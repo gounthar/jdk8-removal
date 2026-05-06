@@ -33,7 +33,7 @@ acunetix:1.2.14
 acunetix-360-scan:2.1.19
 adaptive-disconnector:0.2
 add-changes-to-build-changelog:21.v537f074cf2cc
-additional-identities-plugin:182.184.vef59cb_98ce2d
+additional-identities-plugin:183.217.vf2d157e78f4a_
 additional-metrics:207.v0407e7fe201b_
 admin-params:1.0.0
 adobe-cloud-manager:43.v4560e7fa191c
@@ -61,7 +61,7 @@ amazon-ecr:1.161.v1a_1e8df852d6
 amazon-ecs:1.49
 amazon-inspector-image-scanner:568.v0d772fd6545b_
 amqp-build-trigger:1.0
-analysis-model-api:14.5.0-968.v4b_155edf8f68
+analysis-model-api:14.5.0-972.v41833a_663046
 anchore-container-scanner:3.3.0
 android-apk-size-watcher:1.0.1
 android-emulator:664.ve25e686a_c00b_
@@ -515,7 +515,7 @@ cortex-metrics:1.0.1
 couchdb-statistics:0.4
 countjobs-viewstabbar:1.0.1
 covcomplplot:1.1.1
-coverage:3.3212.vd0f86de315fe
+coverage:3.3220.v9f7ea_a_7f63b_4
 coverage-badges-extension:234.v43c3ef3878b_c
 coverity:1.11.4
 cppcheck:1.26
@@ -542,7 +542,7 @@ cucumber-trends-report:1.3
 curseforge-publisher:1.0
 custom-build-properties:3.99.vb_e083a_0e2385
 custom-checkbox-parameter:1.4
-custom-folder-icon:2.938.vb_42c40c33ea_5
+custom-folder-icon:2.969.v365a_90fb_5d3b_
 custom-job-icon:0.2
 custom-markup-formatter:39.v291c115db_c4d
 custom-tools-plugin:0.8
@@ -559,7 +559,7 @@ daily-quote:1.0
 darcs:0.3.11
 dark-theme:652.vea_da_dfea_e769
 dashboard-view:2.558.v96b_901978e47
-data-tables-api:2.3.7-1566.v3f104e6d13ea_
+data-tables-api:2.3.8-1570.v1cb_1cd2a_0fb_c
 database:309.vf39a_d78a_cb_e8
 database-h2:1.4.116.vc979ffa_d29c7
 database-mariadb:182.v8f1d21b_7c825
@@ -621,7 +621,7 @@ disable-failed-job:1.15
 disable-github-multibranch-status:1.2
 disable-job-button:1.3.vf55949267366
 discard-old-build:1.08
-discord-notifier:264.v70060b_a_b_d300
+discord-notifier:270.vb_d42434a_60e1
 disk-usage:573.v5269a_8d16a_db_
 diskcheck:0.30
 display-console-output:1.0.5
@@ -773,7 +773,7 @@ fogbugz:2.2.17
 folder-auth:217.vd5b_18537403e
 folder-properties:62.v1636b_4a_84608
 font-awesome-api:7.2.0-990.vf220b_2a_496f9
-forensics-api:4.1881.v79c6e496c613
+forensics-api:4.1891.v5e60f3377506
 forgeai-pipeline-intelligence:30.v353b_35374409
 form-element-path:1.12
 forticwp-cicd:0.9.8.51.va_308b_11da_d62
@@ -815,7 +815,7 @@ git-changelog:3.45
 git-chooser-alternative:1.1
 git-client:6.6.0
 git-collect:37.v06298c1f8d7c
-git-forensics:4.2367.vb_399b_30a_e8fb_
+git-forensics:4.2385.va_e15df49d352
 git-parameter:462.vdcf3df2ed2ca_
 git-prebuildmerge-trait:1.0
 git-push:34.vd474e0fe7b_ec
@@ -827,7 +827,7 @@ gitblit:1.2
 gitbucket:0.8
 gitcolony-plugin:1.1
 gitea:273.vb_78d13f6d9a_d
-gitea-checks:604.638.ve9e5472551b_3
+gitea-checks:605.646.vd9b_a_f58150a_6
 gitea-pat-kubernetes-credentials:17.vfe3747cad95a
 gitee:1282.vcb_38e525f3c5
 gitflow:1.0.1
@@ -1029,7 +1029,7 @@ jenkins-multijob-plugin:662.vd2e0001f6b_b_d
 jenkins-reviewbot:2.4.6
 jenkins-tag-cloud-plugin:1.6
 jenkins-testswarm-plugin:1.2
-jenkinsci-appspider-plugin:1.0.17
+jenkinsci-appspider-plugin:1.0.18
 jenkinslint:0.14.0
 jenkinswalldisplay:0.6.34
 jersey2-api:2.48-180.ve47b_264f849b_
@@ -1514,7 +1514,7 @@ preSCMbuildstep:115.vf9808414429d
 preflight-integration:1.4
 prereq-buildstep:1.1
 pretested-integration:3.1.2
-prism-api:1.30.0-726.v81a_cd0f1e53b_
+prism-api:1.30.0-727.vc475481f034d
 prisma-cloud-iac-scan:1.3.5
 probely-security:1.2.3
 proc-cleaner-plugin:2.4
@@ -1669,7 +1669,7 @@ scm-sync-configuration:0.0.10
 scm2job:2.5
 scmskip:84.v50575d32b_23f
 scons:0.4
-scoring-load-balancer:232.235.vb_e4a_db_a_7095a_
+scoring-load-balancer:233.265.v4a_85a_d11f4a_8
 scoverage:1.4.0
 scp:1.8
 script-realm:1.5
