@@ -1,10 +1,10 @@
 # Data analysis and visualization
 pandas==3.0.5
-matplotlib==3.11.1
+matplotlib==3.11.2
 
 # Excel file handling
 openpyxl==3.1.5
 
 # Google Sheets integration
 gspread==6.2.1
-google-auth==2.57.0
+google-auth==2.58.0
